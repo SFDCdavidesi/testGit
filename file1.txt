@@ -1,2 +1,2 @@
  "Primera linea de texto" 
-añado una nueva linea al archivo
+añado una nueva línea al archivo
