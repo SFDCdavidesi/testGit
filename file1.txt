@@ -1,5 +1,5 @@
  "Primera linea de texto" 
 añado una nueva línea al archivo
-
+xxxxx
 Nueva línea
 YYYY
