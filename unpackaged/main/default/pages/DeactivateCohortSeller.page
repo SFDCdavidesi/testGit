@@ -1,0 +1,64 @@
+<!-----------------------------------------------------------------------
+@ Page:           Deactivate Cohort Seller
+@ Version:        1.0
+@ Author:         Chetra Sarom
+@ Purpose:        US-0012010 - Add New Button "Deactivate Sellers" Button next to "Remove Sellers"
+@ Change history: 14.07.2022 
+----------------------------------------------------------------------- -->
+<apex:page standardController="BoB_Seller__c" recordSetVar="deals"  extensions="DeactivateCohortSellerController" id="mypage">
+    <apex:includeLightning />
+    <style>
+        .msgIcon{
+            max-width: none !important;
+        }
+        
+        .ovrly{
+            background-image: url("/img/loading32.gif");
+            display:none;
+            overflow: hidden; 
+            z-index:2000;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center; 
+            position: absolute;
+            opacity: 0.7;
+            background-color: slategrey;
+        } 
+    </style> 
+    <script type='text/javascript'>
+        <apex:slds />       
+        
+        function showWait()
+        {
+            document.getElementById("ovrly").style.display = 'block';
+        }
+        function hideWait()
+        {
+            document.getElementById("ovrly").style.display = 'none';
+        }
+    </script>
+    <apex:form >
+        
+        <apex:actionStatus id="fetchStatus" onstart="showWait();" onstop="hideWait();"/>  
+            
+
+            <apex:pageBlock title="Deactivate Seller ({!numSelected})" mode="edit" id="pb1">
+                <div class="ovrly" id="ovrly" style="display:none; overflow: hidden; z-index:2000"></div>                
+                
+                <apex:pageBlockSection columns="1" >
+                    <apex:pageBlockSectionItem >
+                        <apex:pageBlockSectionItem >
+                            <apex:pageMessage summary="{!msg}" severity="{!severity}" strength="3" />
+                        </apex:pageBlockSectionItem>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        <apex:commandButton status="fetchStatus"  value="Yes" action="{!deactivateSellers}" rendered="{!and(!isError,!isDone)}" rerender="pb1" styleClass="slds-button slds-button--brand "></apex:commandButton> 
+                        <apex:commandButton status="fetchStatus"  value="{!If(or(isError,isDone),'Back','No')}" action="{!backToListView}" rerender="pb1" styleClass="slds-button slds-button--neutral "></apex:commandButton>
+                    </apex:pageBlockSectionItem>
+                </apex:pageBlockSection> 
+            </apex:pageBlock> 
+             
+         
+    </apex:form>
+</apex:page>

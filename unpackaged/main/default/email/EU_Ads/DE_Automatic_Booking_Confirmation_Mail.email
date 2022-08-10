@@ -1,0 +1,11 @@
+{!Opportunity.Primary_Contact_Salutation__c}, 
+
+Gerne bestätigen wir, dass die eBay GmbH den Buchungsauftrag "{!Opportunity.Offer_number_old__c} + {!Opportunity.Ext_Name_Campaign__c}" für den Kunden "{!Opportunity.Account}" auf http://www.ebay.de. 
+
+Hierfür gelten ausschließlich die AGB für Advertising der eBay GmbH, die im Internet unter https://ebayads.de/agb einsehbar sind. 
+
+Besten Dank und viele Grüße, 
+
+{!Opportunity.OwnerFullName}
+
+(ref: {!Opportunity.Id})

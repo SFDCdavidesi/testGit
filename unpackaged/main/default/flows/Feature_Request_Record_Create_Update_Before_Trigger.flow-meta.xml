@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <assignments>
+        <description>US-0011971 - Status additions and amends in Feature Request</description>
+        <name>Add_Default_Text</name>
+        <label>Add Default Text</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Requirement_Description__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>1. What is the Problem Statement? &lt;br&gt;  2. Is Legal approval required?(Yes/No. If yes please attach legal email approval.) &lt;br&gt;  3. Business Impact if this change request is not delivered &lt;br&gt;  4. What is the volume of data estimated(Help Text - Number of Contracts/Deals/Coupons..) &lt;br&gt;  5. Key Benefits of implementing the change. &lt;br&gt;</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>US_0010893_Check_Product_Owner</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Product_Owner_to_Feature_Request</name>
+        <label>Product Owner to Feature Request</label>
+        <locationX>50</locationX>
+        <locationY>767</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.OwnerId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.HIVE_Products__r.Product_Owner__c</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <description>US-0011971 - Status additions and amends in Feature Request</description>
+        <name>Check_Requirement_Description</name>
+        <label>Check Requirement Description</label>
+        <locationX>182</locationX>
+        <locationY>311</locationY>
+        <defaultConnector>
+            <targetReference>US_0010893_Check_Product_Owner</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Check_Requirement_Description_Is_Empty</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Requirement_Description__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Add_Default_Text</targetReference>
+            </connector>
+            <label>Check Requirement Description Is Empty</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>US_0010893_Check_Product_Owner</name>
+        <label>US-0010893 - Check Product Owner</label>
+        <locationX>182</locationX>
+        <locationY>647</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Record_HIVE_Products_c</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.HIVE_Products__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Product_Owner_to_Feature_Request</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Check Product Owner</label>
+        </rules>
+    </decisions>
+    <description>US-0009779 - Send Notification on Feature Request creation,
+US-0011331 - New Hive Products Object - Hive Products field changes
+US-0010893 - Product Owner name assignment and flag validation
+US-0011971 - Status additions and amends in Feature Request</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>test</description>
+        <name>test</name>
+        <dataType>String</dataType>
+        <expression>&quot;1&quot;&amp;BR()&amp;&quot;2&quot;</expression>
+    </formulas>
+    <interviewLabel>Feature Request - Record Create/Update - Before Trigger {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Feature Request - Record Create/Update - Before Trigger</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_Requirement_Description</targetReference>
+        </connector>
+        <object>Requirement_Request__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>List of Feature Request Product Owner Record</description>
+        <name>lstFRPO</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Feature_Request_Product_Owner__mdt</objectType>
+    </variables>
+    <variables>
+        <name>varUserProductOwner</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>User</objectType>
+    </variables>
+</Flow>

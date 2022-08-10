@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Target_Object_s__c</fullName>
+    <description>US-0008663 - Enhancements to enable Data Load privileges to non-Hive team members</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Note all the object(s) which will be affected by the data load</inlineHelpText>
+    <label>Target Object(s)</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

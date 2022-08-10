@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PL_Outreach_T3</fullName>
+    <columns>NAME</columns>
+    <columns>EBH_Stage__c</columns>
+    <columns>EBH_Seller__c</columns>
+    <columns>RegistrationCountry__c</columns>
+    <columns>MainVertical__c</columns>
+    <columns>Main3PP__c</columns>
+    <columns>OWNER.ALIAS</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Manager__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>EBH_Project__c.ManagedPayment</value>
+    </filters>
+    <filters>
+        <field>RegistrationCountry__c</field>
+        <operation>equals</operation>
+        <value>Poland</value>
+    </filters>
+    <label>PL_Outreach_T3</label>
+</ListView>

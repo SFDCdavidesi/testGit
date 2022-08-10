@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pop_Coupon_Seller</fullName>
+    <fields>Seller__c</fields>
+    <fields>Name</fields>
+    <fields>Oracle_ID__c</fields>
+    <fields>Coupon_Seller_Stage__c</fields>
+    <label>Pop Coupon Seller</label>
+</CompactLayout>

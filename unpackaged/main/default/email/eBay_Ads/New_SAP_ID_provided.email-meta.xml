@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0009240 - Migrate account notifications for EU ads</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>New SAP ID provided</name>
+    <style>none</style>
+    <subject>Your account {!Account.Name} has been updated with SAP ID</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

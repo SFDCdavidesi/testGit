@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>EPH-7725 Send BCD file via email to Finance DL after Coupon ended ; Update for :US-0008446 - Coupon BCD - email notification; US-0008980 - Update email template for Coupon BCD file creation</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>BCD File Email Coupon Manhattan</name>
+    <style>none</style>
+    <subject>BCD file for Coupon {!BCD_Statement__c.Coupon_Code__c} ({!BCD_Statement__c.Coupon__c}) is available</subject>
+    <textOnly>Hello team,
+
+a new BCD file for Coupon {!BCD_Statement__c.Coupon_Code__c} ({!BCD_Statement__c.Coupon__c}) has been generated. Days since coupon end date:  {!BCD_Statement__c.Days_Since_Coupon_End_Date__c}
+
+You can find the BCD file and transactional level details file attached to the BCD Statement: ({!BCD_Statement__c.Link}).
+
+Additional details:
+
+Coupon Business Contact:  {!BCD_Statement__c.CouponOwnerName__c}
+Coupon Source: {!BCD_Statement__c.Coupon_Source__c}
+Coupon Site(s): {!BCD_Statement__c.Site__c}
+Coupon Start Date: {!BCD_Statement__c.Start_date__c}
+Coupon End Date: {!BCD_Statement__c.End_date__c}
+Number of sellers participated in coupon promo: {!BCD_Statement__c.Number_of_sellers__c}
+Credit Total Value (Site Currency): {!BCD_Statement__c.Credit_Total_Value__c}
+
+To check Coupon details please click this link: {!BCD_Statement__c.Coupon_link__c}
+
+Thank you,
+Hive</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

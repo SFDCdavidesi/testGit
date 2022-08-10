@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Price_incl_Targeting__c</fullName>
+    <description>US-0007934 - [Ads 2020] Daily Ads Revenue - Required EU Fields for Accruals</description>
+    <externalId>false</externalId>
+    <label>Price incl. Targeting</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>8</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

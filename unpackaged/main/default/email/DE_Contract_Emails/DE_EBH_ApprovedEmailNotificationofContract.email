@@ -1,0 +1,8 @@
+Hello!
+
+Your ‘{!Contract.RecordType}’ for ‘{!Contract.Account}’ has been approved.
+
+For more details, please go to: {!Contract.EBH_RecordLink__c}.
+
+Thank you,
+The Hive Team

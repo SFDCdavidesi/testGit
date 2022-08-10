@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CampaignName_NoSpecialCharactersAllowed</fullName>
+    <active>true</active>
+    <description>US-0007447 - Campaign Name validation rule - do not allow special characters</description>
+    <errorConditionFormula>AND(
+NOT(REGEX(Name, &quot;^[_A-z0-9]*((-|\\s)*[_A-z0-9])*$&quot;)),
+OR(
+  ISPICKVAL(EBH_Channel__c, &quot;GCX Outreach (Phone)&quot;),
+  ISPICKVAL(EBH_Channel__c, &quot;GCX Inbound (Phone)&quot;)),
+$Profile.Name &lt;&gt; &#39;System Administrator&#39; 
+)</errorConditionFormula>
+    <errorMessage>Campaign Name cannot contain special characters.</errorMessage>
+</ValidationRule>

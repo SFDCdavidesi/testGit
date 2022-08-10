@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0018788: [AU] Contract Breach Email Notification</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>AU Contract Breach Template</name>
+    <style>none</style>
+    <subject>{!Coupon_Seller__c.Coupon_ID__c} Contract Breached</subject>
+    <textOnly>Dear {!Coupon_Seller__c.Seller__c },
+
+Thank you for your participation in eBay’s Retail Promotions program. As you are aware, your participation is subject to the terms of the Co-Funding Agreement agreed to by you prior the commencement of each promotion.
+
+{!Coupon_Seller__c.Breach_Reason__c}
+
+Clause 21: During the Offer Period you must maintain price parity between items listed on your own website(s) and/or on other online marketplaces and any of your items listed on www.ebay.com.au which are the subject of the Coupon Offer so as to ensure that the discount referred to in the Coupon Offer is not rendered false or misleading. It is your obligation to ensure that the Discount Amount represents a true and accurate percentage discount on the price at which such items are sold on any online marketplace for the duration of the Offer Period.
+
+We have noticed that, you have not been complying with the above clause. As a result of the above breach your participation in the {!Coupon__c.Coupon_ID__c} {!Coupon__c.Marketing_Coupon_Name__c} promotions has been terminated.
+
+Thank You
+Retail Promotions Team
+eBay Australia</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

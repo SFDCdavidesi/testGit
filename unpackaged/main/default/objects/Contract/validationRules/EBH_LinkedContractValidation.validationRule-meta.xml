@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_LinkedContractValidation</fullName>
+    <active>true</active>
+    <description>US-0009, US-0007080</description>
+    <errorConditionFormula>AND(
+(ISPICKVAL(EBH_ContractAmendment__c, &#39;Amendment&#39;) || ISPICKVAL(EBH_ContractAmendment__c, &#39;Sub-agreement&#39;)),
+ISBLANK(EBH_LinkedContract__c )
+) &amp;&amp; NOT( $Setup.ActiveValidationRules__c.All_Validation_Rules_Deactivated__c )</errorConditionFormula>
+    <errorDisplayField>EBH_LinkedContract__c</errorDisplayField>
+    <errorMessage>Please provide the linked contract when selecting &quot;Amendment&quot;.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0011512 - Modify Email template for Adjusted and Disputed Statements</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>NA Deals Dispute Statement With Subsidy</name>
+    <style>none</style>
+    <subject>Please find your Deals statement spreadsheet attached</subject>
+    <textOnly>{!Deal_Statement__c.eBay_Seller__c},
+
+Payment Dispute Complete!
+
+
+Attached is your revised {!Deal_Statement__c.Month__c} subsidy review. This adjustment will be reflected in your PayPal account within 3-5 business days. Note that returns, cancellations, items not received and sales outside that agreed upon time window do NOT count towards subsidies.
+
+
+We pull the data every time at your request and risk, so items that were returned or not received since our last review/statement will not be subsidized anymore and total eligible units #s can go up OR down thus possibly resulting in a lower total subsidy total for a listing ID.
+
+
+DEALS MASTER SERVICE AGREEMENT REMINDERS:
+
+Seller must review and report any error or omission regarding the Subsidy Payment for a Deal no later than ten (10) business days after receipt of the second Statement from eBay post 60 days if a Subsidy Payment is due (“Subsidy Final Settlement Date”). Seller shall be precluded from requesting any correction or adjustment to the Statement or Subsidy Payment after the Subsidy Final Settlement Date.
+Seller must wait until the second reconciliation period post 60 days and final remainder amount is paid out until he sends in a dispute for quantity variance. If there was a deal missing or dates incorrect, seller shall inform us and the merchant immediately to review accordingly in order to include potential missed payouts in the second Statement.
+For a period of at least two (2) years after the Deal Stop Date/Time, Seller shall keep and maintain all appropriate books and records related to the Deal, including but not limited to copies of the approved Deal Terms and records of the purchases, deliveries and returns for the Deal (“Deal Records”).
+
+
+PAYMENT DISPUTE GUIDELINES
+A) Quantity Discrepancies
+
+Using the &quot;Seller Payment Dispute&quot; tab, complete each column with the subsidy offer details that were approved and submitted to the Daily Deals team. Only include deals that were incorrect in your subsidy statement.
+Use the drop-down menu to select &quot;quantity variance&quot; as the error type.
+Exclude the following transactions from your dispute: items that exceed the quantity limit, unpaid items, cancellations, returns and units sold outside of the subsidy period*.
+Attach the complete subsidy approval email(s) only if you are disputing the maximum quantity to list from your subsidy offer.
+
+B) Deal Omissions/Other Discrepancies
+
+Using the &quot;Seller Payment Dispute&quot; tab, complete each column with the subsidy offer details that were approved and submitted to the Daily Deals team. Only include deals that were incorrect in your subsidy statement.
+Use the drop-down menu to select &quot;deal omitted from subsidy statement&quot;, &quot;subsidy per unit&quot; or &quot;other, please describe&quot; as the error type.
+Exclude the following transactions from your dispute: items that exceed the quantity limit, unpaid items, cancellations, returns and units sold outside of the subsidy period* or at a higher than agreed upon listing price.
+Attach the complete subsidy approval email(s) that was submitted to the Daily Deals team. This includes the subsidy offer, the listing ID(s), and an explicit approval of each Individual Order Form.
+
+
+*Transaction data will no longer be provided for error reports that include transactions that should be excluded. See A.3. and B.3.
+
+
+C) Submitting Your Dispute
+
+Before sending your dispute, review and confirm that your submissions are complete and accurate.
+Attach subsidy approval emails based on the error type selected.
+Reply to your monthly statement email (without changing the subject heading) and attach all requested documents.
+
+Reports are sent to deals_subsidy_support@ebay.com
+REMINDER: Review all guidelines and documents for accuracy and completion.
+
+
+D) Review Timeline
+
+Payment disputes submitted within 10 business days of receiving the second final Statement will be reviewed and completed within the next 7 business days after the due date. We will review them in one batch after the deadline is up and then submit to our Finance and controllership team for approval before payment can be sent out via PayPal.
+Payment disputes submitted after 10 business days of receiving the second final Statement will no longer be adjusted.
+Payment disputes submitted after an initial review has been completed will be reviewed within 20 business days.
+Payment disputes submitted incorrectly will delay your review.
+
+
+UPDATING SUBSIDY ACCOUNT AND CONTACT INFORMATION
+
+
+Complete the following information and send to deals_subsidy_support@ebay.com
+
+
+PAYMENT CONTACT INFORMATION
+
+CURRENT ACCOUNT INFORMATION
+
+PROPOSED ACCOUNT CHANGES
+
+Seller name
+
+The account name used to execute subsidy deals.
+
+
+
+Parent Account (if applicable)
+
+If the seller name provided is a child account, provide the parent account name.
+
+
+
+Primary Recipient Name (First/Last):
+
+The contact who should receive subsidy communication, including monthly review and payment statements.
+
+
+
+Primary Email:
+
+The email will be addressed to this contact.
+
+
+
+Secondary Recipient Name(s)(First/Last):
+
+Additional contact(s) who should also be copied on subsidy communication.
+
+
+
+Secondary Email:
+
+This contact(s) will be cc’d on this email..
+
+
+
+PayPal Email Address of Recipient:
+
+PayPal account where funds should be sent.
+
+
+
+
+SUBSIDY FAQs
+
+
+SELLER QUESTIONS
+
+EBAY ANSWERS
+
+My subsidized deal ran in June. When will I receive payment?
+
+Subsidy payments are submitted in two batches: The first reconciliation occurs post 30 days, then another after 60 days from the last day of the month that the deal was live on the site. Each payment will hit the seller accounts within 3 to 5 business days of statement receipt.
+
+My subsidized deal ran June 23rd through July 3rd. Is this considered a June deal or a July deal?
+
+Subsidy is paid based on the first day the deal was live on the site. In this example, this deal would be included in the June subsidy statement.
+
+My subsidy statement shows fewer units sold than our reporting tools. Why is our reporting different?
+
+Subsidy payments are based on a listing’s net units sold, excluding transactions that are returns, cancellations, unpaid items and/or items sold outside of the subsidy window. Sellers should exclude these items when submitting error reports, which should help identify any outstanding variances between the seller’s and eBay’s reporting.
+
+Why are there deals missing from my subsidy statement?
+
+Contract amendments impact how deals are input into our reporting tools. Finalizing all contract changes before the deal is live on the site will eliminate deal omissions when processing payment. Sellers are expected to maintain all approved contracts to properly dispute payment variances.
+
+I can’t locate my payment in my PayPal account. Do you have a transaction ID?
+
+eBay does not maintain transaction IDs that correspond to the transaction IDs found in your PayPal account. In order to locate your payment, search for sender, ebaygiftcert2@ebay.com, with a confirmation message that confirms the subsidy month.
+
+
+
+Thanks again for your support!
+
+
+Deals Subsidy Operations
+
+
+
+
+This message is intended only for the use of the Addressee and contain information that is EBAY CONFIDENTIAL. If you are not the intended recipient, dissemination of this communication is prohibited. If you have received this communication in error, please erase all copies immediately.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

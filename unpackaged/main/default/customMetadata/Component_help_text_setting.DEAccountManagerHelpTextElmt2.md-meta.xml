@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>DEAccountManagerHelpTextElmt2</label>
+    <protected>false</protected>
+    <values>
+        <field>Bigger_Body_Test__c</field>
+        <value xsi:type="xsd:string">&lt;p&gt;eBay-Verk&amp;auml;ufern mit einem Premium-Shop-Abonnement wird ein erfahrener Experte aus dem Team von eBay zur Seite gestellt, der sie dabei unterst&amp;uuml;tzt, ihr Gesch&amp;auml;ft bei eBay auszubauen. Der Account Manager analysiert regelm&amp;auml;&amp;szlig;ig das Gesch&amp;auml;ft des Verk&amp;auml;ufers, erarbeitet verkaufsf&amp;ouml;rdernde Ma&amp;szlig;nahmen und gibt dem Verk&amp;auml;ufer individuelle Empfehlungen zur Verbesserung des Gesch&amp;auml;fts, wie z. B.:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Regelm&amp;auml;&amp;szlig;ige Performance-Analyse der Verk&amp;auml;ufe und Angebote&lt;/li&gt;
+&lt;li&gt;Individuelle, auf das Gesch&amp;auml;ft zugeschnittene Empfehlungen&lt;/li&gt;
+&lt;li&gt;Angebote optimieren und dadurch sichtbarer machen&lt;/li&gt;
+&lt;li&gt;Anzeigen bei eBay schalten Verkaufsaktionen durchf&amp;uuml;hren &lt;li&gt;Transaktionen und R&amp;uuml;ckgaben optimieren&lt;/li&gt;
+&lt;li&gt;eBay-Tools und Funktionalit&amp;auml;ten effizient und effektiv nutzen&lt;/li&gt;
+&lt;li&gt;International verkaufen und expandieren&lt;/li&gt;
+&lt;li&gt;Pers&amp;ouml;nliche Hilfe bei den Einstellungen der Verk&amp;auml;uferkonten wie z.B. Freischaltung neuer Verk&amp;auml;uferkonten oder Anpassung von Verkaufslimits&lt;/li&gt;
+&lt;li&gt;Pers&amp;ouml;nliche Beratung zu &amp;Auml;nderungen bei eBay und wie das Gesch&amp;auml;ft darauf vorbereitet werden kann&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Die vollst&amp;auml;ndigen Bedingungen zur Buchung eines Account Managers entnehmen Sie dem Grundsatz f&amp;uuml;r eBay Account Management. Zudem gelten die Nutzungsbedingungen f&amp;uuml;r eBay Shops und eBay-Verk&amp;auml;ufertools.&lt;/p&gt;</value>
+    </values>
+    <values>
+        <field>Heading__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Help_Text__c</field>
+        <value xsi:type="xsd:string">Die Leistungen des Account Management-Abonnements</value>
+    </values>
+    <values>
+        <field>Inner_Help_Text__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

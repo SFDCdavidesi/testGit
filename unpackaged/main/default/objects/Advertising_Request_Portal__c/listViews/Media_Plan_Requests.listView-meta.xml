@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Media_Plan_Requests</fullName>
+    <columns>NAME</columns>
+    <columns>Name__c</columns>
+    <columns>Opportunity__c</columns>
+    <columns>Opportunity_Amount__c</columns>
+    <columns>Request_Type__c</columns>
+    <columns>Due_Date__c</columns>
+    <columns>Campaign_Objective__c</columns>
+    <columns>KPI_Benchmark__c</columns>
+    <columns>KPI_Measurement__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <label>Media Plan Requests</label>
+</ListView>

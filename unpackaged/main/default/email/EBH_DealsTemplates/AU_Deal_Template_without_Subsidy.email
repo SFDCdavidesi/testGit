@@ -1,0 +1,66 @@
+<table style="width: 946px; border-collapse: collapse;" border="1" cellspacing="5" cellpadding="5">
+    <tbody>
+    <tr><td colspan="2" style="text-align: center;background-color: #ccc;"><b>PARTIES</b></td></tr>
+     <tr>
+    <td style="width: 100px;background-color: #ccc;"><b>eBay, us</b></td>
+    <td>
+    <p>eBay Marketplaces GmbH, a company incorporated in Bern, whose principal place of business is at Helvetiastrasse 15/17, CH-3005 Bern, Switzerland.
+    </p>
+    </td>
+    </tr>
+    <tr>
+    <td style="width: 100px;background-color: #ccc;"><b>You </b>or <b>Your</b></td>
+    <td>
+    <p>{!EBH_Deal__c.CompanyName__c}, (ABN {!EBH_Deal__c.SellerVATNumber__c}) a company incorporated in Australia, with its principal place of business at {!EBH_Deal__c.SellerAddress__c}.</p>
+    </td>
+     </tr>
+    </tbody>
+    </table>
+    <p>The terms of this email are subject to the Deals Portal Master Terms and Conditions between eBay and You, which is set out at: <a title="Coupon Terms and Conditions" href="https://pages.ebay.com.au/deals-portal/terms">[https://pages.ebay.com.au/deals-portal/terms]</a>. Terms not defined shall have the meaning given to them in the Deals Portal Master Terms and Conditions. </p>
+    <p>Your participation in the Deals Program has been approved by eBay. Pursuant to the Deals Portal Master Terms and Conditions, You and eBay agree to enter into a Deals Portal Term Sheet as set out in this email. The details of Your participation in the Deals Program are as set out below:</p>
+    <table style="width: 946px; height: 100px; border-collapse: collapse;" border="1" cellspacing="5" cellpadding="5">
+    <tbody>
+    <tr style="height: 16px;">
+    <td style="width: 250.222px; height: 16px;"><strong>Seller User ID</strong></td>
+    <td colspan="2" style="width: 674.778px; height: 16px;">User ID: {!EBH_Deal__c.eBay_Seller_Name__c}</td>
+    </tr>
+    <tr style="height: 16px;">
+    <td rowspan="4" style="width: 250.222px;"><strong>Deal Period</strong></td>
+    <td style="width: 337.389px; height: 16px;">From time (“Start Time”)</td>
+    <td style="width: 337.389px; height: 16px;">{!EBH_Deal__c.EBH_DealStartTime__c}</td>
+    </tr>
+    <tr style="height: 16px;">
+    <td style="width: 337.389px; height: 16px;">From date (“Start Date”)</td>
+    <td style="width: 337.389px; height: 16px;">{!EBH_Deal__c.EBH_DealStartDate__c}</td>
+    </tr>
+    <tr style="height: 16px;">
+    <td style="width: 337.389px; height: 16px;">To time (“End Time”)</td>
+    <td style="width: 337.389px; height: 16px;">{!EBH_Deal__c.EBH_DealEndTime__c}</td>
+    </tr>
+    <tr style="height: 16px;">
+    <td style="width: 337.389px; height: 16px;">To date (“End Date”)</td>
+    <td style="width: 337.389px; height: 16px;">{!EBH_Deal__c.EBH_DealEndDate__c}</td>
+    </tr>
+    </tbody>
+    </table>
+    <p><strong>Deal:</strong></p>
+    <table style="width: 946px; height: 100px; border-collapse: collapse;" border="1" cellspacing="5" cellpadding="5">
+    <tbody>
+    <tr style="height: 16px;">
+    <td style="width: 200px; height: 16px;"><strong>Item</strong></td>
+    <td  style="width: 250px; height: 16px;"><strong>Item Number</strong></td>
+    <td  style="width: 250px; height: 16px;"><strong>Current Price (List Price or RRP)</strong></td>
+    <td  style="width: 250px; height: 16px;"><strong>Agreed Deal Price to Customers</strong></td>
+    <td  style="width: 250px; height: 16px;"><strong>Quantity/Units</strong></td> 
+    </tr>
+    <tr style="height: 16px;">
+    <td>{!EBH_Deal__c.EBH_ProductTitle__c}</td>
+    <td>{!EBH_Deal__c.EBH_eBayItemID__c}</td>
+    <td>{!EBH_Deal__c.EBH_RRPWASPrice__c}</td>
+    <td>{!EBH_Deal__c.EBH_DealPrice__c}</td>
+    <td>{!EBH_Deal__c.EBH_Quantity__c}</td>
+    </tr>
+    </tbody>
+    </table>
+    <p>IF YOU ACCEPT THE TERMS OF THIS EMAIL, <strong><u>CLICK “I AGREE” BELOW</u></strong>. BY CLICKING “I AGREE” BELOW, YOU ARE CONFIRMING THAT YOU ARE DULY AUTHORISED TO ENTER INTO AN AGREEMENT WITH EBAY AND THAT THE INFORMATION PROVIDED IS ACCURATE.</p>
+    <p style="text-align: center;"><a title="I AGREE" href="{!EBH_Deal__c.SiteURL__c}?restype=acceptdeal&id={!EBH_Deal__c.Id}&amp;reURL=www.ebay.au">I AGREE</a></p>

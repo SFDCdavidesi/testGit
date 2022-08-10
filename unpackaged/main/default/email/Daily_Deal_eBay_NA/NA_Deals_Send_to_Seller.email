@@ -1,0 +1,8 @@
+Hi {!EBH_Deal__c.Deal_Contract_Seller_Name__c}
+<br/><br/>
+<p>Please click on the below link to approve/ decline deal terms via individual order forms. In the link, enter “Approved” or “Declined” in the Individual Order Forms to submit your approval.</p>
+<p> Amendments submitted after this approval will cancel these Deal Terms.</p>
+<br/><br/>
+<a href="{!EBH_Deal__c.SiteURL__c}/DocumentApproval?id={!EBH_Deal__c.Current_Digest__c}&approver={!EBH_Deal__c.Seller_Approver_1__c}">Click Here</a>
+</br><br/>
+<p>Thanks</p>

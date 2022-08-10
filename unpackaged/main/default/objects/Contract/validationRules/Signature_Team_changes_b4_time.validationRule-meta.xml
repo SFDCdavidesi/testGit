@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Signature_Team_changes_b4_time</fullName>
+    <active>true</active>
+    <description>EPH-5369, US-0007080</description>
+    <errorConditionFormula>AND(
+/* commented by DHE 2018-11-13 
+   $Profile.Name =&quot;Signature team&quot;,*/
+ $Permission.Signature_team_Custom_Permission ,
+    ISCHANGED(EBH_EUSignNotes__c),
+    OR(
+        ISPICKVAL( Status, &#39;Executed&#39;),
+        ISPICKVAL( Status, &#39;Expired&#39;),
+        ISPICKVAL( Status, &#39;Voided&#39;)       
+       )
+    ) &amp;&amp; NOT( $Setup.ActiveValidationRules__c.All_Validation_Rules_Deactivated__c )</errorConditionFormula>
+    <errorMessage>Please changes can&#39;t be made at this stage.</errorMessage>
+</ValidationRule>

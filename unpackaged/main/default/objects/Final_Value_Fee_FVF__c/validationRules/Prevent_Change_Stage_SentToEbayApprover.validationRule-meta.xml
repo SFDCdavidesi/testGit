@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Change_Stage_SentToEbayApprover</fullName>
+    <active>false</active>
+    <description>US-0008562 - [UK] FVF (seller level) enhancements
+US-0009110 - Deactivating and moving to auto Submit for Approval by the Process Builder</description>
+    <errorConditionFormula>AND(
+   !From_System__c,
+   RecordType.DeveloperName  = &#39;FVF_Seller_Level&#39;, 
+   ISCHANGED(Final_Value_Fee_Stage__c), 
+   ISPICKVAL(Final_Value_Fee_Stage__c, &#39;Sent_to_eBay_Approval&#39;)
+)</errorConditionFormula>
+    <errorMessage>This stage cannot be changed manually, please click on the submit for approval button to send to ebay approver</errorMessage>
+</ValidationRule>

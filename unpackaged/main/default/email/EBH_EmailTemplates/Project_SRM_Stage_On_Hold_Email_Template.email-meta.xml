@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0009646 - AC4</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Project SRM Stage On-Hold Email Template</name>
+    <style>none</style>
+    <subject>Seller Risk Management Ticket Number {!EBH_Project__c.Ticket_Number__c} has been put On-Hold</subject>
+    <textOnly>Seller : {!EBH_Project__c.EBH_Seller__c}
+
+Request Type : {!EBH_Project__c.Request_Type__c}
+
+Last modified by : {!EBH_Project__c.LastModifiedBy}
+
+
+For more details, please go to: {!EBH_Project__c.Name}.
+
+
+Thank you.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

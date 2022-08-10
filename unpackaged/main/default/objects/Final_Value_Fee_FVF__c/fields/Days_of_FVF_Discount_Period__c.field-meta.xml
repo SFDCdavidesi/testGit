@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Days_of_FVF_Discount_Period__c</fullName>
+    <description>EPH-7295 New object: Final Value Fee (FVF). Record Type - &quot;Listing Level&quot;</description>
+    <externalId>false</externalId>
+    <formula>IF(
+  (End_Date_w__c - Start_Date_w__c) &lt; 0, NULL,
+   (End_Date_w__c - Start_Date_w__c)  + 1
+)</formula>
+    <label>Days of FVF Discount Period</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

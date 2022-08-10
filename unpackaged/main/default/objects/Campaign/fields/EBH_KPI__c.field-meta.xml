@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_KPI__c</fullName>
+    <description>[EBH] (EPH-1806) Action you want seller to take</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please describe the challenge you are trying to solve and goal you are trying to reach with this campaign.</inlineHelpText>
+    <label>Action you want seller to take</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,4 @@
+<p>Dear {!Contract.OwnerFullName},</p>
+<p>Your {!Contract.RecordType} {!Contract.ContractNumber} for {!Contract.Account} is about to expire {!Contract.Pricing_Reminder_Period__c}.</p>
+<p>Please take action <a href="{!Contract.Link}">{!Contract.ContractNumber}</a></p>
+<p>Thank you,<br/>Hive</p>

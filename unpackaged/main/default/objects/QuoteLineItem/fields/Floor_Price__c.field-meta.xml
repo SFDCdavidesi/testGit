@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Floor_Price__c</fullName>
+    <description>US-0009350 - [Ads 2020] EU Floor Price/Ad Type/Priority Requirements</description>
+    <externalId>false</externalId>
+    <formula>IF( 
+   PricebookEntry.Floor_Price__c &gt; 0,
+   PricebookEntry.Floor_Price__c,
+   Sales_Price_incl_Targeting__c  * 0.1 
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Floor Price</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>4</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

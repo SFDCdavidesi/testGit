@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AU_Upcoming_Deals</fullName>
+    <booleanFilter>1 AND 2 and 3</booleanFilter>
+    <columns>EBH_eBayItemID__c</columns>
+    <columns>NAME</columns>
+    <columns>EBH_ProductTitle__c</columns>
+    <columns>EBH_BusinessName__c</columns>
+    <columns>EBH_DealStartDate__c</columns>
+    <columns>EBH_DealStartTime__c</columns>
+    <columns>EBH_DealEndDate__c</columns>
+    <columns>EBH_DealEndTime__c</columns>
+    <columns>EBH_DealPrice__c</columns>
+    <columns>EBH_SellerEmail__c</columns>
+    <columns>EBH_Status__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>EBH_DealSiteId__c</field>
+        <operation>equals</operation>
+        <value>15</value>
+    </filters>
+    <filters>
+        <field>EBH_BusinessName__c</field>
+        <operation>notEqual</operation>
+        <value>testaubasic</value>
+    </filters>
+    <filters>
+        <field>EBH_DealStartDate__c</field>
+        <operation>greaterThan</operation>
+        <value>TODAY</value>
+    </filters>
+    <label>AU Upcoming Deals</label>
+</ListView>

@@ -1,0 +1,10 @@
+Hello!
+
+A request for {!Campaign.Name} to start on {!Campaign.StartDate} has been submitted by {!Campaign.CreatedBy}.
+
+·        Priority - {!Campaign.EBH_PriorityDescription__c}
+·        Channel - {!Campaign.EBH_ChannelMP__c}
+
+For more details, please go to {!Campaign.EBH_RecordLink__c}.
+
+Thank you.

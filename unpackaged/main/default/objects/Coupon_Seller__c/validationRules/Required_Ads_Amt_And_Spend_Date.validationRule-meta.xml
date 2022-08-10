@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Required_Ads_Amt_And_Spend_Date</fullName>
+    <active>true</active>
+    <description>US-0015701 [AU] Coupon Seller Object - New fields for AU Budget Mgmt. and Contracts + Validation Rule</description>
+    <errorConditionFormula>OR(AND( ISPICKVAL( Advertising_Promotion__c , &#39;Yes&#39;) , ISNULL( Advertising_Amount__c )),AND( ISPICKVAL( Advertising_Promotion__c , &#39;Yes&#39;) , ISNULL( Ad_Spend_Date__c )))</errorConditionFormula>
+    <errorMessage>Advertising Amount and Ad Spend Date are required</errorMessage>
+</ValidationRule>

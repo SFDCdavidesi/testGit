@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Coupon_Funding_Preference__c</fullName>
+    <description>EPH-8103 New Coupon Promotion preference fields on Customer Object</description>
+    <externalId>false</externalId>
+    <label>Coupon Funding Preference</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Standard</fullName>
+                <default>false</default>
+                <label>Standard</label>
+            </value>
+            <value>
+                <fullName>Strategic</fullName>
+                <default>false</default>
+                <label>Strategic</label>
+            </value>
+            <value>
+                <fullName>Highest</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Highest</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

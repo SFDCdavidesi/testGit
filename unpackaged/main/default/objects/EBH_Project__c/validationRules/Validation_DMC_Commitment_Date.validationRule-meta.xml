@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_DMC_Commitment_Date</fullName>
+    <active>true</active>
+    <description>US-0007670 - Validation Rule to Capture DMC Commitment Date</description>
+    <errorConditionFormula>AND( OR($Profile.Name=&#39;GCX Profile&#39;,$Profile.Name=&#39;Standard User Profile&#39;,$Profile.Name=&#39;GCX Partner Profile&#39;) , RecordType.DeveloperName=&#39;ManagedPayment&#39; , ISPICKVAL( EBH_Stage__c , &#39;Merchant Agreement&#39;),  OR( ISBLANK( EBH_DMCInterestedCommittedDate__c ) ,EBH_DMCInterestedCommittedDate__c &lt;  TODAY() )  )</errorConditionFormula>
+    <errorMessage>In order to update stage to Seller Agreement the seller&#39;s committed &#39;Preboarding/Pre-registration&#39; date must be greater than today and recorded in the field DMC Interested/DMC Committed Date</errorMessage>
+</ValidationRule>

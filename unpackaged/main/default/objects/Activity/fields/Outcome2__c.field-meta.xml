@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outcome2__c</fullName>
+    <externalId>false</externalId>
+    <label>Outcome</label>
+    <required>false</required>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Account committed</fullName>
+                <default>false</default>
+                <label>Account committed</label>
+            </value>
+            <value>
+                <fullName>Account not interested at all</fullName>
+                <default>false</default>
+                <label>Account not interested</label>
+            </value>
+            <value>
+                <fullName>Account is ineligible</fullName>
+                <default>false</default>
+                <label>Account ineligible</label>
+            </value>
+            <value>
+                <fullName>Account not reached</fullName>
+                <default>false</default>
+                <label>Account not reached</label>
+            </value>
+            <value>
+                <fullName>Account interested</fullName>
+                <default>false</default>
+                <label>Account interested</label>
+            </value>
+            <value>
+                <fullName>Wrong contact details</fullName>
+                <default>false</default>
+                <label>Wrong contact details</label>
+            </value>
+            <value>
+                <fullName>Account interested but not yet committed</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Account interested but not yet committed</label>
+            </value>
+            <value>
+                <fullName>Account is live</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Account is live</label>
+            </value>
+            <value>
+                <fullName>Account not interested at this time/follow up needed</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Account not interested at this time/follow up needed</label>
+            </value>
+            <value>
+                <fullName>Unable to contact/follow up needed</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Unable to contact/follow up needed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

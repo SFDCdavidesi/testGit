@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0011127 - IT Email Notification for Contract Status= &quot;Program Cancelled&quot;</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>IT Refurb Program Cancelled Notification</name>
+    <style>none</style>
+    <subject>Interruzione del programma Ricondizionato dal venditore | {!EBH_ContractSeller__c.EBH_BusinessName__c} | {!EndDate}</subject>
+    <textOnly>Programma Ricondizionato dal venditore
+
+Ciao,
+nostro rammarico ti comunichiamo l&#39;interruzione della tua partecipazione al programma Ricondizionato dal venditore (&quot;Programma&quot;): da una verifica è emerso che il tuo account non soddisfa più i requisiti per lo stato di venditore Affidabilità Top e/o gli oggetti che offri nell&#39;ambito del Programma non rispettano i criteri di idoneità. Per requisiti necessari alla partecipazion al Programma, ti invitiamo a leggere i relativi Termini e condizion.
+
+Venditore
+
+{!Contract.Account}
+
+{!Contract.BusinessContactStreet__c}
+
+{!Contract.BusinessContactPostalCode__c}
+
+{!Contract.BusinessContactCity__c}
+
+Seller User ID
+
+{!EBH_ContractSeller__c.EBH_BusinessName__c}
+
+Programma eBay
+
+Ricondizionato dal venditore
+
+Fine del programma
+
+{!EndDate}
+
+Sito/i eBay
+
+ebay.it
+
+Cordiali saluti,
+
+Il team eBay</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

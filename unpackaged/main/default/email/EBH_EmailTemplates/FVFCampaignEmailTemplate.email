@@ -1,0 +1,6 @@
+<p>Thank you for changing the status of your campaign to "Contract(s) Sent".<br />
+Final Value Fee contracts have been triggered from the system.<br />
+{!successSend} were successfully sent.<br/>
+{!failSend} could not be sent.<br/>
+{!possibleReason}{!reasonFail}
+</p>

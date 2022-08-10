@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Coupon_Marketing_Name__c</fullName>
+    <description>US-0012100</description>
+    <externalId>false</externalId>
+    <formula>Coupon_Seller__r.Marketing_Coupon_Name__c</formula>
+    <label>Coupon Marketing Name</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

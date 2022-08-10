@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ardira_Survey__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Reference to Ardira Survey record</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please select a Survey Vista Survey from the look up.</inlineHelpText>
+    <label>Survey</label>
+    <referenceTo>ArdiraSurvey__Survey__c</referenceTo>
+    <relationshipLabel>Tickets</relationshipLabel>
+    <relationshipName>Tickets</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

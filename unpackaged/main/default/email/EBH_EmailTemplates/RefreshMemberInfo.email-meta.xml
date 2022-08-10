@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>[#EPH-7023] Notification: # sellers were not transfered to campaign members [Error]</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>RefreshMemberInfo</name>
+    <style>none</style>
+    <subject>Refresh Member Result for Campaign {!CampaignName}</subject>
+    <textOnly>You have uploaded {!CountSellerList} seller list(s) with {!CountTargetSeller} seller records to the Campaign {!CampaignName}.
+
+{!CountCMCreated} Campaign Member(s) has (have)  been created from these {!CountTargetSeller} seller records:
+
+{!CountSellerOptOut} seller(s) did not migrate to Campaign Members due to being flagged for phone opt-out.
+{!BadSellerOther} seller(s) did not migrate to Campaign Members due to other reasons:
+
+{!BadSellers}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

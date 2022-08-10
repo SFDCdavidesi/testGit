@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>[#EPH-7342] Deals Invoicing Email - Deals Invoice Statement (ES)</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>ES Deals Invoice Statement</name>
+    <style>none</style>
+    <subject>Información importante: detalles de facturación relativos a las mejores ofertas desde {!EBH_Deal__c.EBH_DealStartDate__c}</subject>
+    <textOnly>A continuación/adjunto, encontrarás los detalles de la asistencia de marketing facturable por las mejores ofertas completadas desde {!EBH_Deal__c.EBH_DealStartDate__c}:
+
+Detalles de las mejores ofertas:
+
+{!EBH_Deal__c.EBH_DealStartDate__c} bis {!EBH_Deal__c.EBH_DealEndDate__c}
+{!EBH_Deal__c.EBH_ProductTitle__c}
+{!EBH_Deal__c.EBH_eBayItemID__c}
+{!EBH_Deal__c.EBH_LocalDealFormat__c}
+
+Asistencia de marketing facturable*:
+
+Volumen de ventas facturable: {!EBH_Deal__c.EBH_Payout_SI_calc__c}
+Asistencia de marketing por artículo vendido: {!EBH_Deal__c.EBH_Subsidy__c}
+Total neto de asistencia de marketing: {!EBH_Deal__c.Subsidy_Final_Net__c}
+IVA al: {!EBH_Deal__c.VAT_N__c}%
+Total bruto de asistencia de marketing: {!EBH_Deal__c.EBH_SubsidyFinal__c}
+
+
+* Esta no es una factura válida a efectos de IVA. La factura la emite el vendedor.
+
+Si estás de acuerdo con los detalles y el importe de pago, realizaremos una transferencia de {!EBH_Deal__c.EBH_SubsidyFinal__c} a tu cuenta PayPal.
+Para ello, mándanos una factura mediante la herramienta de envío de facturas.
+
+Pulsa el vínculo siguiente si deseas obtener más información o si tienes dudas respecto a los detalles: vínculo con aclaraciones.
+Un agente de eBay se pondrá en contacto contigo muy pronto.
+
+
+Atentamente,
+
+Tu equipo de eBay
+
+
+eBay te ha enviado este mensaje a {!EBH_Deal__c.EBH_BusinessName__c}.
+Este mensaje incluye el nombre con el que te registraste para demostrar que procede de eBay.
+
+Más información
+
+Este mensaje te ha sido enviado por eBay GmbH, que puede utilizar a sus filiales para prestar sus servicios. Si no eres residente en la UE, por favor encuentra los datos de contacto de tu proveedor de servicios en las Condiciones de Uso.
+Se te ha enviado este mensaje de correo electrónico porque tus preferencias de notificación indican que quieres recibir información sobre promociones, ofertas y eventos especiales. Estás registrado en www.ebay.es. Si deseas que no te enviemos más mensajes promocionales pulsa aquí.
+
+Tal como se señala en las Condiciones de uso, te enviaremos información periódica sobre los cambios y las mejoras realizados en nuestro sitio. Si tienes alguna pregunta, por favor visita nuestras Condiciones de uso y Aviso sobre privacidad.
+
+Copyright © 2019 eBay Inc.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>UK [EBH] (EPH-4171) - Mass Acceptance of Deals with Subsidy</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>EBH_eBayBlankLetterhead</letterhead>
+    <name>UK Mass Acceptance of Deals without Subsidy</name>
+    <style>freeForm</style>
+    <subject>Here&#39;s your Promotion Agreement for your eBay deal</subject>
+    <textOnly>Please accept the Promotion Agreement by clicking https://hive-prod.secure.force.com/response?id={!EBH_Deal__c.Id}&amp;reURL=www.ebay.co.uk
+
+eBay username: {!EBH_Deal__c.EBH_BusinessName__c}
+Title : {!EBH_Deal__c.EBH_ProductTitle__c}
+Quantity: {!EBH_Deal__c.EBH_Quantity__c}
+
+Details
+Format &amp; date: {!EBH_Deal__c.EBH_LocalDealFormat__c}  | {!EBH_Deal__c.EBH_DealStartDate__c} to {!EBH_Deal__c.EBH_DealEndDate__c}
+Start date: {!EBH_Deal__c.EBH_DealStartDate__c}
+End date: {!EBH_Deal__c.EBH_DealEndDate__c}
+Previous Price (previous price): {!EBH_Deal__c.EBH_RRPWASPrice__c}
+Deal price: {!EBH_Deal__c.EBH_SellerPrice__c}
+
+eBay comments
+{!EBH_Deal__c.EBH_CommentfromeBaySourcer__c}
+
+By agreeing, you confirm that:
+• The item offered by you is not counterfeit or plagiarized.
+• You&#39;re authorised to sell or distribute this item and send it to the locations specified by you.
+• You&#39;re not violating any contractual obligations under other contracts by offering this item for sale on eBay.
+• The above list price quoted by you is the actual previous sale price.
+• That you won&#39;t change the offer of the discontinued item during the promotional period stated above without the express written consent of eBay.
+
+This Promotion Agreement is intended to document the terms and conditions of a promotion on the eBay website (s) listed above and is integral part of the promotional agency agreement you have entered into with eBay (UK) Ltd.
+
+
+With many greetings
+Your eBay team</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

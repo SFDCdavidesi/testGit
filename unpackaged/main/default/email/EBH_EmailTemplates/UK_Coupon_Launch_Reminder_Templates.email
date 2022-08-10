@@ -1,0 +1,52 @@
+<p>This email is to remind you of your participation in the following eBay Coupon, which you agreed to on {CONTRACT_ACCEPT_DATE}.</p>
+<table style="width: 946px; height: 490px; border-collapse: collapse;" border="1" cellspacing="5" cellpadding="5">
+<tbody>
+<tr style="height: 16px;">
+<td style="width: 250.222px; height: 16px;"><strong>Seller User ID</strong></td>
+<td style="width: 674.778px; height: 16px;">{eBaySellerID}</td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 250.222px; height: 16px;"><strong>Coupon Code</strong></td>
+<td style="width: 674.778px; height: 16px;">{Coupon_ID__c}</td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 250.222px; height: 16px;"><strong>Promotion Period</strong></td>
+<td style="width: 674.778px; height: 16px;">From {CouponStartTime} on {CouponStartDate} until {CouponEndTime} on {CouponEndDate} (GMT)</td>
+</tr>
+<tr style="height: 34px;">
+<td style="width: 250.222px; height: 34px;"><strong>Coupon Amount or Percentage&nbsp;</strong></td>
+<td style="width: 674.778px; height: 34px;">{CouponDiscount%}{CouponDiscountAmount}</td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 250.222px; height: 16px;"><strong>Included Categories</strong></td>
+<td style="width: 674.778px; height: 16px;">{!CatNameIdTable}</td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 250.222px; height: 16px;"><strong>Excluded Categories</strong></td>
+<td style="width: 674.778px; height: 16px;">
+<ul>
+<li>Cars, Motorcycles &amp; Vehicles (9800)</li>
+<li>Property (10542)</li>
+<li>Coins (11116)</li>
+</ul>
+</td>
+</tr>
+<tr style="height: 34px;">
+<td style="width: 250.222px; height: 34px;"><strong>Minimum Transaction Value</strong></td>
+<td style="width: 674.778px; height: 34px;">{Minimum_Transaction_Value__c}</td>
+</tr>
+<tr style="height: 34px;">
+<td style="width: 250.222px; height: 34px;"><strong>Maximum Discount Value</strong></td>
+<td style="width: 674.778px; height: 34px;">{CouponCap}</td>
+</tr>
+<tr style="height: 34px;">
+<td style="width: 250.222px; height: 34px;"><strong>Number of Buyer Redemptions</strong></td>
+<td style="width: 674.778px; height: 34px;">{Max_Redemptions__c}</td>
+</tr>
+<tr style="height: 23.4445px;">
+<td style="width: 250.222px; height: 23.4445px;"><strong>Terms & Conditions</strong></td>
+<td style="width: 674.778px; height: 23.4445px;"><a title="Terms & Conditions" href="https://pages.ebay.co.uk/coupon-form-terms-and-conditions/index.html">https://pages.ebay.co.uk/coupon-form-terms-and-conditions/index.html</a></td>
+</tr>
+</tbody>
+</table>
+<p>Finally, please ensure your listings have accurate and sufficient stock levels.</p>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>[EBH] (EPH-4171) - Mass Acceptance of Deals without Subsidy</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>EBH_eBayBlankLetterhead</letterhead>
+    <name>DE Mass Acceptance of Deals with Subsidy</name>
+    <style>freeForm</style>
+    <subject>Akzeptiert: {!EBH_Deal__c.EBH_LocalDealFormat__c} {!EBH_Deal__c.EBH_ProductTitle__c} {!EBH_Deal__c.EBH_eBayItemID__c} {!EBH_Deal__c.EBH_DealStartDate__c}</subject>
+    <textOnly>Werbeaktions-Einzelvertrag
+
+
+
+Mit diesem Werbeaktions-Einzelvertrag bieten wir Ihnen die Teilnahme an einem WOW! Angebot zu den nachstehenden Konditionen sowie auf Basis der dazugehörigen „Werbeaktions-AGB“ an, welche Sie unter https://pages.ebay.de/werbeaktions-agb/index.html einsehen können.
+
+Durch Anklicken des nachstehenden Buttons „ICH STIMME ZU“ erklären Sie Ihre ausdrückliche Zustimmung zu diesem Werbeaktions-Einzelvertrag, den Werbeaktions-AGB, und somit Ihre Teilnahme an dem WOW! Angebot. Die Zustimmung muss spätestens 1 Tag vor dem Start des WOW! Angebots erfolgt sein.
+
+
+
+ICH STIMME ZU
+
+
+
+Einzelheiten zum WOW! Angebot
+
+
+eBay-Nutzername: {!EBH_Deal__c.EBH_BusinessName__c}
+
+Produktname: {!EBH_Deal__c.EBH_MarketingTitle__c}
+
+Verfügbare Stückzahl: {!EBH_Deal__c.EBH_Quantity__c}
+
+Aktionsformat: {!EBH_Deal__c.EBH_LocalDealFormat__c}
+
+Start der Aktion: {!EBH_Deal__c.EBH_DealStartDate__c}, 08:00
+
+Ende der Aktion: {!EBH_Deal__c.EBH_DealEndDate__c}, 07:59
+
+Website(s): DE
+
+
+Preis
+
+UVP/Bisher-Preis: €{!EBH_Deal__c.EBH_RRPWASPrice__c}
+
+Ihr Angebotspreis: €{!EBH_Deal__c.EBH_SellerPrice__c}
+
+
+Ermäßigter Aktionspreis*: €{!EBH_Deal__c.EBH_DealPrice__c}
+
+
+
+* Ermäßigter Aktionspreis = Ihr Angebotspreis für die Aktion - Vermarktungsunterstützung pro verkauftem Artikel
+
+
+
+Vermarktungsunterstützung
+
+Vermarktungsunterstützung pro verkauftem Artikel (inkl. USt.): €{!EBH_Deal__c.EBH_Subsidy__c}
+
+Maximale Vermarktungsunterstützung - Menge: {!EBH_Deal__c.EBH_Quantity__c}
+
+Maximale Vermarktungsunterstützung - Betrag: €{!EBH_Deal__c.Subsidy_Planned_Gross__c}
+
+
+
+Anmerkungen
+
+{!EBH_Deal__c.EBH_CommentfromeBaySourcer__c}
+
+
+
+Mit freundlichen Grüßen
+
+Ihr eBay Team</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

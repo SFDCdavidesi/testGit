@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Located_in_EU__c</fullName>
+    <description>US-0009221 - [Ads 2020] Field &amp; Formulas for Revenue Recognition and Compliance</description>
+    <externalId>false</externalId>
+    <formula>CASE(TEXT(Country_Code__c),&quot;AT&quot;,1,&quot;BE&quot;,1,&quot;BG&quot;,1,&quot;CY&quot;,1,&quot;CZ&quot;,1,&quot;EE&quot;,1,&quot;FI&quot;,1,&quot;FR&quot;,1,&quot;GR&quot;,1,&quot;HU&quot;,1,&quot;IE&quot;,1,&quot;IT&quot;,1,&quot;LV&quot;,1,&quot;LT&quot;,1,
+&quot;LU&quot;,1,&quot;MT&quot;,1,&quot;NL&quot;,1,&quot;PL&quot;,1,&quot;PT&quot;,1,&quot;RO&quot;,1,&quot;SK&quot;,1,&quot;SI&quot;,1,&quot;ES&quot;,1,&quot;SE&quot;,1,&quot;DE&quot;,1,&quot;DK&quot;,1 ,0)=1</formula>
+    <label>Located in EU</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

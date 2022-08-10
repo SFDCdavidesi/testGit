@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_NightPhone__c</fullName>
+    <description>[EBH] (EPH-2201) : Night Phone</description>
+    <externalId>false</externalId>
+    <label>Night Phone</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Phone</type>
+</CustomField>

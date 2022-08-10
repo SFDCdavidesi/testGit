@@ -1,0 +1,7 @@
+Hello!
+
+Your request for {!Campaign.Name} for {!Campaign.StartDate} has been rejected due to ‘{!ApprovalRequest.Comments}’.
+
+For more details, please go to {!Campaign.EBH_RecordLink__c}.
+
+Thank you.

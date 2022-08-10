@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Non_Sold_SKUs_in_Stock_Fulfillment_7d__c</fullName>
+    <description>US-0007265 Fulfilment metrics</description>
+    <externalId>false</externalId>
+    <inlineHelpText>#SKUs that are in stock for 7 days and that have zero sales divided by total #SKUs that are in stock for 7 days</inlineHelpText>
+    <label>eFF Non-Sold SKUs in Stock % (7 Days)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

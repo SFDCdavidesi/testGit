@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0011429 - [PT] Email Notification to Internal users when Call outcome is updated</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>UK Call Rescheduled by Seller Notification</name>
+    <style>none</style>
+    <subject>{!BoB_Seller__c.Seller_Name__c} has rescheduled their call.</subject>
+    <textOnly>Dear {!BoB_Seller__c.Account_Manager__c}
+
+Your seller ({!BoB_Seller__c.Seller_Name__c}) has rescheduled their call to ({!BoB_Seller__c.Next_Call_Schedule_Date__c} {!BoB_Seller__c.Next_Call_Time__c}).
+
+Please review the cohort seller record ({!BoB_Seller__c.Link}) and adjust your workload accordingly.
+
+Thank you,
+HIVE.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

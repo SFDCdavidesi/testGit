@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SurveyResult2__c</fullName>
+    <description>US-0007890 - [AU] Add 3 fields to activity object for campaign specific outputs</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Answer from survey</inlineHelpText>
+    <label>Survey result 2</label>
+    <length>255</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

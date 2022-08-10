@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_ContactEmail__c</fullName>
+    <description>[EBH] (EPH-116) : Contact Email Address (Primary key to contact in SF, in case CONTACT_SF_ID is empty)</description>
+    <externalId>false</externalId>
+    <formula>Contact.Email</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Contact Email</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

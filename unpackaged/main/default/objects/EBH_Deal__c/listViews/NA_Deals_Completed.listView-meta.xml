@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NA_Deals_Completed</fullName>
+    <columns>NAME</columns>
+    <columns>EBH_BusinessName__c</columns>
+    <columns>EBH_eBayItemID__c</columns>
+    <columns>EBH_ProductTitle__c</columns>
+    <columns>EBH_DealFormat__c</columns>
+    <columns>EBH_DealStartDate__c</columns>
+    <columns>EBH_DealEndDate__c</columns>
+    <columns>EBH_Status__c</columns>
+    <columns>EBH_Vertical__c</columns>
+    <columns>EBH_Category__c</columns>
+    <columns>Merchant_Approver__c</columns>
+    <columns>Director__c</columns>
+    <columns>Seller_Approver_1__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>EBH_Status__c</field>
+        <operation>equals</operation>
+        <value>Completed</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>EBH_Deal__c.Deal_V2</value>
+    </filters>
+    <label>NA Deals - Completed</label>
+</ListView>

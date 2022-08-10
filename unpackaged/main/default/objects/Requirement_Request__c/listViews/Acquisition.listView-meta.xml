@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Acquisition</fullName>
+    <columns>Hive_Project__c</columns>
+    <columns>Status__c</columns>
+    <columns>NAME</columns>
+    <columns>Requirement_Description__c</columns>
+    <columns>Prio_DE__c</columns>
+    <columns>Prio_EEC__c</columns>
+    <columns>Prio_UK__c</columns>
+    <columns>Prio_AU__c</columns>
+    <columns>Prio_US__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>HIVE_Product__c</field>
+        <operation>equals</operation>
+        <value>Acquisition</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Completed,Rejected</value>
+    </filters>
+    <label>Acquisition</label>
+</ListView>

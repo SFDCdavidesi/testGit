@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Coupon_Send_BCD_File_To_DL__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>US-0007219 US-0007219 - Coupon &amp; Coupon Seller - attach T4 and T40 statement &amp; custom flag</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Allow trigger to send email to DL when stage reaches T4 or T40</inlineHelpText>
+    <label>Coupon: Send BCD File To DL</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

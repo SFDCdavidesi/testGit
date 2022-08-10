@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conditional_Mandatory_Stage_Integration</fullName>
+    <active>true</active>
+    <description>US-0018736 [AU] New Project Process/Fields for AU SMB and AU Enterprise
+US-0007464 - [AU] Make Integration Manager on Project Mandatory
+US-0007731 - [AU] Update Validation Rule for Project eBay AU SMB
+US-0009261 - [AU] Change Stage values for AU</description>
+    <errorConditionFormula>IF(AND(RecordType.DeveloperName = &#39;eBayAUSMB&#39;, 
+        CONTAINS(TEXT(EBH_Stage__c), &#39;Integration&#39;),
+        OR(ISBLANK(eBayUser_ID__c),
+           ISBLANK(Shopping_Card__c),
+           ISBLANK(Integration_partner__c),
+           ISBLANK(TEXT(Vertical__c)),
+           ISBLANK(Website__c),
+           ISBLANK(eBayStoreURL__c),  
+           ISBLANK(IntegrationManager__c)
+           ),
+         NOT( $Setup.ActiveValidationRules__c.All_Validation_Rules_Deactivated__c),
+         NOT(CONTAINS($Profile.Name, &#39;System&#39;))
+        )
+,true
+,false)</errorConditionFormula>
+    <errorMessage>The following fields are mandatory for integration Stages: 
+eBay User ID, 
+Shopping Cart, 
+Integration Partner, 
+Vertical, 
+Website, 
+eBay Store URL, Integration Manager</errorMessage>
+</ValidationRule>

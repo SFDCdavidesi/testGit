@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_ActiveSellingWeeks__c</fullName>
+    <description>[EPH] (EPH-5291 - Add a field on customer 360 and targeting engine : # selling weeks in the past 52 wks - SF HIVE)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Number of weeks the seller had a selling activity in last T52 weeks. For example a seller sold one item in week 1 and and week 2 in last T52 weeks the number displayed is 2.</inlineHelpText>
+    <label># Active Selling Weeks in the past 52 wk</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,4 @@
+<p>The&nbsp;FVF Statement has been rejected&nbsp;in Hive.&nbsp;</p>
+<p>Comments:</p>
+<p>{!ApprovalRequest.Comments}</p>
+<p><a title="Go to BCD Statement" href="{!BCD_Statement__c.Link}">Go to BCD Statement</a></p>

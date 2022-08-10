@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Deals Awaiting Confimation/Agreement DE</label>
+    <protected>false</protected>
+    <values>
+        <field>Item_Plural_Label__c</field>
+        <value xsi:type="xsd:string">Ihre Bestätigung in der E-Mail ist erforderlich</value>
+    </values>
+    <values>
+        <field>Item_Singular_Label__c</field>
+        <value xsi:type="xsd:string">Ihre Bestätigung in der E-Mail ist erforderlich</value>
+    </values>
+    <values>
+        <field>Order__c</field>
+        <value xsi:type="xsd:double">3.0</value>
+    </values>
+    <values>
+        <field>Parent_Item__c</field>
+        <value xsi:type="xsd:string">Deals_Aggregate_DE</value>
+    </values>
+    <values>
+        <field>Query__c</field>
+        <value xsi:type="xsd:string">SELECT COUNT() FROM EBH_Deal__c WHERE Seller_Portal_Status__c = &#39;Please agree on the proposed Deal&#39;</value>
+    </values>
+    <values>
+        <field>Required_Access_Level__c</field>
+        <value xsi:type="xsd:string">Eligible_for_DE_Deals</value>
+    </values>
+    <values>
+        <field>Target_URL__c</field>
+        <value xsi:type="xsd:string">/s/my-deal-lists?tabset-a1a84=cdf02</value>
+    </values>
+</CustomMetadata>

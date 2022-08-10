@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SurveyVista_Survey_Merge_Fields</fullName>
+    <description>SurveyVista Survey Merge Fields</description>
+    <displayedFields>
+        <field>Campaign_Related_Seller_Details__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>SurveyVista Survey Merge Fields</label>
+</FieldSet>

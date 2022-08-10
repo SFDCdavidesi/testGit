@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Competency__c</fullName>
+    <description>EPH-6931 Adjustments to Marketing Ticket Object &amp; User</description>
+    <externalId>false</externalId>
+    <label>Competency</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Copy</fullName>
+                <default>false</default>
+                <label>Copy</label>
+            </value>
+            <value>
+                <fullName>Creative</fullName>
+                <default>false</default>
+                <label>Creative</label>
+            </value>
+            <value>
+                <fullName>Targeting</fullName>
+                <default>false</default>
+                <label>Targeting</label>
+            </value>
+            <value>
+                <fullName>Journey</fullName>
+                <default>false</default>
+                <label>Journey</label>
+            </value>
+            <value>
+                <fullName>Scripting</fullName>
+                <default>false</default>
+                <label>Scripting</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

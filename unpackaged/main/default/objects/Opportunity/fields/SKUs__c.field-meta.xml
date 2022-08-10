@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SKUs__c</fullName>
+    <description>US-0008585 - [NA] Merchant Integration - Initiate help request
+INTEG - N || CODE - N || WF - N || AP - N || VAL - N || CLASS – (Internal) || SKUs|| CR - 02575449</description>
+    <externalId>false</externalId>
+    <label>SKUs</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

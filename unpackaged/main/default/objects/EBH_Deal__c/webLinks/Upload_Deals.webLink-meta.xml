@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Upload_Deals</fullName>
+    <availability>online</availability>
+    <description>US-0008088 - [US]* Bulk Creation of Deal Records from CSV Upload</description>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Upload Deals</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <requireRowSelection>false</requireRowSelection>
+    <url>{!IF( $Profile.Name = &#39;NA Standard User Base&#39;, URLFOR(&#39;/apex/MassUploadObject?setting=NA_Deal&amp;sendResult=true&amp;defVal=EBH_Status__c:New&amp;lkf=Contact:Email:28,29,30,31,32:Account.RecordTypeId:0126A000000M9xLQAS_Account.Name:7*Account:Name:7:RecordTypeId:0126A000000M9xLQAS&amp;fieldsiteColIndex=1&amp;colVerticalIndex=2&amp;colCategoryIndex=3&#39;) , URLFOR( &#39;/apex/EBH_UploadDeals&#39; ))}</url>
+</WebLink>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DirectAPIManagedby__c</fullName>
+    <description>US-0007708 - [AU] New fields for &#39;Managed Payment&#39; Pagelayout for Project</description>
+    <externalId>false</externalId>
+    <label>Direct API Managed by</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Local IT Team</fullName>
+                <default>false</default>
+                <label>Local IT Team</label>
+            </value>
+            <value>
+                <fullName>External IT Team</fullName>
+                <default>false</default>
+                <label>External IT Team</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

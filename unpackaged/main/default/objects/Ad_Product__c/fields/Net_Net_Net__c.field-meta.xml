@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Net_Net_Net__c</fullName>
+    <description>US-0007934 - [Ads 2020] Daily Ads Revenue - Required EU Fields for Accruals</description>
+    <externalId>false</externalId>
+    <label>Net/Net/Net</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

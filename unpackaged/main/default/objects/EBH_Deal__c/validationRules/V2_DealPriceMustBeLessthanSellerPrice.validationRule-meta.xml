@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>V2_DealPriceMustBeLessthanSellerPrice</fullName>
+    <active>true</active>
+    <description>US-0008843 - [NA] Migrate NA Deals Validation Rules to Hive
+US-0011270 - Update the V2_DealPriceMustBeLessthanSellerPrice validation rule</description>
+    <errorConditionFormula>AND( 
+RecordType.DeveloperName = &#39;Deal_V2&#39;,
+OR(ISBLANK(EBH_SellerPrice__c),
+EBH_DealPrice__c &gt; EBH_SellerPrice__c
+),
+NOT($Setup.byPass__c.ByPass_Validation__c)
+)</errorConditionFormula>
+    <errorMessage>Deal Price must be less than Seller Price</errorMessage>
+</ValidationRule>

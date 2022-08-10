@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GMV_LC__c</fullName>
+    <description>[#EPH-7796] New finacial fields for Coupon Seller &amp; Coupon Co-Invest Record record</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Coupon GMV in Local Currency</inlineHelpText>
+    <label>GMV LC (Payout)</label>
+    <precision>17</precision>
+    <required>false</required>
+    <scale>1</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,11 @@
+<p>Unfortunately, we were unable to process payment for a Deal completed on {!DealStartDate}. </p>
+<p>This was due to the following reason:</p>
+
+<table style="height: 156px; border: 1px solid black;" width="637">
+<tbody>
+<tr>
+<td style="width: 627.111px; text-align: justify; vertical-align: top; padding: 5px;">{!RejectionComment}</td>
+</tr>
+</tbody>
+</table>
+<p>Please apply the appropriate changes and upload the invoice for this transaction again using the invoice tool.</p>

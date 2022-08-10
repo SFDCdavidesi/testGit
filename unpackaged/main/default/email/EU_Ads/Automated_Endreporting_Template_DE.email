@@ -1,0 +1,13 @@
+<body>
+<p>Hallo [name]&nbsp; </p>
+<p>anbei finden Sie einen detaillierten Endreport der kürzlich ausgelaufenen Kampagne [opp.Ext_Name_Campaign__c] auf eBay. Dieser ist nach Tagen, Platzierungen und  Werbemitteln aufgeschlüsselt.</p>
+
+<p><bold>Die tagesbasierte Auswertung befindet sich im zweiten Reiter des angehängten Excel Reports.</bold></p>
+
+<p>[Additional_Mail_Text__c]</p>
+<p>Mit besten Grüßen,&nbsp;</p>
+<p>Ihr <em>eBay Advertising Team</em></p>
+<p><img src="https://hive--c.na124.content.force.com/servlet/servlet.ImageServer?id=0153u000002RNfL&oid=00D23000000DTd6&lastMod=1626752360000" /> </p>
+<p font-size:10px>eBay GmbH I Albert-Einstein-Ring 2-6 I 14532 Kleinmachnow I Deutschland<br>
+Geschäftsführer: Eben Sermon<br>
+HRB 13754 P, Amtsgericht: Potsdam - Sitz der Gesellschaft: Kleinmachnow</p>

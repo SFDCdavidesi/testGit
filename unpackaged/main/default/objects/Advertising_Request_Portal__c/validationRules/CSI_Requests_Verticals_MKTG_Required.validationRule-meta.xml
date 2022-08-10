@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CSI_Requests_Verticals_MKTG_Required</fullName>
+    <active>true</active>
+    <description>these fields are required if business = verticals or marketing</description>
+    <errorConditionFormula>AND(
+$Setup.byPass__c.byPass_WFRule__c = FALSE,
+RecordType.Name = &#39;CSI Requests&#39;,
+
+OR(
+ISPICKVAL(Business__c, &#39;Verticals&#39;),
+ISPICKVAL(Business__c, &#39;Marketing&#39;)
+),
+
+OR(
+ISBLANK( Products_clients_are_currently_using__c ),
+ISBLANK( Products_we_are_pitching__c )
+
+))</errorConditionFormula>
+    <errorMessage>If Business is Verticals or Marketing, fill out required fields below:
+
+Products clients are currently using,
+Products we are pitching</errorMessage>
+</ValidationRule>

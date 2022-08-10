@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_BOBSegment__c</fullName>
+    <description>EPH-5727 BOB MGMT - Seller BOB Object - Fields</description>
+    <externalId>false</externalId>
+    <label>Managed Segment</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Managed</fullName>
+                <default>false</default>
+                <label>Managed</label>
+            </value>
+            <value>
+                <fullName>MSO</fullName>
+                <default>false</default>
+                <label>MSO</label>
+            </value>
+            <value>
+                <fullName>Enterprise</fullName>
+                <default>false</default>
+                <label>Enterprise</label>
+            </value>
+            <value>
+                <fullName>Extended Key</fullName>
+                <default>false</default>
+                <label>Extended Key</label>
+            </value>
+            <value>
+                <fullName>Inventory Partners</fullName>
+                <default>false</default>
+                <label>Inventory Partners</label>
+            </value>
+            <value>
+                <fullName>Key</fullName>
+                <default>false</default>
+                <label>Key</label>
+            </value>
+            <value>
+                <fullName>Strategic</fullName>
+                <default>false</default>
+                <label>Strategic</label>
+            </value>
+            <value>
+                <fullName>Concierge</fullName>
+                <default>false</default>
+                <label>Concierge</label>
+            </value>
+            <value>
+                <fullName>Platin</fullName>
+                <default>false</default>
+                <label>Platin</label>
+            </value>
+            <value>
+                <fullName>AM Bolt-On</fullName>
+                <default>false</default>
+                <label>AM Bolt-On</label>
+            </value>
+            <value>
+                <fullName>Onboarding</fullName>
+                <default>false</default>
+                <label>Onboarding</label>
+            </value>
+            <value>
+                <fullName>Pro-Trader Cat</fullName>
+                <default>false</default>
+                <label>Pro-Trader Cat</label>
+            </value>
+            <value>
+                <fullName>PT LTAM</fullName>
+                <default>false</default>
+                <label>PT LTAM</label>
+            </value>
+            <value>
+                <fullName>LTTM</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>LTTM</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

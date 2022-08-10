@@ -1,0 +1,20 @@
+Das vereinbarte WOW! Angebot beginnt in Kürze.
+Bitte senken Sie zum Start der Aktion den Angebotspreis auf den vereinbarten Aktionspreis.
+
+Einzelheiten zum WOW! Angebot
+eBay-Nutzername: {!EBH_Deal__c.EBH_BusinessName__c}
+Produktname: {!EBH_Deal__c.EBH_MarketingTitle__c}
+Verfügbare Stückzahl: {!EBH_Deal__c.EBH_Quantity__c}
+
+Aktionsformat: {!EBH_Deal__c.EBH_LocalDealFormat__c}  
+Start der Aktion: {!EBH_Deal__c.EBH_DealStartDate__c}, 08:00
+Ende der Aktion: {!EBH_Deal__c.EBH_DealEndDate__c}, 07:59
+Seite(n): DE
+
+Preis
+UVP/Bisher-Preis: €{!EBH_Deal__c.EBH_RRPWASPrice__c}
+Ihr Angebotspreis: €{!EBH_Deal__c.EBH_SellerPrice__c}
+Ermäßigter Aktionspreis: €{!EBH_Deal__c.EBH_DealPrice__c}
+
+Beste Grüße
+Ihr eBay Team

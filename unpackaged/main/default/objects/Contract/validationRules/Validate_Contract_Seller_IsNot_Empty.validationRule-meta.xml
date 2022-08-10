@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Contract_Seller_IsNot_Empty</fullName>
+    <active>true</active>
+    <description>US-0010646 - [Refurb] Click Contract eMails are not sent successfully</description>
+    <errorConditionFormula>NOT($Setup.byPass__c.ByPass_Validation__c) &amp;&amp;
+LEFT($Profile.Id,15) != &#39;00e6A000000HNzw&#39; &amp;&amp; /*Admin*/
+RecordType.DeveloperName == &#39;Refurbished&#39; &amp;&amp;
+ISCHANGED(Status) &amp;&amp;
+ISPICKVAL(Status, &#39;In Negotiation&#39;) &amp;&amp;
+Number_of_sellers__c == 0</errorConditionFormula>
+    <errorMessage>Please add Contract Seller to your contract</errorMessage>
+</ValidationRule>

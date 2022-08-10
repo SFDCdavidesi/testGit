@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>For user Deactivation 2nd notification US-0008327, DEPRECATED US-0010516</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Hive_Letterhead</letterhead>
+    <name>We Want you back2</name>
+    <style>formalLetter</style>
+    <subject>Hive &quot;we want you back&quot;</subject>
+    <textOnly>Hive is missing you…
+
+
+Been a while, hasn’t it?
+We’ve noticed you haven’t logged in for 5 weeks, and we want you back!
+
+
+Click 
+https://hive.lightning.force.com/
+to log in, feel free to reach out to your champion users or us if you need any support.
+
+
+If you have issues logging in, give us a shout!
+
+
+If you no longer require Hive access, please reply to this email and mention how HIVE could help you in the future. Please be aware that your access will be inactivated in the coming 2 weeks if we do not see you back. Be reassured , you can be easily reactivated later when you wish!
+
+
+Thanks and see you back very soon!
+
+
+
+The Project Hive Team</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

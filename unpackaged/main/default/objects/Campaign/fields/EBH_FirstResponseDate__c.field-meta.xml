@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_FirstResponseDate__c</fullName>
+    <description>[EBH] (EPH-1880) - Date of FIRST response of the contact in this campaign</description>
+    <externalId>false</externalId>
+    <label>First Response Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

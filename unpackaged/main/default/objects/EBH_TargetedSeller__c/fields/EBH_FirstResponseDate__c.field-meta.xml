@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_FirstResponseDate__c</fullName>
+    <description>[EBH] (EPH-5731) - to capture first response date i.e. the earliest of the First Response Date of related Contacts</description>
+    <externalId>false</externalId>
+    <label>First Response Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>User_Disconnected__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>US-0010902 - Allow Sellers to unlink Accounts</description>
+    <externalId>false</externalId>
+    <label>User Disconnected</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

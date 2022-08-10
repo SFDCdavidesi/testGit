@@ -1,0 +1,14 @@
+<table border="0" cellpadding="5" width="600" cellspacing="5" height="400" >
+<tr valign="top" height="50" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[Dear {!EBH_Filter__c.OwnerFullName},]]></td>
+</tr>
+<tr valign="top" height="300" >
+<td tEditID="c1r2" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r2" locked="0" >
+<![CDATA[<font face="arial" style=""><div style="">Your Targeting Engine<span style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">&nbsp;</span><a href="{!EBH_Filter__c.Link}" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">{!EBH_Filter__c.Name}</a><span style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">&nbsp;is about to expire in 7 days.</span></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">That will mean that in 7 days you will not be able to use this Targeting Engine in any downstream processes (Reports, HIVE Analytics tables, Campaigns, etc.)</div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">If you want to keep this Targeting Engine list for longer, please log in to HIVE and adjust Expiration date</div></font>]]></td>
+</tr>
+<tr valign="top" height="50" >
+<td tEditID="c1r3" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r3" locked="0" >
+<![CDATA[<div style="font-size: medium;">Best,</div><div style="font-size: medium;">HIVE team</div>]]></td>
+</tr>
+</table>

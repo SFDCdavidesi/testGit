@@ -1,0 +1,9 @@
+Hello {!Coupon_Seller__c.Coupon_Seller_Owner_FirstName__c},
+<br><br>
+Seller {!Coupon_Seller__c.Seller__c} has uploaded coupon items for Coupon {!Coupon_Seller__c.Coupon_ID__c}
+<br><br>
+Please review the records and send the contract.
+<br><br>
+Coupon Seller record: <a href='{!Coupon_Seller__c.Link}'>{!Coupon_Seller__c.Name}</a>.
+<br><br>
+Thank you

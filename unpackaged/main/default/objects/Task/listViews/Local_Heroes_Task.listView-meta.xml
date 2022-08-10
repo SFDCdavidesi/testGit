@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Local_Heroes_Task</fullName>
+    <columns>WHAT_NAME</columns>
+    <columns>Order_Priority__c</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>Call_attempts__c</columns>
+    <columns>EBH_Account__c</columns>
+    <columns>STATUS</columns>
+    <columns>Task_Owner_Name__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>WHAT_NAME</field>
+        <operation>contains</operation>
+        <value>Onboarding DE</value>
+    </filters>
+    <filters>
+        <field>Project__c</field>
+        <operation>equals</operation>
+        <value>Onboarding</value>
+    </filters>
+    <filters>
+        <field>STATUS</field>
+        <operation>equals</operation>
+        <value>Open</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Task.Standard_Task</value>
+    </filters>
+    <label>Local Heroes Task</label>
+</ListView>

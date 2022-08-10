@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<span style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; background-color: rgb(255, 255, 255);">Advertiser: {!Opportunity.Account}&nbsp;</span><br><span style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; background-color: rgb(255, 255, 255);">Agency: {!Opportunity.Agency__c}</span><br><span style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; background-color: rgb(255, 255, 255);">Amount: {!Opportunity.Amount}&nbsp;</span><br><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><div><br><div><span style="background-color: rgb(255, 255, 255);"><font face="arial"><span style="font-size: 12pt;">Opportunity Owner:&nbsp;{!Opportunity.OwnerFullName}</span></font></span><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br>Campaign Start Date:&nbsp;{!Opportunity.Start_Date__c}<br>Campaign End Date:&nbsp; {!Opportunity.End_Date__c}<br><br>Link to Opportunity: {!Opportunity.Link}</div></div></div></div>]]></td>
+</tr>
+</table>

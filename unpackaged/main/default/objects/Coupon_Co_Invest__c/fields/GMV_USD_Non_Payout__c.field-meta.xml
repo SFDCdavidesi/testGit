@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GMV_USD_Non_Payout__c</fullName>
+    <description>EPH-7408 Coupon ETL (From DW to Coupon Seller &amp; Co-Invest Record record)</description>
+    <externalId>false</externalId>
+    <label>GMV USD (Non-Payout)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>1</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

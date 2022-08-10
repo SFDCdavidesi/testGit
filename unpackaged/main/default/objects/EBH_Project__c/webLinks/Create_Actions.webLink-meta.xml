@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Create_Actions</fullName>
+    <availability>online</availability>
+    <description>US-0007443 - [EU &amp; AU] Create Actions</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Create Actions</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>/lightning/cmp/c__ActionCreation?c__recordId={!EBH_Project__c.Id}</url>
+</WebLink>

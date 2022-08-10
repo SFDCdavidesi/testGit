@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>DEAccountManagerHelpTextElmt3</label>
+    <protected>false</protected>
+    <values>
+        <field>Bigger_Body_Test__c</field>
+        <value xsi:type="xsd:string">&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Bitte pr&amp;uuml;fen Sie Ihre Angaben, bevor Sie fortfahren:&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;table style=&quot;border-collapse: collapse; width: 84.375%;&quot; border=&quot;1&quot;&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;width: 38.2155%; text-align: center;&quot;&gt;&lt;strong&gt;Abonnement:&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&quot;width: 46.1595%; text-align: center;&quot;&gt;&lt;strong&gt;Monatliche Geb&amp;uuml;hr&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;width: 38.2155%; text-align: center;&quot;&gt;&lt;strong&gt;eBay Account Management:&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&quot;width: 46.1595%; text-align: center;&quot;&gt;&lt;strong&gt;999 &amp;euro; netto&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Wenn Sie auf &amp;bdquo;Kostenpflichtig abonnieren&amp;ldquo; klicken, akzeptieren Sie die&amp;nbsp;&lt;/span&gt;&lt;a href=&quot;http://pages.ebay.de/help/policies/shops_user-agreement.html&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Nutzungsbedingungen f&amp;uuml;r eBay Shops und eBay-Verk&amp;auml;ufertools&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;. Alle Details zu den Konditionen finden Sie im&amp;nbsp;&lt;/span&gt;&lt;a href=&quot;http://pages.ebay.de/help/policies/account-management.html&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Grundsatz zum eBay Account Management&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Die Abrechnung erfolgt &amp;uuml;ber Ihre bei eBay hinterlegte Zahlungsmethode. Die monatliche Geb&amp;uuml;hr wird Ihnen erstmals nach dem ersten Monat der Laufzeit in Rechnung gestellt.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Wir behalten uns vor, die Servicegeb&amp;uuml;hren und Services zu &amp;auml;ndern.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Bitte beachten Sie, dass sich Ihr Abonnement automatisch verl&amp;auml;ngert, bis Sie oder eBay gem&amp;auml;&amp;szlig; den K&amp;uuml;ndigungsfristen k&amp;uuml;ndigen.&lt;/span&gt;&lt;/p&gt;</value>
+    </values>
+    <values>
+        <field>Heading__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>Help_Text__c</field>
+        <value xsi:type="xsd:string">eBay Account Management: Abonnement überprüfen und senden</value>
+    </values>
+    <values>
+        <field>Inner_Help_Text__c</field>
+        <value xsi:nil="true" />
+    </values>
+</CustomMetadata>

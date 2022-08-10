@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IT_DUB_Active_Projects</fullName>
+    <columns>NAME</columns>
+    <columns>EBH_Stage__c</columns>
+    <columns>EBH_Seller__c</columns>
+    <columns>OWNER.ALIAS</columns>
+    <columns>OtherLeadSource__c</columns>
+    <columns>OracleID__c</columns>
+    <columns>LeadSource__c</columns>
+    <columns>GMVLast12Months__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Site__c</field>
+        <operation>equals</operation>
+        <value>IT</value>
+    </filters>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>greaterThan</operation>
+        <value>5/1/2021 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>LeadSegment__c</field>
+        <operation>equals</operation>
+        <value>SMB</value>
+    </filters>
+    <filters>
+        <field>EBH_Stage__c</field>
+        <operation>notEqual</operation>
+        <value>Cancelled</value>
+    </filters>
+    <label>IT DUB Active Projects</label>
+</ListView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0007745</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>STP Email Tempate</name>
+    <style>none</style>
+    <subject>Please Action STP Requests for {!EBH_Project__c.EBH_Seller__c}</subject>
+    <textOnly>Hi Advance App Team,
+
+Please execute the below request on seller {!EBH_Project__c.EBH_Seller__c}  and advise when actioned.
+
+Item Required
+Strike Through Pricing  {!EBH_Project__c.StrikethroughPricing__c}
+
+Thank You
+
+{!EBH_Project__c.OwnerFullName}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

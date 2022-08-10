@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Account Management FAQ</label>
+    <protected>false</protected>
+    <values>
+        <field>Available_For_Page__c</field>
+        <value xsi:type="xsd:string">account-manager</value>
+    </values>
+    <values>
+        <field>Display_Order__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Feature__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Is_Mail_To__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Region__c</field>
+        <value xsi:type="xsd:string">DE</value>
+    </values>
+    <values>
+        <field>enable_link__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>redirect_url__c</field>
+        <value xsi:type="xsd:string">https://www.ebay.de/help/policies/selling-policies/grundsatz-fr-ebay-account-management?id=4833&amp;st=12&amp;pos=3&amp;query=Grundsatz%20f%C3%BCr%20eBay%20Account%20Management&amp;intent=account%20manager&amp;docId=HELP1477#section3</value>
+    </values>
+    <values>
+        <field>subtitle_text__c</field>
+        <value xsi:type="xsd:string">Account Management Häufig gestellte Fragen</value>
+    </values>
+</CustomMetadata>

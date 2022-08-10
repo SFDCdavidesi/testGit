@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_of_Targeting_Criteria__c</fullName>
+    <description>US-0007824 - EU Advertising CPM Calculator</description>
+    <externalId>false</externalId>
+    <label>Number of Targeting Criteria</label>
+    <precision>8</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0010429 - Ability to sign Agreement in portal</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>DE Category Coupon Contract SEP</name>
+    <style>none</style>
+    <subject>Werbeaktions-Einzelvertrag</subject>
+    <textOnly>Werbeaktions-Einzelvertrag
+
+Mit diesem Werbeaktions-Einzelvertrag bieten wir Ihnen die Teilnahme an einer Gutscheinaktion zu den nachstehenden Konditionen sowie auf Basis der dazugehörigen „Werbeaktions-AGB“ an (nachfolgend gemeinsam „Werbeaktions-Einzelvertrag“). Die Werbekations-AGB sind fester Bestandteil dessen und unter https://pages.ebay.de/werbeaktions-agb/index.html jederzeit einsehbar
+
+
+Verkäufer    {LegalEntity}, {StreetName}, {Zip}, {City}, {Country}
+Nutzername des Verkäufers für die Gutscheinaktion   {eBaySellerID}
+eBay-Website(s)   {CouponSites}
+Gutschein-Name   {Marketing_Coupon_Name__c}
+Gutschein-Code   {CouponCode}
+Gutschein-Werbeaktionszeitraum
+
+{CouponStartTime} {CouponStartDate} bis {CouponEndTime} {CouponEndDate} (CET)
+
+Vom Verkäufer an eBay zuentrichtende Erfolgsprämie
+
+Angaben bemessen in Prozent (%) des Einlösewerts des Gutscheins
+
+{!catTable}
+
+Dieser Gutschein wird nur für die vorgenannten Kategorien ausgestellt.
+
+Details zur Gutscheinaktion
+
+{CouponDiscount%}{CouponDiscountAmount} Rabatt auf den Artikelpreis.
+
+
+Bis zu einem maximalen Betrag von {CouponCap} pro Transaktion.
+
+
+Mindestbestellwert: {Minimum_Transaction_Value__c}
+
+
+Der Gutschein kann maximal {Max_Redemptions__c}x je Nutzer eingelöst werden.
+
+eBay Vertragspartner    eBay GmbH, Albert-Einstein-Ring 2-6, 14532 Kleinmachnow
+Sonstiges   {AdditionalArrangement}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

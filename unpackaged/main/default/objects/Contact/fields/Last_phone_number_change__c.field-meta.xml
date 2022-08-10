@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_phone_number_change__c</fullName>
+    <description>EPH-6520 New Metrics for Contact Data in Contact Records - HIVE</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Last time the primary phone number has been updated. If there is no value it means it has never been updated</inlineHelpText>
+    <label>Last phone number change</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

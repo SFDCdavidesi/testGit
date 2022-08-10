@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>January__c</fullName>
+    <description>INTEG - N || ** eBay Advertising ** || WF - N || AP - N || VAL - N ||Class - N || Definition: Account || CR - 00521865</description>
+    <externalId>false</externalId>
+    <label>January</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

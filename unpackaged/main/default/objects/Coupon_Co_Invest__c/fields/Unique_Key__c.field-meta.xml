@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unique_Key__c</fullName>
+    <description>US-0007195 - Coupon Co-Invest records creation is causing System.LimitException: Too many SOQL queries: 101 error</description>
+    <externalId>false</externalId>
+    <formula>Coupon_Seller__c+IF(ISBLANK(Coupon_Category__c),&#39;&#39;,&#39;-&#39;+Coupon_Category__c)+IF(ISBLANK(Item_ID__c),&#39;&#39;,&#39;-&#39;+Item_ID__c)</formula>
+    <label>Unique_Key</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

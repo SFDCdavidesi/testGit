@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0006841 Chase Email for FVF &amp; Compliance contract send date email</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>FVF_Click_Contract_UK_Reminder</name>
+    <style>none</style>
+    <subject>Reminder: FVF Discount Form {!Action_Require}{!FVF_SellerName} {!FVF_StartDate}</subject>
+    <textOnly>Dear  {!Contact_Person__r.Name} ,
+
+Following my email on {!Contract_Send_Date__c} regarding the Final Value Fee rebate on the attached item list “Nominated Items” I would just like to remind you that you must click ‘I agree’ to the contract in order for your rebate to be provided. If you could do this by {!Start_Date_w__c-1}, then I will be able to process your contract and provide a rebate. For your convenience, I am replicating the initial contract below.
+
+If you have any questions, please reply to this email and I will be in touch with you as soon as possible.
+
+Kind regards,
+
+{!CurrentUserName}
+
+
+{!OriginalFVFDiscountEmailBody}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

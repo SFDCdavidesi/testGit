@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0009403 : Pre-check Rejection Email Notification For Contract</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Pre-check Rejection Email Notification For Contract</name>
+    <style>none</style>
+    <subject>{!Contract.RecordType} {!Contract.ContractNumber} has been rejected</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SP_EU_Deals</fullName>
+    <columns>NAME</columns>
+    <columns>Prio_DE__c</columns>
+    <columns>MVP__c</columns>
+    <columns>Status__c</columns>
+    <columns>Notes__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Hive_Project__c</field>
+        <operation>equals</operation>
+        <value>SP - EU Deals</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Requirement_Request__c.Feature_Request</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Rejected</value>
+    </filters>
+    <label>SP - EU Deals</label>
+</ListView>

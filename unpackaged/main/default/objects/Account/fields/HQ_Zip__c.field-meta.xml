@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HQ_Zip__c</fullName>
+    <description>INTEG - N || ** eBay Advertising ** || WF - N || AP - N || VAL - N ||Class - N || Definition: HQ Zip||</description>
+    <externalId>false</externalId>
+    <label>HQ Zip</label>
+    <length>25</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

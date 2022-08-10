@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deal_Contract_Agreement__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>INTEG - N || CODE - N || WF - N || AP - N || VAL - N || CLASS – (Internal) || Daily Deals - Deal Configuration || CR - 00201509
+US-0008178 : [US]* Deals Mass Cancellation Process for Deals Managers</description>
+    <externalId>false</externalId>
+    <label>Deal Contract Agreement</label>
+    <referenceTo>Deal_Contract_Agreement__c</referenceTo>
+    <relationshipLabel>Deals</relationshipLabel>
+    <relationshipName>Deals</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

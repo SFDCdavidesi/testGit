@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Billing Category</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CPC</fullName>
+                <default>false</default>
+                <label>CPC</label>
+            </value>
+            <value>
+                <fullName>CPD</fullName>
+                <default>false</default>
+                <label>CPD</label>
+            </value>
+            <value>
+                <fullName>CPM</fullName>
+                <default>true</default>
+                <label>CPM</label>
+            </value>
+            <value>
+                <fullName>ServiceFee</fullName>
+                <default>false</default>
+                <label>ServiceFee</label>
+            </value>
+            <value>
+                <fullName>Subscription</fullName>
+                <default>false</default>
+                <label>Subscription</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div style="font-size: 12pt;"><span style="font-size: 12pt;">Monthly Discount Request has been submitted by&nbsp;{!Advertising_Request_Portal__c.CreatedBy}.</span></div><div style="font-size: 12pt;"><br></div><div style="font-size: 12pt;"><br></div><div style="font-size: 12pt;">Name:&nbsp;<i style="font-size: 12pt; background-color: rgb(255, 255, 255);">{!Advertising_Request_Portal__c.Name__c}</i></div><div style="font-size: 12pt;"><div style="font-size: 12pt;">Description:&nbsp;{!Advertising_Request_Portal__c.Description__c}</div><div style="font-size: 12pt;">Additional Information:&nbsp;{!Advertising_Request_Portal__c.Additional_Information__c}</div><div style="font-size: 12pt;"><br></div></div><div style="font-size: 12pt;"><br></div><div><font face="arial">{!Advertising_Request_Portal__c.Link}</font></div>]]></td>
+</tr>
+</table>

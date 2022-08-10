@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IF_eBay_Budget_not_null</fullName>
+    <active>true</active>
+    <description>EPH-7162 Object: Coupon__c - Create two record types</description>
+    <errorConditionFormula>AND(!ISBLANK(eBay_Budget__c) , ISBLANK( Budget_Manager__c ) )</errorConditionFormula>
+    <errorDisplayField>Budget_Manager__c</errorDisplayField>
+    <errorMessage>Complete this field</errorMessage>
+</ValidationRule>

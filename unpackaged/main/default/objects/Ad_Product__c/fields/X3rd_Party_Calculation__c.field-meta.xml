@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X3rd_Party_Calculation__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>US-0009143 - [Ads 2020] Migrate Fields from Revenue 2 to Ad Product</description>
+    <externalId>false</externalId>
+    <label>3rd Party Calculation</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

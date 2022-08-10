@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_UniqueListSeller__c</fullName>
+    <caseSensitive>true</caseSensitive>
+    <description>[EBH] (EBH-55), (EBH-103) - Unique List Seller: Seller should be distinct in particular Seller List
+31/07/2019:EPH-7650: removed uniqueness to allow duplicate seller</description>
+    <externalId>true</externalId>
+    <inlineHelpText>Unique List Seller: Seller should be distinct in particular Seller List</inlineHelpText>
+    <label>Unique List Seller</label>
+    <length>36</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

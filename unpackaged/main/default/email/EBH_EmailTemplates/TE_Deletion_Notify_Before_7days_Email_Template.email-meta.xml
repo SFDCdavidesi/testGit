@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0008047</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Hive_Letterhead</letterhead>
+    <name>TE Deletion Notify Before 7days Email Template</name>
+    <style>formalLetter</style>
+    <subject>Your Targeting Engine {!EBH_Filter__c.Name} is about to expire in 7 days</subject>
+    <textOnly>Dear {!EBH_Filter__c.OwnerFullName},
+Your {!EBH_Filter__c.Name} is about to expire in 7 days.
+
+That will mean that in 7 days you will not be able to use this Targeting Engine in any downstream processes (Reports, HIVE Analytics tables, Campaigns, etc.)
+
+If you want to keep this Targeting Engine list for longer, please log in to HIVE and adjust Expiration date
+Best,
+HIVE team</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IT_ONBOARDING_DUBLIN_ALL_PROJECTS</fullName>
+    <columns>EBH_Seller__c</columns>
+    <columns>GMVLast12Months__c</columns>
+    <columns>LeadSource__c</columns>
+    <columns>OracleID__c</columns>
+    <columns>OWNER.ALIAS</columns>
+    <columns>EBH_Stage__c</columns>
+    <columns>NAME</columns>
+    <columns>Lead__c</columns>
+    <columns>LegalEntity__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Site__c</field>
+        <operation>contains</operation>
+        <value>IT</value>
+    </filters>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>greaterThan</operation>
+        <value>5/1/2021 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>LeadSegment__c</field>
+        <operation>contains</operation>
+        <value>SMB (small medium business)</value>
+    </filters>
+    <filters>
+        <field>OWNER.ALIAS</field>
+        <operation>notContain</operation>
+        <value>josem</value>
+    </filters>
+    <label>IT ONBOARDING DUBLIN ALL PROJECTS</label>
+</ListView>

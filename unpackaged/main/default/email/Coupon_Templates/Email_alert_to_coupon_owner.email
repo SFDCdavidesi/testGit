@@ -1,0 +1,26 @@
+<p>Dear {!Coupon__c.OwnerFullName},</p>
+
+
+<p>please note that your coupon {!Coupon__c.Marketing_Coupon_Name__c} will start in three days on
+
+{!Coupon__c.Coupon_Start_Date__c}.</p>
+
+
+<p>So far you have stored the following coupon code in Hive: {!Coupon__c.Coupon_ID__c}.</p>
+
+
+<p>Please check if the code is still valid and up-to-date!</p>
+
+
+<p>If you do not add the correct coupon code, Hive won´t be able to track transactions and manage the seller invoice.</p>
+
+
+<p>Click here to update the Coupon Code 
+
+<a href='{!Coupon__c.Link}' style="text-decoration: none; "> {!Coupon__c.Name}</a>
+.</p>
+
+
+<p>Thank you,<br>
+
+Hive</p>

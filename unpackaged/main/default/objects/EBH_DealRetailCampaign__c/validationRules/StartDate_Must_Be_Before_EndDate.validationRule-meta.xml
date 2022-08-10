@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StartDate_Must_Be_Before_EndDate</fullName>
+    <active>true</active>
+    <description>US-0010110 - [SEP] Required fields for Deal Windows</description>
+    <errorConditionFormula>AND(
+     RecordType.DeveloperName = &#39;Deal_Campaign_V2&#39;,
+     EPH_EndDate__c  &lt;  EBH_Date__c ,
+     NOT($Setup.byPass__c.ByPass_Validation__c)
+)</errorConditionFormula>
+    <errorMessage>Start Date must be before End Date</errorMessage>
+</ValidationRule>

@@ -1,0 +1,36 @@
+<html>
+<body >
+<p>Hi Andreas, </p><br/>
+
+<p>Approval required for the: {!Coupon__c.Coupon_ID__c}  {!Coupon__c.Marketing_Coupon_Name__c} </p><br/>
+
+<p><b>Name</b>: {!Coupon__c.Coupon_ID__c} {!Coupon__c.Marketing_Coupon_Name__c}</p>
+<p><b>Dates</b>: {!Coupon__c.Coupon_Start_Date__c} until {!Coupon__c.Coupon_End_Date__c}</p>
+<p><b>Theme</b>: {!Coupon__c.Coupon_Discount__c}% off these Sellers</p>
+<p><b>GMV Target</b>: Orginal forecast: {!Coupon__c.Coupon_GMV_Target__c}</p><br/>
+<p style="font-size:16px"><b>Co-Funding Average for Promotion</b></p>
+
+<table style="table-layout: fixed; width: 315px;border-collapse:collapse;border-spacing:0;">
+<col style="width: 84px">
+<col style="width: 181px">
+<col style="width: 81px">
+<col style="width: 117px">
+<col style="width: 114px">
+<col style="width: 135px">
+</colgroup>
+  <tr>
+    <th style="background-color:#25498b;color:#ffffff;text-align:left;vertical-align:top;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;">Oracle Id</th>
+    <th style="background-color:#25498b;color:#ffffff;text-align:left;vertical-align:top;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;">Seller Name</th>
+    <th style="background-color:#25498b;color:#ffffff;text-align:left;vertical-align:top;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;">Category</th>
+    <th style="background-color:#25498b;color:#ffffff;text-align:left;vertical-align:top;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;">Seller Funding</th>
+    <th style="background-color:#25498b;color:#ffffff;text-align:left;vertical-align:top;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;">eBay Funding</th>
+    <th style="background-color:#25498b;color:#ffffff;text-align:left;vertical-align:top;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;">Seller Funding %</th>
+  </tr>
+  {!RecordRows}
+</table>
+
+<br/>
+<p>Thanks,</p>
+<p>Retail Promotions Team.</p>
+</body>
+</html>

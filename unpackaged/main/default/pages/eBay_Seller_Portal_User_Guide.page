@@ -1,0 +1,81 @@
+<!--
+change log: 
+    - 13/12/2021/ vadhanak voun/ US-0010942 - [SP - EU Deals] Useful Links for DE Deals
+-->
+<apex:page sidebar="true" standardStylesheets="true">    
+    
+    <apex:iframe id="masterIframe" src="{!URLFOR($Resource.ebaydealseller1)}#toolbar=0" height="1000px" rendered="{!$Profile.Name !='DE - Seller Portal'}"/>
+    <!-- <apex:iframe id="deIframe" src="{!URLFOR($Resource.ebaydealseller_guide_de)}#toolbar=0" height="1000px" rendered="{!$Profile.Name =='DE - Seller Portal'}"/> -->
+    <apex:iframe id="deIframe" src="" height="1000px" rendered="{!$Profile.Name =='DE - Seller Portal'}"/>
+    <apex:iframe id="naIframe" src="" height="1000px" rendered="{!$Profile.Name =='NA - Seller Portal'}"/>
+
+
+    <script>
+
+        var params = getQueryParameters();
+        var param_sb = params["sb"];
+
+        if (param_sb && param_sb == 'user-guide') {
+            
+            var de_userguid = "{!URLFOR($Resource.ebaydealseller_userguide_de)}#toolbar=0";
+
+            document.getElementById('deIframe').src=de_userguid;
+
+            window.parent.document.title = "{!$Label.UserGuide_PageTitle_DealUserGuide}";
+            
+
+        }
+        else if (param_sb && param_sb == 'mgntusr') { //MN-22042022-US-0011087
+            
+            var de_userguid = "{!URLFOR($Resource.ebaygrowportalusermanagement)}#toolbar=0";
+
+            document.getElementById('deIframe').src=de_userguid;
+
+            window.parent.document.title = "{!$Label.UserGuide_PageTitle_ManageUser}";
+
+        }
+        else if (param_sb && param_sb == 'linkacc') { //MN-27042022-US-0011087
+            var de_userguid = "{!URLFOR($Resource.ebayUserGuideLinkingAccounts)}#toolbar=0";
+
+            document.getElementById('deIframe').src=de_userguid;   
+
+            window.parent.document.title = "{!$Label.UserGuide_PageTitle_LinkedAccounts}";
+        }
+        else if (param_sb && param_sb == 'gutscheine') {
+            var de_userguid = "{!URLFOR($Resource.ebaycouponseller_userguide_de)}#toolbar=0";
+            document.getElementById('deIframe').src=de_userguid;   
+
+            window.parent.document.title = "{!$Label.Coupons}";
+        }
+        else if (param_sb && param_sb == 'coupons') { 
+            var na_userguid = "{!URLFOR($Resource.ebaycouponseller_userguide_na)}#toolbar=0";
+
+            document.getElementById('naIframe').src=na_userguid;   
+            document.getElementById('masterIframe').style.display = "none";
+
+            window.parent.document.title = "{!$Label.Coupons}";
+        }
+        else {
+            
+            window.parent.document.title = "{!$Label.UserGuide_PageTitle_DealFAQ}";
+            
+            var de_faq = "{!URLFOR($Resource.ebaydealseller_guide_de)}#toolbar=0";
+            document.getElementById('deIframe').src=de_faq;
+            
+            
+        }
+
+        function getQueryParameters() {
+            var params = {};
+            var search = window.parent.location.search.substring(1);
+            if (search) {
+                params = JSON.parse('{"' + search.replace(/&/g, '","').replace(/=/g, '":"') + '"}', (key, value) => {
+                    return key === "" ? value : decodeURIComponent(value)
+                });
+            }
+            return params;
+        }
+    
+    </script>
+    
+</apex:page>

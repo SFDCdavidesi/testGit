@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <description>US-0008778 - [NA] Monthly Deal Statement Creation
+US-0010371</description>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Draft</fullName>
+                <default>false</default>
+                <label>Draft</label>
+            </value>
+            <value>
+                <fullName>1st Statement</fullName>
+                <default>false</default>
+                <label>1st Statement</label>
+            </value>
+            <value>
+                <fullName>In 1st Payout Approval</fullName>
+                <default>false</default>
+                <label>In 1st Payout Approval</label>
+            </value>
+            <value>
+                <fullName>1st Payout Approved</fullName>
+                <default>false</default>
+                <label>1st Payout Approved</label>
+            </value>
+            <value>
+                <fullName>1st Statement Sent out</fullName>
+                <default>false</default>
+                <label>1st Statement Sent out</label>
+            </value>
+            <value>
+                <fullName>1st Statement Paid</fullName>
+                <default>false</default>
+                <label>1st Statement Paid</label>
+            </value>
+            <value>
+                <fullName>2nd Statement</fullName>
+                <default>false</default>
+                <label>Final Statement</label>
+            </value>
+            <value>
+                <fullName>In 2nd Payout Approval</fullName>
+                <default>false</default>
+                <label>In Final Payout Approval</label>
+            </value>
+            <value>
+                <fullName>2nd Payout Approved</fullName>
+                <default>false</default>
+                <label>Final Payout Approved</label>
+            </value>
+            <value>
+                <fullName>2nd Statement Sent out</fullName>
+                <default>false</default>
+                <label>Final Statement Sent out</label>
+            </value>
+            <value>
+                <fullName>2nd Statement Paid</fullName>
+                <default>false</default>
+                <label>Final Statement Paid</label>
+            </value>
+            <value>
+                <fullName>In Dispute</fullName>
+                <default>false</default>
+                <label>Adjusted Statement</label>
+            </value>
+            <value>
+                <fullName>In Dispute Payout Approval</fullName>
+                <default>false</default>
+                <label>In Adjusted Statement Approval</label>
+            </value>
+            <value>
+                <fullName>Dispute Payout Approved</fullName>
+                <default>false</default>
+                <label>Adjusted Statement Approved</label>
+            </value>
+            <value>
+                <fullName>Dispute Statement Sent Out</fullName>
+                <default>false</default>
+                <label>Adjusted Statement Sent Out</label>
+            </value>
+            <value>
+                <fullName>Dispute Statement Paid</fullName>
+                <default>false</default>
+                <label>Adjusted Statement Paid</label>
+            </value>
+            <value>
+                <fullName>Payout Rejected</fullName>
+                <default>false</default>
+                <label>Payout Rejected</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

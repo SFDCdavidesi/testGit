@@ -1,0 +1,125 @@
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------
+@ Page:           EBH_InviteToDealsProgram
+@ Version:        1.0
+@ Author:         JOY MONDOL (jmondol@deloitte.co.uk)
+@ Purpose:        [EBH] (EPH-) - Mark true Invited to Deal Program
+..................................................................................................................................................................
+@ Change history: 06.12.2017 / JOY MONDOL (jmondol@deloitte.co.uk) / Created the page.
+@ Change history: 15.03.2018 / Vadhanak Voun (vadhanak.voun@gaea-sys.com) / removed action; so user can see the option to select picklist field before manually saving
+----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<apex:page standardController="Account" extensions="EBH_InviteToDealsProgramController" showHeader="false" sidebar="false" showQuickActionVfHeader="false" id="mypage">
+    <script src="/soap/ajax/40.0/connection.js" type="text/javascript"></script>
+	<script src="/soap/ajax/40.0/apex.js" type="text/javascript"></script>
+    <style>
+    	.pbTitle
+    	{
+    		width:70% !important;
+    	}
+    	.labelCol
+    	{
+    		width:30% !important;
+    	}
+    </style>
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------------
+    @ Section: Body
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <script>
+		sforce.connection.sessionId='{!GETSESSIONID()}';
+	
+		 var result = sforce.connection.describeLayout('Account'); 
+		 var recordTypeMappings = result.recordTypeMappings;
+		 
+		 var recordTypePicklist = new Array();
+	     for (i = 0; i < recordTypeMappings.length; i++) 
+	     { 
+	       recordTypePicklist.push({recordTypeId: recordTypeMappings[i].recordTypeId+"",picklistsForRecordType: recordTypeMappings[i].picklistsForRecordType});
+	     }
+		
+		 function getPicklist(recType,fielName)
+		 {
+		 	for(var i=0;i<recordTypePicklist.length;i++)
+		 	{
+		 		if(recordTypePicklist[i].recordTypeId==recType)
+		 		{
+		 			for(var j=0;j<recordTypePicklist[i].picklistsForRecordType.length;j++)
+		 			{
+		 				if(recordTypePicklist[i].picklistsForRecordType[j].picklistName==fielName)
+		 				{
+		 					return recordTypePicklist[i].picklistsForRecordType[j].picklistValues;
+		 				}
+		 			}
+		 		}
+		 	}
+		 }
+		  
+		 function populatePicklistValue()
+		 {
+		 	var pklVal = getPicklist('{!JSENCODE(Account.RecordTypeId)}','EBH_GBCulture__c');//TH:14/07/2022:US-0011261 - TECHDEBT: Stored XSS
+		 	var select = document.getElementById('selectCulture');
+		 	for (var i = 0 ; i<pklVal.length; i++){
+		 		 
+		 		if(pklVal[i].active=='true')
+		 		{
+		 			var opt = document.createElement('option');
+				    opt.value = pklVal[i].value;
+				    opt.text = pklVal[i].label;
+				    select.appendChild(opt);
+				    
+				    if(pklVal[i].value=="{!JSENCODE(Account.EBH_GBCulture__c)}")//TH:14/07/2022:US-0011261 - TECHDEBT: Stored XSS
+				    {
+				    	opt.selected  = true;
+				    }
+		 		}
+			}
+		 }
+		 function preparePicklistChange()
+		 {
+		 	document.getElementById("mypage:myform:h_selectCulture").value=document.getElementById('selectCulture').value;
+		 	//doPicklistChange();
+		 }
+		 
+	</script>
+    <apex:form id="myform">
+    <br/>
+	    <apex:inputHidden value="{!selectedCulture}" id="h_selectCulture"/>  
+	    
+	    <!--NK:16/08/2019: EPH-7969, lazy to query in apex-->
+	    <apex:inputHidden value="{!Account.EBH_DealsProgram__c}"/>  
+	    <apex:inputHidden value="{!Account.EBH_InvitedtoDealProgram__c}"/>  
+	                    
+    	<apex:pageBlock title="Invite to Deals Program" mode="edit" id="pb1">
+    		<apex:pageBlockButtons location="bottom">
+                <apex:commandButton action="{!cancel}" value="Cancel"/>
+<!--                <apex:commandButton action="{!updateInvitedtoDealProgram}" value="Save" disabled="{!OR(AND(!Account.EBH_InvitedtoDealProgram__c, Account.EBH_DealsProgram__c != null), Account.EBH_InvitedtoDealProgram__c )}" />-->
+				<!--NK:16/08/2019: EPH-7969-->
+				<apex:commandButton action="{!updateInvitedtoDealProgram}" value="Save"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Rquired field" columns="1" id="pbs1">
+            	<apex:outputPanel >
+            		<apex:pageMessages />
+				    <!--NK: No info need anymore since we have a stop by option. 
+				    <apex:pageMessage detail="Sending Deals Program invitation email ... (Do not CANCEL the window)" 
+				                      rendered="{!AND(!Account.EBH_InvitedtoDealProgram__c, Account.EBH_DealsProgram__c == 'Allow')}" 
+				                      severity="info" title="Sending email" strength="2"/>
+				      -->                 
+				    <apex:pageMessage detail="Already part of the deals program" 
+				                      rendered="false" severity="fatal" 
+				                      title="This seller is already part of the deals program" strength="2"/>
+				    <apex:pageMessage detail="Not allowed" rendered="false" 
+				                      severity="fatal" title="This seller is already part of the deals program" strength="2"/>
+            	</apex:outputPanel>
+<!--                <apex:inputField value="{!Account.EBH_GBCulture__c}" required="true"/>-->
+				<apex:outputPanel >
+					<apex:outputLabel value="{!$ObjectType.Account.Fields.EBH_GBCulture__c.label}" for="selectCulture"/>&nbsp;
+					<select id="selectCulture" onchange="preparePicklistChange();"></select>
+				</apex:outputPanel>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+    <script>
+    	populatePicklistValue();
+    	preparePicklistChange(); //NK:25/04/2018: EPH-5677 : Not possible to invite seller to DE deals program
+    	
+    	
+    </script>
+</apex:page>

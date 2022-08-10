@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>send email alert when amount is 2M or more</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>eBay_Ads_Letterhead</letterhead>
+    <name>Opportunity 2M Alert</name>
+    <style>freeForm</style>
+    <subject>Opportunity is more than $2million</subject>
+    <textOnly>Hello,
+
+This email is to notify you that the amount for the opportunity listed below is more than $2 million.
+
+Opportunity Name: {!Opportunity.Name}
+Opportunity Amount: {!Opportunity.Amount}
+Account: {!Opportunity.Account}
+Close Date: {!Opportunity.CloseDate}
+
+Link to Opportunity: {!Opportunity.Link}
+
+Best,
+
+SF Support Team</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

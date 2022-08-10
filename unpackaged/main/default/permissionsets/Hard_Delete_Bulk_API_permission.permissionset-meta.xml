@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This permission allow to Hard Delete records in the org. Please assign only TEMPORARY and only if needed for one time operation, like data cleanup.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Hard Delete Bulk API permission</label>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>BulkApiHardDelete</name>
+    </userPermissions>
+</PermissionSet>

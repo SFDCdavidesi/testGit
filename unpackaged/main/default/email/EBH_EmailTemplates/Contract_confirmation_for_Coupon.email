@@ -1,0 +1,9 @@
+Dear {!Coupon_Seller__c.EBH_CouponSellerOwner__c},<br/>
+<br/>
+This email is to inform you that coupon contract has been signed by {!Coupon_Seller__c.Seller__c} .<br/>
+<br/>
+Click here to view the details: {!Coupon_Seller__c.Link}.<br/>
+<br/>
+Thank you,<br/>
+<br/>
+Hive team

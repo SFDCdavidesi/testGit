@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prior_TotalPrice__c</fullName>
+    <description>US-0010628 - ADS - Allow edit rights on Revised Quote Line Items in past (with date validation)</description>
+    <externalId>false</externalId>
+    <label>Prior TotalPrice</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

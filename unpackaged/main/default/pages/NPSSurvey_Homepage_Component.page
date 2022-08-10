@@ -1,0 +1,57 @@
+<apex:page controller="NPSSurvey_Homepage_Component_Controller" showHeader="false" sidebar="false"  >
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------------
+@ Section: Scripts
+------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <apex:includeScript value="{!$Resource.EBH_JQuery}"/>
+    <apex:includeScript value="{!$Resource.EBH_JQueryUI}"/>
+    
+    <script type="text/javascript">
+    
+    
+    var shouldIOpenTheSurvey={!OpenTheSurvey};
+    console.log("shouldIOpenTheSurvey" + shouldIOpenTheSurvey);
+    jQuery.noConflict();        
+    jQuery( document ).ready(function($){ 
+        console.log("this is " + shouldIOpenTheSurvey);
+        if (shouldIOpenTheSurvey==true){
+            
+            
+            window.open("{!JSENCODE(surveyURL)}","_blank");//TH:14/07/2022:US-0011261 - TECHDEBT: Stored XSS
+            
+            //call action function
+            callUpdateUser();
+        }
+        
+    });
+    
+    
+    
+    
+    </script>
+    
+    
+    
+    <apex:form id="myform">
+    <apex:actionFunction name="callUpdateUser" action="{!updateNPSUser}"/>
+    
+    
+    <table>
+        <tr>
+            <td>
+                Last send date </td>
+            <td>{!u.Last_NPS_Survey_Send_Date__c}
+            </td></tr>
+        <tr>
+            <td>
+                Random number </td>
+            <td>{!randomnumber}
+            </td></tr>    
+        <tr>
+            <td>
+                survey URL </td>
+            <td>{!surveyURL}
+            </td></tr>        
+    </table>
+    
+    </apex:form>
+</apex:page>

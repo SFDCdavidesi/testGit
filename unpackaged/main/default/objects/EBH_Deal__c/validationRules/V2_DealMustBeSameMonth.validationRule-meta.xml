@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>V2_DealMustBeSameMonth</fullName>
+    <active>true</active>
+    <description>US-0008845</description>
+    <errorConditionFormula>AND(
+    RecordType.DeveloperName = &#39;Deal_V2&#39;,
+    $Profile.Name == &#39;NA Standard User Base&#39;,
+    $Permission.eBay_NA_Standard_user ,  
+    $Permission.US_Manage_Deals ,
+    $Permission.Deal_Start_End_time_fields ,
+    OR (
+          MONTH( EBH_DealStartDate__c ) &lt;&gt; MONTH( EBH_DealEndDate__c ),
+          YEAR( EBH_DealStartDate__c ) &lt;&gt; YEAR ( EBH_DealEndDate__c ) 
+    )
+    
+)</errorConditionFormula>
+    <errorMessage>Deal Start Date and Deal End Date must be within the same Calendar month</errorMessage>
+</ValidationRule>

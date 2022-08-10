@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>eBayUser_ID__c</fullName>
+    <description>US-0007032: [AU] Conditional Mandatory validations for &quot;eBay User Id&quot; new text field in Object &quot;Project&quot;,
+US-0007647</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Name of the merchant to be be used when associating seller with a project.</inlineHelpText>
+    <label>User ID (preliminary)</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

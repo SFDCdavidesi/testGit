@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Targeting_Cockpit_Contact</fullName>
+    <description>TargetingEngine: [#EPH-6577] Count call attempts for GCX outreaches on Contact</description>
+    <displayedFields>
+        <field>Available_for_GCX__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Targeting Cockpit Contact</label>
+</FieldSet>

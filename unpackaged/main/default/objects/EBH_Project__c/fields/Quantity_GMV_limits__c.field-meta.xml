@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quantity_GMV_limits__c</fullName>
+    <description>US-0009462 - UK Risk: new permission, record type and page layout on Project</description>
+    <externalId>false</externalId>
+    <formula>TEXT(EBH_Seller__r.EBH_ListingLimit__c)+IF( AND(ISBLANK(EBH_Seller__r.EBH_ListingLimit__c),ISBLANK(EBH_Seller__r.EBH_ValueLimit__c)) ,&#39;&#39;, &#39;/&#39;)+ IF(ISBLANK(EBH_Seller__r.EBH_ValueLimit__c),&#39;&#39;,TEXT(CurrencyIsoCode) + &#39; &#39;) + TEXT(EBH_Seller__r.EBH_ValueLimit__c)</formula>
+    <label>Quantity/GMV limits</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <submitter>Ticket_Manager</submitter>
+        <type>group</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>Owner</field>
+        <field>RecordType</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>dherrero@hive.project.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>hseel@hive.project.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>jaaulakh@hive.project.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>romaier@hive.project.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>sigolledge@hive.project.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <label>Step 1</label>
+        <name>Step_1</name>
+    </approvalStep>
+    <description>US-0015698 Create approval flow for user creation and reactivation</description>
+    <emailTemplate>EBH_EmailTemplates/Approval_Request_User_Audit</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>Ticket__c.RecordType</field>
+            <operation>equals</operation>
+            <value>User Request Form</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Ticket__c.RecordType</field>
+            <operation>equals</operation>
+            <value>User Reactivation</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Ticket_CheckApprove</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Ticket_Inprogress</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Ticket_Approval_Rejection_Notification</name>
+            <type>Alert</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <label>User Request/Reactivate Approval</label>
+    <processOrder>1</processOrder>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_Response__c</fullName>
+    <description>[EBH] (EPH-3519)</description>
+    <externalId>false</externalId>
+    <label>Response</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Call Planned</fullName>
+                <default>false</default>
+                <label>Call Planned</label>
+            </value>
+            <value>
+                <fullName>Phone Blacklist</fullName>
+                <default>false</default>
+                <label>Phone Blacklist</label>
+            </value>
+            <value>
+                <fullName>Wrong Phone Number</fullName>
+                <default>false</default>
+                <label>Wrong Phone Number</label>
+            </value>
+            <value>
+                <fullName>Call Not Answered</fullName>
+                <default>false</default>
+                <label>Call Not Answered</label>
+            </value>
+            <value>
+                <fullName>DMC Not Reached</fullName>
+                <default>false</default>
+                <label>DMC Not Reached</label>
+            </value>
+            <value>
+                <fullName>DMC Not Interested</fullName>
+                <default>false</default>
+                <label>DMC Not Interested</label>
+            </value>
+            <value>
+                <fullName>Unsubscribe</fullName>
+                <default>false</default>
+                <label>Unsubscribe</label>
+            </value>
+            <value>
+                <fullName>DMC Interested</fullName>
+                <default>false</default>
+                <label>DMC Interested</label>
+            </value>
+            <value>
+                <fullName>DMC Committed</fullName>
+                <default>false</default>
+                <label>DMC Committed</label>
+            </value>
+            <value>
+                <fullName>Call Back Required</fullName>
+                <default>false</default>
+                <label>Call Back Required</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

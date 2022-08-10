@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValidationOnPricingDate</fullName>
+    <active>true</active>
+    <description>US-0007176: [Contracts] Hyper per care Pricing Start Date should be less than Pricing End Date</description>
+    <errorConditionFormula>IF(EBH_PricingStartDate__c&gt; EBH_PricingEndDate__c , true, false)</errorConditionFormula>
+    <errorMessage>Pricing Start Date cannot be greater than Pricing End Date</errorMessage>
+</ValidationRule>

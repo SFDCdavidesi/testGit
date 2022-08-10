@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CSI_Requests_Complete_Validation</fullName>
+    <active>true</active>
+    <description>When status is changed to &quot;Complete&quot; this is required to fill out before a request can be set to complete</description>
+    <errorConditionFormula>AND(
+
+$Setup.byPass__c.byPass_WFRule__c = FALSE,
+
+RecordType.Name = &#39;CSI Requests&#39;,
+
+ispickval(Status__c, &#39;Complete&#39;), 
+ISBLANK( What_insights_were_found__c )
+
+)</errorConditionFormula>
+    <errorDisplayField>What_insights_were_found__c</errorDisplayField>
+    <errorMessage>Before you can set the request to complete, please fill out the details to what insights were found.</errorMessage>
+</ValidationRule>

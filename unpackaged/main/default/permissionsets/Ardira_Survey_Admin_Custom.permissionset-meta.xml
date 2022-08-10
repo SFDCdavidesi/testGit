@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Users with this permission set can create, update, delete, assign and report on surveys.
+-- Customized one --
+US-0009675</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Ardira Survey Admin Custom</label>
+</PermissionSet>

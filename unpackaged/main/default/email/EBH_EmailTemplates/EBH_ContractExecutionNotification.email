@@ -1,0 +1,9 @@
+Hello!
+
+All parties have completed the envelope {!Contract.Name}.
+
+To view, download or print the completed document click below:
+
+{!Contract.Link}
+
+Thank you.

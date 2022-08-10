@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPM_Net__c</fullName>
+    <description>US-0009260 - [Ads 2020] OLI Trigger to QLI/AP, Fields &amp; Syncing</description>
+    <externalId>false</externalId>
+    <label>CPM Net</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

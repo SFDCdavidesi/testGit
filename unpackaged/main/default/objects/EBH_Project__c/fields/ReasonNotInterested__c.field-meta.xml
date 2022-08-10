@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ReasonNotInterested__c</fullName>
+    <description>US-0007514
+US-0007655</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Main reason seller is against migrating to Managed Payments, please update if there is a change</inlineHelpText>
+    <label>Reason Not Interested</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Lack of trust/transparency</fullName>
+                <default>false</default>
+                <label>Lack of trust/transparency</label>
+            </value>
+            <value>
+                <fullName>Change resistance</fullName>
+                <default>false</default>
+                <label>Change resistance</label>
+            </value>
+            <value>
+                <fullName>Coronavirus</fullName>
+                <default>false</default>
+                <label>Coronavirus</label>
+            </value>
+            <value>
+                <fullName>3PP</fullName>
+                <default>false</default>
+                <label>3PP</label>
+            </value>
+            <value>
+                <fullName>Overall P2.0 features</fullName>
+                <default>false</default>
+                <label>Overall P2.0 features</label>
+            </value>
+            <value>
+                <fullName>PPWC</fullName>
+                <default>false</default>
+                <label>PPWC</label>
+            </value>
+            <value>
+                <fullName>Fee</fullName>
+                <default>false</default>
+                <label>Fee</label>
+            </value>
+            <value>
+                <fullName>PP Fee Increase</fullName>
+                <default>false</default>
+                <label>PP Fee Increase</label>
+            </value>
+            <value>
+                <fullName>Lack of forms of payment</fullName>
+                <default>false</default>
+                <label>Lack of forms of payment</label>
+            </value>
+            <value>
+                <fullName>Fear of Profit Loss</fullName>
+                <default>false</default>
+                <label>Fear of Profit Loss</label>
+            </value>
+            <value>
+                <fullName>Additional accounting effort</fullName>
+                <default>false</default>
+                <label>Additional accounting effort</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

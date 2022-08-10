@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>[#EPH-7104] New Permission Set_ Final Value Fee Approval</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Rejected Final Value Fee</name>
+    <style>none</style>
+    <subject>Rejected Final Value Fee</subject>
+    <textOnly>Dear {!Final_Value_Fee_FVF__c.OwnerFullName},
+Your Final Value Fee Discount {!Final_Value_Fee_FVF__c.Name} has been Rejected.
+Please reach out to {!User.Name}  for more details.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

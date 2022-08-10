@@ -1,0 +1,140 @@
+<table style="width: 946px; border-collapse: collapse;" border="1" cellspacing="5" cellpadding="5">
+<tbody>
+<tr><td colspan="2" style="text-align: center;background-color: #ccc;"><b>PARTIES</b></td></tr>
+ <tr>
+<td style="width: 100px;background-color: #ccc;"><b>eBay, us</b></td>
+<td>
+<p>eBay Marketplaces GmbH, a company incorporated in Bern, whose principal place of business is at Helvetiastrasse 15/17, CH-3005 Bern, Switzerland.
+</p>
+</td>
+</tr>
+<tr>
+<td style="width: 100px;background-color: #ccc;"><b>You </b>or <b>Your</b></td>
+<td>
+<p>{!EBH_Deal__c.CompanyName__c}, (ABN {!EBH_Deal__c.SellerVATNumber__c}) a company incorporated in Australia, with its principal place of business at {!EBH_Deal__c.SellerAddress__c}.
+</p>
+</td>
+ </tr>
+</tbody>
+</table>
+<p>The terms of this email are subject to the Deals Portal Master Terms and Conditions between eBay and You, which is set out at: <a title="Coupon Terms and Conditions" href="https://pages.ebay.com.au/deals-portal/terms">[https://pages.ebay.com.au/deals-portal/terms]</a>. Terms not defined within this Deals Portal Term Sheet shall have the meaning given to them in the Deals Portal Master Terms and Conditions.  </p>
+<p>Your participation in the Deals Program has been approved by eBay. Pursuant to the Deals Portal Master Terms and Conditions, You and eBay agree to enter into a Deals Portal Term Sheet as set out in this email. The details of Your participation in the Deals Program are as set out below:</p>
+<table style="width: 946px; height: 100px; border-collapse: collapse;" border="1" cellspacing="5" cellpadding="5">
+<tbody>
+<tr style="height: 16px;">
+<td style="width: 250.222px; height: 16px;"><strong>Seller User ID</strong></td>
+<td colspan="2" style="width: 674.778px; height: 16px;">User ID: {!EBH_Deal__c.eBay_Seller_Name__c}</td>
+</tr>
+<tr style="height: 16px;">
+<td rowspan="4" style="width: 250.222px;"><strong>Deal Period</strong></td>
+<td style="width: 337.389px; height: 16px;">From time (“Start Time”)</td>
+<td style="width: 337.389px; height: 16px;">{!EBH_Deal__c.EBH_DealStartTime__c} AEDT/AEST</td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 337.389px; height: 16px;">From date (“Start Date”)</td>
+<td style="width: 337.389px; height: 16px;">{!EBH_Deal__c.EBH_DealStartDate__c}</td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 337.389px; height: 16px;">To time (“End Time”)</td>
+<td style="width: 337.389px; height: 16px;">{!EBH_Deal__c.EBH_DealEndTime__c} AEDT/AEST</td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 337.389px; height: 16px;">To date (“End Date”)</td>
+<td style="width: 337.389px; height: 16px;">{!EBH_Deal__c.EBH_DealEndDate__c}</td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 250.222px; height: 16px;"><strong>Shipping Fee Contribution [Optional]</strong></td>
+<td colspan="2" style="width: 674.778px; height: 16px;"><p>eBay will fund the following dollar amount towards Your domestic shipping costs: {!EBH_Deal__c.Shipping_Rate_Funding__c} per completed sale of the items listed in this Term Sheet, in accordance with the Deals Portal Master Terms and Conditions.
+</p>
+</td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 250.222px; height: 16px;"><strong>Additional Terms</strong></td>
+<td colspan="2" style="width: 674.778px; height: 16px;"><p>eBay proposes the following terms which applies in addition to the Deals Portal Master Terms and Conditions:  
+</p>
+<p>{!EBH_Deal__c.Additional_Terms_Override_Of_Agreement__c}</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Deal:</strong></p>
+<table style="width: 946px; height: 100px; border-collapse: collapse;" border="1" cellspacing="5" cellpadding="5">
+<tbody>
+<tr style="height: 16px;">
+<td style="width: 157.66px;"><strong>Item</strong></td>
+<td  style="width: 157.66px;"><strong>Item Number</strong></td>
+<td  style="width: 157.66px;"><strong>Current Price (List Price or RRP)</strong></td>
+<td  style="width: 157.66px;"><strong>Your submitted Deals Price</strong></td>
+<td  style="width: 157.66px;"><strong>Quantity/Units</strong></td>
+</tr>
+<tr style="height: 16px;">
+<td>{!EBH_Deal__c.EBH_ProductTitle__c}</td>
+<td>{!EBH_Deal__c.EBH_eBayItemID__c}</td>
+<td>${!EBH_Deal__c.EBH_RRPWASPrice__c}</td> 
+<td>${!EBH_Deal__c.EBH_SellerPrice__c}</td>
+<td>{!EBH_Deal__c.EBH_Quantity__c}</td>
+</tr>
+</tbody>
+</table>
+<br/>
+<br/>
+<table style="width: 946px; height: 100px; border-collapse: collapse;" border="1" cellspacing="5" cellpadding="5">
+<tbody>
+<tr style="height: 16px;">
+<td style="width: 157.66px;"><strong>Final Deals Price</strong></td>
+<td  style="width: 157.66px;"><strong>eBay Funding Amount per unit </strong></td>
+<td  style="width: 157.66px;"><strong>Your Funding Amount per unit </strong></td>
+<td  style="width: 157.66px;"><strong>Max Units per Customer </strong></td>
+</tr>
+<tr style="height: 16px;">
+<td>${!EBH_Deal__c.EBH_DealPrice__c}</td>
+<td>{!EBH_Deal__c.EBH_Subsidy__c}</td>
+<td>{!EBH_Deal__c.YourFundingAmountPerUnit__c}</td> 
+<td>{!EBH_Deal__c.EBH_MaximumPurchases__c}</td>
+</tr>
+</tbody>
+</table><p><strong>Funding:</strong></p>
+<p>   
+As set out in clause 7 of the Deals Portal Master Terms and Conditions, You agree to fund Your Funding Amount for all units sold during the 
+Deal Period. Your Funding Amount is separate and in addition to eBay fees set out on the eBay Site, including but not limited to final value fees 
+and feature fees, as agreed between You and eBay under eBay’s User Agreement.</p>
+ 
+<p><b>You acknowledge and agree that eBay will not fund beyond the  Quantity/Units and that You will be responsible for funding the full 
+discount on any units sold above the Quantity/Units.</b> For the avoidance of doubt, eBay will not fund beyond the Quantity/Units in circumstances where Coupon Offers 
+have been redeemed above the Quantity/Units as a result of Your Item restocking during the Deals Period. </p> 
+ 
+<p>Your Funding Amount will be calculated and charged to You as follows:  </p>
+<ol>
+    <li>When a Coupon Offer is redeemed, eBay will credit the difference between the Current Price and Final Deals Price (or if the eBay 
+        Funding Amount is zero, Your submitted Deals Price) at checkout for each transaction to the buyer. Thirty (30) days following the 
+        conclusion of the Deal Period (“<b>Calculation Date</b>”), eBay will calculate Your Funding Amount less any refunds on Item(s) that have been 
+        processed through eBay. The remainder of the Your Funding Amount will be charged to you pursuant to clause 3 below.  For the 
+        avoidance of doubt, Your Funding Amount:  
+        <ol type="a">
+            <li>will not be reduced in accordance with this clause, where a partial refund is provided; and</li>
+            <li>will only be reduced by any refunds where:
+                <ol type="i">
+                    <li>The refund transactions have been processed through eBay to enable eBay to verify that the transactions were made on <a title="eBay.com.au" href="http://www.ebay.com.au">eBay.com.au</a>; and</li>
+                    <li>In circumstances where you have also received a final value fee credit from eBay.</li>
+                </ol>
+            </li>
+        </ol>
+    </li>
+    <li><b>Parties agree that no recalculation of Your Funding Amount shall be made after the Calculation Date, and any returns which occur after the Calculation Date shall not be taken into account.</b> Accordingly, you should process refunds on transactions and obtain all final value fee credits (if eligible) in a timely manner.</li>
+    <li>Within approximately sixty (60) days of the conclusion of each Deal Period, eBay will require payment of the Your Funding Amount owed from the Coupon Offers redeemed from sales of the Item(s) during the Deal Period (“<b>Charge Date</b>”). If:
+        <ol type="a">
+            <li>You have been not been activated for eBay to manage your payments prior to the Charge Date, eBay will invoice you the Your Funding Amount owed from the Coupon Offers redeemed from sales of the Item(s) during the Deal Period. You must pay the invoice within your next billing cycle.</li>
+            <li>You have been activated for eBay to manage your payments prior to the Charge Date, eBay will collect the Your Funding Amount 
+                owed from the Coupon Offers redeemed from the sales of the Item(s) during the Deal Period in accordance with clause 9 of the <a title="Payments Terms of Use" href="https://pages.ebay.com.au/payment/2.0/terms.html#article-9">Payments Terms of Use</a>, including by:  
+                <ol type="i">
+                    <li>Retaining such amounts from your current or future disbursements relating to any transactions that you may have;</li>
+                    <li>Recouping from your “Linked Financial Account” (as defined in the Payments Terms of Use) (and if required, by issuing a direct debit mandate or other similar authorisations); and</li>
+                    <li>Recouping from any payment instrument or payment method you may have authorised or placed on file with eBay Commerce Australia Pty Ltd or its “Affiliates” (as defined in the Payment Terms of Use).</li>
+                </ol>
+            </li>
+        </ol>
+    </li>
+    <li>Notwithstanding the above, you may receive an invoice from eBay for other amounts owed to eBay (not relating to the Your Funding Amount owed from the Coupon Offers redeemed from the sales of the Item). <b>You must pay the invoice within 30 days of the date of the invoice.</b></li>
+</ol> 
+<p>IF YOU ACCEPT THE TERMS OF THIS DEALS PORTAL TERM SHEET, <strong><u>CLICK “I AGREE” BELOW</u></strong>. BY CLICKING “I AGREE” BELOW, YOU ARE CONFIRMING THAT YOU ARE DULY AUTHORISED TO ENTER INTO AN AGREEMENT WITH EBAY AND THAT THE INFORMATION PROVIDED IS ACCURATE.</p>
+<p style="text-align: center;"><a title="I AGREE" href="{!EBH_Deal__c.SiteURL__c}?restype=acceptdeal&id={!EBH_Deal__c.Id}&amp;reURL=www.ebay.au">I AGREE</a></p>

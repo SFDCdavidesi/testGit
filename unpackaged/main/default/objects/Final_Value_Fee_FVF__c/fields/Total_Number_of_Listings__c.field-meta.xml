@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Number_of_Listings__c</fullName>
+    <description>EPH-7295 New object: Final Value Fee (FVF). Record Type - &quot;Listing Level&quot;</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Total Number of listings that are a part of the Final Value Fee Promotion</inlineHelpText>
+    <label>Total Number of Listings</label>
+    <summaryForeignKey>Nominated_Item__c.Final_Value_Fee_FVF__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

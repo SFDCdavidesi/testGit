@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<span style="background-color: rgb(255, 255, 255);">The stage of the following Opportunity changed:</span><div><br></div><div>Opportunity Name:&nbsp;{!Opportunity.Name}</div><div>Stage: {!Opportunity.StageName}</div><div>Start of Campaign:&nbsp;{!Opportunity.Campaign_Start2__c}</div><div>Opportunity Amount:&nbsp;{!Opportunity.Amount_Net_Net_Net__c}</div><div><br></div><div>Link to Opportunity:</div><div>{!Opportunity.Link}</div><div id="gtx-trans" style="position: absolute; left: 149px; top: 108px;"><div class="gtx-trans-icon"></div></div>]]></td>
+</tr>
+</table>

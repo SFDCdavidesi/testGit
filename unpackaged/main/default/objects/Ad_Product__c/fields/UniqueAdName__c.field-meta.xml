@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UniqueAdName__c</fullName>
+    <description>Unique Ad Name to be sent to DFP.</description>
+    <externalId>false</externalId>
+    <formula>Name + &#39; - &#39; + Product2__r.Name +&#39; - &#39;</formula>
+    <inlineHelpText>Unique Ad Name to be sent to DFP.</inlineHelpText>
+    <label>UniqueAdName</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

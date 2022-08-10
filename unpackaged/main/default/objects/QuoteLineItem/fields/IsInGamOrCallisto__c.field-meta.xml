@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsInGamOrCallisto__c</fullName>
+    <description>US-0010555 - ADS - Validation skip on setting AD on Ad product for PVP</description>
+    <externalId>false</externalId>
+    <formula>AND(
+    !ISNULL(Product2Id),
+    !ISNULL(AdProduct__c),
+    AdProduct__r.Ad_Id__c != &#39;&#39;,
+    OR(
+        Product2.Callisto__c = false,
+        AND(
+            Product2.Callisto__c = true,
+            ISPICKVAL(AdProduct__r.Opportunity__r.StageName, &#39;Closed Won&#39;) 
+        ) 
+    )
+)</formula>
+    <label>IsInGamOrCallisto</label>
+    <type>Checkbox</type>
+</CustomField>

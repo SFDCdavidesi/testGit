@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quote_AdProduct_Unique_Key__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>US-0008866 - [Ads 2020] Prevent deletion of Quote Line Item &amp; Ad Product if booked to DFP</description>
+    <externalId>false</externalId>
+    <label>Quote &amp; Ad Product Unique Key</label>
+    <length>255</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

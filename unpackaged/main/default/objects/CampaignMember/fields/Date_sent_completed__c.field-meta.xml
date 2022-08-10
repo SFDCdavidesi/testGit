@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_sent_completed__c</fullName>
+    <description>US-0011525 - Expose Campaign detail on Customer account - AC2</description>
+    <externalId>false</externalId>
+    <label>Date sent / completed</label>
+    <required>false</required>
+    <type>DateTime</type>
+</CustomField>

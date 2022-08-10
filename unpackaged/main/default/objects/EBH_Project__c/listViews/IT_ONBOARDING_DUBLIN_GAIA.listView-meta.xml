@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IT_ONBOARDING_DUBLIN_GAIA</fullName>
+    <columns>NAME</columns>
+    <columns>GMVLast12Months__c</columns>
+    <columns>EBH_Stage__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>EBH_Seller__c</columns>
+    <columns>OracleID__c</columns>
+    <columns>Lead__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>greaterThan</operation>
+        <value>5/20/2021 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>Site__c</field>
+        <operation>equals</operation>
+        <value>IT</value>
+    </filters>
+    <filters>
+        <field>OWNER.LAST_NAME</field>
+        <operation>equals</operation>
+        <value>Fiore</value>
+    </filters>
+    <filters>
+        <field>EBH_Stage__c</field>
+        <operation>notEqual</operation>
+        <value>Cancelled</value>
+    </filters>
+    <label>IT_ONBOARDING_DUBLIN_GAIA</label>
+</ListView>

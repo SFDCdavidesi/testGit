@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <classAccesses>
+        <apexClass>HIVE_Intellum</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>HIVE_Intellum_EnrollmentController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <description>US-0010064 - [Intellum] API integration with Intellum</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Intellum Manage Enrollments</label>
+    <pageAccesses>
+        <apexPage>IntellumCreateEnrollment</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+</PermissionSet>

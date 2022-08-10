@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deals_With_Coinvest_FR</fullName>
+    <columns>CREATED_DATE</columns>
+    <columns>EBH_DealSiteId__c</columns>
+    <columns>EBH_BusinessName__c</columns>
+    <columns>NAME</columns>
+    <columns>EBH_eBayItemID__c</columns>
+    <columns>EBH_ProductTitle__c</columns>
+    <columns>EBH_Status__c</columns>
+    <columns>EBH_DealRetailCampaign__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>EBH_DealSiteId__c</field>
+        <operation>equals</operation>
+        <value>71</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>EBH_Deal__c.Deal_V1</value>
+    </filters>
+    <label>Deals With Coinvest FR</label>
+</ListView>

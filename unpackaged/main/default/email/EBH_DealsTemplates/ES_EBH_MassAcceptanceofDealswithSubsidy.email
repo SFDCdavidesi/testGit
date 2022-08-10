@@ -1,0 +1,50 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span style="font-family: Arial, sans-serif; font-size: 12pt;">Estimado
+vendedor pulsa</span><font face="arial">&nbsp;<a href="https://hive-prod.secure.force.com/response?id={!EBH_Deal__c.Id}&amp;reURL=www.ebay.es"><b>Acepto</b></a>&nbsp;</font><span style="font-family: Arial, sans-serif; font-size: 12pt;">para confirmar el acuerdo de promoción&nbsp;</span><span style="font-family: Arial, sans-serif; font-size: 12pt;">con eBay.</span></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="arial"><br></font></div><div style=""><font face="arial" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">Seudónimo de eBay:&nbsp;</font><font face="arial">{!EBH_Deal__c.EBH_BusinessName__c}</font></div><div style=""><font face="arial" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">Título:&nbsp;</font><font face="arial">{!EBH_Deal__c.EBH_ProductTitle__c}</font></div><div style=""><font face="arial" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">Cantidad:&nbsp;</font><font face="arial">{!EBH_Deal__c.EBH_Quantity__c}</font></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="ES" style="font-size:12.0pt;font-family:
+&quot;Arial&quot;,sans-serif;mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;
+mso-ansi-language:ES;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">Detalles
+Formato: ofertas semanales</span></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="arial">Fecha de inicio: {!EBH_Deal__c.EBH_DealStartDate__c}</font></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="arial">Fecha de finalización: {!EBH_Deal__c.EBH_DealEndDate__c}</font></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="arial">Precio anterior: € {!EBH_Deal__c.EBH_RRPWASPrice__c}</font></div><div style=""><font face="arial" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">Precio de la oferta: €&nbsp;</font><font face="arial">{!EBH_Deal__c.EBH_SellerPrice__c}</font></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><p class="MsoNormal"><span lang="ES" style="font-family:
+&quot;Arial&quot;,sans-serif;mso-ansi-language:ES">Importe del subsidio por unidad: </span><span lang="ES">€ {!EBH_Deal__c.EBH_Subsidy__c} </span><span lang="ES" style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-ansi-language:ES;mso-fareast-language:DE"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span lang="ES" style="font-family:
+&quot;Arial&quot;,sans-serif;mso-ansi-language:ES">Máximas unidades subsidiadas: {!EBH_Deal__c.EBH_Quantity__c}</span><span lang="ES" style="font-size:11.0pt;mso-ansi-language:ES"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Arial&quot;,sans-serif">Importe
+total del subsidio: </span>€ {!EBH_Deal__c.EBH_SubsidyMax__c}<span style="font-size:11.0pt"><o:p></o:p></span></p></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="arial"><br></font></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="arial"><b>Comentarios de eBay:</b></font></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="arial">{!EBH_Deal__c.EBH_CommentfromeBaySourcer__c}</font></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="arial"><br></font></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><b><span lang="ES" style="font-size:12.0pt;font-family:
+&quot;Arial&quot;,sans-serif;mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;
+mso-ansi-language:ES;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">Recuerda,
+al aceptar confirmas que:</span></b></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><p class="MsoNormal"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-ansi-language:ES">• El artículo que ofreces no es una falsificación ni
+implica ningún tipo de plagio.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-ansi-language:ES">• Tienes autorización para vender o distribuir este
+artículo y enviarlo a las ubicaciones especificadas.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-ansi-language:ES">• No infringes ninguna obligación contractual adquirida
+mediante otros acuerdos al poner este artículo en venta en eBay.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-ansi-language:ES">• El precio original indicado, es verdaderamente el
+precio de venta al público recomendado o en su defecto, el precio anterior del
+artículo.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><b><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:ES">. </span></b><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;mso-ansi-language:ES">No
+modificarás el precio del artículo ofertado durante el periodo indicado de la
+promoción sin el consentimiento de eBay.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-ansi-language:ES">&nbsp;</span></p>
+
+<p class="MsoNormal"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-ansi-language:ES">Un cordial saludo,<o:p></o:p></span></p>
+
+<span lang="ES" style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;mso-ansi-language:
+ES;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">El equipo de eBay</span></div>]]></td>
+</tr>
+</table>

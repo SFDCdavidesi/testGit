@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Industry_Vertical__c</fullName>
+    <externalId>false</externalId>
+    <label>Industry Vertical</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Alcoholic Beverages</fullName>
+                <default>false</default>
+                <label>Alcoholic Beverages</label>
+            </value>
+            <value>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+                <label>Automotive</label>
+            </value>
+            <value>
+                <fullName>Brand Manufacturer</fullName>
+                <default>false</default>
+                <label>Brand Manufacturer</label>
+            </value>
+            <value>
+                <fullName>Computer Software and Applications</fullName>
+                <default>false</default>
+                <label>Computer Software and Applications</label>
+            </value>
+            <value>
+                <fullName>Consumer Electronics</fullName>
+                <default>false</default>
+                <label>Consumer Electronics</label>
+            </value>
+            <value>
+                <fullName>Consumer Packaged Goods</fullName>
+                <default>false</default>
+                <label>Consumer Packaged Goods</label>
+            </value>
+            <value>
+                <fullName>Crypto-Currency</fullName>
+                <default>false</default>
+                <label>Crypto-Currency</label>
+            </value>
+            <value>
+                <fullName>Dining Out</fullName>
+                <default>false</default>
+                <label>Dining Out</label>
+            </value>
+            <value>
+                <fullName>Education</fullName>
+                <default>false</default>
+                <label>Education</label>
+            </value>
+            <value>
+                <fullName>Entertainment</fullName>
+                <default>false</default>
+                <label>Entertainment</label>
+            </value>
+            <value>
+                <fullName>Finance</fullName>
+                <default>false</default>
+                <label>Finance</label>
+            </value>
+            <value>
+                <fullName>Fitness &amp; Exercise</fullName>
+                <default>false</default>
+                <label>Fitness &amp; Exercise</label>
+            </value>
+            <value>
+                <fullName>Food &amp; Beverage</fullName>
+                <default>false</default>
+                <label>Food &amp; Beverage</label>
+            </value>
+            <value>
+                <fullName>Government Business</fullName>
+                <default>false</default>
+                <label>Government Business</label>
+            </value>
+            <value>
+                <fullName>Health &amp; Beauty</fullName>
+                <default>false</default>
+                <label>Health &amp; Beauty</label>
+            </value>
+            <value>
+                <fullName>Home + Garden</fullName>
+                <default>false</default>
+                <label>Home + Garden</label>
+            </value>
+            <value>
+                <fullName>Industry</fullName>
+                <default>false</default>
+                <label>Industry</label>
+            </value>
+            <value>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+                <label>Insurance</label>
+            </value>
+            <value>
+                <fullName>Media</fullName>
+                <default>false</default>
+                <label>Media</label>
+            </value>
+            <value>
+                <fullName>Medical Health</fullName>
+                <default>false</default>
+                <label>Medical Health</label>
+            </value>
+            <value>
+                <fullName>Non-Profit Organizations</fullName>
+                <default>false</default>
+                <label>Non-Profit Organizations</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Pets</fullName>
+                <default>false</default>
+                <label>Pets</label>
+            </value>
+            <value>
+                <fullName>Pharmaceutical Drugs</fullName>
+                <default>false</default>
+                <label>Pharmaceutical Drugs</label>
+            </value>
+            <value>
+                <fullName>Real Estate</fullName>
+                <default>false</default>
+                <label>Real Estate</label>
+            </value>
+            <value>
+                <fullName>Services</fullName>
+                <default>false</default>
+                <label>Services</label>
+            </value>
+            <value>
+                <fullName>Shipping</fullName>
+                <default>false</default>
+                <label>Shipping</label>
+            </value>
+            <value>
+                <fullName>Sports</fullName>
+                <default>false</default>
+                <label>Sports</label>
+            </value>
+            <value>
+                <fullName>Style &amp; Fashion</fullName>
+                <default>false</default>
+                <label>Style &amp; Fashion</label>
+            </value>
+            <value>
+                <fullName>Technology &amp; Computing</fullName>
+                <default>false</default>
+                <label>Technology &amp; Computing</label>
+            </value>
+            <value>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+                <label>Telecommunications</label>
+            </value>
+            <value>
+                <fullName>Toys</fullName>
+                <default>false</default>
+                <label>Toys</label>
+            </value>
+            <value>
+                <fullName>Travel</fullName>
+                <default>false</default>
+                <label>Travel</label>
+            </value>
+            <value>
+                <fullName>Video Gaming</fullName>
+                <default>false</default>
+                <label>Video Gaming</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

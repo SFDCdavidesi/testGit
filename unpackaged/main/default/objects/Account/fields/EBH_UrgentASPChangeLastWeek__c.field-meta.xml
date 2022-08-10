@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_UrgentASPChangeLastWeek__c</fullName>
+    <description>[EBH] (EPH-4125) - Average Selling Price change (%)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Latest week ASP compared to average ASP over the previous 4 weeks. Only for Urgent Seller.</inlineHelpText>
+    <label>ASP change (%)</label>
+    <precision>16</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

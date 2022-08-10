@@ -1,0 +1,7 @@
+New  Account has been Created:
+
+Account Name: {!Account.Name}
+Industry: {!Account.Industry}
+Owner: {!Account.OwnerFullName}
+
+Link to Account: {!Account.Link}

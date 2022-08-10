@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PayPal_adress_N__c</fullName>
+    <description>EPH-7405 Object Coupon seller: Change Fieldtype for field PayPal Adress</description>
+    <externalId>false</externalId>
+    <formula>Seller__r.PayPal_adress__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>PayPal adress</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

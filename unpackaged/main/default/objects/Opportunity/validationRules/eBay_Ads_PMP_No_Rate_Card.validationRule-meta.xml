@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>eBay_Ads_PMP_No_Rate_Card</fullName>
+    <active>true</active>
+    <description>if no rate card is available, check the &#39;no rate card request&#39; checkbox field to confirm</description>
+    <errorConditionFormula>AND(
+
+$Setup.byPass__c.ByPass_Validation__c = FALSE,
+
+$Profile.Name = &quot;Standard Ads User Profile&quot;,
+
+RecordType.DeveloperName = $Label.OPP_RECORDTYPEDEVNAME_PMP,
+
+OR(
+ISPICKVAL(StageName, &#39;Verbal Commitment&#39;),
+ISPICKVAL(StageName, &#39;Contract Processing and Review&#39;),
+ISPICKVAL(StageName, &#39;Closed Won&#39;)
+),
+
+Rate_Card_Available__c = FALSE,
+
+No_Rate_Card_Exception__c = FALSE
+
+)</errorConditionFormula>
+    <errorDisplayField>No_Rate_Card_Exception__c</errorDisplayField>
+    <errorMessage>If no rate card exception is associated with this opportunity, check &#39;no rate card exception&#39; to confirm</errorMessage>
+</ValidationRule>

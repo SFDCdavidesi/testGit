@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New</fullName>
+                <default>true</default>
+                <label>New</label>
+            </value>
+            <value>
+                <fullName>Requirements Clarification</fullName>
+                <default>false</default>
+                <label>Under Review (Requirement Clarification)</label>
+            </value>
+            <value>
+                <fullName>Requires Prioritization</fullName>
+                <default>false</default>
+                <label>Requires Prioritization</label>
+            </value>
+            <value>
+                <fullName>Sizing by HIVE team</fullName>
+                <default>false</default>
+                <label>Sizing by HIVE team</label>
+            </value>
+            <value>
+                <fullName>Requirement Accepted</fullName>
+                <default>false</default>
+                <label>User Story Creation</label>
+            </value>
+            <value>
+                <fullName>Development</fullName>
+                <default>false</default>
+                <label>Coming Soon</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>Delivered</label>
+            </value>
+            <value>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+                <label>Rejected</label>
+            </value>
+            <value>
+                <fullName>On-hold</fullName>
+                <default>false</default>
+                <label>Product Backlog</label>
+            </value>
+            <value>
+                <fullName>Needs Clarification</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Needs Clarification</label>
+            </value>
+            <value>
+                <fullName>Prioritization</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Prioritization</label>
+            </value>
+            <value>
+                <fullName>Testing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Testing</label>
+            </value>
+            <value>
+                <fullName>Waiting for feedback</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Waiting for Feedback</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

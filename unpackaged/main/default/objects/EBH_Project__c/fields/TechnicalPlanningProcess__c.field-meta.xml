@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TechnicalPlanningProcess__c</fullName>
+    <description>US-0007708 - [AU] New fields for &#39;Managed Payment&#39; Pagelayout for Project</description>
+    <externalId>false</externalId>
+    <label>Technical Planning Process</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yes</fullName>
+                <default>false</default>
+                <label>Yes</label>
+            </value>
+            <value>
+                <fullName>No</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+            <value>
+                <fullName>Don’t Know</fullName>
+                <default>false</default>
+                <label>Don’t Know</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

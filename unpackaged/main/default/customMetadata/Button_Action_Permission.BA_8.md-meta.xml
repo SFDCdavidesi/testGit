@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>BA_8</label>
+    <protected>false</protected>
+    <values>
+        <field>Button_Name__c</field>
+        <value xsi:type="xsd:string">Revision_IO</value>
+    </values>
+    <values>
+        <field>Object_Name__c</field>
+        <value xsi:type="xsd:string">Opportunity</value>
+    </values>
+    <values>
+        <field>Permissionset_Name__c</field>
+        <value xsi:type="xsd:string">Ebay_Advertisement_Account_Managers</value>
+    </values>
+</CustomMetadata>

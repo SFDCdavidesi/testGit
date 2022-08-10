@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Brand_Seller_Name__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>If different from the Advertiser Name, please list all brands that are associated with this Advertiser/Requester. These will all be reported cumulative. For individual brand requests, please submit individual requests.</inlineHelpText>
+    <label>Brand Seller Name</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

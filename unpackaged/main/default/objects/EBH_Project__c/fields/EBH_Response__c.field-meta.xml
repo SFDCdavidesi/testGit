@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_Response__c</fullName>
+    <description>#US-0015700</description>
+    <externalId>false</externalId>
+    <label>Response</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>In Queue</fullName>
+                <default>false</default>
+                <label>In Queue</label>
+            </value>
+            <value>
+                <fullName>Call Cancelled</fullName>
+                <default>false</default>
+                <label>Call Cancelled</label>
+            </value>
+            <value>
+                <fullName>Seller Ineligible</fullName>
+                <default>false</default>
+                <label>Seller Ineligible</label>
+            </value>
+            <value>
+                <fullName>Wrong phone number</fullName>
+                <default>false</default>
+                <label>Wrong phone number</label>
+            </value>
+            <value>
+                <fullName>Call not answered</fullName>
+                <default>false</default>
+                <label>Call not answered</label>
+            </value>
+            <value>
+                <fullName>Not reached</fullName>
+                <default>false</default>
+                <label>Not reached</label>
+            </value>
+            <value>
+                <fullName>DMC not reached</fullName>
+                <default>false</default>
+                <label>DMC not reached</label>
+            </value>
+            <value>
+                <fullName>DMC Not Interested</fullName>
+                <default>false</default>
+                <label>DMC Not Interested</label>
+            </value>
+            <value>
+                <fullName>DMC Interested</fullName>
+                <default>false</default>
+                <label>DMC Interested</label>
+            </value>
+            <value>
+                <fullName>DMC Committed</fullName>
+                <default>false</default>
+                <label>DMC Committed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

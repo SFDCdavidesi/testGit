@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conditional_On_Hold_Reason_Details</fullName>
+    <active>true</active>
+    <description>US-0009278 - For AU Onboarding Projects, the &quot;On Hold Reason Details&quot; field is required when the &quot;On Hold Reason&quot; field is set to &quot;Other&quot;. System Administrators bypass this rule.</description>
+    <errorConditionFormula>AND(
+  NOT($Setup.ActiveValidationRules__c.All_Validation_Rules_Deactivated__c),
+  NOT(CONTAINS($Profile.Name, &#39;System&#39;)),
+  RecordType.DeveloperName =&#39;eBayAUSMB&#39;,
+  ISPICKVAL(OnHoldReason__c, &#39;Other&#39;),
+  ISBLANK(OnHoldReasonDetails__c)
+)</errorConditionFormula>
+    <errorDisplayField>OnHoldReasonDetails__c</errorDisplayField>
+    <errorMessage>The &quot;On Hold Reason Details&quot; field is required when the &quot;On Hold Reason&quot; field is set to &quot;Other&quot;.</errorMessage>
+</ValidationRule>

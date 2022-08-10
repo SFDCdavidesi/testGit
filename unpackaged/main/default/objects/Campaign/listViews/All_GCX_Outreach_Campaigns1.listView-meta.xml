@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_GCX_Outreach_Campaigns1</fullName>
+    <columns>CAMPAIGN.NAME</columns>
+    <columns>CAMPAIGN.RECORDTYPE</columns>
+    <columns>EBH_ParentCampaignName_WAVE__c</columns>
+    <columns>CAMPAIGN.LAST_UPDATE</columns>
+    <columns>CAMPAIGN.START_DATE</columns>
+    <columns>EBH_ReachedContacts__c</columns>
+    <columns>EBH_ServiceProvider__c</columns>
+    <columns>CAMPAIGN.STATUS</columns>
+    <columns>CAMPAIGN.END_DATE</columns>
+    <columns>CAMPAIGN.NUM_CONTACTS</columns>
+    <columns>CAMPAIGN.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CAMPAIGN.START_DATE</field>
+        <operation>greaterThan</operation>
+        <value>1/1/2020</value>
+    </filters>
+    <filters>
+        <field>CAMPAIGN.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Campaign.EBH_AMOutreach</value>
+    </filters>
+    <filters>
+        <field>CAMPAIGN.STATUS</field>
+        <operation>equals</operation>
+        <value>Campaign Scheduled,Preparation,Campaign in QA,Execution,Campaign Paused,Cancelled,Completed</value>
+    </filters>
+    <filters>
+        <field>CAMPAIGN.NAME</field>
+        <operation>contains</operation>
+        <value>GCX_DE_</value>
+    </filters>
+    <label>All GCX Outreach Campaigns</label>
+</ListView>

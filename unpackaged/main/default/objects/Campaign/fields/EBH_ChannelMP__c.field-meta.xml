@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_ChannelMP__c</fullName>
+    <description>[EBH] (EPH-145) - Channel</description>
+    <externalId>false</externalId>
+    <label>Channel</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Email</fullName>
+                <default>false</default>
+                <label>Email</label>
+            </value>
+            <value>
+                <fullName>Message Centre</fullName>
+                <default>false</default>
+                <label>Message Centre</label>
+            </value>
+            <value>
+                <fullName>Video</fullName>
+                <default>false</default>
+                <label>Video</label>
+            </value>
+            <value>
+                <fullName>GCX Outreach (Phone)</fullName>
+                <default>false</default>
+                <label>GCX Outreach (Phone)</label>
+            </value>
+            <value>
+                <fullName>GCX Inbound (Phone)</fullName>
+                <default>false</default>
+                <label>GCX Inbound (Phone)</label>
+            </value>
+            <value>
+                <fullName>Banners (onsite)</fullName>
+                <default>false</default>
+                <label>Banners (onsite)</label>
+            </value>
+            <value>
+                <fullName>Banners (Mobile in App)</fullName>
+                <default>false</default>
+                <label>Banners (Mobile in App)</label>
+            </value>
+            <value>
+                <fullName>Mobile Push Notification</fullName>
+                <default>false</default>
+                <label>Mobile Push Notification</label>
+            </value>
+            <value>
+                <fullName>Seller Centre</fullName>
+                <default>false</default>
+                <label>Seller Centre</label>
+            </value>
+            <value>
+                <fullName>Landing Page Required</fullName>
+                <default>false</default>
+                <label>Landing Page</label>
+            </value>
+            <value>
+                <fullName>Events</fullName>
+                <default>false</default>
+                <label>Event</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

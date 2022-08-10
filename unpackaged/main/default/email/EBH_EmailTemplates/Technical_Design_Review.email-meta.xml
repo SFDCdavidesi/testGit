@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email to review a Technical Design</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Hive_Letterhead</letterhead>
+    <name>Technical Design Review</name>
+    <style>freeForm</style>
+    <subject>There is a Technical Design ready to be reviewed</subject>
+    <textOnly>Hi {!Approval_Requesting_User.Name} ,
+There is a new Technical Design ready to be reviewed.
+
+User Story : {!copado__User_Story__c.Name}  {!copado__User_Story__c.Link}
+
+Technical Design :
+{!copado__User_Story__c.copado__Technical_Specifications__c}
+{!copado__User_Story__c.copado__Functional_Specifications__c}
+
+
+Developer: {!copado__User_Story__c.copado__Developer__c}
+
+You can approve it by replying to this email with &quot;Approve&quot;</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

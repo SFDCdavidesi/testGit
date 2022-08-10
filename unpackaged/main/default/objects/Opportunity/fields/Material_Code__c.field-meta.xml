@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Material_Code__c</fullName>
+    <description>US-0009221 - [Ads 2020] Field &amp; Formulas for Revenue Recognition and Compliance</description>
+    <externalId>false</externalId>
+    <formula>CASE(Product_line__c,
+
+&quot;Adsales (10046)&quot;, &quot;ADSALES&quot;,
+
+&quot;Partnership (10010)&quot;,&quot;ADVOTHR&quot;,
+
+&quot;Agency (10049)&quot;,&quot;AGENCY&quot;,
+
+&quot;GoogleADXchange (10084)&quot;,&quot;AD EXCHANGE&quot;,
+
+&quot;AEx Audience Extension (10272)&quot;,&quot;eAX&quot;,
+
+&quot;Shipping (10007)&quot;, &quot;E2ESRVC&quot;,
+
+&quot;Multinational (10058)&quot;, &quot;MULTINATIONAL&quot;,
+
+&quot;AdNetworks (10059)&quot;, &quot;ADNETWORKS&quot;,
+
+&quot;Data license API (10020)&quot;,&quot;API Fees&quot;,
+
+&quot;Data license strategic (10021)&quot;, &quot;LIC&quot;,
+
+&quot;Targeted Advertising (10069)&quot;,&quot;TBP&quot;,
+
+&quot;Programmatic Selling (10111)&quot;,&quot;PROGRAM SELLING&quot;,
+
+&quot;Seller Advertising (00342)&quot;,&quot;SELLERADS&quot;,
+
+&quot;Comm. Trading Desk (10029)&quot;,&quot;CTD&quot;,
+
+&quot;Brand Solutions (10172)&quot;,&quot; BRANDSOL DIRECT&quot;,
+
+&quot;Merchant Promotions (10174)&quot;,&quot; MERCHANT DIRECT&quot;,
+
+&quot;Brand Solutions (10171)&quot;,&quot;BRANDSOL AGENCY&quot;,
+
+&quot;Merchant Promotions (10173)&quot;,&quot;MERCHANT AGENCY&quot;,
+
+&quot;Audience Extension (10029)&quot;,&quot;AUDIENCE EXTENSION&quot;,
+
+&quot;Criteo PL (10218)&quot;,&quot;CRITEO-ADVERTISING&quot;,
+
+&quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Material Code</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

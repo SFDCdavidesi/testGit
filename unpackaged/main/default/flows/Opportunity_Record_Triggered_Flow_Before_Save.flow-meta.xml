@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <assignments>
+        <name>Assign_Owner_Link</name>
+        <label>Assign Owner Link</label>
+        <locationX>50</locationX>
+        <locationY>767</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Owner_Link__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <description>US-0011810 - Ads - Link Seller and Advertising Account</description>
+        <name>Check_Seller_Account_in_Ads_Account</name>
+        <label>Check Seller Account in Ads Account</label>
+        <locationX>182</locationX>
+        <locationY>311</locationY>
+        <defaultConnector>
+            <targetReference>IF_OwnerID_Owner_Link_c</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Seller_Account_Linked</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account.Seller_Account__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Seller_Account</targetReference>
+            </connector>
+            <label>Seller Account Linked</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>IF_OwnerID_Owner_Link_c</name>
+        <label>Check Owner Link</label>
+        <locationX>182</locationX>
+        <locationY>647</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>OwnerID_Owner_Link_c</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4 OR 5)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.OwnerId</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.Owner_Link__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>eBay</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>eBay_Ads_Direct_Revision_Opportunity</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Private_Marketplace</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Programmatic</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Owner_Link</targetReference>
+            </connector>
+            <label>OwnerID != Owner_Link__c</label>
+        </rules>
+    </decisions>
+    <description>US-0009344 - Opportunity Additional Automation Requirements
+US-0011810 - Ads - Link Seller and Advertising Account</description>
+    <environments>Default</environments>
+    <interviewLabel>Opportunity Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opportunity Record-Triggered Flow Before-Save</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>US-0011810 - Ads - Link Seller and Advertising Account</description>
+        <name>Assign_Seller_Account</name>
+        <label>Assign Seller Account</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <connector>
+            <targetReference>IF_OwnerID_Owner_Link_c</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Seller_Account__c</field>
+            <value>
+                <elementReference>$Record.Account.Seller_Account__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_Seller_Account_in_Ads_Account</targetReference>
+        </connector>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

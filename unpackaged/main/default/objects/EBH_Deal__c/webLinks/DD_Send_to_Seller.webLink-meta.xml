@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DD_Send_to_Seller</fullName>
+    <availability>online</availability>
+    <description>INTEG - N || CODE - N || WF - N || AP - N || VAL - N || CLASS – (Internal) || Daily Deals - Deal Configuration || CR - 00201539
+
+US-0008102 : [US]* Deals Mass Submission for External Seller Approval Process</description>
+    <displayType>massActionButton</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Send to Seller</masterLabel>
+    <openType>sidebar</openType>
+    <page>DD_SendToSellerPage</page>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+</WebLink>

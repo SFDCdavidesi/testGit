@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marks_Outreach_Kampagnen</fullName>
+    <columns>WHAT_NAME</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>EBH_Account__c</columns>
+    <columns>Order_Priority__c</columns>
+    <columns>Call_attempts__c</columns>
+    <columns>EBH_fResponseCode__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>STATUS</columns>
+    <columns>SUBJECT</columns>
+    <columns>Call_Back_Window_start__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>WHAT_NAME</field>
+        <operation>equals</operation>
+        <value>GCX_DE_PSA_Watches_Okt21</value>
+    </filters>
+    <label>Marks Outreach Kampagnen</label>
+</ListView>

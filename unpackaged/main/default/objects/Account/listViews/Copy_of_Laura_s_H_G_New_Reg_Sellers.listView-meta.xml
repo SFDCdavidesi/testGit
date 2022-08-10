@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Copy_of_Laura_s_H_G_New_Reg_Sellers</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>EBH_OracleID__c</columns>
+    <columns>EBH_CompanyName__c</columns>
+    <columns>EBH_FirstListDate__c</columns>
+    <columns>EBH_FirstSellDate__c</columns>
+    <columns>EBH_MainVertical__c</columns>
+    <columns>EBH_LLLastWeek__c</columns>
+    <columns>EBH_GMVLastWeek__c</columns>
+    <columns>EBH_GMVLast12Months__c</columns>
+    <columns>EBH_UrgentASPLastWeek__c</columns>
+    <columns>EBH_RevRollup__c</columns>
+    <columns>EBH_PrimarySite__c</columns>
+    <columns>EBH_Segment__c</columns>
+    <columns>EBH_LifecycleStage__c</columns>
+    <columns>Managed_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.EBH_Seller</value>
+    </filters>
+    <filters>
+        <field>EBH_FirstListDate__c</field>
+        <operation>greaterThan</operation>
+        <value>10/1/2021</value>
+    </filters>
+    <filters>
+        <field>EBH_MainVertical__c</field>
+        <operation>equals</operation>
+        <value>Home &amp; Garden</value>
+    </filters>
+    <filters>
+        <field>EBH_PrimarySite__c</field>
+        <operation>equals</operation>
+        <value>Germany</value>
+    </filters>
+    <label>Laura´s H&amp;G New Registered Sellers</label>
+</ListView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_Seller_Portal__c</fullName>
+    <description>US-0009684</description>
+    <externalId>false</externalId>
+    <formula>CASE(Status__c,
+  &#39;Draft&#39;,&#39;Draft&#39;,
+  &#39;Pending&#39;, &#39;Pending&#39;,
+  &#39;Open for Submissions&#39;,&#39;Open for Submissions&#39;,
+  &#39;Ops Review&#39;,&#39;Closed for Submissions&#39;,
+  &#39;CM Review&#39;,&#39;Closed for Submissions&#39;,
+  &#39;Scheduled&#39;,&#39;Closed for Submissions&#39;,
+  &#39;Running&#39;,&#39;Running&#39;,
+  &#39;Completed&#39;,&#39;Completed&#39;,&#39;&#39;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Seller_Communication</fullName>
+    <active>true</active>
+    <description>US-0011862 - Prevent and warn users from adding more than 10.000 Nominated Items to FVF</description>
+    <label>Seller Communication (depreciate)</label>
+    <picklistValues>
+        <picklist>Final_Value_Fee_Stage__c</picklist>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Signed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Draft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Executed Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ready for Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Running Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent_to_eBay_Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Statement Sent to Seller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>eBay Approved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Site__c</picklist>
+        <values>
+            <fullName>DE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UK</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

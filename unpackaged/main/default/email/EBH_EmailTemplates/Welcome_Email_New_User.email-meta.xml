@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0007619 - Migrate to Cases - Migrate email templates / workflows, [EPH-3824] (Sprint 7) Welcome Email custom template for new user in Hive</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Welcome Email New User</name>
+    <style>none</style>
+    <subject>Welcome to Hive {!Ticket__c.First_Name__c}!</subject>
+    <textOnly>Hive welcome information
+
+Dear {!Case.First_Name__c} {!Case.Last_Name__c},
+
+**Welcome to Hive!**
+
+You are now a registered user - please click here to access Hive.  We recommend using the Google Chrome browser.
+
+If you have questions or feedback on Hive…
+
+· Raise this with a Tiger Team member or Champion User via Chatter: To do this, click “Join” on the Hive Help and Support Chatter Group and write your feedback as a question, ensuring you tag a Tiger Team member in this using @username.  They will then either respond or escalate this.
+
+If you want to learn more about Hive…
+
+· Join the HIVE New Joiner training session. If you would like to schedule a new joiner training session please screen our Agenda and sign up for the training here. Please indicate if any of the add-on modules in the agenda are relevant for your role.
+· Join a new release training session: You will receive invitations to training sessions every time there is a release. These may take the form of short VMRs or full classroom training depending on the size and complexity of the release
+· Watch the Hive videos: Training videos and materials for each release are on the Hive Help and Support Chatter Group. To access these, click to join the group, then navigate to “Files &gt; View All” and sort by title to get a full view of all videos in the correct order
+· Ask a Tiger Team member or Champion User: Our dedicated groups of business representatives will be on hand to answer any questions you may have
+
+To contact one of the Tiger Team members…
+
+If you would like more information on Hive or have any questions, please reach out to the relevant Tiger Team member listed below:
+
+· Leah Ladines, Salvador Castilla and Karina Lameirinhas – Marketing
+· Steven Moody and Sunita Bhagat – Sales Planning
+· Kevin Steward and Heiko Johannisson – Sales
+· Nigel Grange and Colin McCallion – GCX
+· Berengere Chaintreau-Fuchs – Seller Experience
+· John Leichty – Finance
+· For all other queries, please email Project Hive Support
+
+We hope you enjoy using Hive!
+
+Project Hive Team
+
+
+
+If you would like to unsubscribe from Project Hive communications, please click here.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

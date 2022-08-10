@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_eBayPlusAdoption__c</fullName>
+    <description>[EBH] (US-0031) : eBay Plus Adoption</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Percentage of Listings that have adopted eBay Plus (last Retail Week)</inlineHelpText>
+    <label>eBay Plus Adoption (%)</label>
+    <precision>16</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

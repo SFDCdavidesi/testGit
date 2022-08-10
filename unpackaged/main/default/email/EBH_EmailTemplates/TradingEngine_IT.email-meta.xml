@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0006347: Trading Engine. 1:1 communication. IT</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>TradingEngine_IT</name>
+    <style>none</style>
+    <subject>Report di competitività per i tuoi prodotti top</subject>
+    <textOnly>Gentile  {!ContFirstName}({!SellerName}),
+
+eBay ha da poco sviluppato uno strumento che compara la competitività degli articoli presenti su eBay.it con quelli di altre realtà online. Lo strumento analizza i prodotti più venduti nel mercato che hanno maggiore domanda da parte di potenziali acquirenti.
+
+In allegato a questa e-mail troverai i prodotti nel tuo negozio eBay che sono stati identificati dallo strumento, e il prezzo massimo che viene raccomandato per ciascuno di loro.
+
+Ti suggeriamo le seguenti azioni per i prodotti indicati nell’allegato.
+
+Ottimizzazione dei prezzi: Ottimizza i prezzi per i tuoi prodotti più interessanti; l’ideale sarebbe offrirli ad un prezzo uguale o inferiore a quello indicato nell’allegato (colonna F della lista)
+Opportunità di inventario: Aggiungi i prodotti indicati al tuo inventario eBay.
+
+Grazie in anticipo per il tuo impegno e supporto. Se hai ulteriori domande, puoi contattarci a: ****@ebay.com.
+
+Cordialmente,
+{!CurrentUserName}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

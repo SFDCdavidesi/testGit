@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Seller_Co_funding_amount_forecast__c</fullName>
+    <description>EPH-7162 Object: Coupon__c - Create two record types</description>
+    <externalId>false</externalId>
+    <formula>eBay_Budget__c  *  Seller_Co_funding_share_forecast__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Seller Co-funding Amount (forecast)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>1</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

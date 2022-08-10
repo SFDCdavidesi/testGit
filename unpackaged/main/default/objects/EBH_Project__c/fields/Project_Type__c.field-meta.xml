@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Type__c</fullName>
+    <description>US-0009898: Used by AU to distinguish scaling for new sellers vs for churned sellers to get them back on the eBay platform.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>&#39;Scaling&#39; for new sellers.
+&#39;Reacquisition&#39; for churned sellers.</inlineHelpText>
+    <label>Project Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Scaling</fullName>
+                <default>false</default>
+                <label>Scaling</label>
+            </value>
+            <value>
+                <fullName>Reacquisition</fullName>
+                <default>false</default>
+                <label>Reacquisition</label>
+            </value>
+            <value>
+                <fullName>Partner Support</fullName>
+                <default>false</default>
+                <label>Partner Support</label>
+            </value>
+            <value>
+                <fullName>Fulfilment</fullName>
+                <default>false</default>
+                <label>Fulfilment</label>
+            </value>
+            <value>
+                <fullName>SMB</fullName>
+                <default>false</default>
+                <label>SMB</label>
+            </value>
+            <value>
+                <fullName>Durchstarter</fullName>
+                <default>false</default>
+                <label>Durchstarter</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

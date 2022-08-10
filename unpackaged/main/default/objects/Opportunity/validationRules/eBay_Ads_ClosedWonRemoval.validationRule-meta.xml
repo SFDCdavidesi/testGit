@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>eBay_Ads_ClosedWonRemoval</fullName>
+    <active>true</active>
+    <description>You cannot move an opportunity stage out of closed won.</description>
+    <errorConditionFormula>AND(
+
+$Profile.Name = &quot;Standard Ads User Profile&quot;,
+$Setup.byPass__c.byPass_WFRule__c = FALSE,
+$User.LastName &lt;&gt; &quot;Adkins&quot;,
+$User.LastName &lt;&gt; &quot;Tsagong&quot;,
+
+OR(
+RecordType.DeveloperName = $Label.OPP_RECORDTYPEDEVNAME_DIRECT,
+RecordType.DeveloperName = $Label.OPP_RECORDTYPEDEVNAME_PROGRAMMATIC
+),
+
+ISPICKVAL(
+PRIORVALUE(StageName), &#39;Closed Won&#39;),
+ISCHANGED(StageName)
+
+)</errorConditionFormula>
+    <errorDisplayField>StageName</errorDisplayField>
+    <errorMessage>You cannot move an opportunity stage out of closed won.</errorMessage>
+</ValidationRule>

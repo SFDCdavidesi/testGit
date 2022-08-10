@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Warehousing_and_shipping_responsibility__c</fullName>
+    <description>US-0010689</description>
+    <externalId>false</externalId>
+    <label>Warehousing and shipping responsibility</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Internal</fullName>
+                <default>false</default>
+                <label>Internal</label>
+            </value>
+            <value>
+                <fullName>External</fullName>
+                <default>false</default>
+                <label>External</label>
+            </value>
+            <value>
+                <fullName>Fulfilment</fullName>
+                <default>false</default>
+                <label>Fulfilment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

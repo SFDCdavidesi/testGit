@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Request_Description__c</fullName>
+    <description>US-0009940 - [UK Risk] Create a New Task Layout for Seller Risk Management Project</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Filled by the Task Creator</inlineHelpText>
+    <label>Request Description</label>
+    <required>false</required>
+    <type>TextArea</type>
+</CustomField>

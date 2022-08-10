@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Account_Ownership_Change</fullName>
+        <description>Account Ownership Change</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>sadkins@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>ttsagong@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/Account_Ownership_Change</template>
+    </alerts>
+    <alerts>
+        <fullName>Account_Ownership_Change_Rejected</fullName>
+        <description>Account Ownership Change Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>sadkins@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/Account_Ownership_Change_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>Added_Value</fullName>
+        <description>Added Value</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>eBay_Ads_Deal_Review_Pricing</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/Added_Value</template>
+    </alerts>
+    <alerts>
+        <fullName>Advertising_Request_Portal_c_CreatedBy</fullName>
+        <description>International Revenue Credit Pre Approval Submitted</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>pgogulamudi@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sadkins@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/International_Revenue_Credit_PreApproval_Submitted</template>
+    </alerts>
+    <alerts>
+        <fullName>Advertising_Request_Portal_c_Rejected</fullName>
+        <description>International Revenue Credit Pre Approval Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>pgogulamudi@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sadkins@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>ttsagong@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/International_Revenue_Credit_Pre_Approval_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>Black_List_Exception</fullName>
+        <description>Black List Exception</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/Black_List_Exception</template>
+    </alerts>
+    <alerts>
+        <fullName>Brand_Lift_Study</fullName>
+        <description>Brand Lift Study</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>eBay_Ads_Deal_Review_Pricing</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/Brand_Lift_Study</template>
+    </alerts>
+    <alerts>
+        <fullName>Brand_Lift_Study_Submitted</fullName>
+        <description>Brand Lift Study Submitted</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ttsagong@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/Brand_Lift_Study_Submitted</template>
+    </alerts>
+    <alerts>
+        <fullName>CIA_Request</fullName>
+        <description>CIA Request</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>eBay_Ads_CSI</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/CIA_Request_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>CSI_Request_Approved</fullName>
+        <description>CSI Request Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/CSI_Request_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>CSI_Request_Complete_for_Offshore</fullName>
+        <description>CSI Request Complete for Offshore</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Offshore_Resource_2__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Offshore_Resource_3__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Offshore_Resource__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/CSI_Request_Complete_Offshore</template>
+    </alerts>
+    <alerts>
+        <fullName>CSI_Survey_to_Offshore</fullName>
+        <description>CSI Survey to Offshore</description>
+        <protected>false</protected>
+        <recipients>
+            <field>CSI_Team_Member__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/CSI_Survey_to_Offshore</template>
+    </alerts>
+    <alerts>
+        <fullName>Credit_Check</fullName>
+        <description>Credit Check</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>eBay_Ads_Deal_Review_Pricing</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/Credit_Check</template>
+    </alerts>
+    <alerts>
+        <fullName>Credit_Request</fullName>
+        <description>Credit Request</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>rskrak@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sadkins@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/Credit_Request</template>
+    </alerts>
+    <alerts>
+        <fullName>Credit_Request_Rejected</fullName>
+        <description>Credit Request Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>sadkins@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/Credit_Request_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>Credit_Request_Submitted</fullName>
+        <description>Credit Request Submitted</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>sadkins@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/Credit_Request_Submitted</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_to_CSI_Member_once_complete</fullName>
+        <description>Email to CSI Member once complete</description>
+        <protected>false</protected>
+        <recipients>
+            <field>CSI_Team_Member__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/CSI_Request_Complete</template>
+    </alerts>
+    <alerts>
+        <fullName>International_Revenue_Credit_Pre_Approval</fullName>
+        <description>International Revenue Credit Pre Approval</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>pgogulamudi@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sadkins@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/International_Revenue_Credit_PreApproval</template>
+    </alerts>
+    <alerts>
+        <fullName>Invoice_Revision</fullName>
+        <description>Invoice Revision</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>sbronson@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/Invoice_Revision</template>
+    </alerts>
+    <alerts>
+        <fullName>Invoice_Revision_Submitted</fullName>
+        <description>Invoice Revision Submitted</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>sbronson@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/Invoice_Revision_Submitted</template>
+    </alerts>
+    <alerts>
+        <fullName>Legal_Request</fullName>
+        <description>Legal Request</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/Legal_Review</template>
+    </alerts>
+    <alerts>
+        <fullName>Makegood</fullName>
+        <description>Makegood</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>eBay_Ads_Deal_Review_Pricing</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/Makegood</template>
+    </alerts>
+    <alerts>
+        <fullName>Media_Plan_Request</fullName>
+        <description>Media Plan Request</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Account_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/Media_Plan_Request</template>
+    </alerts>
+    <alerts>
+        <fullName>Minimum_Campaign_Size_Exception</fullName>
+        <description>Minimum Campaign Size Exception</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>eBay_Ads_Deal_Review_Pricing</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/Minimum_Campaign_Size_Exception</template>
+    </alerts>
+    <alerts>
+        <fullName>Monthly_Discount_Request</fullName>
+        <description>Monthly Discount Request</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>biredford@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>rskrak@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Monthly_Discount</template>
+    </alerts>
+    <alerts>
+        <fullName>Monthly_Discount_Request_Submitted</fullName>
+        <description>Monthly Discount Request Submitted</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>biredford@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>rskrak@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Monthly_Discount_Request_Submitted</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Account</fullName>
+        <description>New Account</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>sadkins@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/New_Account</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Account_Rejected</fullName>
+        <description>New Account Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>sadkins@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/New_Account_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>Other_Request</fullName>
+        <description>Other Request</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ttsagong@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/Other_Request</template>
+    </alerts>
+    <alerts>
+        <fullName>Products</fullName>
+        <description>Products</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ttsagong@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/Products</template>
+    </alerts>
+    <alerts>
+        <fullName>Rate_Card_Exception</fullName>
+        <description>Rate Card Exception</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/Rate_Card_Exception</template>
+    </alerts>
+    <alerts>
+        <fullName>Rejected_Ads_Request_Portal</fullName>
+        <description>Rejected: Ads Request Portal</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/Rejected_Ads_Request_Portal</template>
+    </alerts>
+    <alerts>
+        <fullName>Request_was_submitted_for_Approval</fullName>
+        <description>Request was submitted for Approval</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ttsagong@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/Request_Submitted_for_Approval</template>
+    </alerts>
+    <alerts>
+        <fullName>Vendor_Fee_Coverage</fullName>
+        <description>Vendor Fee Coverage</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>eBay_Ads_Deal_Review_Pricing</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/Vendor_Fee_Coverage</template>
+    </alerts>
+    <alerts>
+        <fullName>eAAT_Segment_Request_Alert</fullName>
+        <description>eAAT Segment Request Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>eBay_Ads_CSI</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/eAAT_Request_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>eBayAds_eAAT_Shopalike_Alert</fullName>
+        <description>eBayAds - eAAT_Shopalike_Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>aksanand@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/CIA_Request_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>eBay_Ads_CSI_Brand_Strategy_Requests_Notification</fullName>
+        <description>eBay Ads - CSI Brand Strategy Requests Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>jenschwarz@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/eBay_Ads_CSI_Brand_Strategy</template>
+    </alerts>
+    <alerts>
+        <fullName>eaat_request_due_in_7_days</fullName>
+        <ccEmails>lgadde@ebay.com, shalijain@ebay.com, kpushparajan@ebay.com, snellen@ebay.com, ainanda@ebay.com</ccEmails>
+        <description>eaat request due in 7 days</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>aksanand@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>swjindal@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/eAAT_Request_Due_in_7_days</template>
+    </alerts>
+    <alerts>
+        <fullName>eaat_request_ready_for_iac_pickup_alert</fullName>
+        <ccEmails>lgadde@ebay.com, shalijain@ebay.com, kpushparajan@ebay.com, snellen@ebay.com, ainanda@ebay.com</ccEmails>
+        <description>eaat request ready for iac pickup alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>aksanand@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>swjindal@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/eAAT_Ready_for_IAC_Pickup</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Request_Approved</fullName>
+        <field>Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Request: Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Request_Completed</fullName>
+        <field>Status__c</field>
+        <literalValue>Completed</literalValue>
+        <name>Request: Completed</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Request_Legal_Review</fullName>
+        <field>Status__c</field>
+        <literalValue>Legal Review</literalValue>
+        <name>Request: Legal Review</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Request_Rejected</fullName>
+        <field>Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Request: Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Request_Submitted</fullName>
+        <field>Status__c</field>
+        <literalValue>Submitted for Approval</literalValue>
+        <name>Request: Submitted</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Brand Lift Study Submitted</fullName>
+        <actions>
+            <name>Brand_Lift_Study_Submitted</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Advertising_Request_Portal__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Brand Lift Study</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Advertising_Request_Portal__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Submitted for Approval</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>CIA Request Alert</fullName>
+        <actions>
+            <name>CIA_Request</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(  $Setup.byPass__c.byPass_WFRule__c = FALSE, 
+RecordType.Name = &#39;CSI Requests&#39;)</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>CSI Request Approved</fullName>
+        <actions>
+            <name>CSI_Request_Approved</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(  $Setup.byPass__c.byPass_WFRule__c = FALSE,  RecordType.Name = &#39;CSI Requests&#39;,  ISPICKVAL( Status__c, &#39;Complete&#39; )  )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>CSI Survey to Offshore</fullName>
+        <actions>
+            <name>CSI_Survey_to_Offshore</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(  $Setup.byPass__c.byPass_WFRule__c = FALSE,  RecordType.Name = &#39;CSI Requests&#39;, ISPICKVAL( Country__c , &#39;US&#39;), ISPICKVAL( Status__c , &#39;Data Sent back to CSI&#39;)   )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>International Revenue Credit Pre Approval Submitted</fullName>
+        <actions>
+            <name>Advertising_Request_Portal_c_CreatedBy</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>AND( $Setup.byPass__c.byPass_WFRule__c = FALSE, RecordType.Name = &#39;International Revenue Credit Pre Approval&#39;, ISPICKVAL( Status__c, &#39;Submitted for Approval&#39; ) )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Invoice Revision Submitted</fullName>
+        <actions>
+            <name>Invoice_Revision_Submitted</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>AND( $Setup.byPass__c.byPass_WFRule__c = FALSE, RecordType.Name = &#39;Invoice Revision&#39;, ISPICKVAL( Status__c, &#39;Submitted for Approval&#39; ) )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Monthly Discount Request Submitted</fullName>
+        <actions>
+            <name>Monthly_Discount_Request_Submitted</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>AND( $Setup.byPass__c.byPass_WFRule__c = FALSE, RecordType.Name = &#39;Monthly Discount Approval&#39;, ISPICKVAL( Status__c, &#39;Submitted for Approval&#39; ) )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Other Request</fullName>
+        <actions>
+            <name>Other_Request</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Advertising_Request_Portal__c.Name__c</field>
+            <operation>notEqual</operation>
+            <value>NULL</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Advertising_Request_Portal__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Other</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>eAAT Request Due in 7 days</fullName>
+        <actions>
+            <name>eaat_request_due_in_7_days</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(  $Setup.byPass__c.byPass_WFRule__c = FALSE, 
+RecordType.DeveloperName = &#39;eAAT_Segment_Request&#39;,
+NOT(ISPICKVAL(Status__c, &#39;Complete&#39;)) ,
+Day(Segment_Due_Date__c) &lt;= 7
+)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>eAAT Request for IAC Pick UpAlert</fullName>
+        <actions>
+            <name>eaat_request_ready_for_iac_pickup_alert</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(  $Setup.byPass__c.byPass_WFRule__c = FALSE, 
+RecordType.DeveloperName = &#39;eAAT_Segment_Request&#39;,
+ISPICKVAL(Status__c, &#39;Ready for IAC Pickup&#39;) 
+)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>eAAT Segment Request Alert</fullName>
+        <actions>
+            <name>eAAT_Segment_Request_Alert</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(  $Setup.byPass__c.byPass_WFRule__c = FALSE, 
+RecordType.DeveloperName = &#39;eAAT_Segment_Request&#39;
+)</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>eBay Ads - Makegood Submitted Alert</fullName>
+        <actions>
+            <name>Request_was_submitted_for_Approval</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(  $Setup.byPass__c.byPass_WFRule__c = FALSE, RecordType.Name = &#39;Makegood&#39;,  ISPICKVAL( Status__c, &#39;Submitted for Approval&#39; )  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>eBayAds - eAAT_Shopalike_Alert</fullName>
+        <actions>
+            <name>eBayAds_eAAT_Shopalike_Alert</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(  $Setup.byPass__c.byPass_WFRule__c = FALSE, RecordType.Name = &#39;CSI Requests&#39;,  OR( ISPICKVAL( Request_Type__c, &#39;eAAT Domo Dashboard New Persona and/or Brand Request&#39;), ISPICKVAL( Request_Includes__c, &#39;Shopalike Audience&#39;)  )  )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

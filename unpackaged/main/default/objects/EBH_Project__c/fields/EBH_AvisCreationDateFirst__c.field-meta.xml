@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_AvisCreationDateFirst__c</fullName>
+    <description>#US-0015700</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Date when first Avis is created.
+Avis - is created every time seller creates a commitment in 3PP system to ship certain items to Fiege, Fulfilment Center</inlineHelpText>
+    <label>Avis Creation Date (first)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

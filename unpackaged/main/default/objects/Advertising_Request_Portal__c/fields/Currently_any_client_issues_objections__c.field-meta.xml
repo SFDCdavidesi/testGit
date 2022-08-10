@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Currently_any_client_issues_objections__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Is there anything we should be aware of when putting together the data? Was there past performance issues? Does the client love certain aspects we should include?</inlineHelpText>
+    <label>Currently any client issues/objections?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

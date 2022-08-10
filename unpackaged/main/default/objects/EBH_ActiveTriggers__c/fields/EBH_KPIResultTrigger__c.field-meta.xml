@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_KPIResultTrigger__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>[EBH] (EPH-1771) - to enable/disable the KPI result trigger</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Trigger switch for KPI Result Trigger</inlineHelpText>
+    <label>KPI Result Trigger</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

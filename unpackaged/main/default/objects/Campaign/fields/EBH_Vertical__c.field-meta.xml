@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_Vertical__c</fullName>
+    <description>[EBH] (EPH-2641) - Vertical
+US-0011867</description>
+    <externalId>false</externalId>
+    <label>Vertical</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Business &amp; Industrial</fullName>
+                <default>false</default>
+                <label>Business &amp; Industrial</label>
+            </value>
+            <value>
+                <fullName>Collectibles</fullName>
+                <default>false</default>
+                <label>Collectibles</label>
+            </value>
+            <value>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+                <label>Electronics</label>
+            </value>
+            <value>
+                <fullName>Fashion</fullName>
+                <default>false</default>
+                <label>Fashion</label>
+            </value>
+            <value>
+                <fullName>Home &amp; Garden</fullName>
+                <default>false</default>
+                <label>Home &amp; Garden</label>
+            </value>
+            <value>
+                <fullName>Lifestyle</fullName>
+                <default>false</default>
+                <label>Lifestyle</label>
+            </value>
+            <value>
+                <fullName>Media</fullName>
+                <default>false</default>
+                <label>Media</label>
+            </value>
+            <value>
+                <fullName>Parts &amp; Accessories</fullName>
+                <default>false</default>
+                <label>Parts &amp; Accessories</label>
+            </value>
+            <value>
+                <fullName>Bussiness &amp; Industry</fullName>
+                <default>false</default>
+                <label>Bussiness &amp; Industry</label>
+            </value>
+            <value>
+                <fullName>Sneakers</fullName>
+                <default>false</default>
+                <label>Sneakers</label>
+            </value>
+            <value>
+                <fullName>Watches</fullName>
+                <default>false</default>
+                <label>Watches</label>
+            </value>
+            <value>
+                <fullName>Re-Store</fullName>
+                <default>false</default>
+                <label>Re-Store</label>
+            </value>
+            <value>
+                <fullName>Outlet</fullName>
+                <default>false</default>
+                <label>Outlet</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

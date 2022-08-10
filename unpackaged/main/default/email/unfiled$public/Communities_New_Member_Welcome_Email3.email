@@ -1,0 +1,6 @@
+<messaging:emailTemplate subject="Welcome to GCX Communikty" recipientType="User" relatedToType="User">
+<messaging:plainTextEmailBody >
+Congratulations!
+This is your new Visualforce Email Template.
+</messaging:plainTextEmailBody>
+</messaging:emailTemplate>

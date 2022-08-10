@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Badge Assignation Email</name>
+    <style>none</style>
+    <subject>🐝 Hive University: New Module {!trailheadapp__User_Badge__c.Badge_Name__c} assigned to you</subject>
+    <textOnly>Hi ,{!trailheadapp__User_Badge__c.Asignee_Name__c}
+
+a new learning module has been assigned to you:
+
+{!trailheadapp__User_Badge__c.Badge_Name__c}
+
+Description:  {!trailheadapp__User_Badge__c.Badge_Description__c}
+
+Stay up-to-date with our latest Hive features by completing this important training,
+
+Team Hive
+
+Start Course Now</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

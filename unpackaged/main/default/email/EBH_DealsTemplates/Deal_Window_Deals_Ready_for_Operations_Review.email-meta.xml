@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0009790 - [SEP] Notification sent to Operations Team when Deal Window is updated to Status = &#39;Ops Review&#39;</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Deal Window - Deals Ready for Operations Review</name>
+    <style>none</style>
+    <subject>Deal Window {!EBH_DealRetailCampaign__c.Name} - {!EBH_DealRetailCampaign__c.EBH_DealTitle__c} : Deals Ready for Operations Review</subject>
+    <textOnly>Operations Team:
+
+Deal Window {!EBH_DealRetailCampaign__c.Name} - {!EBH_DealRetailCampaign__c.EBH_DealTitle__c} ( {!EBH_DealRetailCampaign__c.Start_Date_MM_DD_YYYY__c} - {!EBH_DealRetailCampaign__c.End_Date_MM_DD_YYYY__c} ) is now ready for Operations review. Please review the Deals for this Deal Window and Approve or Reject Deals which have a status of &#39;Ops Review&#39; or &#39;Incomplete Data&#39;. Deals with a Status of &#39;Ops Review&#39; which are not approved or rejected will be automatically approved and updated to &#39;CM Review&#39; in 2 days.
+
+You can update the List view filters to update your list view accordingly.
+
+You can access the Deal Window with the following URL:
+{!EBH_DealRetailCampaign__c.Link}
+
+Thanks,
+Hive Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

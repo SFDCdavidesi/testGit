@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Ready for signature</label>
+    <protected>false</protected>
+    <values>
+        <field>Value_Big__c</field>
+        <value xsi:type="xsd:string">/s/my-deal-lists?tabset-30037=6efbb#SELECT COUNT() FROM EBH_Deal__c WHERE Seller_Portal_Status__c = &#39;Please agree on the proposed Deal&#39;</value>
+    </values>
+    <values>
+        <field>Value__c</field>
+        <value xsi:type="xsd:string">{X} Deal(s) ready for signature</value>
+    </values>
+    <values>
+        <field>Value_in_German__c</field>
+        <value xsi:type="xsd:string">{X} WOW! Angebote - Ihre Bestätigung in der E-Mail ist erforderlich</value>
+    </values>
+</CustomMetadata>

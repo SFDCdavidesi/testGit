@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>DEAccountManagerHelpTextElmt1</label>
+    <protected>false</protected>
+    <values>
+        <field>Bigger_Body_Test__c</field>
+        <value xsi:type="xsd:string">Das eBay Account Management-Abonnement ist nur für Abonnenten eines eBay Premium-Shops in Deutschland oder Österreich verfügbar, d. h. Sie müssen als gewerblicher Verkäufer bei den eBay-Websites Elektronik, Autos, Mode, Sammlerstücke, Möbel und mehr Online-Shopping | eBay  oder Elektronik, Autos, Mode, Sammlerstücke, Möbel und mehr Online-Shopping | eBay  registriert sein. Einmal abonniert, umfasst der Service alle Ihre in Deutschland oder Österreich registrierten Verkäuferkonten. Die Abonnementgebühren betragen 999 € netto pro Monat.</value>
+    </values>
+    <values>
+        <field>Heading__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Help_Text__c</field>
+        <value xsi:type="xsd:string">Bauen Sie Ihr Geschäft bei eBay mit Unterstützung unseres Account Managements aus</value>
+    </values>
+    <values>
+        <field>Inner_Help_Text__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conditional_Mandatory_Stage_Closed_Lost</fullName>
+    <active>true</active>
+    <description>US-0018736 [AU] New Project Process/Fields for ebay AU SMB and ebay AU Enterprise</description>
+    <errorConditionFormula>IF( AND(RecordType.DeveloperName = &#39;eBayAUSMB&#39;, ISPICKVAL(EBH_Stage__c, &#39;Closed Lost&#39;),OR( ISBLANK(TEXT(ClosedLostReasons__c))  )  )
+
+,true
+,false)</errorConditionFormula>
+    <errorMessage>The following fields are mandatory for Closed Lost: 
+Closed Lost Reasons</errorMessage>
+</ValidationRule>

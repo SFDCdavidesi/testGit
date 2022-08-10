@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>dealReadOnlyErrorMessage</label>
+    <protected>false</protected>
+    <values>
+        <field>Bigger_Body_Test__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>Heading__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>Help_Text__c</field>
+        <value xsi:type="xsd:string">&lt;b&gt;You don&#39;t have access to submit deal proposal.&lt;/b&gt;&lt;/br&gt;&lt;/br&gt;To get help, please click &quot;Contact Us&quot; at the bottom of our &lt;a href=&quot;https://www.ebay.com/help/selling/selling-tools/creating-deals-using-seller-portal?id=5329&quot;&gt;customer service page&lt;/a&gt;.</value>
+    </values>
+    <values>
+        <field>Inner_Help_Text__c</field>
+        <value xsi:nil="true" />
+    </values>
+</CustomMetadata>

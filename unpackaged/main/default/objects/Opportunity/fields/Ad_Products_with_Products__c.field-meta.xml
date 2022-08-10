@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ad_Products_with_Products__c</fullName>
+    <description>US-0008007</description>
+    <externalId>false</externalId>
+    <label>Ad Products with Products</label>
+    <summaryFilterItems>
+        <field>Ad_Product__c.IsHavingProduct__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Ad_Product__c.Opportunity__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

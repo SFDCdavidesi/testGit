@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Techn_Integr_InProgress_Validation</fullName>
+    <active>true</active>
+    <description>US-0007500</description>
+    <errorConditionFormula>AND(
+ISPICKVAL(ExtendedTechnicalIntegration__c, &#39;In Progress&#39;),
+ISBLANK(IntegrationManager__c),
+NOT( $Setup.ActiveValidationRules__c.All_Validation_Rules_Deactivated__c )
+)</errorConditionFormula>
+    <errorMessage>You need to allocate Integration Manager if you change a status to In Progress</errorMessage>
+</ValidationRule>

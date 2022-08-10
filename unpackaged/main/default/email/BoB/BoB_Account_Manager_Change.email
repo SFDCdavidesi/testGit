@@ -1,0 +1,6 @@
+<p>Dear {!GCX_OPP_NAME}</p>
+<p>{!BOB_OWNER_NAME} has updated the Account Manager Name for Seller {!SELLER_NAME} {!ORACLE_ID}</p>
+<p>from {!ACCOUNT_MGR_FROM} to {!ACCOUNT_MGR_TO}.</p>
+<p><br />Please ensure that the MAC-Note will be updated accordingly.</p>
+<p>Thank you,</p>
+<p>HIVE</p>

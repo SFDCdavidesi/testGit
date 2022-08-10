@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CSI_Requests_3p_Required_fields</fullName>
+    <active>true</active>
+    <description>these fields are required if business = 3p</description>
+    <errorConditionFormula>AND(
+$Setup.byPass__c.byPass_WFRule__c = FALSE,
+RecordType.Name = &#39;CSI Requests&#39;,
+ISPICKVAL(Business__c, &#39;3P&#39;),
+
+OR(
+ISBLANK( Opportunity__c ),
+ISBLANK( Campaign_Dates__c ),
+ISBLANK( Campaign_Id__c ),
+ISBLANK(TEXT(How_will_the_final_deliverable_be_used__c )),
+ISBLANK( What_has_been_shared_with_the_client__c ),
+ISBLANK(TEXT(Attendees_in_the_Scheduled_Meeting__c )),
+ISBLANK( Number_of_minutes_to_present_data__c ),
+ISBLANK( What_are_eBay_s_goals_with_the_client__c )
+)
+
+)</errorConditionFormula>
+    <errorMessage>If 3P, add:
+Opportunity,
+Campaign Dates,
+Campaign ID,
+How will the final deliverable be used?,
+What has been shared with the client?,
+Attendees in the scheduled meeting,
+Number of minutes to present data,
+What are eBay&#39;s goals with the client?</errorMessage>
+</ValidationRule>

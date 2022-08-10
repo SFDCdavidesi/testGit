@@ -1,0 +1,1023 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Category__c</fullName>
+    <description>US-0008225</description>
+    <externalId>false</externalId>
+    <label>Sub Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>3D Printers &amp; Supplies</fullName>
+                <default>false</default>
+                <label>3D Printers &amp; Supplies</label>
+            </value>
+            <value>
+                <fullName>Action Figures</fullName>
+                <default>false</default>
+                <label>Action Figures</label>
+            </value>
+            <value>
+                <fullName>Adhesives, Sealants &amp; Tapes</fullName>
+                <default>false</default>
+                <label>Adhesives, Sealants &amp; Tapes</label>
+            </value>
+            <value>
+                <fullName>Arcade, Jukeboxes &amp; Pinball</fullName>
+                <default>false</default>
+                <label>Arcade, Jukeboxes &amp; Pinball</label>
+            </value>
+            <value>
+                <fullName>Art Prints</fullName>
+                <default>false</default>
+                <label>Art Prints</label>
+            </value>
+            <value>
+                <fullName>Art Supplies</fullName>
+                <default>false</default>
+                <label>Art Supplies</label>
+            </value>
+            <value>
+                <fullName>Automation, Motors &amp; Drives</fullName>
+                <default>false</default>
+                <label>Automation, Motors &amp; Drives</label>
+            </value>
+            <value>
+                <fullName>Automotive Tools &amp; Supplies</fullName>
+                <default>false</default>
+                <label>Automotive Tools &amp; Supplies</label>
+            </value>
+            <value>
+                <fullName>Baby</fullName>
+                <default>false</default>
+                <label>Baby</label>
+            </value>
+            <value>
+                <fullName>Baby Gear</fullName>
+                <default>false</default>
+                <label>Baby Gear</label>
+            </value>
+            <value>
+                <fullName>Baby Safety &amp; Health</fullName>
+                <default>false</default>
+                <label>Baby Safety &amp; Health</label>
+            </value>
+            <value>
+                <fullName>Bath</fullName>
+                <default>false</default>
+                <label>Bath</label>
+            </value>
+            <value>
+                <fullName>Bath &amp; Body</fullName>
+                <default>false</default>
+                <label>Bath &amp; Body</label>
+            </value>
+            <value>
+                <fullName>Bathing &amp; Grooming</fullName>
+                <default>false</default>
+                <label>Bathing &amp; Grooming</label>
+            </value>
+            <value>
+                <fullName>Bedding</fullName>
+                <default>false</default>
+                <label>Bedding</label>
+            </value>
+            <value>
+                <fullName>Binoculars &amp; Telescopes</fullName>
+                <default>false</default>
+                <label>Binoculars &amp; Telescopes</label>
+            </value>
+            <value>
+                <fullName>Bird Supplies</fullName>
+                <default>false</default>
+                <label>Bird Supplies</label>
+            </value>
+            <value>
+                <fullName>Bottles &amp; Insulators</fullName>
+                <default>false</default>
+                <label>Bottles &amp; Insulators</label>
+            </value>
+            <value>
+                <fullName>Building Toys</fullName>
+                <default>false</default>
+                <label>Building Toys</label>
+            </value>
+            <value>
+                <fullName>Bullion</fullName>
+                <default>false</default>
+                <label>Bullion</label>
+            </value>
+            <value>
+                <fullName>Camcorders</fullName>
+                <default>false</default>
+                <label>Camcorders</label>
+            </value>
+            <value>
+                <fullName>Camera &amp; Photo Accessories</fullName>
+                <default>false</default>
+                <label>Camera &amp; Photo Accessories</label>
+            </value>
+            <value>
+                <fullName>Camera Drones</fullName>
+                <default>false</default>
+                <label>Camera Drones</label>
+            </value>
+            <value>
+                <fullName>Carriers, Slings &amp; Backpacks</fullName>
+                <default>false</default>
+                <label>Carriers, Slings &amp; Backpacks</label>
+            </value>
+            <value>
+                <fullName>Car Safety Seats</fullName>
+                <default>false</default>
+                <label>Car Safety Seats</label>
+            </value>
+            <value>
+                <fullName>Cat Supplies</fullName>
+                <default>false</default>
+                <label>Cat Supplies</label>
+            </value>
+            <value>
+                <fullName>CDs</fullName>
+                <default>false</default>
+                <label>CDs</label>
+            </value>
+            <value>
+                <fullName>Cell Phone Accessories</fullName>
+                <default>false</default>
+                <label>Cell Phone Accessories</label>
+            </value>
+            <value>
+                <fullName>Cell Phones &amp; Smartphones</fullName>
+                <default>false</default>
+                <label>Cell Phones &amp; Smartphones</label>
+            </value>
+            <value>
+                <fullName>Children&#39;s Jewelry</fullName>
+                <default>false</default>
+                <label>Children&#39;s Jewelry</label>
+            </value>
+            <value>
+                <fullName>Classic Toys</fullName>
+                <default>false</default>
+                <label>Classic Toys</label>
+            </value>
+            <value>
+                <fullName>Clocks</fullName>
+                <default>false</default>
+                <label>Clocks</label>
+            </value>
+            <value>
+                <fullName>Coins: Canada</fullName>
+                <default>false</default>
+                <label>Coins: Canada</label>
+            </value>
+            <value>
+                <fullName>Coins: US</fullName>
+                <default>false</default>
+                <label>Coins: US</label>
+            </value>
+            <value>
+                <fullName>Coins: World</fullName>
+                <default>false</default>
+                <label>Coins: World</label>
+            </value>
+            <value>
+                <fullName>Collectible Card Games</fullName>
+                <default>false</default>
+                <label>Collectible Card Games</label>
+            </value>
+            <value>
+                <fullName>Comics</fullName>
+                <default>false</default>
+                <label>Comics</label>
+            </value>
+            <value>
+                <fullName>Computer Components &amp; Parts</fullName>
+                <default>false</default>
+                <label>Computer Components &amp; Parts</label>
+            </value>
+            <value>
+                <fullName>Construction</fullName>
+                <default>false</default>
+                <label>Construction</label>
+            </value>
+            <value>
+                <fullName>Cycling</fullName>
+                <default>false</default>
+                <label>Cycling</label>
+            </value>
+            <value>
+                <fullName>Desktops &amp; All-In-Ones</fullName>
+                <default>false</default>
+                <label>Desktops &amp; All-In-Ones</label>
+            </value>
+            <value>
+                <fullName>Diapering</fullName>
+                <default>false</default>
+                <label>Diapering</label>
+            </value>
+            <value>
+                <fullName>Diecast &amp; Toy Vehicles</fullName>
+                <default>false</default>
+                <label>Diecast &amp; Toy Vehicles</label>
+            </value>
+            <value>
+                <fullName>Digital Cameras</fullName>
+                <default>false</default>
+                <label>Digital Cameras</label>
+            </value>
+            <value>
+                <fullName>Digital Gifts</fullName>
+                <default>false</default>
+                <label>Digital Gifts</label>
+            </value>
+            <value>
+                <fullName>DJ Equipment</fullName>
+                <default>false</default>
+                <label>DJ Equipment</label>
+            </value>
+            <value>
+                <fullName>Dog Supplies</fullName>
+                <default>false</default>
+                <label>Dog Supplies</label>
+            </value>
+            <value>
+                <fullName>Dollhouse Miniatures</fullName>
+                <default>false</default>
+                <label>Dollhouse Miniatures</label>
+            </value>
+            <value>
+                <fullName>Dolls</fullName>
+                <default>false</default>
+                <label>Dolls</label>
+            </value>
+            <value>
+                <fullName>Drives, Storage &amp; Blank Media</fullName>
+                <default>false</default>
+                <label>Drives, Storage &amp; Blank Media</label>
+            </value>
+            <value>
+                <fullName>DVDs &amp; Blu-ray Discs</fullName>
+                <default>false</default>
+                <label>DVDs &amp; Blu-ray Discs</label>
+            </value>
+            <value>
+                <fullName>Educational</fullName>
+                <default>false</default>
+                <label>Educational</label>
+            </value>
+            <value>
+                <fullName>Electrical &amp; Test Equipment</fullName>
+                <default>false</default>
+                <label>Electrical &amp; Test Equipment</label>
+            </value>
+            <value>
+                <fullName>Electronic, Battery &amp; Wind-Up</fullName>
+                <default>false</default>
+                <label>Electronic, Battery &amp; Wind-Up</label>
+            </value>
+            <value>
+                <fullName>Engagement &amp; Wedding</fullName>
+                <default>false</default>
+                <label>Engagement &amp; Wedding</label>
+            </value>
+            <value>
+                <fullName>Every Other Thing</fullName>
+                <default>false</default>
+                <label>Every Other Thing</label>
+            </value>
+            <value>
+                <fullName>Facility Maintenance &amp; Safety</fullName>
+                <default>false</default>
+                <label>Facility Maintenance &amp; Safety</label>
+            </value>
+            <value>
+                <fullName>Fan Apparel &amp; Souvenirs</fullName>
+                <default>false</default>
+                <label>Fan Apparel &amp; Souvenirs</label>
+            </value>
+            <value>
+                <fullName>Fashion Jewelry</fullName>
+                <default>false</default>
+                <label>Fashion Jewelry</label>
+            </value>
+            <value>
+                <fullName>Fasteners &amp; Hardware</fullName>
+                <default>false</default>
+                <label>Fasteners &amp; Hardware</label>
+            </value>
+            <value>
+                <fullName>Feeding</fullName>
+                <default>false</default>
+                <label>Feeding</label>
+            </value>
+            <value>
+                <fullName>Fine Jewelry</fullName>
+                <default>false</default>
+                <label>Fine Jewelry</label>
+            </value>
+            <value>
+                <fullName>Fishing</fullName>
+                <default>false</default>
+                <label>Fishing</label>
+            </value>
+            <value>
+                <fullName>Fitness, Running &amp; Yoga</fullName>
+                <default>false</default>
+                <label>Fitness, Running &amp; Yoga</label>
+            </value>
+            <value>
+                <fullName>Flashes &amp; Flash Accessories</fullName>
+                <default>false</default>
+                <label>Flashes &amp; Flash Accessories</label>
+            </value>
+            <value>
+                <fullName>Food &amp; Beverages</fullName>
+                <default>false</default>
+                <label>Food &amp; Beverages</label>
+            </value>
+            <value>
+                <fullName>Fragrances</fullName>
+                <default>false</default>
+                <label>Fragrances</label>
+            </value>
+            <value>
+                <fullName>Fuel &amp; Energy</fullName>
+                <default>false</default>
+                <label>Fuel &amp; Energy</label>
+            </value>
+            <value>
+                <fullName>Furniture</fullName>
+                <default>false</default>
+                <label>Furniture</label>
+            </value>
+            <value>
+                <fullName>Gadgets &amp; Other Electronics</fullName>
+                <default>false</default>
+                <label>Gadgets &amp; Other Electronics</label>
+            </value>
+            <value>
+                <fullName>Games</fullName>
+                <default>false</default>
+                <label>Games</label>
+            </value>
+            <value>
+                <fullName>Game Used Memorabilia</fullName>
+                <default>false</default>
+                <label>Game Used Memorabilia</label>
+            </value>
+            <value>
+                <fullName>Gift Cards</fullName>
+                <default>false</default>
+                <label>Gift Cards</label>
+            </value>
+            <value>
+                <fullName>Glass</fullName>
+                <default>false</default>
+                <label>Glass</label>
+            </value>
+            <value>
+                <fullName>Glass &amp; Mosaics</fullName>
+                <default>false</default>
+                <label>Glass &amp; Mosaics</label>
+            </value>
+            <value>
+                <fullName>Golf</fullName>
+                <default>false</default>
+                <label>Golf</label>
+            </value>
+            <value>
+                <fullName>Greeting Cards &amp; Party Supply</fullName>
+                <default>false</default>
+                <label>Greeting Cards &amp; Party Supply</label>
+            </value>
+            <value>
+                <fullName>Guitars &amp; Basses</fullName>
+                <default>false</default>
+                <label>Guitars &amp; Basses</label>
+            </value>
+            <value>
+                <fullName>Hair Care &amp; Styling</fullName>
+                <default>false</default>
+                <label>Hair Care &amp; Styling</label>
+            </value>
+            <value>
+                <fullName>Health Care</fullName>
+                <default>false</default>
+                <label>Health Care</label>
+            </value>
+            <value>
+                <fullName>Historical Memorabilia</fullName>
+                <default>false</default>
+                <label>Historical Memorabilia</label>
+            </value>
+            <value>
+                <fullName>Holiday &amp; Seasonal Décor</fullName>
+                <default>false</default>
+                <label>Holiday &amp; Seasonal Décor</label>
+            </value>
+            <value>
+                <fullName>Home Arts &amp; Crafts</fullName>
+                <default>false</default>
+                <label>Home Arts &amp; Crafts</label>
+            </value>
+            <value>
+                <fullName>Home Automation</fullName>
+                <default>false</default>
+                <label>Home Automation</label>
+            </value>
+            <value>
+                <fullName>Home Décor</fullName>
+                <default>false</default>
+                <label>Home Décor</label>
+            </value>
+            <value>
+                <fullName>Home Improvement</fullName>
+                <default>false</default>
+                <label>Home Improvement</label>
+            </value>
+            <value>
+                <fullName>Home Networking &amp; Connectivity</fullName>
+                <default>false</default>
+                <label>Home Networking &amp; Connectivity</label>
+            </value>
+            <value>
+                <fullName>Home Surveillance</fullName>
+                <default>false</default>
+                <label>Home Surveillance</label>
+            </value>
+            <value>
+                <fullName>Household Supplies &amp; Cleaning</fullName>
+                <default>false</default>
+                <label>Household Supplies &amp; Cleaning</label>
+            </value>
+            <value>
+                <fullName>Hunting</fullName>
+                <default>false</default>
+                <label>Hunting</label>
+            </value>
+            <value>
+                <fullName>Indoor Games</fullName>
+                <default>false</default>
+                <label>Indoor Games</label>
+            </value>
+            <value>
+                <fullName>Jewelry Boxes &amp; Organizers</fullName>
+                <default>false</default>
+                <label>Jewelry Boxes &amp; Organizers</label>
+            </value>
+            <value>
+                <fullName>Karaoke Entertainment</fullName>
+                <default>false</default>
+                <label>Karaoke Entertainment</label>
+            </value>
+            <value>
+                <fullName>Keepsakes &amp; Baby Announcements</fullName>
+                <default>false</default>
+                <label>Keepsakes &amp; Baby Announcements</label>
+            </value>
+            <value>
+                <fullName>Keyboards, Mice &amp; Pointers</fullName>
+                <default>false</default>
+                <label>Keyboards, Mice &amp; Pointers</label>
+            </value>
+            <value>
+                <fullName>Kids&#39; Clothing, Shoes &amp; Accs</fullName>
+                <default>false</default>
+                <label>Kids&#39; Clothing, Shoes &amp; Accs</label>
+            </value>
+            <value>
+                <fullName>Kids&#39; Crafts</fullName>
+                <default>false</default>
+                <label>Kids&#39; Crafts</label>
+            </value>
+            <value>
+                <fullName>Kids &amp; Teens at Home</fullName>
+                <default>false</default>
+                <label>Kids &amp; Teens at Home</label>
+            </value>
+            <value>
+                <fullName>Kitchen, Dining &amp; Bar</fullName>
+                <default>false</default>
+                <label>Kitchen, Dining &amp; Bar</label>
+            </value>
+            <value>
+                <fullName>Lamps, Lighting &amp; Ceiling Fans</fullName>
+                <default>false</default>
+                <label>Lamps, Lighting &amp; Ceiling Fans</label>
+            </value>
+            <value>
+                <fullName>Laptop &amp; Desktop Accessories</fullName>
+                <default>false</default>
+                <label>Laptop &amp; Desktop Accessories</label>
+            </value>
+            <value>
+                <fullName>Laptops &amp; Netbooks</fullName>
+                <default>false</default>
+                <label>Laptops &amp; Netbooks</label>
+            </value>
+            <value>
+                <fullName>Lenses &amp; Filters</fullName>
+                <default>false</default>
+                <label>Lenses &amp; Filters</label>
+            </value>
+            <value>
+                <fullName>Light Equipment &amp; Tools</fullName>
+                <default>false</default>
+                <label>Light Equipment &amp; Tools</label>
+            </value>
+            <value>
+                <fullName>Lighting &amp; Studio</fullName>
+                <default>false</default>
+                <label>Lighting &amp; Studio</label>
+            </value>
+            <value>
+                <fullName>Loose Diamonds &amp; Gemstones</fullName>
+                <default>false</default>
+                <label>Loose Diamonds &amp; Gemstones</label>
+            </value>
+            <value>
+                <fullName>Luggage</fullName>
+                <default>false</default>
+                <label>Luggage</label>
+            </value>
+            <value>
+                <fullName>Luggage Accessories</fullName>
+                <default>false</default>
+                <label>Luggage Accessories</label>
+            </value>
+            <value>
+                <fullName>Major Appliances</fullName>
+                <default>false</default>
+                <label>Major Appliances</label>
+            </value>
+            <value>
+                <fullName>Makeup</fullName>
+                <default>false</default>
+                <label>Makeup</label>
+            </value>
+            <value>
+                <fullName>Manufacturing &amp; Metalworking</fullName>
+                <default>false</default>
+                <label>Manufacturing &amp; Metalworking</label>
+            </value>
+            <value>
+                <fullName>Massage</fullName>
+                <default>false</default>
+                <label>Massage</label>
+            </value>
+            <value>
+                <fullName>Material Handling</fullName>
+                <default>false</default>
+                <label>Material Handling</label>
+            </value>
+            <value>
+                <fullName>Medical, Mobility &amp; Disability</fullName>
+                <default>false</default>
+                <label>Medical, Mobility &amp; Disability</label>
+            </value>
+            <value>
+                <fullName>Men&#39;s Accessories</fullName>
+                <default>false</default>
+                <label>Men&#39;s Accessories</label>
+            </value>
+            <value>
+                <fullName>Men&#39;s Clothing</fullName>
+                <default>false</default>
+                <label>Men&#39;s Clothing</label>
+            </value>
+            <value>
+                <fullName>Men&#39;s Jewelry</fullName>
+                <default>false</default>
+                <label>Men&#39;s Jewelry</label>
+            </value>
+            <value>
+                <fullName>Men&#39;s Shoes</fullName>
+                <default>false</default>
+                <label>Men&#39;s Shoes</label>
+            </value>
+            <value>
+                <fullName>Model Railroads &amp; Trains</fullName>
+                <default>false</default>
+                <label>Model Railroads &amp; Trains</label>
+            </value>
+            <value>
+                <fullName>Monitors, Projectors &amp; Accs</fullName>
+                <default>false</default>
+                <label>Monitors, Projectors &amp; Accs</label>
+            </value>
+            <value>
+                <fullName>Multi-Purpose Craft Supplies</fullName>
+                <default>false</default>
+                <label>Multi-Purpose Craft Supplies</label>
+            </value>
+            <value>
+                <fullName>Nail Care, Manicure &amp; Pedicure</fullName>
+                <default>false</default>
+                <label>Nail Care, Manicure &amp; Pedicure</label>
+            </value>
+            <value>
+                <fullName>Natural &amp; Alternative Remedies</fullName>
+                <default>false</default>
+                <label>Natural &amp; Alternative Remedies</label>
+            </value>
+            <value>
+                <fullName>Needlecrafts &amp; Yarn</fullName>
+                <default>false</default>
+                <label>Needlecrafts &amp; Yarn</label>
+            </value>
+            <value>
+                <fullName>Nonfiction</fullName>
+                <default>false</default>
+                <label>Nonfiction</label>
+            </value>
+            <value>
+                <fullName>Non-Sport Trading Cards</fullName>
+                <default>false</default>
+                <label>Non-Sport Trading Cards</label>
+            </value>
+            <value>
+                <fullName>Nursery Bedding</fullName>
+                <default>false</default>
+                <label>Nursery Bedding</label>
+            </value>
+            <value>
+                <fullName>Nursery Décor</fullName>
+                <default>false</default>
+                <label>Nursery Décor</label>
+            </value>
+            <value>
+                <fullName>Nursery Furniture</fullName>
+                <default>false</default>
+                <label>Nursery Furniture</label>
+            </value>
+            <value>
+                <fullName>Office</fullName>
+                <default>false</default>
+                <label>Office</label>
+            </value>
+            <value>
+                <fullName>Oral Care</fullName>
+                <default>false</default>
+                <label>Oral Care</label>
+            </value>
+            <value>
+                <fullName>Other Baby</fullName>
+                <default>false</default>
+                <label>Other Baby</label>
+            </value>
+            <value>
+                <fullName>Other Cameras &amp; Photo</fullName>
+                <default>false</default>
+                <label>Other Cameras &amp; Photo</label>
+            </value>
+            <value>
+                <fullName>Other Coins &amp; Paper Money</fullName>
+                <default>false</default>
+                <label>Other Coins &amp; Paper Money</label>
+            </value>
+            <value>
+                <fullName>Other Crafts</fullName>
+                <default>false</default>
+                <label>Other Crafts</label>
+            </value>
+            <value>
+                <fullName>Other Home &amp; Garden</fullName>
+                <default>false</default>
+                <label>Other Home &amp; Garden</label>
+            </value>
+            <value>
+                <fullName>Other Sporting Goods</fullName>
+                <default>false</default>
+                <label>Other Sporting Goods</label>
+            </value>
+            <value>
+                <fullName>Outdoor Sports</fullName>
+                <default>false</default>
+                <label>Outdoor Sports</label>
+            </value>
+            <value>
+                <fullName>Outdoor Toys &amp; Structures</fullName>
+                <default>false</default>
+                <label>Outdoor Toys &amp; Structures</label>
+            </value>
+            <value>
+                <fullName>Paper Money: US</fullName>
+                <default>false</default>
+                <label>Paper Money: US</label>
+            </value>
+            <value>
+                <fullName>Paper Money: World</fullName>
+                <default>false</default>
+                <label>Paper Money: World</label>
+            </value>
+            <value>
+                <fullName>Parts &amp; Accessories</fullName>
+                <default>false</default>
+                <label>Parts &amp; Accessories</label>
+            </value>
+            <value>
+                <fullName>Pens &amp; Writing Instruments</fullName>
+                <default>false</default>
+                <label>Pens &amp; Writing Instruments</label>
+            </value>
+            <value>
+                <fullName>Percussion</fullName>
+                <default>false</default>
+                <label>Percussion</label>
+            </value>
+            <value>
+                <fullName>Phone Cards &amp; SIM Cards</fullName>
+                <default>false</default>
+                <label>Phone Cards &amp; SIM Cards</label>
+            </value>
+            <value>
+                <fullName>Pianos, Keyboards &amp; Organs</fullName>
+                <default>false</default>
+                <label>Pianos, Keyboards &amp; Organs</label>
+            </value>
+            <value>
+                <fullName>Pinbacks, Bobbles, Lunchboxes</fullName>
+                <default>false</default>
+                <label>Pinbacks, Bobbles, Lunchboxes</label>
+            </value>
+            <value>
+                <fullName>Portable Audio &amp; Headphones</fullName>
+                <default>false</default>
+                <label>Portable Audio &amp; Headphones</label>
+            </value>
+            <value>
+                <fullName>Potty Training</fullName>
+                <default>false</default>
+                <label>Potty Training</label>
+            </value>
+            <value>
+                <fullName>Prepaid Gaming Cards</fullName>
+                <default>false</default>
+                <label>Prepaid Gaming Cards</label>
+            </value>
+            <value>
+                <fullName>Preschool Toys &amp; Pretend Play</fullName>
+                <default>false</default>
+                <label>Preschool Toys &amp; Pretend Play</label>
+            </value>
+            <value>
+                <fullName>Printers, Scanners &amp; Supplies</fullName>
+                <default>false</default>
+                <label>Printers, Scanners &amp; Supplies</label>
+            </value>
+            <value>
+                <fullName>Printing &amp; Graphic Arts</fullName>
+                <default>false</default>
+                <label>Printing &amp; Graphic Arts</label>
+            </value>
+            <value>
+                <fullName>Pro Audio Equipment</fullName>
+                <default>false</default>
+                <label>Pro Audio Equipment</label>
+            </value>
+            <value>
+                <fullName>Puzzles</fullName>
+                <default>false</default>
+                <label>Puzzles</label>
+            </value>
+            <value>
+                <fullName>Radio Control &amp; Control Line</fullName>
+                <default>false</default>
+                <label>Radio Control &amp; Control Line</label>
+            </value>
+            <value>
+                <fullName>Records</fullName>
+                <default>false</default>
+                <label>Records</label>
+            </value>
+            <value>
+                <fullName>Restaurant &amp; Catering</fullName>
+                <default>false</default>
+                <label>Restaurant &amp; Catering</label>
+            </value>
+            <value>
+                <fullName>Retail &amp; Services</fullName>
+                <default>false</default>
+                <label>Retail &amp; Services</label>
+            </value>
+            <value>
+                <fullName>Robots, Monsters &amp; Space Toys</fullName>
+                <default>false</default>
+                <label>Robots, Monsters &amp; Space Toys</label>
+            </value>
+            <value>
+                <fullName>Rugs &amp; Carpets</fullName>
+                <default>false</default>
+                <label>Rugs &amp; Carpets</label>
+            </value>
+            <value>
+                <fullName>Salon &amp; Spa Equipment</fullName>
+                <default>false</default>
+                <label>Salon &amp; Spa Equipment</label>
+            </value>
+            <value>
+                <fullName>Scrapbooking &amp; Paper Crafts</fullName>
+                <default>false</default>
+                <label>Scrapbooking &amp; Paper Crafts</label>
+            </value>
+            <value>
+                <fullName>Sewing</fullName>
+                <default>false</default>
+                <label>Sewing</label>
+            </value>
+            <value>
+                <fullName>Shaving &amp; Hair Removal</fullName>
+                <default>false</default>
+                <label>Shaving &amp; Hair Removal</label>
+            </value>
+            <value>
+                <fullName>Skin Care</fullName>
+                <default>false</default>
+                <label>Skin Care</label>
+            </value>
+            <value>
+                <fullName>Smart Watches</fullName>
+                <default>false</default>
+                <label>Smart Watches</label>
+            </value>
+            <value>
+                <fullName>Sneakers</fullName>
+                <default>false</default>
+                <label>Sneakers</label>
+            </value>
+            <value>
+                <fullName>Sports Trading Cards</fullName>
+                <default>false</default>
+                <label>Sports Trading Cards</label>
+            </value>
+            <value>
+                <fullName>Stage Lighting &amp; Effects</fullName>
+                <default>false</default>
+                <label>Stage Lighting &amp; Effects</label>
+            </value>
+            <value>
+                <fullName>String</fullName>
+                <default>false</default>
+                <label>String</label>
+            </value>
+            <value>
+                <fullName>Strollers &amp; Accessories</fullName>
+                <default>false</default>
+                <label>Strollers &amp; Accessories</label>
+            </value>
+            <value>
+                <fullName>Sub Category 3</fullName>
+                <default>false</default>
+                <label>Sub Category 3</label>
+            </value>
+            <value>
+                <fullName>Sun Protection &amp; Tanning</fullName>
+                <default>false</default>
+                <label>Sun Protection &amp; Tanning</label>
+            </value>
+            <value>
+                <fullName>Tablet &amp; eBook Reader Parts</fullName>
+                <default>false</default>
+                <label>Tablet &amp; eBook Reader Parts</label>
+            </value>
+            <value>
+                <fullName>Tablets &amp; eBook Readers</fullName>
+                <default>false</default>
+                <label>Tablets &amp; eBook Readers</label>
+            </value>
+            <value>
+                <fullName>Team Sports</fullName>
+                <default>false</default>
+                <label>Team Sports</label>
+            </value>
+            <value>
+                <fullName>Tools</fullName>
+                <default>false</default>
+                <label>Tools</label>
+            </value>
+            <value>
+                <fullName>Toys for Baby</fullName>
+                <default>false</default>
+                <label>Toys for Baby</label>
+            </value>
+            <value>
+                <fullName>TV, Movie &amp; Character Toys</fullName>
+                <default>false</default>
+                <label>TV, Movie &amp; Character Toys</label>
+            </value>
+            <value>
+                <fullName>TV, Video &amp; Home Audio</fullName>
+                <default>false</default>
+                <label>TV, Video &amp; Home Audio</label>
+            </value>
+            <value>
+                <fullName>Unisex Clothing, Shoes &amp; Accs</fullName>
+                <default>false</default>
+                <label>Unisex Clothing, Shoes &amp; Accs</label>
+            </value>
+            <value>
+                <fullName>United States</fullName>
+                <default>false</default>
+                <label>United States</label>
+            </value>
+            <value>
+                <fullName>Vehicle Electronics &amp; GPS</fullName>
+                <default>false</default>
+                <label>Vehicle Electronics &amp; GPS</label>
+            </value>
+            <value>
+                <fullName>Video Game Accessories</fullName>
+                <default>false</default>
+                <label>Video Game Accessories</label>
+            </value>
+            <value>
+                <fullName>Video Game Consoles</fullName>
+                <default>false</default>
+                <label>Video Game Consoles</label>
+            </value>
+            <value>
+                <fullName>Video Games</fullName>
+                <default>false</default>
+                <label>Video Games</label>
+            </value>
+            <value>
+                <fullName>Virtual Reality</fullName>
+                <default>false</default>
+                <label>Virtual Reality</label>
+            </value>
+            <value>
+                <fullName>Vision Care</fullName>
+                <default>false</default>
+                <label>Vision Care</label>
+            </value>
+            <value>
+                <fullName>Vitamins &amp; Dietary Supplements</fullName>
+                <default>false</default>
+                <label>Vitamins &amp; Dietary Supplements</label>
+            </value>
+            <value>
+                <fullName>Voice-Enabled Smart Assistants</fullName>
+                <default>false</default>
+                <label>Voice-Enabled Smart Assistants</label>
+            </value>
+            <value>
+                <fullName>Watches, Parts &amp; Accessories</fullName>
+                <default>false</default>
+                <label>Watches, Parts &amp; Accessories</label>
+            </value>
+            <value>
+                <fullName>Water Sports</fullName>
+                <default>false</default>
+                <label>Water Sports</label>
+            </value>
+            <value>
+                <fullName>Wedding Supplies</fullName>
+                <default>false</default>
+                <label>Wedding Supplies</label>
+            </value>
+            <value>
+                <fullName>Window Treatments &amp; Hardware</fullName>
+                <default>false</default>
+                <label>Window Treatments &amp; Hardware</label>
+            </value>
+            <value>
+                <fullName>Winter Sports</fullName>
+                <default>false</default>
+                <label>Winter Sports</label>
+            </value>
+            <value>
+                <fullName>Women&#39;s Accessories</fullName>
+                <default>false</default>
+                <label>Women&#39;s Accessories</label>
+            </value>
+            <value>
+                <fullName>Women&#39;s Clothing</fullName>
+                <default>false</default>
+                <label>Women&#39;s Clothing</label>
+            </value>
+            <value>
+                <fullName>Women&#39;s Handbags &amp; Bags</fullName>
+                <default>false</default>
+                <label>Women&#39;s Handbags &amp; Bags</label>
+            </value>
+            <value>
+                <fullName>Women&#39;s Shoes</fullName>
+                <default>false</default>
+                <label>Women&#39;s Shoes</label>
+            </value>
+            <value>
+                <fullName>Yard, Garden &amp; Outdoor Living</fullName>
+                <default>false</default>
+                <label>Yard, Garden &amp; Outdoor Living</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

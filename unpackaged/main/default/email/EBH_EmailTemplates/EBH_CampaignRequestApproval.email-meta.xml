@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>[EBH] (EPH-3184) : Email to campaign owner to notify campaign has been submitted for the review</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Campaign Request Submitted for an Approval</name>
+    <style>none</style>
+    <subject>{!Campaign.Name} has been submitted for {!Campaign.EBH_Site__c} - {!Campaign.EBH_ChannelMP__c}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

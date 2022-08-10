@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_RequiresFINPrecheck</fullName>
+    <active>true</active>
+    <description>EPH-148, US-0007080</description>
+    <errorConditionFormula>NOT(EBH_FinanceAgreesinPrincipal__c) &amp;&amp; 
+NOT( 
+ISPICKVAL(Status, &quot;Voided&quot;) ||
+ISPICKVAL(Status, &quot;Draft&quot;) || 
+ISPICKVAL(Status , &quot;Sent for Finance Pre-check&quot;)  ) &amp;&amp; ( RecordType.DeveloperName = &quot;EBH_ACP&quot; || RecordType.DeveloperName = &quot;EBH_ListingAgreement&quot;) &amp;&amp; NOT( $Setup.ActiveValidationRules__c.All_Validation_Rules_Deactivated__c )</errorConditionFormula>
+    <errorMessage>The contract type you have selected requires Finance pre-check prior to negotiation.</errorMessage>
+</ValidationRule>

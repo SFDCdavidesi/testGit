@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shopping_Card__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>US-0007315 - [AU &amp;EU] Integration Partner &amp; Shopping Card</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Ecommerce provider on seller&#39;s website</inlineHelpText>
+    <label>Shopping Cart</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Account.RecordType.DeveloperName</field>
+            <operation>equals</operation>
+            <value>EBH_Partner</value>
+        </filterItems>
+        <filterItems>
+            <field>Account.EBH_PartnerType__c</field>
+            <operation>equals</operation>
+            <value>Shop System</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Projects (Shopping Card)</relationshipLabel>
+    <relationshipName>Projects5</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

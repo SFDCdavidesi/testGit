@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project Stage Integration Alert AU</title>
+</head>
+
+<body>
+    <p>Hi CS team,</p>
+
+    <table border="0">
+        <tbody>
+            <tr>
+                <td rowspan="1" colspan="1" width="319" valign="top">
+                    <p><b><span style="color: black;">Item</span></b></p>
+                </td>
+                <td rowspan="1" colspan="1" width="319" valign="top">
+                    <p><b><span style="color: black;">Required</span></b></p>
+                </td>
+                <td rowspan="1" colspan="1" width="319" valign="top">
+                    <p><b><span style="color: black;">Status</span></b></p>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="1" colspan="1" width="319" valign="top">
+                    <p style="margin-left: 18.0pt;"><span style="color: black;">Strike Through
+                            Pricing</span></p>
+                </td>
+                <td rowspan="1" colspan="1" width="319" valign="top">
+                    <p>&gt;</p>
+                </td>
+                <td rowspan="1" colspan="1" width="319" valign="top">
+                    <p><span style="color: black;">{!EBH_Project__c.StrikethroughPricing__c}</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="1" colspan="1" width="319" valign="top">
+                    <p style="margin-left: 18.0pt;"><span style="color: black;">Sexual Wellness
+                            whitelist</span></p>
+                </td>
+                <td rowspan="1" colspan="1" width="319" valign="top">
+                    <p><span style="color: black;">&gt;</span></p>
+                </td>
+                <td rowspan="1" colspan="1" width="319" valign="top">
+                    <p><span style="color: black;">{!EBH_Project__c.SexualWellness__c}</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="1" colspan="1" width="319" valign="top">
+                    <p style="margin-left: 18.0pt;"><span style="color: black;">Add <b>P1 MAC</b> Note
+                            with
+                            my name as the priority contact</span><span style="color: black;"></span></p>
+                </td>
+                <td rowspan="1" colspan="1" width="319" valign="top">
+                    <p style=""><span style="color: black;">YES</span></p>
+                </td>
+                <td rowspan="1" colspan="1" width="319" valign="top">
+                    <p><span style="color: black;">&nbsp;</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="1" colspan="1" width="319" valign="top">
+                    <p style="margin-left: 18.0pt;"><span style="color: black;">Increase <b>seller
+                                limits</b>:</span></p>
+                    <p style="margin-left: 54.0pt;"><span style="color: black;">Items: <span
+                                style="">[100,000]</span></span><span style="color: black;"></span></p>
+                    <p style="margin-left: 54.0pt;"><span style="color: black;">GMV: <span
+                                style="">[$3,000,000]</span></span><span style="color: black;"></span></p>
+                </td>
+                <td rowspan="1" colspan="1" width="319" valign="top">
+                    <p><span style="color: black;">YES</span></p>
+                </td>
+                <td rowspan="1" colspan="1" width="319" valign="top">
+                    <p><span style="color: black;">&nbsp;</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="1" colspan="1" width="319" valign="top">
+                    <p style="margin-left: 18.0pt;"><span style="color: black;">Apply 6 month
+                            <b>credit</b>
+                            for the store subscription</span><span style="color: black;"></span></p>
+                </td>
+                <td rowspan="1" colspan="1" width="319" valign="top">
+                    <p><span style="color: black;">YES</span></p>
+                </td>
+                <td rowspan="1" colspan="1" width="319" valign="top">
+                    <p><span style="color: black;">&nbsp;</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="1" colspan="1" width="319" valign="top">
+                    <p style="margin-left: 18.0pt;"><span style="color: black;">Send <b>Funds
+                                Availability</b>
+                            whitelist </span><span style="color: black;"></span></p>
+                </td>
+                <td rowspan="1" colspan="1" width="319" valign="top">
+                    <p><span style="color: black;">YES</span></p>
+                </td>
+                <td rowspan="1" colspan="1" width="319" valign="top">
+                    <p><span style="color: black;">&nbsp;</span></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p>Additionally note that:</p>
+    <ul>
+        <li>Suppliers: [Various AU suppliers, all stock is warehoused by the seller.&nbsp;This is a long time
+            established
+            Australian business, they currently sell online and also have physical stores.– include any other relevant
+            information]</li>
+        <li>eBay Staff Working on Account: [4]</li>
+        <li>Average Sale Price: [$100]</li>
+        <li>Add Issue 97 Flag to enable Promoted Listings eligibility (CUD only, as part of Funds Availability whitelisting process)</li>
+    </ul>
+    <p>Please email me when the above is completed.</p>
+    <br/>
+    <p>Thanks.</p>
+</body>
+
+</html>

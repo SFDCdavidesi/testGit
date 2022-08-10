@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DuplicateRule xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <actionOnInsert>Allow</actionOnInsert>
+    <actionOnUpdate>Allow</actionOnUpdate>
+    <alertText>Use one of these records?</alertText>
+    <description>US-0011636 - SPIKE - Duplicate Management Contacts</description>
+    <duplicateRuleFilter>
+        <booleanFilter xsi:nil="true"/>
+        <duplicateRuleFilterItems>
+            <field>Profile</field>
+            <operation>notEqual</operation>
+            <value>System Administrator</value>
+            <sortOrder>1</sortOrder>
+            <table>User</table>
+        </duplicateRuleFilterItems>
+        <duplicateRuleFilterItems>
+            <field>RecordType</field>
+            <operation>equals</operation>
+            <value>MANUAL</value>
+            <sortOrder>2</sortOrder>
+            <table>Contact</table>
+        </duplicateRuleFilterItems>
+    </duplicateRuleFilter>
+    <duplicateRuleMatchRules>
+        <matchRuleSObjectType>Contact</matchRuleSObjectType>
+        <matchingRule>Custom_Contact_Duplicate_Rule_Matching_Rule</matchingRule>
+        <objectMapping xsi:nil="true"/>
+    </duplicateRuleMatchRules>
+    <isActive>true</isActive>
+    <masterLabel>Custom Contact Dupilcate Rule</masterLabel>
+    <operationsOnInsert>Alert</operationsOnInsert>
+    <operationsOnInsert>Report</operationsOnInsert>
+    <securityOption>EnforceSharingRules</securityOption>
+    <sortOrder>3</sortOrder>
+</DuplicateRule>

@@ -1,0 +1,9 @@
+Dear Contract Signing Team,
+
+{!Contract.RecordType}: {!Contract.ContractNumber} requested by {!Contract.OwnerFullName} is ready for eBay signature.
+
+Please login to Hive to action it.
+
+{!Contract.Link} 
+
+Thanks

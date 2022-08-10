@@ -1,0 +1,3 @@
+<p data-aura-rendered-by="10635:0">Your new user request or user reactivation has been rejected&nbsp;in Hive.&nbsp;</p>
+<p data-aura-rendered-by="10635:0">Comments:<br />{!ApprovalRequest.Comments}</p>
+<p data-aura-rendered-by="10635:0">{!Ticket__c.Link}</p>

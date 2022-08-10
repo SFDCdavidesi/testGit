@@ -1,0 +1,14 @@
+<p data-aura-rendered-by="9736:0">Dear {!User.Name},&nbsp;</p>
+<p data-aura-rendered-by="9736:0">New Final Value Fee Campaign request has been created by {!CurrentUser}</p>
+<p data-aura-rendered-by="9736:0">Below you will find a summary of the request:</p>
+<ul data-aura-rendered-by="9736:0">
+<li>Total Number of sellers:&nbsp;{!Final_Value_Fee_FVF__c.Total_Number_of_Sellers__c}</li>
+<li>Total Number of Listings: {!Final_Value_Fee_FVF__c.Total_Number_of_Listings_fvfcampaign__c}</li>
+<li>Business Reason: {!Final_Value_Fee_FVF__c.Business_Reason__c}</li>
+<li>Start Date:&nbsp;{!Final_Value_Fee_FVF__c.Start_Date_w__c}</li>
+<li>End Date:&nbsp;{!Final_Value_Fee_FVF__c.End_Date_w__c}</li>
+<li>Manually Estimated Budget:&nbsp;{!Final_Value_Fee_FVF__c.Budget_Manually_Estimated__c}</li>
+<li>Automatically Estimated Budget: {!Final_Value_Fee_FVF__c.Budget_estimated_w__c}</li>
+</ul>
+<p data-aura-rendered-by="9736:0">&nbsp;</p>
+<p data-aura-rendered-by="9736:0">Please review&nbsp;<a title="{!Final_Value_Fee_FVF__c.Name}" href="{!Final_Value_Fee_FVF__c.Link}">{!Final_Value_Fee_FVF__c.Name}</a> and either approve or reject the request.</p>

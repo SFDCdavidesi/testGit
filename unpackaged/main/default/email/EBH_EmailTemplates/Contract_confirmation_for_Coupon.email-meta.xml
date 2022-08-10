@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0006467 Contract confirmation for FVF &amp; Coupon</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Contract confirmation for Coupon</name>
+    <style>none</style>
+    <subject>Coupon contract has been signed by {!Coupon_Seller__c.Seller__c} |  Coupon: {!Coupon_Seller__c.Marketing_Coupon_Name__c}</subject>
+    <textOnly>Dear {!Coupon_Seller__c.EBH_CouponSellerOwner__c},
+
+This email is to inform you that coupon contract has been signed by {!Coupon_Seller__c.Seller__c} .
+
+Click here to view the details: {!Coupon_Seller__c.Link}.
+
+Thank you,
+
+Hive team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

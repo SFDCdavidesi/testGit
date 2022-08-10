@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>an email with the survey link to the offshore team once csi request is complete</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>eBay_Ads_Letterhead</letterhead>
+    <name>CSI Survey to Offshore</name>
+    <style>freeForm</style>
+    <subject>Please Complete Offshore Feedback for {!Advertising_Request_Portal__c.Name}</subject>
+    <textOnly>Hello {!Advertising_Request_Portal__c.CSI_Team_Member__c},
+
+Please complete offshore feedback form for
+{!Advertising_Request_Portal__c.Name}
+
+Thank you!</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <assignments>
+        <name>Auto_Populate_fields_for_Seller_Portal_Platform</name>
+        <label>Auto-Populate fields for Seller Portal Platform</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Name</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varName4SellerPortal</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_Contact</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>US-0012008 - Add Email field to Seller Communication record</description>
+        <name>Populate_Email_address_from_Contact</name>
+        <label>Populate Email address from Contact</label>
+        <locationX>50</locationX>
+        <locationY>767</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Email_address__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Contact__r.Email</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>GetPortalSiteId</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>US-0012100 - Lightning Email Logic for DE Coupon Sellers - Coupon Item Upload Invitation</description>
+        <name>PopulateCouponSellerUrlText</name>
+        <label>Populate Coupon Seller Url Text</label>
+        <locationX>50</locationX>
+        <locationY>1343</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.CouponURLPortalText__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>CouponURLPortal_Text</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <description>US-0012008 - Add Email field to Seller Communication record</description>
+        <name>Check_Contact</name>
+        <label>Check Contact</label>
+        <locationX>182</locationX>
+        <locationY>647</locationY>
+        <defaultConnector>
+            <targetReference>GetPortalSiteId</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Contact_is_populated</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Contact__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Contact__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Email_address__c</leftValueReference>
+                <operator>EqualTo</operator>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Email_address__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.Contact__r.Email</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Populate_Email_address_from_Contact</targetReference>
+            </connector>
+            <label>Contact is populated</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Filtering</name>
+        <label>Filtering Platform</label>
+        <locationX>182</locationX>
+        <locationY>311</locationY>
+        <defaultConnector>
+            <targetReference>Check_Contact</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Platform_Seller_Portal</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Platform__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Seller Portal</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Auto_Populate_fields_for_Seller_Portal_Platform</targetReference>
+            </connector>
+            <label>Platform = Seller Portal</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>RecordType_Coupons</name>
+        <label>RecordType Coupons</label>
+        <locationX>182</locationX>
+        <locationY>1223</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>IsCoupon</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Coupon_Seller__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Coupons</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>PopulateCouponSellerUrlText</targetReference>
+            </connector>
+            <label>IsCoupon</label>
+        </rules>
+    </decisions>
+    <description>US-0011435 - Creation of seller communication records for coupons, US-0012008 - Add Email field to Seller Communication record
+US-0012100 - Lightning Email Logic for DE Coupon Sellers - Coupon Item Upload Invitation</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>US-0012100 - Lightning Email Logic for DE Coupon Sellers - Coupon Item Upload Invitation</description>
+        <name>CouponURLPortal_Text</name>
+        <dataType>String</dataType>
+        <expression>{!GetSiteDetail.SecureUrl}+&quot;/s/coupon-seller/&quot;+{!$Record.Coupon_Seller__c}</expression>
+    </formulas>
+    <formulas>
+        <name>SubStringPortalSiteId</name>
+        <dataType>String</dataType>
+        <expression>LEFT({!GetPortalSiteId.Id}, 15)</expression>
+    </formulas>
+    <formulas>
+        <name>varName4SellerPortal</name>
+        <dataType>String</dataType>
+        <expression>TEXT({!$Record.Email_Template__c})</expression>
+    </formulas>
+    <interviewLabel>Seller Communication - Record Trigger Flow - Before Context {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Seller Communication - Record Trigger Flow - Before Context</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>US-0012100 - Lightning Email Logic for DE Coupon Sellers - Coupon Item Upload Invitation</description>
+        <name>GetPortalSiteId</name>
+        <label>GetPortalSiteId</label>
+        <locationX>182</locationX>
+        <locationY>983</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>GetSiteDetail</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>eBay_Seller_Portal</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Site</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>US-0012100 - Lightning Email Logic for DE Coupon Sellers - Coupon Item Upload Invitation</description>
+        <name>GetSiteDetail</name>
+        <label>GetSiteDetail</label>
+        <locationX>182</locationX>
+        <locationY>1103</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>RecordType_Coupons</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DurableId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>SubStringPortalSiteId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>SiteDetail</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Filtering</targetReference>
+        </connector>
+        <object>Seller_Communication__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

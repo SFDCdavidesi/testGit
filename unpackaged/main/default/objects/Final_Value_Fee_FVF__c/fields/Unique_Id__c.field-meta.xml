@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unique_Id__c</fullName>
+    <description>US-0005908 Redirect Users to Custom Element (Inventory Diagnostic) for FVF Nomination.
+DO NOT REMOVE FROM THE LAYOUT.</description>
+    <externalId>true</externalId>
+    <inlineHelpText>Unique Identifier. Do not touch.</inlineHelpText>
+    <label>Unique Id</label>
+    <length>100</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

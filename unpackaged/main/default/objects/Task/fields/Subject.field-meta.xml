@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subject</fullName>
+    <description>US-0008531 [NA] Enable Activity, Chatter and Campaigns on Lead</description>
+    <trackFeedHistory>true</trackFeedHistory>
+    <type>Picklist</type>
+</CustomField>

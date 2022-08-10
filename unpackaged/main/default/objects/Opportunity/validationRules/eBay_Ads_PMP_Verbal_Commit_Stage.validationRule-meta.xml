@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>eBay_Ads_PMP_Verbal_Commit_Stage</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+
+$Setup.byPass__c.ByPass_Validation__c = FALSE,
+$Profile.Name = &quot;Standard Ads User Profile&quot;,
+
+RecordType.DeveloperName = $Label.OPP_RECORDTYPEDEVNAME_PMP,
+
+OR(
+ISPICKVAL(StageName, &#39;Verbal Commitment&#39;),
+ISPICKVAL(StageName, &#39;Contract Processing and Review&#39;),
+ISPICKVAL(StageName, &#39;Closed Won&#39;)
+),
+
+Rate_Card_Available__c = TRUE,
+NOT(ISPICKVAL(Rate_Card_Status1__c, &#39;Approved&#39;))
+
+
+)</errorConditionFormula>
+    <errorDisplayField>StageName</errorDisplayField>
+    <errorMessage>Cannot move stage to Verbal Commit, Contract Processing, or Closed Won if Rate Card Exception Request is not approved</errorMessage>
+</ValidationRule>

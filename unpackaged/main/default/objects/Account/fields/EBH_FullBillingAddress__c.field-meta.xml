@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_FullBillingAddress__c</fullName>
+    <description>[EBH] (EPH-2201) - Billing Address</description>
+    <externalId>false</externalId>
+    <formula>if(LEN(EBH_BillingAddress__c)&gt;0, EBH_BillingAddress__c &amp; &quot; &quot; , &quot;&quot; ) &amp; BR() &amp;
+if(LEN(EBH_BillingStreet__c)&gt;0, EBH_BillingStreet__c &amp; &quot; &quot; , &quot;&quot; ) &amp; BR() &amp;
+if(LEN(EBH_BillingCity__c)&gt;0, EBH_BillingCity__c&amp; &quot;, &quot; , &quot;&quot; )&amp;
+if(LEN(EBH_BillingState__c)&gt;0, EBH_BillingState__c&amp; &quot; &quot; , &quot;&quot; )&amp;
+if(LEN(EBH_BillingPostalCode__c)&gt;0, EBH_BillingPostalCode__c,&quot;&quot;) &amp; BR() &amp;
+If(LEN(EBH_BillingCountry__c) &gt;0, EBH_BillingCountry__c,&quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Address</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

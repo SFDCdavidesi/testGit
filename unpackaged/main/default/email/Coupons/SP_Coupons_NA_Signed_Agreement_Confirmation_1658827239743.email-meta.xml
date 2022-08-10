@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0012116 - NA localization - Seller Communication- Contract Signature Confirmation</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>SP - Coupons - NA - Signed Agreement Confirmation</name>
+    <pageDevName>SP_Coupons_NA_Signed_Agreement_Confirmation</pageDevName>
+    <relatedEntityType>Seller_Communication__c</relatedEntityType>
+    <style>none</style>
+    <subject>Confirmation of your participation in the {{{Seller_Communication__c.Coupon_Marketing_Name__c}}} coupon campaign | {{{Seller_Communication__c.CouponStartDate__c}}} - {{{Seller_Communication__c.CouponEndDate__c}}}</subject>
+    <textOnly>**Confirmation of your participation in the {{{Seller_Communication__c.Coupon_Marketing_Name__c}}} coupon campaign | {{{Seller_Communication__c.CouponStartDate__c}}} - {{{Seller_Communication__c.CouponEndDate__c}}}
+----------------------------------------------------
+
+Hi {{{Seller_Communication__c.Contact__c}}},
+
+In this e-mail, we confirm that we have received your consent to participate in the {{{Seller_Communication__c.Coupon_Marketing_Name__c}}} coupon campaign.
+
+This Coupon Promotion is valid from {{{Seller_Communication__c.CouponStartDate__c}}} to {{{Seller_Communication__c.CouponEndDate__c}}}in accordance with the Promotion Individual Contract and associated Promotion T&amp;Cs which you agreed to on {{{Seller_Communication__c.Coupon_Accept_Date__c}}}.
+
+View Details &lt; {{{Seller_Communication__c.CouponURLPortalText__c}}} &gt; 
+
+Best Regards,
+
+eBay Seller Funded Coupons
+
+This email was sent by Ebay, Inc. Ebay will never ask you to provide confidential information (like your password or credit card details) via email.</textOnly>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

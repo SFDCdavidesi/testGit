@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0007619 - Migrate to Cases - Migrate email templates / workflows, EPH-7362 Support Ticket Enhancements</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Ticket Status Change</name>
+    <style>none</style>
+    <subject>Status change of your Support Ticket #{!Case.CaseNumber}</subject>
+    <textOnly>Status of your Support Ticket #{!Case.CaseNumber} - {!Case.Summary__c} was changed to {!Case.Status}.
+
+Please contact HIVE team if you have any questions.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

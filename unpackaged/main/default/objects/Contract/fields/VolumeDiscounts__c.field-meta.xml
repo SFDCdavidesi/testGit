@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VolumeDiscounts__c</fullName>
+    <defaultValue>0</defaultValue>
+    <description>US-0007807
+US-0007895 - Contracts P2.0 Field Label Changes and Tool tips
+US-0008522 - [Contracts] Volume Discounts enhancements in P2.0 Contracts</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please enter the average FVF discount  for the year, based on sales volume (GMV). This discount will be applied to the default FVF calculation. If you check the box “Special Volume Discount applicable“ on your contract, then the discount will be applied to the special FVF calculation.</inlineHelpText>
+    <label>Volume Discounts</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

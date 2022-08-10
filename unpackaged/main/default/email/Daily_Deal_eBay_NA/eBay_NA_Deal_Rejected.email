@@ -1,0 +1,15 @@
+A deal has been rejected in approval. Please find details of the Deal below:
+<br/><br/>
+
+eBay Seller: {!EBH_Deal__c.EBH_BusinessName__c}<br/>
+Listing Id: {!EBH_Deal__c.EBH_eBayItemID__c}<br/>
+Product Title: {!EBH_Deal__c.EBH_ProductTitle__c}<br/>
+Start Date: {!EBH_Deal__c.EBH_DealStartDate__c}&nbsp;{!EBH_Deal__c.EBH_DealStartTime__c}<br/>
+End Date: {!EBH_Deal__c.EBH_DealEndDate__c}&nbsp;{!EBH_Deal__c.EBH_DealEndTime__c}<br/>
+Deal Price: {!EBH_Deal__c.EBH_DealPrice__c}<br/>
+Subsidy: {!EBH_Deal__c.EBH_Subsidy__c}<br/>
+Subsidy Max: {!EBH_Deal__c.EBH_SubsidyMax__c}<br/>
+Deal Status: {!EBH_Deal__c.EBH_Status__c}<br/>
+Comment from Seller: {!EBH_Deal__c.EBH_CommentfromSeller__c}<br/><br/>
+
+<a href="{!EBH_Deal__c.Link}">Click here</a> to view the Deal in more detail

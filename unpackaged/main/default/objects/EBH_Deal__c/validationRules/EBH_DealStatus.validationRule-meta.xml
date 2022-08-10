@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_DealStatus</fullName>
+    <active>true</active>
+    <description>[EBH] (EPH-4170) - Deal Status Accepted. 
+EPH-7391
+--- THIS VR MUST BE ACTIVE --</description>
+    <errorConditionFormula>AND( 
+NOT(
+OR(
+ISPICKVAL(EBH_Status__c, &quot;New&quot;), 
+ISPICKVAL(EBH_Status__c, &quot;Rejected&quot;), 
+ISPICKVAL(EBH_Status__c, &quot;Negotiating&quot;), 
+ISPICKVAL( EBH_Status__c, &quot;Negotiating Amended&quot;),
+ISPICKVAL(EBH_DealSiteId__c,&quot;15&quot;))),
+OR(
+AND(
+OR(
+LEFT(OwnerId, 3) = &quot;00G&quot;, 
+ISNULL(EBH_DealPrice__c), 
+TEXT(EBH_DealFormat__c) = &quot;&quot;, 
+ISBLANK(EBH_DealStartDate__c), 
+ISBLANK(EBH_DealStartTime__c), 
+ISBLANK(EBH_DealEndDate__c), 
+ISBLANK(EBH_DealEndTime__c), 
+ISBLANK(EBH_SellerEmail__c), 
+ISBLANK(TEXT(EBH_DealFormat__c))),
+$Profile.Name &lt;&gt; &#39;DE - Seller Portal&#39;),
+AND(
+ISPICKVAL(EBH_DealFormat__c, &quot;Featured&quot;),
+ISBLANK( EBH_SpotlightCategory__c)),
+AND(
+NOT(
+ISBLANK(EBH_eBayItemID__c)), 
+OR(
+LEN(EBH_eBayItemID__c) &lt; 9, 
+LEN(EBH_eBayItemID__c) &gt; 16 , 
+NOT(
+ISNUMBER(EBH_eBayItemID__c)))),
+(EBH_DealEndDate__c &lt; EBH_DealStartDate__c), 
+(EBH_SellerPrice__c &lt; EBH_DealPrice__c ),
+AND(
+!Invalid_VAT_ID__c , EBH_Subsidy__c &gt; 0,
+ISPICKVAL(EBH_Status__c, &quot;Planned&quot;))
+),
+ RecordType.DeveloperName =&#39;Deal_V1&#39;)</errorConditionFormula>
+    <errorMessage>Please enter and validate all required information before the deal can be moved to Planned (Deal Price, Start/End Date/Time, Seller Email, Spotlight category for featured deals, eBay Item ID, valid VAT/ABN ID for deals with subsidy).</errorMessage>
+</ValidationRule>

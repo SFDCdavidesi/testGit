@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0011680 - New Status &quot;PO Review&quot; to User Stories Object and notification</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Hive_Letterhead</letterhead>
+    <name>PO Review Template</name>
+    <style>freeForm</style>
+    <subject>User Story {!copado__User_Story__c.copado__User_Story_Title__c} requires your review</subject>
+    <textOnly>Dear {!copado__User_Story__c.OwnerFullName},
+
+The user story {!copado__User_Story__c.copado__User_Story_Title__c} requires your review.
+
+Please review the story with the regional Business Analyst and provide timely feedback.
+
+
+
+Thank you,
+
+HIVE.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

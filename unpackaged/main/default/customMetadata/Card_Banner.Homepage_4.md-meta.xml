@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Homepage_4</label>
+    <protected>false</protected>
+    <values>
+        <field>Button_Label_Name__c</field>
+        <value xsi:type="xsd:string">Shop Now</value>
+    </values>
+    <values>
+        <field>button_content__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>card_background_image__c</field>
+        <value xsi:type="xsd:string">/bannerImg/bannerImg.png</value>
+    </values>
+    <values>
+        <field>card_text_content__c</field>
+        <value xsi:type="xsd:string">Watch favorites, track orders and get recommendations.</value>
+    </values>
+    <values>
+        <field>card_url_link__c</field>
+        <value xsi:type="xsd:string">abc</value>
+    </values>
+    <values>
+        <field>heading_content__c</field>
+        <value xsi:type="xsd:string">Shopping’s easier when you’re signed in</value>
+    </values>
+</CustomMetadata>

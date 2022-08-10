@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Non_Standard_Billing_Details__c</fullName>
+    <externalId>false</externalId>
+    <label>Non Standard Billing Details</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Quarterly Invoice</fullName>
+                <default>false</default>
+                <label>Quarterly Invoice</label>
+            </value>
+            <value>
+                <fullName>Early Invoice</fullName>
+                <default>false</default>
+                <label>Early Invoice</label>
+            </value>
+            <value>
+                <fullName>Non Standard Payment terms (other than NET30)</fullName>
+                <default>false</default>
+                <label>Non Standard Payment terms (other than NET30)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

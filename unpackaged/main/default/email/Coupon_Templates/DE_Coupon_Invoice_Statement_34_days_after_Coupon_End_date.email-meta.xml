@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>EPH-7565 Coupon - Manhattan Invoice Statment send to coupon seller</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DE Coupon Invoice Statement 34 days after Coupon End date</name>
+    <style>none</style>
+    <subject>Gutschein-Aktion| Abschließende Übersicht | {!Coupon_Seller__c.Coupon_ID__c} | {!Coupon_Seller__c.Coupon_Start_Date__c} - {!Coupon_Seller__c.Coupon_End_Date__c}</subject>
+    <textOnly>Lieber eBay-Verkäufer,
+
+nachfolgend erhalten Sie die abschließende Übersicht der Umsätze und Kosten, die mit der Nutzung des Gutscheincodes {!Coupon_Seller__c.Coupon_ID__c} während des Werbeaktionszeitraums getätigt wurden und im nächsten Rechnungszyklus abgerechnet wird.
+
+Gutschein Kampagnen-Zeitraum Umsatz mit Gutscheincode (EUR) Betrag aus Gutscheincode-Einlösung (EUR) Betrag aus Kostenbeteiligung (EUR)
+{!Coupon_Seller__c.Coupon_ID__c}  {!Coupon_Seller__c.Coupon_Start_Date__c} - {!Coupon_Seller__c.Coupon_End_Date__c}  {!Coupon_Seller__c.GMV_LC__c}  {!Coupon_Seller__c.Contra_LC__c}  {!Coupon_Seller__c.Cost_Share_Seller_LC__c}
+
+Die Übersicht der Einzeltransaktionen zur Aktion erhalten Sie auf Anfrage über Ihren eBay-Ansprechpartner.
+
+Sollten Sie Rückfragen haben oder weitere Informationen benötigen, zögern Sie bitte nicht, Kontakt aufzunehmen.
+
+Wir wünschen Ihnen weiterhin viel Erfolg beim Verkaufen auf eBay
+
+Mit besten Grüßen
+
+Ihr eBay-Team
+
+Diese E Mail wurde von der eBay GmbH im Zusammenhang mit Ihrem Mitgliedskonto bei www.ebay.de gesendet. Es handelt sich hierbei um eine einmalige Mitteilung. Eine Änderung Ihrer Benachrichtigungseinstellungen ist nicht erforderlich.
+
+Die eBay GmbH fragt niemals per E Mail nach persönlichen Daten (wie z.B. Passwort, Kreditkarten- oder Bankkontonummern).
+
+© 1995-{!CurrentYear} eBay Inc.
+
+Impressum
+
+eBay GmbH</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

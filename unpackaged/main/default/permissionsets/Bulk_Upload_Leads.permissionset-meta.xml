@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <classAccesses>
+        <apexClass>MassUploadObjectController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Bulk Upload Leads</label>
+    <pageAccesses>
+        <apexPage>MassUploadObject</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Lead.isSkipDupRule__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+</PermissionSet>

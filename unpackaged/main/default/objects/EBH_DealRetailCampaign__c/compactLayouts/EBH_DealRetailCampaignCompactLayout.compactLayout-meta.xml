@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_DealRetailCampaignCompactLayout</fullName>
+    <fields>EBH_DealTitle__c</fields>
+    <fields>EBH_Country__c</fields>
+    <fields>EBH_Category__c</fields>
+    <fields>EBH_Date__c</fields>
+    <fields>EBH_OpenSeatsAvailable__c</fields>
+    <fields>EBH_DealFormat__c</fields>
+    <fields>EPH_EndDate__c</fields>
+    <label>Deal Retail Campaign Compact Layout</label>
+</CompactLayout>

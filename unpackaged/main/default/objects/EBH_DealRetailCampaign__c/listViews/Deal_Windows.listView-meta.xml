@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deal_Windows</fullName>
+    <columns>NAME</columns>
+    <columns>EBH_DealTitle__c</columns>
+    <columns>EBH_Date__c</columns>
+    <columns>EBH_AcceptProposalsStart__c</columns>
+    <columns>EPH_EndDate__c</columns>
+    <columns>EBH_AcceptProposalsEnd__c</columns>
+    <columns>Status__c</columns>
+    <columns>Status_Seller_Portal__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>EBH_DealRetailCampaign__c.Deal_Campaign_V2</value>
+    </filters>
+    <label>Deal Windows</label>
+</ListView>

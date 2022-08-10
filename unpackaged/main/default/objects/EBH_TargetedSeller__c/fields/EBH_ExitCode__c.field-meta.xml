@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_ExitCode__c</fullName>
+    <defaultValue>&#39;10&#39;</defaultValue>
+    <description>[EBH] (EPH-5625) - to capture exit code Sellers that are &quot;Marketing Blacklist = TRUE&quot; will be flagged &quot;Exit Code&quot; = &quot;02&quot;
+If not, Sellers that have 0 Contacts with &quot;Marketing Opt-in&quot; will be flagged &quot;Member Status&quot; = &quot;30)
+If not, percentage of &quot;Control Group Size (%)&quot; Sellers will be flagged as &quot;Exit Code&quot; = &quot;10&quot;
+Otherwise, all remaining Sellers are set to &quot;Exit Code&quot; = &quot;20&quot;</description>
+    <externalId>false</externalId>
+    <label>Exit Code</label>
+    <length>8</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

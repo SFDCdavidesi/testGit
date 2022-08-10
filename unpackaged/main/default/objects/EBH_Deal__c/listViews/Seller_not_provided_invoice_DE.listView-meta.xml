@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Seller_not_provided_invoice_DE</fullName>
+    <columns>EBH_Status__c</columns>
+    <columns>EBH_DealStartDate__c</columns>
+    <columns>EBH_eBayItemID__c</columns>
+    <columns>EBH_MarketingTitle__c</columns>
+    <columns>EBH_BusinessName__c</columns>
+    <columns>EBH_SellerPrice__c</columns>
+    <columns>EBH_DealPrice__c</columns>
+    <columns>EBH_Subsidy__c</columns>
+    <columns>EBH_SubsidyFinal__c</columns>
+    <columns>Statement_Send_Date__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>NAME</columns>
+    <columns>NumberOfDaysSinceDealEnd__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>EBH_Status__c</field>
+        <operation>equals</operation>
+        <value>Statement Verified</value>
+    </filters>
+    <filters>
+        <field>EBH_DealSiteId__c</field>
+        <operation>equals</operation>
+        <value>77</value>
+    </filters>
+    <filters>
+        <field>Statement_Send_Date__c</field>
+        <operation>lessThan</operation>
+        <value>2/1/2020 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>EBH_Subsidy__c</field>
+        <operation>greaterThan</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>EBH_DealStartDate__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>9/8/2019</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>EBH_Deal__c.Deal_V1</value>
+    </filters>
+    <label>Seller not provided invoice - DE</label>
+</ListView>

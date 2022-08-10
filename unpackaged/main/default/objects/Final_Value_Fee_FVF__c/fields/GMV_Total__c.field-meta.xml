@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GMV_Total__c</fullName>
+    <description>EPH-7355 New object: Final Value Fee (FVF). Record Type - Seller Level</description>
+    <externalId>false</externalId>
+    <inlineHelpText>GMV (USD) generated in total during the timeframe of the negotiated contract, irrespective of the price, returns or cancellations.</inlineHelpText>
+    <label>GMV (Total)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

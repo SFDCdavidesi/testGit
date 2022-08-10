@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>What_are_client_s_goals_with_eBay__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>How does the client view eBay and how do they utilize us?</inlineHelpText>
+    <label>What are client&#39;s goals with eBay?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <classAccesses>
+        <apexClass>HIVE_Intellum_EnrollmentController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <description>US-0010069 - [Intellum] Create &quot;ebay Academy Read Only&quot; permission set</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>ebay Academy Read Only</label>
+    <pageAccesses>
+        <apexPage>IntellumCreateEnrollment</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+</PermissionSet>

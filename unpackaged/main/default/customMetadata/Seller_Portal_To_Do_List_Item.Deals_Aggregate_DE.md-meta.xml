@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Deals Aggregate DE</label>
+    <protected>false</protected>
+    <values>
+        <field>Item_Plural_Label__c</field>
+        <value xsi:type="xsd:string">WOW! Angebote erfordern Aufmerksamkeit​</value>
+    </values>
+    <values>
+        <field>Item_Singular_Label__c</field>
+        <value xsi:type="xsd:string">WOW! Angebot erfordert Aufmerksamkeit</value>
+    </values>
+    <values>
+        <field>Order__c</field>
+        <value xsi:type="xsd:double">1.0</value>
+    </values>
+    <values>
+        <field>Parent_Item__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Query__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Required_Access_Level__c</field>
+        <value xsi:type="xsd:string">Eligible_for_DE_Deals</value>
+    </values>
+    <values>
+        <field>Target_URL__c</field>
+        <value xsi:type="xsd:string">/s/my-deal-lists</value>
+    </values>
+</CustomMetadata>

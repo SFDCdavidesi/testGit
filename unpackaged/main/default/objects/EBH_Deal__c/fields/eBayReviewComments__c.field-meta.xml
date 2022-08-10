@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>eBayReviewComments__c</fullName>
+    <description>US-0011117</description>
+    <externalId>false</externalId>
+    <label>eBay Review Comments</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Revised</fullName>
+                <default>false</default>
+                <label>Revised</label>
+            </value>
+            <value>
+                <fullName>Maximum quantity to list. No adjustment.</fullName>
+                <default>false</default>
+                <label>Maximum quantity to list. No adjustment.</label>
+            </value>
+            <value>
+                <fullName>Maximum quantity to list. Revised.</fullName>
+                <default>false</default>
+                <label>Maximum quantity to list. Revised.</label>
+            </value>
+            <value>
+                <fullName>Payment reflected in the initial statement. No adjustment.</fullName>
+                <default>false</default>
+                <label>Payment reflected in the initial statement. No adjustment.</label>
+            </value>
+            <value>
+                <fullName>No sales data for this listing ID during this period. No adjustment.</fullName>
+                <default>false</default>
+                <label>No sales data for this listing ID during this period. No adjustment.</label>
+            </value>
+            <value>
+                <fullName>Additional quantity is outside of subsidy window, unpaid items, cancellations and/or returns. No adjustment.</fullName>
+                <default>false</default>
+                <label>Additional quantity is outside of subsidy window, unpaid items, cancellations and/or returns. No adjustment.</label>
+            </value>
+            <value>
+                <fullName>Additional quantity is outside of subsidy window, unpaid items, cancellations and/or returns. Revised.</fullName>
+                <default>false</default>
+                <label>Additional quantity is outside of subsidy window, unpaid items, cancellations and/or returns. Revised.</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

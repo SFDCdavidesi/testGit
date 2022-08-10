@@ -1,0 +1,20 @@
+Dear {!Contract.OwnerFirstName}
+
+ __ 
+
+Your '{!Contract.RecordType}' with ‘{!Contract.Account}’ has been executed. Please implement the Pricing for this Contract.
+
+Contract Value: {!Contract.EBH_ContractValue__c} {!Contract.CurrencyIsoCode}
+
+Contract Exposure: {!Contract.EBH_ContractExposure__c} {!Contract.CurrencyIsoCode}
+
+
+ __ 
+
+To review the contract please follow the link:
+
+{!Contract.Link}
+
+ 
+
+Thank you.

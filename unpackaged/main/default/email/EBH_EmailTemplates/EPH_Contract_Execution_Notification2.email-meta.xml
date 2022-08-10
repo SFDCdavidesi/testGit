@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0005944 [Contracts] Contract Email Notifications when status is Executed as per Country.  Updated 2019-12-23</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Contract Execution Notification2</name>
+    <style>none</style>
+    <subject>Your  Contract {!Contract.ContractNumber} is  Executed</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>EPH-6329 BOB MGMT - Submit / Approve / Activate BOB</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>BoB Submission</name>
+    <style>none</style>
+    <subject>New BoB Submission – Your Confirmation is required</subject>
+    <textOnly>Dear {!GCX_LEAD}
+
+{!BOB__c.OwnerFullName} has submitted a new BOB {!BOB__c.Name} that requires your confirmation.
+
+Please click here to view and confirm the proposed BOB Link to the BOB.
+
+If you would like to raise any questions before you confirm the submitted BOB please use the Chatter Box on the right side in the BoB Object.
+
+Thank you,
+HIVE</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

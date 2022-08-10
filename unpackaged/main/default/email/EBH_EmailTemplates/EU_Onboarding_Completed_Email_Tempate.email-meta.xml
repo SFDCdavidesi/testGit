@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0007777</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>EU Onboarding Completed Email Tempate</name>
+    <style>none</style>
+    <subject>Project {!EBH_Project__c.Name} is completed</subject>
+    <textOnly>Hello {!EBH_Project__c.CategoryManager__c},
+
+
+Project {!EBH_Project__c.Name} has been moved to the status &quot;Completed&quot;.
+
+Project is closed by Acquisition and Merchant Integration team now and handed over to you as category manager.
+
+
+eBay Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

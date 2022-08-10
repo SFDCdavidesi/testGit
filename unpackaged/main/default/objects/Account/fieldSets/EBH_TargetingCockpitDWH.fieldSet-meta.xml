@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_TargetingCockpitDWH</fullName>
+    <description>[EBH] Fieldset for the targeting cockpit page: EBH_TargetingCockpit</description>
+    <label>Targeting Cockpit DWH</label>
+</FieldSet>

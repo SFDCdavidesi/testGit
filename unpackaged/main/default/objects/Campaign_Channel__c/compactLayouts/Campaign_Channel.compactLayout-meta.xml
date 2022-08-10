@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campaign_Channel</fullName>
+    <fields>Name</fields>
+    <fields>Channel__c</fields>
+    <fields>Status__c</fields>
+    <fields>Content_Link__c</fields>
+    <label>Campaign Channel</label>
+</CompactLayout>

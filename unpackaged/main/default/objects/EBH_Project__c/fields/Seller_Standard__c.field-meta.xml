@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Seller_Standard__c</fullName>
+    <description>US-0009462 - UK Risk: new permission, record type and page layout on Project</description>
+    <externalId>false</externalId>
+    <formula>TEXT( EBH_Seller__r.EBH_ActualStandard__c )</formula>
+    <label>Seller Standard</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

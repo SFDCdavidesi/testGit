@@ -1,0 +1,1080 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>New_Advertiser_DE_Account_Notification</name>
+        <label>New Advertiser DE Account Notification</label>
+        <locationX>435</locationX>
+        <locationY>455</locationY>
+        <actionName>Account.New_DE_Account</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>X2_Is_SAP_ID_change</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Risk_Status_Email_Notification</name>
+        <label>Risk Status Email Notification</label>
+        <locationX>435</locationX>
+        <locationY>1127</locationY>
+        <actionName>Account.Seller_Risk_Status_Notification</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Is_SP_Eligible_Change</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>SAP_ID_Provided_Notification</name>
+        <label>SAP ID Provided Notification</label>
+        <locationX>435</locationX>
+        <locationY>791</locationY>
+        <actionName>Account.SAP_ID_provided_send_mail</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>X3_Is_Risk_Status_change</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>52.0</apiVersion>
+    <assignments>
+        <description>US-0010785 - Refactor Coupon Seller object to support standard search</description>
+        <name>Add_user_into_List_to_Update</name>
+        <label>Add user into List to Update</label>
+        <locationX>523</locationX>
+        <locationY>4415</locationY>
+        <assignmentItems>
+            <assignToReference>listCommUsers</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Iterate_each_community_user</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Iterate_each_community_user</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>US-0011998 - Business Feedback Focus 75</description>
+        <name>Assign_Decision_Maker_Role_Coupon</name>
+        <label>Assign Decision Maker Role Coupon</label>
+        <locationX>270</locationX>
+        <locationY>2759</locationY>
+        <assignmentItems>
+            <assignToReference>DecisionMakerRoleCoupon</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Assign_Temp_Role_Coupon_Contact</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>US-0011998 - Business Feedback Focus 75</description>
+        <name>Assign_Primary_Contact</name>
+        <label>Assign Primary Contact</label>
+        <locationX>534</locationX>
+        <locationY>2759</locationY>
+        <assignmentItems>
+            <assignToReference>PrimaryContactExist</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Assign_Temp_Primary_Contact</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>US-0011998 - Business Feedback Focus 75</description>
+        <name>Assign_Temp_Primary_Contact</name>
+        <label>Assign Temp Primary Contact</label>
+        <locationX>534</locationX>
+        <locationY>2879</locationY>
+        <assignmentItems>
+            <assignToReference>TempPrimaryContact</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>SCRecord</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_SC_Record</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>US-0011998 - Business Feedback Focus 75</description>
+        <name>Assign_Temp_Role_Coupon_Contact</name>
+        <label>Assign Temp Role Coupon Contact</label>
+        <locationX>270</locationX>
+        <locationY>2879</locationY>
+        <assignmentItems>
+            <assignToReference>TempMakerRoleCouponContact</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>SCRecord</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_SC_Record</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>US-0011484 - Creation of seller communication records for SP Welcome Email (SSO users only)</description>
+        <name>Assign_to_list_0</name>
+        <label>Assign to list</label>
+        <locationX>468</locationX>
+        <locationY>2183</locationY>
+        <assignmentItems>
+            <assignToReference>SCDealslist</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>SCRecord</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_SP_1</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>US-0011484 - Creation of seller communication records for SP Welcome Email (SSO users only)</description>
+        <name>Assign_to_list_1_0_0</name>
+        <label>Assign to list</label>
+        <locationX>50</locationX>
+        <locationY>3407</locationY>
+        <assignmentItems>
+            <assignToReference>SCDealslist</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>TempMakerRoleCouponContact</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_SC_Records</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>US-0011484 - Creation of seller communication records for SP Welcome Email (SSO users only)</description>
+        <name>Assign_to_list_1_0_0_0</name>
+        <label>Assign to list</label>
+        <locationX>314</locationX>
+        <locationY>3407</locationY>
+        <assignmentItems>
+            <assignToReference>SCDealslist</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>TempPrimaryContact</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_SC_Records</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>US-0011484 - Creation of seller communication records for SP Welcome Email (SSO users only)</description>
+        <name>Populate_field_for_SC_Deals</name>
+        <label>Populate field for SC Deals</label>
+        <locationX>468</locationX>
+        <locationY>2063</locationY>
+        <assignmentItems>
+            <assignToReference>SCRecord.RecordTypeId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Welcome_Email_RT.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SCRecord.Contact__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Create_SC_Record.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SCRecord.Account__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SCRecord.Email_Template__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Welcome Email Deals</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SCRecord.Platform__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Seller Portal</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SCRecord.Delivery_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Pending</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SCRecord.Region__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>DE</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SCRecord.Name</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Welcome Email Deals</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Assign_to_list_0</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>US-0011484 - Creation of seller communication records for SP Welcome Email (SSO users only)</description>
+        <name>Populate_SC_for_Coupons</name>
+        <label>Populate SC for Coupons</label>
+        <locationX>402</locationX>
+        <locationY>2519</locationY>
+        <assignmentItems>
+            <assignToReference>SCRecord.RecordTypeId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Welcome_Email_RT.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SCRecord.Contact__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Create_SC_Record.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SCRecord.Account__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SCRecord.Email_Template__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Welcome Email Coupons</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SCRecord.Platform__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Seller Portal</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SCRecord.Delivery_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Pending</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SCRecord.Region__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varSCRegion</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SCRecord.Name</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Welcome Email Coupons</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Validate_Coupon_Contact_0</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>US-0010785 - Refactor Coupon Seller object to support standard search</description>
+        <name>Update_Hide_SP_Coupon_Deal_on_User</name>
+        <label>Update Hide SP Coupon/Deal on User</label>
+        <locationX>523</locationX>
+        <locationY>4295</locationY>
+        <assignmentItems>
+            <assignToReference>Iterate_each_community_user.Hide_SP_Coupons__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varHideSPCoupon</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Iterate_each_community_user.Hide_SP_Deals__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varHideSPDeal</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_user_into_List_to_Update</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>US-0011484 - Creation of seller communication records for SP Welcome Email (SSO users only)</description>
+        <name>Check_SP</name>
+        <label>Check SP</label>
+        <locationX>600</locationX>
+        <locationY>1943</locationY>
+        <defaultConnector>
+            <targetReference>Check_SP_1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>SP_Deals</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.SP_Deals__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.EBH_RevRollup__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>DE</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Populate_field_for_SC_Deals</targetReference>
+            </connector>
+            <label>SP Deals</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>US-0011484 - Creation of seller communication records for SP Welcome Email (SSO users only)</description>
+        <name>Check_SP_1</name>
+        <label>Check SP</label>
+        <locationX>600</locationX>
+        <locationY>2399</locationY>
+        <defaultConnector>
+            <targetReference>Create_SC_Record</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>SP_Coupons</name>
+            <conditionLogic>1 AND 2 AND (3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.SP_Coupons__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Create_SC_Record.Account.Seller_Portal_Beta_User__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Create_SC_Record.Primary_Contact__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Create_SC_Record.EBH_Decision_Maker_Role__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Coupons</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Populate_SC_for_Coupons</targetReference>
+            </connector>
+            <label>SP Coupons</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>US-0010785 - Refactor Coupon Seller object to support standard search</description>
+        <name>Check_SP_Coupon_and_SP_Deal</name>
+        <label>Check SP Coupon and SP Deal</label>
+        <locationX>567</locationX>
+        <locationY>3935</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>SP_Coupon_or_SP_Deal_is_change</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.SP_Coupons__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.SP_Deals__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_all_Community_Users_Linked_with_Account</targetReference>
+            </connector>
+            <label>SP Coupon or SP Deal is change</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>US-0011484 - Creation of seller communication records for SP Welcome Email (SSO users only)</description>
+        <name>Check_SP_Field_Change</name>
+        <label>Check SP Field Change</label>
+        <locationX>380</locationX>
+        <locationY>1703</locationY>
+        <defaultConnector>
+            <targetReference>Check_SP_Coupon_and_SP_Deal</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Check_SP_Value</name>
+            <conditionLogic>(1 OR 2) OR (3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.SP_Deals__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Full Access</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.SP_Deals__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Read Only</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.SP_Coupons__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Full Access</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.SP_Coupons__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Read Only</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_SC_Record</targetReference>
+            </connector>
+            <label>Check SP Value</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>US-0011998 - Business Feedback Focus 75</description>
+        <name>Decision_Role_Coupon_Exist</name>
+        <label>Decision Role Coupon Exist</label>
+        <locationX>182</locationX>
+        <locationY>3287</locationY>
+        <defaultConnector>
+            <targetReference>Assign_to_list_1_0_0_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Decision_Role_Coupon_Exist_true</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>DecisionMakerRoleCoupon</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_to_list_1_0_0</targetReference>
+            </connector>
+            <label>True</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>US-0011484 - Creation of seller communication records for SP Welcome Email (SSO users only)</description>
+        <name>Is_SP_Eligible_Change</name>
+        <label>Is SP Eligible Change</label>
+        <locationX>567</locationX>
+        <locationY>1343</locationY>
+        <defaultConnector>
+            <targetReference>Check_SP_Coupon_and_SP_Deal</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>True</name>
+            <conditionLogic>((1 AND 2) OR (3 AND 4)) AND (5 OR 7 OR 8) AND 6</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior.SP_Deals__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.SP_Deals__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.SP_Coupons__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.SP_Coupons__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.EBH_RevRollup__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>DE</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.EBH_EmailOut__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.EBH_RevRollup__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>US</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.EBH_RevRollup__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>CA</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_All_Contact</targetReference>
+            </connector>
+            <label>True</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>US-0011998 - Business Feedback Focus 75</description>
+        <name>Validate_Coupon_Contact_0</name>
+        <label>Validate Coupon Contact</label>
+        <locationX>402</locationX>
+        <locationY>2639</locationY>
+        <defaultConnector>
+            <targetReference>Assign_Primary_Contact</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Decision_Maker_Role_Coupon_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Create_SC_Record.EBH_Decision_Maker_Role__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Coupons</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Decision_Maker_Role_Coupon</targetReference>
+            </connector>
+            <label>Is Decision Maker Role Coupon</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>X1_Is_Country_Code_Change</name>
+        <label>1) Is Country Code Change?</label>
+        <locationX>567</locationX>
+        <locationY>335</locationY>
+        <defaultConnector>
+            <targetReference>X2_Is_SAP_ID_change</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>New_Account_Notification_US_0009240</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>isNew</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Country_Code__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>DE</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Advertiser</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>New_Advertiser_DE_Account_Notification</targetReference>
+            </connector>
+            <label>New Account Notification (US-0009240)</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>X2_Is_SAP_ID_change</name>
+        <label>2) Is SAP ID change?</label>
+        <locationX>567</locationX>
+        <locationY>671</locationY>
+        <defaultConnector>
+            <targetReference>X3_Is_Risk_Status_change</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>SAP_ID_Provided_Notification_US_0009240</name>
+            <conditionLogic>1 AND (2 OR 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.SAP_ID__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>isNew</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.SAP_ID__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record__Prior.SAP_ID__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SAP_ID_Provided_Notification</targetReference>
+            </connector>
+            <label>SAP ID Provided Notification (US-0009240)</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>X3_Is_Risk_Status_change</name>
+        <label>3) Is Risk Status change?</label>
+        <locationX>567</locationX>
+        <locationY>1007</locationY>
+        <defaultConnector>
+            <targetReference>Is_SP_Eligible_Change</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Risk_Status_Notification_US_0009455</name>
+            <conditionLogic>1 AND (2 OR 3) AND (4 OR 5) AND 6 AND 7 AND 8 AND 9 AND 10 AND 11 AND 12</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Risk_Status__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Risk_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Approved</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Risk_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Rejected</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Risk_Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record__Prior.Risk_Status__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.OwnerId</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>0053u000003MP7yAAG</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.OwnerId</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>0056A000000yx6iQAA</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.OwnerId</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>0056A000000zaxMQAQ</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.OwnerId</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>0056A000000yVozQAE</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.OwnerId</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>0056A000000SZf8QAG</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.OwnerId</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>0056A000002V0K8QAK</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Owner.IsActive</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Risk_Status_Email_Notification</targetReference>
+            </connector>
+            <label>Risk Status Notification (US-0009455)</label>
+        </rules>
+    </decisions>
+    <description>US-0010093 - Move automation process from Process Builder to Workflow Rule or Flow.
+US-0011484 - Creation of seller communication records for SP Welcome Email (SSO users only)
+US-0010785 - Refactor Coupon Seller object to support standard search
+US-0011998 - Business Feedback Focus 75 AC5
+US-0012117 - NA localization - Seller Communication- Coupon Welcome Email
+US-0012101 - Remove criteria with Community User from Welcome Email Creation Path + Enable DE - Deal Welcome Email only</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>To check if this flow execute in CREATED Context</description>
+        <name>isNew</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()</expression>
+    </formulas>
+    <formulas>
+        <name>varHideSPCoupon</name>
+        <dataType>String</dataType>
+        <expression>IF(ISBLANK(TEXT({!$Record.SP_Coupons__c})),&quot;Yes&quot;,&quot;No&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>varHideSPDeal</name>
+        <dataType>String</dataType>
+        <expression>IF(ISBLANK(TEXT({!$Record.SP_Deals__c})),&quot;Yes&quot;,&quot;No&quot;)</expression>
+    </formulas>
+    <formulas>
+        <description>US-0012117 - NA localization - Seller Communication- Coupon Welcome Email</description>
+        <name>varSCRegion</name>
+        <dataType>String</dataType>
+        <expression>IF(TEXT({!$Record.EBH_RevRollup__c}) = &quot;DE&quot;,&quot;DE&quot;,IF(OR(TEXT({!$Record.EBH_RevRollup__c})=&quot;US&quot;,TEXT({!$Record.EBH_RevRollup__c})=&quot;CA&quot;),&quot;NA&quot;,&quot;&quot;))</expression>
+    </formulas>
+    <interviewLabel>Account -  Record Trigger Flow - After Context {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Account -  Record Trigger Flow - After Context</label>
+    <loops>
+        <description>US-0011484 - Creation of seller communication records for SP Welcome Email (SSO users only)</description>
+        <name>Create_SC_Record</name>
+        <label>Create SC Record</label>
+        <locationX>182</locationX>
+        <locationY>1823</locationY>
+        <collectionReference>Get_All_Contact</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Check_SP</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Decision_Role_Coupon_Exist</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <description>US-0010785 - Refactor Coupon Seller object to support standard search</description>
+        <name>Iterate_each_community_user</name>
+        <label>Iterate each community user</label>
+        <locationX>435</locationX>
+        <locationY>4175</locationY>
+        <collectionReference>Get_all_Community_Users_Linked_with_Account</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Update_Hide_SP_Coupon_Deal_on_User</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Update_Community_User</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <description>US-0011484 - Creation of seller communication records for SP Welcome Email (SSO users only)</description>
+        <name>Create_SC_Records</name>
+        <label>Create SC Records</label>
+        <locationX>182</locationX>
+        <locationY>3623</locationY>
+        <connector>
+            <targetReference>Check_SP_Coupon_and_SP_Deal</targetReference>
+        </connector>
+        <inputReference>SCDealslist</inputReference>
+    </recordCreates>
+    <recordLookups>
+        <description>US-0010785 - Refactor Coupon Seller object to support standard search</description>
+        <name>Get_all_Community_Users_Linked_with_Account</name>
+        <label>Get all Community Users Linked with Account</label>
+        <locationX>435</locationX>
+        <locationY>4055</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Iterate_each_community_user</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>IsActive</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>UserType</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>PowerCustomerSuccess</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>User</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Hide_SP_Coupons__c</queriedFields>
+        <queriedFields>Hide_SP_Deals__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>US-0011484 - Creation of seller communication records for SP Welcome Email (SSO users only)</description>
+        <name>Get_All_Contact</name>
+        <label>Get All Contact</label>
+        <locationX>380</locationX>
+        <locationY>1463</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Welcome_Email_RT</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Contact</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Welcome Email</description>
+        <name>Get_Welcome_Email_RT</name>
+        <label>Get Welcome Email RT</label>
+        <locationX>380</locationX>
+        <locationY>1583</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_SP_Field_Change</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Welcome_Email</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>RecordType</object>
+        <queriedFields>Id</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>US-0010785 - Refactor Coupon Seller object to support standard search</description>
+        <name>Update_Community_User</name>
+        <label>Update Community User</label>
+        <locationX>435</locationX>
+        <locationY>4631</locationY>
+        <inputReference>listCommUsers</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>441</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>X1_Is_Country_Code_Change</targetReference>
+        </connector>
+        <object>Account</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <description>US-0011484 - Creation of seller communication records for SP Welcome Email (SSO users only)</description>
+        <name>SCRecordName</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>{!SCRecord.Email_Template__c} - {!SCRecord.Account__r.Name} - {!SCRecord.Contact__r.FirstName} {!SCRecord.Contact__r.LastName}</text>
+    </textTemplates>
+    <variables>
+        <description>US-0011998 - Business Feedback Focus 75</description>
+        <name>DecisionMakerRoleCoupon</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <booleanValue>false</booleanValue>
+        </value>
+    </variables>
+    <variables>
+        <name>listCommUsers</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>User</objectType>
+    </variables>
+    <variables>
+        <description>US-0011998 - Business Feedback Focus 75</description>
+        <name>PrimaryContactExist</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <booleanValue>false</booleanValue>
+        </value>
+    </variables>
+    <variables>
+        <description>US-0011484 - Creation of seller communication records for SP Welcome Email (SSO users only)</description>
+        <name>SCDealslist</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Seller_Communication__c</objectType>
+    </variables>
+    <variables>
+        <description>US-0011484 - Creation of seller communication records for SP Welcome Email (SSO users only)</description>
+        <name>SCRecord</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Seller_Communication__c</objectType>
+    </variables>
+    <variables>
+        <description>US-0011998 - Business Feedback Focus 75</description>
+        <name>TempMakerRoleCouponContact</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Seller_Communication__c</objectType>
+    </variables>
+    <variables>
+        <description>US-0011998 - Business Feedback Focus 75</description>
+        <name>TempPrimaryContact</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Seller_Communication__c</objectType>
+    </variables>
+</Flow>

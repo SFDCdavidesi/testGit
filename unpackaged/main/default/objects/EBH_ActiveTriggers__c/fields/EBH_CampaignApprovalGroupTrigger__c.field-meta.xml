@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_CampaignApprovalGroupTrigger__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>[EBH] - to activate/deactivate Campaign Approval Group trigger</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Trigger switch for Campaign Approval Group Trigger</inlineHelpText>
+    <label>Campaign Approval Group Trigger</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

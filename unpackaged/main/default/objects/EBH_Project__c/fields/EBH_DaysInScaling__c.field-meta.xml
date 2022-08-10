@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_DaysInScaling__c</fullName>
+    <description>#US-0015700</description>
+    <externalId>false</externalId>
+    <formula>IF(ISNULL(EBH_SoldItemDateFirst__c),
+NULL, 
+TODAY() - EBH_SoldItemDateFirst__c)</formula>
+    <inlineHelpText># Days that the seller spent in selling stage (starting from the date when the first fulfillment item was sold to today)</inlineHelpText>
+    <label>Days in eFF Selling</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

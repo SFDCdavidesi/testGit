@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Delayed_Delivery_Days_DDD__c</fullName>
+    <defaultValue>3</defaultValue>
+    <description>US-0010081 - [UK Risk] Exposure Calculation in Seller Risk Management Project</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The number of days between receiving the payment from the buyer and shipping to the buyer (last 90 day average)</inlineHelpText>
+    <label>Delayed Delivery Days (DDD)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

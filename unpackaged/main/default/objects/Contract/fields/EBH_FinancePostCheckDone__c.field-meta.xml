@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_FinancePostCheckDone__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>[EBH] (EPH-5068) - To track if finance post check is done</description>
+    <externalId>false</externalId>
+    <label>Finance Post Check done</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

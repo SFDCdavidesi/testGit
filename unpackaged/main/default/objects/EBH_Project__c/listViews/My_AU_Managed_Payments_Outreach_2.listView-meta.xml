@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_AU_Managed_Payments_Outreach_2</fullName>
+    <columns>NAME</columns>
+    <columns>EBH_Seller__c</columns>
+    <columns>GMVLast12Months__c</columns>
+    <columns>Seller_Tier__c</columns>
+    <columns>EBH_Stage__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Seller_Tier__c</field>
+        <operation>contains</operation>
+        <value>Outreach 2</value>
+    </filters>
+    <label>My AU Managed Payments - Outreach 2</label>
+</ListView>

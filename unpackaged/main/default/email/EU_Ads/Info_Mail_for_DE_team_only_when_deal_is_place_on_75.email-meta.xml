@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Info-Mail for DE team only when deal is place on 95%</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Info-Mail for DE team only when deal is place on 75%</name>
+    <style>none</style>
+    <subject>Info-Mail: &quot;{!Opportunity.Name}&quot; - Probability was set to 95%</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

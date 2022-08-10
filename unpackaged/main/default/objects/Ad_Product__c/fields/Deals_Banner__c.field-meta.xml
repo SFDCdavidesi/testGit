@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deals_Banner__c</fullName>
+    <description>US-0010159 - ADS - Campaign Attribution Field Creation : 
+Attribution 1PD Deal Banner placement</description>
+    <externalId>false</externalId>
+    <label>Deals Banner</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Top Banner</fullName>
+                <default>false</default>
+                <label>Top Banner</label>
+            </value>
+            <value>
+                <fullName>Middle Banner</fullName>
+                <default>false</default>
+                <label>Middle Banner</label>
+            </value>
+            <value>
+                <fullName>Bottom Banner</fullName>
+                <default>false</default>
+                <label>Bottom Banner</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

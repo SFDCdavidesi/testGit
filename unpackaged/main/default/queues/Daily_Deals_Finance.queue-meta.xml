@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Daily Deals Finance</name>
+    <queueMembers>
+        <users>
+            <user>jarrasmussen@hive.project.com</user>
+            <user>jshawel@hive.project.com</user>
+            <user>nmarlin@hive.project.com</user>
+            <user>rupandya@hive.project.com</user>
+            <user>vbharathi@hive.project.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Deal_Statement_Summary__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Deal_Statement__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>EBH_Deal__c</sobjectType>
+    </queueSobject>
+</Queue>

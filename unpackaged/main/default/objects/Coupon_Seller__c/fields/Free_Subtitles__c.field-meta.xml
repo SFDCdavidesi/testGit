@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Free_Subtitles__c</fullName>
+    <description>EPH-7604 Coupon Contract Localization for UK, FR, IT &amp; ES</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Important: By setting this flag to &quot;Yes&quot; you will offer the seller a Free Substitle Promotion. The Passage will be shown on the Coupon Contract.</inlineHelpText>
+    <label>Free Subtitles</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No</fullName>
+                <default>true</default>
+                <label>No</label>
+            </value>
+            <value>
+                <fullName>Yes</fullName>
+                <default>false</default>
+                <label>Yes</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

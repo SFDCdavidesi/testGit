@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_ContractExpired_Email_Notification_0</name>
+        <label>Send ContractExpired Email Notification</label>
+        <locationX>50</locationX>
+        <locationY>408</locationY>
+        <actionName>Contract.Send_Contract_Expired_Email</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>54.0</apiVersion>
+    <decisions>
+        <description>US-0011463 - Migrate &quot;Contract Process&quot; Process-Builder to the Flow</description>
+        <name>Check_Contract_Status</name>
+        <label>Check Contract Status</label>
+        <locationX>710</locationX>
+        <locationY>288</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>is_Stage_Executed</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Executed</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>EBH_ACP</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>EBH_RevenueShare</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>EBH_ListingAgreement</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Updated_Status</targetReference>
+            </connector>
+            <label>is Stage Executed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>US-0011463 - Migrate &quot;Contract Process&quot; Process-Builder to the Flow</description>
+        <name>Check_Contract_Status_0</name>
+        <label>Check Contract Status</label>
+        <locationX>182</locationX>
+        <locationY>288</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>is_Stage_Expired</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Expired</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>EBH_ACP</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>EBH_RevenueShare</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>EBH_ListingAgreement</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_ContractExpired_Email_Notification_0</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>is Stage Expired</label>
+        </rules>
+    </decisions>
+    <description>US-0011463 - Migrate &quot;Contract Process&quot; Process-Builder to the Flow
+US-0012107 - [Contract] Auto Expiration of Contracts not working</description>
+    <environments>Default</environments>
+    <interviewLabel>Contract Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Contract Schedule Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Updated_Status</name>
+        <label>Updated Status</label>
+        <locationX>578</locationX>
+        <locationY>408</locationY>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Expired</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>320</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_Contract_Status_0</targetReference>
+        </connector>
+        <object>Contract</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <scheduledPaths>
+            <name>X1_H_After_End_Date</name>
+            <connector>
+                <targetReference>Check_Contract_Status</targetReference>
+            </connector>
+            <label>1 H After End Date</label>
+            <offsetNumber>1</offsetNumber>
+            <offsetUnit>Hours</offsetUnit>
+            <recordField>EndDate</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

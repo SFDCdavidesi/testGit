@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_SignedUpInShutl__c</fullName>
+    <description>#US-0015700</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Date when seller signed up in the Shutl Portal for the first time</inlineHelpText>
+    <label>Signed Up in Shutl Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

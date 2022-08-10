@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0007333 - LTTM - Bulk Upload BoB Sellers</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>ManagedSellerUploadResult</name>
+    <style>none</style>
+    <subject>Seller Bulk upload Results for Cohort {!BOB__c.Name}</subject>
+    <textOnly>Hi {!Owner},
+
+
+{!CountBobSeller} seller(s) are successfully added/updated to the Light Touch Cohort {!LTTMCampaignName}.
+
+{!errorMessage}
+
+{!sellernotFound}
+
+The below sellers are not successfully added to the cohort {!LTTMCampaignName} as they are part of another BoB that is either in draft, submitted or active. If you would like to proceed the seller need to be removed from the active BOB.
+
+1.Please reach out to respective BoB owners and ask to remove these sellers from the current BoB.
+
+2.Once the sellers has been removed from the current BOB you are able add to your book.
+
+Affect Seller:
+
+Seller Name Oracle ID Cohort/BoB Name Managed Type Cohort Owner Cohort Status
+{!listAffectSeller}
+
+
+Below is the list of Account Manager/Secondary AM that are not updated because the user corporate Id was incorrect or user does not exist in HIVE:
+{!listIncorrectUser}
+
+Below is the list of sellers where Managed Segment value was not updated successfully. Please use &quot;Concierge&quot; as the only Managed Segment value for bulk updates to receive concierge support.
+
+{!listAffectSellerManSeg}
+
+Thanks.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

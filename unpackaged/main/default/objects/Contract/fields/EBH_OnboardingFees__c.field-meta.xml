@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_OnboardingFees__c</fullName>
+    <description>[EBH] (EPH-4145) - To capture onboarding fees for Revenue Share contracts</description>
+    <externalId>false</externalId>
+    <label>Onboarding Fees</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

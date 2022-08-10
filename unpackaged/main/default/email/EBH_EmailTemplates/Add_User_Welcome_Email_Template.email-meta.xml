@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <available>true</available>
+    <description>US-0011007 - [Add User] Invitation Email when Seller adds contact Seller Portal</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Add User Welcome Email Template</name>
+    <style>none</style>
+    <type>visualforce</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

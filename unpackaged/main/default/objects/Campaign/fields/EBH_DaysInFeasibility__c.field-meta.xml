@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_DaysInFeasibility__c</fullName>
+    <description>[EBH] (EPH-154) - Days In Feasibility</description>
+    <externalId>false</externalId>
+    <formula>EBH_DateApproved__c - EBH_DateConvertedtoCampaign__c</formula>
+    <label>Days In Feasibility</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

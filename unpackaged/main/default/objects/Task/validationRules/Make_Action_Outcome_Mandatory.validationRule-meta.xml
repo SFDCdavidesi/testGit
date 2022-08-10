@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Make_Action_Outcome_Mandatory</fullName>
+    <active>false</active>
+    <description>US-0008571 - [GCX MSO] Make &quot;Action Outcome&quot; a required field when logging a call from Customer 360(MSO Supported sellers only)</description>
+    <errorConditionFormula>AND(ISPICKVAL( EBH_Account__r.EBH_BOBSegment__c , &#39;MSO&#39;), ISPICKVAL( Action_Outcome__c , &#39;&#39;),
+text(Related_Campaign__r.Status)&lt;&gt;&#39;Closed&#39;, text(Status) &lt;&gt;&#39;Closed&#39;,
+not( $Setup.byPass__c.ByPass_Validation__c ) )</errorConditionFormula>
+    <errorDisplayField>Action_Outcome__c</errorDisplayField>
+    <errorMessage>Please select the Action Outcome</errorMessage>
+</ValidationRule>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AllowToComplete__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>US-0007801</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Created only for Admins, please set to &quot;True&quot; if you want to move leads to status &quot;completed&quot; via Data Loader
+
+Please make sure to set the flag to &quot;false&quot; once you upload projects</inlineHelpText>
+    <label>Allow to Complete</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

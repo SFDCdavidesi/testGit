@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_EstimatedGMVforContractPeriod__c</fullName>
+    <description>[EBH] (EPH-5474) - To summarise the projected 12M GMV for related Listing records
+US-0008177 - [Contracts] Field &quot;Estimated GMV for Contract Period&quot; filter criteria to be removed in the roll up summary be amended</description>
+    <externalId>false</externalId>
+    <label>Estimated GMV for Contract Period</label>
+    <summarizedField>EBH_Pricing__c.EBH_Projected12MGMV__c</summarizedField>
+    <summaryForeignKey>EBH_Pricing__c.EBH_ContractId__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

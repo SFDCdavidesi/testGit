@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deal_Calendar</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <linkType>page</linkType>
+    <masterLabel>Deal Calendar</masterLabel>
+    <openType>replace</openType>
+    <page>Deal_Calendar_vfpage</page>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+</WebLink>

@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <assignments>
+        <description>US-0012062 - NA ADS - Monthly Forecasting Incorrect</description>
+        <name>Add_AdProduct_To_ListAdProductToUpdate</name>
+        <label>Add AdProduct To ListAdProductToUpdate</label>
+        <locationX>138</locationX>
+        <locationY>935</locationY>
+        <assignmentItems>
+            <assignToReference>ListAdproductToUpdate</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Over_AdProduct</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Over_AdProduct</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>US-0012062 - NA ADS - Monthly Forecasting Incorrect</description>
+        <name>Add_AdRevenueMonthly_To_ListAdRevenueMonthlyToUpdate</name>
+        <label>Add AdRevenueMonthly To ListAdRevenueMonthlyToUpdate</label>
+        <locationX>138</locationX>
+        <locationY>1847</locationY>
+        <assignmentItems>
+            <assignToReference>ListAdRevenueMonthlyToUpdate</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Iterate_AdMonthly</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Iterate_AdMonthly</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>US-0012062 - NA ADS - Monthly Forecasting Incorrect</description>
+        <name>Assign_AdProduct_Callisto_Ids</name>
+        <label>Assign AdProduct Callisto Ids</label>
+        <locationX>138</locationX>
+        <locationY>815</locationY>
+        <assignmentItems>
+            <assignToReference>Over_AdProduct.Callisto_Ad_Id__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Callisto_Ad_ID__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Over_AdProduct.Callisto_Campaign_Id__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Callisto_Campaign_ID__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_AdProduct_To_ListAdProductToUpdate</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>US-0012062 - NA ADS - Monthly Forecasting Incorrect</description>
+        <name>Assign_AdRevenueMonthly_Callisto_Ids</name>
+        <label>Assign AdRevenueMonthly Callisto Ids</label>
+        <locationX>138</locationX>
+        <locationY>1727</locationY>
+        <assignmentItems>
+            <assignToReference>Iterate_AdMonthly.Callisto_Ad_Id__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Callisto_Ad_ID__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Iterate_AdMonthly.Callisto_Campaign_ID__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Callisto_Campaign_ID__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_AdRevenueMonthly_To_ListAdRevenueMonthlyToUpdate</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>US-0012062 - NA ADS - Monthly Forecasting Incorrect</description>
+        <name>Check_Callisto_IDs</name>
+        <label>Check Callisto IDs</label>
+        <locationX>182</locationX>
+        <locationY>335</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Get_Parent_Records</name>
+            <conditionLogic>(1 OR 2) AND (3 OR 4 OR 5)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Callisto_Ad_ID__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Callisto_Campaign_ID__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Callisto_Ad_ID__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Callisto_Campaign_ID__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>isNew</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Queried_AdProducts</targetReference>
+            </connector>
+            <label>Get Parent Records</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>US-0012062 - NA ADS - Monthly Forecasting Incorrect</description>
+        <name>Is_AdProduct_Callisto_Ids_Not_Empty</name>
+        <label>Is AdProduct Callisto Ids  Not Empty</label>
+        <locationX>270</locationX>
+        <locationY>695</locationY>
+        <defaultConnector>
+            <targetReference>Over_AdProduct</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Populate_Update_AdProduct_Callisto_Ids</name>
+            <conditionLogic>1 AND (2 OR 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>Over_AdProduct.Id</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.Ad_Product__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Callisto_Ad_ID__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Callisto_Campaign_ID__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_AdProduct_Callisto_Ids</targetReference>
+            </connector>
+            <label>Populate Update AdProduct Callisto Ids</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>US-0012062 - NA ADS - Monthly Forecasting Incorrect</description>
+        <name>Is_AdRevenueMonthly_Callisto_Ids_Not_Empty</name>
+        <label>Is AdRevenueMonthly Callisto Ids  Not Empty</label>
+        <locationX>270</locationX>
+        <locationY>1607</locationY>
+        <defaultConnector>
+            <targetReference>Iterate_AdMonthly</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Populate_Update_AdRevenueMonthly_Callisto_Ids</name>
+            <conditionLogic>1 AND (2 OR 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>Iterate_AdMonthly.Id</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.Ad_Revenue_Monthly__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Callisto_Ad_ID__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Callisto_Campaign_ID__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_AdRevenueMonthly_Callisto_Ids</targetReference>
+            </connector>
+            <label>Populate Update AdRevenueMonthly Callisto Ids</label>
+        </rules>
+    </decisions>
+    <description>US-0012062 - NA ADS - Monthly Forecasting Incorrect</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>US-0012062 - NA ADS - Monthly Forecasting Incorrect</description>
+        <name>isNew</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()</expression>
+    </formulas>
+    <interviewLabel>Account - Record Trigger Flow - After Context {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Ad Revenue Daily - Record Trigger Flow - After Context</label>
+    <loops>
+        <description>US-0012062 - NA ADS - Monthly Forecasting Incorrect</description>
+        <name>Iterate_AdMonthly</name>
+        <label>Over AdMonthly</label>
+        <locationX>50</locationX>
+        <locationY>1487</locationY>
+        <collectionReference>Queried_AdRevenueMonthly</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Is_AdRevenueMonthly_Callisto_Ids_Not_Empty</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Update_ListAdRevenueMonthly</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <description>US-0012062 - NA ADS - Monthly Forecasting Incorrect</description>
+        <name>Over_AdProduct</name>
+        <label>Over AdProduct</label>
+        <locationX>50</locationX>
+        <locationY>575</locationY>
+        <collectionReference>Queried_AdProducts</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Is_AdProduct_Callisto_Ids_Not_Empty</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Update_ListAdProduct</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>US-0012062 - NA ADS - Monthly Forecasting Incorrect</description>
+        <name>Queried_AdProducts</name>
+        <label>Queried AdProducts</label>
+        <locationX>50</locationX>
+        <locationY>455</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Over_AdProduct</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Ad_Product__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Ad_Product__c</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Callisto_Ad_Id__c</queriedFields>
+        <queriedFields>Callisto_Campaign_Id__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>US-0012062 - NA ADS - Monthly Forecasting Incorrect</description>
+        <name>Queried_AdRevenueMonthly</name>
+        <label>Queried AdRevenueMonthly</label>
+        <locationX>50</locationX>
+        <locationY>1367</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Iterate_AdMonthly</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Ad_Revenue_Monthly__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Ad_Revenue_Monthly__c</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Callisto_Ad_Id__c</queriedFields>
+        <queriedFields>Callisto_Campaign_ID__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>US-0012062 - NA ADS - Monthly Forecasting Incorrect</description>
+        <name>Update_ListAdProduct</name>
+        <label>Update ListAdProduct</label>
+        <locationX>50</locationX>
+        <locationY>1247</locationY>
+        <connector>
+            <targetReference>Queried_AdRevenueMonthly</targetReference>
+        </connector>
+        <inputReference>ListAdproductToUpdate</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>US-0012062 - NA ADS - Monthly Forecasting Incorrect</description>
+        <name>Update_ListAdRevenueMonthly</name>
+        <label>Update ListAdRevenueMonthly</label>
+        <locationX>50</locationX>
+        <locationY>2159</locationY>
+        <inputReference>ListAdRevenueMonthlyToUpdate</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_Callisto_IDs</targetReference>
+        </connector>
+        <object>Ad_Revenue_Daily__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>US-0012062 - NA ADS - Monthly Forecasting Incorrect</description>
+        <name>ListAdproductToUpdate</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Ad_Product__c</objectType>
+    </variables>
+    <variables>
+        <description>US-0012062 - NA ADS - Monthly Forecasting Incorrect</description>
+        <name>ListAdRevenueMonthlyToUpdate</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Ad_Revenue_Monthly__c</objectType>
+    </variables>
+</Flow>

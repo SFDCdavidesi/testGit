@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Credit_Total_Value_1M_plus</fullName>
+    <active>true</active>
+    <description>US-0008284 - [UK] FVF - BCD generation approval process UPDATE</description>
+    <errorConditionFormula>if( AND( ISPICKVAL(Site__c , &#39;3&#39;),ISPICKVAL( Status__c , &#39;BU Approval&#39;),Credit_Total_Value__c &gt;1000000 ),true,false)</errorConditionFormula>
+    <errorDisplayField>Credit_Total_Value__c</errorDisplayField>
+    <errorMessage>Approval rejected: There is no approver set up for a Credit Total Value more than $1m</errorMessage>
+</ValidationRule>

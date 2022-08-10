@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_GMVforContractPeriod__c</fullName>
+    <description>[EBH] (EPH-170) : GMV for Contract Period: Updated label as part of EPH-5474</description>
+    <externalId>false</externalId>
+    <label>GMV Targets for Contract Period</label>
+    <summarizedField>EBH_Pricing__c.EBH_GMVTarget__c</summarizedField>
+    <summaryFilterItems>
+        <field>EBH_Pricing__c.RecordTypeId</field>
+        <operation>equals</operation>
+        <value>ACP Targets</value>
+    </summaryFilterItems>
+    <summaryForeignKey>EBH_Pricing__c.EBH_ContractId__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Coupon_Discount_Amount__c</fullName>
+    <description>US-0010429 - Ability to sign Agreement in portal</description>
+    <externalId>false</externalId>
+    <formula>Coupon__r.Coupon_Discount_Amount__c</formula>
+    <label>Coupon Discount Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

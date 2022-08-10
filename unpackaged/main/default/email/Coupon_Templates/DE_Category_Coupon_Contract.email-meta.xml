@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>[#EPH-7258] Coupon Seller Email Contracts US-0011286</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DE Category Coupon Contract</name>
+    <style>none</style>
+    <subject>Coupon-Aktion | {eBaySellerID} | {Coupon_ID__c} | {CouponNameM} | {CouponStartDate} - {CouponEndDate}</subject>
+    <textOnly>Werbeaktions-Einzelvertrag
+
+Mit diesem Werbeaktions-Einzelvertrag und ihrer Anlage 1, die fester Bestandteil dessen ist, (nachfolgend gemeinsam „Werbeaktions-Einzelvertrag“), bieten wir Ihnen die Teilnahme an einer Couponaktion zu den nachstehenden Konditionen sowie auf Basis der dazugehörigen „Werbeaktions-AGB“ an, welche Sie unter https://pages.ebay.de/werbeaktions-agb/index.html einsehen können.
+
+Durch Anklicken des nachstehenden Buttons „ICH STIMME ZU“ erklären Sie Ihre ausdrückliche Zustimmung zu diesem Werbeaktions-Einzelvertrag, den Werbeaktions-AGB, und somit Ihre Teilnahme an der Couponaktion. Wenn Sie allen Angaben zustimmen, klicken Sie bitte bis spätestens zum {ContractDueDate} auf den Button:
+
+ICH STIMME ZU
+
+Verkäufer  {LegalEntity}, {StreetName}, {Zip} {CityForSiteDE}
+Nutzername des Verkäufers für die Couponaktion  {eBaySellerID}
+eBay-Website(s)   {CouponSites}
+Coupon-
+Werbeaktionszeitraum  {CouponStartTime} {CouponStartDate} bis {CouponEndTime} {CouponEndDate} (CET) oder jeder andere Zeitraum, welchen eBay bestimmt. Die exakte Werbedauer obliegt ausschließlich eBay.
+Vom Verkäufer an eBay zu entrichtende Erfolgsprämie
+
+Angaben in % bemessen am Einlösewert des Coupons, sofern unten nichts anderes angegeben wurde
+
+{!catTable}
+
+Dieser Coupon wird nur für die vorgenannten Kategorien ausgestellt, einschließlich des Kofinanzierungsanteils für die Kategorien.
+
+Details zur Coupon-Aktion oder Promotion
+
+{CouponDiscount%}{CouponDiscountAmount} Rabatt auf den Artikelpreis.
+
+Bis zu einem maximalen Betrag von{CouponCap}pro Transaktion.
+
+Mindestbestellwert:{Minimum_Transaction_Value__c}
+
+Der Coupon kann maximal {Max_Redemptions__c}x je Nutzer eingelöst werden.
+
+eBay Vertragspartner  eBay GmbH, Albert-Einstein-Ring 2-6, 14532 Kleinmachnow
+Sonstiges  {AdditionalArrangement}
+
+Mit freundlichen Grüßen
+Ihr eBay-Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

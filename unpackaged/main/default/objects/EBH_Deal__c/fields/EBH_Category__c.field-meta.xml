@@ -1,0 +1,3556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_Category__c</fullName>
+    <description>[EBH] (EPH-4163) - Category</description>
+    <externalId>false</externalId>
+    <label>Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>EBH_DealSiteId__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>DVDs, Films &amp; TV</fullName>
+                <default>false</default>
+                <label>DVDs, Films &amp; TV</label>
+            </value>
+            <value>
+                <fullName>Antiquitäten &amp; Kunst</fullName>
+                <default>false</default>
+                <label>Antiquitäten &amp; Kunst</label>
+            </value>
+            <value>
+                <fullName>Auto &amp; Motorrad: Fahrzeuge</fullName>
+                <default>false</default>
+                <label>Auto &amp; Motorrad: Fahrzeuge</label>
+            </value>
+            <value>
+                <fullName>Auto &amp; Motorrad: Teile</fullName>
+                <default>false</default>
+                <label>Auto &amp; Motorrad: Teile</label>
+            </value>
+            <value>
+                <fullName>Bastel- &amp; Künstlerbedarf</fullName>
+                <default>false</default>
+                <label>Bastel- &amp; Künstlerbedarf</label>
+            </value>
+            <value>
+                <fullName>Beauty &amp; Gesundheit</fullName>
+                <default>false</default>
+                <label>Beauty &amp; Gesundheit</label>
+            </value>
+            <value>
+                <fullName>Briefmarken</fullName>
+                <default>false</default>
+                <label>Briefmarken</label>
+            </value>
+            <value>
+                <fullName>Bücher</fullName>
+                <default>false</default>
+                <label>Bücher</label>
+            </value>
+            <value>
+                <fullName>Büro &amp; Schreibwaren</fullName>
+                <default>false</default>
+                <label>Büro &amp; Schreibwaren</label>
+            </value>
+            <value>
+                <fullName>Business &amp; Industrie</fullName>
+                <default>false</default>
+                <label>Business &amp; Industrie</label>
+            </value>
+            <value>
+                <fullName>Computer, Tablets &amp; Netzwerk</fullName>
+                <default>false</default>
+                <label>Computer, Tablets &amp; Netzwerk</label>
+            </value>
+            <value>
+                <fullName>Feinschmecker</fullName>
+                <default>false</default>
+                <label>Feinschmecker</label>
+            </value>
+            <value>
+                <fullName>Filme &amp; DVDs</fullName>
+                <default>false</default>
+                <label>Filme &amp; DVDs</label>
+            </value>
+            <value>
+                <fullName>Foto &amp; Camcorder</fullName>
+                <default>false</default>
+                <label>Foto &amp; Camcorder</label>
+            </value>
+            <value>
+                <fullName>Garten</fullName>
+                <default>false</default>
+                <label>Garten</label>
+            </value>
+            <value>
+                <fullName>Garten &amp; Terrasse</fullName>
+                <default>false</default>
+                <label>Garten &amp; Terrasse</label>
+            </value>
+            <value>
+                <fullName>Handys &amp; Kommunikation</fullName>
+                <default>false</default>
+                <label>Handys &amp; Kommunikation</label>
+            </value>
+            <value>
+                <fullName>Haushaltsgeräte</fullName>
+                <default>false</default>
+                <label>Haushaltsgeräte</label>
+            </value>
+            <value>
+                <fullName>Haustierbedarf</fullName>
+                <default>false</default>
+                <label>Haustierbedarf</label>
+            </value>
+            <value>
+                <fullName>Heimwerker</fullName>
+                <default>false</default>
+                <label>Heimwerker</label>
+            </value>
+            <value>
+                <fullName>Immobilien</fullName>
+                <default>false</default>
+                <label>Immobilien</label>
+            </value>
+            <value>
+                <fullName>Kleidung &amp; Accessoires</fullName>
+                <default>false</default>
+                <label>Kleidung &amp; Accessoires</label>
+            </value>
+            <value>
+                <fullName>Möbel &amp; Wohnen</fullName>
+                <default>false</default>
+                <label>Möbel &amp; Wohnen</label>
+            </value>
+            <value>
+                <fullName>Modellbau</fullName>
+                <default>false</default>
+                <label>Modellbau</label>
+            </value>
+            <value>
+                <fullName>Münzen</fullName>
+                <default>false</default>
+                <label>Münzen</label>
+            </value>
+            <value>
+                <fullName>Musik</fullName>
+                <default>false</default>
+                <label>Musik</label>
+            </value>
+            <value>
+                <fullName>Musikinstrumente</fullName>
+                <default>false</default>
+                <label>Musikinstrumente</label>
+            </value>
+            <value>
+                <fullName>PC- &amp; Videospiele</fullName>
+                <default>false</default>
+                <label>PC- &amp; Videospiele</label>
+            </value>
+            <value>
+                <fullName>Reisen</fullName>
+                <default>false</default>
+                <label>Reisen</label>
+            </value>
+            <value>
+                <fullName>Sammeln &amp; Seltenes</fullName>
+                <default>false</default>
+                <label>Sammeln &amp; Seltenes</label>
+            </value>
+            <value>
+                <fullName>Spielzeug</fullName>
+                <default>false</default>
+                <label>Spielzeug</label>
+            </value>
+            <value>
+                <fullName>Tickets</fullName>
+                <default>false</default>
+                <label>Tickets</label>
+            </value>
+            <value>
+                <fullName>TV, Video &amp; Audio</fullName>
+                <default>false</default>
+                <label>TV, Video &amp; Audio</label>
+            </value>
+            <value>
+                <fullName>Uhren &amp; Schmuck</fullName>
+                <default>false</default>
+                <label>Uhren &amp; Schmuck</label>
+            </value>
+            <value>
+                <fullName>Verschiedenes</fullName>
+                <default>false</default>
+                <label>Verschiedenes</label>
+            </value>
+            <value>
+                <fullName>Books, Comics &amp; Magazines</fullName>
+                <default>false</default>
+                <label>Books, Comics &amp; Magazines</label>
+            </value>
+            <value>
+                <fullName>Business, Office &amp; Industrial</fullName>
+                <default>false</default>
+                <label>Business, Office &amp; Industrial</label>
+            </value>
+            <value>
+                <fullName>Cameras &amp; Photography</fullName>
+                <default>false</default>
+                <label>Cameras &amp; Photography</label>
+            </value>
+            <value>
+                <fullName>Cars, Motorcycles &amp; Vehicles</fullName>
+                <default>false</default>
+                <label>Cars, Motorcycles &amp; Vehicles</label>
+            </value>
+            <value>
+                <fullName>Clothes, Shoes &amp; Accessories</fullName>
+                <default>false</default>
+                <label>Clothes, Shoes &amp; Accessories</label>
+            </value>
+            <value>
+                <fullName>Coins</fullName>
+                <default>false</default>
+                <label>Coins</label>
+            </value>
+            <value>
+                <fullName>Collectables</fullName>
+                <default>false</default>
+                <label>Collectables</label>
+            </value>
+            <value>
+                <fullName>Events Tickets</fullName>
+                <default>false</default>
+                <label>Events Tickets</label>
+            </value>
+            <value>
+                <fullName>Garden &amp; Patio</fullName>
+                <default>false</default>
+                <label>Garden &amp; Patio</label>
+            </value>
+            <value>
+                <fullName>Holidays &amp; Travel</fullName>
+                <default>false</default>
+                <label>Holidays &amp; Travel</label>
+            </value>
+            <value>
+                <fullName>Home, Furniture &amp; DIY</fullName>
+                <default>false</default>
+                <label>Home, Furniture &amp; DIY</label>
+            </value>
+            <value>
+                <fullName>Jewellery &amp; Watches</fullName>
+                <default>false</default>
+                <label>Jewellery &amp; Watches</label>
+            </value>
+            <value>
+                <fullName>Mobile Phones &amp; Communication</fullName>
+                <default>false</default>
+                <label>Mobile Phones &amp; Communication</label>
+            </value>
+            <value>
+                <fullName>Musical Instruments</fullName>
+                <default>false</default>
+                <label>Musical Instruments</label>
+            </value>
+            <value>
+                <fullName>Pottery, Porcelain &amp; Glass</fullName>
+                <default>false</default>
+                <label>Pottery, Porcelain &amp; Glass</label>
+            </value>
+            <value>
+                <fullName>Property</fullName>
+                <default>false</default>
+                <label>Property</label>
+            </value>
+            <value>
+                <fullName>Sound &amp; Vision</fullName>
+                <default>false</default>
+                <label>Sound &amp; Vision</label>
+            </value>
+            <value>
+                <fullName>Sports Memorabilia</fullName>
+                <default>false</default>
+                <label>Sports Memorabilia</label>
+            </value>
+            <value>
+                <fullName>Vehicle Parts &amp; Accessories</fullName>
+                <default>false</default>
+                <label>Vehicle Parts &amp; Accessories</label>
+            </value>
+            <value>
+                <fullName>Wholesale &amp; Job Lots</fullName>
+                <default>false</default>
+                <label>Wholesale &amp; Job Lots</label>
+            </value>
+            <value>
+                <fullName>Animalerie</fullName>
+                <default>false</default>
+                <label>Animalerie</label>
+            </value>
+            <value>
+                <fullName>Art, antiquités</fullName>
+                <default>false</default>
+                <label>Art, antiquités</label>
+            </value>
+            <value>
+                <fullName>Auto, moto</fullName>
+                <default>false</default>
+                <label>Auto, moto</label>
+            </value>
+            <value>
+                <fullName>Bateaux, voile, nautisme</fullName>
+                <default>false</default>
+                <label>Bateaux, voile, nautisme</label>
+            </value>
+            <value>
+                <fullName>Beauté, bien-être, parfums</fullName>
+                <default>false</default>
+                <label>Beauté, bien-être, parfums</label>
+            </value>
+            <value>
+                <fullName>Bébé, puériculture</fullName>
+                <default>false</default>
+                <label>Bébé, puériculture</label>
+            </value>
+            <value>
+                <fullName>Bijoux, montres</fullName>
+                <default>false</default>
+                <label>Bijoux, montres</label>
+            </value>
+            <value>
+                <fullName>Bricolage</fullName>
+                <default>false</default>
+                <label>Bricolage</label>
+            </value>
+            <value>
+                <fullName>Céramiques, verres</fullName>
+                <default>false</default>
+                <label>Céramiques, verres</label>
+            </value>
+            <value>
+                <fullName>Collections</fullName>
+                <default>false</default>
+                <label>Collections</label>
+            </value>
+            <value>
+                <fullName>DVD, cinéma</fullName>
+                <default>false</default>
+                <label>DVD, cinéma</label>
+            </value>
+            <value>
+                <fullName>Electroménager</fullName>
+                <default>false</default>
+                <label>Electroménager</label>
+            </value>
+            <value>
+                <fullName>Image, son</fullName>
+                <default>false</default>
+                <label>Image, son</label>
+            </value>
+            <value>
+                <fullName>Immobilier</fullName>
+                <default>false</default>
+                <label>Immobilier</label>
+            </value>
+            <value>
+                <fullName>Informatique, réseaux</fullName>
+                <default>false</default>
+                <label>Informatique, réseaux</label>
+            </value>
+            <value>
+                <fullName>Instruments de musique</fullName>
+                <default>false</default>
+                <label>Instruments de musique</label>
+            </value>
+            <value>
+                <fullName>Jardin, terrasse</fullName>
+                <default>false</default>
+                <label>Jardin, terrasse</label>
+            </value>
+            <value>
+                <fullName>Jeux vidéo, consoles</fullName>
+                <default>false</default>
+                <label>Jeux vidéo, consoles</label>
+            </value>
+            <value>
+                <fullName>Jouets et jeux</fullName>
+                <default>false</default>
+                <label>Jouets et jeux</label>
+            </value>
+            <value>
+                <fullName>Livres, BD, revues</fullName>
+                <default>false</default>
+                <label>Livres, BD, revues</label>
+            </value>
+            <value>
+                <fullName>Loisirs créatifs</fullName>
+                <default>false</default>
+                <label>Loisirs créatifs</label>
+            </value>
+            <value>
+                <fullName>Maison</fullName>
+                <default>false</default>
+                <label>Maison</label>
+            </value>
+            <value>
+                <fullName>Monnaies</fullName>
+                <default>false</default>
+                <label>Monnaies</label>
+            </value>
+            <value>
+                <fullName>Musique, CD, vinyles</fullName>
+                <default>false</default>
+                <label>Musique, CD, vinyles</label>
+            </value>
+            <value>
+                <fullName>Photo, caméscopes</fullName>
+                <default>false</default>
+                <label>Photo, caméscopes</label>
+            </value>
+            <value>
+                <fullName>PME, artisans, agriculteurs</fullName>
+                <default>false</default>
+                <label>PME, artisans, agriculteurs</label>
+            </value>
+            <value>
+                <fullName>Sports, vacances</fullName>
+                <default>false</default>
+                <label>Sports, vacances</label>
+            </value>
+            <value>
+                <fullName>Téléphonie, mobilité</fullName>
+                <default>false</default>
+                <label>Téléphonie, mobilité</label>
+            </value>
+            <value>
+                <fullName>Timbres</fullName>
+                <default>false</default>
+                <label>Timbres</label>
+            </value>
+            <value>
+                <fullName>Véhicules: pièces, accessoires</fullName>
+                <default>false</default>
+                <label>Véhicules: pièces, accessoires</label>
+            </value>
+            <value>
+                <fullName>Vêtements, accessoires</fullName>
+                <default>false</default>
+                <label>Vêtements, accessoires</label>
+            </value>
+            <value>
+                <fullName>Vins, Gastronomie</fullName>
+                <default>false</default>
+                <label>Vins, Gastronomie</label>
+            </value>
+            <value>
+                <fullName>Abbigliamento e accessori</fullName>
+                <default>false</default>
+                <label>Abbigliamento e accessori</label>
+            </value>
+            <value>
+                <fullName>Altre categorie</fullName>
+                <default>false</default>
+                <label>Altre categorie</label>
+            </value>
+            <value>
+                <fullName>Arte e antiquariato</fullName>
+                <default>false</default>
+                <label>Arte e antiquariato</label>
+            </value>
+            <value>
+                <fullName>Auto, moto e altri veicoli</fullName>
+                <default>false</default>
+                <label>Auto, moto e altri veicoli</label>
+            </value>
+            <value>
+                <fullName>Bellezza e salute</fullName>
+                <default>false</default>
+                <label>Bellezza e salute</label>
+            </value>
+            <value>
+                <fullName>Biglietti ed eventi</fullName>
+                <default>false</default>
+                <label>Biglietti ed eventi</label>
+            </value>
+            <value>
+                <fullName>Casa, arredamento e bricolage</fullName>
+                <default>false</default>
+                <label>Casa, arredamento e bricolage</label>
+            </value>
+            <value>
+                <fullName>Collezionismo</fullName>
+                <default>false</default>
+                <label>Collezionismo</label>
+            </value>
+            <value>
+                <fullName>Commercio, ufficio e Industria</fullName>
+                <default>false</default>
+                <label>Commercio, ufficio e Industria</label>
+            </value>
+            <value>
+                <fullName>Elettrodomestici</fullName>
+                <default>false</default>
+                <label>Elettrodomestici</label>
+            </value>
+            <value>
+                <fullName>Film e DVD</fullName>
+                <default>false</default>
+                <label>Film e DVD</label>
+            </value>
+            <value>
+                <fullName>Fotografia e video</fullName>
+                <default>false</default>
+                <label>Fotografia e video</label>
+            </value>
+            <value>
+                <fullName>Francobolli</fullName>
+                <default>false</default>
+                <label>Francobolli</label>
+            </value>
+            <value>
+                <fullName>Fumetti</fullName>
+                <default>false</default>
+                <label>Fumetti</label>
+            </value>
+            <value>
+                <fullName>Giardino e arredamento esterni</fullName>
+                <default>false</default>
+                <label>Giardino e arredamento esterni</label>
+            </value>
+            <value>
+                <fullName>Giocattoli e modellismo</fullName>
+                <default>false</default>
+                <label>Giocattoli e modellismo</label>
+            </value>
+            <value>
+                <fullName>Hobby creativi</fullName>
+                <default>false</default>
+                <label>Hobby creativi</label>
+            </value>
+            <value>
+                <fullName>Infanzia e premaman</fullName>
+                <default>false</default>
+                <label>Infanzia e premaman</label>
+            </value>
+            <value>
+                <fullName>Informatica</fullName>
+                <default>false</default>
+                <label>Informatica</label>
+            </value>
+            <value>
+                <fullName>Libri e riviste</fullName>
+                <default>false</default>
+                <label>Libri e riviste</label>
+            </value>
+            <value>
+                <fullName>Monete e banconote</fullName>
+                <default>false</default>
+                <label>Monete e banconote</label>
+            </value>
+            <value>
+                <fullName>Musica, CD e vinili</fullName>
+                <default>false</default>
+                <label>Musica, CD e vinili</label>
+            </value>
+            <value>
+                <fullName>Nautica e imbarcazioni</fullName>
+                <default>false</default>
+                <label>Nautica e imbarcazioni</label>
+            </value>
+            <value>
+                <fullName>Orologi e gioielli</fullName>
+                <default>false</default>
+                <label>Orologi e gioielli</label>
+            </value>
+            <value>
+                <fullName>Sport e viaggi</fullName>
+                <default>false</default>
+                <label>Sport e viaggi</label>
+            </value>
+            <value>
+                <fullName>Strumenti musicali</fullName>
+                <default>false</default>
+                <label>Strumenti musicali</label>
+            </value>
+            <value>
+                <fullName>Telefonia fissa e mobile</fullName>
+                <default>false</default>
+                <label>Telefonia fissa e mobile</label>
+            </value>
+            <value>
+                <fullName>TV, audio e video</fullName>
+                <default>false</default>
+                <label>TV, audio e video</label>
+            </value>
+            <value>
+                <fullName>Veicoli: ricambi e accessori</fullName>
+                <default>false</default>
+                <label>Veicoli: ricambi e accessori</label>
+            </value>
+            <value>
+                <fullName>Videogiochi e console</fullName>
+                <default>false</default>
+                <label>Videogiochi e console</label>
+            </value>
+            <value>
+                <fullName>Vini, caffè e gastronomia</fullName>
+                <default>false</default>
+                <label>Vini, caffè e gastronomia</label>
+            </value>
+            <value>
+                <fullName>Arte y antigüedades</fullName>
+                <default>false</default>
+                <label>Arte y antigüedades</label>
+            </value>
+            <value>
+                <fullName>Bebés</fullName>
+                <default>false</default>
+                <label>Bebés</label>
+            </value>
+            <value>
+                <fullName>Belleza y salud</fullName>
+                <default>false</default>
+                <label>Belleza y salud</label>
+            </value>
+            <value>
+                <fullName>Cámaras y fotografía</fullName>
+                <default>false</default>
+                <label>Cámaras y fotografía</label>
+            </value>
+            <value>
+                <fullName>Casa, jardín y bricolaje</fullName>
+                <default>false</default>
+                <label>Casa, jardín y bricolaje</label>
+            </value>
+            <value>
+                <fullName>Cine, DVD y películas</fullName>
+                <default>false</default>
+                <label>Cine, DVD y películas</label>
+            </value>
+            <value>
+                <fullName>Coches, Motos y Otros Vehíc.</fullName>
+                <default>false</default>
+                <label>Coches, Motos y Otros Vehíc.</label>
+            </value>
+            <value>
+                <fullName>Coleccionismo</fullName>
+                <default>false</default>
+                <label>Coleccionismo</label>
+            </value>
+            <value>
+                <fullName>Consolas y videojuegos</fullName>
+                <default>false</default>
+                <label>Consolas y videojuegos</label>
+            </value>
+            <value>
+                <fullName>Deportes</fullName>
+                <default>false</default>
+                <label>Deportes</label>
+            </value>
+            <value>
+                <fullName>Electrodomésticos</fullName>
+                <default>false</default>
+                <label>Electrodomésticos</label>
+            </value>
+            <value>
+                <fullName>Entradas y eventos</fullName>
+                <default>false</default>
+                <label>Entradas y eventos</label>
+            </value>
+            <value>
+                <fullName>Equipamiento y maquinaria</fullName>
+                <default>false</default>
+                <label>Equipamiento y maquinaria</label>
+            </value>
+            <value>
+                <fullName>Imagen y sonido</fullName>
+                <default>false</default>
+                <label>Imagen y sonido</label>
+            </value>
+            <value>
+                <fullName>Informática y tablets</fullName>
+                <default>false</default>
+                <label>Informática y tablets</label>
+            </value>
+            <value>
+                <fullName>Instrumentos musicales</fullName>
+                <default>false</default>
+                <label>Instrumentos musicales</label>
+            </value>
+            <value>
+                <fullName>Juguetes</fullName>
+                <default>false</default>
+                <label>Juguetes</label>
+            </value>
+            <value>
+                <fullName>Libros, revistas y cómics</fullName>
+                <default>false</default>
+                <label>Libros, revistas y cómics</label>
+            </value>
+            <value>
+                <fullName>Monedas y billetes</fullName>
+                <default>false</default>
+                <label>Monedas y billetes</label>
+            </value>
+            <value>
+                <fullName>Motor: recambios y accesorios</fullName>
+                <default>false</default>
+                <label>Motor: recambios y accesorios</label>
+            </value>
+            <value>
+                <fullName>Móviles y telefonía</fullName>
+                <default>false</default>
+                <label>Móviles y telefonía</label>
+            </value>
+            <value>
+                <fullName>Música, CDs y vinilos</fullName>
+                <default>false</default>
+                <label>Música, CDs y vinilos</label>
+            </value>
+            <value>
+                <fullName>Otras categorías</fullName>
+                <default>false</default>
+                <label>Otras categorías</label>
+            </value>
+            <value>
+                <fullName>Relojes y joyas</fullName>
+                <default>false</default>
+                <label>Relojes y joyas</label>
+            </value>
+            <value>
+                <fullName>Ropa, calzado y complementos</fullName>
+                <default>false</default>
+                <label>Ropa, calzado y complementos</label>
+            </value>
+            <value>
+                <fullName>Sellos</fullName>
+                <default>false</default>
+                <label>Sellos</label>
+            </value>
+            <value>
+                <fullName>Viajes</fullName>
+                <default>false</default>
+                <label>Viajes</label>
+            </value>
+            <value>
+                <fullName>Vinos y gastronomía</fullName>
+                <default>false</default>
+                <label>Vinos y gastronomía</label>
+            </value>
+            <value>
+                <fullName>Books, Magazines</fullName>
+                <default>false</default>
+                <label>Books, Magazines</label>
+            </value>
+            <value>
+                <fullName>Business</fullName>
+                <default>false</default>
+                <label>Business</label>
+            </value>
+            <value>
+                <fullName>Cameras</fullName>
+                <default>false</default>
+                <label>Cameras</label>
+            </value>
+            <value>
+                <fullName>Cars, Bikes, Boats</fullName>
+                <default>false</default>
+                <label>Cars, Bikes, Boats</label>
+            </value>
+            <value>
+                <fullName>Food &amp; Drinks</fullName>
+                <default>false</default>
+                <label>Food &amp; Drinks</label>
+            </value>
+            <value>
+                <fullName>Gift Cards &amp; Vouchers</fullName>
+                <default>false</default>
+                <label>Gift Cards &amp; Vouchers</label>
+            </value>
+            <value>
+                <fullName>Home Appliances</fullName>
+                <default>false</default>
+                <label>Home Appliances</label>
+            </value>
+            <value>
+                <fullName>Home Entertainment</fullName>
+                <default>false</default>
+                <label>Home Entertainment</label>
+            </value>
+            <value>
+                <fullName>Industrial</fullName>
+                <default>false</default>
+                <label>Industrial</label>
+            </value>
+            <value>
+                <fullName>Lots More...</fullName>
+                <default>false</default>
+                <label>Lots More...</label>
+            </value>
+            <value>
+                <fullName>Movies</fullName>
+                <default>false</default>
+                <label>Movies</label>
+            </value>
+            <value>
+                <fullName>Phones &amp; Accessories</fullName>
+                <default>false</default>
+                <label>Phones &amp; Accessories</label>
+            </value>
+            <value>
+                <fullName>Pottery, Glass</fullName>
+                <default>false</default>
+                <label>Pottery, Glass</label>
+            </value>
+            <value>
+                <fullName>Services</fullName>
+                <default>false</default>
+                <label>Services</label>
+            </value>
+            <value>
+                <fullName>Toys, Hobbies</fullName>
+                <default>false</default>
+                <label>Toys, Hobbies</label>
+            </value>
+            <value>
+                <fullName>Toys &amp; Games</fullName>
+                <default>false</default>
+                <label>Toys &amp; Games</label>
+            </value>
+            <value>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+                <label>Unknown</label>
+            </value>
+            <value>
+                <fullName>Tickets, Travel</fullName>
+                <default>false</default>
+                <label>Tickets, Travel</label>
+            </value>
+            <value>
+                <fullName>Haus &amp; Garten</fullName>
+                <default>false</default>
+                <label>Haus &amp; Garten</label>
+            </value>
+            <value>
+                <fullName>Antiques</fullName>
+                <default>false</default>
+                <label>Antiques</label>
+            </value>
+            <value>
+                <fullName>Art</fullName>
+                <default>false</default>
+                <label>Art</label>
+            </value>
+            <value>
+                <fullName>Auto &amp; Teile</fullName>
+                <default>false</default>
+                <label>Auto &amp; Teile</label>
+            </value>
+            <value>
+                <fullName>B&amp;I</fullName>
+                <default>false</default>
+                <label>B&amp;I</label>
+            </value>
+            <value>
+                <fullName>Baby</fullName>
+                <default>false</default>
+                <label>Baby</label>
+            </value>
+            <value>
+                <fullName>Beauty</fullName>
+                <default>false</default>
+                <label>Beauty</label>
+            </value>
+            <value>
+                <fullName>Books</fullName>
+                <default>false</default>
+                <label>Books</label>
+            </value>
+            <value>
+                <fullName>Buillon</fullName>
+                <default>false</default>
+                <label>Buillon</label>
+            </value>
+            <value>
+                <fullName>Business &amp; Industrial</fullName>
+                <default>false</default>
+                <label>Business &amp; Industrial</label>
+            </value>
+            <value>
+                <fullName>Cameras and Photos</fullName>
+                <default>false</default>
+                <label>Cameras and Photos</label>
+            </value>
+            <value>
+                <fullName>Cell Phones &amp; Accessories</fullName>
+                <default>false</default>
+                <label>Cell Phones &amp; Accessories</label>
+            </value>
+            <value>
+                <fullName>Clothing, Shoes &amp; Accessories</fullName>
+                <default>false</default>
+                <label>Clothing, Shoes &amp; Accessories</label>
+            </value>
+            <value>
+                <fullName>Coins &amp; Paper Money</fullName>
+                <default>false</default>
+                <label>Coins &amp; Paper Money</label>
+            </value>
+            <value>
+                <fullName>Collectibles</fullName>
+                <default>false</default>
+                <label>Collectibles</label>
+            </value>
+            <value>
+                <fullName>Computers/Tablets &amp; Networking</fullName>
+                <default>false</default>
+                <label>Computers/Tablets &amp; Networking</label>
+            </value>
+            <value>
+                <fullName>Consumer Electronics</fullName>
+                <default>false</default>
+                <label>Consumer Electronics</label>
+            </value>
+            <value>
+                <fullName>Crafts</fullName>
+                <default>false</default>
+                <label>Crafts</label>
+            </value>
+            <value>
+                <fullName>Dolls &amp; Bears</fullName>
+                <default>false</default>
+                <label>Dolls &amp; Bears</label>
+            </value>
+            <value>
+                <fullName>DVDs &amp; Movies</fullName>
+                <default>false</default>
+                <label>DVDs &amp; Movies</label>
+            </value>
+            <value>
+                <fullName>eBay Motors</fullName>
+                <default>false</default>
+                <label>eBay Motors</label>
+            </value>
+            <value>
+                <fullName>Elec Certified Refurbished</fullName>
+                <default>false</default>
+                <label>Elec Certified Refurbished</label>
+            </value>
+            <value>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+                <label>Electronics</label>
+            </value>
+            <value>
+                <fullName>Entertainment Memorabilia</fullName>
+                <default>false</default>
+                <label>Entertainment Memorabilia</label>
+            </value>
+            <value>
+                <fullName>Everything Else</fullName>
+                <default>false</default>
+                <label>Everything Else</label>
+            </value>
+            <value>
+                <fullName>Fashion</fullName>
+                <default>false</default>
+                <label>Fashion</label>
+            </value>
+            <value>
+                <fullName>Food</fullName>
+                <default>false</default>
+                <label>Food</label>
+            </value>
+            <value>
+                <fullName>Gift Cards</fullName>
+                <default>false</default>
+                <label>Gift Cards</label>
+            </value>
+            <value>
+                <fullName>Gift Cards &amp; Coupons</fullName>
+                <default>false</default>
+                <label>Gift Cards &amp; Coupons</label>
+            </value>
+            <value>
+                <fullName>Gold</fullName>
+                <default>false</default>
+                <label>Gold</label>
+            </value>
+            <value>
+                <fullName>H&amp;G + SG</fullName>
+                <default>false</default>
+                <label>H&amp;G + SG</label>
+            </value>
+            <value>
+                <fullName>H&amp;G Certified Refurbished</fullName>
+                <default>false</default>
+                <label>H&amp;G Certified Refurbished</label>
+            </value>
+            <value>
+                <fullName>Health</fullName>
+                <default>false</default>
+                <label>Health</label>
+            </value>
+            <value>
+                <fullName>Health &amp; Beauty</fullName>
+                <default>false</default>
+                <label>Health &amp; Beauty</label>
+            </value>
+            <value>
+                <fullName>Heavy Equipment</fullName>
+                <default>false</default>
+                <label>Heavy Equipment</label>
+            </value>
+            <value>
+                <fullName>Home &amp; Garden</fullName>
+                <default>false</default>
+                <label>Home &amp; Garden</label>
+            </value>
+            <value>
+                <fullName>Jewelry</fullName>
+                <default>false</default>
+                <label>Jewelry</label>
+            </value>
+            <value>
+                <fullName>Jewelry &amp; Watches</fullName>
+                <default>false</default>
+                <label>Jewelry &amp; Watches</label>
+            </value>
+            <value>
+                <fullName>Music</fullName>
+                <default>false</default>
+                <label>Music</label>
+            </value>
+            <value>
+                <fullName>Musical Instruments &amp; Gear</fullName>
+                <default>false</default>
+                <label>Musical Instruments &amp; Gear</label>
+            </value>
+            <value>
+                <fullName>P&amp;A</fullName>
+                <default>false</default>
+                <label>P&amp;A</label>
+            </value>
+            <value>
+                <fullName>Parts &amp; Accessories</fullName>
+                <default>false</default>
+                <label>Parts &amp; Accessories</label>
+            </value>
+            <value>
+                <fullName>Parts &amp; Attachments</fullName>
+                <default>false</default>
+                <label>Parts &amp; Attachments</label>
+            </value>
+            <value>
+                <fullName>Pet Supplies</fullName>
+                <default>false</default>
+                <label>Pet Supplies</label>
+            </value>
+            <value>
+                <fullName>Pottery &amp; Glass</fullName>
+                <default>false</default>
+                <label>Pottery &amp; Glass</label>
+            </value>
+            <value>
+                <fullName>Sneakers</fullName>
+                <default>false</default>
+                <label>Sneakers</label>
+            </value>
+            <value>
+                <fullName>Sport</fullName>
+                <default>false</default>
+                <label>Sport</label>
+            </value>
+            <value>
+                <fullName>Sporting Certified Refurbished</fullName>
+                <default>false</default>
+                <label>Sporting Certified Refurbished</label>
+            </value>
+            <value>
+                <fullName>Sporting Good</fullName>
+                <default>false</default>
+                <label>Sporting Good</label>
+            </value>
+            <value>
+                <fullName>Sporting Goods</fullName>
+                <default>false</default>
+                <label>Sporting Goods</label>
+            </value>
+            <value>
+                <fullName>Sports Mem, Cards &amp; Fan Shop</fullName>
+                <default>false</default>
+                <label>Sports Mem, Cards &amp; Fan Shop</label>
+            </value>
+            <value>
+                <fullName>Stamps</fullName>
+                <default>false</default>
+                <label>Stamps</label>
+            </value>
+            <value>
+                <fullName>Toys &amp; Hobbies</fullName>
+                <default>false</default>
+                <label>Toys &amp; Hobbies</label>
+            </value>
+            <value>
+                <fullName>Travel</fullName>
+                <default>false</default>
+                <label>Travel</label>
+            </value>
+            <value>
+                <fullName>Video Games &amp; Consoles</fullName>
+                <default>false</default>
+                <label>Video Games &amp; Consoles</label>
+            </value>
+            <value>
+                <fullName>Watches</fullName>
+                <default>false</default>
+                <label>Watches</label>
+            </value>
+            <value>
+                <fullName>Mode</fullName>
+                <default>false</default>
+                <label>Mode</label>
+            </value>
+            <value>
+                <fullName>Bathroom Accessories</fullName>
+                <default>false</default>
+                <label>Bathroom Accessories</label>
+            </value>
+            <value>
+                <fullName>Bathroom Accessory Mixed Lots</fullName>
+                <default>false</default>
+                <label>Bathroom Accessory Mixed Lots</label>
+            </value>
+            <value>
+                <fullName>Bathroom Accessory Sets</fullName>
+                <default>false</default>
+                <label>Bathroom Accessory Sets</label>
+            </value>
+            <value>
+                <fullName>Bathroom Cabinets</fullName>
+                <default>false</default>
+                <label>Bathroom Cabinets</label>
+            </value>
+            <value>
+                <fullName>Bathroom Cladding Panels</fullName>
+                <default>false</default>
+                <label>Bathroom Cladding Panels</label>
+            </value>
+            <value>
+                <fullName>Bathroom Sinks &amp; Vanities</fullName>
+                <default>false</default>
+                <label>Bathroom Sinks &amp; Vanities</label>
+            </value>
+            <value>
+                <fullName>Bathroom Suites</fullName>
+                <default>false</default>
+                <label>Bathroom Suites</label>
+            </value>
+            <value>
+                <fullName>Shower &amp; Bathtub Accessories</fullName>
+                <default>false</default>
+                <label>Shower &amp; Bathtub Accessories</label>
+            </value>
+            <value>
+                <fullName>Showers, Bathtubs &amp; Parts</fullName>
+                <default>false</default>
+                <label>Showers, Bathtubs &amp; Parts</label>
+            </value>
+            <value>
+                <fullName>Steam Showers</fullName>
+                <default>false</default>
+                <label>Steam Showers</label>
+            </value>
+            <value>
+                <fullName>Toilets &amp; Bidets</fullName>
+                <default>false</default>
+                <label>Toilets &amp; Bidets</label>
+            </value>
+            <value>
+                <fullName>Bed Pillows</fullName>
+                <default>false</default>
+                <label>Bed Pillows</label>
+            </value>
+            <value>
+                <fullName>Bed Skirts</fullName>
+                <default>false</default>
+                <label>Bed Skirts</label>
+            </value>
+            <value>
+                <fullName>Bed-in-a-Bag</fullName>
+                <default>false</default>
+                <label>Bed-in-a-Bag</label>
+            </value>
+            <value>
+                <fullName>Blankets &amp; Throws</fullName>
+                <default>false</default>
+                <label>Blankets &amp; Throws</label>
+            </value>
+            <value>
+                <fullName>Canopies &amp; Netting</fullName>
+                <default>false</default>
+                <label>Canopies &amp; Netting</label>
+            </value>
+            <value>
+                <fullName>Comforters &amp; Sets</fullName>
+                <default>false</default>
+                <label>Comforters &amp; Sets</label>
+            </value>
+            <value>
+                <fullName>Decorative Bed Pillows</fullName>
+                <default>false</default>
+                <label>Decorative Bed Pillows</label>
+            </value>
+            <value>
+                <fullName>Duvet Covers &amp; Sets</fullName>
+                <default>false</default>
+                <label>Duvet Covers &amp; Sets</label>
+            </value>
+            <value>
+                <fullName>Mattress Pads &amp; Feather Beds</fullName>
+                <default>false</default>
+                <label>Mattress Pads &amp; Feather Beds</label>
+            </value>
+            <value>
+                <fullName>Other Bedding</fullName>
+                <default>false</default>
+                <label>Other Bedding</label>
+            </value>
+            <value>
+                <fullName>Pillow Shams</fullName>
+                <default>false</default>
+                <label>Pillow Shams</label>
+            </value>
+            <value>
+                <fullName>Pillowcases</fullName>
+                <default>false</default>
+                <label>Pillowcases</label>
+            </value>
+            <value>
+                <fullName>Quilts, Bedspreads &amp; Coverlets</fullName>
+                <default>false</default>
+                <label>Quilts, Bedspreads &amp; Coverlets</label>
+            </value>
+            <value>
+                <fullName>Sheets</fullName>
+                <default>false</default>
+                <label>Sheets</label>
+            </value>
+            <value>
+                <fullName>Armoires &amp; Wardrobes</fullName>
+                <default>false</default>
+                <label>Armoires &amp; Wardrobes</label>
+            </value>
+            <value>
+                <fullName>Bar Carts &amp; Serving Carts</fullName>
+                <default>false</default>
+                <label>Bar Carts &amp; Serving Carts</label>
+            </value>
+            <value>
+                <fullName>Bean Bags &amp; Inflatables</fullName>
+                <default>false</default>
+                <label>Bean Bags &amp; Inflatables</label>
+            </value>
+            <value>
+                <fullName>Bedroom Sets</fullName>
+                <default>false</default>
+                <label>Bedroom Sets</label>
+            </value>
+            <value>
+                <fullName>Beds &amp; Mattresses</fullName>
+                <default>false</default>
+                <label>Beds &amp; Mattresses</label>
+            </value>
+            <value>
+                <fullName>Benches, Stools &amp; Bar Stools</fullName>
+                <default>false</default>
+                <label>Benches, Stools &amp; Bar Stools</label>
+            </value>
+            <value>
+                <fullName>Bookcases &amp; Shelving</fullName>
+                <default>false</default>
+                <label>Bookcases &amp; Shelving</label>
+            </value>
+            <value>
+                <fullName>Cabinets &amp; Cupboards</fullName>
+                <default>false</default>
+                <label>Cabinets &amp; Cupboards</label>
+            </value>
+            <value>
+                <fullName>CD &amp; Video Racks</fullName>
+                <default>false</default>
+                <label>CD &amp; Video Racks</label>
+            </value>
+            <value>
+                <fullName>Chairs</fullName>
+                <default>false</default>
+                <label>Chairs</label>
+            </value>
+            <value>
+                <fullName>Dining Room Furniture</fullName>
+                <default>false</default>
+                <label>Dining Room Furniture</label>
+            </value>
+            <value>
+                <fullName>Dining Sets</fullName>
+                <default>false</default>
+                <label>Dining Sets</label>
+            </value>
+            <value>
+                <fullName>Dressers &amp; Chests of Drawers</fullName>
+                <default>false</default>
+                <label>Dressers &amp; Chests of Drawers</label>
+            </value>
+            <value>
+                <fullName>Furniture Accessories</fullName>
+                <default>false</default>
+                <label>Furniture Accessories</label>
+            </value>
+            <value>
+                <fullName>Furniture Parts</fullName>
+                <default>false</default>
+                <label>Furniture Parts</label>
+            </value>
+            <value>
+                <fullName>Futons, Frames &amp; Covers</fullName>
+                <default>false</default>
+                <label>Futons, Frames &amp; Covers</label>
+            </value>
+            <value>
+                <fullName>Home Office Desks</fullName>
+                <default>false</default>
+                <label>Home Office Desks</label>
+            </value>
+            <value>
+                <fullName>Nightstands</fullName>
+                <default>false</default>
+                <label>Nightstands</label>
+            </value>
+            <value>
+                <fullName>Other Home Furniture</fullName>
+                <default>false</default>
+                <label>Other Home Furniture</label>
+            </value>
+            <value>
+                <fullName>Ottomans, Footstools &amp; Poufs</fullName>
+                <default>false</default>
+                <label>Ottomans, Footstools &amp; Poufs</label>
+            </value>
+            <value>
+                <fullName>Screens &amp; Room Dividers</fullName>
+                <default>false</default>
+                <label>Screens &amp; Room Dividers</label>
+            </value>
+            <value>
+                <fullName>Sideboards &amp; Buffets</fullName>
+                <default>false</default>
+                <label>Sideboards &amp; Buffets</label>
+            </value>
+            <value>
+                <fullName>Slipcovers</fullName>
+                <default>false</default>
+                <label>Slipcovers</label>
+            </value>
+            <value>
+                <fullName>Sofas, Armchairs &amp; Couches</fullName>
+                <default>false</default>
+                <label>Sofas, Armchairs &amp; Couches</label>
+            </value>
+            <value>
+                <fullName>Tables</fullName>
+                <default>false</default>
+                <label>Tables</label>
+            </value>
+            <value>
+                <fullName>Trunks &amp; Chests</fullName>
+                <default>false</default>
+                <label>Trunks &amp; Chests</label>
+            </value>
+            <value>
+                <fullName>TV Stands &amp; Entertainment Units</fullName>
+                <default>false</default>
+                <label>TV Stands &amp; Entertainment Units</label>
+            </value>
+            <value>
+                <fullName>Vanities &amp; Makeup Tables</fullName>
+                <default>false</default>
+                <label>Vanities &amp; Makeup Tables</label>
+            </value>
+            <value>
+                <fullName>Advent Calendars</fullName>
+                <default>false</default>
+                <label>Advent Calendars</label>
+            </value>
+            <value>
+                <fullName>Candle Holders</fullName>
+                <default>false</default>
+                <label>Candle Holders</label>
+            </value>
+            <value>
+                <fullName>Candles</fullName>
+                <default>false</default>
+                <label>Candles</label>
+            </value>
+            <value>
+                <fullName>Christmas Crackers</fullName>
+                <default>false</default>
+                <label>Christmas Crackers</label>
+            </value>
+            <value>
+                <fullName>Christmas Trees</fullName>
+                <default>false</default>
+                <label>Christmas Trees</label>
+            </value>
+            <value>
+                <fullName>Figurines</fullName>
+                <default>false</default>
+                <label>Figurines</label>
+            </value>
+            <value>
+                <fullName>Linens &amp; Textiles</fullName>
+                <default>false</default>
+                <label>Linens &amp; Textiles</label>
+            </value>
+            <value>
+                <fullName>Nativity Items</fullName>
+                <default>false</default>
+                <label>Nativity Items</label>
+            </value>
+            <value>
+                <fullName>Nutcrackers</fullName>
+                <default>false</default>
+                <label>Nutcrackers</label>
+            </value>
+            <value>
+                <fullName>Ornaments</fullName>
+                <default>false</default>
+                <label>Ornaments</label>
+            </value>
+            <value>
+                <fullName>Other Holiday &amp; Seasonal Décor</fullName>
+                <default>false</default>
+                <label>Other Holiday &amp; Seasonal Décor</label>
+            </value>
+            <value>
+                <fullName>Pillows</fullName>
+                <default>false</default>
+                <label>Pillows</label>
+            </value>
+            <value>
+                <fullName>Snow Globes</fullName>
+                <default>false</default>
+                <label>Snow Globes</label>
+            </value>
+            <value>
+                <fullName>Stockings &amp; Hangers</fullName>
+                <default>false</default>
+                <label>Stockings &amp; Hangers</label>
+            </value>
+            <value>
+                <fullName>String Lights</fullName>
+                <default>false</default>
+                <label>String Lights</label>
+            </value>
+            <value>
+                <fullName>Table Décor &amp; Serving Pieces</fullName>
+                <default>false</default>
+                <label>Table Décor &amp; Serving Pieces</label>
+            </value>
+            <value>
+                <fullName>Tree Stands &amp; Skirts</fullName>
+                <default>false</default>
+                <label>Tree Stands &amp; Skirts</label>
+            </value>
+            <value>
+                <fullName>Wall Décor</fullName>
+                <default>false</default>
+                <label>Wall Décor</label>
+            </value>
+            <value>
+                <fullName>Window Decorations</fullName>
+                <default>false</default>
+                <label>Window Decorations</label>
+            </value>
+            <value>
+                <fullName>Wreaths, Garlands &amp; Plants</fullName>
+                <default>false</default>
+                <label>Wreaths, Garlands &amp; Plants</label>
+            </value>
+            <value>
+                <fullName>Yard Décor</fullName>
+                <default>false</default>
+                <label>Yard Décor</label>
+            </value>
+            <value>
+                <fullName>Afghans &amp; Throw Blankets</fullName>
+                <default>false</default>
+                <label>Afghans &amp; Throw Blankets</label>
+            </value>
+            <value>
+                <fullName>Ashtrays</fullName>
+                <default>false</default>
+                <label>Ashtrays</label>
+            </value>
+            <value>
+                <fullName>Baskets</fullName>
+                <default>false</default>
+                <label>Baskets</label>
+            </value>
+            <value>
+                <fullName>Bookends</fullName>
+                <default>false</default>
+                <label>Bookends</label>
+            </value>
+            <value>
+                <fullName>Bottles</fullName>
+                <default>false</default>
+                <label>Bottles</label>
+            </value>
+            <value>
+                <fullName>Boxes, Jars &amp; Tins</fullName>
+                <default>false</default>
+                <label>Boxes, Jars &amp; Tins</label>
+            </value>
+            <value>
+                <fullName>Candle Holders &amp; Accessories</fullName>
+                <default>false</default>
+                <label>Candle Holders &amp; Accessories</label>
+            </value>
+            <value>
+                <fullName>Clocks</fullName>
+                <default>false</default>
+                <label>Clocks</label>
+            </value>
+            <value>
+                <fullName>Decals, Stickers &amp; Vinyl Art</fullName>
+                <default>false</default>
+                <label>Decals, Stickers &amp; Vinyl Art</label>
+            </value>
+            <value>
+                <fullName>Decorative Fans</fullName>
+                <default>false</default>
+                <label>Decorative Fans</label>
+            </value>
+            <value>
+                <fullName>Decorative Fruit &amp; Vegetables</fullName>
+                <default>false</default>
+                <label>Decorative Fruit &amp; Vegetables</label>
+            </value>
+            <value>
+                <fullName>Decorative Plates &amp; Bowls</fullName>
+                <default>false</default>
+                <label>Decorative Plates &amp; Bowls</label>
+            </value>
+            <value>
+                <fullName>Display Easels</fullName>
+                <default>false</default>
+                <label>Display Easels</label>
+            </value>
+            <value>
+                <fullName>Doorstops</fullName>
+                <default>false</default>
+                <label>Doorstops</label>
+            </value>
+            <value>
+                <fullName>Floral Décor</fullName>
+                <default>false</default>
+                <label>Floral Décor</label>
+            </value>
+            <value>
+                <fullName>Frames</fullName>
+                <default>false</default>
+                <label>Frames</label>
+            </value>
+            <value>
+                <fullName>Globes</fullName>
+                <default>false</default>
+                <label>Globes</label>
+            </value>
+            <value>
+                <fullName>Home Fragrances</fullName>
+                <default>false</default>
+                <label>Home Fragrances</label>
+            </value>
+            <value>
+                <fullName>Indoor Fountains</fullName>
+                <default>false</default>
+                <label>Indoor Fountains</label>
+            </value>
+            <value>
+                <fullName>Key &amp; Letter Holders</fullName>
+                <default>false</default>
+                <label>Key &amp; Letter Holders</label>
+            </value>
+            <value>
+                <fullName>Masks</fullName>
+                <default>false</default>
+                <label>Masks</label>
+            </value>
+            <value>
+                <fullName>Message Boards &amp; Holders</fullName>
+                <default>false</default>
+                <label>Message Boards &amp; Holders</label>
+            </value>
+            <value>
+                <fullName>Mirrors</fullName>
+                <default>false</default>
+                <label>Mirrors</label>
+            </value>
+            <value>
+                <fullName>Other Home Décor</fullName>
+                <default>false</default>
+                <label>Other Home Décor</label>
+            </value>
+            <value>
+                <fullName>Plaques &amp; Signs</fullName>
+                <default>false</default>
+                <label>Plaques &amp; Signs</label>
+            </value>
+            <value>
+                <fullName>Plate Racks &amp; Hangers</fullName>
+                <default>false</default>
+                <label>Plate Racks &amp; Hangers</label>
+            </value>
+            <value>
+                <fullName>Posters &amp; Prints</fullName>
+                <default>false</default>
+                <label>Posters &amp; Prints</label>
+            </value>
+            <value>
+                <fullName>Sculptures &amp; Figurines</fullName>
+                <default>false</default>
+                <label>Sculptures &amp; Figurines</label>
+            </value>
+            <value>
+                <fullName>Suncatchers &amp; Mobiles</fullName>
+                <default>false</default>
+                <label>Suncatchers &amp; Mobiles</label>
+            </value>
+            <value>
+                <fullName>Tapestries</fullName>
+                <default>false</default>
+                <label>Tapestries</label>
+            </value>
+            <value>
+                <fullName>Vases</fullName>
+                <default>false</default>
+                <label>Vases</label>
+            </value>
+            <value>
+                <fullName>Home Organization</fullName>
+                <default>false</default>
+                <label>Home Organization</label>
+            </value>
+            <value>
+                <fullName>Furniture</fullName>
+                <default>false</default>
+                <label>Furniture</label>
+            </value>
+            <value>
+                <fullName>Kitchen Backsplashes</fullName>
+                <default>false</default>
+                <label>Kitchen Backsplashes</label>
+            </value>
+            <value>
+                <fullName>Kitchen Cabinet Doors &amp; Drawer Fronts</fullName>
+                <default>false</default>
+                <label>Kitchen Cabinet Doors &amp; Drawer Fronts</label>
+            </value>
+            <value>
+                <fullName>Kitchen Cabinet Drawer Boxes</fullName>
+                <default>false</default>
+                <label>Kitchen Cabinet Drawer Boxes</label>
+            </value>
+            <value>
+                <fullName>Kitchen Cabinets</fullName>
+                <default>false</default>
+                <label>Kitchen Cabinets</label>
+            </value>
+            <value>
+                <fullName>Kitchen Countertops</fullName>
+                <default>false</default>
+                <label>Kitchen Countertops</label>
+            </value>
+            <value>
+                <fullName>Kitchen Faucets</fullName>
+                <default>false</default>
+                <label>Kitchen Faucets</label>
+            </value>
+            <value>
+                <fullName>Kitchen Sink Parts</fullName>
+                <default>false</default>
+                <label>Kitchen Sink Parts</label>
+            </value>
+            <value>
+                <fullName>Kitchen Sinks</fullName>
+                <default>false</default>
+                <label>Kitchen Sinks</label>
+            </value>
+            <value>
+                <fullName>Kitchen Units &amp; Sets</fullName>
+                <default>false</default>
+                <label>Kitchen Units &amp; Sets</label>
+            </value>
+            <value>
+                <fullName>Other Kitchen Fixtures</fullName>
+                <default>false</default>
+                <label>Other Kitchen Fixtures</label>
+            </value>
+            <value>
+                <fullName>Bakeware</fullName>
+                <default>false</default>
+                <label>Bakeware</label>
+            </value>
+            <value>
+                <fullName>Baking Accs. &amp; Cake Decorating</fullName>
+                <default>false</default>
+                <label>Baking Accs. &amp; Cake Decorating</label>
+            </value>
+            <value>
+                <fullName>Bar Tools &amp; Accessories</fullName>
+                <default>false</default>
+                <label>Bar Tools &amp; Accessories</label>
+            </value>
+            <value>
+                <fullName>Brewing, Distilling &amp; Wine Making</fullName>
+                <default>false</default>
+                <label>Brewing, Distilling &amp; Wine Making</label>
+            </value>
+            <value>
+                <fullName>Cookware</fullName>
+                <default>false</default>
+                <label>Cookware</label>
+            </value>
+            <value>
+                <fullName>Dinnerware &amp; Serveware</fullName>
+                <default>false</default>
+                <label>Dinnerware &amp; Serveware</label>
+            </value>
+            <value>
+                <fullName>Flatware, Knives &amp; Cutlery</fullName>
+                <default>false</default>
+                <label>Flatware, Knives &amp; Cutlery</label>
+            </value>
+            <value>
+                <fullName>Glassware &amp; Drinkware</fullName>
+                <default>false</default>
+                <label>Glassware &amp; Drinkware</label>
+            </value>
+            <value>
+                <fullName>Kitchen Carts</fullName>
+                <default>false</default>
+                <label>Kitchen Carts</label>
+            </value>
+            <value>
+                <fullName>Kitchen Islands</fullName>
+                <default>false</default>
+                <label>Kitchen Islands</label>
+            </value>
+            <value>
+                <fullName>Kitchen Storage &amp; Organization</fullName>
+                <default>false</default>
+                <label>Kitchen Storage &amp; Organization</label>
+            </value>
+            <value>
+                <fullName>Kitchen Tools &amp; Gadgets</fullName>
+                <default>false</default>
+                <label>Kitchen Tools &amp; Gadgets</label>
+            </value>
+            <value>
+                <fullName>Kitchen, Dining &amp; Bar</fullName>
+                <default>false</default>
+                <label>Kitchen, Dining &amp; Bar</label>
+            </value>
+            <value>
+                <fullName>Other Kitchen &amp; Dining Items</fullName>
+                <default>false</default>
+                <label>Other Kitchen &amp; Dining Items</label>
+            </value>
+            <value>
+                <fullName>Ceiling Fans</fullName>
+                <default>false</default>
+                <label>Ceiling Fans</label>
+            </value>
+            <value>
+                <fullName>Chandeliers &amp; Ceiling Fixtures</fullName>
+                <default>false</default>
+                <label>Chandeliers &amp; Ceiling Fixtures</label>
+            </value>
+            <value>
+                <fullName>Lamp Shades</fullName>
+                <default>false</default>
+                <label>Lamp Shades</label>
+            </value>
+            <value>
+                <fullName>Lamps</fullName>
+                <default>false</default>
+                <label>Lamps</label>
+            </value>
+            <value>
+                <fullName>Light Bulbs</fullName>
+                <default>false</default>
+                <label>Light Bulbs</label>
+            </value>
+            <value>
+                <fullName>Lighting Accessories</fullName>
+                <default>false</default>
+                <label>Lighting Accessories</label>
+            </value>
+            <value>
+                <fullName>Lighting Parts</fullName>
+                <default>false</default>
+                <label>Lighting Parts</label>
+            </value>
+            <value>
+                <fullName>Night Lights</fullName>
+                <default>false</default>
+                <label>Night Lights</label>
+            </value>
+            <value>
+                <fullName>Other Lighting &amp; Ceiling Fans</fullName>
+                <default>false</default>
+                <label>Other Lighting &amp; Ceiling Fans</label>
+            </value>
+            <value>
+                <fullName>Smart Lighting</fullName>
+                <default>false</default>
+                <label>Smart Lighting</label>
+            </value>
+            <value>
+                <fullName>String Lights, Fairy Lights</fullName>
+                <default>false</default>
+                <label>String Lights, Fairy Lights</label>
+            </value>
+            <value>
+                <fullName>Wall Fixtures</fullName>
+                <default>false</default>
+                <label>Wall Fixtures</label>
+            </value>
+            <value>
+                <fullName>Area Rugs</fullName>
+                <default>false</default>
+                <label>Area Rugs</label>
+            </value>
+            <value>
+                <fullName>Carpet Tiles</fullName>
+                <default>false</default>
+                <label>Carpet Tiles</label>
+            </value>
+            <value>
+                <fullName>Door Mats &amp; Floor Mats</fullName>
+                <default>false</default>
+                <label>Door Mats &amp; Floor Mats</label>
+            </value>
+            <value>
+                <fullName>Leather, Fur &amp; Sheepskin Rugs</fullName>
+                <default>false</default>
+                <label>Leather, Fur &amp; Sheepskin Rugs</label>
+            </value>
+            <value>
+                <fullName>Other Rugs &amp; Carpets</fullName>
+                <default>false</default>
+                <label>Other Rugs &amp; Carpets</label>
+            </value>
+            <value>
+                <fullName>Rug &amp; Carpet Accessories</fullName>
+                <default>false</default>
+                <label>Rug &amp; Carpet Accessories</label>
+            </value>
+            <value>
+                <fullName>Rug &amp; Carpet Tools</fullName>
+                <default>false</default>
+                <label>Rug &amp; Carpet Tools</label>
+            </value>
+            <value>
+                <fullName>Runners</fullName>
+                <default>false</default>
+                <label>Runners</label>
+            </value>
+            <value>
+                <fullName>Stair Treads</fullName>
+                <default>false</default>
+                <label>Stair Treads</label>
+            </value>
+            <value>
+                <fullName>Wall-to-Wall Carpeting</fullName>
+                <default>false</default>
+                <label>Wall-to-Wall Carpeting</label>
+            </value>
+            <value>
+                <fullName>Blinds &amp; Shades</fullName>
+                <default>false</default>
+                <label>Blinds &amp; Shades</label>
+            </value>
+            <value>
+                <fullName>Cornices &amp; Valances</fullName>
+                <default>false</default>
+                <label>Cornices &amp; Valances</label>
+            </value>
+            <value>
+                <fullName>Curtain Rods &amp; Hardware</fullName>
+                <default>false</default>
+                <label>Curtain Rods &amp; Hardware</label>
+            </value>
+            <value>
+                <fullName>Curtains &amp; Drapes</fullName>
+                <default>false</default>
+                <label>Curtains &amp; Drapes</label>
+            </value>
+            <value>
+                <fullName>Other Window Treatments &amp; Hardware</fullName>
+                <default>false</default>
+                <label>Other Window Treatments &amp; Hardware</label>
+            </value>
+            <value>
+                <fullName>Replacement Parts</fullName>
+                <default>false</default>
+                <label>Replacement Parts</label>
+            </value>
+            <value>
+                <fullName>Shutters</fullName>
+                <default>false</default>
+                <label>Shutters</label>
+            </value>
+            <value>
+                <fullName>Stained Glass Panels</fullName>
+                <default>false</default>
+                <label>Stained Glass Panels</label>
+            </value>
+            <value>
+                <fullName>Window Film</fullName>
+                <default>false</default>
+                <label>Window Film</label>
+            </value>
+            <value>
+                <fullName>Patio &amp; Garden Furniture</fullName>
+                <default>false</default>
+                <label>Patio &amp; Garden Furniture</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Antiquitäten &amp; Kunst</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Auto &amp; Motorrad: Fahrzeuge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Auto &amp; Motorrad: Teile</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Bastel- &amp; Künstlerbedarf</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Beauty &amp; Gesundheit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Briefmarken</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Bücher</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Büro &amp; Schreibwaren</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Business &amp; Industrie</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Computer, Tablets &amp; Netzwerk</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Feinschmecker</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Filme &amp; DVDs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Foto &amp; Camcorder</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Garten</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Garten &amp; Terrasse</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Handys &amp; Kommunikation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Haushaltsgeräte</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Haustierbedarf</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Heimwerker</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Immobilien</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Kleidung &amp; Accessoires</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Möbel &amp; Wohnen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Modellbau</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Münzen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Musik</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Musikinstrumente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>PC- &amp; Videospiele</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Reisen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Sammeln &amp; Seltenes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Spielzeug</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Tickets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>TV, Video &amp; Audio</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Uhren &amp; Schmuck</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Verschiedenes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Baby</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Sport</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>DVDs, Films &amp; TV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>Books, Comics &amp; Magazines</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>Business, Office &amp; Industrial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>Cameras &amp; Photography</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>Cars, Motorcycles &amp; Vehicles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Clothes, Shoes &amp; Accessories</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Coins</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Collectables</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>Events Tickets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>Garden &amp; Patio</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>Holidays &amp; Travel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>Home, Furniture &amp; DIY</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Jewellery &amp; Watches</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>Mobile Phones &amp; Communication</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Musical Instruments</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>Pottery, Porcelain &amp; Glass</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>Property</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>Sound &amp; Vision</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>Sports Memorabilia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Vehicle Parts &amp; Accessories</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>Wholesale &amp; Job Lots</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>Toys &amp; Games</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Antiques</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Art</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Computers/Tablets &amp; Networking</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Crafts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Dolls &amp; Bears</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Everything Else</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Health &amp; Beauty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Music</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Pet Supplies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Sporting Goods</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Stamps</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Video Games &amp; Consoles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Animalerie</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Art, antiquités</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Auto, moto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Bateaux, voile, nautisme</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Beauté, bien-être, parfums</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Bébé, puériculture</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Bijoux, montres</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Bricolage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Céramiques, verres</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Collections</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>DVD, cinéma</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Electroménager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Image, son</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Immobilier</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Informatique, réseaux</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Instruments de musique</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Jardin, terrasse</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Jeux vidéo, consoles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Jouets et jeux</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Livres, BD, revues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Loisirs créatifs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Maison</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Monnaies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Musique, CD, vinyles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Photo, caméscopes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>PME, artisans, agriculteurs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Sports, vacances</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Téléphonie, mobilité</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Timbres</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Véhicules: pièces, accessoires</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Vêtements, accessoires</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Vins, Gastronomie</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Abbigliamento e accessori</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Altre categorie</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Arte e antiquariato</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Auto, moto e altri veicoli</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Bellezza e salute</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Biglietti ed eventi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Casa, arredamento e bricolage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Collezionismo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Commercio, ufficio e Industria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Elettrodomestici</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Film e DVD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Fotografia e video</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Francobolli</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Fumetti</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Giardino e arredamento esterni</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Giocattoli e modellismo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Hobby creativi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Infanzia e premaman</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Informatica</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Libri e riviste</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Monete e banconote</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Musica, CD e vinili</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Nautica e imbarcazioni</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Orologi e gioielli</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Sport e viaggi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Strumenti musicali</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Telefonia fissa e mobile</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>TV, audio e video</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Veicoli: ricambi e accessori</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Videogiochi e console</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Vini, caffè e gastronomia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Arte y antigüedades</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Bebés</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Belleza y salud</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Cámaras y fotografía</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Casa, jardín y bricolaje</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Cine, DVD y películas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Coches, Motos y Otros Vehíc.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Coleccionismo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Consolas y videojuegos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Deportes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Electrodomésticos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Entradas y eventos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Equipamiento y maquinaria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Imagen y sonido</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Informática y tablets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Instrumentos musicales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Juguetes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Libros, revistas y cómics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Monedas y billetes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Motor: recambios y accesorios</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Móviles y telefonía</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Música, CDs y vinilos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Otras categorías</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Relojes y joyas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Ropa, calzado y complementos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Sellos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Viajes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Vinos y gastronomía</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Books, Magazines</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Business</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Cameras</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Cars, Bikes, Boats</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Food &amp; Drinks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Gift Cards &amp; Vouchers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Home Appliances</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Home Entertainment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Industrial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Lots More...</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Movies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Phones &amp; Accessories</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Pottery, Glass</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Toys, Hobbies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Unknown</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Tickets, Travel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15</controllingFieldValue>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Electronics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15</controllingFieldValue>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Home &amp; Garden</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Auto &amp; Teile</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>B&amp;I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Beauty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Books</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Buillon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Business &amp; Industrial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Cameras and Photos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Cell Phones &amp; Accessories</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Clothing, Shoes &amp; Accessories</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Coins &amp; Paper Money</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Collectibles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Consumer Electronics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>DVDs &amp; Movies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>eBay Motors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Elec Certified Refurbished</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Entertainment Memorabilia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Fashion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Food</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Gift Cards</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Gift Cards &amp; Coupons</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Gold</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>H&amp;G + SG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>H&amp;G Certified Refurbished</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Health</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Heavy Equipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Jewelry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Jewelry &amp; Watches</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Musical Instruments &amp; Gear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>P&amp;A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Parts &amp; Accessories</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Parts &amp; Attachments</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Pottery &amp; Glass</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Sneakers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Sporting Certified Refurbished</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Sporting Good</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Sports Mem, Cards &amp; Fan Shop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Toys &amp; Hobbies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Travel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Watches</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Bathroom Accessories</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Bathroom Accessory Mixed Lots</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Bathroom Accessory Sets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Bathroom Cabinets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Bathroom Cladding Panels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Bathroom Sinks &amp; Vanities</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Bathroom Suites</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Shower &amp; Bathtub Accessories</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Showers, Bathtubs &amp; Parts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Steam Showers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Toilets &amp; Bidets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Bed Pillows</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Bed Skirts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Bed-in-a-Bag</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Blankets &amp; Throws</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Canopies &amp; Netting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Comforters &amp; Sets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Decorative Bed Pillows</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Duvet Covers &amp; Sets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Mattress Pads &amp; Feather Beds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Other Bedding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Pillow Shams</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Pillowcases</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Quilts, Bedspreads &amp; Coverlets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Sheets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Armoires &amp; Wardrobes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Bar Carts &amp; Serving Carts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Bean Bags &amp; Inflatables</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Bedroom Sets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Beds &amp; Mattresses</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Benches, Stools &amp; Bar Stools</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Bookcases &amp; Shelving</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Cabinets &amp; Cupboards</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>CD &amp; Video Racks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Chairs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Dining Room Furniture</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Dining Sets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Dressers &amp; Chests of Drawers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Furniture Accessories</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Furniture Parts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Futons, Frames &amp; Covers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Home Office Desks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Nightstands</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Other Home Furniture</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Ottomans, Footstools &amp; Poufs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Screens &amp; Room Dividers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Sideboards &amp; Buffets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Slipcovers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Sofas, Armchairs &amp; Couches</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Tables</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Trunks &amp; Chests</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>TV Stands &amp; Entertainment Units</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Vanities &amp; Makeup Tables</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Advent Calendars</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Candle Holders</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Candles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Christmas Crackers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Christmas Trees</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Figurines</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Linens &amp; Textiles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Nativity Items</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Nutcrackers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Ornaments</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Other Holiday &amp; Seasonal Décor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Pillows</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Snow Globes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Stockings &amp; Hangers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>String Lights</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Table Décor &amp; Serving Pieces</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Tree Stands &amp; Skirts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Wall Décor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Window Decorations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Wreaths, Garlands &amp; Plants</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Yard Décor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Afghans &amp; Throw Blankets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Ashtrays</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Baskets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Bookends</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Bottles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Boxes, Jars &amp; Tins</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Candle Holders &amp; Accessories</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Clocks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Decals, Stickers &amp; Vinyl Art</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Decorative Fans</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Decorative Fruit &amp; Vegetables</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Decorative Plates &amp; Bowls</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Display Easels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Doorstops</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Floral Décor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Frames</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Globes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Home Fragrances</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Indoor Fountains</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Key &amp; Letter Holders</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Masks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Message Boards &amp; Holders</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Mirrors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Other Home Décor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Plaques &amp; Signs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Plate Racks &amp; Hangers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Posters &amp; Prints</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Sculptures &amp; Figurines</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Suncatchers &amp; Mobiles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Tapestries</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Vases</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Home Organization</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Furniture</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Kitchen Backsplashes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Kitchen Cabinet Doors &amp; Drawer Fronts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Kitchen Cabinet Drawer Boxes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Kitchen Cabinets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Kitchen Countertops</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Kitchen Faucets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Kitchen Sink Parts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Kitchen Sinks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Kitchen Units &amp; Sets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Other Kitchen Fixtures</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Bakeware</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Baking Accs. &amp; Cake Decorating</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Bar Tools &amp; Accessories</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Brewing, Distilling &amp; Wine Making</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Cookware</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Dinnerware &amp; Serveware</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Flatware, Knives &amp; Cutlery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Glassware &amp; Drinkware</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Kitchen Carts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Kitchen Islands</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Kitchen Storage &amp; Organization</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Kitchen Tools &amp; Gadgets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Kitchen, Dining &amp; Bar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Other Kitchen &amp; Dining Items</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Ceiling Fans</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Chandeliers &amp; Ceiling Fixtures</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Lamp Shades</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Lamps</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Light Bulbs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Lighting Accessories</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Lighting Parts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Night Lights</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Other Lighting &amp; Ceiling Fans</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Smart Lighting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>String Lights, Fairy Lights</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Wall Fixtures</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Area Rugs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Carpet Tiles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Door Mats &amp; Floor Mats</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Leather, Fur &amp; Sheepskin Rugs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Other Rugs &amp; Carpets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Rug &amp; Carpet Accessories</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Rug &amp; Carpet Tools</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Runners</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Stair Treads</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Wall-to-Wall Carpeting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Blinds &amp; Shades</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Cornices &amp; Valances</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Curtain Rods &amp; Hardware</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Curtains &amp; Drapes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Other Window Treatments &amp; Hardware</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Replacement Parts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Shutters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Stained Glass Panels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Window Film</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Patio &amp; Garden Furniture</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

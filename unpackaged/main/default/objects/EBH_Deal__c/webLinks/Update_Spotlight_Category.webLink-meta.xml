@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Update_Spotlight_Category</fullName>
+    <availability>online</availability>
+    <description>US-0009956 - [SEP] US - NA Unsub Deal - Mass Update Spotlight Category on Deals in Deal Window Related List</description>
+    <displayType>massActionButton</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Update Spotlight Category</masterLabel>
+    <openType>sidebar</openType>
+    <page>DRC_Redirector_Page</page>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+</WebLink>

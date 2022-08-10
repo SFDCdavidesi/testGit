@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fulfillment_Acq_OR_2_open_tasks</fullName>
+    <columns>WHAT_NAME</columns>
+    <columns>Order_Priority__c</columns>
+    <columns>EBH_fResponseCode__c</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>Call_attempts__c</columns>
+    <columns>EBH_Account__c</columns>
+    <columns>STATUS</columns>
+    <columns>Task_Owner_Name__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>STATUS</field>
+        <operation>equals</operation>
+        <value>Open,Completed,Paused</value>
+    </filters>
+    <filters>
+        <field>WHAT_NAME</field>
+        <operation>contains</operation>
+        <value>Fulfillment</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.FULL_NAME</field>
+        <operation>equals</operation>
+        <value>Manuel Ulrich</value>
+    </filters>
+    <filters>
+        <field>Order_Priority__c</field>
+        <operation>equals</operation>
+        <value>333</value>
+    </filters>
+    <filters>
+        <field>EBH_fResponseCode__c</field>
+        <operation>equals</operation>
+        <value>DMC interested</value>
+    </filters>
+    <label>Fulfillment Manuels cohort</label>
+</ListView>

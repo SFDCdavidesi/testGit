@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>US-0012100 - Lightning Email Logic for DE Coupon Sellers - Coupon Item Upload Invitation</description>
+        <name>DEUploadItemsInvitationNotification</name>
+        <label>DE - UploadItemsInvitation Notification</label>
+        <locationX>50</locationX>
+        <locationY>455</locationY>
+        <actionName>Seller_Communication__c.SP_Coupons_DE_Upload_Items_Invitation</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>US-0012109 - Lightning Email Logic for DE Coupon Sellers - Contract Signature Invitation</description>
+        <name>Send_SP_Coupons_DE_Sign_Agreement_Invitation</name>
+        <label>Send SP - Coupons - DE - Sign Agreement Invitation</label>
+        <locationX>1106</locationX>
+        <locationY>455</locationY>
+        <actionName>Seller_Communication__c.SP_Coupons_DE_Sign_Agreement_Invitation</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>US-0012110 - Lightning Email Logic for DE Coupon Sellers - Contract Signature Reminder</description>
+        <name>Send_SP_Coupons_DE_Sign_Agreement_Reminder_Notification</name>
+        <label>Send SP - Coupons - DE - Sign Agreement Reminder Notification</label>
+        <locationX>2690</locationX>
+        <locationY>455</locationY>
+        <actionName>Seller_Communication__c.SP_Coupons_DE_Sign_Agreement_Reminder</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>US-0012101 - Lightning Email DE Welcome Email for Deals and Coupons</description>
+        <name>Send_SP_Coupons_DE_Welcome_Email</name>
+        <label>Send SP_Coupons_DE_Welcome_Email</label>
+        <locationX>578</locationX>
+        <locationY>455</locationY>
+        <actionName>Seller_Communication__c.SP_Coupons_DE_Welcome_Email</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>US-0012114 - NA localization - Seller Communication- Contract Signature Invitation</description>
+        <name>Send_SP_Coupons_NA_Sign_Agreement_Invitation</name>
+        <label>Send SP - Coupons - NA - Sign Agreement Invitation</label>
+        <locationX>1370</locationX>
+        <locationY>455</locationY>
+        <actionName>Seller_Communication__c.SP_Coupons_NA_Sign_Agreement_Invitation</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>US-0012115 - NA localization - Seller Communication- Contract Signature Reminder</description>
+        <name>Send_SP_Coupons_NA_Sign_Agreement_Reminder</name>
+        <label>Send SP - Coupons - NA - Sign Agreement Reminder</label>
+        <locationX>1898</locationX>
+        <locationY>455</locationY>
+        <actionName>Seller_Communication__c.SP_Coupons_NA_Sign_Agreement_Reminder</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>US-0012116 - NA localization - Seller Communication- Contract Signature Confirmation</description>
+        <name>Send_SP_Coupons_NA_Signed_Agreement_Confirmation_Notification</name>
+        <label>Send SP - Coupons - NA - Signed Agreement Confirmation Notification</label>
+        <locationX>2162</locationX>
+        <locationY>455</locationY>
+        <actionName>Seller_Communication__c.SP_Coupons_NA_Signed_Agreement_Confirmation</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>US-0012016 - NA localization - Seller Communication- Item Upload Invitation</description>
+        <name>Send_SP_Coupons_NA_Upload_Items_Invitation_Notification</name>
+        <label>Send SP - Coupons - NA - Upload Items Invitation Notification</label>
+        <locationX>1634</locationX>
+        <locationY>455</locationY>
+        <actionName>Seller_Communication__c.SP_Coupons_NA_Upload_Items_Invitation</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>US-0012117 - NA localization - Seller Communication- Coupon Welcome Email</description>
+        <name>Send_SP_Coupons_NA_Welcome_Email_Notification</name>
+        <label>Send SP - Coupons - NA - Welcome Email Notification</label>
+        <locationX>2426</locationX>
+        <locationY>455</locationY>
+        <actionName>Seller_Communication__c.SP_Coupons_NA_Welcome_Email</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>US-0012101 - Lightning Email DE Welcome Email for Deals and Coupons</description>
+        <name>Send_SP_Deals_DE_Welcome_Email</name>
+        <label>Send SP - Deals - DE - Welcome Email</label>
+        <locationX>314</locationX>
+        <locationY>455</locationY>
+        <actionName>Seller_Communication__c.SP_Deals_DE_Welcome_Email</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>US-0012112 - Lightning Email Logic for DE Coupon Sellers - Contract Signature Confirmation</description>
+        <name>SP_Coupons_DE_Signed_Agreement_Confirmation_Email_Notification</name>
+        <label>SP - Coupons - DE - Signed Agreement Confirmation Email Notification</label>
+        <locationX>842</locationX>
+        <locationY>455</locationY>
+        <actionName>Seller_Communication__c.SP_Coupons_DE_Signed_Agreement_Confirmation</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>55.0</apiVersion>
+    <decisions>
+        <description>US-0012100 - Lightning Email Logic for DE Coupon Sellers - Coupon Item Upload Invitation</description>
+        <name>Is_UploadItemsInvitation</name>
+        <label>Is UploadItemsInvitation</label>
+        <locationX>1502</locationX>
+        <locationY>335</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>DE_UploadItemsInvitation_Notification</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Coupons</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Email_Template__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Upload Items Invitation</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Region__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>DE</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Platform__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Seller Portal</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>isCreated</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>DEUploadItemsInvitationNotification</targetReference>
+            </connector>
+            <label>DE UploadItemsInvitation Notification</label>
+        </rules>
+        <rules>
+            <name>SP_Deals_DE_Welcome_Email</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Welcome_Email</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Email_Template__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Welcome Email Deals</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Region__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>DE</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Platform__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Seller Portal</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>isCreated</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_SP_Deals_DE_Welcome_Email</targetReference>
+            </connector>
+            <label>SP - Deals - DE - Welcome Email</label>
+        </rules>
+        <rules>
+            <name>SP_Coupons_DE_Welcome_Email</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Welcome_Email</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Email_Template__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Welcome Email Coupons</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Region__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>DE</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Platform__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Seller Portal</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>isCreated</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_SP_Coupons_DE_Welcome_Email</targetReference>
+            </connector>
+            <label>SP - Coupons - DE - Welcome Email</label>
+        </rules>
+        <rules>
+            <name>SP_Coupons_DE_Signed_Agreement_Confirmation</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Coupons</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Email_Template__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Signed Agreement Confirmation</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Region__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>DE</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Platform__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Seller Portal</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>isCreated</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SP_Coupons_DE_Signed_Agreement_Confirmation_Email_Notification</targetReference>
+            </connector>
+            <label>SP - Coupons - DE - Signed Agreement Confirmation</label>
+        </rules>
+        <rules>
+            <name>SP_Coupons_DE_Sign_Agreement_Invitation</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Coupons</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Email_Template__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Sign Agreement Invitation</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Region__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>DE</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Platform__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Seller Portal</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>isCreated</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_SP_Coupons_DE_Sign_Agreement_Invitation</targetReference>
+            </connector>
+            <label>SP - Coupons - DE - Sign Agreement Invitation</label>
+        </rules>
+        <rules>
+            <name>SP_Coupons_NA_Sign_Agreement_Invitation</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Coupons</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Email_Template__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Sign Agreement Invitation</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Region__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>NA</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Platform__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Seller Portal</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>isCreated</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_SP_Coupons_NA_Sign_Agreement_Invitation</targetReference>
+            </connector>
+            <label>SP - Coupons -NA- Sign Agreement Invitation</label>
+        </rules>
+        <rules>
+            <name>SP_Coupons_NA_Item_Upload_Invitation</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Coupons</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Email_Template__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Upload Items Invitation</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Region__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>NA</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Platform__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Seller Portal</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>isCreated</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_SP_Coupons_NA_Upload_Items_Invitation_Notification</targetReference>
+            </connector>
+            <label>SP - Coupons - NA - Item Upload Invitation</label>
+        </rules>
+        <rules>
+            <name>SP_Coupons_NA_Sign_Agreement_Reminder</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Coupons</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Email_Template__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Sign Agreement Reminder</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Region__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>NA</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Platform__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Seller Portal</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>isCreated</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_SP_Coupons_NA_Sign_Agreement_Reminder</targetReference>
+            </connector>
+            <label>SP - Coupons -NA- Sign Agreement Reminder</label>
+        </rules>
+        <rules>
+            <name>SP_Coupons_NA_Contract_Signature_Confirmation</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Coupons</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Email_Template__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Signed Agreement Confirmation</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Region__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>NA</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Platform__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Seller Portal</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>isCreated</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_SP_Coupons_NA_Signed_Agreement_Confirmation_Notification</targetReference>
+            </connector>
+            <label>SP - Coupons - NA - Contract Signature Confirmation</label>
+        </rules>
+        <rules>
+            <name>SP_Coupons_NA_Welcome_Email</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Welcome_Email</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Email_Template__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Welcome Email Coupons</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Region__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>NA</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Platform__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Seller Portal</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>isCreated</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_SP_Coupons_NA_Welcome_Email_Notification</targetReference>
+            </connector>
+            <label>SP - Coupons - NA - Welcome Email</label>
+        </rules>
+        <rules>
+            <name>SP_Coupons_DE_Sign_Agreement_Reminder</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Coupons</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Email_Template__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Sign Agreement Reminder</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Region__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>DE</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Platform__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Seller Portal</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>isCreated</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_SP_Coupons_DE_Sign_Agreement_Reminder_Notification</targetReference>
+            </connector>
+            <label>SP - Coupons - DE - Sign Agreement Reminder</label>
+        </rules>
+    </decisions>
+    <description>US-0012100 - Lightning Email Logic for DE Coupon Sellers - Coupon Item Upload Invitation
+US-0012101 - Lightning Email DE Welcome Email for Deals and Coupons
+US-0012112 - Lightning Email Logic for DE Coupon Sellers - Contract Signature Confirmation
+US-0012109 - Lightning Email Logic for DE Coupon Sellers - Contract Signature Invitation
+US-0012114 - NA localization - Seller Communication- Contract Signature Invitation
+US-0012016 - NA localization - Seller Communication- Item Upload Invitation
+US-0012115 - NA localization - Seller Communication- Contract Signature Reminder
+US-0012116 - NA localization - Seller Communication- Contract Signature Confirmation
+US-0012117 - NA localization - Seller Communication- Coupon Welcome Email
+US-0012110 - Lightning Email Logic for DE Coupon Sellers - Contract Signature Reminder</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>isCreated</name>
+        <dataType>Boolean</dataType>
+        <expression>{!$Record.CreatedDate} = {!$Record.LastModifiedDate}</expression>
+    </formulas>
+    <interviewLabel>Seller Communication- Record Trigger Flow - After Context {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Seller Communication- Record Trigger Flow - After Context</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>1376</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Is_UploadItemsInvitation</targetReference>
+        </connector>
+        <object>Seller_Communication__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

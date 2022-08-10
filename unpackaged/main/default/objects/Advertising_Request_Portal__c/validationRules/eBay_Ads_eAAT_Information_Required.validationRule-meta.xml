@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>eBay_Ads_eAAT_Information_Required</fullName>
+    <active>true</active>
+    <description>if the type = eAAT Domo Dashboard New Persona and/or Brand Request, &#39;List of Personas&#39; and &#39;List of Brands&#39; field needs to be populated</description>
+    <errorConditionFormula>AND(
+
+$Setup.byPass__c.byPass_WFRule__c = FALSE,
+
+RecordType.Name = &#39;CSI Requests&#39;,
+ISPICKVAL(Request_Type__c, &#39;eAAT Domo Dashboard New Persona and/or Brand Request&#39;),
+ISBLANK(List_of_Brands__c ),
+ISBLANK(List_of_Personas__c )
+
+)</errorConditionFormula>
+    <errorMessage>If submitting an eAAT Domo Dashboard New Persona and/or Brand Request, enter the List of Brands and Personas needed</errorMessage>
+</ValidationRule>

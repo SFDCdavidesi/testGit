@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Amount_Is_Changed</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+
+$Setup.byPass__c.ByPass_Validation__c = FALSE,
+RecordType.DeveloperName = $Label.OPP_RECORDTYPEDEVNAME_DIRECT,
+Ad_Products_with_Products__c &gt; 0,
+ISCHANGED(Amount),
+Quote_Sync_In_Progress__c == false
+)</errorConditionFormula>
+    <errorMessage>The Total Amount cannot be updated for this opportunity.</errorMessage>
+</ValidationRule>

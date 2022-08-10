@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PayPal_adress__c</fullName>
+    <description>EPH-7157 Object: Coupon Seller
+	DEPRECIATED USE THE NEW FIELD INSTEAD</description>
+    <externalId>false</externalId>
+    <inlineHelpText>PayPal Adress provided by Seller</inlineHelpText>
+    <label>PayPal adress</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Email</type>
+    <unique>false</unique>
+</CustomField>

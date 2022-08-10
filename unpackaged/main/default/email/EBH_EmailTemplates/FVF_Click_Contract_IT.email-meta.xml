@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0006893 IT &amp; ES. FVF Contract</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>FVF Click Contract IT</name>
+    <style>none</style>
+    <subject>Modulo per lo sconto sulla Commissione finale {!FVF_SellerName} {!FVF_StartDate}</subject>
+    <textOnly>Accordo relativo alla promozione individuale
+
+Ai sensi del presente Accordo relativo alla promozione individuale e alla relativa Appendice 1 (di seguito denominati congiuntamente &quot;Accordo&quot;) che ne costituisce parte integrante, ti offriamo uno sconto sulla Commissione sul valore finale secondo i termini qui specificati. Se concordi con quanto qui specificato, ti chiediamo di indicare che accetti il presente Accordo entro 1 giorno dall&#39;inizio della promozione cliccando sul seguente pulsante:
+
+ACCETTO
+
+
+ID venditore per la promozione  {!FVF_SellerName}
+Pagina eBay  www.ebay.it
+Periodo di promozione  Da {!FVF_StartDate} {!FVF_StartTime} a {!FVF_EndDate} {!FVF_EndTime}
+
+eBay può, a sua esclusiva discrezione, posticipare il Periodo della promozione o prorogare la durata della promozione dandone opportuna comunicazione al venditore.
+
+Sconto sulla Commissione sul valore finale (con supporto eBay)  {!FVF_DiscountFVF}
+Oggetti idonei allo sconto
+
+Lo sconto si applica agli oggetti specificati nell&#39;Appendice 1 e venduti dal venditore al prezzo massimo indicato durante il Periodo della promozione. Il venditore può, a sua discrezione, decidere in autonomia, di vendere gli Oggetti idonei allo sconto anche ad un prezzo inferiore a quello qui indicato.
+
+Varie   {!FVF_AddtionalTerm}
+
+{ifFreeShipping}
+
+
+Inizialmente, la Commissione sul valore finale verrà addebitata per intero. Lo sconto concordato nel presente Accordo verrà poi accreditato sul tuo account il mese successivo alla promozione. Se una promozione è concordato che duri più mesi, verrà accreditato lo sconto concordato sul tuo account il mese successivo all’ultimo mese di promozione. Tutti gli oggetti restituiti o relativi ad ordini annullati saranno esclusi dallo sconto.
+
+Gli importi degli sconti sulla Commissione sul valore finale sono riportati al netto dell&#39;IVA. Lo sconto che verrà accreditato sul tuo account è soggetto allo stesso trattamento IVA delle altre tariffe addebitate, durante il periodo della promozione, per gli oggetti esclusi dalla promozione.
+
+Il presente Accordo è stipulato fra {!SellerLegalEntity} - {!SellerAddress1} (&quot;Venditore&quot;) ed eBay GmbH, Albert-Einstein-Ring 2-6 in 14532 Kleinmachnow (Germania) (&quot;eBay&quot;). La partecipazione del venditore si basa esclusivamente sul presente Accordo e sui Termini e Condizioni per le promozioni individuali(&quot;Termini e Condizioni&quot;) stipulato fra il venditore e eBay.
+
+Eventuali termini in deroga o aggiuntivi dovranno essere concordati tra le parti per iscritto (anche tramite email).</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

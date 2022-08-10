@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Time_on_file_TOF__c</fullName>
+    <description>US-0009462 - UK Risk: new permission, record type and page layout on Project</description>
+    <externalId>false</externalId>
+    <formula>TEXT(FLOOR(EBH_Seller__r.EBH_Tenure__c/365.25) )&amp; &quot; Years &quot; &amp; TEXT(IF( EBH_Seller__r.EBH_Tenure__c / 365.25 * 12 &lt; 1, 0, FLOOR(EBH_Seller__r.EBH_Tenure__c / 365.25 * 12) - (Year__c * 12))) &amp; &quot; Months &quot; &amp; TEXT(Round(MOD(EBH_Seller__r.EBH_Tenure__c/30.4375,1)*30.4375,0)
+) &amp; &quot; Days&quot;</formula>
+    <inlineHelpText>Time with eBay</inlineHelpText>
+    <label>Time on file (TOF)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

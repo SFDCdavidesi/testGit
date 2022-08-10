@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_IOs_for_PG_Direct_Opportuntiesi</fullName>
+    <active>false</active>
+    <description>If IO is not approved and dually signed, you cannot change a direct opportunity to closed won.</description>
+    <errorConditionFormula>AND(
+
+$Setup.byPass__c.ByPass_Validation__c = FALSE,
+
+
+RecordType.DeveloperName = $Label.OPP_RECORDTYPEDEVNAME_DIRECT,
+
+ISBLANK( IO__c ),
+
+ISPICKVAL(StageName, &#39;Closed Won&#39;),
+
+$Profile.Name &lt;&gt; &quot;System Administrator - Limited Privileges&quot;,
+$User.LastName &lt;&gt; &quot;Adkins&quot;
+
+)</errorConditionFormula>
+    <errorMessage>Cannot change stage to Closed Won if an IO is not present</errorMessage>
+</ValidationRule>

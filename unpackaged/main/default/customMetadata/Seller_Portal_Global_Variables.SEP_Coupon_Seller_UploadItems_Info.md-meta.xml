@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Coupon Seller Upload Items Info</label>
+    <protected>false</protected>
+    <values>
+        <field>Value_Big__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Value__c</field>
+        <value xsi:type="xsd:string">&lt;b&gt;INFORMATION&lt;/b&gt; - Here you will be able to upload a .csv file containing the eBay Items you would like to include in your coupon.</value>
+    </values>
+    <values>
+        <field>Value_in_German__c</field>
+        <value xsi:type="xsd:string">&lt;b&gt;INFORMATION&lt;/b&gt; - Hier können Sie eine .csv-Datei mit den eBay-Artikeln hochladen, die Sie in Ihre Gutscheinaktion aufnehmen möchten.</value>
+    </values>
+</CustomMetadata>

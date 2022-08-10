@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0008102 : [US]* Deals Mass Submission for External Seller Approval Process</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>NA Deals - Send to Seller</name>
+    <style>none</style>
+    <subject>Deals for Approval</subject>
+    <textOnly>Hi {!EBH_Deal__c.Deal_Contract_Seller_Name__c}
+
+Please click on the below link to approve/ decline deal terms via individual order forms. In the link, enter “Approved” or “Declined” in the Individual Order Forms to submit your approval.
+
+Amendments submitted after this approval will cancel these Deal Terms.
+
+
+
+Click Here
+
+Thanks</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

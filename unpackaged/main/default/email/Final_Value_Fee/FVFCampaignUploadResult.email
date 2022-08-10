@@ -1,0 +1,30 @@
+<p data-aura-rendered-by="1337:581;a">Dear {!Owner} ,</p>
+<p data-aura-rendered-by="1337:581;a">&nbsp;</p>
+<p data-aura-rendered-by="1337:581;a">All Nominated Items for the <a href="{!urlFVF}">FVF Campaign</a>&nbsp;have been uploaded.</p>
+<p data-aura-rendered-by="1337:581;a">In total, {!countItem} listings for {!countFVF}&nbsp;sellers were uploaded.</p>
+<table style="width: 943px; border-collapse: collapse; border: 1px solid black; height: 89px;">
+<tbody>
+<tr style="height: 24.4444px;">
+<td style="width: 214px; border: 1px solid black; padding: 5px; height: 24.4444px;">&nbsp;Objects</td>
+<td style="width: 112.778px; border: 1px solid black; padding: 5px; height: 24.4444px;">Success</td>
+<td style="width: 112.222px; border: 1px solid black; padding: 5px; height: 24.4444px;">Failed</td>
+<td style="width: 463px; border: 1px solid black; padding: 5px; height: 24.4444px;">Comments</td>
+</tr>
+<tr style="height: 23px;">
+<td style="width: 214px; border: 1px solid black; padding: 5px; height: 23px;">
+<p>FVF(listing level) -promo on seller level</p>
+</td>
+<td style="width: 112.778px; border: 1px solid black; padding: 5px; height: 23px;">&nbsp;{!fvfOK}</td>
+<td style="width: 112.222px; border: 1px solid black; padding: 5px; height: 23px;">&nbsp;{!fvfKO}</td>
+<td style="width: 463px; border: 1px solid black; padding: 5px; height: 23px;">{!fvfError}</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 214px; border: 1px solid black; padding: 5px; height: 20px;">Related Listings</td>
+<td style="width: 112.778px; border: 1px solid black; padding: 5px; height: 20px;">&nbsp;{!itemOK}</td>
+<td style="width: 112.222px; border: 1px solid black; padding: 5px; height: 20px;">&nbsp;{!itemKO}</td>
+<td style="width: 463px; border: 1px solid black; padding: 5px; height: 20px;">{!itemError}</td>
+</tr>
+</tbody>
+</table>
+<p data-aura-rendered-by="1337:581;a">Best,</p>
+<p data-aura-rendered-by="1337:581;a">HIVE team</p>

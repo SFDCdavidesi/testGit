@@ -1,0 +1,31 @@
+<apex:page standardController="Seller_to_Product__c" 
+    recordSetVar="SellertoProducts" 
+    extensions="Norminate_for_FVF_Discount_Controller" >
+<apex:includeLightning />
+
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> 
+<head>
+  <apex:slds /> 
+    <script>
+    if({!!isError})
+    {
+    SfdcApp.projectOneNavigator.fireContainerEvent('force:navigateToComponent', {componentDef : "c:ForwardToSeller", componentAttributes: {sellerToProductIds: "{!JSENCODE(sellerToProductIds)}",sellerId:"{!JSENCODE(sellerId)}"}});//TH:14/07/2022:US-0011261 - TECHDEBT: Stored XSS
+  }
+    </script>
+</head>
+
+<body class="slds-scope" style="display:{!IF(isError,'','none')}">
+   <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_offline" role="alert">
+      <span class="slds-assistive-text">seller To Product not found</span>
+      <span class="slds-icon_container slds-icon-utility-offline slds-m-right_x-small" title="seller To Product not found">
+        <svg class="slds-icon slds-icon_x-small" aria-hidden="true">
+          <use xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#info_alt"></use>
+        </svg> 
+      </span>
+      <h2>Please selected at lease one record.&nbsp;
+        <a href="/lightning/r/{!sellerIdParam}/related/Seller_to_Products__r/view">Back</a>
+      </h2>
+    </div>
+</body>
+</html>
+</apex:page>

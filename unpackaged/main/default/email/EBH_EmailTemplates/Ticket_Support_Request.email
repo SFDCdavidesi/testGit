@@ -1,0 +1,21 @@
+<p>Thank you for creating a Hive support ticket. Here is a summary of your ticket.</p>
+<ul>
+<li>Ticket ID: {!Case.CaseNumber}</li>
+<li>Record Type: {!Case.RecordType}</li>
+<li>Summary: {!Case.Summary__c}</li>
+<li>Ticket Details: {!Case.Link}</li>
+</ul>
+<p><p>
+Please be aware of our SLAs for providing an initial response:</p>
+
+<ul>
+<li><b>Critical</b> (business function is blocked) - 24 hours</li>
+<li><b>High</b> (inconvenient workarounds exist) - 3 business days</li>
+<li><b>Medium</b> (workaround exists) - 5 business days</li>
+<li><b>Low</b> (low priority request) - 10 business days</li>
+</ul>
+<p>You will be notified via email when the status of your Support Request will be changed</p>
+
+<p>Warm regards,</p>
+
+<p>Hive Support Team</p>

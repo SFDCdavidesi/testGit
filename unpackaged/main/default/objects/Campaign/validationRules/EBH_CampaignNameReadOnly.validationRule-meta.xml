@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_CampaignNameReadOnly</fullName>
+    <active>true</active>
+    <description>EPH-3283, US-0007080
+US-0011982</description>
+    <errorConditionFormula>OR(
+AND( ISCHANGED(Name) &amp;&amp;
+      RecordType.DeveloperName != &#39;EBH_CampaignRequest&#39; &amp;&amp;
+      RecordType.DeveloperName != &#39;EBH_AMOutreach&#39; &amp;&amp;
+      RecordType.DeveloperName != &#39;Influencer_Campaign&#39; &amp;&amp;
+     $Profile.Name == &#39;Standard User Profile&#39;)
+,
+AND( ISCHANGED(Name) &amp;&amp;
+      RecordType.DeveloperName == &#39;EBH_ExternalCampaign&#39; &amp;&amp;
+     ($Profile.Name == &#39;Standard User Profile&#39; || $Profile.Name == &#39;Marketing Profile&#39; || $Profile.Name == &#39;Business Admin&#39;))
+) &amp;&amp; NOT( $Setup.ActiveValidationRules__c.All_Validation_Rules_Deactivated__c )</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>Name cannot be changed.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<p>No hemos podido procesar el pago de la mejor oferta completada el {!DealStartDate}. </p>
+<p>La razón es la siguiente :</p>
+
+<table style="height: 156px; border: 1px solid black;" width="637">
+<tbody>
+<tr>
+<td style="width: 627.111px; text-align: justify; vertical-align: top; padding: 5px;">{!RejectionComment}</td>
+</tr>
+</tbody>
+</table>
+<p>Realiza los cambios necesarios y vuelve a subir la factura de esta transacción mediante la herramienta de facturas.
+</p>

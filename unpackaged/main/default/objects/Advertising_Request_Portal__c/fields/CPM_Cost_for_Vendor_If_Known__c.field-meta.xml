@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPM_Cost_for_Vendor_If_Known__c</fullName>
+    <description>INTEG - N || ** eBay Advertising ** || WF - N || AP - N || VAL - N ||Class - N || Definition: CPM Cost for Vendor (If Known) || CR - 00405201</description>
+    <externalId>false</externalId>
+    <label>CPM Cost for Vendor (If Known)?</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

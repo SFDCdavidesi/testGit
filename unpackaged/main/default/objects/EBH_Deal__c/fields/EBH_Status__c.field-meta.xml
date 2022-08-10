@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_Status__c</fullName>
+    <description>[EBH] (EPH-4163) - Status</description>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New</fullName>
+                <default>true</default>
+                <label>New</label>
+            </value>
+            <value>
+                <fullName>Processing</fullName>
+                <default>false</default>
+                <label>Processing</label>
+            </value>
+            <value>
+                <fullName>Incomplete Data</fullName>
+                <default>false</default>
+                <label>Incomplete Data</label>
+            </value>
+            <value>
+                <fullName>Negotiating</fullName>
+                <default>false</default>
+                <label>Negotiating</label>
+            </value>
+            <value>
+                <fullName>Negotiating Amended</fullName>
+                <default>false</default>
+                <label>Negotiating Amended</label>
+            </value>
+            <value>
+                <fullName>Planned</fullName>
+                <default>false</default>
+                <label>Planned</label>
+            </value>
+            <value>
+                <fullName>Seller Invite</fullName>
+                <default>false</default>
+                <label>Seller Invite</label>
+            </value>
+            <value>
+                <fullName>Seller Proposal</fullName>
+                <default>false</default>
+                <label>Seller Proposal</label>
+            </value>
+            <value>
+                <fullName>Deal Agreed</fullName>
+                <default>false</default>
+                <label>Deal Agreed</label>
+            </value>
+            <value>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+                <label>Rejected</label>
+            </value>
+            <value>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+                <label>Cancelled</label>
+            </value>
+            <value>
+                <fullName>Ops Review</fullName>
+                <default>false</default>
+                <label>Ops Review</label>
+            </value>
+            <value>
+                <fullName>CM Review</fullName>
+                <default>false</default>
+                <label>CM Review</label>
+            </value>
+            <value>
+                <fullName>Scheduled</fullName>
+                <default>false</default>
+                <label>Scheduled</label>
+            </value>
+            <value>
+                <fullName>Executed</fullName>
+                <default>false</default>
+                <label>Executed</label>
+            </value>
+            <value>
+                <fullName>Verify Statement</fullName>
+                <default>false</default>
+                <label>Verify Statement</label>
+            </value>
+            <value>
+                <fullName>Statement Verified</fullName>
+                <default>false</default>
+                <label>Statement Verified (Trigger Email to Seller)</label>
+            </value>
+            <value>
+                <fullName>Clarification Required</fullName>
+                <default>false</default>
+                <label>Clarification Required</label>
+            </value>
+            <value>
+                <fullName>Verify Invoice</fullName>
+                <default>false</default>
+                <label>Verify Invoice</label>
+            </value>
+            <value>
+                <fullName>Invoice Rejected (Email resend to Seller)</fullName>
+                <default>false</default>
+                <label>Invoice Rejected (Email resend to Seller)</label>
+            </value>
+            <value>
+                <fullName>Ready for Payment</fullName>
+                <default>false</default>
+                <label>Ready for Payment</label>
+            </value>
+            <value>
+                <fullName>Payment Sent</fullName>
+                <default>false</default>
+                <label>Payment Sent</label>
+            </value>
+            <value>
+                <fullName>Payment Completed</fullName>
+                <default>false</default>
+                <label>Payment Completed</label>
+            </value>
+            <value>
+                <fullName>Payment Rejected</fullName>
+                <default>false</default>
+                <label>Payment Rejected</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+            <value>
+                <fullName>Running</fullName>
+                <default>false</default>
+                <label>Running</label>
+            </value>
+            <value>
+                <fullName>Visual Sales Path</fullName>
+                <default>false</default>
+                <label>Visual Sales Path</label>
+            </value>
+            <value>
+                <fullName>In Approval</fullName>
+                <default>false</default>
+                <label>In Approval</label>
+            </value>
+            <value>
+                <fullName>Internally Approved</fullName>
+                <default>false</default>
+                <label>Internally Approved</label>
+            </value>
+            <value>
+                <fullName>Internally Rejected</fullName>
+                <default>false</default>
+                <label>Internally Rejected</label>
+            </value>
+            <value>
+                <fullName>Sent to Seller</fullName>
+                <default>false</default>
+                <label>Sent to Seller</label>
+            </value>
+            <value>
+                <fullName>Seller Approved</fullName>
+                <default>false</default>
+                <label>Seller Approved</label>
+            </value>
+            <value>
+                <fullName>Seller Rejected</fullName>
+                <default>false</default>
+                <label>Seller Rejected</label>
+            </value>
+            <value>
+                <fullName>In Revision</fullName>
+                <default>false</default>
+                <label>In Revision</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>Completed</label>
+            </value>
+            <value>
+                <fullName>Expired</fullName>
+                <default>false</default>
+                <label>Expired</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

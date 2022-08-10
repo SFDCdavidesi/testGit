@@ -1,0 +1,11 @@
+<p>A new approval request for coupon {!BCD_Statement__c.Coupon_Code__c} BCD file has been submitted for approval in Hive.</p>
+<p>We need to obtain business and then finance approval. Therefore your approval is required as per Financial Authority Policy (FAP).</p>
+<p>Coupon name: {!BCD_Statement__c.Coupon__c}</p>
+<p>Coupon Site(s): {!BCD_Statement__c.Site__c}</p>
+<p>Coupon Start Date: {!BCD_Statement__c.Start_date__c}</p>
+<p>Coupon End Date: {!BCD_Statement__c.End_date__c}</p>
+<p>Number of sellers participated in coupon promo: {!BCD_Statement__c.Number_of_sellers__c}</p>
+<p>BCD Total invoice amount: {!BCD_Statement__c.CurrencyIsoCode} {!BCD_Statement__c.Credit_Total_Value__c}</p>
+<p>Sellers will receive charges on their monthly bill.</p>
+<p><a title="Approve or Reject" href="{!ApprovalRequest.Internal_URL}">Approve or Reject</a></p>
+<p><a title="Go to BCD Statement" href="{!BCD_Statement__c.Link}">Go to BCD Statement</a></p>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0010503 - [AM] Email notification to eBay team when Account Manager requested</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Subscription Request - Notify when created</name>
+    <style>none</style>
+    <subject>Ihr eBay Account Management-Abonnement</subject>
+    <textOnly>Hallo,
+
+
+der Händler {!Subscription_Request__c.Seller__c} hat soeben einen Account Manager abonniert.
+
+Bitte setzt euch innerhalb der kommenden 5 Werktage mit ihm in Verbindung um alle weiteren Schritte zu besprechen.
+
+Hier kann auch gemeinsam besprochen werden zu welchem Datum das Account Management genau starten soll.
+
+
+Vielen Dank.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

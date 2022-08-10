@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Negotiate</fullName>
+    <availability>online</availability>
+    <description>[#EPH-5741] Negotiate deals with sellers (Edit Feature)</description>
+    <displayType>massActionButton</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Negotiate</masterLabel>
+    <openType>sidebar</openType>
+    <page>DealNegotiation</page>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+</WebLink>

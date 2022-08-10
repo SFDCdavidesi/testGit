@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>eBay_Email__c</fullName>
+    <externalId>false</externalId>
+    <formula>OR(
+CONTAINS( CreatedBy.Email , &quot;ebay.&quot;),
+CONTAINS( CreatedBy.Email , &quot;tpa.&quot;),
+CONTAINS( CreatedBy.Email , &quot;yourccc.&quot;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>eBay Email</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

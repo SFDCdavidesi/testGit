@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Setup permissions for Conga Composer User
+US-0007694 (NA Only)</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>eBay Ads - Composer_User</label>
+</PermissionSet>

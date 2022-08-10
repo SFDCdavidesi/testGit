@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Permission_Sets__c</fullName>
+    <description>[EPH-3309] (Sprint-6) Pick list field displays permission sets for users</description>
+    <externalId>false</externalId>
+    <label>Permission Sets</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Campaign Approval</fullName>
+                <default>false</default>
+                <label>Campaign Approval</label>
+            </value>
+            <value>
+                <fullName>Ticket Manager</fullName>
+                <default>false</default>
+                <label>Ticket Manager</label>
+            </value>
+            <value>
+                <fullName>Marketing Execution Team</fullName>
+                <default>false</default>
+                <label>Marketing Execution Team</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

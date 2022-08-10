@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_CompanyDetailForContractSend</fullName>
+    <active>true</active>
+    <description>[US-0006335] Coupon - Validation Rules not to allow coinvest and company details empty for contract send out
+US-0008488-update on 06/10/2020</description>
+    <errorConditionFormula>AND(
+   ISCHANGED(Coupon_Seller_Stage__c),
+   ISPICKVAL(Coupon_Seller_Stage__c, &#39;Contract Send&#39;),
+   OR(
+      ISBLANK(Legal_Entity_Name_w__c),
+      ISBLANK(Legal_Entity_Street_w__c),
+      ISBLANK(Legal_Entity_Zip_w__c)  
+   ),
+     Contract_Language__c &lt;&gt; &#39;AU&#39;,
+   NOT( $Setup.ActiveValidationRules__c.All_Validation_Rules_Deactivated__c )
+)</errorConditionFormula>
+    <errorMessage>Legal Entity Name, Legal Entity Street and Legal Entity ZIP cannot be empty. Please fill out missing fields and then send the contract.</errorMessage>
+</ValidationRule>

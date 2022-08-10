@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sellers_Contract_Send2__c</fullName>
+    <description>EPH-7262 Adjustment to Coupon Object
+US-0010777- External Sharing for Coupon Seller Object</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Count of sellers where contract has been send to</inlineHelpText>
+    <label># Sellers Contract Send</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

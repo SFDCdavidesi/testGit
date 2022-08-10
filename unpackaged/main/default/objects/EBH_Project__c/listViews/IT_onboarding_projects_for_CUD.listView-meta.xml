@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IT_onboarding_projects_for_CUD</fullName>
+    <columns>OracleID__c</columns>
+    <columns>EBH_Seller__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Issue_97_flag__c</columns>
+    <columns>OWNER.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATEDBY_USER.ALIAS</field>
+        <operation>contains</operation>
+        <value>Userafin,FMereu,FPuzell,ABisc,EMast,RFior,MFest,AMarch</value>
+    </filters>
+    <filters>
+        <field>OWNER.LAST_NAME</field>
+        <operation>contains</operation>
+        <value>Ferrara,Montesarchio,Tedde</value>
+    </filters>
+    <label>IT onboarding projects for CUD</label>
+</ListView>

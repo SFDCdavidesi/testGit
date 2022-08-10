@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>DO NOT USE-THIS PERMISSION HAD BEEN COMBINED WITH WAVE ANALYTICS USER PERMISSION SET</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Analytics Cloud Permission Set</label>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>InsightsAppUser</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>WaveTabularDownload</name>
+    </userPermissions>
+</PermissionSet>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deactivate_Sellers</fullName>
+    <availability>online</availability>
+    <description>US-0012010 - Add New Button &quot;Deactivate Sellers&quot; Button next to &quot;Remove Sellers&quot;</description>
+    <displayType>massActionButton</displayType>
+    <linkType>page</linkType>
+    <masterLabel>Deactivate Sellers</masterLabel>
+    <openType>replace</openType>
+    <page>DeactivateCohortSeller</page>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+</WebLink>

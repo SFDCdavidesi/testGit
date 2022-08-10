@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rebate_In_Kind__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>US-0007824 - EU Advertising CPM Calculator</description>
+    <externalId>false</externalId>
+    <label>Rebate In Kind</label>
+    <type>Checkbox</type>
+</CustomField>

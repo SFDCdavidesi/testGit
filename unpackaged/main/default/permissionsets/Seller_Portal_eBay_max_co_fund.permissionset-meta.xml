@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>US-0011728 - Modifications and missing features for NA Coupons tab</description>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Coupon_Seller__c.eBay_Co_fund_Max__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Seller Portal - eBay max co-fund</label>
+</PermissionSet>

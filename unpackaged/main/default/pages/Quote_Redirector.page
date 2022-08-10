@@ -1,0 +1,116 @@
+<apex:page standardController="Quote">
+    <head>
+        <script>
+        
+        /*
+            NK:29/01/2020
+            US-0007096 Update Quote Redirector page
+        
+        */
+    function redirect()
+    {
+        var urlTo = "/apex/{page}?Id={!JSENCODE(Quote.Id)}";//TH:14/07/2022:US-0011261 - TECHDEBT: Stored XSS
+         //1p Opportunity : Product Line = 10172 or 10174
+    var isP1 = "{!OR(contains(JSENCODE(Quote.Opportunity.Product_line__c),'10172'),contains(JSENCODE(Quote.Opportunity.Product_line__c),'10174'))}";//TH:14/07/2022:US-0011261 - TECHDEBT: Stored XSS
+    var pageName = "";
+        var countryCode = "{!JSENCODE(Quote.Opportunity.Country_Code__c)}";//TH:14/07/2022:US-0011261 - TECHDEBT: Stored XSS
+        var companyCode = "{!JSENCODE(Quote.Opportunity.Company_Code__c)}";//TH:14/07/2022:US-0011261 - TECHDEBT: Stored XSS
+        var pricebookname="{!JSENCODE(Quote.Pricebook2.Name)}";//TH:14/07/2022:US-0011261 - TECHDEBT: Stored XSS
+        var PB2letters=pricebookname.substring(0,2);
+        if(isP1=="true")
+        {
+            //based on company code
+            if(companyCode=="0075")
+            {
+                //uk
+                pageName = "QuoteUK2018";
+            }else if(companyCode=="0062")
+            {
+                //de
+                if(countryCode=="DE")
+                {
+                    pageName = "AngebotOVK";
+                }else
+                {
+                    pageName = "Quote_ROE2020";
+                }
+            }else if(companyCode=="0324")
+            {
+                //roe rest of europe
+                pageName = "Quote_ROE2020";
+            }else
+            {
+                if(countryCode=="AU")
+                {
+                    pageName = "Quote_AU_2";
+                }else
+                {
+                    pageName = "Quote_AU_2_APAC";
+                }
+            }
+            
+        }else
+        {
+            if(companyCode=="0075")
+            {
+                //uk
+                pageName = "QuoteUK2018";
+            }else if(companyCode=="0062")
+            {
+                //de
+                if (PB2letters=="DE"){
+                    pageName = "AngebotOVK";
+                }else{
+                    pageName = "Quote_ROE2020";
+                }
+                
+                
+            }else if(companyCode=="0324")
+            {
+                //it
+                pageName = "Quote_ROE2020";
+            }else if(companyCode=="0111")
+            {
+                if(countryCode=="AU")
+                {
+                    //au
+                    pageName = "Quote_AU_2";
+                }else
+                {
+                    //au + apac terms&conditions
+                        pageName = "Quote_AU_2_APAC";
+                }
+            }
+        }
+        
+        
+        /*
+             var mappCode = {DE:"AngebotOVK",UK:"QuoteUK2018",IT:"Quote_IT",AU:"Quote_AU_2"};
+             if(mappCode[countryCode] != null && mappCode[countryCode] != undefined)
+             {
+                 pageName = mappCode[countryCode] ;
+             }else
+             {
+                pageName = "Quote_IT";
+             }
+             */
+             if(pageName.length==0)
+             {
+                 alert("Condition not matched!");
+             }else 
+             {
+                 urlTo  = urlTo.replace("{page}",pageName );
+                 console.log(">>TO: "+urlTo);        
+                 window.location.href = urlTo;
+             }
+             
+         }
+    
+    window.onload = function(e){ 
+        redirect();
+    }
+    
+    </script>
+    </head>
+    
+</apex:page>

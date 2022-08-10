@@ -1,0 +1,7 @@
+Hello!
+
+Your Master Campaign request {!Campaign.Name} proposed to start {!Campaign.StartDate} has been submitted and will be reviewed with your Site's Sales Planning team in the next review cycle. You will be informed if your request is accepted or rejected after the review.
+
+To view your request, please go to {!Campaign.EBH_RecordLink__c}.
+
+Thank you!

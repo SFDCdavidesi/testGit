@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Calendar_DRC</label>
+    <protected>false</protected>
+    <values>
+        <field>Active__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Additional_Fields__c</field>
+        <value xsi:type="xsd:string">EBH_AcceptProposalsStart__c</value>
+    </values>
+    <values>
+        <field>Event_End_Field__c</field>
+        <value xsi:type="xsd:string">EPH_EndDate__c</value>
+    </values>
+    <values>
+        <field>Event_End_Time_Field__c</field>
+        <value xsi:type="xsd:string">End_Time__c</value>
+    </values>
+    <values>
+        <field>Event_Start_Field__c</field>
+        <value xsi:type="xsd:string">EBH_Date__c</value>
+    </values>
+    <values>
+        <field>Event_Start_Time_Field__c</field>
+        <value xsi:type="xsd:string">Start_Time__c</value>
+    </values>
+    <values>
+        <field>Event_Title_Field__c</field>
+        <value xsi:type="xsd:string">EBH_DealTitle__c</value>
+    </values>
+    <values>
+        <field>Filter_Condition__c</field>
+        <value xsi:type="xsd:string">WHERE EBH_Date__c !=NULL AND EPH_EndDate__c !=NULL AND ((EBH_Date__c &lt;=:calendar_start  AND  EPH_EndDate__c &gt;=:calendar_end) OR (EBH_Date__c &lt;=:calendar_start  AND  EPH_EndDate__c &lt;=:calendar_end) OR (EBH_Date__c &gt;=:calendar_start AND EPH_EndDate__c &gt;=:calendar_end) OR (EBH_Date__c &gt;=:calendar_start  AND  EPH_EndDate__c &lt;=:calendar_end) ) AND EBH_DealSlotDisabled__c=FALSE AND EBH_Country__c = &#39;77&#39; AND RecordType.DeveloperName= &#39;Deal_Campaign_V1&#39;</value>
+    </values>
+    <values>
+        <field>For_Profiles__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>List_Field_Popup__c</field>
+        <value xsi:type="xsd:string">EBH_DealTitle__c,EBH_Date__c,EPH_EndDate__c,EBH_AcceptProposalsEnd__c,Open_Slots_Available_w__c</value>
+    </values>
+    <values>
+        <field>Object_Name__c</field>
+        <value xsi:type="xsd:string">EBH_DealRetailCampaign__c</value>
+    </values>
+</CustomMetadata>

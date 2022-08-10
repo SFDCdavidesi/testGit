@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_CSI_Requests</fullName>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>Request_Type__c</columns>
+    <columns>Name__c</columns>
+    <columns>Current_Sales_Rep__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Due_Date__c</columns>
+    <columns>Status__c</columns>
+    <columns>CSI_Team_Member__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Advertising_Request_Portal__c.CSI_Requests</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Complete</value>
+    </filters>
+    <label>CSI Requests</label>
+</ListView>

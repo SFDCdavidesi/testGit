@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_mandatory_for_admin_profiles</fullName>
+    <active>true</active>
+    <description>0009492 - Business Admin - System Admin must populate this field</description>
+    <errorConditionFormula>AND( CONTAINS( $Profile.Name,&quot;Admin&quot;) ,
+  isblank(Hive_Project__c) )</errorConditionFormula>
+    <errorDisplayField>Hive_Project__c</errorDisplayField>
+    <errorMessage>This field can not be empty</errorMessage>
+</ValidationRule>

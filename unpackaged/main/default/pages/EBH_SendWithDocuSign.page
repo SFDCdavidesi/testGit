@@ -1,0 +1,215 @@
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------
+@ Page:           EBH_SendWithDocuSign
+@ Version:        1.0
+@ Author:         JOY MONDOL (jmondol@deloitte.co.uk)
+@ Purpose:        [EBH] (EPH-3971) : Visualforce page to redirect and override default 'Send with DocuSign' button with custom parameters
+..................................................................................................................................................................
+@ Change history: 06.11.2017 / JOY MONDOL (jmondol@deloitte.co.uk) / Created the page.
+@ Change history: 23.07.2021 / Sophal Noch / US-0009886 / mofided the page to pre-populate Recipient
+----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<apex:page standardController="Contract" showHeader="false" sidebar="false" extensions="SendWithDocuSignController">
+   
+    <!--
+    <apex:pageMessage detail="Please upload your document and select the ebay signatory before sending it for signature."
+                      rendered="{!IF(OR(ISBLANK(Contract.CompanySignedId), Contract.Status != 'Ready for eBay Signature'), TRUE, FALSE)}" 
+                      severity="fatal" title="The contract is not 'Ready for eBay Signature'!" strength="2"/>
+    <apex:pageMessage detail="Redirecting to DocuSign (Do not CANCEL the window)" 
+                      rendered="{!!IF(OR(ISBLANK(Contract.CompanySignedId), Contract.Status != 'Ready for eBay Signature'), TRUE, FALSE)}" 
+                      severity="info" title="Please wait ..." strength="2"/>
+    --->
+
+    <apex:pageMessage detail="You don't have permission to Send With DocuSign."
+                      rendered="{!IF(isError, TRUE, FALSE)}" 
+                      severity="fatal" title="Error" strength="2"/>
+
+    <apex:form >
+            <apex:actionFunction action="{!sendWithDocuSign}" name="doSend" rerender="loadingContainer">
+                 <apex:param value="" name="docuSignUrl" assignTo="{!docuSignUrl}"/>
+            </apex:actionFunction>
+    </apex:form>
+
+    <apex:outputPanel id="loadingContainer" rendered="{!IF(isError, FALSE, TRUE)}">
+        <div style="text-align: center;">
+            <span><img src="/img/loading32.gif"/></span>
+        </div>
+    </apex:outputPanel>
+
+
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------------
+    @ Section: Body
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <br/>
+
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------------
+    @ Section: Script
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <apex:includeScript value="{!$Resource.EBH_JQuery}"/>
+    <script src="/apex/dsfs__DocuSign_JavaScript"/>
+    
+    <script type="text/javascript">
+    
+        jQuery.noConflict();        
+        jQuery( document ).ready(function($){ 
+        
+            if({!IF(isError, FALSE, TRUE)}) {
+                //********************* Option Declarations (Do not modify) ************************************************************************************//
+                var RC   = '';      // Related Content (default no related content)
+                var RSL  = '';      // Recipient Signer Limit (default no limit)
+                var RSRO = '';      // Recipient Starting Routing Order (default 1)
+                var RROS = '';      // Recipient Routing Order Sequential (default not sequential)
+                var CCRM = '';      // Custom Contact Role Map (default config role)
+                var CCTM = '';      // Custom Contact Type Map (default Signer)
+                var CCNM = '';      // Custom Contact Note Map (default no note)
+                var CRCL = '';      // Custom Related Contact List (default object contact)
+                var CRL  = '';      // Custom Recipient List 
+                var OCO  = '';      // One Click Option (default edit envelope screen)
+                var DST  = '';      // DocuSign Template ID (default no template)
+                var LA   = '';      // Load Attachments (default on)
+                var CEM  = '';      // Custom Email Message (default in config) 
+                var CES  = '';      // Custom Email Subject (default in config)
+                var STB  = '';      // Show Tag Button (default in config) 
+                var SSB  = '';      // Show Send Button (default in config) 
+                var SES  = '';      // Show Email Subject (default in config) 
+                var SEM  = '';      // Show Email Message (default in config)
+                var SRS  = '';      // Show Reminder/Expire (default in config) 
+                var SCS  = '';      // Show Chatter (default in config) 
+                var RES  = '';      // Reminder and Expiration Settings 
+                //*********************************************************************************************************************************************//
+                 
+                //********************* Modify individual options here: ***************************************************************************************//
+                //Ex: GetRelContentIDs("{~Opportunity.Id}"); 
+                //RC   = ''; 
+
+                //Ex: '3'
+                //RSL  = ''; 
+
+                //Ex: '1' 
+                //RSRO = '';  
+
+                //Ex: '1' 
+                //RROS = '';
+
+                //Ex: 'Decision Maker~Signer1; Economic Buyer~Carbon Copy' 
+                //CCRM = '';  
+
+                //Ex: 'Decision Maker~Signer; Economic Buyer~Carbon Copy'
+                //CCTM = ''; 
+
+                //Ex: 'Decision Maker~Note for DM; Economic Buyer~Note For EB; DEFAULT_NOTE~Default Note'
+                //CCNM = '';
+
+                //Ex1: Calling individual 
+                //'MyContacts__r,Email~Email__c;FirstName~First_Name__c;LastName~Last_Name__c;Role~Role__c,LoadDefaultContacts~0' 
+                //Ex2: Calling Signing Group NOTE: OCO = 'Tag' or 'Send' is required for SigningGroup
+                //'MyContacts__r,SigningGroup~SigningGroup__c,LoadDefaultContacts~1'
+                //OCO = 'Tag'; // or 'Send' 
+                //Ex3: Calling Signing Group and Individuals off the same default object contact 
+                //NOTE: OCO = 'Tag' or 'Send' is required for SigningGroup
+                //'MyContacts__r,SigningGroup~SigningGroup__c;Email~Email__c;FirstName~First_Name__;LastName~Last_Name__c;
+                //Role~Role__c,LoadDefaultContacts~1'
+                //OCO = 'Tag'; // or 'Send' 
+                //CRCL = '';
+
+                //Ex1: Calling Individual
+                //'Email~;FirstName~;LastName~;Role~SignInPersonName~;RoutingOrder~;AccessCode~;RecipientNote~;SignNow~,LoadDefaultContacts~1'
+                //Ex2: Calling Signing Group NOTE: OCO = 'Tag' or 'Send' is required for SigningGroup
+                //’SigningGroup~;Role~;RoutingOrder~;AccessCode~;RecipientNote~,LoadDefaultContacts~1'
+                //OCO = 'Tag'; // or 'Send'
+                
+
+                // 22.07.2021 / Sophal Noch / US-0009886 use Contract.Business_Contact__c as recipient 2
+                if({!IF(AND(!ISBLANK(Contract.Business_Contact__c), !ISBLANK(Contract.Business_Contact__r.Email)), TRUE, FALSE)}){
+                    //TH:14/07/2022:US-0011261 - TECHDEBT: Stored XSS - add JSENCODE
+                     CRL= 'Email~{!JSENCODE(Contract.Business_Contact__r.Email)};'
+                     + 'Role~Signer 2;'
+                     + 'FirstName~{!JSENCODE(Contract.Business_Contact__r.FirstName)};'
+                     + 'LastName~{!JSENCODE(Contract.Business_Contact__r.LastName)};'
+                     + 'RoutingOrder~2;'
+                     + 'RecipientNote~'
+                     + 'Hello {!JSENCODE(Contract.Business_Contact__r.Name)}_COMMA_\\n\\n'
+                     + 'The eBay Legal Department has completed its review of {!JSENCODE(Contract.RecordType.Name)}:{!JSENCODE(Contract.ContractNumber)} '
+                     + 'requested by {!JSENCODE(Contract.Owner.Name)} '
+                     + 'with a value of '+{!Contract.EBH_ContractValue__c}.toFixed(2)+'.\\n\\n'//TH:14/07/2022:US-0011261 - TECHDEBT: Stored XSS - false issues 
+                     + 'Please take a minute to read through the attached and if you approve_COMMA_ proceed with your signature or approval.\\n'
+                     + 'For questions_COMMA_ please reach out to eucontracts@ebay.com\\n\\n'
+                     + 'Regards';
+                     
+                     // 27.08.2021 / Sophal Noch / US-0010102
+                     CCRM='Signer 2~Seller Signatory';
+                     CCTM='Signer 2~Signer';
+                     
+                }
+
+                //Ex. Tag (or Send)
+                // OCO  = 'Tag'; // 22.07.2021 / Sophal Noch / US-0009886 disable this to have the same UI as Standard Send With DocuSign
+
+                //Ex: '67870A79-A0B5-4596-8AC1-CC7CC1EA01EB'
+                //DST  = ''; 
+
+                //Ex: '0'  
+                //LA   = ''; 
+
+                //Ex: 'Envelope sent by [FirstName] [LastName] ([Email])!' 
+                //CEM  = ''; 
+
+                //Ex: 'Re: Opportunity Name: {~Opportunity.Name}' 
+                //CES  = ''; 
+
+                //Ex: '1'
+                //STB  = ''; 
+
+                //Ex: '1' 
+                //SSB  = '';  
+
+                //Ex: '1'
+                SES  = '1';  
+
+                //Ex: '1'
+                //SEM  = '1';  
+
+                //Ex: '1'
+                //SRS  = ''; 
+
+                //Ex: '1'
+                //SCS  = '';  
+
+                //Ex: '0,1,2,0,120,3'
+                //RES  = '';  
+                //********************************************************************************************************************************************//
+                            
+                //********************* Page Callout (Do not modify) *****************************************************************************************//
+                var docURL 
+                    = "/apex/dsfs__DocuSign_CreateEnvelope?DSEID=0&SourceID={!JSENCODE(Contract.Id)}"
+                               + "&RC="   + RC 
+                               + "&RSL="  + RSL
+                               + "&RSRO=" + RSRO
+                               + "&RROS=" + RROS
+                               + "&CCRM=" + CCRM
+                               + "&CCTM=" + CCTM
+                               + "&CRCL=" + CRCL
+                               + "&CRL="  + CRL
+                               + "&OCO="  + OCO
+                               + "&DST="  + DST
+                               + "&CCNM=" + CCNM
+                               + "&LA="   + LA
+                               + "&CEM="  + CEM
+                               + "&CES="  + CES
+                               + "&SRS="  + SRS
+                               + "&STB="  + STB
+                               + "&SSB="  + SSB
+                               + "&SES="  + SES
+                               + "&SEM="  + SEM
+                               + "&SRS="  + SRS
+                               + "&SCS="  + SCS
+                               + "&RES="  + RES;
+
+                //********************************************************************************************************************************************//
+                doSend(docURL);
+            }
+    
+                
+
+        });
+        
+    </script>
+</apex:page>

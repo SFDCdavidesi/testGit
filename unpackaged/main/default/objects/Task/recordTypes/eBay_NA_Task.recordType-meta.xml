@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>eBay_NA_Task</fullName>
+    <active>true</active>
+    <label>eBay NA Task</label>
+    <picklistValues>
+        <picklist>Action_Committed__c</picklist>
+        <values>
+            <fullName>Account Specifics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B2C promo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CBT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coronavirus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Daily deals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Free shipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Increase inventory</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Item%2FOrder Discounts %28SME%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Limits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Listing optimization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other - specify in comments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Returns</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seller standard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping options</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shop upgrade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical issues%2F Merchant Solutions</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Action_Outcome__c</picklist>
+        <values>
+            <fullName>DMC Committed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMC Interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMC Not Interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engaged %28listened but no commitment%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Highly engaged %28committed%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not engaged at present</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not interested in Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not reached %28 failed call attempt%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not reached %28wrong details%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seller ineligible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To be called back</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unreachable - email sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unreachable - no action</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ad_Products__c</picklist>
+        <values>
+            <fullName>1PD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PLA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PLS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PLX</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>EBH_Response__c</picklist>
+        <values>
+            <fullName>Call Back Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call Not Answered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call Planned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMC Committed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMC Interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMC Not Interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMC Not Reached</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone Blacklist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unsubscribe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong Phone Number</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MCStatus__c</picklist>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Updated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Main_Objective__c</picklist>
+        <values>
+            <fullName>Increase Ad Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Increase Adoption</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optimization Strategy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Start using Ads Product%28s%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Outcome2__c</picklist>
+        <values>
+            <fullName>Account committed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account is ineligible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account not interested at all</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Outcome__c</picklist>
+        <values>
+            <fullName>Negative</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Neutral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Positive</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Project__c</picklist>
+        <values>
+            <fullName>Managed Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Onboarding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason__c</picklist>
+        <values>
+            <fullName>Invalid Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing Documents</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing%2FAdditional Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Result__c</picklist>
+        <values>
+            <fullName>Bounced Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Busy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contacted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Left Message</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unable to Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong Number</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Scaling_Stage__c</picklist>
+        <values>
+            <fullName>Stage 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stage 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stage 3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Assigned</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deferred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting on someone else</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sub_Type__c</picklist>
+        <values>
+            <fullName>Acquisition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outreach</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scaling</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subject</picklist>
+        <values>
+            <fullName>Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reminder%2FUpdate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Send Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Send Quote</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solution Architect Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submit Inventory</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submit Marketing Assets</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone Outreach</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To Do</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_Task__c</picklist>
+        <values>
+            <fullName>Pitch%2FDemo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proactive Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reactive Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

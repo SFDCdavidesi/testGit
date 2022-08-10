@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marketing_Placement_ID__c</fullName>
+    <description>US-0010159 - ADS - Campaign Attribution Field Creation :
+Attribution 1PD Module ID based on Module Type</description>
+    <externalId>false</externalId>
+    <label>Marketing Placement ID</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Marketing_Placement_Name__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>100000</fullName>
+                <default>false</default>
+                <label>100000</label>
+            </value>
+            <value>
+                <fullName>100001</fullName>
+                <default>false</default>
+                <label>100001</label>
+            </value>
+            <value>
+                <fullName>100002</fullName>
+                <default>false</default>
+                <label>100002</label>
+            </value>
+            <value>
+                <fullName>100003</fullName>
+                <default>false</default>
+                <label>100003</label>
+            </value>
+            <value>
+                <fullName>100004</fullName>
+                <default>false</default>
+                <label>100004</label>
+            </value>
+            <value>
+                <fullName>100010</fullName>
+                <default>false</default>
+                <label>100010</label>
+            </value>
+            <value>
+                <fullName>100011</fullName>
+                <default>false</default>
+                <label>100011</label>
+            </value>
+            <value>
+                <fullName>100014</fullName>
+                <default>false</default>
+                <label>100014</label>
+            </value>
+            <value>
+                <fullName>100013</fullName>
+                <default>false</default>
+                <label>100013</label>
+            </value>
+            <value>
+                <fullName>100023</fullName>
+                <default>false</default>
+                <label>100023</label>
+            </value>
+            <value>
+                <fullName>100005</fullName>
+                <default>false</default>
+                <label>100005</label>
+            </value>
+            <value>
+                <fullName>100015</fullName>
+                <default>false</default>
+                <label>100015</label>
+            </value>
+            <value>
+                <fullName>100162</fullName>
+                <default>false</default>
+                <label>100162</label>
+            </value>
+            <value>
+                <fullName>100007</fullName>
+                <default>false</default>
+                <label>100007</label>
+            </value>
+            <value>
+                <fullName>100008</fullName>
+                <default>false</default>
+                <label>100008</label>
+            </value>
+            <value>
+                <fullName>100012</fullName>
+                <default>false</default>
+                <label>100012</label>
+            </value>
+            <value>
+                <fullName>100026</fullName>
+                <default>false</default>
+                <label>100026</label>
+            </value>
+            <value>
+                <fullName>100028</fullName>
+                <default>false</default>
+                <label>100028</label>
+            </value>
+            <value>
+                <fullName>100027</fullName>
+                <default>false</default>
+                <label>100027</label>
+            </value>
+            <value>
+                <fullName>100029</fullName>
+                <default>false</default>
+                <label>100029</label>
+            </value>
+            <value>
+                <fullName>100024</fullName>
+                <default>false</default>
+                <label>100024</label>
+            </value>
+            <value>
+                <fullName>100025</fullName>
+                <default>false</default>
+                <label>100025</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>home page full bleed</controllingFieldValue>
+            <valueName>100005</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>mNative iOS home page fullbleed</controllingFieldValue>
+            <valueName>100025</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>home page full bleed 2</controllingFieldValue>
+            <valueName>100015</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Home Page Full Bleed 3</controllingFieldValue>
+            <valueName>100162</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>mWeb home page Full bleed 1</controllingFieldValue>
+            <valueName>100007</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>mWeb home page Full bleed 2</controllingFieldValue>
+            <valueName>100008</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>mWeb home page Full bleed 4</controllingFieldValue>
+            <valueName>100012</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>mNative Android home page multicta</controllingFieldValue>
+            <valueName>100026</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>mNative Android home page multicta 2</controllingFieldValue>
+            <valueName>100028</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>mNative iOS home page multicta</controllingFieldValue>
+            <valueName>100027</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>topp home page main placement</controllingFieldValue>
+            <valueName>100000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>topp home page placement 2</controllingFieldValue>
+            <valueName>100001</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>topp home page placement 3</controllingFieldValue>
+            <valueName>100002</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>topp home page placement 4</controllingFieldValue>
+            <valueName>100003</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>home page loyalty placement</controllingFieldValue>
+            <valueName>100004</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>mWeb home page loyalty</controllingFieldValue>
+            <valueName>100010</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>mWeb home page loyalty 2</controllingFieldValue>
+            <valueName>100011</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>mNative AnDroid home page loyalty</controllingFieldValue>
+            <valueName>100014</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>mNative iOS home page loyalty</controllingFieldValue>
+            <valueName>100013</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>mNative iOS home page multicta 2</controllingFieldValue>
+            <valueName>100029</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>mNative iOS home page loyalty 2</controllingFieldValue>
+            <valueName>100023</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>mNative Android home page fullbleed</controllingFieldValue>
+            <valueName>100024</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

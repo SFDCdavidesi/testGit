@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Origin__c</fullName>
+    <description>US-0009330 - [DE Pro-Trader]Create New field &quot;Signed up Date&quot;,&quot;Origin&quot; and add Comments</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the Seller registation source populated by Marketing Cloud.</inlineHelpText>
+    <label>Origin</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Email</fullName>
+                <default>false</default>
+                <label>Email</label>
+            </value>
+            <value>
+                <fullName>Message Centre</fullName>
+                <default>false</default>
+                <label>Message Centre</label>
+            </value>
+            <value>
+                <fullName>Banner</fullName>
+                <default>false</default>
+                <label>Banner</label>
+            </value>
+            <value>
+                <fullName>Banner(Seller Hub)</fullName>
+                <default>false</default>
+                <label>Banner(Seller Hub)</label>
+            </value>
+            <value>
+                <fullName>GCX</fullName>
+                <default>false</default>
+                <label>GCX</label>
+            </value>
+            <value>
+                <fullName>Message Center Reminder</fullName>
+                <default>false</default>
+                <label>Message Center Reminder</label>
+            </value>
+            <value>
+                <fullName>Email Reminder</fullName>
+                <default>false</default>
+                <label>Email Reminder</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

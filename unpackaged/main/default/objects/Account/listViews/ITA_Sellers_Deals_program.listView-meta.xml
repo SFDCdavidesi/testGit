@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ITA_Sellers_Deals_program</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.RECORDTYPE</columns>
+    <columns>EBH_OracleID__c</columns>
+    <columns>EBH_GMVLast12Months__c</columns>
+    <columns>CORE.USERS.FIRST_NAME</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>EBH_DealsProgram__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>EBH_DealsProgram__c</field>
+        <operation>equals</operation>
+        <value>Allow,Accepted,Approved,Declined</value>
+    </filters>
+    <filters>
+        <field>EBH_RevRollup__c</field>
+        <operation>equals</operation>
+        <value>IT</value>
+    </filters>
+    <label>ITA Sellers Deals program</label>
+</ListView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_CustomCampaignMemberTrigger__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>[EBH] To enable/disable the custom campaign member</description>
+    <externalId>false</externalId>
+    <inlineHelpText>To enable/disable the custom campaign member</inlineHelpText>
+    <label>Custom Campaign Member</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0008189 - Enhancement for financial approval on support tickets</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Support Ticket Approval Request - Rejected</name>
+    <style>none</style>
+    <subject>REJECTED - {!Case.CaseNumber} by {!Case.CreatedBy}</subject>
+    <textOnly>The following salesforce change request has been rejected by: {!User.FirstName} {!User.LastName}
+
+Approval Step Comments: {!ApprovalRequest.Comments}
+
+Ticket Submitter: {!Case.CreatedBy}
+Ticket No: {!Case.CaseNumber}
+Link to Ticket: {!Case.Link}
+
+Ticket Details:
+{!Case.Description__c}
+
+Regards,
+{!User.FirstName}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>DEdealReadOnlyErrorMessage</label>
+    <protected>false</protected>
+    <values>
+        <field>Bigger_Body_Test__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>Heading__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>Help_Text__c</field>
+        <value xsi:type="xsd:string">&lt;b&gt;Es tut uns leid, aber Sie haben keine Berechtigung, WOW! &lt;/br&gt;Angebote zu erstellen.&lt;/b&gt;&lt;/br&gt;&lt;/br&gt;Um Hilfe zu erhalten, bitte klicken Sie auf „Mich anrufen“ unten &lt;/br&gt;auf unserer &lt;a href=&quot;https://www.ebay.de/help/home&quot;&gt;Kundenservice-Seite&lt;/a&gt;.</value>
+    </values>
+    <values>
+        <field>Inner_Help_Text__c</field>
+        <value xsi:nil="true" />
+    </values>
+</CustomMetadata>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <assignments>
+        <name>Substring_Name_Assignment</name>
+        <label>Substring Name (US-0012082)</label>
+        <locationX>746</locationX>
+        <locationY>349</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Name</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Substring_Name</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>US-0012082 - Error when Seller communication record name &gt; 80</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>Substring_Name</name>
+        <dataType>String</dataType>
+        <expression>LEFT({!$Record.Name}, 80)</expression>
+    </formulas>
+    <interviewLabel>Seller Communication - Record Trigger Flow - Before Context {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Seller Communication - Triggered Flow Before-Save-Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>650</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Substring_Name_Assignment</targetReference>
+        </connector>
+        <object>Seller_Communication__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

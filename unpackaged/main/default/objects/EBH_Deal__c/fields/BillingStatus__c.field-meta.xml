@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BillingStatus__c</fullName>
+    <description>EPH-5286</description>
+    <externalId>false</externalId>
+    <label>Billing Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>None (No Coinvest)</fullName>
+                <default>false</default>
+                <label>None (No Coinvest)</label>
+            </value>
+            <value>
+                <fullName>Partly paid</fullName>
+                <default>false</default>
+                <label>Partly paid</label>
+            </value>
+            <value>
+                <fullName>Fully paid</fullName>
+                <default>false</default>
+                <label>Fully paid</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

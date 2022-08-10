@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0009455 - Seller 360:Email Alert on Change of Risk Status</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Seller Risk Status Notification</name>
+    <style>none</style>
+    <subject>{!Account.Name} Risk status has been {!Account.Risk_Status__c}</subject>
+    <textOnly>Business Name: {!Account.Name}
+
+Risk Status: {!Account.Risk_Status__c}
+
+Comments: {!Account.Comments__c}
+
+Risk last modified by: {!Account.Risk_Last_modified_by__c}
+
+For more details, please go to: {!Account.Link}.
+
+Thank you.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

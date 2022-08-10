@@ -1,0 +1,17 @@
+<p>Dear {!Case.Who_should_have_admin_access__c} </p>
+<p>&nbsp;</p>
+<p>Hive contains data that is classified as "Internal" and "Confidential" as per eBays Data Elements Classification.</p>
+<p>&nbsp;</p>
+<p>By requesting export functionality from Hive you are confirming you are aware of the restrictions of use for the data you are exporting, you are approved to use this data as part of your job role and agree this data is for internal use only and must not be shared.</p>
+<p>&nbsp;</p>
+<p>Any data downloaded must be stored in accordance with eBay's information security policies and deleted as soon as the information is no longer needed.</p>
+<p>&nbsp;</p>
+<p>For more information relating to eBay's privacy policies please refer to the information on the hub:</p>
+<p><a href="https://hub.corp.ebay.com/site/legal/page/privacy/" target="_blank" rel="noopener">https://hub.corp.ebay.com/site/legal/page/privacy/</a></p>
+<p>&nbsp;</p>
+<p>For more information on eBay's data elements classification please refer to this page on the Information Security Policies WIKI -&nbsp;<a href="https://wiki.vip.corp.ebay.com/display/IS/Data+Elements+Classification" target="_blank" rel="noopener">https://wiki.vip.corp.ebay.com/display/IS/Data+Elements+Classification</a></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><strong><a title="I confirm I have read the above and I agree to the terms stated" href="{!$Label.SiteURL+'?id='+URLENCODE(Case.Unique_Id__c)+'&amp;restype=pii'}" target="_blank">&lt;I confirm I have read the above and I agree to the terms stated&gt;</a></strong></p>
+<p>&nbsp;</p>
+<p>Thank you</p>
+<p>Team Hive</p>

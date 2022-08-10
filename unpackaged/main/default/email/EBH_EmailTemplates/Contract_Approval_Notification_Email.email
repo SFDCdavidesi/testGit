@@ -1,0 +1,28 @@
+Dear Contract Approver,
+
+A ‘{!Contract.RecordType}’ has been requested with ‘{!Contract.Account}’ and will require your approval.
+
+Contract Value: {!Contract.EBH_ContractValue__c}
+Contract Exposure: {!Contract.EBH_ContractExposure__c}
+
+Requester: {!Contract.OwnerFullName}
+
+Requester Comments: {!Contract.EBH_RequesterNotes__c}
+
+Approval Comments: {!ApprovalRequest.Comments}
+
+
+
+
+To approve or reject this item, reply to this email with the word APPROVE, APPROVED, YES, REJECT, REJECTED, or NO in the first line of the email message.
+To review the request follow the link:
+
+{!Contract.Link}
+
+If replying via email you can also add comments on the second line. The comments will be stored with the approval request in Hive.
+
+Note: For Hive to process your response the word APPROVE, APPROVED, YES, REJECT, REJECTED, or NO must be in the very first line of the reply email and any comment must be in the second line.
+
+Thank you,
+
+The Hive Team

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conditional_Mandatory_Stage_Store_Launch</fullName>
+    <active>true</active>
+    <description>US-0018736 [AU] New Project Process/Fields for ebay AU SMB and ebay AU Enterprise
+US-0007032 [AU] Conditional Mandatory validations for &quot;eBay User Id&quot; new text field in Object &quot;Project&quot;</description>
+    <errorConditionFormula>IF( AND(RecordType.DeveloperName = &#39;eBayAUSMB&#39;, OR(ISPICKVAL(EBH_Stage__c, &#39;Store Launched&#39;),ISPICKVAL(EBH_Stage__c, &#39;Live to Site&#39;)),OR( ISBLANK(OracleID__c),ISBLANK(EBH_Seller__c),ISBLANK(Listings__c),ISBLANK(LegalName__c),ISBLANK(ABNVATNumber__c) )  )
+
+,true
+,false)</errorConditionFormula>
+    <errorMessage>The following fields are mandatory : 
+Seller,
+Oracle ID, 
+Listings, 
+Legal Name , 
+ABN Number</errorMessage>
+</ValidationRule>

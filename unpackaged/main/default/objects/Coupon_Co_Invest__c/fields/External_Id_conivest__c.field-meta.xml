@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>External_Id_conivest__c</fullName>
+    <description>US-0007256 POP COUPON - ETL - BATCH CREATE COUPON SELLER L3, this field will be populated by the ETL process. Generated as: &lt;CouponSelellerName&gt;-&lt;CategoryTree_External_Id&gt;</description>
+    <externalId>true</externalId>
+    <label>External Id</label>
+    <length>80</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

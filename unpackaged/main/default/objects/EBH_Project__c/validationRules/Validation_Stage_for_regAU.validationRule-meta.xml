@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_Stage_for_regAU</fullName>
+    <active>true</active>
+    <description>US-0007728 - [AU] MP Restrict Project Stage Updates</description>
+    <errorConditionFormula>AND($Profile.Name!=&#39;System Administrator&#39;, AND($Profile.Name!=&#39;System Administrator&#39;,$User.Id!=&#39;0056A000000yx6iQAA&#39;), RecordType.DeveloperName=&#39;ManagedPayment&#39;,ISCHANGED(EBH_Stage__c),RegistrationCountry__c=&#39;Australia&#39;
+,OR(ISPICKVAL(EBH_Stage__c, &#39;Preboarded&#39;),ISPICKVAL(EBH_Stage__c, &#39;Onboarded&#39;)),
+NOT(ISPICKVAL(PRIORVALUE(EBH_Stage__c), &#39;Onboarded&#39;))
+)</errorConditionFormula>
+    <errorMessage>Please note changes to Stage beyond Integration can only be made by Admin</errorMessage>
+</ValidationRule>

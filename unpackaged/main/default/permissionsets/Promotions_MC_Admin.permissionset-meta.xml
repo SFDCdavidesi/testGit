@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>US-0010275 - Permission Set to control &quot;MC Whitelisted&quot; field on Coupon object.</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Coupon_Seller__c.SEP_whitelisted__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Coupon__c.MC_Whitelisted__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Promotions MC Admin</label>
+</PermissionSet>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0009871 - [Refurb] Send Click Agreements to Contract Sellers</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Seller_Refurb_Contract_DE</name>
+    <style>none</style>
+    <subject>eBay Refurbished Programm | {!EBH_ContractSeller__c.EBH_BusinessName__c} | {!Contract.StartDate}</subject>
+    <textOnly>eBay Refurbished – Vertrag
+Mit diesem eBay Refurbished Vertrag (die ebenfalls geltenden ALLGEMEINEN GESCHÄFTSBEDINGUNGEN FÜR DIE TEILNAHME AN DEM REFURBISHED-PROGRAMM finden Sie zu dieser Email hier verlinkt) bieten wir Ihnen die Teilnahme am Refurbished-Programm an. Durch Anklicken des nachstehenden Buttons “ICH STIMME ZU” erklären Sie Ihre ausdrückliche Zustimmung zu diesem Vertrag und den AGB und somit Ihre Teilnahme am Refurbished-Programm von eBay. Wenn Sie allen Angaben zustimmen, klicken Sie bitte auf den Button:
+
+ICH STIMME ZU
+
+Verkäufer   {!Contract.Account}
+{!Contract.BusinessContactStreet__c}
+{!Contract.BusinessContactPostalCode__c}
+{!Contract.BusinessContactCity__c}
+Shop Name des Verkäufers  {!EBH_ContractSeller__c.EBH_BusinessName__c}
+eBay Programm  Refurbished
+Programm Start  {!Contract.StartDate}
+eBay-Websites(s)  ebay.de
+Ebay Vertragspartner  eBay GmbH, Albert-Einstein-Ring 2-6, 14532 Kleinmachnow
+
+
+Mit freundlichen Grüßen
+
+Ihr eBay-Team
+
+AGB Refurbished-Programm</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

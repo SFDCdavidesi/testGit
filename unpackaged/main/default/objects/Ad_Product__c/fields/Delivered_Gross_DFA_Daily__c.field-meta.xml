@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Delivered_Gross_DFA_Daily__c</fullName>
+    <description>US-0007934 - [Ads 2020] Daily Ads Revenue - Required EU Fields for Accruals</description>
+    <externalId>false</externalId>
+    <label>Delivered Gross (DFA Daily)</label>
+    <summarizedField>Ad_Revenue_Daily__c.X3rd_Party_Gross__c</summarizedField>
+    <summaryForeignKey>Ad_Revenue_Daily__c.Ad_Product__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

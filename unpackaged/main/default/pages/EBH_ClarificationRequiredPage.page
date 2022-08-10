@@ -1,0 +1,213 @@
+<!-- EBH_ClarificationRequiredPage.page -->
+<apex:page wizard="false"
+    title="Clarification Required Page"
+    showQuickActionVfHeader="false"
+    cache="false"
+    standardStylesheets="false"
+    showHeader="false"
+    setup="false"
+    showChat="false"
+    sidebar="false"
+    applyHtmlTag="false"
+    applyBodyTag="false"
+    language="{!dealSite}"
+    controller="EBH_DealLandingPageController"
+    action="{!handleDealAgree}">
+
+    <head>
+		<title>Clarification Required Page</title>
+		<meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+        <apex:slds />
+        <style type="text/css"> 
+            html {
+                background: unset !important;
+            }
+            .footer-item {
+                margin-bottom: 20px !important;
+                text-align: center;
+                margin: auto;
+            }
+        </style>
+	</head>
+
+    <apex:stylesheet value="{!URLFOR($Resource.Lightning_design_system, 'styles/salesforce-lightning-design-system.min.css')}"/>
+
+    <body>
+    <apex:form id="mainForm" rendered="{!loadSuccess}">
+    <!-- HEADER -->
+        <div class="slds-scope">
+            <div class="slds-page-header slds-page-header--object-home fixed-header">
+                <div size="12" class="container">
+                    
+                    <div class="slds-grid slds-wrap">
+                        <div class="slds-col slds-form slds-form_horizontal">
+                            <div class="page-section page-header">
+                                <ul class="slds-list--horizontal">
+                                    <li class="slds-list__item slds-m-left_medium"><h1 class="slds-text-heading--medium heading-mb"><b>{!($Label.Label_Klarungsprozess)}</b></h1></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-float_right">
+                            <div class="slds-form slds-form_horizontal">
+                                <img class="logo" src="{!$Resource.pageheader_ebaylogo}"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- / HEADER -->
+
+    <!-- BODY -->
+        <!-- MESSAGE -->
+        <!-- SUCCESS -->
+        <apex:outputpanel rendered="{!IF(submitResult == null, false, submitResult['isSuccess'])}">
+            <div id="succesToast" class="demo-only" style="height:4rem;">
+                <div class="slds-notify_container slds-is-relative slds-p-around_medium">
+                    <div class="slds-notify slds-notify_toast slds-theme_success slds-float_left" role="status">
+                        <span class="slds-icon_container slds-icon-utility-success slds-m-right_small slds-no-flex slds-align-top" title="Description of icon when needed">
+                            <svg class="slds-icon slds-icon_small" aria-hidden="true">
+                                <use href="{!URLFOR($Resource.Lightning_design_system, 'icons/utility-sprite/svg/symbols.svg#success')}"></use>
+                            </svg>
+                        </span>
+                        <div class="slds-notify__content">
+                            <h2 class="slds-text-heading_small "><apex:pageMessage severity="INFO" title="{!submitResult['msg']}"/></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </apex:outputpanel>
+
+        <!-- / SUCCESS>
+		<!-- ERROR -->
+        <apex:outputpanel rendered="{!IF(submitResult == null, false, !submitResult['isSuccess'])}">
+            <div id="errorToast" class="demo-only" style="height:4rem;">
+                <div class="slds-notify_container slds-is-relative slds-p-around_medium">
+                    <div class="slds-notify slds-notify_toast slds-theme_error slds-float_left" role="status">
+                        <span class="slds-icon_container slds-icon-utility-error slds-m-right_small slds-no-flex slds-align-top" title="Description of icon when needed">
+                            <svg class="slds-icon slds-icon_small" aria-hidden="true">
+                                <use href="{!URLFOR($Resource.Lightning_design_system, 'icons/utility-sprite/svg/symbols.svg#error')}"></use>
+                            </svg>
+                        </span>
+                        <div class="slds-notify__content">
+                            <h2 class="slds-text-heading_small "><apex:pageMessage title="{!submitResult['msg']}" severity="INFO"/></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </apex:outputpanel>
+
+		<!-- / ERROR -->
+        <!-- / MESSAGE -->
+    <div id="container" class="slds-container slds-p-around_large" style="">
+        <div class="slds-box slds-theme--default slds-container--medium">
+        <legend id="newexpenseform" class="slds-text-heading--small 
+          slds-p-vertical--small">
+          {!($Label.Label_ClarificationUplHeader)}
+        </legend>
+        <div class="slds-form slds-p-around_medium slds-form_stacked">
+            <div class="slds-form-element">
+                <div class="slds-form-element__control">
+                    <abbr class="slds-required" title="required">* </abbr>
+                    <apex:inputTextarea id="txtComment" styleClass="slds-textarea" value="{!comment}"/>
+                </div>
+            </div>
+            <div class="slds-form-element">
+                <div class="slds-form-element__control ">
+                     <button id="ebh_submitbtn" class="slds-button slds-button_brand" onclick="doUpdateDealComment(); return false;">{!($Label.Label_Submit_button)}</button>
+                     <!--<apex:commandButton styleClass="slds-button slds-button_brand" action="{!updateDealComment}" value="Save"/> -->
+                </div>
+            </div>
+        </div>
+            
+      </div>
+    </div>
+    <!-- / BODY -->
+
+    <!-- FOOTER -->
+        <div class="slds">
+            <footer role="contentinfo"  class="slds-p-around_small">
+                <div class="slds-grid slds-gutters slds-grid_vertical">
+                    <div class="slds-col slds-size_1-of-1">
+                        <hr class="separate-line" />
+                    </div>
+                    <div class="slds-col slds-grid slds-gutters slds-size_1-of-1 cus-p-footer">
+                        <div class="slds-col slds-size_12-of-12 np">
+                            <div class="slds-float_left slds-size_full p4ebay slds-is-relative">
+                                <p class="pd-left footer-small footer-item"> 
+                                   {!($Label.Label_Copyright_content)}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    <!-- / FOOTER -->
+        <!-- Spinner -->
+        <div id="spinner" class="demo-only" style="height:6rem; display:none">
+            <div class="slds-spinner_container">
+                <div role="status" class="slds-spinner slds-spinner_medium slds-spinner_brand">
+                    <span class="slds-assistive-text">Loading</span>
+                    <div class="slds-spinner__dot-a"></div>
+                    <div class="slds-spinner__dot-b"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Spineer -->
+        <apex:actionFunction name="doClarifying" action="{!updateDealComment}" rerender="mainForm,scriptPanel"/>
+    </apex:form>
+    <!-- ERROR INIT-->
+    <apex:outputpanel rendered="{!IF(initResult == null, false, !initResult['isSuccess'])}">
+        <div id="errorToast" class="demo-only" style="height:6rem;">
+            <div class="slds-notify_container slds-is-relative slds-p-around_medium">
+                <div class="slds-notify slds-notify_toast slds-theme_error slds-float_left" role="status">
+                    <span class="slds-icon_container slds-icon-utility-error slds-m-right_small slds-no-flex slds-align-top" title="Description of icon when needed">
+                        <svg class="slds-icon slds-icon_small" aria-hidden="true">
+                            <use href="{!URLFOR($Resource.Lightning_design_system, 'icons/utility-sprite/svg/symbols.svg#error')}"></use>
+                        </svg>
+                    </span>
+                    <div class="slds-notify__content">
+                        <h2 class="slds-text-heading_small "><apex:pageMessage title="{!initResult['msg']}" severity="INFO"/></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </apex:outputpanel>
+    <!-- / ERROR INIT -->
+    </body>
+
+    <apex:outputpanel id="scriptPanel">
+        <script>
+            // prevent many submitting
+            if("{!JSENCODE(dealWrap.status)}" == "{!DEAL_STATUS_CLARIFICATION_REQUIRED}"){//TH:14/07/2022:US-0011261 - TECHDEBT: Stored XSS
+                document.getElementById('ebh_submitbtn').disabled = true;
+            }
+            function doUpdateDealComment(){
+                try {
+                   
+                    //var dealid = "{!dealid}";
+                    var dealid = "{!JSENCODE(dealid)}"; //LA-04-05-2022:US-0011260
+                    var comment = document.getElementById("{!$Component.mainForm.txtComment}").value;
+                    if(!comment){
+                        alert('Comment can\'t be empty.');
+                        return;
+                    }
+                    document.getElementById('ebh_submitbtn').disabled = true;
+                    document.getElementById('spinner').style.display = 'block';
+                    doClarifying();
+                    
+                    
+                } catch(e) {
+                    console.log('Exception', e);
+                }
+            }
+    
+         </script>
+
+    </apex:outputpanel>
+
+       
+</apex:page>

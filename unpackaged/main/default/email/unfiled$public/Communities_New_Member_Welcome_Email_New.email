@@ -1,0 +1,45 @@
+Dear Teammate
+
+Congratulations!  We have activated your login and are excited to welcome you to the GCX Community.  
+ 
+Please find below your login details to the GCX community portal and instructions to reset your password. 
+ 
+Please review the training document located here:  https://ebayinc.sharepoint.com/:b:/s/SGEUCRMHive/EXOK0PKVLzNKr7xmEmbH-74BEb_edL4G0oxzmAboCKWNOA?e=kQPFCO  
+ 
+Thank you and a warm welcome to the community! 
+
+Your Login details: 
+
+Username: {!Receiving_User.Username} 
+
+Please click this link to setup your password: URL: {!Community_Url} 
+
+For future reference use this link to access the community when you have completed your password setup: URL: {!Community_Url} 
+ 
+Kind regards 
+ 
+The HIVE Team 
+
+------------------- 
+
+Liebes Teammate,  
+
+ Herzlichen Glückwunsch! Wir haben nun deinen Zugang aktiviert und freuen uns, dich in der GCX Community begrüßen zu können.  
+
+Unten findest du alle Informationen, um dich im GCX Community Portal einzuloggen und weitere Anleitungen, falls du mal dein Passwort zurücksetzen musst.  
+
+ Bitte schau dir das Trainingsdokument an, das du hier nachlesen kannst (nur in Englisch):  
+
+https://ebayinc.sharepoint.com/:b:/s/SGEUCRMHive/EXOK0PKVLzNKr7xmEmbH-74BEb_edL4G0oxzmAboCKWNOA?e=kQPFCO  
+
+Danke dir und einen guten Start in der Community!  
+
+Hier nun deine Details zum Einloggen:  
+
+Username: {!Receiving_User.Username}  
+
+Bitte klicke auf diesen Link, falls du mal dein Passwort ändern möchtest musst:  {!Community_Url} 
+
+ Wenn du dein Passwort eingerichtet hast nutze bitte in Zukunft immer diesen Link, um dich im GCX Portal von Hive anzumelden:  {!Community_Url} 
+
+ Liebe Grüße dein HIVE Team

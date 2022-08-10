@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>eBay_Letterhead_Standard</letterhead>
+    <name>RA Approval Notice - Approved</name>
+    <style>freeForm</style>
+    <subject>Info-Mail: Revenue Accounting APPROVED - {!Opportunity.Name} ({!Opportunity.Account})</subject>
+    <textOnly>The following opportunity has been approved by : {!User.FirstName} {!User.LastName}
+
+Approval Step Comments: {!ApprovalRequest.Comments}
+
+Account: {!Quote.Advertiser__c}
+Opportunity Name: {!Opportunity.Name}
+Probability: {!Opportunity.StageName} - {!Opportunity.Probability}
+
+Amount_NetNetNet: {!Quote.Amount_Net_Net_Net__c}
+Customer_Discount: {!Quote.Customer_Discount_Helper__c}
+Turnover Last 180 Days: {!Account.Turnover_180_Days__c}
+
+Link to opportunity: {!Opportunity.Link}
+
+Regards,
+{!User.FirstName}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

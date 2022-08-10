@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Package__c</fullName>
+    <description>US-9135</description>
+    <externalId>false</externalId>
+    <label>Package</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Multiformat 1</fullName>
+                <default>false</default>
+                <label>Multiformat 1</label>
+            </value>
+            <value>
+                <fullName>Multiformat 2</fullName>
+                <default>false</default>
+                <label>Multiformat 2</label>
+            </value>
+            <value>
+                <fullName>Multiformat 3</fullName>
+                <default>false</default>
+                <label>Multiformat 3</label>
+            </value>
+            <value>
+                <fullName>Multiformat 4</fullName>
+                <default>false</default>
+                <label>Multiformat 4</label>
+            </value>
+            <value>
+                <fullName>Multiformat 5</fullName>
+                <default>false</default>
+                <label>Multiformat 5</label>
+            </value>
+            <value>
+                <fullName>Multiformat 6</fullName>
+                <default>false</default>
+                <label>Multiformat 6</label>
+            </value>
+            <value>
+                <fullName>Multiformat 7</fullName>
+                <default>false</default>
+                <label>Multiformat 7</label>
+            </value>
+            <value>
+                <fullName>Multiformat 8</fullName>
+                <default>false</default>
+                <label>Multiformat 8</label>
+            </value>
+            <value>
+                <fullName>HP_Event</fullName>
+                <default>false</default>
+                <label>HP_Event</label>
+            </value>
+            <value>
+                <fullName>Site_Event</fullName>
+                <default>false</default>
+                <label>Site_Event</label>
+            </value>
+            <value>
+                <fullName>Multi Category 1</fullName>
+                <default>false</default>
+                <label>Multi Category 1</label>
+            </value>
+            <value>
+                <fullName>Multi Category 2</fullName>
+                <default>false</default>
+                <label>Multi Category 2</label>
+            </value>
+            <value>
+                <fullName>Multi Category 3</fullName>
+                <default>false</default>
+                <label>Multi Category 3</label>
+            </value>
+            <value>
+                <fullName>Multi Category 4</fullName>
+                <default>false</default>
+                <label>Multi Category 4</label>
+            </value>
+            <value>
+                <fullName>Multi Category 9</fullName>
+                <default>false</default>
+                <label>Multi Category 9</label>
+            </value>
+            <value>
+                <fullName>Multi Category 10</fullName>
+                <default>false</default>
+                <label>Multi Category 10</label>
+            </value>
+            <value>
+                <fullName>Multi Category 11</fullName>
+                <default>false</default>
+                <label>Multi Category 11</label>
+            </value>
+            <value>
+                <fullName>Multi Category 12</fullName>
+                <default>false</default>
+                <label>Multi Category 12</label>
+            </value>
+            <value>
+                <fullName>Multi Category 13</fullName>
+                <default>false</default>
+                <label>Multi Category 13</label>
+            </value>
+            <value>
+                <fullName>Multi Category 14</fullName>
+                <default>false</default>
+                <label>Multi Category 14</label>
+            </value>
+            <value>
+                <fullName>Multi Category 15</fullName>
+                <default>false</default>
+                <label>Multi Category 15</label>
+            </value>
+            <value>
+                <fullName>Multi Category 16</fullName>
+                <default>false</default>
+                <label>Multi Category 16</label>
+            </value>
+            <value>
+                <fullName>Multi Category 17</fullName>
+                <default>false</default>
+                <label>Multi Category 17</label>
+            </value>
+            <value>
+                <fullName>Multi Category 18</fullName>
+                <default>false</default>
+                <label>Multi Category 18</label>
+            </value>
+            <value>
+                <fullName>Multi Category 19</fullName>
+                <default>false</default>
+                <label>Multi Category 19</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

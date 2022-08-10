@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0007771 - [AU] Additional Coupon Confirmation email post acceptance of Coupon Contract</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Coupons Contract Acceptance</name>
+    <style>none</style>
+    <subject>Coupon Participation Confirmation email | {Coupon_ID__c} |</subject>
+    <textOnly>Dear {eBaySellerID},
+
+This confirmation email is to advise you that we have recorded your acceptance to participate in the coupon offer {Coupon_ID__c} which is scheduled to run from {CouponStartTime}, {CouponStartDate} to {CouponEndTime}, {CouponEndDate}.
+
+Your acceptance is in accordance to the terms and conditions as set out in the Coupon Term Sheet and Master Agreement, which you have agreed to on:
+
+{CONTRACT_ACCEPT_DATE} from the following IP Address {ACCEPTED_FROM}.
+
+
+If you believe that you have received this email in error or have any questions about your participation in the coupon offer, please reach out to retailpromotions@ebay.com.
+
+Thank You
+
+Retail Promotions Team
+
+eBay Australia.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

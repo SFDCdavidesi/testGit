@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0012216 - NA Coupons: Downloading /storing Coupon Contract on Portal and in Hive</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>NA_Item_Coupon_Contract_SEP_Download</name>
+    <style>none</style>
+    <subject>SELLER FUNDED COUPON AGREEMENT</subject>
+    <textOnly>SELLER FUNDED COUPON AGREEMENT
+
+Parties   eBay Inc., a company incorporated in Delaware, whose principal place of business is 2065 Hamilton Avenue, San Jose, California 95125 (&quot;eBay&quot;).
+{LegalEntity}, a company incorporated in {City}, {Zip}, {Country}., whose principal place of business is {StreetName}, (&quot;{eBaySellerID}&quot;)
+User ID    The following is the list of Seller’s User ID(s) that will be associated with the program:
+{eBaySellerID}
+Term   This Agreement shall be in effect from the date of signature of the last party to sign this Agreement until the date that is forty-five (45) days after the last day of the Promotion Period (defined below) unless terminated earlier. If a party notifies the other party in writing of a breach of this Agreement, including breach of the eBay Policies, and the breaching party has not cured such breach within twenty-four (24) hours of notice of the breach, the notifying party may terminate this Agreement.  If this Agreement expires or otherwise terminates, Seller’s obligations survive any such expiration or termination.
+&quot;Promotion Period&quot; means the period of time specified in Attachment 1, which may be updated upon the mutual agreement of the parties but shall end no later than {CouponEndDate}
+Seller Responsibilities
+
+Seller shall pay to eBay the total Discount of all Coupons (defined below) redeemed by eBay users, as set forth in Section 6.
+During the Promotion Period, Seller shall ensure the non-discounted price for all Eligible Items (defined below) shall be no greater than the price of such Eligible Items listed by Seller on the eBay Site in the seven (7) days preceding the Promotion Period.
+
+eBay Responsibilities
+
+During the Promotion Period, eBay shall directly or indirectly distribute one or more promotional codes (“Coupons”), which shall be redeemable by the qualifying recipient for the discount specified in Attachment 1 (“Discount”) from the purchase price of certain items as specified in Attachment 1(“Eligible Items”) purchased by the qualifying recipient from Seller.  Seller agrees to reimburse eBay as described in this Agreement for all or a portion of the Discount as described in column &quot;Seller Funded Amount&quot; in Attachment 1 (&quot;Seller Funded Amount&quot;).
+The Coupons shall be subject to eBay’s Coupon Terms and Conditions (a sample of which is contained in Attachment 2), which eBay may revise from time to time. The Coupons may be used by qualifying recipients during the Coupon Validity Period described in Attachment 1 and shall expire on the last day of the Coupon Validity Period.
+During the Promotion Period, eBay may, in its sole discretion, promote Seller’s listings of Eligible Items, which may include promotion on the eBay Site, appropriate category pages on the eBay Site, through eBay’s affiliate’s web sites if applicable, and in emails to eBay users.
+
+Payment
+
+When a qualifying Coupon recipient redeems a Coupon for the purchase of an Eligible Item, then Seller will receive payment for the Eligible Item equal to the non-discounted price of the Eligible Item as if no Coupon were used for the purchase. At the end of the Coupon Validity Period, eBay will then invoice Seller for the total Seller Funded Amount for all the Coupons that were redeemed, up to the maximum amount of the Seller Cap as defined in Attachment 1 (if any). Seller will be invoiced for the total Seller Funded Amount for their portion of coupon funding of all eligible sales from thirty (30) to forty-five (45) days after the end of the Coupon Validity Period.
+For clarification, this Agreement does not change any fees due from Seller to eBay, Seller shall also pay eBay’s fees as set forth in the eBay Policies and any other agreement between Seller and eBay, all of which will be based on the non-discounted price and final value of Eligible Items, even if a Coupon was redeemed.
+
+General
+
+Seller represents and warrants that Seller: (i) has the full power and authority to enter into this Agreement and to perform all of Seller’s obligations under this Agreement, and (ii) is not violating any other agreements by which Seller is bound by entering into this Agreement.  Seller shall indemnify, defend, and hold harmless eBay, its subsidiaries, affiliates, officers, directors, agents and employees from any claim made by any third party arising out of or related to Seller’s performance or failure to perform under this Agreement.
+Seller acknowledges and agrees that Seller is subject to and will comply with the current eBay Fees schedule, eBay Privacy Policy, the eBay User Agreement and all policies applicable to eBay sellers and listings currently posted on the eBay Site (collectively, “eBay Policies”) which are hereby incorporated by reference. In the event there is a conflict or difference between the eBay Policies and this Agreement, the eBay Policies will control.
+Seller shall not disclose to any third party, without the written consent of eBay, the terms of this Agreement.  No party may assign its rights or obligations under this Agreement without the prior written consent of the other party.  This Agreement including all documents referenced, set forth the entire understanding and agreement of the parties regarding the subject matter of this Agreement, and supersedes any and all oral or written agreements or understandings between the parties with respect to the subject matter of this Agreement.  This Agreement may only be changed or modified in a writing signed by both parties.  This Agreement may be signed in two or more counterparts, each of which shall be deemed an original and all of which together shall constitute one and the same instruments.
+
+eBay-Website(s)  {CouponSites}
+Promotion Period
+
+&quot;Promotion Period&quot; means the period of time specified in Attachment 1, which may be updated upon the mutual agreement of the parties but shall end no later than {CouponStartDate} at {CouponStartTime} PT to {CouponEndDate} at {CouponEndTime} PT
+
+Eligible Item(s)
+
+Please refer to the attached overview to find out which Items are taken into account as of this Coupon
+
+Discount   {CouponDiscount%}{CouponDiscountAmount}
+Minimum Buyer Purchase for Coupon (US $)   {Minimum_Transaction_Value__c}
+Seller Funded Amount   Seller will pay {SellerShareHolder__c} of the discount per eligible item
+Maximum Discount Per Coupon (Number Or US$)   Up to a ${CouponCap} discount per coupon, with {Max_Redemptions__c} uses per customer allowed
+eBay Cap   eBay cap is: {eBay_Co_fund_Max__c} U.S dollars. The Seller will be responsible to cover 100% of the eligible discount once the eBay cap has been met.
+Other   {AdditionalArrangement}
+
+
+Each Party has caused this Seller-Funded Coupon Agreement to be executed by its duly authorized representative.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

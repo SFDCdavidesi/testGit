@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fast_n_Free_Shipping__c</fullName>
+    <description>[#EPH-7282] New Shipping metrics</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Percentage of Listings that promise free delivery &amp; and 3 or less days delivery by the end of the day (Last Retail Week)
+-IT (3 days)</inlineHelpText>
+    <label>Fast n Free Shipping (%)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

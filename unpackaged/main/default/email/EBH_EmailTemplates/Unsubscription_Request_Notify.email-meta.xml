@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0010563 - [AM] Seller requesting to unsubscribe from Account Manager</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Unsubscription Request Notify</name>
+    <style>none</style>
+    <subject>Kündigung eines eBay Account Management-Abonnements</subject>
+    <textOnly>Hallo,
+
+
+der Händler {!Subscription_Request__c.Seller__c} hat soeben seinen Account Manager gekündigt.
+
+Das Account Management-Abonnement bleibt aktiv bis zum {!Subscription_Request__c.Opt_Out_Effective_Date__c}.
+
+{!Subscription_Request__c.Link}
+
+
+Vielen Dank.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

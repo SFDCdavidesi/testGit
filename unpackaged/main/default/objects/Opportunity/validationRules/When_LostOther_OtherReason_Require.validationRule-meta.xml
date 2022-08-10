@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>When_LostOther_OtherReason_Require</fullName>
+    <active>true</active>
+    <description>US-0010265 - Ads Closed Lost reason Other explanation</description>
+    <errorConditionFormula>AND(
+
+NOT($Setup.byPass__c.ByPass_Validation__c),
+$Profile.Name = &quot;Standard Ads EU User Profile&quot;,
+
+OR(
+    RecordType.DeveloperName = &#39;eBay&#39;,
+    RecordType.DeveloperName = &#39;eBay_Ads_Direct_Revision_Opportunity&#39;,
+    RecordType.DeveloperName = &#39;Private_Marketplace&#39;,
+    RecordType.DeveloperName = &#39;Programmatic&#39;
+),
+
+ISPICKVAL(Reason_for_Lost__c , &#39;Lost other&#39;),
+ISBLANK(Lost_Other_Reason__c)
+)</errorConditionFormula>
+    <errorDisplayField>Lost_Other_Reason__c</errorDisplayField>
+    <errorMessage>Please provide more detail</errorMessage>
+</ValidationRule>

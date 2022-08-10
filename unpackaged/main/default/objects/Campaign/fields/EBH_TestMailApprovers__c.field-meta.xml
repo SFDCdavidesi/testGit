@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_TestMailApprovers__c</fullName>
+    <description>[EBH] (EPH-71) - Number of Test Mail Approvers present in Custom Settings</description>
+    <externalId>false</externalId>
+    <label>Test Mail Approvers</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

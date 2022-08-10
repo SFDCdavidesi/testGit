@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_wrong_corp_IDs</fullName>
+    <active>true</active>
+    <description>US-010056</description>
+    <errorConditionFormula>AND(
+    NOT(ISBLANK( eBay_Corp_ID__c )),
+    NOT( $Setup.ActiveValidationRules__c.All_Validation_Rules_Deactivated__c ),
+    eBay_Corp_ID__c &lt;&gt;  LEFT( Email_address__c , FIND(&quot;@&quot;, Email_address__c)-1 )
+)</errorConditionFormula>
+    <errorDisplayField>eBay_Corp_ID__c</errorDisplayField>
+    <errorMessage>ebay Corp Id must be equal to the first part of the email. In the case you know that this is different , please contact with a System Admin.</errorMessage>
+</ValidationRule>

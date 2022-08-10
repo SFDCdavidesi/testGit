@@ -1,0 +1,37 @@
+<p>&nbsp;</p>
+<p data-aura-rendered-by="1337:581;a">Hi {!Owner},</p>
+<p data-aura-rendered-by="1337:581;a">&nbsp;</p>
+<p data-aura-rendered-by="1337:581;a">{!CountBobSeller} seller(s) are successfully added/updated to the Light Touch Cohort {!LTTMCampaignName}.</p>
+<p data-aura-rendered-by="1337:581;a">{!errorMessage}</p>
+<p data-aura-rendered-by="1337:581;a">{!sellernotFound}</p>
+<div>
+<p>The below sellers are not successfully added to the cohort {!LTTMCampaignName} as they are part of another BoB that is either in draft, submitted or active. If you would like to proceed the seller need to be removed from the active BOB.</p>
+<p>1.Please reach out to respective BoB owners and ask to remove these sellers from the current BoB.</p>
+<p>2.Once the sellers has been removed from the current BOB you are able add to your book.</p>
+<p><strong>Affect Seller:</strong></p>
+
+<table style="height: 30px; border-collapse: collapse;" border="1">
+<tbody>
+<tr style="height: 30px;">
+<th style="height: 30px; width: 111px;">Seller Name</th>
+<th style="height: 30px; width: 169px;">Oracle ID</th>
+<th style="height: 30px; width: 169px;">Cohort/BoB Name</th>
+<th style="height: 30px; width: 134px;">Managed Type</th>
+<th style="height: 30px; width: 129px;">Cohort Owner</th>
+<th style="height: 30px; width: 128px;">Cohort Status</th>
+</tr>
+  {!listAffectSeller}
+</tbody>
+</table>
+</div>
+<div>
+<p>&nbsp;</p>
+<p>Below is the list of Account Manager/Secondary AM that are not updated because the user corporate Id was incorrect or user does not exist in HIVE:<br />{!listIncorrectUser}</p>
+</div>
+<div style="display: {!showBlock_ManSeg};">
+<p>Below is the list of sellers where Managed Segment value was not updated successfully. Please use "Concierge" as the only Managed Segment value for bulk updates to receive concierge support.</p>
+<p>
+  {!listAffectSellerManSeg}
+  </p> 
+</div>
+<p data-aura-rendered-by="1337:581;a">Thanks.</p>

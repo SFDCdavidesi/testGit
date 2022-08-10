@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_LockRecordOnReadyForEbaySignature</fullName>
+    <active>false</active>
+    <description>EPH-4159, US-0007080</description>
+    <errorConditionFormula>/*ISPICKVAL(Status, &#39;Ready for eBay Signature&#39;) &amp;&amp; 
+!ISPICKVAL( PRIORVALUE(Status), &#39;Seller Signature Provided&#39;) &amp;&amp;
+ !EBH_Approved__c*/
+
+/*Commented above out and added below on 07/02/2018 by JNL */
+
+/*!ISPICKVAL( PRIORVALUE(Status), &#39;Seller Signature Provided&#39;) */
+
+ /*!EBH_Approved__c*/
+/*
+AND(not( PRIORVALUE(ISPICKVAL(Status, &#39;Seller Signature Provided&#39;)) ),
+    ISPICKVAL(Status, &#39;Ready for eBay Signature&#39;), 
+    $Profile.Name &lt;&gt; &quot;Signature team&quot;
+    )*/
+
+/* DHE 2018 02 09*/
+ISPICKVAL(Status, &#39;Ready for eBay Signature&#39;) &amp;&amp; !ISPICKVAL( PRIORVALUE(Status), &#39;Seller Signature Provided&#39;) &amp;&amp; !EBH_Approved__c &amp;&amp; NOT( $Setup.ActiveValidationRules__c.All_Validation_Rules_Deactivated__c )</errorConditionFormula>
+    <errorMessage>You cannot edit an approved contract. Please recall to make changes and then resubmit for approval.</errorMessage>
+</ValidationRule>

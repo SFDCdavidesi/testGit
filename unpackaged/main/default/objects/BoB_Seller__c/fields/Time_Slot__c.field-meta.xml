@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Time_Slot__c</fullName>
+    <description>US-0007598 - [LTTM] New field in BoB__c and BoB_Seller__c</description>
+    <externalId>false</externalId>
+    <label>Time Slot</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Morning (9 AM to 12 PM)</fullName>
+                <default>false</default>
+                <label>Morning (9 AM to 12 PM)</label>
+            </value>
+            <value>
+                <fullName>Afternoon(1 PM to 5 PM)</fullName>
+                <default>false</default>
+                <label>Afternoon (1 PM to 5 PM)</label>
+            </value>
+            <value>
+                <fullName>After Noon (1 AM to 5 PM)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>After Noon (1 AM to 5 PM)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

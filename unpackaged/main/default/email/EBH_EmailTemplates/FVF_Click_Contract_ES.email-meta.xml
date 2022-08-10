@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0006893 IT &amp; ES. FVF Contract</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>FVF Click Contract ES</name>
+    <style>none</style>
+    <subject>Formato de descuento de Comisión por Venta Realizada {!FVF_SellerName} {!FVF_StartDate}</subject>
+    <textOnly>Contrato de promoción individual
+
+En base a este Contrato de promoción individual y su Anexo 1 (denominados conjuntamente en lo sucesivo &quot;Contrato de promoción individual&quot;), que es una parte integral de este Contrato de promoción individual, te ofrecemos un descuento en la comisión por venta realizada de acuerdo con las condiciones aquí indicadas. Es necesario que aceptes este contrato de promoción individual a más tardar 1 día antes del inicio de la promoción haciendo clic en el botón siguiente
+
+ACEPTO
+
+
+ID(s) de usuario del vendedor para la promoción  {!FVF_SellerName}
+Sitio de eBay  www.ebay.es
+Periodo promocional  {!FVF_StartDate} a las {!FVF_StartTime} hasta {!FVF_EndDate} a las {!FVF_EndTime}
+
+eBay podrá aplazar el periodo promocional y cambiar la duración de la promoción según su criterio. De ser así, eBay informará al vendedor al respecto.
+
+Descuento en comisión por venta realizada que aportará por eBay  {!FVF_DiscountFVF} de descuento
+Artículos con descuento
+
+El descuento se aplica a los artículos del vendedor mencionados en el Anexo 1, únicamente cuando éstos se venden dentro del periodo promocional al precio máximo indicado. Vender los artículos correspondientes a precios más bajos que los convenidos aquí queda a discreción del vendedor.
+
+Otros   {!FVF_AddtionalTerm}
+
+{ifFreeShipping}
+
+
+En primer lugar se cobrará la comisión por venta realizada. El descuento aquí acordado será abonado a tu cuenta dentro de los 60 días siguientes al mes en el que haya tenido lugar el último día de la promoción. Todo artículo devuelto/deducido está excluido del descuento.
+
+Ten en cuenta que los importes de descuento para la comisión por venta realizada no incluyen IVA. El importe de descuento sobre la comisión por venta realizada abonado a tu cuenta está sujeto al mismo régimen de IVA que otras comisiones aplicables a artículos no incluidos en la promoción durante el periodo promocional.
+
+Este contrato de promoción individual se firma entre {!LegalEntity} - {!SellerAddress1} (&quot;Vendedor&quot;) e eBay GmbH, Albert-Einstein-Ring 2-6 en 14532 Kleinmachnow (&quot;eBay&quot;). La participación del vendedor en la promoción se efectúa exclusivamente sobre la base de este contrato de promoción individual, así como el subyacente Acuerdo para promociones con fijación de precios entre el vendedor y eBay (&quot;Acuerdo&quot;).
+
+Cualesquiera términos y condiciones adicionales o divergentes deben ser acordados entre las partes contratantes por escrito (por correo electrónico es suficiente).</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

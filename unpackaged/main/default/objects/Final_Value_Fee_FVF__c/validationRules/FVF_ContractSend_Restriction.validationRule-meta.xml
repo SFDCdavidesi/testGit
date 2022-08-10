@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FVF_ContractSend_Restriction</fullName>
+    <active>true</active>
+    <description>US-0007977 - FVF. Restriction</description>
+    <errorConditionFormula>AND(OR(RecordType.DeveloperName=&#39;FVF_Listing_Level&#39;,RecordType.DeveloperName = &#39;FVF_Seller_Level&#39;),TODAY() &gt;  Start_Date_w__c, OR(ISPICKVAL(Final_Value_Fee_Stage__c,&#39;Contract Sent&#39;),ISPICKVAL(Final_Value_Fee_Stage__c,&#39;Sent_to_eBay_Approval&#39;) )  )</errorConditionFormula>
+    <errorMessage>For compliance reasons you are not able to send FVF contract to a seller after start of the FVF promo period. For edge cases, when contract should be signed after FVF promo start date, please contact your local Controlling POC.</errorMessage>
+</ValidationRule>

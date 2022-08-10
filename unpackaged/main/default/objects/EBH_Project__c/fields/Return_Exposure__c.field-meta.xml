@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Return_Exposure__c</fullName>
+    <description>US-0010081 - [UK Risk] Exposure Calculation in Seller Risk Management Project</description>
+    <externalId>false</externalId>
+    <formula>(Average_GMS__c  / 30) *  Average_Return_Rate__c  *  Average_Days_per_Return__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Average GMS/30 x Average Return Rate x Average Days per Return</inlineHelpText>
+    <label>Return Exposure</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

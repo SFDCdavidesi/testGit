@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Feature_Requests_from_Growth_Advisor_Tea</fullName>
+    <columns>HIVE_Product__c</columns>
+    <columns>NAME</columns>
+    <columns>User__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>OWNER.ALIAS</columns>
+    <columns>Status__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Prio_DE__c</columns>
+    <columns>Prio_UK__c</columns>
+    <columns>Prio_EEC__c</columns>
+    <columns>Prio_AU__c</columns>
+    <columns>Prio_US__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>User__c</field>
+        <operation>equals</operation>
+        <value>david tausch,antonio forcina</value>
+    </filters>
+    <label>Feature Requests from Growth Advisor Tea</label>
+</ListView>

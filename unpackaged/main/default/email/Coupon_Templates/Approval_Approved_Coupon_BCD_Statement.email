@@ -1,0 +1,7 @@
+<p>The Coupon BCD Statement has been approved in Hive by {!ApprovalRequest.Process_Approver}.</p> 
+<p>Coupon name: {!BCD_Statement__c.Coupon__c}</p>
+<p>Value: {!BCD_Statement__c.CurrencyIsoCode} {!BCD_Statement__c.Credit_Total_Value__c}</p>
+<p>BU Approval or FI Approval</p>
+<p>Comments:</p>
+<p>{!ApprovalRequest.Comments}</p>
+<p>Hyperlink <a title="Go to BCD Statement" href="{!BCD_Statement__c.Link}">Go to BCD Statement</a></p>

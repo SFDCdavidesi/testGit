@@ -1,0 +1,10 @@
+The following salesforce change request has been assigned to you for finance approval.
+<br/><br/>
+Ticket Submitter: {!Case.CreatedBy}<br/>
+Ticket No: {!Case.CaseNumber}<br/>
+Link to Ticket: {!Case.Link}
+<br/><br/>
+Ticket Details: <br/>
+{!Case.Description__c}
+<br/><br/>
+Link to approval: {!ApprovalRequest.Internal_URL}

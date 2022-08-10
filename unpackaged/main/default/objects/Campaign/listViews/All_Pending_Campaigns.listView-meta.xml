@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Pending_Campaigns</fullName>
+    <booleanFilter>1 AND 2</booleanFilter>
+    <columns>CAMPAIGN.NAME</columns>
+    <columns>CAMPAIGN.START_DATE</columns>
+    <columns>CAMPAIGN.END_DATE</columns>
+    <columns>CAMPAIGN.STATUS</columns>
+    <columns>EBH_BriefDeadline__c</columns>
+    <columns>CAMPAIGN.ACTIVE</columns>
+    <columns>CORE.USERS.FIRST_NAME</columns>
+    <columns>CAMPAIGN.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CAMPAIGN.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Completed,Cancelled</value>
+    </filters>
+    <filters>
+        <field>CAMPAIGN.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Campaign.EBH_Campaign</value>
+    </filters>
+    <label>All Master Campaigns In Progress</label>
+</ListView>

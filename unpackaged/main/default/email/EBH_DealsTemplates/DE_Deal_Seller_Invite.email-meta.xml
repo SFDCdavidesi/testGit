@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0010546 - [DE-Deals-Fulfillment] Fulfillment proposal email actions</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>EBH_eBayBlankLetterhead</letterhead>
+    <name>DE Deal Seller Invite</name>
+    <style>freeForm</style>
+    <subject>Einladung zum eBay WOW! Programm</subject>
+    <textOnly>Liebes eBay-Mitglied „{!EBH_Deal__c.EBH_BusinessName__c}“,
+
+
+aktuell nutzen Sie das eBay Fulfillment Center mit Orange Connex.
+
+Regelmäßig wird evaluiert ob die dort gelagerten Artikel durch gesonderte eBay-Maßnahmen im Abverkauf auf eBay unterstützt werden können.
+
+
+Ein Teil dieser Möglichkeiten ist das eBay WOW! Programm.
+
+Das eBay WOW! Programm bewirbt eine limitierte Anzahl von attraktiven Angeboten, die auf eine potenziell erhöhte Kaufnachfrage stoßen. Diese werden dafür von den jeweils teilnehmenden Händlern zu einem besonders attraktiven Preis angeboten.
+
+Die Angebote werden vorrangig auf der eBay WOW! Seite beworben: https://www.ebay.de/deals
+
+
+Bei folgendem Ihrer Angebote wurde eine Qualifikation für das eBay WOW! Programm erkannt.
+
+
+Damit bieten wir Ihnen hiermit die Teilnahme an einem WOW! Angebot zu den nachstehenden Konditionen sowie auf Basis der dazugehörigen „Werbeaktions-AGB“ an,
+
+welche Sie unter https://pages.ebay.de/werbeaktions-agb/index.html einsehen können:
+
+
+----------------------------------------------------------------------------------------
+
+eBay-Nutzername: {!EBH_Deal__c.EBH_BusinessName__c}
+
+Produktname: {!EBH_Deal__c.EBH_ProductTitle__c}
+
+Stückzahl: {!EBH_Deal__c.EBH_Quantity__c}
+
+Aktionsformat: {!EBH_Deal__c.EBH_LocalDealFormat__c}
+
+Start der Aktion: {!EBH_Deal__c.EBH_DealStartDate__c} &amp; {!EBH_Deal__c.EBH_DealStartTime__c}
+
+Ende der Aktion: {!EBH_Deal__c.EBH_DealEndDate__c} &amp; {!EBH_Deal__c.EBH_DealEndTime__c}
+
+Website(s): DE
+
+
+Gewünschter Angebotspreis für das WOW! Angebot: {!EBH_Deal__c.EBH_DealPrice__c}
+
+----------------------------------------------------------------------------------------
+
+
+Dies bedeutet, dass sie Im Falle Ihrer Zustimmung Ihren vorgenannten Artikel während des Aktionszeitraums durchgehend zu dem gewünschten Preis anbieten, Wenn Sie mit der Teilnahme am WOW! Angebot zu den oben genannten Konditionen einverstanden sind, so erklären Sie Ihre ausdrückliche Zustimmung bitte innerhalb von 2 Werktagen ab Erhalt dieser E-Mail durch
+
+Anklicken des nachstehenden Buttons „ICH STIMME ZU“
+
+
+
+ICH STIMME ZU
+
+
+Insofern Sie zu einem anderen als den vorgenannten Angebotspreis teilnehmen möchten, können Sie eBay einen entsprechenden Vorschlag durch Anklicken des nachstehenden Buttons „Anderen Angebotspreis vorschlagen“ unterbreiten. Sollte eBay damit einverstanden sein, würden Sie erneut eine E-Mail mit einem entsprechend angepassten Werbeaktions-Einzelvertrag erhalten, dem Sie zur beschriebenen Teilnahme zustimmen müssten. Der bloße Vorschlag anderer Konditionen ohne ausdrückliche Zustimmung durch eBay in Form des entsprechenden Werbeaktions-Einzelvertrages führt in keinem Fall zu einer Annahme dieser.
+
+
+ANDEREN ANGEBOTSPREIS VORSCHLAGEN
+
+
+
+Vielen Dank und weiterhin erfolgreiche Verkäufe auf eBay wünscht Ihr eBay Team.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

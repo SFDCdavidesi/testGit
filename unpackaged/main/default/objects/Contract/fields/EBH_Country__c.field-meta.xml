@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_Country__c</fullName>
+    <description>[EBH] (EPH-4158) - Country</description>
+    <externalId>false</externalId>
+    <formula>CASE( Account.EBH_BillingCountry__c ,
+&quot;AT&quot;,&quot;AT&quot;,
+&quot;Austria Belgium&quot;,&quot;AT&quot;,
+&quot;BE&quot;,&quot;BE&quot;,
+&quot;Belgium&quot;,&quot;BE&quot;,
+&quot;BG&quot;,&quot;BG&quot;,
+&quot;Bulgaria&quot;,&quot;BG&quot;,
+&quot;HR&quot;,&quot;HR&quot;,
+&quot;Croatia&quot;,&quot;HR&quot;,
+&quot;CY&quot;,&quot;CY&quot;,
+&quot;Cyprus&quot;,&quot;CY&quot;,
+&quot;CZ&quot;,&quot;CZ&quot;,
+&quot;Czech Republic&quot;,&quot;CZ&quot;,
+&quot;DK&quot;,&quot;DK&quot;,
+&quot;Denmark&quot;,&quot;DK&quot;,
+&quot;EE&quot;,&quot;EE&quot;,
+&quot;Estonia&quot;,&quot;EE&quot;,
+&quot;FI&quot;,&quot;FI&quot;,
+&quot;Finland&quot;,&quot;FI&quot;,
+&quot;FR&quot;,&quot;FR&quot;,
+&quot;France&quot;,&quot;FR&quot;,
+&quot;DE&quot;,&quot;DE&quot;,
+&quot;Germany&quot;,&quot;DE&quot;,
+&quot;GR&quot;,&quot;GR&quot;,
+&quot;Greece&quot;,&quot;GR&quot;,
+&quot;HU&quot;,&quot;HU&quot;,
+&quot;Hungary&quot;,&quot;HU&quot;,
+&quot;IE&quot;,&quot;IE&quot;,
+&quot;Ireland&quot;,&quot;IE&quot;,
+&quot;IT&quot;,&quot;IT&quot;,
+&quot;Italy&quot;,&quot;IT&quot;,
+&quot;LV&quot;,&quot;LV&quot;,
+&quot;Latvia&quot;,&quot;LV&quot;,
+&quot;LT&quot;,&quot;LT&quot;,
+&quot;Lithuania&quot;,&quot;LT&quot;,
+&quot;LU&quot;,&quot;LU&quot;,
+&quot;Luxembourg&quot;,&quot;LU&quot;,
+&quot;MT&quot;,&quot;MT&quot;,
+&quot;Malta&quot;,&quot;MT&quot;,
+&quot;NL&quot;,&quot;NL&quot;,
+&quot;Netherlands&quot;,&quot;NL&quot;,
+&quot;PL&quot;,&quot;PL&quot;,
+&quot;Poland&quot;,&quot;PL&quot;,
+&quot;PT&quot;,&quot;PT&quot;,
+&quot;Portugal&quot;,&quot;PT&quot;,
+&quot;RO&quot;,&quot;RO&quot;,
+&quot;Romania&quot;,&quot;RO&quot;,
+&quot;SK&quot;,&quot;SK&quot;,
+&quot;Slovakia&quot;,&quot;SK&quot;,
+&quot;SI&quot;,&quot;SI&quot;,
+&quot;Slovenia&quot;,&quot;SI&quot;,
+&quot;ES&quot;,&quot;ES&quot;,
+&quot;Spain&quot;,&quot;ES&quot;,
+&quot;SE&quot;,&quot;SE&quot;,
+&quot;Sweden&quot;,&quot;SE&quot;,
+&quot;United Kingdom&quot;,&quot;UK&quot;,
+&quot;GB&quot;,&quot;UK&quot;,
+&quot;UK&quot;,&quot;UK&quot;,
+&quot;&quot;,&quot;&quot;,
+&quot;Rest of Europe&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Country</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

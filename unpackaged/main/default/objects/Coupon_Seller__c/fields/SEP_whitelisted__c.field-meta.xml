@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SEP_whitelisted__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>US-0010401 - Create new field on Coupon-Seller required for SEP</description>
+    <externalId>false</externalId>
+    <label>SEP whitelisted</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

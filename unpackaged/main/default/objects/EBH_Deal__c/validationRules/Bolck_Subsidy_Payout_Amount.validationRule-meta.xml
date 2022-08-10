@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bolck_Subsidy_Payout_Amount</fullName>
+    <active>true</active>
+    <description>US-0008132 : Deals - Subsidy Formula enable manual update</description>
+    <errorConditionFormula>AND(RecordType.DeveloperName =&#39;Deal_V1&#39;, SubsidyFinal_Servicing__c!=0 , OR((Subsidy_Payout_Amount__c - SubsidyFinal_Servicing__c)/(SubsidyFinal_Servicing__c)*100 &gt; 5,(Subsidy_Payout_Amount__c - SubsidyFinal_Servicing__c)/(SubsidyFinal_Servicing__c)*100 &lt;-5) )</errorConditionFormula>
+    <errorDisplayField>Subsidy_Payout_Amount__c</errorDisplayField>
+    <errorMessage>Your entered value differs by more than 5% to the value of &quot;Subsidy Final (Gross)</errorMessage>
+</ValidationRule>

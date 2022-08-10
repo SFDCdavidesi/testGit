@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_34_days_Sent__c</fullName>
+    <description>EPH-7565 Coupon - Manhattan Invoice Statment send to coupon seller</description>
+    <externalId>false</externalId>
+    <label>Date 34 days Sent</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

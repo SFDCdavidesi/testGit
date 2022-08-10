@@ -1,0 +1,113 @@
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------
+@ Page:           EBH_CampaignHistory
+@ Version:        1.0
+@ Author:         JOY MONDOL (jmondol@deloitte.co.uk)
+@ Purpose:        [EBH] (EPH-116) - Campaign history @ Seller detail page
+..................................................................................................................................................................
+@ Change history: 22.06.2017 / JOY MONDOL (jmondol@deloitte.co.uk) / Created the page.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<apex:page standardcontroller="Account" extensions="EBH_CampaignHistoryController" showHeader="false" sidebar="false">
+
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        
+        <!--------------------------------------------------------------------------------------------------------------------------------------------------------
+        @ Section: Styles
+        --------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <apex:stylesheet value="{!URLFOR($Resource.EBH_CampaignHistoryStyles)}"/>
+        <apex:slds />
+        
+        <!--------------------------------------------------------------------------------------------------------------------------------------------------------
+        @ Section: Body
+        --------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <apex:form >
+            <!-- NONE NOTIFICATION -- EPH-3459 changes -->
+            <apex:pageBlock mode="maindetail" rendered="{!RowCount == 0}">
+                <div style="color:grey;">
+                    <apex:pageMessage title="{!$Label.EBH_NoCampaignMembers}" severity="info" strength="0"/>
+                </div>
+            </apex:pageBlock>
+            
+            <!-- SELLER TABLE BLOCK -->
+            <apex:pageblock mode="maindetail" id="pbId" rendered="{!RowCount > 0}">
+                
+                <!-- Overlay -->
+                <div class="ovrly" id="ovrly" style="display:none; overflow: hidden; z-index:2000">
+                    <img src="/img/loading32.gif" class="loading"/>
+                </div>        
+                <apex:actionStatus id="fetchStatus" onstart="showProg();" onstop="hideProg();"/>  
+                
+                <!-- SELLER TABLE -->
+                <apex:pageblockTable value="{!CampaignMembers}" var="cm" style="width:100%; border-collapse:collapse;" 
+                                                                         styleClass="slds-table slds-table_bordered slds-table_cell-buffer">
+                    <!-- SELLER FIELD LABELS/COLUMNS - based on FIELDSET -->
+                    <apex:repeat var="f" value="{!$ObjectType.CampaignMember.FieldSets.EBH_CampaignMemberFields}">
+                        <apex:column >
+                            <!-- COLUMN NAME -->
+                            <apex:facet name="header">
+                                <apex:outputLabel styleClass="slds-form-element__label" style="padding-left:5px; font-size:13px; font-weight:normal;">
+                                    <apex:outputPanel rendered="{!f != 'CampaignId' && f != 'ContactId'}">
+                                        {!f.label}
+                                    </apex:outputPanel>
+                                    
+                                    <!-- Replace label for CampaignId to Campaign Name -->
+                                    <apex:outputPanel rendered="{!f == 'CampaignId'}">
+                                        {!$Label.EBH_CampaignName}
+                                    </apex:outputPanel>
+                                    
+                                    <!-- Replace label for ContactId to Contact -->
+                                    <apex:outputPanel rendered="{!f =='ContactId'}">
+                                        {!$Label.EBH_Contact}
+                                    </apex:outputPanel>
+                                </apex:outputLabel>
+                                
+                            </apex:facet>
+                            
+                            <!-- COLUMN DATA/VALUE -->
+                            <div style="padding-left:5px;">
+                                <apex:outputField value="{!cm[f]}"/>
+                            </div>
+                        </apex:column>
+                    </apex:repeat>
+                </apex:pageblockTable>
+                
+                <!-- BUTTONS -->
+                <div class="slds-media__body slds-button-group" role="group" style="float:right; padding:15px; padding-right:0px;">
+                    <!-- 'FIRST' BUTTON -->
+                    <apex:commandButton status="fetchStatus" reRender="pbId" value="{!$Label.EBH_First}" action="{!first}" 
+                                        title="First Page" styleClass="slds-button slds-button--neutral 
+                                                                      {!IF(PageNumberDisplay > 0,'','disabled')}"/>
+                    <!-- 'PREVIOUS' BUTTON -->
+                    <apex:commandButton status="fetchStatus" reRender="pbId" value="{!$Label.EBH_Previous}" action="{!previous}" 
+                                        title="Previous Page" styleClass="slds-button slds-button--neutral 
+                                                                          {!IF(PageNumberDisplay > 0,'','disabled')}"/>
+                    <!-- 'NEXT' BUTTON -->
+                    <apex:commandButton status="fetchStatus" reRender="pbId" value="{!$Label.EBH_Next}" action="{!next}" 
+                                        title="Next Page" styleClass="slds-button slds-button--neutral 
+                                                                      {!IF(PageNumberDisplay < PageCount - 1,'','disabled')}"/>
+                    <!-- 'LAST' BUTTON -->
+                    <apex:commandButton status="fetchStatus" reRender="pbId" value="{!$Label.EBH_Last}" action="{!last}" 
+                                        title="Last Page" styleClass="slds-button slds-button--neutral 
+                                                                      {!IF(PageNumberDisplay < PageCount - 1,'','disabled')}"/>
+                </div>
+                
+                <!-- PAGE NAVIGATION INFO - Page First Index # to Page Last Index # of Row count -->
+                <div style="float:left; padding:25px; padding-top:21px;">
+                    <!-- VF variable for Page First Index # -->
+                    <apex:variable id="start" var="start" value="{!(PageNumberDisplay * PageSize) + 1}"/>
+                    <!-- VF variable for Page Last Index # -->
+                    <apex:variable id="end" var="end" value="{!IF(PageNumberDisplay == 0, PageSize, (PageNumberDisplay + 1) * PageSize)}"/>
+                    
+                    <apex:outputText >
+                        {!start} - {!IF(end > RowCount, RowCount, end)} of {!RowCount}
+                    </apex:outputText>
+                </div>        
+            </apex:pageblock>            
+        </apex:form>
+    </html>
+    
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------------
+    @ Section: Scripts
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <apex:includeScript value="{!$Resource.EBH_CampaignHistoryScript}"/>
+    
+</apex:page>

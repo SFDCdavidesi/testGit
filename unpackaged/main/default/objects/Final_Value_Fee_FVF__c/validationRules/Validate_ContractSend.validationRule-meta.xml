@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_ContractSend</fullName>
+    <active>true</active>
+    <description>EPH-7608 Send click contract to a seller as part of FVF process
+TH:US-0008508 : 2/Dec/2020: add ISCHANGED(Final_Value_Fee_Stage__c) to avoid error on Process builder &quot;FVF_Set_Contract_Sender_to_Current_User&quot;</description>
+    <errorConditionFormula>IF(ISCHANGED(Final_Value_Fee_Stage__c),IF(AND(ISPICKVAL(Final_Value_Fee_Stage__c,&#39;Contract Sent&#39;),ISPICKVAL(PRIORVALUE(Final_Value_Fee_Stage__c),&#39;eBay Approved&#39;)),false,
+	IF(NOT(ISPICKVAL(Final_Value_Fee_Stage__c,&#39;Contract Sent&#39;)),false,true)
+),false)</errorConditionFormula>
+    <errorMessage>Only &quot;eBay Approved&quot; can be changed to &quot;Contract sent&#39;</errorMessage>
+</ValidationRule>

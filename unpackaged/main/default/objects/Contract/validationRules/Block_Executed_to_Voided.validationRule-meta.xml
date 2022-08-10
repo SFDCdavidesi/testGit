@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Block_Executed_to_Voided</fullName>
+    <active>true</active>
+    <description>EPH-6814, US-0007080</description>
+    <errorConditionFormula>AND( ISCHANGED(Status), TEXT(PRIORVALUE(Status))=&#39;Executed&#39;,  ISPICKVAL(Status, &#39;Voided&#39;) ) &amp;&amp; NOT( $Setup.ActiveValidationRules__c.All_Validation_Rules_Deactivated__c )</errorConditionFormula>
+    <errorMessage>You can not change status from Executed to Void.</errorMessage>
+</ValidationRule>

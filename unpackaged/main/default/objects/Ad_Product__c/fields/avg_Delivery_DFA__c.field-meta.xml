@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>avg_Delivery_DFA__c</fullName>
+    <description>US-0007934 - [Ads 2020] Daily Ads Revenue - Required EU Fields for Accruals</description>
+    <externalId>false</externalId>
+    <formula>IF (Days_Delivered2__c &gt; 0, FLOOR( Delivered_Sum_DFA_Daily__c / Days_Delivered2__c), 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>avg Delivery (DFA)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

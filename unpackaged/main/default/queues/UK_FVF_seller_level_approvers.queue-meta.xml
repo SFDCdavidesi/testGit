@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>UK FVF(seller level) approvers</name>
+    <queueMembers>
+        <users>
+            <user>alnwang@hive.project.com</user>
+            <user>andrichardson@hive.project.com</user>
+            <user>cngardner@hive.project.com</user>
+            <user>fmonro@hive.project.com</user>
+            <user>jtadd@hive.project.com</user>
+            <user>kemetcalfe@hive.project.com</user>
+            <user>lnrichards@hive.project.com</user>
+            <user>mmontecolombo@hive.project.com</user>
+            <user>matpotter@hive.project.com</user>
+            <user>showard1@hive.project.com</user>
+            <user>tosheppard@hive.project.com</user>
+            <user>zhtong@hive.project.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Final_Value_Fee_FVF__c</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_ContactTrigger__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>[EBH] (EPH-3270) : Sprint 7: To enable/disable the Contact trigger.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Trigger switch for Contact Trigger(s)</inlineHelpText>
+    <label>Contact Trigger</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Rev_rollUp_VS_MainCouponSite</fullName>
+    <active>true</active>
+    <description>US-0010212 - Coupon Seller: Validation rule Rev. roll up vs coupon main site
+US-0010909 - Coupon Seller: add FRITES sellers to coupon DE main site</description>
+    <errorConditionFormula>AND(
+ISNEW(),
+OR(
+ISPICKVAL(Coupon__r.Main_Coupon_Site__c, &#39;ebay.de&#39;) &amp;&amp; 
+AND( 
+NOT(ISPICKVAL(Seller__r.EBH_RevRollup__c, &#39;SE&#39;)),
+NOT(ISPICKVAL(Seller__r.EBH_RevRollup__c, &#39;DE&#39;)),
+NOT(ISPICKVAL(Seller__r.EBH_RevRollup__c, &#39;AT&#39;)),
+NOT(ISPICKVAL(Seller__r.EBH_RevRollup__c, &#39;BE&#39;)),
+NOT(ISPICKVAL(Seller__r.EBH_RevRollup__c, &#39;NL&#39;)),
+NOT(ISPICKVAL(Seller__r.EBH_RevRollup__c, &#39;IE&#39;)),
+NOT(ISPICKVAL(Seller__r.EBH_RevRollup__c, &#39;FR&#39;)),
+NOT(ISPICKVAL(Seller__r.EBH_RevRollup__c, &#39;IT&#39;)),
+NOT(ISPICKVAL(Seller__r.EBH_RevRollup__c, &#39;ES&#39;)),
+NOT(ISPICKVAL(Seller__r.EBH_RevRollup__c, &#39;PL&#39;))
+),
+ISPICKVAL(Coupon__r.Main_Coupon_Site__c, &#39;ebay.co.uk&#39;) &amp;&amp; 
+NOT(ISPICKVAL(Seller__r.EBH_RevRollup__c, &#39;UK&#39;))
+))</errorConditionFormula>
+    <errorMessage>This seller is not eligible to participate in this Coupon promotion due to mismatch between Seller Rev Roll Up and Coupon Main Site. For example, UK Sellers can only participate in coupons for ebay.co.uk site.</errorMessage>
+</ValidationRule>

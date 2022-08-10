@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Non_managed_Categories</fullName>
+    <columns>NAME</columns>
+    <columns>EBH_eBayItemID__c</columns>
+    <columns>EBH_MarketingTitle__c</columns>
+    <columns>EBH_BusinessName__c</columns>
+    <columns>EBH_SellerPrice__c</columns>
+    <columns>EBH_DealPrice__c</columns>
+    <columns>EBH_SubsidyP__c</columns>
+    <columns>EBH_Quantity__c</columns>
+    <columns>EBH_DealStartDate__c</columns>
+    <columns>EBH_DealEndDate__c</columns>
+    <columns>EBH_DealFormat__c</columns>
+    <columns>EBH_SpotlightCategory__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>EBH_Category__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>EBH_Status__c</field>
+        <operation>equals</operation>
+        <value>New</value>
+    </filters>
+    <filters>
+        <field>EBH_BusinessName__c</field>
+        <operation>contains</operation>
+    </filters>
+    <filters>
+        <field>EBH_Category__c</field>
+        <operation>equals</operation>
+        <value>Bastel- &amp; Künstlerbedarf,Briefmarken,Büro &amp; Schreibwaren,Business &amp; Industrie,Filme &amp; DVDs,Musik,Musikinstrumente,Sammeln &amp; Seltenes,Tickets,Verschiedenes</value>
+    </filters>
+    <filters>
+        <field>EBH_DealSiteId__c</field>
+        <operation>equals</operation>
+        <value>77</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>EBH_Deal__c.Deal_V1</value>
+    </filters>
+    <label>Non-managed Categories</label>
+</ListView>

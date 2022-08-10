@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UK_Coupon_BCD_BU_approvers_500K_BCD_Statement</fullName>
+    <filterScope>Queue</filterScope>
+    <label>UK Coupon BCD BU approvers 500K</label>
+    <queue>UK_Coupon_BCD_BU_approvers_500K</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

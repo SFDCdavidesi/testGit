@@ -1,0 +1,41 @@
+<p style="text-align: center;"><strong>Werbeaktions-Einzelvertrag</strong></p>
+<p style="text-align: justify;">Mit diesem Werbeaktions-Einzelvertrag und ihrer Anlage 1, die fester Bestandteil dessen ist, (nachfolgend gemeinsam „<strong>Werbeaktions-Einzelvertrag</strong>“), bieten wir Ihnen die Teilnahme an einem Maximalpreisangebot zu den nachstehenden Konditionen sowie auf Basis der dazugehörigen „<strong>Werbeaktions-AGB</strong>“ an, welche Sie unter <a href="https://pages.ebay.de/werbeaktions-agb/index.html">https://pages.ebay.de/werbeaktions-agb/index.html</a>  einsehen können.</p>
+<p style="text-align: justify;">Durch Anklicken des nachstehenden Buttons „ICH STIMME ZU“ erklären Sie Ihre ausdrückliche Zustimmung zu diesem Werbeaktions-Einzelvertrag, den Werbeaktions-AGB, und somit Ihre Teilnahme an dem Maximalpreisangebot. Die Zustimmung muss spätestens 1 Tag vor dem Start der Werbeaktion erfolgt sein.</p>
+<p style="text-align: center;"><a title="ICH STIMME ZU" href="{!urlAccept}">ICH STIMME ZU</a></p>
+<p style="text-align: center;">&nbsp;</p>
+<table style="height: 282px; width: 1012px; border-collapse: collapse;" border="1" cellspacing="5" cellpadding="5">
+<tbody>
+<tr>
+<td style="width: 194.444px; background-color: #f0f0f0;"><strong>Verk&auml;ufer User ID(s) f&uuml;r die Werbeaktion</strong></td>
+<td style="width: 794.444px;">{!FVF_SellerName}</td>
+</tr>
+<tr>
+<td style="width: 194.444px; background-color: #f0f0f0;"><strong>eBay Seite</strong></td>
+<td style="width: 794.444px;">www.ebay.de</td>
+</tr>
+<tr>
+<td style="width: 194.444px; background-color: #f0f0f0;"><strong>Werbeaktionszeitraum</strong></td>
+<td style="width: 794.444px;"><strong>{!FVF_StartDate} {!FVF_StartTime}</strong>&nbsp;<strong>bis&nbsp;{!FVF_EndDate} {!FVF_EndTime} </strong>Eine Verschiebung des Werbeaktionszeitraums sowie der Dauer dieses liegt im freien Ermessen von eBay. eBay wird den Verk&auml;ufer im gegebenen Fall hier&uuml;ber jedoch informieren.</td>
+</tr>
+<tr>
+<td style="width: 194.444px; background-color: #f0f0f0;"><strong>Von eBay finanzierter Rabatt auf die Verkaufsprovision</strong></td>
+<td style="width: 794.444px;">{!FVF_DiscountFVF} Rabatt</td>
+</tr>
+<tr>
+<td style="width: 194.444px; background-color: #f0f0f0;"><strong>Vom Rabatt erfasste Artikel</strong></td>
+<td style="width: 794.444px;">
+<p>Der Rabatt gilt f&uuml;r die in der <strong>Anlage 1</strong> genannten Artikel des Verk&auml;ufers, wenn diese w&auml;hrend des Werbeaktionszeitraums zum dem darin angegeben Maximalpreis verkauft werden. Es liegt in Ihrem freien Ermessen, die betreffenden Artikel auch zu geringeren als den hier vereinbarten Preisen zu verkaufen.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 194.444px; background-color: #f0f0f0;"><strong>Sonstiges</strong></td>
+<td style="width: 794.444px;">
+<p>{ifFreeShipping}</p>
+{!FVF_AddtionalTerm}</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>Bitte beachten Sie, dass alle Rabattbeträge für die Verkaufsprovision ohne Mehrwertsteuer angegeben sind. Der Rabatt auf die Verkaufsprovision, der Ihrem Konto gutgeschrieben wird, unterliegt der gleichen Mehrwertsteuerbehandlung wie die sonstigen Gebühren, die auch während des Aktionszeitraums für die von der Aktion nicht erfassten Artikel berechnet werden.</p>
+<p>Mit freundlichen Grüßen</p>
+<p>Ihr eBay-Team</p>

@@ -1,0 +1,9 @@
+Hello! 
+
+Your campaign brief for {!Campaign.Name} with the start date of {!Campaign.StartDate} has been rejected.
+
+Please contact the coordinator for more information on why your campaign brief has been rejected.
+
+For more details, please go to {!Campaign.EBH_RecordLink__c}. 
+
+Thank you.

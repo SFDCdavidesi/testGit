@@ -1,0 +1,160 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<p align="center" style="text-align: center;"><u style=""><span lang="DE" style=""><font face="Arial, sans-serif" style="" size="2">Werbeaktions-Einzelvertrag<o:p></o:p></font></span></u></p><p align="center" style="text-align: center;"><u style=""><span lang="DE" style=""><font face="Arial, sans-serif" style="" size="2"><br></font></span></u></p><p style="text-align: justify;"><font face="Arial, sans-serif" size="2"><span lang="DE" style="">Mit diesem
+Werbeaktions-Einzelvertrag bieten wir Ihnen die Teilnahme an einem WOW! Angebot
+zu den nachstehenden Konditionen sowie auf Basis der dazugehörigen „<b>Werbeaktions-AGB</b>“
+an, welche Sie unter </span><span lang="EN-GB"><a href="https://pages.ebay.de/werbeaktions-agb/index.html"><span style="background: white;">https://pages.ebay.de/werbeaktions-agb/index.html</span></a></span><span lang="EN-GB" style="color: rgb(29, 28, 29); background: white;"> </span><span lang="DE" style="">einsehen
+können.</span><span lang="EN-GB" style="color: rgb(29, 28, 29); background: white;"><o:p></o:p></span></font></p><p style="text-align: justify;"><span style="font-family: Arial, sans-serif; font-size: small;">Durch Anklicken
+des nachstehenden Buttons „</span><i style="font-family: Arial, sans-serif; font-size: small;">ICH STIMME ZU</i><span style="font-family: Arial, sans-serif; font-size: small;">“ erklären Sie Ihre
+ausdrückliche Zustimmung zu diesem Werbeaktions-Einzelvertrag, den
+Werbeaktions-AGB, und somit Ihre Teilnahme an dem WOW! Angebot. Die Zustimmung
+muss spätestens 1 Tag vor dem Start des WOW! Angebots erfolgt sein.</span></p><p class="MsoNormal" style="color: rgb(0, 0, 0); margin: 0cm 0cm 8pt; line-height: 17.12px;"><b style=""><font face="Arial, sans-serif" size="2"><br></font></b></p><p class="MsoNormal" style="color: rgb(0, 0, 0); text-align: center; margin: 0cm 0cm 8pt; line-height: 17.12px;"><a href="https://hive-prod.secure.force.com/response?id={!EBH_Deal__c.Id}&amp;amp;reURL=www.ebay.de"><font face="Arial, sans-serif" size="2">ICH STIMME ZU</font></a></p><p class="MsoNormal" style="color: rgb(0, 0, 0); margin: 0cm 0cm 8pt; line-height: 17.12px;"><b><span lang="DE" style="line-height: 107%;"><font face="Arial, sans-serif" size="2"><br></font></span></b></p><p class="MsoNormal" style="color: rgb(0, 0, 0); margin: 0cm 0cm 8pt; line-height: 17.12px;"><b style=""><span lang="DE" style=""><font face="Arial, sans-serif" size="2">Einzelheiten zum WOW! Angebot</font></span></b></p><p class="MsoNormal" style="color: rgb(0, 0, 0); margin: 0cm 0cm 8pt; line-height: 17.12px;"><font face="Arial, sans-serif" size="2"><b><span lang="DE" style="line-height: 107%;">&nbsp;</span></b><!--EndFragment--></font></p><p class="MsoNormal" style="color: rgb(0, 0, 0); line-height: 17.12px;"><font face="Arial, sans-serif" size="2"><span style="background-color: white;">eBay-Nutzername</span>: {!EBH_Deal__c.EBH_BusinessName__c}</font></p><p class="MsoNormal" style="color: rgb(0, 0, 0); line-height: 17.12px;"><font face="Arial, sans-serif" size="2"><span style="background-color: white;">Produktname</span>: {!EBH_Deal__c.EBH_MarketingTitle__c}</font></p><p class="MsoNormal" style="color: rgb(0, 0, 0); line-height: 17.12px;"><font face="Arial, sans-serif" size="2"><span style="background-color: white;">Verfügbare Stückzahl</span>: {!EBH_Deal__c.EBH_Quantity__c}</font></p><p class="MsoNormal" style="color: rgb(0, 0, 0); line-height: 17.12px;"><font face="Arial, sans-serif" size="2"><span style="background-color: white;">Aktionsformat</span>: {!EBH_Deal__c.EBH_LocalDealFormat__c}</font></p><p class="MsoNormal" style="color: rgb(0, 0, 0); line-height: 17.12px;"><font face="Arial, sans-serif" size="2">Start der Aktion: {!EBH_Deal__c.EBH_DealStartDate__c},&nbsp;<span style="background-color: white;">08:00</span></font></p><p class="MsoNormal" style="color: rgb(0, 0, 0); line-height: 17.12px;"><font face="Arial, sans-serif" size="2">Ende der Aktion: {!EBH_Deal__c.EBH_DealEndDate__c},&nbsp;07:59</font></p><p class="MsoNormal" style="color: rgb(0, 0, 0); line-height: 17.12px;"><font face="Arial, sans-serif" size="2">Website(s):&nbsp;DE&nbsp;</font></p><p class="MsoNormal" style="color: rgb(0, 0, 0); margin: 0cm 0cm 8pt; line-height: 17.12px;"><font face="Arial, sans-serif" size="2"><span class="body1" style="color: rgb(0, 0, 0);"><span style="line-height: 14.98px;"><br></span></span><b style="color: rgb(0, 0, 0);">Preis<br></b></font></p><p class="MsoNormal" style="color: rgb(0, 0, 0); line-height: 17.12px;"><font face="Arial, sans-serif" size="2">UVP/Bisher-Preis: €{!EBH_Deal__c.EBH_RRPWASPrice__c}&nbsp;</font></p><p class="MsoNormal" style="color: rgb(0, 0, 0); line-height: 17.12px;"><font face="Arial, sans-serif" size="2">Ihr Angebotspreis: €{!EBH_Deal__c.EBH_SellerPrice__c}&nbsp;</font></p><p class="MsoNormal" style="color: rgb(0, 0, 0); line-height: 17.12px;"></p><p class="MsoNormal" style="color: rgb(0, 0, 0); line-height: 17.12px;"><font face="Arial, sans-serif" style="" size="2">Ermäßigter Aktionspreis*: €{!EBH_Deal__c.EBH_DealPrice__c}</font></p><p class="MsoNormal" style="font-family: arial; font-size: 12pt; color: rgb(0, 0, 0); line-height: 17.12px;"><font face="Arial, sans-serif" size="3"><br></font></p><p class="MsoNormal"><span lang="EN-GB" style="font-size: 9pt; background: white;">* Ermäßigter Aktionspreis = Ihr Angebotspreis für die Aktion -
+Vermarktungsunterstützung pro verkauftem Artikel</span><span lang="EN-GB" style="font-size:9.0pt"><o:p></o:p></span></p><p class="MsoNormal" style="font-family: arial; font-size: 12pt; color: rgb(0, 0, 0); margin: 0cm 0cm 8pt; line-height: 17.12px;"><span class="body1" style="color: rgb(0, 0, 0);"><span lang="DE" style="line-height: 107%;"><font size="3"><br></font></span></span></p><p class="MsoNormal" style="font-family: arial; color: rgb(0, 0, 0); margin: 0cm 0cm 8pt; line-height: 17.12px;"><font face="Arial, sans-serif" style="" size="2"><span class="body1" style="color: rgb(0, 0, 0);"><b style=""><span style="line-height: 17.12px;">Vermarktungsunterstützung</span></b></span></font></p><p class="MsoNormal" style="font-family: arial; color: rgb(0, 0, 0); margin: 0cm 0cm 8pt; line-height: 17.12px;"><font face="Arial, sans-serif" size="2"><font style="color: rgb(0, 0, 0);">Vermarktungsunterstützung pro verkauftem Artikel&nbsp;</font>(inkl. USt.)<font style="color: rgb(0, 0, 0);">: €</font><font style="color: rgb(0, 0, 0);">{!EBH_Deal__c.EBH_Subsidy__c}</font></font></p><p class="MsoNormal" style="font-family: arial; color: rgb(0, 0, 0); margin: 0cm 0cm 8pt; line-height: 17.12px;"><font face="Arial, sans-serif" size="2"><font style="color: rgb(0, 0, 0);">Maximale Vermarktungsunterstützung - Menge:&nbsp;</font>{!EBH_Deal__c.EBH_Quantity__c}</font></p><p class="MsoNormal" style="font-family: arial; margin: 0cm 0cm 8pt; line-height: 17.12px;"><font face="Arial, sans-serif" size="2"><span style="color: rgb(0, 0, 0);">Maximale Vermarktungsunterstützung - Betrag: €</span>{!EBH_Deal__c.Subsidy_Planned_Gross__c}</font></p><p class="MsoNormal" style="font-family: arial; color: rgb(0, 0, 0); margin: 0cm 0cm 8pt; line-height: 17.12px;"><b style=""><span lang="DE" style="line-height: 107%;"><font face="Arial, sans-serif" size="2"><br></font></span></b></p><p class="MsoNormal" style="font-family: arial; color: rgb(0, 0, 0); margin: 0cm 0cm 8pt; line-height: 17.12px;"><font face="Arial, sans-serif" size="2"><b style=""><span lang="DE" style="line-height: 107%;">Anmerkungen</span></b>&nbsp; &nbsp;&nbsp;</font></p><p class="MsoNormal" style="font-family: arial; color: rgb(0, 0, 0); margin: 0cm 0cm 8pt; line-height: 17.12px;"><span style="font-family: Arial, sans-serif;"><font size="2">{!EBH_Deal__c.EBH_CommentfromeBaySourcer__c}&nbsp; &nbsp;</font></span></p><p class="MsoNormal" style="font-family: arial; color: rgb(0, 0, 0); margin: 0cm 0cm 8pt; line-height: 17.12px;"><span style="font-family: Arial, sans-serif;"><font size="2"><br></font></span></p><p class="MsoNormal" style="font-family: arial; color: rgb(0, 0, 0); margin: 0cm 0cm 8pt; line-height: normal;"><span style="background-color: white; font-family: Arial, sans-serif; font-size: small;">Mit freundlichen Grüßen&nbsp;</span></p><p class="MsoNormal" style="font-family: arial; color: rgb(0, 0, 0); margin: 0cm 0cm 8pt; line-height: normal;"><font style="" face="Arial, sans-serif" size="2"><font style="">Ihr eBay Team</font></font></p><style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1107305727 0 0 415 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-536859905 -1073697537 9 0 511 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-ansi-language:DE;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:11.0pt;
+	mso-ansi-font-size:11.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-ansi-language:DE;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;
+	mso-header-margin:36.0pt;
+	mso-footer-margin:36.0pt;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style><style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1107305727 0 0 415 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-536859905 -1073697537 9 0 511 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-ansi-language:DE;}
+span.body1
+	{mso-style-name:body1;
+	mso-style-unhide:no;
+	mso-ansi-font-size:10.5pt;
+	mso-bidi-font-size:10.5pt;
+	font-family:"Arial",sans-serif;
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:11.0pt;
+	mso-ansi-font-size:11.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-ansi-language:DE;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;
+	mso-header-margin:36.0pt;
+	mso-footer-margin:36.0pt;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>]]></td>
+</tr>
+</table>

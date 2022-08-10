@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>IT [EBH] (EPH-4171) - Mass Acceptance of Deals with Subsidy</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>EBH_eBayBlankLetterhead</letterhead>
+    <name>IT Mass Acceptance of Deals without Subsidy</name>
+    <style>freeForm</style>
+    <subject>eBay Imperdibili – Accetta i termini e le condizioni della nuova offerta</subject>
+    <textOnly>Clicca su Accetto per confermare il l’offerta.
+
+
+Dettagli:
+
+Nome utente eBay: {!EBH_Deal__c.EBH_BusinessName__c}
+
+Titolo: {!EBH_Deal__c.EBH_ProductTitle__c}
+
+Quantità: {!EBH_Deal__c.EBH_Quantity__c}
+
+Formato: {!EBH_Deal__c.EBH_LocalDealFormat__c}
+
+Data di inizio: {!EBH_Deal__c.EBH_DealStartDate__c}
+
+Data di scadenza: {!EBH_Deal__c.EBH_DealEndDate__c}
+
+Prezzo iniziale: {!EBH_Deal__c.EBH_RRPWASPrice__c} EUR
+
+Prezzo scontato: {!EBH_Deal__c.EBH_SellerPrice__c} EUR
+
+
+Commenti eBay: {!EBH_Deal__c.EBH_CommentfromeBaySourcer__c}
+
+
+
+Accettando, confermi che:
+
+• L&#39;oggetto che metti in vendita non è una contraffazione né un&#39;imitazione.
+
+• Sei autorizzato a vendere e distribuire questo oggetto e a inviarlo nei luoghi che hai specificato.
+
+• Mettendo in vendita questo oggetto su eBay, non stai violando alcun obbligo contrattuale previsto da altri contratti.
+
+• Il prezzo di vendita sopra indicato è l&#39;effettivo prezzo di vendita iniziale.
+
+• Non modificherai il prezzo scontato dell&#39;oggetto durante il periodo promozionale sopra indicato senza l&#39;esplicito consenso scritto di eBay.
+
+
+Questi Termini e condizioni regolano la promozione sui siti eBay sopra indicati e sono parte integrante dell&#39;accordo che hai stipulato con eBay GmbH.
+
+
+Cordiali saluti,
+
+Il team eBay</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

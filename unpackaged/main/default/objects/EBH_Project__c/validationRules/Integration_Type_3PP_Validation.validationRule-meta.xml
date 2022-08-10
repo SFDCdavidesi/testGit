@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Integration_Type_3PP_Validation</fullName>
+    <active>true</active>
+    <description>US-0007498</description>
+    <errorConditionFormula>AND(
+   ISPICKVAL(Integration_type__c, &#39;3PP&#39;), 
+   ISBLANK(Main3PP__c),
+   NOT( $Setup.ActiveValidationRules__c.All_Validation_Rules_Deactivated__c )
+)</errorConditionFormula>
+    <errorMessage>For sellers with Integration type 3PP it is required to specify main 3PP</errorMessage>
+</ValidationRule>

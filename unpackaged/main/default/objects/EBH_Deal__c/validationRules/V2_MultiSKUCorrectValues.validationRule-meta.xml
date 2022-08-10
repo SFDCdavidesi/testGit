@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>V2_MultiSKUCorrectValues</fullName>
+    <active>true</active>
+    <description>US-0008843 - [NA] Migrate NA Deals Validation Rules to Hive</description>
+    <errorConditionFormula>AND(
+RecordType.DeveloperName =&#39;Deal_V2&#39;,
+OR(
+SellersDealPriceMSKULower__c &gt; SellersDealPriceMSKUUpper__c,
+SellersOfferPriceMSKULower__c &gt; SellersOfferPriceMSKUUpper__c,
+ListPriceMSKULower__c &gt; ListPriceMSKUUpper__c
+),
+NOT($Setup.byPass__c.ByPass_Validation__c)
+)</errorConditionFormula>
+    <errorMessage>Upper SKU fields must have a larger than than the Lower SKU fields</errorMessage>
+</ValidationRule>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>International_Accounts</fullName>
+    <active>true</active>
+    <description>if new account request is international, make sure &#39;client agrees to pay in usd&#39; and &#39;client agrees to USD invoice&#39; fields are required.</description>
+    <errorConditionFormula>AND(
+
+$Setup.byPass__c.byPass_WFRule__c = FALSE,
+
+RecordType.Name = &#39;New Account&#39;,
+International_Account__c = TRUE,
+
+
+ISBLANK(text(Client_Agrees_to_Pay_in_USD__c)),
+ISBLANK(text(Client_Agrees_to_USD_Invoice__c))
+
+)</errorConditionFormula>
+    <errorMessage>For international accounts, please fill out whether client agrees to a US invoice or pay in USD.</errorMessage>
+</ValidationRule>

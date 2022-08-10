@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disputes</fullName>
+    <availability>online</availability>
+    <description>US-0009180 - [NA] Migrate Disputes Microsite for Seller Case creation</description>
+    <displayType>button</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Disputes</masterLabel>
+    <openType>sidebar</openType>
+    <page>DD_DisputeAdjustments</page>
+    <protected>false</protected>
+</WebLink>

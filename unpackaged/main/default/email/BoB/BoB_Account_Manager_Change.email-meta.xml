@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>EPH-6449 BOB MGMT. - Make Account manager field editable all time</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>BoB Account Manager Change</name>
+    <style>none</style>
+    <subject>BoB Account Manager Updated</subject>
+    <textOnly>Dear {!GCX_OPP_NAME}
+ 
+
+{!BOB_OWNER_NAME} has updated the Account Manager Name for Seller {!SELLER_NAME} {!ORACLE_ID}
+
+from {!ACCOUNT_MGR_FROM} to {!ACCOUNT_MGR_TO}.
+
+
+Please ensure that the MAC-Note will be updated accordingly.
+ 
+
+Thank you,
+
+HIVE</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

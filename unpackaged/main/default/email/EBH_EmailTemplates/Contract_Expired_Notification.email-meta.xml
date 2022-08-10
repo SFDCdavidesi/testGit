@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0009317 - [Contracts] Automate Stage &quot;Expiration&quot; in Contracts</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Contract Expired Notification</name>
+    <style>none</style>
+    <subject>Your {!Contract.RecordType} {!Contract.ContractNumber} is expired</subject>
+    <textOnly>Dear {!Contract.OwnerFullName},
+
+Your {!Contract.RecordType} {!Contract.ContractNumber} for {!Contract.Account} is Expired as the Contract End date has reached.
+
+Please note you cannot reset an expired Contract to &quot;Draft&quot; status. You can always &quot;Clone&quot; the expired Contract to copy the related information from this expired Contract to create a new Draft version .
+
+Thank you,
+Hive</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>eBAY_Seller_ID_s_if_eBay_Seller__c</fullName>
+    <description>INTEG - N || ** eBay Advertising ** || WF - N || AP - N || VAL - N ||Class - N || Definition: eBay Seller ID(s) if eBay Seller || CR - 00405201</description>
+    <externalId>false</externalId>
+    <label>Unused</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

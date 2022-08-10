@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_ThirdPartyProvider3PPOther__c</fullName>
+    <description>#US-0015700</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Third party provider (3PP) that seller is currently working with</inlineHelpText>
+    <label>3PP (other)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>4sellers</fullName>
+                <default>false</default>
+                <label>4sellers</label>
+            </value>
+            <value>
+                <fullName>Afterbuy</fullName>
+                <default>false</default>
+                <label>Afterbuy</label>
+            </value>
+            <value>
+                <fullName>Channeladvisor</fullName>
+                <default>false</default>
+                <label>Channeladvisor</label>
+            </value>
+            <value>
+                <fullName>Dreamrobot</fullName>
+                <default>false</default>
+                <label>Dreamrobot</label>
+            </value>
+            <value>
+                <fullName>JTL</fullName>
+                <default>false</default>
+                <label>JTL</label>
+            </value>
+            <value>
+                <fullName>M2E</fullName>
+                <default>false</default>
+                <label>M2E</label>
+            </value>
+            <value>
+                <fullName>No 3PP</fullName>
+                <default>false</default>
+                <label>No 3PP</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Own API</fullName>
+                <default>false</default>
+                <label>Own API</label>
+            </value>
+            <value>
+                <fullName>Plentymarkets</fullName>
+                <default>false</default>
+                <label>Plentymarkets</label>
+            </value>
+            <value>
+                <fullName>Speed4Trade</fullName>
+                <default>false</default>
+                <label>Speed4Trade</label>
+            </value>
+            <value>
+                <fullName>Tradebyte</fullName>
+                <default>false</default>
+                <label>Tradebyte</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

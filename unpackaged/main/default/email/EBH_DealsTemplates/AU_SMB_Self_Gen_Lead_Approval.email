@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<b style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">A New Salesforce Lead is Pending Your Approval</b><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><b><br></b></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><ul><li>Company :&nbsp;{!Lead.Company}</li><li>Lead Owner :&nbsp;{!Lead.OwnerFullName}</li><li>Lead Source :&nbsp;{!Lead.LeadSource}</li><li>Website :&nbsp;{!Lead.Website}</li><li>Online Rank :&nbsp;{!Lead.OnlineRank__c}</li><li>Shopping Cart :&nbsp;{!Lead.00N3u00000PEXgD}</li></ul><div>Link : <a href="{!Lead.Link}">Go to Lead</a></div></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div><div style=""><span style="background-color: rgb(248, 248, 248); color: rgb(29, 28, 29); font-family: Slack-Lato, appleLogo, sans-serif; font-size: 15px; font-variant-ligatures: common-ligatures; white-space: pre-wrap;"><a href="{!ApprovalRequest.Internal_URL}">Approve or Reject</a></span></div>]]></td>
+</tr>
+</table>

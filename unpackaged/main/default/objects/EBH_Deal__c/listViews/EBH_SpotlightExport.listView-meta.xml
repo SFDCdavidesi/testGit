@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_SpotlightExport</fullName>
+    <columns>Rank__c</columns>
+    <columns>NAME</columns>
+    <columns>EBH_MarketingTitle__c</columns>
+    <columns>EBH_DealStartDate__c</columns>
+    <columns>EBH_DealEndDate__c</columns>
+    <columns>EBH_DealPrice__c</columns>
+    <columns>EBH_eBayItemID__c</columns>
+    <columns>EBH_DealFormat__c</columns>
+    <columns>EBH_SpotlightCategory__c</columns>
+    <columns>OWNER.ALIAS</columns>
+    <columns>EBH_eBayLink__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>EBH_Status__c</field>
+        <operation>equals</operation>
+        <value>Deal Agreed</value>
+    </filters>
+    <label>Spotlight Export</label>
+</ListView>

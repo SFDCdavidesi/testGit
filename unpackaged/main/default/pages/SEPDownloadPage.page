@@ -1,0 +1,428 @@
+<apex:page id="pg" standardStylesheets="false" Controller="SEPDownloadController" contenttype="application/vnd.ms-excel#SEPCouponSellerDownload.xls;charset=UTF-8">
+
+  <apex:outputText value="{!xmlheader}" />
+
+  <Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel"
+    xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet" xmlns:html="http://www.w3.org/TR/REC-html40">
+    <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+      <Author>
+        <apex:outputText value="{!currentUser}" />
+      </Author>
+      <Company>eBay, Inc.</Company>
+      <Version>12.00</Version>
+    </DocumentProperties>
+    <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+      <WindowHeight>10704</WindowHeight>
+      <WindowWidth>25596</WindowWidth>
+      <WindowTopX>0</WindowTopX>
+      <WindowTopY>0</WindowTopY>
+      <Calculation>ManualCalculation</Calculation>
+      <ProtectStructure>False</ProtectStructure>
+      <ProtectWindows>False</ProtectWindows>
+    </ExcelWorkbook>
+    <Styles>
+
+      <Style ss:ID="s4624">
+        <Alignment ss:Vertical="Bottom" ss:WrapText="1"/><Borders><Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/><Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/><Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/><Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/></Borders><Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"/>
+      </Style>
+      <Style ss:ID="s4707" ss:Parent="s4624">
+        <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/><Alignment ss:WrapText="1"/>
+      </Style>
+      <Style ss:ID="s95">
+        <Alignment ss:Vertical="Center"/><Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="20" ss:Color="#000000" ss:Bold="1"/>
+      </Style>
+      <Style ss:ID="s96">
+        <Alignment ss:WrapText="1" ss:Vertical="Top"/><Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+      </Style>
+      <Style ss:ID="rowBody1">
+        <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/><Alignment ss:WrapText="1"/> <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+      </Style>
+
+    </Styles>
+    <!--<Worksheet ss:Name="{!HTMLENCODE($Label.CouponOverview)}">
+      <Table x:FullColumns="1" x:FullRows="1" ss:DefaultColumnWidth="50.4" ss:DefaultRowHeight="14.4">
+        <Column ss:Width="300" />
+        <Column ss:Width="700" />
+
+        <Row ss:AutoFitHeight="0" ss:Height="50">
+          <Cell ss:StyleID="s95">
+            <Data ss:Type="String">
+              <apex:outputText value="Details der Werbeaktion" /> </Data>
+          </Cell>
+        </Row>
+        <Row>
+
+        </Row>
+        <Row>
+
+        </Row>
+        <Row>
+
+        </Row>
+        <Row ss:AutoFitHeight="0" ss:Height="55">
+          <Cell ss:StyleID="s4707">
+            <Data ss:Type="String">
+              <apex:outputText value="Verkäufer" />
+            </Data>
+            <NamedCell ss:Name="Print_Titles" />
+            <NamedCell ss:Name="Print_Area" />
+          </Cell>
+          <Cell ss:StyleID="s4707">
+            <Data ss:Type="String">
+              <apex:outputText value="{!cs.legalEntity}, {!cs.streetName}, {!cs.zip}, {!cs.city}, {!cs.country}" />
+            </Data>
+            <NamedCell ss:Name="Print_Titles" />
+            <NamedCell ss:Name="Print_Area" />
+          </Cell>
+
+        </Row>
+
+        <Row ss:AutoFitHeight="0" ss:Height="45">
+          <Cell ss:StyleID="s4707">
+            <Data ss:Type="String">
+              <apex:outputText value="Nutzername des Verkäufers für die Gutscheinaktion" />
+            </Data>
+            <NamedCell ss:Name="Print_Titles" />
+            <NamedCell ss:Name="Print_Area" />
+          </Cell>
+          <Cell ss:StyleID="s4707">
+            <Data ss:Type="String">
+              <apex:outputText value="{!cs.eBaySellerID}" />
+            </Data>
+            <NamedCell ss:Name="Print_Titles" />
+            <NamedCell ss:Name="Print_Area" />
+          </Cell>
+
+        </Row>
+
+        <Row ss:AutoFitHeight="0" ss:Height="45">
+          <Cell ss:StyleID="s4707">
+            <Data ss:Type="String">
+              <apex:outputText value="eBay-Website(s)" />
+            </Data>
+            <NamedCell ss:Name="Print_Titles" />
+            <NamedCell ss:Name="Print_Area" />
+          </Cell>
+          <Cell ss:StyleID="s4707">
+            <Data ss:Type="String">
+              <apex:outputText value="{!cs.couponSites}" />
+            </Data>
+            <NamedCell ss:Name="Print_Titles" />
+            <NamedCell ss:Name="Print_Area" />
+          </Cell>
+
+        </Row>
+
+        <Row ss:AutoFitHeight="0" ss:Height="50">
+          <Cell ss:StyleID="s4707">
+            <Data ss:Type="String">
+              <apex:outputText value="Gutschein-Werbeaktionszeitraum" />
+            </Data>
+            <NamedCell ss:Name="Print_Titles" />
+            <NamedCell ss:Name="Print_Area" />
+          </Cell>
+          <Cell ss:StyleID="s4707">
+            <Data ss:Type="String">
+              <apex:outputText value="{!cs.couponStartTime} {!cs.formatcouponStartDate} bis {!cs.couponEndTime}{!cs.formatcouponEndDate} (CET) oder jeder andere Zeitraum, welchen eBay bestimmt. Die exakte Werbedauer obliegt ausschließlich eBay."
+              />
+            </Data>
+            <NamedCell ss:Name="Print_Titles" />
+            <NamedCell ss:Name="Print_Area" />
+          </Cell>
+
+        </Row>
+
+        <Row ss:AutoFitHeight="0" ss:Height="80">
+          <Cell ss:StyleID="s4707">
+            <Data ss:Type="String">
+              <apex:outputText value="Artikel" />
+            </Data>
+            <NamedCell ss:Name="Print_Titles" />
+            <NamedCell ss:Name="Print_Area" />
+          </Cell>
+          <Cell ss:StyleID="s4707">
+            <Data ss:Type="String">
+              <apex:outputText value="Gutscheine für diese Gutscheinaktion werden nur für bestimmte Artikel ausgegeben und können nur für diese eingelöst werden („Gutscheine auf Artikel-Basis“). Welche Artikel dabei berücksichtigt werden, entnehmen Sie bitte der beigefügten Übersicht, darin werden die Artikel nach Artikelnummern oder SKUs aufgeschlüsselt. Sollen weitere Artikelnummern zu den berechtigten Artikeln hinzugenommen werden, so ist das mit eBay per E-Mail zu vereinbaren."
+              />
+            </Data>
+            <NamedCell ss:Name="Print_Titles" />
+            <NamedCell ss:Name="Print_Area" />
+          </Cell>
+
+        </Row>
+
+        <Row ss:AutoFitHeight="0" ss:Height="50">
+          <Cell ss:StyleID="s4707">
+            <Data ss:Type="String">
+              <apex:outputText value="Details zur Gutscheinaktion oder Promotion" />
+            </Data>
+            <NamedCell ss:Name="Print_Titles" />
+            <NamedCell ss:Name="Print_Area" />
+          </Cell>
+          <Cell ss:StyleID="s4707">
+            <Data ss:Type="String">
+              <apex:outputText value="{!cs.couponDiscountAndDiscountAmount} Rabatt auf den Artikelpreis." />
+            </Data>
+            <NamedCell ss:Name="Print_Titles" />
+            <NamedCell ss:Name="Print_Area" />
+          </Cell>
+
+        </Row>
+
+        <Row ss:AutoFitHeight="0" ss:Height="45">
+          <Cell ss:StyleID="s4707">
+            <Data ss:Type="String">
+              <apex:outputText value="eBay Vertragspartner" />
+            </Data>
+            <NamedCell ss:Name="Print_Titles" />
+            <NamedCell ss:Name="Print_Area" />
+          </Cell>
+          <Cell ss:StyleID="s4707">
+            <Data ss:Type="String">
+              <apex:outputText value="eBay GmbH, Albert-Einstein-Ring 2-6, 14532 Kleinmachnow" />
+            </Data>
+            <NamedCell ss:Name="Print_Titles" />
+            <NamedCell ss:Name="Print_Area" />
+          </Cell>
+
+        </Row>
+        <Row ss:AutoFitHeight="0" ss:Height="45">
+          <Cell ss:StyleID="s4707">
+            <Data ss:Type="String">
+              <apex:outputText value="Sonstiges" />
+            </Data>
+            <NamedCell ss:Name="Print_Titles" />
+            <NamedCell ss:Name="Print_Area" />
+          </Cell>
+          <Cell ss:StyleID="s4707">
+            <Data ss:Type="String">
+              <apex:outputText value="{!cs.additionalArrangement}" />
+            </Data>
+            <NamedCell ss:Name="Print_Titles" />
+            <NamedCell ss:Name="Print_Area" />
+          </Cell>
+
+        </Row>
+
+        <Row>
+        </Row>
+        <Row ss:AutoFitHeight="0" ss:Height="50">
+          <Cell ss:StyleID="s96">
+            <Data ss:Type="String">
+              <apex:outputText value="{!$Label.DownloadDate}: {!currentDate}" />
+            </Data>
+          </Cell>
+        </Row>
+
+      </Table>
+      <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+        <PageSetup>
+          <Layout x:CenterHorizontal="1" />
+          <Header x:Margin="0.3" x:Data="&amp;C&amp;&quot;-,Bold&quot;&amp;16Gutschein-Übersicht" />
+          <Footer x:Margin="0.3" x:Data="&amp;C&amp;N" />
+          <PageMargins x:Bottom="0.5" x:Left="0.45" x:Right="0.45" x:Top="0.5" />
+        </PageSetup>
+        <FitToPage/>
+        <Print>
+          <ValidPrinterInfo/>
+          <Scale>26</Scale>
+          <HorizontalResolution>600</HorizontalResolution>
+          <VerticalResolution>600</VerticalResolution>
+        </Print>
+        <Zoom>80</Zoom>
+        <Selected/>
+        <DoNotDisplayGridlines/>
+        <Panes>
+          <Pane>
+            <Number>3</Number>
+            <ActiveRow>6</ActiveRow>
+            <ActiveCol>1</ActiveCol>
+          </Pane>
+        </Panes>
+        <ProtectObjects>False</ProtectObjects>
+        <ProtectScenarios>False</ProtectScenarios>
+      </WorksheetOptions>
+
+    </Worksheet> -->
+    <Worksheet ss:Name="{!HTMLENCODE($Label.CouponSellerDetail_TabLabel_Items)}">
+      <Table x:FullColumns="1" x:FullRows="1" ss:DefaultColumnWidth="50.4" ss:DefaultRowHeight="14.4">
+        <Column ss:Width="314.5" />
+        <Column ss:Width="314.5" />
+        <Column ss:AutoFitWidth="0" ss:Width="261.5" />
+        <Row ss:AutoFitHeight="0" ss:Height="49.949999999999996">
+          <Cell ss:StyleID="s95">
+            <Data ss:Type="String">
+              <apex:outputText value="Details der Werbeaktion" />
+            </Data>
+          </Cell>
+        </Row>
+        <Row ss:AutoFitHeight="0" ss:Height="14.5">
+          <Cell ss:StyleID="s96">
+            <Data ss:Type="String">
+              <apex:outputText value="Nutzername des Verkäufers für die Gutscheinaktion" />
+            </Data>
+          </Cell>
+          <Cell ss:StyleID="s96" ss:MergeAcross="1">
+            <Data ss:Type="String">
+              <apex:outputText value="{!cs.eBaySellerID}" />
+            </Data>
+          </Cell>
+        </Row>
+        <Row ss:AutoFitHeight="0" ss:Height="14.5">
+          <Cell ss:StyleID="s96">
+            <Data ss:Type="String">
+              <apex:outputText value="Gutschein-Name" />
+            </Data>
+          </Cell>
+          <Cell ss:StyleID="s96" ss:MergeAcross="1">
+            <Data ss:Type="String">
+              <apex:outputText value="{!cs.marketingName}" />
+            </Data>
+          </Cell>
+        </Row>
+        <Row ss:AutoFitHeight="0" ss:Height="14.5">
+          <Cell ss:StyleID="s96">
+            <Data ss:Type="String">
+              <apex:outputText value="Gutschein-Code" />
+            </Data>
+          </Cell>
+          <Cell ss:StyleID="s96" ss:MergeAcross="1">
+            <Data ss:Type="String">
+              <apex:outputText value="{!cs.couponCode}" />
+            </Data>
+          </Cell>
+        </Row>
+        <Row ss:AutoFitHeight="0" ss:Height="14.5">
+          <Cell ss:StyleID="s96">
+            <Data ss:Type="String">
+              <apex:outputText value="Startdatum" />
+            </Data>
+          </Cell>
+          <Cell ss:StyleID="s96" ss:MergeAcross="1">
+            <Data ss:Type="String">
+              <apex:outputText value="{!cs.formatcouponStartDate}" />
+            </Data>
+          </Cell>
+        </Row>
+        <Row ss:AutoFitHeight="0" ss:Height="14.5">
+          <Cell ss:StyleID="s96">
+            <Data ss:Type="String">
+              <apex:outputText value="Enddatum" />
+            </Data>
+          </Cell>
+          <Cell ss:StyleID="s96" ss:MergeAcross="1">
+            <Data ss:Type="String">
+              <apex:outputText value="{!cs.formatcouponEndDate}" />
+            </Data>
+          </Cell>
+        </Row>
+        <Row ss:AutoFitHeight="0" ss:Height="14.5">
+          <Cell ss:StyleID="s96">
+            <Data ss:Type="String">
+              <apex:outputText value="{!$Label.DownloadDate}" />
+            </Data>
+          </Cell>
+          <Cell ss:StyleID="s96" ss:MergeAcross="1">
+            <Data ss:Type="String">
+              <apex:outputText value="{!currentDate}" />
+            </Data>
+          </Cell>
+        </Row>
+        <Row ss:AutoFitHeight="0" ss:Height="49.949999999999996">
+          <Cell ss:StyleID="s95">
+            <Data ss:Type="String">
+              <apex:outputText value="{!$Label.CouponSellerDetail_TabLabel_Items}" />
+            </Data>
+          </Cell>
+        </Row>
+        <Row ss:AutoFitHeight="0" ss:Height="60">
+          <Cell ss:StyleID="s96" ss:MergeAcross="2">
+            <Data ss:Type="String">
+              <apex:outputText value="Gutscheine für diese Gutscheinaktion werden nur für bestimmte Artikel ausgegeben und können nur für diese eingelöst werden („Gutscheine auf item-Basis“). Welche Artikel dabei berücksichtigt werden, entnehmen sie bitte der beigefügten Übersicht, darin werden die Artikel nach Item IDs oder SKUs aufgeschlüsselt."
+              />
+            </Data>
+          </Cell>
+
+        </Row>
+        <Row></Row>
+        <Row ss:AutoFitHeight="0" ss:Height="39.75">
+          <Cell ss:StyleID="s4707">
+            <Data ss:Type="String">
+              <apex:outputText value="{!$Label.ItemId}" />
+            </Data>
+            <NamedCell ss:Name="Print_Titles" />
+            <NamedCell ss:Name="Print_Area" />
+          </Cell>
+          <Cell ss:StyleID="s4707">
+            <Data ss:Type="String">
+              <apex:outputText value="{!$Label.CoInvestItem}" />
+            </Data>
+            <NamedCell ss:Name="Print_Titles" />
+            <NamedCell ss:Name="Print_Area" />
+          </Cell>
+          <Cell ss:StyleID="s4707">
+            <Data ss:Type="String">
+              <apex:outputText value="{!$Label.SellerShare}" />
+            </Data>
+            <NamedCell ss:Name="Print_Titles" />
+            <NamedCell ss:Name="Print_Area" />
+          </Cell>
+
+        </Row>
+
+        <apex:repeat value="{!coInvests}" var="coInvest">
+
+          <Row ss:Height="20">
+
+            <Cell ss:StyleID="s4707">
+              <Data ss:Type="String">
+                <apex:outputText value="{!coInvest.Item_ID__c}" />
+              </Data>
+            </Cell>
+            <Cell ss:StyleID="s4707">
+              <Data ss:Type="String">
+                <apex:outputText value="{!coInvest.Item_Title__c}" />
+              </Data>
+            </Cell>
+            <Cell ss:StyleID="s4707">
+              <Data ss:Type="String">
+                <apex:outputText value="{!coInvest.Co_Invest__c}" />
+              </Data>
+            </Cell>
+
+          </Row>
+        </apex:repeat>
+
+      </Table>
+      <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+        <PageSetup>
+          <Layout x:CenterHorizontal="1" />
+          <Header x:Margin="0.3" x:Data="&amp;C&amp;&quot;-,Bold&quot;&amp;16Artikel" />
+          <Footer x:Margin="0.3" x:Data="&amp;C&amp;N" />
+          <PageMargins x:Bottom="0.5" x:Left="0.45" x:Right="0.45" x:Top="0.5" />
+        </PageSetup>
+        <FitToPage/>
+        <Print>
+          <ValidPrinterInfo/>
+          <Scale>26</Scale>
+          <HorizontalResolution>600</HorizontalResolution>
+          <VerticalResolution>600</VerticalResolution>
+        </Print>
+        <Zoom>80</Zoom>
+        <Selected/>
+        <DoNotDisplayGridlines/>
+        <Panes>
+          <Pane>
+            <Number>3</Number>
+            <ActiveRow>6</ActiveRow>
+            <ActiveCol>1</ActiveCol>
+          </Pane>
+        </Panes>
+        <ProtectObjects>False</ProtectObjects>
+        <ProtectScenarios>False</ProtectScenarios>
+      </WorksheetOptions>
+    </Worksheet>
+
+  </Workbook>
+
+</apex:page>

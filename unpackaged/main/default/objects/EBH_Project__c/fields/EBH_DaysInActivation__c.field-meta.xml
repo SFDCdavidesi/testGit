@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_DaysInActivation__c</fullName>
+    <description>#US-0015700</description>
+    <externalId>false</externalId>
+    <formula>IF(
+ISNULL(EBH_AvisCreationDateFirst__c), NULL,
+
+IF(
+ ISNULL(EBH_SoldItemDateFirst__c), TODAY() - EBH_AvisCreationDateFirst__c,
+
+EBH_SoldItemDateFirst__c - EBH_AvisCreationDateFirst__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText># Days that seller spent in the Activation stage (from the date when EBFSKU Prefix was created to the date when a seller sold first fulfillment item)</inlineHelpText>
+    <label>Days in Activation</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

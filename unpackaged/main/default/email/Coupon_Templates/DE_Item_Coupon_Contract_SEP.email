@@ -1,0 +1,90 @@
+<h4><strong>Werbeaktions-Einzelvertrag</strong></h4>
+<p>
+  Mit diesem Werbeaktions-Einzelvertrag bieten wir Ihnen die Teilnahme an einer Gutscheinaktion zu den nachstehenden Konditionen sowie auf Basis der dazugehörigen „Werbeaktions-AGB“ an (nachfolgend gemeinsam „Werbeaktions-Einzelvertrag“). Die Werbekations-AGB sind fester Bestandteil dessen und unter <a href="https://pages.ebay.de/werbeaktions-agb/index.html" target="_blank">https://pages.ebay.de/werbeaktions-agb/index.html</a> jederzeit einsehbar
+</p><br>
+<table
+  style="width: 100%; border-collapse: collapse"
+  border="1"
+  cellspacing="0"
+  cellpadding="5"
+>
+  <tbody>
+    <tr>
+      <td style="width: 350px;"><strong>Verk&auml;ufer</strong></td>
+      <td>
+        {LegalEntity}, {StreetName}, {Zip}, {City}, {Country}
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong
+          >Nutzername des Verk&auml;ufers f&uuml;r die Gutscheinaktion</strong
+        >
+      </td>
+      <td>{eBaySellerID}</td>
+    </tr>
+    <tr>
+      <td><strong>eBay-Website(s)</strong></td>
+      <td>{CouponSites}</td>
+    </tr>
+    <tr>
+       <td><strong>Gutschein-Name</strong></td>
+       <td>{Marketing_Coupon_Name__c}</td>
+    </tr>
+    <tr>
+       <td><strong>Gutschein-Code</strong></td>
+       <td>{CouponCode}</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>Gutschein-Werbeaktionszeitraum</strong>
+      </td>
+      <td>
+        <p>{CouponStartTime} {CouponStartDate} bis {CouponEndTime} {CouponEndDate} (CET)</p>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Artikel</strong></td>
+      <td>
+        <p>
+          Gutscheine f&uuml;r diese Gutscheinaktion werden nur f&uuml;r
+          bestimmte Artikel ausgegeben und k&ouml;nnen nur f&uuml;r diese
+          eingel&ouml;st werden (&bdquo;Gutscheine auf Artikel-Basis&ldquo;).
+          Welche Artikel dabei ber&uuml;cksichtigt werden, entnehmen sie bitte
+          der beigef&uuml;gten &Uuml;bersicht, darin werden die Artikel nach
+          Artikelnummern oder SKUs aufgeschl&uuml;sselt.
+        </p><br>
+        <p>
+          Sollen weitere Artikelnummern zu den berechtigten Artikeln
+          hinzugenommen werden, so ist das mit eBay per E-Mail zu vereinbaren.
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>Details zur Gutscheinaktion</strong>
+      </td>
+      <td>
+        <p>
+          {CouponDiscount%}{CouponDiscountAmount} Rabatt auf den Artikelpreis.
+        </p><br>
+        <p>Bis zu einem maximalen Betrag von {CouponCap} pro Transaktion.</p><br>
+        <p>Mindestbestellwert: {Minimum_Transaction_Value__c}</p><br>
+        <p>
+          Der Gutschein kann maximal {Max_Redemptions__c}x je Nutzer eingel&ouml;st
+          werden.
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>eBay Vertragspartner</strong></td>
+      <td>
+        eBay GmbH, Albert-Einstein-Ring 2-6, 14532 Kleinmachnow
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Sonstiges</strong></td>
+      <td>{AdditionalArrangement}</td>
+    </tr>
+  </tbody>
+</table><br>

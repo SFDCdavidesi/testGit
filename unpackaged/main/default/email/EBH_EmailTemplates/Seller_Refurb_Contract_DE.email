@@ -1,0 +1,52 @@
+<p><img src='https://hive--c.na124.content.force.com/servlet/servlet.ImageServer?id=0153u000002RNsV&oid=00D6A0000002Hft&lastMod=1628243969000'/></p>
+<p style="text-align: justify;">
+eBay Refurbished – Vertrag<br/>
+Mit diesem eBay Refurbished Vertrag (die ebenfalls geltenden ALLGEMEINEN GESCHÄFTSBEDINGUNGEN FÜR DIE TEILNAHME AN DEM REFURBISHED-PROGRAMM finden Sie zu dieser Email <a href="{!Contract.TCs_URL__c}">hier</a> verlinkt) bieten wir Ihnen die Teilnahme am Refurbished-Programm an. Durch Anklicken des nachstehenden Buttons “ICH STIMME ZU” erklären Sie Ihre ausdrückliche Zustimmung zu diesem Vertrag und den AGB und somit Ihre Teilnahme am Refurbished-Programm von eBay. Wenn Sie allen Angaben zustimmen, klicken Sie bitte auf den Button:
+</p>
+<p style="text-align: center;">
+<a href="{!$Label.SiteURL}?restype=contract&id={!Contract.Unique_Id__c}&reURL=www.ebay.co.de">ICH STIMME ZU</a>
+</p>
+<table style="width: 978px; border-collapse: collapse; height: 168px;" border="1" cellspacing="5" cellpadding="5">
+<tbody>
+<tr>
+<td style="width: 248.667px;"><strong>Verkäufer</strong></td>
+<td style="width: 706.444px;">
+{!Contract.Account}<br/>
+{!Contract.BusinessContactStreet__c}<br/>
+{!Contract.BusinessContactPostalCode__c}<br/>
+{!Contract.BusinessContactCity__c}
+</td>
+</tr>
+<tr>
+<td style="width: 248.667px;"><strong>Shop Name&nbsp;des Verkäufers</strong></td>
+<td style="width: 706.444px;">{!EBH_ContractSeller__c.EBH_BusinessName__c}</td>
+</tr>
+<tr>
+<td style="width: 248.667px;"><strong>eBay Programm</strong></td>
+<td style="width: 706.444px;">Refurbished</td>
+</tr>
+<tr>
+<td style="width: 248.667px;"><strong>Programm Start</strong></td>
+<td style="width: 706.444px;">{!Contract.StartDate}</td>
+</tr>
+<tr>
+<td style="width: 248.667px;"><strong>eBay-Websites(s)</strong></td>
+<td style="width: 706.444px;">ebay.de</td>
+</tr>
+<tr>
+<td style="width: 248.667px;"><strong>Ebay Vertragspartner</strong></td>
+<td style="width: 706.444px;">eBay GmbH, Albert-Einstein-Ring 2-6, 14532&nbsp;Kleinmachnow</td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p style="text-align: justify;">
+Mit freundlichen Grüßen
+</p>
+<p style="text-align: justify;">
+Ihr eBay-Team 
+</p>
+<p style="text-align: justify;">
+<a href="{!Contract.TCs_URL__c}">AGB Refurbished-Programm</a>
+
+</p>

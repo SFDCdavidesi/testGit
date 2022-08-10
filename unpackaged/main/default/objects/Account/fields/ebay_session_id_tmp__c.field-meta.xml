@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ebay_session_id_tmp__c</fullName>
+    <description>US-0011082 - Allow Sellers to link Accounts.
+store temporary ebay session id during seller portal link account process</description>
+    <externalId>false</externalId>
+    <label>ebay_session_id_tmp</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

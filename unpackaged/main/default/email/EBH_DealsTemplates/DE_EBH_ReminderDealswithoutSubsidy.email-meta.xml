@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>EPH-6986 Deals - Reminder email to agree on planned deal</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>EBH_eBayBlankLetterhead</letterhead>
+    <name>DE_EBH_ReminderDealswithoutSubsidy</name>
+    <style>freeForm</style>
+    <subject>Zusage erforderlich: {!EBH_Deal__c.EBH_LocalDealFormat__c} {!EBH_Deal__c.EBH_ProductTitle__c} {!EBH_Deal__c.EBH_eBayItemID__c} {!EBH_Deal__c.EBH_DealStartDate__c}</subject>
+    <textOnly>Der Start des geplanten WOW! Angebots ist in Kürze.
+
+Für die Durchführung der Aktion  ist weiterhin Ihre Zustimmung erforderlich.
+
+Wenn Sie allen Angaben zustimmen, klicken Sie bitte auf den Button.
+
+
+
+https://hive-prod.secure.force.com/response?id=%7b!EBH_Deal__c.Id%7d&amp;amp;reURL=www.ebay.de
+
+
+
+Einzelheiten zum WOW! Angebot
+
+
+eBay-Nutzername: {!EBH_Deal__c.EBH_BusinessName__c}
+
+Produktname: {!EBH_Deal__c.EBH_MarketingTitle__c}
+
+Verfügbare Stückzahl: {!EBH_Deal__c.EBH_Quantity__c}
+
+Aktionsformat: {!EBH_Deal__c.EBH_LocalDealFormat__c}
+
+Start der Aktion: {!EBH_Deal__c.EBH_DealStartDate__c}, 08:00
+
+Ende der Aktion: {!EBH_Deal__c.EBH_DealEndDate__c}, 07:59
+
+
+Website(s): DE
+
+
+Preis
+
+UVP/Bisher-Preis: €{!EBH_Deal__c.EBH_RRPWASPrice__c}
+
+Ihr Angebotspreis: €{!EBH_Deal__c.EBH_SellerPrice__c}
+
+
+Ermäßigter Aktionspreis: €{!EBH_Deal__c.EBH_DealPrice__c}
+
+
+
+
+
+Anmerkungen
+
+{!EBH_Deal__c.EBH_CommentfromeBaySourcer__c}
+
+
+Durch Ihre Zustimmung bestätigen Sie, dass:
+
+es sich bei den von Ihnen angebotenen Artikeln nicht um Fälschungen oder Plagiate handelt.
+Sie berechtigt sind, diesen Artikel zu verkaufen.
+Sie die Artikel an alle von Ihnen angegebene Versandorte versenden.
+Sie keinerlei Vertragspflichten aus anderen Verträgen verletzen, indem Sie diesen Artikel bei eBay zum Verkauf anbieten.
+der von Ihnen angegebene oben genannte UVP/Bisher-Preis der aktuelle UVP bzw. der tatsächliche bisherige Verkaufspreis ist.
+Sie während des oben angegeben Zeitraums des WOW! Angebots die Artikelseite nicht ohne ausdrückliche schriftliche Zustimmung von eBay ändern werden.
+
+
+Dieser Einzelvertrag dient der Dokumentation der Bedingungen des WOW! Angebots auf der/den oben aufgeführten eBay-Website(s) und ist Bestandteil des von Ihnen mit der eBay GmbH abgeschlossenen Rahmenvertrages zu Werbeaktionen auf dem eBay-Marktplatz.
+
+
+Beste Grüße
+Ihr eBay-Team</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

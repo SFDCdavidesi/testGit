@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cost_Per_Mile_Per_Reel_CPM__c</fullName>
+    <description>US-0011876 - 1.4. Influencer Campaign (Channels for Campaign)</description>
+    <externalId>false</externalId>
+    <label>Cost Per Mile Per Reel (CPM)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

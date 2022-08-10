@@ -1,0 +1,10 @@
+A new Deal has been internally approved. The key Deal details are below:<br/><br/>
+
+eBay Seller: {!EBH_Deal__c.EBH_BusinessName__c} <br/>
+Product Title: {!EBH_Deal__c.EBH_ProductTitle__c}<br/>
+Listing ID: {!EBH_Deal__c.EBH_eBayItemID__c}<br/>
+Deal Start Time: {!EBH_Deal__c.EBH_DealStartDate__c}{!EBH_Deal__c.EBH_DealStartTime__c}<br/>
+Deal End Time: {!EBH_Deal__c.EBH_DealEndDate__c}{!EBH_Deal__c.EBH_DealEndTime__c}<br/>
+<br/>
+<a href="{!EBH_Deal__c.Link}">View Deal</a>
+<br/>

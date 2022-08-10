@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>EPH-5671 Create Contact Quality Task in Seller Record when Status = red for managed sellers</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Contact Data Update Task for Seller</name>
+    <style>none</style>
+    <subject>Action Required: Contact Data Update Task for {!Account.Name}</subject>
+    <textOnly>Dear {!Account.OwnerFullName},
+
+The following contact for {!Account.Name} has been identified with either an invalid email or invalid phone number. We won&#39;t be able to reach the contact in our upcoming campaigns if this won&#39;t be updated!
+
+Name: {Contact Name}
+Invalid Email: {Email_Bounced__c}
+Invalid Phone: {Incorrect_Phone_Number__c}
+Contact Record Type: {RecordTypeId}
+
+For more details, please check the related tab. Click Here {!Account.Name}
+
+If it is a DWH Contact (the contact that is registered on eBay) please forward the following link to your managed contact and kindly ask your contact to update the phone and/or email address in my eBay.
+
+For DE: https://scgi.ebay.de/ws1/eBayISAPI.dll?ChangeRegistrationShow&amp;guest=1
+For UK: https://scgi.ebay.co.uk/ws1/eBayISAPI.dll?ChangeRegistrationShow&amp;guest=1
+For AU: https://scgi.ebay.com.au/ws1/eBayISAPI.dll?ChangeRegistrationShow&amp;guest=1
+For FR: https://scgi.ebay.co.fr/ws1/eBayISAPI.dll?ChangeRegistrationShow&amp;guest=1
+For IT: https://scgi.ebay.it/ws1/eBayISAPI.dll?ChangeRegistrationShow&amp;guest=1
+For ES: https://scgi.ebay.es/ws1/eBayISAPI.dll?ChangeRegistrationShow&amp;guest=1
+
+Thank you,
+
+Team Hive</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

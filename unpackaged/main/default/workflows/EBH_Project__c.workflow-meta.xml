@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>AU_Email_Alert_to_CS_Team_when_Project_Stage_is_in_Integration</fullName>
+        <ccEmails>DL-eBay-IntegrationOnboarding@tpa.ebay.com</ccEmails>
+        <description>#US-0018744, [AU] Email Alert to CS Team when Project Stage is in &quot;Integration&quot;</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Project_Stage_Integration_Alert_AU</template>
+    </alerts>
+    <alerts>
+        <fullName>CUD_Email_Alert</fullName>
+        <ccEmails>DL-eBay-E2M-CUDTeam@ebay.com</ccEmails>
+        <description>CUD Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/CUD_Email_Tempate</template>
+    </alerts>
+    <alerts>
+        <fullName>DE_MIS_Email_Alert</fullName>
+        <ccEmails>DL-eBay-MerchantSolutionsDE@ebay.com</ccEmails>
+        <description>DE MIS Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>DE_MIS</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/MIS_Support_Request</template>
+    </alerts>
+    <alerts>
+        <fullName>EU_Onboarding_Completed_Email_Alert</fullName>
+        <description>EU Onboarding Completed Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>AcquisitionManager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>CategoryManager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>IntegrationManager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/EU_Onboarding_Completed_Email_Tempate</template>
+    </alerts>
+    <alerts>
+        <fullName>IT_FR_ES_MIS_Email_Alert</fullName>
+        <ccEmails>DL-eBay-MerchantSolutionsFR@ebay.com</ccEmails>
+        <ccEmails>DL-eBay-MerchantSolutionsIT@ebay.com</ccEmails>
+        <ccEmails>DL-eBay-MerchantSolutionsES@ebay.com</ccEmails>
+        <description>IT, FR, ES MIS Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>FR_IT_ES_MIS</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/MIS_Support_Request</template>
+    </alerts>
+    <alerts>
+        <fullName>Project_SRM_Appeal_Status_Approved_Email_Alert</fullName>
+        <description>Project SRM Appeal Status Approved Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/Project_SRM_Appeal_Status_Approved_Email_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Project_SRM_Appeal_Status_Rejected_Email_Alert</fullName>
+        <description>Project SRM Appeal Status Rejected Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/Project_SRM_Appeal_Status_Rejected_Email_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Project_SRM_Stage_On_Hold_Email_Alert</fullName>
+        <description>Project SRM Stage On-Hold Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/Project_SRM_Stage_On_Hold_Email_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>STP_Email_Alert</fullName>
+        <ccEmails>DL-eBay-SME-AdvancedApps@ebay.com</ccEmails>
+        <description>STP Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/STP_Email_Tempate</template>
+    </alerts>
+    <alerts>
+        <fullName>Seller_Risk_Approved_Notification</fullName>
+        <description>Seller Risk Approved Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/Seller_Risk_Approve_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Seller_Risk_Rejected_Notification</fullName>
+        <description>Seller Risk Rejected Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/Seller_Risk_Rejected_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>UK_MIS_Email_Alert</fullName>
+        <ccEmails>DL-eBay-MerchantSolutionsUK@ebay.com</ccEmails>
+        <description>UK MIS Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>UK_MIS</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/MIS_Support_Request</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Prepopulate_Project_Name</fullName>
+        <description>US-0007543</description>
+        <field>Name</field>
+        <formula>&#39;Payments &#39;+ TEXT(EBH_Seller__r.EBH_RegistrationCountry__c) +&#39; &#39;+  EBH_Seller__r.Name</formula>
+        <name>Prepopulate Project Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UpdateActualLiveToSiteDate</fullName>
+        <description>#US-0018736</description>
+        <field>ActualLiveToSite__c</field>
+        <formula>TODAY()</formula>
+        <name>Update Actual Live to Site Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UpdateCloseDate</fullName>
+        <description>#Update Close Date</description>
+        <field>CloseDate__c</field>
+        <formula>TODAY()</formula>
+        <name>Update Close Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UpdateSellerDisengagedDate</fullName>
+        <description>#US-0018736</description>
+        <field>SellerDisengagedDate__c</field>
+        <formula>TODAY()</formula>
+        <name>Update Seller Disengaged Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Project_End_Date</fullName>
+        <description>US-0007531 - [AU &amp; EU ] Project Record EU Acquisition - Change fieldlable &amp; Workflow</description>
+        <field>CloseDate__c</field>
+        <formula>TODAY()</formula>
+        <name>Update Project End Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Populate Actual Live to Site Date</fullName>
+        <actions>
+            <name>UpdateActualLiveToSiteDate</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>#US-0018736</description>
+        <formula>AND(    ISPICKVAL(EBH_Stage__c,&#39;Live to Site&#39;),    GMV_Fulfillment_30d__c &gt;= 100 )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Populate Close Date</fullName>
+        <actions>
+            <name>UpdateCloseDate</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>EBH_Project__c.EBH_Stage__c</field>
+            <operation>equals</operation>
+            <value>Closed Lost</value>
+        </criteriaItems>
+        <description>#US-0018736</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Populate Project End Date</fullName>
+        <actions>
+            <name>Update_Project_End_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>EBH_Project__c.EBH_Stage__c</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>EBH_Project__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>EU Onboarding</value>
+        </criteriaItems>
+        <description>US-0007531 - [AU &amp; EU ] Project Record EU Acquisition - Change fieldlable &amp; Workflow</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Populate Seller Disengaged Date</fullName>
+        <actions>
+            <name>UpdateSellerDisengagedDate</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>EBH_Project__c.SellerStatus__c</field>
+            <operation>equals</operation>
+            <value>DisEngaged</value>
+        </criteriaItems>
+        <description>#US-0018736</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Project Manage Payment Prepopulate Name</fullName>
+        <actions>
+            <name>Prepopulate_Project_Name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>EBH_Project__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Managed Payment</value>
+        </criteriaItems>
+        <description>US-0007543</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Project Stage Integration</fullName>
+        <actions>
+            <name>AU_Email_Alert_to_CS_Team_when_Project_Stage_is_in_Integration</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>EBH_Project__c.EBH_Stage__c</field>
+            <operation>equals</operation>
+            <value>Integration</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>EBH_Project__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>eBay AU Enterprise,eBay AU SMB</value>
+        </criteriaItems>
+        <description>#US-0018744, [AU] Email Alert to CS Team when Project Stage is in &quot;Integration&quot;</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Seller Risk Approve Notification</fullName>
+        <actions>
+            <name>Seller_Risk_Approved_Notification</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>US-0009942 - [UK Risk] Pending items- High Priority
+US-0011510 - Modify email notifications based on record owner for SRM</description>
+        <formula>AND(
+    $Permission.UK_Seller_Risk_Management_CUD_GCX,
+    RecordType.DeveloperName = &#39;Seller_Risk_Management&#39;,
+    Owner:User.FirstName + Owner:User.LastName != &#39;DeploymentUser&#39;,
+    CreatedBy.FirstName + CreatedBy.LastName != &#39;DeploymentUser&#39;,
+    OR(
+        ISCHANGED(EBH_Stage__c),
+        ISCHANGED(Ticket_Status__c)
+    ),
+    ISPICKVAL(EBH_Stage__c, &#39;Completed&#39;),
+    ISPICKVAL(Ticket_Status__c , &#39;Approved&#39;)
+)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Seller Risk Rejected Notification</fullName>
+        <actions>
+            <name>Seller_Risk_Rejected_Notification</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>US-0009942 - [UK Risk] Pending items- High Priority
+US-0011510 - Modify email notifications based on record owner for SRM</description>
+        <formula>AND(
+    $Permission.UK_Seller_Risk_Management_CUD_GCX,
+    RecordType.DeveloperName = &#39;Seller_Risk_Management&#39;,
+    Owner:User.FirstName + Owner:User.LastName != &#39;DeploymentUser&#39;,
+    CreatedBy.FirstName + CreatedBy.LastName != &#39;DeploymentUser&#39;,
+    OR(
+        ISCHANGED(EBH_Stage__c),
+        ISCHANGED(Ticket_Status__c)
+    ),
+    ISPICKVAL(EBH_Stage__c, &#39;Completed&#39;),
+    ISPICKVAL(Ticket_Status__c , &#39;Rejected&#39;)
+)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

@@ -1,0 +1,89 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span style="font-family: Arial, sans-serif; font-size: 12pt;">Estimado vendedor:</span></div><div style="">
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-ansi-language:ES">Gracias por enviar tu propuesta para el programa de
+ofertas de eBay. <o:p></o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-ansi-language:ES"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-ansi-language:ES">Cuenta o seudónimo de eBay:<span style="color:black;
+background:white">&nbsp;</span><o:p></o:p></span><span style="font-size: 12pt;">{!EBH_Deal__c.EBH_BusinessName__c}</span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-ansi-language:ES">Título del producto:&nbsp;<o:p></o:p></span><span style="font-size: 12pt;">{!EBH_Deal__c.EBH_ProductTitle__c}</span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span style="font-family:&quot;Arial&quot;,sans-serif">Cantidad:&nbsp;<o:p></o:p></span><span style="font-size: 12pt;">{!EBH_Deal__c.EBH_Quantity__c}</span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-ansi-language:ES">Precio original (PVP/precio anterior):<span style="color:black;background:white"> €&nbsp;</span><o:p></o:p></span><span style="font-size: 12pt;">{!EBH_Deal__c.EBH_RRPWASPrice__c}</span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-ansi-language:ES">Precio de la oferta del vendedor: <span style="color:
+black;background:white">€&nbsp;</span><o:p></o:p></span><span style="font-size: 12pt;">{!EBH_Deal__c.EBH_DealPrice__c}</span></p>
+
+<p class="MsoNormal" style=""><span style="color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-size: 12pt;">Motivo del rechazo:&nbsp;</span><font face="arial">{!EBH_Deal__c.EBH_ReasonforRejection__c}</font></p>
+
+<p class="MsoNormal" style=""><span style="color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-size: 12pt;">Comentarios:&nbsp;</span><font face="Arial, sans-serif">{!EBH_Deal__c.EBH_ReasonforRejectionextd__c}</font></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span style="font-family:&quot;Arial&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-ansi-language:ES">En esta ocasión lamentablemente no hemos seleccionado tu
+oferta. <o:p></o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-ansi-language:ES"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-ansi-language:ES">Recuerda: las ofertas se seleccionan teniendo en cuenta
+varios criterios, entre los que se incluyen los siguientes:<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-ansi-language:ES"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-ansi-language:ES">• <b>Precio competitivo en el mercado:</b> durante el
+periodo de validez de la oferta, los consumidores no deberían poder encontrar
+el mismo producto a un precio más bajo en ningún otro lugar.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-ansi-language:ES">• <b>Relevancia para los usuarios:</b> los artículos
+ofrecidos deben pertenecer a categorías con una gran demanda en el mercado o
+responder a necesidades específicas según la temporada<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-ansi-language:ES">• <b>Suficiente stock:</b> el vendedor debe disponer de
+una cantidad suficiente del artículo propuesto para hacer frente a la demanda
+generada en el periodo de validez de la oferta.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-ansi-language:ES">• <b>Variedad:</b> es importante ofrecer a los usuarios
+la mayor variedad posible de ofertas que representen la extensa gama de
+artículos disponibles en eBay.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-ansi-language:ES"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-ansi-language:ES">Esperamos que nos envíes otras ofertas muy pronto y esta
+vez sean aprobadas.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-ansi-language:ES"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-ansi-language:ES">Un saludo,<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-ansi-language:ES"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-ansi-language:ES">El equipo de eBay</span><span lang="ES" style="font-size:
+11.0pt;font-family:&quot;Calibri&quot;,sans-serif;mso-ansi-language:ES"><o:p></o:p></span></p><span style="font-size: 12pt;"><font face="arial"></font></span></div>]]></td>
+</tr>
+</table>

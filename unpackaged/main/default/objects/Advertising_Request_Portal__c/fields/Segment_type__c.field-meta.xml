@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Segment_type__c</fullName>
+    <externalId>false</externalId>
+    <label>Segment type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CRM Request</fullName>
+                <default>false</default>
+                <label>CRM Request</label>
+            </value>
+            <value>
+                <fullName>Demographic/Acxiom (Dynamic)</fullName>
+                <default>false</default>
+                <label>Demographic/Acxiom (Dynamic)</label>
+            </value>
+            <value>
+                <fullName>In-Category Shopping/Purchasing (Dynamic)</fullName>
+                <default>false</default>
+                <label>In-Category Shopping/Purchasing (Dynamic)</label>
+            </value>
+            <value>
+                <fullName>Keyword</fullName>
+                <default>false</default>
+                <label>Keyword</label>
+            </value>
+            <value>
+                <fullName>Other- Please Specify</fullName>
+                <default>false</default>
+                <label>Other- Please Specify</label>
+            </value>
+            <value>
+                <fullName>Purchasers of Specific Product (Static)</fullName>
+                <default>false</default>
+                <label>Purchasers of Specific Product (Static)</label>
+            </value>
+            <value>
+                <fullName>Shop-A-Like/Audience Extension/Data Science Segment</fullName>
+                <default>false</default>
+                <label>Shop-A-Like/Audience Extension/Data Science Segment</label>
+            </value>
+            <value>
+                <fullName>Custom</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Custom</label>
+            </value>
+            <value>
+                <fullName>Data Science</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Data Science</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

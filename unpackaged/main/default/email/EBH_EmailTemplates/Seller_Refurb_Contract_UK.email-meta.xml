@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0009871 - [Refurb] Send Click Agreements to Contract Sellers</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Seller_Refurb_Contract_UK</name>
+    <style>none</style>
+    <subject>Refurbished Programme: Refurbished Form | {!EBH_ContractSeller__c.EBH_BusinessName__c}</subject>
+    <textOnly>Dear Seller,
+
+This email (the &quot;Refurbished Form&quot;) is to offer You the opportunity to participate in the Programme on the eBay Site (details below).
+
+Legal Entity   {!Contract.Account}
+Seller User ID   {!EBH_ContractSeller__c.EBH_BusinessName__c}
+Programme  Refurbished Programme
+eBay Site  eBay.co.uk
+Start Date  {!Contract.StartDate}
+
+Acceptance Procedure
+
+To participate in the Programme please read through and accept the terms and conditions (outlined below) by clicking on the words “I AGREE” before the Start Date.
+
+I AGREE
+
+Terms and Conditions
+
+The terms of this Refurbished Form and the Programme are subject to terms and conditions available at Refurbished T&amp;Cs between eBay (UK) Limited, 1 More London Place, SE1 2AF, London, United Kingdom, registered in England &amp; Wales with company number 03726028, and the Seller, as well as the eBay Policies referred to therein.
+
+Terms not defined here shall have the meaning given to them in the Refurbished T&amp;Cs. Any additional, alternate, or amended terms will be agreed, where applicable, in accordance with the Refurbished T&amp;Cs and/or the eBay Policies.
+
+
+With best regards,
+
+Your eBay team.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

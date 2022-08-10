@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>[#EPH-7104] New Permission Set_ Final Value Fee Approval</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Approve Final Value Fee</name>
+    <style>none</style>
+    <subject>Your Final Value Fee Request has been Approved</subject>
+    <textOnly>Dear {!Final_Value_Fee_FVF__c.OwnerFullName},
+Your Final Value Fee Discount {!Final_Value_Fee_FVF__c.Name} has been Approved.
+As a next step seller will receive a Final Value Fee Discount Contract</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

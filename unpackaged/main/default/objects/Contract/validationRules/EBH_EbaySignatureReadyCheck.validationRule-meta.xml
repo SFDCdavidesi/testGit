@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_EbaySignatureReadyCheck</fullName>
+    <active>true</active>
+    <description>EPH-3971, US-0007080</description>
+    <errorConditionFormula>AND(
+    ISPICKVAL(Status, &#39;Ready for eBay Signature&#39;), ISPICKVAL( PRIORVALUE(Status), &#39;Approved&#39;) ,
+    NOT(EBH_AttachmentCheck__c),
+    OR(RecordType.DeveloperName = &#39;EBH_ACP&#39; ,RecordType.DeveloperName = &#39;EBH_ListingAgreement&#39; ,RecordType.DeveloperName = &#39;EBH_RevenueShare&#39;)
+/*Line below added on 07/02/2018 by JNL
+//    $Profile.Name !=&quot;Signature team&quot;
+// Any user should be able to move to Ready for eBay Signature
+*/
+    ) &amp;&amp; NOT( $Setup.ActiveValidationRules__c.All_Validation_Rules_Deactivated__c )</errorConditionFormula>
+    <errorMessage>Please make sure you have uploaded the correct Contract document in Pdf format.
+Example: &lt;Contract number&gt;_&lt;Business Name&gt;.pdf</errorMessage>
+</ValidationRule>

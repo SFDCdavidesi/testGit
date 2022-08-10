@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Contact__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>US-0008996 - [Docusign]Making Legal Entity Contact creation a mandatory step for Contract creation</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please select existing or create a new Contact (on Legal Entity record) with First Name, Last Name and Primary email address to which the contract will be sent for signature.</inlineHelpText>
+    <label>Seller Signatory Contact</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Contact.AccountId</field>
+            <operation>equals</operation>
+            <valueField>$Source.AccountId</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Contracts</relationshipLabel>
+    <relationshipName>Contracts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

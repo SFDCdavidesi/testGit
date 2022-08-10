@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>US_Stage_Sent_For_Approval</fullName>
+    <active>true</active>
+    <description>US-0011779
+US-0012217</description>
+    <errorConditionFormula>IF(
+  AND(
+    ISCHANGED(Coupon_Seller_Stage__c),
+    ISPICKVAL(Coupon_Seller_Stage__c, &quot;Sent for Approval&quot;),
+    (Contract_Language__c = &quot;US&quot;),
+    OR(FLOOR(eBay_Co_fund_Max__c) &lt; 1000, FLOOR(eBay_Co_fund_Max__c) &gt; 500000)
+  ),
+  true,
+  false
+)</errorConditionFormula>
+    <errorMessage>The co-fund max must be a min of $1000 to a maximum of $500K in order to submit for approval</errorMessage>
+</ValidationRule>

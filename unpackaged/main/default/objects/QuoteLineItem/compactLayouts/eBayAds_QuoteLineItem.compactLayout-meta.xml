@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>eBayAds_QuoteLineItem</fullName>
+    <fields>ProductName__c</fields>
+    <fields>QuoteId</fields>
+    <fields>Targeting__c</fields>
+    <fields>Quantity__c</fields>
+    <fields>UnitPrice</fields>
+    <fields>Budget__c</fields>
+    <label>eBayAds QuoteLineItem</label>
+</CompactLayout>

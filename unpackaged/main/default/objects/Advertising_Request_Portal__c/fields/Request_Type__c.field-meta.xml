@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Request_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Request Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pre-Sales/New Client</fullName>
+                <default>false</default>
+                <label>Pre-Sales/New Client</label>
+            </value>
+            <value>
+                <fullName>Existing Client</fullName>
+                <default>false</default>
+                <label>Existing Client</label>
+            </value>
+            <value>
+                <fullName>Custom Audience</fullName>
+                <default>false</default>
+                <label>Custom Audience</label>
+            </value>
+            <value>
+                <fullName>eAAT Domo Dashboard New Persona and/or Brand Request</fullName>
+                <default>false</default>
+                <label>eAAT Domo Dashboard New Persona and/or Brand Request</label>
+            </value>
+            <value>
+                <fullName>Revision</fullName>
+                <default>false</default>
+                <label>Revision</label>
+            </value>
+            <value>
+                <fullName>Marketing/Vertical Story</fullName>
+                <default>false</default>
+                <label>Marketing/Vertical Story</label>
+            </value>
+            <value>
+                <fullName>Pre Sales</fullName>
+                <default>false</default>
+                <label>Pre Sales</label>
+            </value>
+            <value>
+                <fullName>House Ads</fullName>
+                <default>false</default>
+                <label>House Ads</label>
+            </value>
+            <value>
+                <fullName>Campaign is sold/live</fullName>
+                <default>false</default>
+                <label>Campaign is sold/live</label>
+            </value>
+            <value>
+                <fullName>New</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>New</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

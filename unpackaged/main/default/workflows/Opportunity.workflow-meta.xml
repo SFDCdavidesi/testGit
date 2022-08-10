@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>ADS_UK_info_Email_to_UK_Account_Manager_is_Stage_95_DE_Site_Email_Alert</fullName>
+        <description>ADS - UK info-Email to UK Account Manager is Stage 95 DE Site Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Account_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EU_Ads/Info_Mail_for_DE_team_only_when_deal_is_place_on_75</template>
+    </alerts>
+    <alerts>
+        <fullName>ADS_UK_info_Email_to_UK_Account_Manager_is_Stage_95_Email_Alert</fullName>
+        <description>ADS - UK info-Email to UK Account Manager is Stage 95 Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Account_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EU_Ads/ADS_UK_info_Email_to_UK_Account_Manager_is_Stage_95_Email_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>All_Closed_Won_Opportunities</fullName>
+        <description>All Closed Won Opportunities</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ttsagong@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/Closed_Won_Opportunities</template>
+    </alerts>
+    <alerts>
+        <fullName>CTQ_EU_Opportunity_Amount_Change_Alert</fullName>
+        <ccEmails>dhranova@ebay.com</ccEmails>
+        <description>CTQ EU Opportunity Amount Change Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>freybellet@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/CTQ_Opp_Amount_Change</template>
+    </alerts>
+    <alerts>
+        <fullName>CTQ_Opportunity_Amount_Change_Alert</fullName>
+        <ccEmails>bhan1@ebay.com</ccEmails>
+        <description>CTQ Opportunity Amount Change Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>sadkins@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/CTQ_Opp_Amount_Change</template>
+    </alerts>
+    <alerts>
+        <fullName>Confirmation_E_Mail_of_UK_booked_Opportunity_Team_Uhl</fullName>
+        <description>Confirmation E-Mail of UK booked Opportunity (Team Uhl)</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>mkeil@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EU_Ads/UK_Automatic_Booking_Confirmation_Mail_Team_Uhl</template>
+    </alerts>
+    <alerts>
+        <fullName>Confirmation_E_Mail_of_booked_Opportunity_Opportunity_Owner_Primary_Contact</fullName>
+        <ccEmails>am-advertising@ebay.de</ccEmails>
+        <description>Confirmation E-Mail of booked Opportunity (Opportunity Owner &amp; Primary Contact)</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Primary_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>LastModifiedById</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EU_Ads/DE_Automatic_Booking_Confirmation_Mail</template>
+    </alerts>
+    <alerts>
+        <fullName>Confirmation_E_Mail_of_booked_Opportunity_Opportunity_Owner_only</fullName>
+        <ccEmails>am-advertising@ebay.de</ccEmails>
+        <description>Confirmation E-Mail of booked Opportunity (Opportunity Owner only)</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>LastModifiedById</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EU_Ads/DE_Automatic_Booking_Confirmation_Mail</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_notification_when_an_opportunity_is_booked</fullName>
+        <description>Email notification when an opportunity is booked</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>AU_AdsTEAM</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EU_Ads/AU_Notification_about_booked_Opp</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_notification_when_an_opportunity_is_won</fullName>
+        <description>Email notification when an opportunity is won</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>AU_AdsTEAM</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/AU_Notification_about_Won_Opp</template>
+    </alerts>
+    <alerts>
+        <fullName>Holiday_Pitched</fullName>
+        <description>Holiday Pitched</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>byarema@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/Holiday_Pitched</template>
+    </alerts>
+    <alerts>
+        <fullName>Incremental_Closed_Won_Alert</fullName>
+        <ccEmails>DL-eBay-USAdsAndPartnerships@ebay.com</ccEmails>
+        <ccEmails>DL-eBay-Ads-Deal-Alerts@ebay.com</ccEmails>
+        <ccEmails>a3o9p2d1v1r1t1q0@ebaymarkets.slack.com</ccEmails>
+        <description>Incremental Closed Won Alert</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/Incremental_Closed_Won</template>
+    </alerts>
+    <alerts>
+        <fullName>Info_Mail_for_DE_team_only_when_deal_is_place_on_95</fullName>
+        <ccEmails>am-advertising@ebay.de</ccEmails>
+        <description>Info-Mail for DE team only when deal is place on 95%</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>EU_Ads/Info_Mail_for_DE_team_only_when_deal_is_place_on_75</template>
+    </alerts>
+    <alerts>
+        <fullName>Notifiy_Opportunity_Owner_5_days_before_Close_Date</fullName>
+        <description>Notifiy Opportunity-Owner 5 days before Close Date</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EU_Ads/Opportunity_Close_Date_in_5_days</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Sales_about_rejected_Opp</fullName>
+        <description>Notify Sales about rejected Opp</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>ttsagong@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EU_Ads/Sales_notification_rejected_Opp</template>
+    </alerts>
+    <alerts>
+        <fullName>Opportunity_2M_Alert</fullName>
+        <ccEmails>ttsagong@ebay.com</ccEmails>
+        <description>Opportunity 2M Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>danirwin@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>jedunn@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>ketong1@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sadkins@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/Opportunity_2M_Alert</template>
+    </alerts>
+    <alerts>
+        <fullName>Opportunity_Terms_Alert</fullName>
+        <ccEmails>ttsagong@ebay.com</ccEmails>
+        <description>Opportunity Terms Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>lecarrara@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/Opportunity_terms_alert</template>
+    </alerts>
+    <alerts>
+        <fullName>Revised_Closed_Won_Opportunity</fullName>
+        <description>Revised Closed Won Opportunity</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ttsagong@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/Revised_Closed_Won_Opportunity</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_notification_to_Moskito_team_when_an_opportunity_is_95</fullName>
+        <ccEmails>moskito-am-Advertising@ebay.com</ccEmails>
+        <description>Send notification to Moskito team when an opportunity is 95%</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>EU_Ads/Info_Mail_for_DE_team_only_when_deal_is_place_on_75</template>
+    </alerts>
+    <alerts>
+        <fullName>X1P_VS_3P_Closed_Won</fullName>
+        <ccEmails>DL-eBay-USAdsAndPartnerships@ebay.com</ccEmails>
+        <ccEmails>DL-eBay-Ads-Deal-Alerts@ebay.com</ccEmails>
+        <ccEmails>a3o9p2d1v1r1t1q0@ebaymarkets.slack.com</ccEmails>
+        <description>1P VS 3P Closed Won</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/Closed_Won_Opportunities</template>
+    </alerts>
+    <alerts>
+        <fullName>X1p_Notifications_for_Team_Uhl_when_opp_reaches_95</fullName>
+        <ccEmails>am-advertising@ebay.de</ccEmails>
+        <description>1p Notifications for Team Uhl when opp reaches 95%</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>mkeil@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EU_Ads/Info_Mail_for_DE_team_only_when_deal_is_place_on_75</template>
+    </alerts>
+    <alerts>
+        <fullName>eBay_Ads_1p_3p_alert</fullName>
+        <description>eBay Ads - 1p +3p alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ttsagong@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/eBay_Ads_1p_3p_alert</template>
+    </alerts>
+    <alerts>
+        <fullName>eBay_Ads_Buyer_Accepted</fullName>
+        <description>eBay Ads - Buyer Accepted</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>eBay_Ads_Campaign_Managers</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/eBay_Ads_Buyer_Accepted</template>
+    </alerts>
+    <alerts>
+        <fullName>eBay_Ads_Credit_Check_Reminder</fullName>
+        <description>eBay Ads - Credit Check Reminder</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/Credit_Check_Reminder</template>
+    </alerts>
+    <alerts>
+        <fullName>eBay_Ads_Opp_Alert_to_CM</fullName>
+        <description>eBay Ads - Opp Alert to CM</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ttsagong@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/eBay_Ads_Opp_Alert_to_CM</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Incremental_Amount</fullName>
+        <field>Incremental_Amount__c</field>
+        <formula>Amount  - PRIORVALUE(Amount)</formula>
+        <name>Incremental Amount</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Incremental_PG_PMP</fullName>
+        <field>Incremental_PG_PMP__c</field>
+        <formula>Amount  - PRIORVALUE(Amount)</formula>
+        <name>Incremental PG PMP</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Previous_Opportunity_Amount</fullName>
+        <field>Previous_Opportunity_Amount__c</field>
+        <formula>PRIORVALUE(Amount)</formula>
+        <name>Previous Opportunity Amount</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_OracleID_Opportunity</fullName>
+        <description>US-0008558 - [NA] Opportunity stages, Validations, Activity and Chatter feed</description>
+        <field>Oracle_ID__c</field>
+        <formula>Seller__r.EBH_OracleID__c</formula>
+        <name>Update_OracleID_Opportunity</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>eBay_Ads_Direct_Revision_Opportunity</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>eBay</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>eBay Ads - Direct Revision Opportunity</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>AU Notification for Closed Won Opportunities</fullName>
+        <actions>
+            <name>Email_notification_when_an_opportunity_is_won</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Closed Won</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Pricebook2.Name</field>
+            <operation>startsWith</operation>
+            <value>AU</value>
+        </criteriaItems>
+        <description>US-009756: An email is sent to the AU Ads TEAM Public Group when an Opportunity changes to Closed won</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>All Closed Won Opportunities</fullName>
+        <actions>
+            <name>All_Closed_Won_Opportunities</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Revised_Closed_Won_Opportunity</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>eBay Advertising</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Closed Won</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Amount</field>
+            <operation>notEqual</operation>
+            <value>USD 0</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Incremental Amount</fullName>
+        <actions>
+            <name>Incremental_Amount</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND( ISCHANGED( Amount ))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Marketing Holiday Alerts</fullName>
+        <actions>
+            <name>Holiday_Pitched</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(  $Setup.byPass__c.byPass_WFRule__c = FALSE,    $Profile.Name = &quot;Standard Ads User Profile&quot;,  OR( INCLUDES( Marketing_Type__c ,&quot;Holiday&quot;), INCLUDES(Marketing_Type__c,&quot;Integrated Program&quot;), INCLUDES(Marketing_Type__c,&quot;EAAT&quot;), INCLUDES(Marketing_Type__c,&quot;Case Study&quot;), INCLUDES(Marketing_Type__c,&quot;Ad Effectiveness Measurement Study&quot;) )  )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity 2M Alert</fullName>
+        <actions>
+            <name>Opportunity_2M_Alert</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Amount</field>
+            <operation>greaterOrEqual</operation>
+            <value>&quot;USD 2,000,000&quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>eBay Ads - Direct</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>User.ProfileId</field>
+            <operation>equals</operation>
+            <value>Standard Ads User Profile</value>
+        </criteriaItems>
+        <description>send an alert when opportunity is more than 2m</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity terms alert</fullName>
+        <actions>
+            <name>Opportunity_Terms_Alert</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <criteriaItems>
+            <field>Opportunity.IO_Paper__c</field>
+            <operation>equals</operation>
+            <value>New Terms</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Special_Terms__c</field>
+            <operation>notEqual</operation>
+            <value>NULL</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>eBay Ads - Direct</value>
+        </criteriaItems>
+        <description>send an alert when terms = new terms and special terms is populated</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Previous Opportunity Amount</fullName>
+        <actions>
+            <name>Previous_Opportunity_Amount</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(     
+ISCHANGED( Amount ),
+NOT(ISBLANK(Amount)) 
+)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>eBay Ads - Buyer Accepted</fullName>
+        <actions>
+            <name>eBay_Ads_Buyer_Accepted</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>AND( $Setup.byPass__c.byPass_WFRule__c = FALSE,   RecordType.DeveloperName  = $Label.OPP_RECORDTYPEDEVNAME_PROGRAMMATIC, Buyer_Accepted__c = TRUE )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>eBay Ads - Credit Check Reminder</fullName>
+        <actions>
+            <name>eBay_Ads_Credit_Check_Reminder</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <formula>AND(  $Setup.byPass__c.byPass_WFRule__c = FALSE,  RecordType.DeveloperName = $Label.OPP_RECORDTYPEDEVNAME_DIRECT    )</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>eBay Ads - Direct Revision Opportunity</fullName>
+        <actions>
+            <name>eBay_Ads_Direct_Revision_Opportunity</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>AND( $Setup.byPass__c.byPass_WFRule__c = FALSE, ISPICKVAL(Type, &#39;Direct Revision&#39;), RecordType.Name = &#39;eBay Advertising&#39;  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>eBay Ads - Opp Alert to CM</fullName>
+        <actions>
+            <name>eBay_Ads_Opp_Alert_to_CM</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>send an email alert to CM is status is paused or canceled.</description>
+        <formula>AND(  $Setup.byPass__c.byPass_WFRule__c = FALSE,  $Profile.Name = &quot;Standard Ads User Profile&quot;,  OR( RecordType.Name = &#39;eBay Ads - Direct&#39;,  RecordType.Name = &#39;eBay Ads - Programmatic Guaranteed&#39; ),    OR( ISPICKVAL( Status__c , &#39;Paused&#39;),  ISPICKVAL( Status__c , &#39;Cancelled During Campaign&#39;),  ISPICKVAL( Status__c , &#39;Cancelled Before Campaign&#39;)   ),    NOT(ISBLANK(TEXT(Details__c)))    )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>eBay NA Acquisition OracleID</fullName>
+        <actions>
+            <name>Update_OracleID_Opportunity</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>US-0008558 - [NA] Opportunity stages, Validations, Activity and Chatter feed</description>
+        <formula>IF( AND( RecordType.DeveloperName =&#39;eBay_NA_Acquisition&#39;, NOT( ISBLANK( Seller__r.EBH_OracleID__c ) ) ),      true,false )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

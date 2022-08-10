@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PMP_Subtype__c</fullName>
+    <description>INTEG - N || ** eBay Advertising ** || WF - N || AP - N || VAL - N ||Class - N || Definition: PMP Subtype ||</description>
+    <externalId>false</externalId>
+    <label>PMP Subtype</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Preferred</fullName>
+                <default>false</default>
+                <label>Preferred</label>
+            </value>
+            <value>
+                <fullName>Floor</fullName>
+                <default>false</default>
+                <label>Floor</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

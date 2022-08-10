@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Coupon_Seller_Bulk_Edit</fullName>
+    <columns>Coupon_ID__c</columns>
+    <columns>Coupon__c</columns>
+    <columns>NAME</columns>
+    <columns>Seller__c</columns>
+    <columns>EBH_CouponSellerOwner__c</columns>
+    <columns>Promotions_T_Cs_agreed__c</columns>
+    <columns>Contract_Accept_Date__c</columns>
+    <columns>Coupon_Seller_Stage__c</columns>
+    <columns>Seller_Declined_Reasons__c</columns>
+    <columns>Email_Adress__c</columns>
+    <columns>Cofund_Start_Date__c</columns>
+    <columns>Cofund_End_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Coupon_Seller__c.Manhattan_Coupon</value>
+    </filters>
+    <filters>
+        <field>Coupon__c</field>
+        <operation>equals</operation>
+        <value>C-000566</value>
+    </filters>
+    <filters>
+        <field>Coupon_Seller_Stage__c</field>
+        <operation>equals</operation>
+        <value>Approved</value>
+    </filters>
+    <filters>
+        <field>CREATEDBY_USER</field>
+        <operation>equals</operation>
+        <value>Shannon Eiffe</value>
+    </filters>
+    <label>Coupon Seller - For Bulk Edit</label>
+</ListView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>VP &amp; Country Manager Australia</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>VP &amp; Country Manager Australia</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>SVP_APAC</parentRole>
+</Role>

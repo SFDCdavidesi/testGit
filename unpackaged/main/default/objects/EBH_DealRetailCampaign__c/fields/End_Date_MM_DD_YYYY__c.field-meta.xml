@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>End_Date_MM_DD_YYYY__c</fullName>
+    <description>US-0009790 - [SEP] Notification sent to Operations Team when Deal Window is updated to Status = &#39;Ops Review&#39; - For format MM/DD/YYY</description>
+    <externalId>false</externalId>
+    <formula>LPAD(TEXT(MONTH(EPH_EndDate__c)),2,&quot;0&quot;)&amp;&quot;/&quot;&amp;LPAD(TEXT(DAY(EPH_EndDate__c)),2,&quot;0&quot;)&amp;&quot;/&quot;&amp;TEXT(YEAR(EPH_EndDate__c))</formula>
+    <label>End Date (MM/DD/YYYY)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

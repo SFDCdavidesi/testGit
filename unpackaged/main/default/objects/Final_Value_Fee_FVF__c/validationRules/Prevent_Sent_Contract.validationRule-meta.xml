@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Sent_Contract</fullName>
+    <active>true</active>
+    <description>EPH-8072</description>
+    <errorConditionFormula>IF( AND( $User.FirstName &lt;&gt; &#39;Deployment&#39;,  RecordType.DeveloperName  &lt;&gt; &#39;FVF_Campaign&#39;,ISCHANGED(Final_Value_Fee_Stage__c), ISPICKVAL(Final_Value_Fee_Stage__c, &#39;Contract Sent&#39;), OR(ISBLANK(Legal_Entity_Country__c), ISBLANK(Legal_Entity_Name__c), ISBLANK(Legal_Entity_Street__c), ISBLANK(Legal_Entity_Zip__c))),
+true,false
+)</errorConditionFormula>
+    <errorMessage>Please make sure Legal Entity Name, Legal Entity Street, Legal Entity Zip, and Legal Entity Country are populated. These are required fields for the contract generation.</errorMessage>
+</ValidationRule>

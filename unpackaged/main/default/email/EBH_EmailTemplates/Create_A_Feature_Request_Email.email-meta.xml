@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0010893 - create a Feature Requests And select a Hive product</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Create A Feature Request Email</name>
+    <style>none</style>
+    <subject>New Feature Request {!Requirement_Request__c.Name} raised for {!Requirement_Request__c.HIVE_Products__c}</subject>
+    <textOnly>A new feature request {!$Record.Name} has been raised for one of your products. Please review timely and update status. FYI @[{!$Record.OwnerId}] @[{!Get_Product_Owner_Id.Id}]</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

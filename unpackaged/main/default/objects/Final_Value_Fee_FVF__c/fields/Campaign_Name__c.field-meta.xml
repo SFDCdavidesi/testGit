@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campaign_Name__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>US-0015762 New Field in the ETL flow.FVF</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please give a name to your Final Value Fee campaign.</inlineHelpText>
+    <label>Campaign Name</label>
+    <length>80</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

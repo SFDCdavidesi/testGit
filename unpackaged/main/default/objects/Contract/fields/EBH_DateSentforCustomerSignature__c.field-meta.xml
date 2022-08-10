@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_DateSentforCustomerSignature__c</fullName>
+    <description>[EBH] (US-0039) : to capture the date when the Contract status is changed to Sent for Customer Signature</description>
+    <externalId>false</externalId>
+    <label>Date Sent for Customer Signature</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

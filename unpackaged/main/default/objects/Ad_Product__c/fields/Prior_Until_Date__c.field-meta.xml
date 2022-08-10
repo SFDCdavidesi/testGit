@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prior_Until_Date__c</fullName>
+    <description>US-0010628 - ADS - Allow edit rights on Revised Quote Line Items in past (with date validation)</description>
+    <externalId>false</externalId>
+    <label>Prior_Until_Date__c</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

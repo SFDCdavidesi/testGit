@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Deals_to_be_Reviewed</fullName>
+    <columns>NAME</columns>
+    <columns>EBH_BusinessName__c</columns>
+    <columns>EBH_ProductTitle__c</columns>
+    <columns>EBH_DealRetailCampaign__c</columns>
+    <columns>EBH_Status__c</columns>
+    <columns>EBH_DealStartDate__c</columns>
+    <columns>EBH_DealPrice__c</columns>
+    <columns>EBH_Subsidy__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>EBH_Deal__c.Deal_V1</value>
+    </filters>
+    <label>My Deals to be Reviewed</label>
+    <sharedTo>
+        <role>Account_Manager</role>
+        <role>Operations_Manager</role>
+        <role>Team_Leader</role>
+    </sharedTo>
+</ListView>

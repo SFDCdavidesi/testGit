@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0012117 - NA localization - Seller Communication- Coupon Welcome Email</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>SP - Coupons - NA - Welcome Email</name>
+    <pageDevName>SP_Coupons_NA_Welcome_Email</pageDevName>
+    <relatedEntityType>Seller_Communication__c</relatedEntityType>
+    <style>none</style>
+    <subject>Invitation to the Seller Portal</subject>
+    <textOnly>**Invitation to the Seller Portal
+----------------------------------------------------
+
+Hello {{{Seller_Communication__c.Contact__c}}},
+
+As mentioned in our last conversation, you have been kindly invited to use coupon promotions on the Seller Portal. 
+
+The Seller Portal helps your business manage coupon promotions that eBay has invited you to join. 
+
+To access the portal, click the following button and sign in with your eBay credentials.
+
+To the Growth Portal &lt; https://sellerportal.ebay.com/ &gt; 
+
+Best regards,
+
+Your eBay team
+
+This email was sent by Ebay, Inc. Ebay will never ask you to provide confidential information (like your password or credit card details) via email.</textOnly>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

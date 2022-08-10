@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>instagram_user_discovery</label>
+    <protected>false</protected>
+    <values>
+        <field>Access_Token__c</field>
+        <value xsi:type="xsd:string">EAAJ7it5yrUEBADZAr3FjTvliHYG1Jc8roQ8LgamZB5ukOgZAteEkqGnx8iaAKGIxKm6X5hbkzae1o8gMgGzUKjDjbtgBll7LOjDFpSRLhbgGACAQCfAQS1EA2AQL7O9yoU4Et5GZA39dh1QFMndD1Ovp4DuatiqpjYPU9u5gV8eV4QJgelXZB</value>
+    </values>
+    <values>
+        <field>Base_URL__c</field>
+        <value xsi:type="xsd:string">http://influencer-project.us-w1.cloudhub.io/influencer_service</value>
+    </values>
+    <values>
+        <field>Fields__c</field>
+        <value xsi:type="xsd:string">username,name,followers_count,follows_count,media_count</value>
+    </values>
+    <values>
+        <field>Instagram_Id__c</field>
+        <value xsi:type="xsd:string">17841454032970258</value>
+    </values>
+    <values>
+        <field>Mulesoft_Client_Id__c</field>
+        <value xsi:type="xsd:string">5d96a03ef675440797c69cd3c28f337f</value>
+    </values>
+    <values>
+        <field>Mulesoft_Client_Secret__c</field>
+        <value xsi:type="xsd:string">d56DBc6435374d03b093226E5FBCf47e</value>
+    </values>
+    <values>
+        <field>Target__c</field>
+        <value xsi:type="xsd:string">instagram_user_discovery</value>
+    </values>
+</CustomMetadata>

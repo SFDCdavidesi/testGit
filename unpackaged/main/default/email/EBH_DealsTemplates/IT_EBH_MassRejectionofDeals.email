@@ -1,0 +1,68 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span style="font-family: Arial, sans-serif; font-size: 12pt;">Grazie per il
+tuo interesse al programma eBay Imperdibili.</span></div><div style="">
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="IT" style="font-size: 12pt; line-height: 107%; font-family: Arial, sans-serif;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><b><span lang="IT" style="font-size: 12pt; line-height: 107%; font-family: Arial, sans-serif;">Dettagli:<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style=""><span lang="IT" style="color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-size: 12pt; line-height: 107%;">Nome utente
+eBay:&nbsp;</span><font face="Arial, sans-serif"><span style="font-size: 14.6667px;">{!EBH_Deal__c.EBH_BusinessName__c}</span></font></p>
+
+<p class="MsoNormal" style=""><span lang="IT" style="color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-size: 12pt; line-height: 107%;">Titolo:&nbsp;</span><font face="Arial, sans-serif"><span style="font-size: 14.6667px;">{!EBH_Deal__c.EBH_ProductTitle__c}</span></font></p>
+
+<p class="MsoNormal" style=""><span lang="IT" style="color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-size: 12pt; line-height: 107%;">Quantità:&nbsp;</span><span style="background-color: white;"><font face="Arial, sans-serif"><span style="font-size: 14.6667px;">{!EBH_Deal__c.EBH_Quantity__c}</span><span style="font-size: 11pt;">&nbsp;</span></font></span></p>
+
+<p class="MsoNormal" style=""><span lang="IT" style="color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-size: 12pt; line-height: 107%;">Prezzo
+precedente:&nbsp;</span><font face="Arial, sans-serif"><span style="font-size: 14.6667px;">{!EBH_Deal__c.EBH_RRPWASPrice__c}&nbsp;</span></font><span style="background-color: rgb(255, 255, 255); font-family: Arial, sans-serif; font-size: 12pt;">EUR</span></p>
+
+<p class="MsoNormal" style=""><span lang="IT" style="color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-size: 12pt; line-height: 107%;">Prezzo
+scontato:&nbsp;</span><font face="Arial, sans-serif"><span style="font-size: 14.6667px;">{!EBH_Deal__c.EBH_DealPrice__c}&nbsp;</span></font><span style="background-color: rgb(255, 255, 255); font-family: Arial, sans-serif; font-size: 12pt;">EUR</span></p>
+
+<p class="MsoNormal" style=""><span lang="IT" style="color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-size: 12pt; line-height: 107%;">Motivo del
+rifiuto:&nbsp;</span><font face="Arial, sans-serif"><span style="font-size: 14.6667px;">{!EBH_Deal__c.EBH_ReasonforRejection__c}</span></font></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="IT" style="font-size: 12pt; line-height: 107%; font-family: Arial, sans-serif;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><b><span lang="IT" style="font-size: 12pt; line-height: 107%; font-family: Arial, sans-serif;">Commenti eBay:&nbsp;</span></b><span style="font-size: 11pt; line-height: 107%; font-family: Arial, sans-serif; background: white;">{!EBH_Deal__c.EBH_ReasonforRejectionextd__c}</span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="IT" style="font-size: 12pt; line-height: 107%; font-family: Arial, sans-serif;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="IT" style="font-size: 12pt; line-height: 107%; font-family: Arial, sans-serif;">Questa volta,
+purtroppo, la tua offerta non ha superato la selezione. Le nostre decisioni si
+basano su una serie di criteri, fra cui:<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="IT" style="font-size: 12pt; line-height: 107%; font-family: Arial, sans-serif;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="IT" style="font-size: 12pt; line-height: 107%; font-family: Arial, sans-serif;">• Prezzo: l’offerta
+proposta deve essere migliore rispetto a quella &nbsp;dialtri rivenditori online.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="IT" style="font-size: 12pt; line-height: 107%; font-family: Arial, sans-serif;">• Rilevanza: gli
+oggetti in offerta devono appartenere a categorie rilevanti dal punto di vista
+stagionale o della domanda.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="IT" style="font-size: 12pt; line-height: 107%; font-family: Arial, sans-serif;">• Stock: l’oggetto
+in offerta deve essere presente in quantità sufficiente per coprire la domanda
+del periodo.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="IT" style="font-size: 12pt; line-height: 107%; font-family: Arial, sans-serif;">• Selezione:
+per noi è importante poter scegliere tra una vasta gamma di oggetti.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="IT" style="font-size: 12pt; line-height: 107%; font-family: Arial, sans-serif;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="IT" style="font-size: 12pt; line-height: 107%; font-family: Arial, sans-serif;">Inviaci una
+nuova offerta e saremmo lieti di valutarla quanto prima! Grazie per la
+collaborazione.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="IT" style="font-size: 12pt; line-height: 107%; font-family: Arial, sans-serif;">Cordiali
+saluti,<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="IT" style="font-size: 12pt; line-height: 107%; font-family: Arial, sans-serif;">Il team eBay<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></p></div>]]></td>
+</tr>
+</table>

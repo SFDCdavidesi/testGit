@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Module_ID__c</fullName>
+    <description>US-0010159 - ADS - Campaign Attribution Field Creation :
+Attribution 1PD Module ID based on Module Type</description>
+    <externalId>false</externalId>
+    <label>Sub Module ID (Deals)</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Module_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>3940</fullName>
+                <default>false</default>
+                <label>3940</label>
+            </value>
+            <value>
+                <fullName>2735</fullName>
+                <default>false</default>
+                <label>2735</label>
+            </value>
+            <value>
+                <fullName>3252</fullName>
+                <default>false</default>
+                <label>3252</label>
+            </value>
+            <value>
+                <fullName>3839</fullName>
+                <default>false</default>
+                <label>3839</label>
+            </value>
+            <value>
+                <fullName>5259</fullName>
+                <default>false</default>
+                <label>5259</label>
+            </value>
+            <value>
+                <fullName>3266</fullName>
+                <default>false</default>
+                <label>3266</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Primaries</controllingFieldValue>
+            <valueName>3940</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MFD DBC</controllingFieldValue>
+            <controllingFieldValue>Themed DBCs</controllingFieldValue>
+            <valueName>2735</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Banner</controllingFieldValue>
+            <valueName>3252</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Event Module</controllingFieldValue>
+            <valueName>3839</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sponsored Deals</controllingFieldValue>
+            <valueName>5259</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Trending</controllingFieldValue>
+            <valueName>3266</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,35 @@
+<p>The agreed Offer will start shortly.</p>
+
+<p>Please lower the offer price to the agreed promotion price at the start of the campaign.</p>
+
+
+<p>Offer</p>
+
+<p>eBay username: {! EBH_Deal__c.EBH_BusinessName__c}</p>
+
+<p>Product name: {! EBH_Deal__c.EBH_MarketingTitle__c}</p>
+
+<p>Available quantities: {! EBH_Deal__c.EBH_Quantity__c}</p>
+
+
+<p>Action format: {! EBH_Deal__c.EBH_LocalDealFormat__c}</p>
+
+<p>Start of the campaign: {! EBH_Deal__c.EBH_DealStartDate__c},{! EBH_Deal__c.EBH_DealStartTime__c}</p>
+
+<p>End of campaign: {! EBH_Deal__c.EBH_DealEndDate__c}, {! EBH_Deal__c.EBH_DealEndTime__c}</p>
+
+<p>Page (s): AU</p>
+
+
+<p>Price</p>
+
+<p>MSRP / previous price: € {! EBH_Deal__c.EBH_RRPWASPrice__c}</p>
+
+<p>Your offer price: € {! EBH_Deal__c.EBH_SellerPrice__c}</p>
+
+<p>Reduced special price: € {! EBH_Deal__c.EBH_DealPrice__c}</p>
+
+
+<p>Best regards</p>
+
+<p>Your eBay team</p>

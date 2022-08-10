@@ -1,0 +1,7 @@
+Hello!
+
+A ‘{!Contract.RecordType}’ ({!Contract.EBH_Language__c}) has been created for ‘{!Contract.Account}’. {!Contract.RecordType} for {!Contract.EBH_Site__c} / {!Contract.EBH_Language__c} do not have pre-approved templates and may require your further action.
+
+For more details, please contact {!Contract.CreatedBy} or go to: {!Contract.EBH_RecordLink__c}.
+
+Thank you.

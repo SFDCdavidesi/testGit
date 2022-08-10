@@ -1,0 +1,7 @@
+Hello!
+
+Your ‘{!Contract.RecordType}’ for '{!Contract.Account}' has been pre-checked by Finance.
+
+For more details, please go to: {!Contract.EBH_RecordLink__c}.
+
+Thank you.

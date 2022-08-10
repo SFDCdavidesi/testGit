@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ES_Coupons1</fullName>
+    <columns>Couponsite_s__c</columns>
+    <columns>NAME</columns>
+    <columns>Coupon_ID__c</columns>
+    <columns>Marketing_Coupon_Name__c</columns>
+    <columns>Stage__c</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>Coupon_Source__c</columns>
+    <columns>Coupon_Start_Date__c</columns>
+    <columns>Coupon_End_Date__c</columns>
+    <columns>Days_since_coupon_End_Date__c</columns>
+    <columns>Seller_Co_funding_share_forecast__c</columns>
+    <columns>eBay_Budget__c</columns>
+    <columns>Campaign_Manager__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Couponsite_s__c</field>
+        <operation>equals</operation>
+        <value>ebay.es</value>
+    </filters>
+    <label>ES Coupons for billing</label>
+</ListView>

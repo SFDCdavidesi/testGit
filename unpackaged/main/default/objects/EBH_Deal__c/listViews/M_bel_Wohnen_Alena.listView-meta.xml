@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>M_bel_Wohnen_Alena</fullName>
+    <columns>NAME</columns>
+    <columns>EBH_BusinessName__c</columns>
+    <columns>EBH_Dealdateearliestpossible__c</columns>
+    <columns>EBH_Category__c</columns>
+    <columns>EBH_MarketingTitle__c</columns>
+    <columns>EBH_eBayLink__c</columns>
+    <columns>EBH_eBayItemID__c</columns>
+    <columns>EBH_Quantity__c</columns>
+    <columns>EBH_SellerPrice__c</columns>
+    <columns>EBH_DealPrice__c</columns>
+    <columns>EBH_DealFormat__c</columns>
+    <columns>EBH_DealStartDate__c</columns>
+    <columns>EBH_DealEndDate__c</columns>
+    <columns>EBH_SpotlightCategory__c</columns>
+    <columns>EBH_CommentfromSeller__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>EBH_Status__c</field>
+        <operation>equals</operation>
+        <value>New</value>
+    </filters>
+    <filters>
+        <field>EBH_DealSiteId__c</field>
+        <operation>equals</operation>
+        <value>77</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>EBH_Deal__c.Deal_V1</value>
+    </filters>
+    <filters>
+        <field>EBH_Category__c</field>
+        <operation>equals</operation>
+        <value>Bastel- &amp; Künstlerbedarf,Feinschmecker,Möbel &amp; Wohnen,Baby</value>
+    </filters>
+    <label>Möbel &amp; Wohnen Alena</label>
+</ListView>

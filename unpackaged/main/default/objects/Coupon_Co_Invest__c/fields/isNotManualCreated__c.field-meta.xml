@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>isNotManualCreated__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>US-0015718 Coupon - Allow Coupon Owner to add Category Exceptions</description>
+    <externalId>false</externalId>
+    <label>isNotManualCreated</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

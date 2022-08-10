@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>US-0011279 - Re-create dataloader permission set in order to remove wrong permissions</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Access_to_Data_Loader</label>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ApiEnabled</name>
+    </userPermissions>
+</PermissionSet>

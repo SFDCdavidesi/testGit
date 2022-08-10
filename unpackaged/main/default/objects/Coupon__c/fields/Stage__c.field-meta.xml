@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage__c</fullName>
+    <defaultValue>&quot;Draft&quot;</defaultValue>
+    <description>EPH-7162 Object: Coupon__c - Create two record types</description>
+    <externalId>false</externalId>
+    <label>Stage</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Draft</fullName>
+                <default>false</default>
+                <label>Draft</label>
+            </value>
+            <value>
+                <fullName>Seller Negotiation</fullName>
+                <default>false</default>
+                <label>Seller Negotiation</label>
+            </value>
+            <value>
+                <fullName>Coupon Running</fullName>
+                <default>false</default>
+                <label>Coupon Running</label>
+            </value>
+            <value>
+                <fullName>Coupon Executed</fullName>
+                <default>false</default>
+                <label>Coupon Executed</label>
+            </value>
+            <value>
+                <fullName>T4 Statement Send</fullName>
+                <default>false</default>
+                <label>T4 Statement Send</label>
+            </value>
+            <value>
+                <fullName>T34 Statement Send</fullName>
+                <default>false</default>
+                <label>T40 Statement Send</label>
+            </value>
+            <value>
+                <fullName>Coupon rejected</fullName>
+                <default>false</default>
+                <label>Coupon rejected</label>
+            </value>
+            <value>
+                <fullName>Budget Confirmed</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Budget Confirmed</label>
+            </value>
+            <value>
+                <fullName>Budget Rejected</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Budget Rejected</label>
+            </value>
+            <value>
+                <fullName>Budget Requested</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Budget Requested</label>
+            </value>
+            <value>
+                <fullName>Clarification Required</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Clarification Required</label>
+            </value>
+            <value>
+                <fullName>Invoice(s) approved</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Invoice(s) approved</label>
+            </value>
+            <value>
+                <fullName>Invoice(s) paid</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Invoice(s) paid</label>
+            </value>
+            <value>
+                <fullName>Invoice(s) pending</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Invoice(s) pending</label>
+            </value>
+            <value>
+                <fullName>Invoice(s) rejected</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Invoice(s) rejected</label>
+            </value>
+            <value>
+                <fullName>Invoice(s) send</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Invoice(s) send</label>
+            </value>
+            <value>
+                <fullName>Items Accepted</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Items Accepted</label>
+            </value>
+            <value>
+                <fullName>Items Provided</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Items Provided</label>
+            </value>
+            <value>
+                <fullName>Items Rejected</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Items Rejected</label>
+            </value>
+            <value>
+                <fullName>Payment Rejected</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Payment Rejected</label>
+            </value>
+            <value>
+                <fullName>Payment Sent</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Payment Sent</label>
+            </value>
+            <value>
+                <fullName>Ready for Payment</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ready for Payment</label>
+            </value>
+            <value>
+                <fullName>Seller(s) Contract Signed</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Seller(s) Contract Signed</label>
+            </value>
+            <value>
+                <fullName>Statement Verified</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Statement Verified</label>
+            </value>
+            <value>
+                <fullName>Verify Invoice</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Verify Invoice</label>
+            </value>
+            <value>
+                <fullName>Verify Statement</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Verify Statement</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

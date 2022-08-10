@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_UKSRM_BU_Edit_Record</fullName>
+    <active>false</active>
+    <description>US-0009569 - UK Risk: Project Stages/Validations
+US-0011884 : Moved to Trigger due to Rollup Summary issue.</description>
+    <errorConditionFormula>NOT($Setup.byPass__c.ByPass_Validation__c) &amp;&amp;
+NOT( ISCHANGED(Most_Recent_Stage_Change_Date__c) ) &amp;&amp;
+RecordType.DeveloperName = &#39;Seller_Risk_Management&#39; &amp;&amp;
+NOT(ISCHANGED(EBH_Stage__c)) &amp;&amp;
+AND(NOT(ISPICKVAL(EBH_Stage__c, &#39;Submitted&#39;)),NOT(ISPICKVAL(EBH_Stage__c, &#39;Completed&#39;))) &amp;&amp;
+$Permission.UK_Seller_Risk_Management_BU</errorConditionFormula>
+    <errorMessage>Insufficient Privileges to modify the record when stage is not Submitted</errorMessage>
+</ValidationRule>

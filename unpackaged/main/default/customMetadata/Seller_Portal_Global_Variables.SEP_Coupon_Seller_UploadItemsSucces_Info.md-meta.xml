@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Coupon Seller Upload Items Success Info</label>
+    <protected>false</protected>
+    <values>
+        <field>Value_Big__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>Value__c</field>
+        <value xsi:type="xsd:string">Your items have successfully been uploaded. You can manage the list of items included in your Coupon via the &#39;Item&#39; tab, where you can delete items. Don&#39;t forget to press on &#39;Submit all items&#39; to send the final list to eBay.</value>
+    </values>
+    <values>
+        <field>Value_in_German__c</field>
+        <value xsi:type="xsd:string">Ihre Artikel wurden erfolgreich hochgeladen. Über den Tab &quot;Artikel&quot; können Sie die Liste der in Ihrem Gutschein enthaltenen Artikel verwalten und Artikel löschen. Vergessen Sie nicht, auf &quot;Alle Artikel einreichen&quot; zu klicken, um die endgültige Liste an eBay zu senden.</value>
+    </values>
+</CustomMetadata>

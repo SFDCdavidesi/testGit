@@ -1,0 +1,2 @@
+<p data-aura-rendered-by="10635:0">A new user request or user reactivation has been submitted for approval in Hive. Please validate that manager approval and screenshot of manager relationship from hub are accurate.</p>
+<p data-aura-rendered-by="10635:0">{!ApprovalRequest.Internal_URL}</p>

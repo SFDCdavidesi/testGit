@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>KPI_Measurement__c</fullName>
+    <externalId>false</externalId>
+    <label>KPI Measurement</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CPL</fullName>
+                <default>false</default>
+                <label>CPL</label>
+            </value>
+            <value>
+                <fullName>CPA</fullName>
+                <default>false</default>
+                <label>CPA</label>
+            </value>
+            <value>
+                <fullName>Upper Funnel/Brand Awareness</fullName>
+                <default>false</default>
+                <label>Upper Funnel/Brand Awareness</label>
+            </value>
+            <value>
+                <fullName>Mid Funnel (Engagement)</fullName>
+                <default>false</default>
+                <label>Mid Funnel (Engagement)</label>
+            </value>
+            <value>
+                <fullName>GMV/On-site Sales</fullName>
+                <default>false</default>
+                <label>GMV/On-site Sales</label>
+            </value>
+            <value>
+                <fullName>CPC</fullName>
+                <default>false</default>
+                <label>CPC</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Not Known Yet</fullName>
+                <default>false</default>
+                <label>Not Known Yet</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,9 @@
+<body>
+<p>Dear [name]&nbsp;</p>
+<p>Please  find enclosed the final reporting for your campaign [opp.Ext_Name_Campaign__c] on eBay. </p>
+<p>[Additional_Mail_Text__c]</p>
+<p>Yours  sincerely,&nbsp;</p>
+<p>Your <em>eBay Advertising Team</em></p>
+<p><img src="https://hive--c.na124.content.force.com/servlet/servlet.ImageServer?id=0153u000002RNfL&oid=00D23000000DTd6&lastMod=1626752360000" /> </p>
+<p>eBay (UK) Limited | Hotham House, 1 Heron Square |  Richmond Upon Thames, London TW9 1EJ</p>
+</body>

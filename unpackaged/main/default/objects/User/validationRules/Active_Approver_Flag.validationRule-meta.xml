@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active_Approver_Flag</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    Active_Approver__c,
+    IsActive =False
+    )</errorConditionFormula>
+    <errorMessage>This is an Active Approver Flag... Please remove from Approval Matrix or Hierachy first</errorMessage>
+</ValidationRule>

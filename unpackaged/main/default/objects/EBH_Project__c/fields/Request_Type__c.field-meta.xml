@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Request_Type__c</fullName>
+    <description>US-0009462 - UK Risk: new permission, record type and page layout on Project</description>
+    <externalId>false</externalId>
+    <label>Request Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Daily Deals/Promotions</fullName>
+                <default>false</default>
+                <label>Daily Deals/Promotions</label>
+            </value>
+            <value>
+                <fullName>New Seller Underwriting</fullName>
+                <default>false</default>
+                <label>New Seller Underwriting</label>
+            </value>
+            <value>
+                <fullName>Site Wide Limits (SWL)</fullName>
+                <default>false</default>
+                <label>Site Wide Limits (SWL)</label>
+            </value>
+            <value>
+                <fullName>Hot Items Whitelist</fullName>
+                <default>false</default>
+                <label>Hot Items Whitelist</label>
+            </value>
+            <value>
+                <fullName>Category Whitelist</fullName>
+                <default>false</default>
+                <label>Category Whitelist</label>
+            </value>
+            <value>
+                <fullName>PL Whitelist</fullName>
+                <default>false</default>
+                <label>PL Whitelist</label>
+            </value>
+            <value>
+                <fullName>Suspension/Restriction Appeal</fullName>
+                <default>false</default>
+                <label>Suspension/Restriction Appeal</label>
+            </value>
+            <value>
+                <fullName>Change Account Ownership</fullName>
+                <default>false</default>
+                <label>Change Account Ownership</label>
+            </value>
+            <value>
+                <fullName>BSR Dealer</fullName>
+                <default>false</default>
+                <label>BSR Dealer</label>
+            </value>
+            <value>
+                <fullName>PSA Vetting</fullName>
+                <default>false</default>
+                <label>PSA Vetting</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Daily Deals</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Daily Deals</label>
+            </value>
+            <value>
+                <fullName>Promotions</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Promotions</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

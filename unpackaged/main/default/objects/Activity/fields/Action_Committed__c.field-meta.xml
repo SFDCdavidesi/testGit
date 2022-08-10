@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Action_Committed__c</fullName>
+    <description>US-0018705 Merchant Support Group - Add Fields in Tasks for MSO</description>
+    <externalId>false</externalId>
+    <label>Action Committed</label>
+    <required>false</required>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CBT</fullName>
+                <default>false</default>
+                <label>CBT</label>
+            </value>
+            <value>
+                <fullName>Increase inventory</fullName>
+                <default>false</default>
+                <label>Increase inventory</label>
+            </value>
+            <value>
+                <fullName>PL</fullName>
+                <default>false</default>
+                <label>PL</label>
+            </value>
+            <value>
+                <fullName>B2C promo</fullName>
+                <default>false</default>
+                <label>B2C promo</label>
+            </value>
+            <value>
+                <fullName>Item/Order Discounts (SME)</fullName>
+                <default>false</default>
+                <label>Item/Order Discounts (SME)</label>
+            </value>
+            <value>
+                <fullName>Shop upgrade</fullName>
+                <default>false</default>
+                <label>Shop upgrade</label>
+            </value>
+            <value>
+                <fullName>Free shipping</fullName>
+                <default>false</default>
+                <label>Free shipping</label>
+            </value>
+            <value>
+                <fullName>Shipping options</fullName>
+                <default>false</default>
+                <label>Shipping options</label>
+            </value>
+            <value>
+                <fullName>Returns</fullName>
+                <default>false</default>
+                <label>Returns</label>
+            </value>
+            <value>
+                <fullName>Seller standard</fullName>
+                <default>false</default>
+                <label>Seller standard</label>
+            </value>
+            <value>
+                <fullName>Limits</fullName>
+                <default>false</default>
+                <label>Limits</label>
+            </value>
+            <value>
+                <fullName>Technical issues/ Merchant Solutions</fullName>
+                <default>false</default>
+                <label>Technical issues/ Merchant Solutions</label>
+            </value>
+            <value>
+                <fullName>Daily deals</fullName>
+                <default>false</default>
+                <label>Daily deals</label>
+            </value>
+            <value>
+                <fullName>Account Specifics</fullName>
+                <default>false</default>
+                <label>Account Specifics</label>
+            </value>
+            <value>
+                <fullName>Listing optimization</fullName>
+                <default>false</default>
+                <label>Listing optimization</label>
+            </value>
+            <value>
+                <fullName>Other - specify in comments</fullName>
+                <default>false</default>
+                <label>Other - specify in comments</label>
+            </value>
+            <value>
+                <fullName>Coronavirus</fullName>
+                <default>false</default>
+                <label>Coronavirus</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

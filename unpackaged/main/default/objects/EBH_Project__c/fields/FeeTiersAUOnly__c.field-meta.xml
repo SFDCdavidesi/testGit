@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FeeTiersAUOnly__c</fullName>
+    <description>US-0007708 - [AU] New fields for &#39;Managed Payment&#39; Pagelayout for Project</description>
+    <externalId>false</externalId>
+    <inlineHelpText>AU only fee structure</inlineHelpText>
+    <label>Fee Tiers  (AU Only)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Standard</fullName>
+                <default>false</default>
+                <label>Standard</label>
+            </value>
+            <value>
+                <fullName>VOD</fullName>
+                <default>false</default>
+                <label>VOD</label>
+            </value>
+            <value>
+                <fullName>LMO</fullName>
+                <default>false</default>
+                <label>LMO</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

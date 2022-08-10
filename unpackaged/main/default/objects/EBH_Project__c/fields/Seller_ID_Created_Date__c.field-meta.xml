@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Seller_ID_Created_Date__c</fullName>
+    <description>US-0010569 - EU Acquisition: Adding Fields to Onboarding Projects</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Date seller created an ebay account</inlineHelpText>
+    <label>Seller ID Created Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

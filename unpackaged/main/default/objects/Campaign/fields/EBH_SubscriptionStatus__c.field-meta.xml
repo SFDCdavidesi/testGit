@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_SubscriptionStatus__c</fullName>
+    <description>[EBH] (EPH-3300) : Subscription Status</description>
+    <externalId>false</externalId>
+    <label>Subscription Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1. Track</fullName>
+                <default>false</default>
+                <label>1. Track</label>
+            </value>
+            <value>
+                <fullName>2. Don&#39;t Track</fullName>
+                <default>false</default>
+                <label>2. Don&#39;t Track</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

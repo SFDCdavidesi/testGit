@@ -1,0 +1,156 @@
+<apex:page id="mypage" controller="SEPCouponContractDownloadController" renderAs="pdf" applyBodyTag="false" applyHtmlTag="false" showHeader="false" >
+<html>
+<head>
+    <style type="text/css">
+            @media print {
+                pre, blockquote {page-break-inside: avoid;}
+                }
+
+            @page {
+                size: A4;
+                margin-top: 5mm;
+                margin-bottom:10mm;
+                margin-left:5mm;
+                margin-right:5mm;
+                
+                @top-center {
+                    content: element(header1);
+                }
+
+                @top-left {
+                    content: element(header0);
+                }
+                @bottom-right {                    
+                    font-size:60%;
+                    content: counter(page)  "/" counter(pages);
+                }
+            }
+            
+            *{
+                font-family: sans-serif;
+             }
+
+            div.header1
+            {
+                /* padding: 10px; */
+                position: running(header1);
+                font-size: 10px;
+                padding:3px;
+            }
+            div.header0
+            {
+                /* padding: 10px; */
+                position: running(header0);
+                font-size: 10px;
+                padding:3px;
+            }
+           
+            /* table { page-break-inside:auto }
+            tr    { page-break-inside:avoid; page-break-after:auto } */
+
+            .ql-table
+            {
+                border:none;
+                border-collapse: collapse;                
+
+                page-break-inside: auto;
+            }
+    
+       
+            .ql-table >tr>td
+            {
+                border-top:solid black 0.5px;
+                border-bottom:solid black 0.5px;
+                padding: 3px;
+                
+            }
+            .mydiv
+            {
+                /* border:solid rgb(203, 15, 15) 2px; */
+                display: block;
+                padding: 5px;
+                width: 100%;            
+               
+            }
+            .myblock
+            {
+                
+                font-size: 12px;
+                /* border: blue solid 1px; */
+                padding 3px;
+            }
+            .logo
+            {
+                width: 100px;
+            }
+
+            /* Category Base Table */
+            .catTable
+            {
+                /* border-top:solid black 0.5px;
+                border-bottom:solid black 0.5px; */
+                padding: 3px;
+                height: 100%;
+                /* display: block; */
+                table-layout:fixed;
+                
+            }
+            
+            .catTable >thead>tr>th
+            {
+                /* white-space: nowrap; */
+                text-align: left;
+                vertical-align: top;
+               /* font-size: 10px; */                
+            }
+            .catTable >thead>tr>th:last-child
+            {
+               white-space:pre-line;
+               min-width:20px;   
+            }
+            /* Item Base Table */
+            .tableItem
+            {
+                /* border-top:solid black 0.5px;
+                border-bottom:solid black 0.5px; */
+                padding: 3px;
+               border: 0.5px solid black;
+               border-collapse: collapse;
+               table-layout:fixed;
+            }
+            .tableItem >thead>tr>th
+            {
+                /* white-space: nowrap; */
+                text-align: left;
+                vertical-align: top;
+                /* font-size: 10px; */                
+            }
+            .tableItem >thead>tr>th:last-child
+            {
+               white-space:pre-line;
+               min-width:20px;   
+            }
+            
+        
+    </style>
+</head>
+<body>
+    <div class="header0">
+        <!-- <apex:outputText value="{!dtNow}"/> -->
+
+    </div>
+      
+    <!-- <div class="header1">Co-invest Coupon </div> -->
+
+    <div class="mydiv">
+        <img class="logo" src="https://hive.my.salesforce.com/servlet/servlet.ImageServer?id=0153u000002RNsV&oid=00D6A0000002Hft"/>
+        <div class="myblock">
+            <apex:outputText value="{! htmlContent }" escape="false" />
+        </div>
+        
+    </div>
+</body>
+    
+
+</html>
+</apex:page>

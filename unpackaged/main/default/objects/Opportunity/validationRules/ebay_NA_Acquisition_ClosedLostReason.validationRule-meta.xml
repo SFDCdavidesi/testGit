@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ebay_NA_Acquisition_ClosedLostReason</fullName>
+    <active>true</active>
+    <description>US-0008558 - [NA] Opportunity stages, Validations, Activity and Chatter feed</description>
+    <errorConditionFormula>AND( RecordType.DeveloperName==&#39;eBay_NA_Acquisition&#39;, 
+      ISCHANGED( StageName ),
+      ISPICKVAL(StageName , &#39;Closed Lost&#39;),
+      ISPICKVAL( Reason_For_Closed_Lost_Deferred__c, &#39;&#39; ) 
+)</errorConditionFormula>
+    <errorDisplayField>Reason_For_Closed_Lost_Deferred__c</errorDisplayField>
+    <errorMessage>Provide Details for Closed Lost/Deferred</errorMessage>
+</ValidationRule>

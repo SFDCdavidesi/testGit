@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Invoice_Amount__c</fullName>
+    <description>US-0009328 - Update Hive Advertising to Add Fields for Invoice Amount Clarification</description>
+    <externalId>false</externalId>
+    <label>Total Invoice Amount</label>
+    <summarizedField>Ad_Revenue_Monthly__c.Invoice_amount2__c</summarizedField>
+    <summaryForeignKey>Ad_Revenue_Monthly__c.Ad_Product__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

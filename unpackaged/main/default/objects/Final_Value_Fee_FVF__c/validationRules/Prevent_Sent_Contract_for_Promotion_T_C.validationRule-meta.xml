@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Sent_Contract_for_Promotion_T_C</fullName>
+    <active>false</active>
+    <description>EPH-8072</description>
+    <errorConditionFormula>IF( AND($User.FirstName &lt;&gt; &#39;Deployment&#39;, ISCHANGED(Final_Value_Fee_Stage__c), ISPICKVAL(Final_Value_Fee_Stage__c, &#39;Contract Sent&#39;),  TEXT(Seller_Name__r.EBH_RevRollup__c) = &#39;DE&#39;,  Promotions_T_Cs_agreed_DE_only__c  &lt;&gt; &#39;Accepted&#39;),
+true,false
+)</errorConditionFormula>
+    <errorMessage>Please make sure that seller has accepted Promotion T&amp;C. This is a prerequisite for the FVF contract generation</errorMessage>
+</ValidationRule>

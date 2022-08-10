@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>At_least_one_survey_populated</fullName>
+    <active>true</active>
+    <description>Survey_id__c or Ardira_Survey__c should be populated</description>
+    <errorConditionFormula>AND( RecordType.Name==&#39;Validate Survey&#39;,
+OR (
+AND(ISBLANK( Survey_ID__c ) , ISBLANK( Ardira_Survey__c )),
+AND(not(ISBLANK( Survey_ID__c )) ,NOT(ISBLANK( Ardira_Survey__c )))
+))</errorConditionFormula>
+    <errorDisplayField>Ardira_Survey__c</errorDisplayField>
+    <errorMessage>Please fill in at least one and only one of the fields &quot;Survey&quot; OR &quot;Click Tools Survey ID&quot;</errorMessage>
+</ValidationRule>

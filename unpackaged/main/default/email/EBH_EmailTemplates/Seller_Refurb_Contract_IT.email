@@ -1,0 +1,48 @@
+<p><img src='https://hive--c.na124.content.force.com/servlet/servlet.ImageServer?id=0153u000002RNsV&oid=00D6A0000002Hft&lastMod=1628243969000'/></p>
+<p style="text-align: justify;">
+Ciao,
+</p>
+<p style="text-align: justify;">
+    Ora puoi partecipare al Programma Ricondizionato dal venditore ("Programma"). Leggi questa e-mail troverai i <a href="{!Contract.TCs_URL__c}">Termini e Condizioni</a> del Programma. Facendo clic su "Accetto" di seguito, dichiari di aver letto e compreso i <a href="{!Contract.TCs_URL__c}">Termini e Condizioni</a> e di stipulare un contratto vincolante con eBay GmbH alle condizioni contenute nei <a href="{!Contract.TCs_URL__c}">Termini e Condizioni</a>. Vi invitiamo a leggerli attentamente e ad accettare solo se in grado di garantire i requisiti di partecipazione al Programma.
+</p>
+<p style="text-align: center;">
+    <a href="{!$Label.SiteURL}?restype=contract&id={!Contract.Unique_Id__c}&reURL=www.ebay.it">ACCETTO</a>
+</p>
+<table style="width: 978px; border-collapse: collapse; height: 168px;" border="1" cellspacing="5" cellpadding="5">
+<tbody>
+<tr>
+<td style="width: 248.667px;">Venditore</td>
+<td style="width: 706.444px;">
+<div style="line-height: 10px;">
+    <p>{!Contract.Account}</p>
+    <p>{!Contract.BusinessContactStreet__c}</p>
+    <p>{!Contract.BusinessContactPostalCode__c}</p>
+    <p>{!Contract.BusinessContactCity__c}</p>
+</div>
+
+</td>
+<tr>
+<td style="width: 248.667px;">Seller User ID</td>
+<td style="width: 706.444px;">
+{!EBH_ContractSeller__c.EBH_BusinessName__c}
+</td>
+</tr>
+<tr>
+<td style="width: 248.667px;">Programma eBay</td>
+<td style="width: 706.444px;">Ricondizionato dal venditore</td>
+</tr>
+<tr>
+<td style="width: 248.667px;">Inizio del programma</td>
+<td style="width: 706.444px;">{!Contract.Contract_Send_Date__c}</td>
+</tr>
+<tr>
+<td style="width: 248.667px;">Sito/i eBay</td>
+<td style="width: 706.444px;">ebay.it</td>
+</tr>
+</tbody>
+</table>
+
+<div style="padding-top: 10px;line-height: 5px;">
+    <p style="text-align: justify;">Cordiali saluti,</p>
+    <p style="text-align: justify;">Il team eBay</p>
+</div>

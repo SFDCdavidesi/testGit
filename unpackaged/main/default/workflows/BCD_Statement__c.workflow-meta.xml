@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>BCD_File_Email_For_UK</fullName>
+        <description>BCD File Email For UK</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Coupon_Owner_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <recipient>UK_Coupon_BCD_Statement</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Coupon_Templates/BCD_File_Email_Coupon_Manhattan</template>
+    </alerts>
+    <alerts>
+        <fullName>BCD_File_Email_for_AU</fullName>
+        <description>BCD File Email for AU</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Coupon_Owner_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <recipient>AU_Coupon_BCD_Statement</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Coupon_Templates/BCD_File_Email_Coupon_Manhattan</template>
+    </alerts>
+    <alerts>
+        <fullName>BCD_File_Email_for_DE</fullName>
+        <description>BCD File Email for DE</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Coupon_Owner_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <recipient>DE_Coupon_BCD_Statement</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Coupon_Templates/BCD_File_Email_Coupon_Manhattan</template>
+    </alerts>
+    <alerts>
+        <fullName>BCD_Statement_Email_Approval_Approved</fullName>
+        <description>BCD_Statement_Email_Approval_Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>UK_FVF_Statement_approval_requestor</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Final_Value_Fee/Approval_Approved_FVF_Statement</template>
+    </alerts>
+    <alerts>
+        <fullName>BCD_Statement_Email_Approval_Rejected</fullName>
+        <description>BCD_Statement_Email_Approval_Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>UK_FVF_Statement_approval_requestor</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Final_Value_Fee/Approval_Rejection_FVF_Statement</template>
+    </alerts>
+    <alerts>
+        <fullName>DE_Contract_BCD_Email_Approval_Approved</fullName>
+        <description>DE Contract BCD Email Approval Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>DE_Contract_BCD_Finance_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/Approval_Approved_Contract_BCD_Statement</template>
+    </alerts>
+    <alerts>
+        <fullName>DE_Contract_BCD_Email_Approval_Rejected</fullName>
+        <description>DE Contract BCD Email Approval Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>DE_Contract_BCD_Finance_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/Approval_Rejected_Contract_BCD_Statement</template>
+    </alerts>
+    <alerts>
+        <fullName>DE_Contract_BCD_File_Generation</fullName>
+        <description>DE Contract BCD File Generation</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>DE_Contract_BCD_Finance_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/Contract_BCD_Statement</template>
+    </alerts>
+    <alerts>
+        <fullName>DE_Coupon_BCD_Email_Approval_Approved</fullName>
+        <description>DE_Coupon_BCD_Email_Approval_Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>DE_Coupon_BCD_approval_requestor</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Coupon_Templates/Approval_Approved_Coupon_BCD_Statement</template>
+    </alerts>
+    <alerts>
+        <fullName>DE_Coupon_BCD_Email_Approval_Rejected</fullName>
+        <description>DE_Coupon_BCD_Email_Approval_Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>DE_Coupon_BCD_approval_requestor</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Coupon_Templates/Approval_Rejection_Coupon_BCD_Statement</template>
+    </alerts>
+    <alerts>
+        <fullName>DE_FVF_Statement</fullName>
+        <description>DE FVF Statement</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>DE_FVF_Statement</recipient>
+            <type>group</type>
+        </recipients>
+        <senderAddress>dl-ebay-dl-ebay-eu-salesforce-support@ebay.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>EBH_EmailTemplates/FVF_BCD_statement_notification</template>
+    </alerts>
+    <alerts>
+        <fullName>ES_Contract_BCD_Email_Approval_Approved</fullName>
+        <description>ES Contract BCD Email Approval Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ES_Contract_BCD_Finance_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/Approval_Approved_Contract_BCD_Statement</template>
+    </alerts>
+    <alerts>
+        <fullName>ES_Contract_BCD_Email_Approval_Rejected</fullName>
+        <description>ES Contract BCD Email Approval Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ES_Contract_BCD_Finance_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/Approval_Rejected_Contract_BCD_Statement</template>
+    </alerts>
+    <alerts>
+        <fullName>ES_Contract_BCD_File_Generation</fullName>
+        <description>ES Contract BCD File Generation</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ES_Contract_BCD_Finance_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/Contract_BCD_Statement</template>
+    </alerts>
+    <alerts>
+        <fullName>FR_Contract_BCD_Email_Approval_Approved</fullName>
+        <description>FR Contract BCD Email Approval Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>FRIT_Contract_BCD_Finance_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/Approval_Approved_Contract_BCD_Statement</template>
+    </alerts>
+    <alerts>
+        <fullName>FR_Contract_BCD_Email_Approval_Rejected</fullName>
+        <description>FR Contract BCD Email Approval Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>FRIT_Contract_BCD_Finance_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/Approval_Rejected_Contract_BCD_Statement</template>
+    </alerts>
+    <alerts>
+        <fullName>FR_Contract_BCD_File_Generation</fullName>
+        <description>FR Contract BCD File Generation</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>FRIT_Contract_BCD_Finance_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/Contract_BCD_Statement</template>
+    </alerts>
+    <alerts>
+        <fullName>IT_Contract_BCD_Email_Approval_Approved</fullName>
+        <description>IT Contract BCD Email Approval Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>FRIT_Contract_BCD_Finance_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/Approval_Approved_Contract_BCD_Statement</template>
+    </alerts>
+    <alerts>
+        <fullName>IT_Contract_BCD_Email_Approval_Rejected</fullName>
+        <description>IT Contract BCD Email Approval Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>FRIT_Contract_BCD_Finance_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/Approval_Rejected_Contract_BCD_Statement</template>
+    </alerts>
+    <alerts>
+        <fullName>IT_Contract_BCD_File_Generation</fullName>
+        <description>IT Contract BCD File Generation</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>FRIT_Contract_BCD_Finance_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/Contract_BCD_Statement</template>
+    </alerts>
+    <alerts>
+        <fullName>IT_FVF_Statement</fullName>
+        <description>IT FVF Statement US-0009477</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Italy_FVF_Statement</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/FVF_BCD_statement_notification</template>
+    </alerts>
+    <alerts>
+        <fullName>UK_Contract_BCD_Email_Approval_Approved</fullName>
+        <description>UK Contract BCD Email Approval Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>UK_Contract_BCD_Finance_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/Approval_Approved_Contract_BCD_Statement</template>
+    </alerts>
+    <alerts>
+        <fullName>UK_Contract_BCD_Email_Approval_Rejected</fullName>
+        <description>UK Contract BCD Email Approval Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>UK_Contract_BCD_Finance_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/Approval_Rejected_Contract_BCD_Statement</template>
+    </alerts>
+    <alerts>
+        <fullName>UK_Contract_BCD_File_Generation</fullName>
+        <description>UK Contract BCD File Generation</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>UK_Contract_BCD_Finance_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/Contract_BCD_Statement</template>
+    </alerts>
+    <alerts>
+        <fullName>UK_Coupon_BCD_Email_Approval_Approved</fullName>
+        <description>UK_Coupon_BCD_Email_Approval_Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>UK_Coupon_BCD_approval_requestor</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Coupon_Templates/Approval_Approved_Coupon_BCD_Statement</template>
+    </alerts>
+    <alerts>
+        <fullName>UK_Coupon_BCD_Email_Approval_Rejected</fullName>
+        <description>UK_Coupon_BCD_Email_Approval_Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>UK_Coupon_BCD_approval_requestor</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Coupon_Templates/Approval_Rejection_Coupon_BCD_Statement</template>
+    </alerts>
+    <alerts>
+        <fullName>UK_FVF_Statement</fullName>
+        <description>UK FVF Statement</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>UK_FVF_Statement</recipient>
+            <type>group</type>
+        </recipients>
+        <senderAddress>dl-ebay-dl-ebay-eu-salesforce-support@ebay.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>EBH_EmailTemplates/UK_FVF_Statement_notification</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>BCDStatement_Status_BCD_READY</fullName>
+        <description>US-0011966 - [Contract BCD]UK BCD Approval Process</description>
+        <field>Status__c</field>
+        <literalValue>BCD ready</literalValue>
+        <name>BCDStatement Status BCD READY</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_BCDStatement_Status_Approved</fullName>
+        <description>US-0008157 - [UK] FVF - BCD generation approval process</description>
+        <field>Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Update_BCDStatement_Status_Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_BCDStatement_Status_Finance_Appr</fullName>
+        <description>US-0008157 - [UK] FVF - BCD generation approval process</description>
+        <field>Status__c</field>
+        <literalValue>Finance Approval</literalValue>
+        <name>Update_BCDStatement_Status_Finance_Appr</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_BCDStatement_Status_Rejected</fullName>
+        <description>US-0008157 - [UK] FVF - BCD generation approval process</description>
+        <field>Status__c</field>
+        <literalValue>Rejected (BU or Finance)</literalValue>
+        <name>Update_BCDStatement_Status_Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_BCD_Status_BU_Appr</fullName>
+        <description>US-0008558 - [NA] Opportunity stages, Validations, Activity and Chatter feed</description>
+        <field>Status__c</field>
+        <literalValue>BU Approval</literalValue>
+        <name>Update_BCD_Status_BU_Appr</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_DECouponBCD_Status_Approved</fullName>
+        <description>US-0008445 - DE &amp; UK Coupon BCD - approval process</description>
+        <field>Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Update_DECouponBCD_Status_Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_DECouponBCD_Status_Finance_Appr</fullName>
+        <description>US-0008445 - DE &amp; UK Coupon BCD - approval process</description>
+        <field>Status__c</field>
+        <literalValue>Finance Approval</literalValue>
+        <name>Update_DECouponBCD_Status_Finance_Appr</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_DECouponBCD_Status_Rejected</fullName>
+        <description>US-0008445 - DE &amp; UK Coupon BCD - approval process</description>
+        <field>Status__c</field>
+        <literalValue>Rejected (BU or Finance)</literalValue>
+        <name>Update_DECouponBCD_Status_Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_UKCouponBCD_Status_Approved</fullName>
+        <description>US-0008445 - DE &amp; UK Coupon BCD - approval process</description>
+        <field>Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Update_UKCouponBCD_Status_Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_UKCouponBCD_Status_Finance_Appr</fullName>
+        <description>US-0008445 - DE &amp; UK Coupon BCD - approval process</description>
+        <field>Status__c</field>
+        <literalValue>Finance Approval</literalValue>
+        <name>Update_UKCouponBCD_Status_Finance_Appr</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_UKCouponBCD_Status_Rejected</fullName>
+        <description>US-0008445 - DE &amp; UK Coupon BCD - approval process</description>
+        <field>Status__c</field>
+        <literalValue>Rejected (BU or Finance)</literalValue>
+        <name>Update_UKCouponBCD_Status_Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>DE Coupon BCD Email Notification</fullName>
+        <actions>
+            <name>BCD_File_Email_for_DE</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <description>US-0008446 - Coupon BCD - email notification
+Deactivated by: US-0009587 - Deactivate redundant WRs for Coupon BCD email alerts</description>
+        <formula>RecordType.DeveloperName  = &#39;Coupon_BCD&#39;  &amp;&amp;   ISPICKVAL(Status__c, &#39;BCD ready&#39;) &amp;&amp; ISPICKVAL(Site__c, &#39;77&#39;)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>UK Coupon BCD Email Notification</fullName>
+        <actions>
+            <name>BCD_File_Email_For_UK</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <description>US-0008446 - Coupon BCD - email notification
+Deactivated by: US-0009587 - Deactivate redundant WRs for Coupon BCD email alerts</description>
+        <formula>RecordType.DeveloperName  = &#39;Coupon_BCD&#39;  &amp;&amp;   ISPICKVAL(Status__c, &#39;BCD ready&#39;) &amp;&amp; ISPICKVAL(Site__c, &#39;3&#39;)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>UK FVF Statement notification</fullName>
+        <actions>
+            <name>UK_FVF_Statement</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>BCD_Statement__c.Site__c</field>
+            <operation>equals</operation>
+            <value>3</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>BCD_Statement__c.Status__c</field>
+            <operation>equals</operation>
+            <value>BCD ready</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>BCD_Statement__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Final Value Fee BCD</value>
+        </criteriaItems>
+        <description>US-0008108 - [UK] FVF - BCD file generation email notification
+US-0008977: DEPRECIATED this workflow and move to process builder</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

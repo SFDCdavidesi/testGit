@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>HelpTextText4</label>
+    <protected>false</protected>
+    <values>
+        <field>Bigger_Body_Test__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Heading__c</field>
+        <value xsi:type="xsd:string">Search Terms</value>
+    </values>
+    <values>
+        <field>Help_Text__c</field>
+        <value xsi:type="xsd:string">Use the search terms to find offers. If you prefer to enter the deal details manually, select the Submit a new deal button below.</value>
+    </values>
+    <values>
+        <field>Inner_Help_Text__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

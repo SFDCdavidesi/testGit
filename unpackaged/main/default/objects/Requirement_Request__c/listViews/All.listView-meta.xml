@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Hive_Project__c</columns>
+    <columns>HIVE_Products__c</columns>
+    <columns>Status__c</columns>
+    <columns>Prio_Average__c</columns>
+    <columns>OWNER.ALIAS</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Completed,Rejected,On-hold</value>
+    </filters>
+    <label>All</label>
+</ListView>

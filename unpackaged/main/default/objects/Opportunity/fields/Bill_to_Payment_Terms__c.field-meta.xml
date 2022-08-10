@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bill_to_Payment_Terms__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(
+
+ISPICKVAL(Bill_To_Party__c, &#39;Advertiser&#39;), TEXT(Account.Payment_Terms__c),
+
+if(
+ISPICKVAL(Bill_To_Party__c, &#39;Agency&#39;), TEXT(Agency__r.Payment_Terms__c), NULL))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Bill to Payment Terms</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closed_Won_Stage</fullName>
+    <active>true</active>
+    <description>If Primary Quote is not approved and dually signed, you cannot change a direct opportunity to closed won.</description>
+    <errorConditionFormula>AND(
+
+$Setup.byPass__c.ByPass_Validation__c = FALSE,
+ISCHANGED(StageName) ,
+ISPICKVAL(StageName, &#39;Closed Won&#39;),
+
+RecordType.DeveloperName = $Label.OPP_RECORDTYPEDEVNAME_DIRECT,
+Primary_Quote__r.RecordType.Name = &#39;eBay Advertising&#39;,
+
+Primary_Quote__r.Dually_Signed__c = FALSE
+)</errorConditionFormula>
+    <errorMessage>Cannot change stage to Closed Won if Primary Quote is not approved &amp; dually signed</errorMessage>
+</ValidationRule>

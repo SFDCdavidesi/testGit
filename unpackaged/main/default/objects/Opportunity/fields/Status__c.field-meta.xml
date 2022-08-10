@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>StageName</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cancelled During Campaign</fullName>
+                <default>false</default>
+                <label>Cancelled During Campaign</label>
+            </value>
+            <value>
+                <fullName>Cancelled Before Campaign</fullName>
+                <default>false</default>
+                <label>Cancelled Before Campaign</label>
+            </value>
+            <value>
+                <fullName>Paused</fullName>
+                <default>false</default>
+                <label>Paused</label>
+            </value>
+            <value>
+                <fullName>Pending Launch</fullName>
+                <default>false</default>
+                <label>Pending Launch</label>
+            </value>
+            <value>
+                <fullName>Campaign Live</fullName>
+                <default>false</default>
+                <label>Campaign Live</label>
+            </value>
+            <value>
+                <fullName>Campaign Complete</fullName>
+                <default>false</default>
+                <label>Campaign Complete</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>Cancelled During Campaign</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>Cancelled Before Campaign</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>Paused</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>Pending Launch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>Campaign Live</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>Campaign Complete</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

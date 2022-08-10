@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Live_Listings__c</fullName>
+    <description>US-0007256 POP COUPON - ETL - BATCH CREATE COUPON SELLER L3, this field will be populated by the ETL process. Generated as: &lt;CouponName&gt;-&lt;CategoryTree_External_Id&gt;</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Number of Live Listings in related Category on date of record creation.</inlineHelpText>
+    <label>Live Listings (Snapshot)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

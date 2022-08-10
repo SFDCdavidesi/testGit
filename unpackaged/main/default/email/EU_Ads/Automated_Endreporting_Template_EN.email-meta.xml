@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>After campaign</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Automated_Endreporting_Template_EN</name>
+    <style>none</style>
+    <subject>eBay Final Reporting, [opp.Account.Name], [opp.Ext_Name_Campaign__c], [Campaign_Start__c] – [Campaign_End__c]</subject>
+    <textOnly>Dear [name]
+
+Please  find enclosed the final reporting for your campaign [opp.Ext_Name_Campaign__c] on eBay.
+
+[Additional_Mail_Text__c]
+
+Yours  sincerely,
+
+Your eBay Advertising Team
+
+
+eBay (UK) Limited | Hotham House, 1 Heron Square |  Richmond Upon Thames, London TW9 1EJ</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

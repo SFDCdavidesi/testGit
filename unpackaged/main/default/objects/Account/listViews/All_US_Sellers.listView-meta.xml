@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_US_Sellers</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>EBH_OracleID__c</columns>
+    <columns>EBH_RegistrationCountry__c</columns>
+    <columns>EBH_Segment__c</columns>
+    <columns>EBH_LifecycleStage__c</columns>
+    <columns>EBH_GMVLast12Months__c</columns>
+    <columns>EBH_AccountManageName__c</columns>
+    <columns>EBH_UrgencyReason__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.EBH_Seller</value>
+    </filters>
+    <filters>
+        <field>EBH_RegistrationCountry__c</field>
+        <operation>equals</operation>
+        <value>United States,Canada</value>
+    </filters>
+    <label>All NA Sellers</label>
+</ListView>

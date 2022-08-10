@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>50.0</apiVersion>
+    <available>true</available>
+    <description>US-0010984 - Emails are sent to other sellers when cancelling Subsidized deals</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Document Approval Seller cancellation Preview</name>
+    <style>none</style>
+    <subject>Deals Subsidy Contract Cancellation Notice</subject>
+    <type>visualforce</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

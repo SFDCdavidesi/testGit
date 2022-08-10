@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_Preferred_Language__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Preferred contact language, this will be used to display content using the relevant language</inlineHelpText>
+    <label>Preferred Language</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ENGLISH</fullName>
+                <default>false</default>
+                <label>ENGLISH</label>
+            </value>
+            <value>
+                <fullName>GERMAN</fullName>
+                <default>false</default>
+                <label>GERMAN</label>
+            </value>
+            <value>
+                <fullName>FRENCH</fullName>
+                <default>false</default>
+                <label>FRENCH</label>
+            </value>
+            <value>
+                <fullName>ITALIAN</fullName>
+                <default>false</default>
+                <label>ITALIAN</label>
+            </value>
+            <value>
+                <fullName>SPANISH</fullName>
+                <default>false</default>
+                <label>SPANISH</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

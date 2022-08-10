@@ -1,0 +1,8 @@
+A <b>{!Case.Priority}</b> severity ticket will breach SLA in 2 hours.<p><p>
+
+<u>Details;</u><br>
+Ticket Number: {!Case.Ticket_Number__c}<br>
+Record Type: {!Case.RecordType}<br>
+Summary: {!Case.Summary__c}<p><p>
+
+Please provide a response/resolution for this <a href="{!Case.Link}">support ticket.</a>

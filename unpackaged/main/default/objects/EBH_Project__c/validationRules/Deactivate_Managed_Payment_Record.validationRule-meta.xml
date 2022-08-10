@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deactivate_Managed_Payment_Record</fullName>
+    <active>true</active>
+    <description>US-0008570 - Managed Payments EU</description>
+    <errorConditionFormula>AND( RecordType.DeveloperName == &#39;ManagedPayment&#39;, DeactivateManagedPaymentRecord__c  = TRUE , ISBLANK( ReasonForDeactivatingMPRecord__c ) )</errorConditionFormula>
+    <errorDisplayField>ReasonForDeactivatingMPRecord__c</errorDisplayField>
+    <errorMessage>Reason for Deactivating MP Record cannot be blank</errorMessage>
+</ValidationRule>

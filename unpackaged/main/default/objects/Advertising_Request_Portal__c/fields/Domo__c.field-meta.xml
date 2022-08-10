@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Domo__c</fullName>
+    <externalId>false</externalId>
+    <label>Domo</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ad Ops Reporting – Direct Data</fullName>
+                <default>false</default>
+                <label>Ad Ops – Direct Data</label>
+            </value>
+            <value>
+                <fullName>Ad Ops Reporting – Ad Unit Level Performance</fullName>
+                <default>false</default>
+                <label>Ad Ops – Ad Unit Level Performance</label>
+            </value>
+            <value>
+                <fullName>All Adobe Segment Population</fullName>
+                <default>false</default>
+                <label>All Adobe Segment Population</label>
+            </value>
+            <value>
+                <fullName>DFP Campaign Cross Shopping</fullName>
+                <default>false</default>
+                <label>DFP Campaign Cross Shopping</label>
+            </value>
+            <value>
+                <fullName>DFP Campaign Demographics</fullName>
+                <default>false</default>
+                <label>DFP Campaign Demographics</label>
+            </value>
+            <value>
+                <fullName>DFP Campaign Segments Overlaps</fullName>
+                <default>false</default>
+                <label>DFP Campaign Segments Overlaps</label>
+            </value>
+            <value>
+                <fullName>3P US SSP Performance -&gt; Overall Trends</fullName>
+                <default>false</default>
+                <label>3P -&gt; Overall Trends</label>
+            </value>
+            <value>
+                <fullName>3P US SSP Performance -&gt; Daily Trends Performance</fullName>
+                <default>false</default>
+                <label>3P -&gt; Daily Trends Performance</label>
+            </value>
+            <value>
+                <fullName>3P US SSP Performance -&gt; Advertiser Detailed Performance</fullName>
+                <default>false</default>
+                <label>3P -&gt; Advertiser Detailed Performance</label>
+            </value>
+            <value>
+                <fullName>3P US SSP Performance -&gt; Ad Unit Detailed Performance</fullName>
+                <default>false</default>
+                <label>3P -&gt; Ad Unit Detailed Performance</label>
+            </value>
+            <value>
+                <fullName>3P US SSP Performance -&gt; Buyer Detailed Performance</fullName>
+                <default>false</default>
+                <label>3P -&gt; Buyer Detailed Performance</label>
+            </value>
+            <value>
+                <fullName>3P US SSP Performance -&gt; DSP Detailed Performance</fullName>
+                <default>false</default>
+                <label>3P -&gt; DSP Detailed Performance</label>
+            </value>
+            <value>
+                <fullName>3P US SSP Performance -&gt; Revenue Cross Tab Peformacne</fullName>
+                <default>false</default>
+                <label>3P -&gt; Revenue Cross Tab Peformance</label>
+            </value>
+            <value>
+                <fullName>1PD Campaign Performance Reporting</fullName>
+                <default>false</default>
+                <label>1PD Campaign Performance Reporting</label>
+            </value>
+            <value>
+                <fullName>eBay Advanced Audience Insights Dashboard</fullName>
+                <default>false</default>
+                <label>eBay Advanced Audience Insights Dashboard</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_for_Contract_Amendment__c</fullName>
+    <description>US-0009867 - [Refurb] New Seller Refurbished Contracts</description>
+    <externalId>false</externalId>
+    <label>Reason for Contract/Amendment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Seller / Brand Acquisition</fullName>
+                <default>false</default>
+                <label>Seller / Brand Acquisition</label>
+            </value>
+            <value>
+                <fullName>Inventory Acquisition / Enhancement</fullName>
+                <default>false</default>
+                <label>Inventory Acquisition / Enhancement</label>
+            </value>
+            <value>
+                <fullName>Seller Acceleration</fullName>
+                <default>false</default>
+                <label>Seller Acceleration</label>
+            </value>
+            <value>
+                <fullName>Seller Retention</fullName>
+                <default>false</default>
+                <label>Seller Retention</label>
+            </value>
+            <value>
+                <fullName>Seller Re-activation</fullName>
+                <default>false</default>
+                <label>Seller Re-activation</label>
+            </value>
+            <value>
+                <fullName>Refurbished program participation</fullName>
+                <default>false</default>
+                <label>Refurbished program participation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

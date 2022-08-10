@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Title_Limit_80</fullName>
+    <active>true</active>
+    <description>US-0009410 - DEALS: Increase &#39;Product Title&#39; field length to 150 characters</description>
+    <errorConditionFormula>AND( RecordType.DeveloperName = &#39;Deal_V1&#39;, 
+     LEN( EBH_ProductTitle__c ) &gt; 80
+   )</errorConditionFormula>
+    <errorDisplayField>EBH_ProductTitle__c</errorDisplayField>
+    <errorMessage>Product Title cannot exceed 80 Characters.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Priority__c</fullName>
+    <description>#US-0018736</description>
+    <externalId>false</externalId>
+    <label>Priority</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Site__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not Started</fullName>
+                <default>false</default>
+                <label>Not Started</label>
+            </value>
+            <value>
+                <fullName>Working on it</fullName>
+                <default>false</default>
+                <label>Working on it</label>
+            </value>
+            <value>
+                <fullName>On hold</fullName>
+                <default>false</default>
+                <label>On hold</label>
+            </value>
+            <value>
+                <fullName>Complete</fullName>
+                <default>false</default>
+                <label>Complete</label>
+            </value>
+            <value>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+                <label>Not Applicable</label>
+            </value>
+            <value>
+                <fullName>High Touch High Urgency</fullName>
+                <default>false</default>
+                <label>High Touch High Urgency</label>
+            </value>
+            <value>
+                <fullName>High Touch Low Urgency</fullName>
+                <default>false</default>
+                <label>High Touch Low Urgency</label>
+            </value>
+            <value>
+                <fullName>Low Touch High Urgency</fullName>
+                <default>false</default>
+                <label>Low Touch High Urgency</label>
+            </value>
+            <value>
+                <fullName>Low Touch Low Urgency</fullName>
+                <default>false</default>
+                <label>Low Touch Low Urgency</label>
+            </value>
+            <value>
+                <fullName>Highest</fullName>
+                <default>false</default>
+                <label>Highest</label>
+            </value>
+            <value>
+                <fullName>High</fullName>
+                <default>false</default>
+                <label>High</label>
+            </value>
+            <value>
+                <fullName>Medium</fullName>
+                <default>false</default>
+                <label>Medium</label>
+            </value>
+            <value>
+                <fullName>Low</fullName>
+                <default>false</default>
+                <label>Low</label>
+            </value>
+            <value>
+                <fullName>Unprioritized</fullName>
+                <default>false</default>
+                <label>Unprioritized</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>IE</controllingFieldValue>
+            <controllingFieldValue>UK</controllingFieldValue>
+            <controllingFieldValue>DE</controllingFieldValue>
+            <controllingFieldValue>FR</controllingFieldValue>
+            <controllingFieldValue>IT</controllingFieldValue>
+            <controllingFieldValue>ES</controllingFieldValue>
+            <controllingFieldValue>NL</controllingFieldValue>
+            <controllingFieldValue>BE</controllingFieldValue>
+            <controllingFieldValue>PL</controllingFieldValue>
+            <controllingFieldValue>CH</controllingFieldValue>
+            <valueName>Unprioritized</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UK</controllingFieldValue>
+            <controllingFieldValue>DE</controllingFieldValue>
+            <controllingFieldValue>FR</controllingFieldValue>
+            <controllingFieldValue>IT</controllingFieldValue>
+            <controllingFieldValue>ES</controllingFieldValue>
+            <valueName>Highest</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UK</controllingFieldValue>
+            <controllingFieldValue>DE</controllingFieldValue>
+            <controllingFieldValue>FR</controllingFieldValue>
+            <controllingFieldValue>IT</controllingFieldValue>
+            <controllingFieldValue>ES</controllingFieldValue>
+            <valueName>High</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UK</controllingFieldValue>
+            <controllingFieldValue>DE</controllingFieldValue>
+            <controllingFieldValue>FR</controllingFieldValue>
+            <controllingFieldValue>IT</controllingFieldValue>
+            <controllingFieldValue>ES</controllingFieldValue>
+            <valueName>Medium</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UK</controllingFieldValue>
+            <controllingFieldValue>DE</controllingFieldValue>
+            <controllingFieldValue>FR</controllingFieldValue>
+            <controllingFieldValue>IT</controllingFieldValue>
+            <controllingFieldValue>ES</controllingFieldValue>
+            <valueName>Low</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AU</controllingFieldValue>
+            <valueName>High Touch High Urgency</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AU</controllingFieldValue>
+            <valueName>High Touch Low Urgency</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AU</controllingFieldValue>
+            <valueName>Low Touch High Urgency</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AU</controllingFieldValue>
+            <valueName>Low Touch Low Urgency</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

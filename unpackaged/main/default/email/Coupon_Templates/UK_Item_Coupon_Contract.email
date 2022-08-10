@@ -1,0 +1,61 @@
+<p style="text-align: justify;">This e-mail is to offer You the opportunity to run a coupon campaign (&ldquo;<strong>Coupon</strong>&rdquo;) on eBay. As discussed, please find the relevant terms below. Please click on &ldquo;I AGREE&rdquo; below&nbsp;by {!ContractDueDate} to accept.</p>
+<p style="text-align: center;"><a title="I AGREE" href="{clickMeUrl}">I AGREE</a></p>
+<table style="width: 946px; height: 490px; border-collapse: collapse;" border="1" cellspacing="5" cellpadding="5">
+<tbody>
+<tr style="height: 16px;">
+<td style="width: 250.222px; height: 16px;"><strong>Seller User ID</strong></td>
+<td style="width: 674.778px; height: 16px;">{eBaySellerID}</td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 250.222px; height: 16px;"><strong>Coupon Code</strong></td>
+<td style="width: 674.778px; height: 16px;">To be provided 5 days prior to the start of the Promotion Period</td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 250.222px; height: 16px;"><strong>Coupon Process&nbsp;</strong></td>
+<td style="width: 674.778px; height: 16px;">Process B (invoice to SELLER)</td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 250.222px; height: 16px;"><strong>Promotion Period</strong></td>
+<td style="width: 674.778px; height: 16px;">From {CouponStartTime} on {CouponStartDate} until {CouponEndTime} on {CouponEndDate} (GMT)</td>
+</tr>
+<tr style="height: 34px;">
+<td style="width: 250.222px; height: 34px;"><strong>Coupon Amount or Percentage&nbsp;</strong></td>
+<td style="width: 674.778px; height: 34px;">{CouponDiscount%}{CouponDiscountAmount}</td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 250.222px; height: 16px;"><strong>Excluded Categories</strong></td>
+<td style="width: 674.778px; height: 16px;">
+<ul>
+<li>Cars, Motorcycles &amp; Vehicles (9800)</li>
+<li>Property (10542)</li>
+<li>Coins (11116)</li>
+</ul>
+</td>
+</tr>
+<tr style="height: 34px;">
+<td style="width: 250.222px; height: 34px;"><strong>Seller funding </strong><strong>fee payable to eBay</strong></td>
+<td style="width: 674.778px; height: 34px;">
+<p>This Coupon will only be issued for specific items and can only be redeemed for such items. The list of Seller&rsquo;s items included in the Coupon (&ldquo;<strong>Included Items</strong>&rdquo;) may be found in the enclosed overview, which breaks down the Included Items into item IDs or SKUs, including the item&rsquo;s funding share. If additional item IDs are to be added to the Included Items, this shall be agreed between eBay and Seller by e-mail at least 5 days before the start of the Promotion Period.</p>
+</td>
+</tr>
+<tr style="height: 34px;">
+<td style="width: 250.222px; height: 34px;"><strong>Minimum Transaction Value</strong></td>
+<td style="width: 674.778px; height: 34px;">{Minimum_Transaction_Value__c}</td>
+</tr>
+<tr style="height: 34px;">
+<td style="width: 250.222px; height: 34px;"><strong>Maximum Discount Value</strong></td>
+<td style="width: 674.778px; height: 34px;">{CouponCap}</td>
+</tr>
+<tr style="height: 34px;">
+<td style="width: 250.222px; height: 34px;"><strong>Number of Buyer Redemptions</strong></td>
+<td style="width: 674.778px; height: 34px;">{Max_Redemptions__c}</td>
+</tr>
+<tr style="height: 34px;">
+<td style="width: 250.222px; height: 34px;"><strong>Additional Terms</strong></td>
+<td style="width: 674.778px; height: 34px;">{Coupon_Additional_Terms__c}</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"><br />The terms of this email are subject to the terms and conditions between eBay (UK) Limited, 1 More London Place, SE1 2AF, London, United Kingdom, registered in England &amp; Wales with company number 03726028 (&ldquo;<strong>eBay</strong>&rdquo;) and {LegalEntity}, {StreetName}, {Zip}, {City} (&ldquo;<strong>Seller, You</strong>&rdquo;), available at (&ldquo;<a title="Coupon Terms and Conditions" href="https://pages.ebay.co.uk/co-funded-coupons-terms-and-conditions/index.html"><strong>Coupon Terms and Conditions</strong></a>&rdquo;). Terms not defined here shall have the meaning given to them in the Coupon Terms and Conditions.</p>
+<p style="text-align: justify;">Any additional, alternate or amended terms must be expressly and mutually agreed by the parties in writing (email shall suffice).</p>
+<p>&nbsp;</p>

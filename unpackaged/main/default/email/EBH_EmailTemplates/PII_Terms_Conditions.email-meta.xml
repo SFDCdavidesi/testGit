@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0009366 - [Export Reports] - Manage PII access within Hive in a SOX compliant manner</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>PII Terms &amp; Conditions</name>
+    <style>none</style>
+    <subject>PII Terms &amp; Conditions</subject>
+    <textOnly>Dear {!Case.Who_should_have_admin_access__c}
+
+
+Hive contains data that is classified as &quot;Internal&quot; and &quot;Confidential&quot; as per eBays Data Elements Classification.
+
+
+By requesting export functionality from Hive you are confirming you are aware of the restrictions of use for the data you are exporting, you are approved to use this data as part of your job role and agree this data is for internal use only and must not be shared.
+
+
+Any data downloaded must be stored in accordance with eBay&#39;s information security policies and deleted as soon as the information is no longer needed.
+
+
+For more information relating to eBay&#39;s privacy policies please refer to the information on the hub:
+
+https://hub.corp.ebay.com/site/legal/page/privacy/
+
+
+For more information on eBay&#39;s data elements classification please refer to this page on the Information Security Policies WIKI - https://wiki.vip.corp.ebay.com/display/IS/Data+Elements+Classification
+
+
+&lt;I confirm I have read the above and I agree to the terms stated&gt;
+{!$Label.SiteURL+&#39;?id=&#39;+URLENCODE(Case.Unique_Id__c)+&#39;&amp;restype=pii&#39;}
+
+Thank you
+
+Team Hive</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

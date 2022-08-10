@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>ProjectName__c</columns>
+    <columns>NAME</columns>
+    <columns>EBH_Stage__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RegistrationCountry__c</field>
+        <operation>contains</operation>
+        <value>GER,DE</value>
+    </filters>
+    <filters>
+        <field>NAME</field>
+        <operation>contains</operation>
+        <value>payments</value>
+    </filters>
+    <label>All</label>
+</ListView>

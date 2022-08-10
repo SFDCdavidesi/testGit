@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>send an email alert to CM when an opportunity campaign record is paused or cancelled</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>eBay_Ads_Letterhead</letterhead>
+    <name>eBay Ads - Opp Alert to CM</name>
+    <style>freeForm</style>
+    <subject>Campaign is Paused or Cancelled</subject>
+    <textOnly>Hello CM,
+
+For {!Opportunity.Name}, the status of this opportunity is {!Opportunity.Status__c}.
+
+Details: {!Opportunity.Details__c}
+Additional Comments: {!Opportunity.Additional_Comments__c}
+
+{!Opportunity.Link}
+
+Thanks!</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

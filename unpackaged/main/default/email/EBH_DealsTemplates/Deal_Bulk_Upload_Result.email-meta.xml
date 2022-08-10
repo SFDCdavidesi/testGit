@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0008088 - [US]* Bulk Creation of Deal Records from CSV Upload</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Deal Bulk Upload Result</name>
+    <style>none</style>
+    <subject>Deals Bulk Upload Processing Completed</subject>
+    <textOnly>Dear {UploadUser},
+
+Hive has completed the processing of Listing IDs uploaded on {DateTimeUploading}
+In total, {totalSuccessDeals} records were created.
+
+Here is list of failed records if any:
+
+{listRecordsFail}
+
+Best,
+HIVE team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

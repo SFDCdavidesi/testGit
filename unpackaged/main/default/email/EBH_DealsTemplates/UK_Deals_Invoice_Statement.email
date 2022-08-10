@@ -1,0 +1,43 @@
+<style>
+	.ul-dash {
+              list-style-type: none;
+         }
+
+.ul-dash li:before {
+  content: '- ';
+  position: absolute;
+  margin-left: -20px;
+}
+	 
+</style>
+<p>Below/Attached you will find an overview of the billable marketing support for the completed Top Deal starting on {!EBH_Deal__c.EBH_DealStartDate__c}:</p>
+<p><strong>Details of the Top Deal:</strong></p>
+<ul>
+<li>{!EBH_Deal__c.EBH_DealStartDate__c} to {!EBH_Deal__c.EBH_DealEndDate__c}</li>
+<li>{!EBH_Deal__c.EBH_ProductTitle__c}</li>
+<li>{!EBH_Deal__c.EBH_eBayItemID__c}</li>
+<li>{!EBH_Deal__c.EBH_LocalDealFormat__c}</li>
+</ul>
+<p><strong>Billable marketing support*:</strong>&nbsp;</p>
+<ul class="ul-dash">
+<li>Billable sales volume: {!EBH_Deal__c.EBH_Payout_SI_calc__c}</li>
+<li>Marketing support per sold item: {!EBH_Deal__c.EBH_Subsidy__c}</li>
+<li>Total net marketing support: {!EBH_Deal__c.Subsidy_Final_Net__c}</li>
+<li>VAT: {!EBH_Deal__c.VAT_N__c}%</li>
+<li>Total gross marketing support: {!EBH_Deal__c.EBH_SubsidyFinal__c}</li>
+</ul>
+<p>&nbsp;</p>
+<p>* Please note This is not an invoice for VAT purposes.</p>
+<p>If you agree with the overview above, please<br />
+issue and upload an invoice for the final subsidy gross amount by using the invoice tool founder here: <a title="upload tool" href="{!EBH_Deal__c.SiteURL__c}/EBH_InvoiceUploadLandingPage?id={!EBH_Deal__c.Unique_Id_Ext__c}">upload tool</a>.</p>
+<p>Once you have uploaded your invoice, eBay will transfer the invoiced sum to your PayPal account.</p>
+<p>Click on the following link if you need further information or if you have questions regarding the overview: <a title="clarification link" href="{!EBH_Deal__c.SiteURL__c}/EBH_ClarificationRequiredPage?id={!EBH_Deal__c.Unique_Id_Ext__c}">clarification link</a>.<br />and an eBay agent will contact you.</p>
+<p>&nbsp;</p>
+<p>Sincerely,</p>
+<p>Your eBay team</p>
+<p>&nbsp;</p>
+<span style="font-size: 10.5px;">
+<p>eBay is committed to your privacy. Read our user agreement and privacy policy. Learn how to recognise fake (spoof) emails.</p>
+<p>We do not check replies sent to this email. If you have questions, we want to help you find an answer.</p>
+<p>Copyright ©2018 eBay Inc. All Rights Reserved. Designated trademarks and brands are the property of their respective owners. eBay and the eBay logo are trademarks of eBay Inc., eBay Europe S.à r.l. 22-24 Boulevard Royal, L-2449, Luxembourg</p>
+</span>

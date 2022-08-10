@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProjectRecordTypeAU__c</fullName>
+    <description>This is using for Process Builder - Account - Update Live to Site Date and Stage (Project AU)
+US-0007647</description>
+    <externalId>false</externalId>
+    <formula>OR(
+   RecordType.DeveloperName == &#39;eBayAUEnterprise&#39;,
+   RecordType.DeveloperName == &#39;eBayAUSMB&#39;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>NOT_USED_Project RecordType AU</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Delivered_AI_LT__c</fullName>
+    <description>US-0009160 - [Ads 2020] Migrate Trigger &amp; Create Apex Class from Revenue 2 to Ad Product</description>
+    <externalId>false</externalId>
+    <label>Delivered AI (LT)</label>
+    <summarizedField>Ad_Revenue_Daily__c.Delivered_AI__c</summarizedField>
+    <summaryForeignKey>Ad_Revenue_Daily__c.Ad_Product__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <submitter>UK_Contract_BCD_Finance_Group</submitter>
+        <type>group</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>Owner</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>Update_UKCouponBCD_Status_Finance_Appr</name>
+                <type>FieldUpdate</type>
+            </action>
+        </approvalActions>
+        <assignedApprover>
+            <approver>
+                <name>sovantheanycopado@copado.hive</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <criteriaItems>
+                <field>BCD_Statement__c.Credit_Total_Value__c</field>
+                <operation>lessThan</operation>
+                <value>10000</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>BU Approval L1 - Manager (25-26)</label>
+        <name>BU_Approval_L1_Manager_25_26</name>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>sovantheanycopado@copado.hive</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>test5@hive.project.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>Unanimous</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <criteriaItems>
+                <field>BCD_Statement__c.Credit_Total_Value__c</field>
+                <operation>lessThan</operation>
+                <value>10000</value>
+            </criteriaItems>
+        </entryCriteria>
+        <label>Finance Approval L1 - Manager (25-26)</label>
+        <name>Finance_Approval_L1_Manager_25_26</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <description>US-0011966 - [Contract BCD]UK BCD Approval Process</description>
+    <emailTemplate>EBH_EmailTemplates/Approval_Request_Contract_BCD</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <formula>AND(
+RecordType.DeveloperName = &#39;ACP_Contract&#39;,
+ISPICKVAL(Rev_RollUp__c,&#39;UK&#39;),
+ISPICKVAL(Status__c,&#39;BCD ready&#39;),
+!ISNULL(Credit_Total_Value__c),
+Credit_Total_Value__c &gt; 0
+)</formula>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>UK_Contract_BCD_Email_Approval_Approved</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>Update_BCDStatement_Status_Approved</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>true</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>UK_Contract_BCD_Email_Approval_Rejected</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>Update_BCDStatement_Status_Rejected</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>true</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Update_BCD_Status_BU_Appr</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>UK Contract BCD Approval Process</label>
+    <processOrder>4</processOrder>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>false</showApprovalHistory>
+</ApprovalProcess>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AU_Managed_Payment_Projects_June_2021</fullName>
+    <columns>NAME</columns>
+    <columns>EBH_Stage__c</columns>
+    <columns>EBH_Seller__c</columns>
+    <columns>MainVertical__c</columns>
+    <columns>EBH_DMCInterestedCommittedDate__c</columns>
+    <columns>Main3PP__c</columns>
+    <columns>OWNER.ALIAS</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>GMV_Fulfillment_PCT_30d__c</columns>
+    <columns>GMV_Fulfillment_30d__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>EBH_Project__c.Scaling</value>
+    </filters>
+    <filters>
+        <field>NAME</field>
+        <operation>contains</operation>
+        <value>AUReacquisitionOct21</value>
+    </filters>
+    <filters>
+        <field>OWNER.ALIAS</field>
+        <operation>equals</operation>
+        <value>AMoheet</value>
+    </filters>
+    <label>AU</label>
+</ListView>

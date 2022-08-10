@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<table cellpadding="0" width="500" cellspacing="0" id="topTable" height="450" style="font-family: Times; background-color: rgb(204, 204, 204);"><tbody><tr valign="top"><td style="background-color: rgb(255, 255, 255); vertical-align: top; height: 0px;"></td></tr><tr valign="top"><td style="background-color: rgb(255, 255, 255); height: 0px;"></td></tr><tr valign="top"><td styleinsert="1" height="300" style="background-color: rgb(255, 255, 255); font-size: 12pt; font-family: arial;"><table border="0" cellpadding="5" width="550" cellspacing="5" height="400"><tbody><tr valign="top" height="400"><td teditid="c1r1" aeditid="c1r1" locked="0" style="font-size: 12pt;"><font face="arial">Hello,</font><div><br></div><div>Account ownership change requested by&nbsp;{!Advertising_Request_Portal__c.OwnerFullName} has been rejected.&nbsp;</div><div><br></div><div><span style="font-family: Arial, Helvetica, sans-serif;">{!Advertising_Request_Portal__c.Link}</span></div></td></tr></tbody></table></td></tr></tbody></table>]]></td>
+</tr>
+</table>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>Final Notification before deactivation, DEPRECATED US-0010516</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Hive_Letterhead</letterhead>
+    <name>Final Notification2</name>
+    <style>formalLetter</style>
+    <subject>Final Notification before deactivation</subject>
+    <textOnly>Final Notification
+Dear {!User.FirstName},
+
+This is a final notification before your access to Hive is deactivated in a week if no action is taken.
+
+Please click on the following link to login to Hive: https://hive.lightning.force.com
+
+
+Kind regards
+
+
+
+The Project Hive Team</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

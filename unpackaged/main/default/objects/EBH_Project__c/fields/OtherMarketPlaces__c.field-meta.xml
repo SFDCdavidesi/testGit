@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OtherMarketPlaces__c</fullName>
+    <description>#US-0018736</description>
+    <externalId>false</externalId>
+    <label>Other Market Places</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Alibaba</fullName>
+                <default>false</default>
+                <label>Alibaba</label>
+            </value>
+            <value>
+                <fullName>Aliexpress</fullName>
+                <default>false</default>
+                <label>Aliexpress</label>
+            </value>
+            <value>
+                <fullName>Amazon</fullName>
+                <default>false</default>
+                <label>Amazon</label>
+            </value>
+            <value>
+                <fullName>Catch</fullName>
+                <default>false</default>
+                <label>Catch</label>
+            </value>
+            <value>
+                <fullName>cDiscount</fullName>
+                <default>false</default>
+                <label>cDiscount</label>
+            </value>
+            <value>
+                <fullName>Etsy</fullName>
+                <default>false</default>
+                <label>Etsy</label>
+            </value>
+            <value>
+                <fullName>Facebook</fullName>
+                <default>false</default>
+                <label>Facebook</label>
+            </value>
+            <value>
+                <fullName>Fishpond</fullName>
+                <default>false</default>
+                <label>Fishpond</label>
+            </value>
+            <value>
+                <fullName>FNAC/ Darty</fullName>
+                <default>false</default>
+                <label>FNAC/ Darty</label>
+            </value>
+            <value>
+                <fullName>Greys Online</fullName>
+                <default>false</default>
+                <label>Greys Online</label>
+            </value>
+            <value>
+                <fullName>Gumtree</fullName>
+                <default>false</default>
+                <label>Gumtree</label>
+            </value>
+            <value>
+                <fullName>Iconic</fullName>
+                <default>false</default>
+                <label>Iconic</label>
+            </value>
+            <value>
+                <fullName>Mano Mano</fullName>
+                <default>false</default>
+                <label>Mano Mano</label>
+            </value>
+            <value>
+                <fullName>Price Minister</fullName>
+                <default>false</default>
+                <label>Price Minister</label>
+            </value>
+            <value>
+                <fullName>Rakuten</fullName>
+                <default>false</default>
+                <label>Rakuten</label>
+            </value>
+            <value>
+                <fullName>Rue du commerce</fullName>
+                <default>false</default>
+                <label>Rue du commerce</label>
+            </value>
+            <value>
+                <fullName>VeePee</fullName>
+                <default>false</default>
+                <label>VeePee</label>
+            </value>
+            <value>
+                <fullName>Wish</fullName>
+                <default>false</default>
+                <label>Wish</label>
+            </value>
+            <value>
+                <fullName>Other Marketplaces</fullName>
+                <default>false</default>
+                <label>Other Marketplaces</label>
+            </value>
+            <value>
+                <fullName>Own online shop</fullName>
+                <default>false</default>
+                <label>Own online shop</label>
+            </value>
+            <value>
+                <fullName>Kogan</fullName>
+                <default>false</default>
+                <label>Kogan</label>
+            </value>
+            <value>
+                <fullName>Mydeals</fullName>
+                <default>false</default>
+                <label>Mydeals</label>
+            </value>
+            <value>
+                <fullName>Fnac / Darty</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Fnac / Darty</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

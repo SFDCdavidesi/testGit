@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>IT [EBH] (EPH-4171) - Mass Acceptance of Deals without Subsidy</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>EBH_eBayBlankLetterhead</letterhead>
+    <name>IT Mass Acceptance of Deals with Subsidy</name>
+    <style>freeForm</style>
+    <subject>eBay Imperdibili – Accetta i termini e le condizioni della nuova offerta</subject>
+    <textOnly>Accetta l&#39;Accordo per la promozione selezionando https://hive-prod.secure.force.com/response?id={!EBH_Deal__c.Id}&amp;reURL=www.ebay.it
+
+Nome utente eBay: {!EBH_Deal__c.EBH_BusinessName__c}
+Titolo : {!EBH_Deal__c.EBH_ProductTitle__c}
+Quantità: {!EBH_Deal__c.EBH_Quantity__c}
+
+Dettagli
+Formato: {!EBH_Deal__c.EBH_LocalDealFormat__c}
+Data di inizio: {!EBH_Deal__c.EBH_DealStartDate__c}
+Data di fine: {!EBH_Deal__c.EBH_DealEndDate__c}
+Prezzo precedente: € {!EBH_Deal__c.EBH_RRPWASPrice__c}
+Prezzo offerta: € {!EBH_Deal__c.EBH_SellerPrice__c}
+Costo per il venditore (al netto del supporto marketing): € {!EBH_Deal__c.EBH_DealPrice__c}
+Supporto marketing per oggetto venduto: € {!EBH_Deal__c.EBH_Subsidy__c}
+Supporto marketing massimo - Quantità: {!EBH_Deal__c.EBH_Quantity__c}
+Supporto marketing massimo - Importo: € {!EBH_Deal__c.Subsidy_Planned_Gross__c}
+
+Commenti eBay
+{!EBH_Deal__c.EBH_CommentfromeBaySourcer__c}
+
+Accettando, confermi che:
+• L&#39;oggetto che ci hai offerto non è una contraffazione né un&#39;imitazione.
+• Sei autorizzato a vendere e distribuire questo progetto e a inviarlo nei luoghi che hai specificato.
+• Offrendo questo oggetto in vendita su eBay, non stai violando alcun obbligo contrattuale previsto da altri contratti.
+• Il prezzo di vendita sopra indicato che hai menzionato è l&#39;effettivo prezzo di vendita precedente.
+• Non modificherai l&#39;offerta dell&#39;oggetto scontato durante il periodo promozionale sopra indicato senza l&#39;esplicito consenso scritto di eBay.
+
+Questo Accordo per la promozione documenta i termini e le condizioni di una promozione sui siti eBay sopra indicati ed è parte integrale dell&#39;accordo di agenzia promozionale che hai stipulato con eBay (UK) Ltd.
+
+
+Con i più cordiali saluti
+Il team eBay</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

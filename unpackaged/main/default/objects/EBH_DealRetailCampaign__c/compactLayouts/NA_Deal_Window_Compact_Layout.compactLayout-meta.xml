@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NA_Deal_Window_Compact_Layout</fullName>
+    <fields>Deal_Window__c</fields>
+    <fields>EBH_Country__c</fields>
+    <fields>EBH_Date__c</fields>
+    <fields>EPH_EndDate__c</fields>
+    <fields>Status__c</fields>
+    <label>NA Deal Window Compact Layout</label>
+</CompactLayout>

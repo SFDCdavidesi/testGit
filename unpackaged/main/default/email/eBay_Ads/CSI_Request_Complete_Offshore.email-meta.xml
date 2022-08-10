@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>CSI Request Complete</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>eBay_Ads_Letterhead</letterhead>
+    <name>CSI Request Complete Offshore</name>
+    <style>freeForm</style>
+    <subject>{!Advertising_Request_Portal__c.Request_Type__c} Complete</subject>
+    <textOnly>Hello {!Advertising_Request_Portal__c.Offshore_Resource__c}
+
+This request is now complete.
+
+Project Name: {!Advertising_Request_Portal__c.Name__c}
+Account: {!Advertising_Request_Portal__c.Account__c}
+CSI Team Member: {!Advertising_Request_Portal__c.CSI_Team_Member__c}
+Key Questions to Answer with Insights: {!Advertising_Request_Portal__c.Key_Questions_to_Answer_With_Insights__c}
+Additional Information (under insights)?: {!Advertising_Request_Portal__c.Additional_Information__c}
+What Insights were found? {!Advertising_Request_Portal__c.What_insights_were_found__c}
+
+{!Advertising_Request_Portal__c.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

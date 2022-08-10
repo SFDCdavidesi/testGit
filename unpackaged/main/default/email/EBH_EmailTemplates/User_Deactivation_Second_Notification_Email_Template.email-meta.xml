@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0010516 - Bug in user deactivation email notification process</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>User Deactivation Second Notification Email Template</name>
+    <style>none</style>
+    <subject>🐝 Hive: Final Notification before deactivation [Action Required]</subject>
+    <textOnly>Dear {!Target_User.Email}!
+This is a final notification before your access to Hive will be revoked due to not logging in. To avoid deactivation of your Hive user profile, please ACT NOW and log in to Hive.  Hive users are automatically deactivated after 45 days with no login due to the high value of licences.
+Please click on the following link to log in to keep your account active:
+
+LOG IN TO HIVE NOW
+
+Are you unsure how Hive can support you in your role?
+
+EXPLORE  HIVE UNIVERSITY COURSES
+
+Check out our eLearning library In Hive University.  Here you can explore more capabilities specific to your role and how can get the most out of Hive to help you work more efficiently.
+
+We value your ideas - Share them with us!
+
+RAISE FEATURE REQUEST
+
+Do you have an idea for a new feature in Hive that would help you work more productively? We continuously strive to improve so is important that you share your ideas with us.  Suggest a new feature via the Feature Request link above!
+
+Thank you for continuing your journey with us!
+The Hive Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

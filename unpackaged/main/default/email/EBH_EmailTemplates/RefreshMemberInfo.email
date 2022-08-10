@@ -1,0 +1,7 @@
+<p>You have uploaded&nbsp;{!CountSellerList} seller list(s) with {!CountTargetSeller} seller records to the Campaign {!CampaignName}.</p>
+<p>{!CountCMCreated} Campaign Member(s) has (have)  been created from these {!CountTargetSeller} seller records:</p>
+<ul>
+<li>{!CountSellerOptOut} seller(s) did not migrate to Campaign Members due to being flagged for phone opt-out.</li>
+<li>{!BadSellerOther} seller(s) did not migrate to Campaign Members due to other reasons:</li>
+</ul>
+<p>{!BadSellers}</p>

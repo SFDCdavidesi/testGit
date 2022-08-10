@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_DateSentforFinancePrecheck__c</fullName>
+    <description>[EBH] (US-0039) : To capture the timestamp when the Contract status changes to &#39;Sent for Finance Pre-check&#39;</description>
+    <externalId>false</externalId>
+    <label>Date Sent for Finance Pre-check</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0008234</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Approval Request FVF(Seller Level) contract</name>
+    <style>none</style>
+    <subject>{!Final_Value_Fee_FVF__c.Name} in Hive requires your approval</subject>
+    <textOnly>A new approval request for the BCD file has been submitted for approval in Hive.
+
+Per the new process for FVF Promos and also subtitling invoicing, we need to obtain business and then finance approval.
+
+Please review and approve the Total Amount of credits which covers B2C investment activity.
+
+Approve or Reject
+
+Go to BCD Statement</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

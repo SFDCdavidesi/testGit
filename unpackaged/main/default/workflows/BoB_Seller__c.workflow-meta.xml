@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>UK_Call_Rescheduled_by_Seller_Notification</fullName>
+        <description>UK Call Rescheduled by Seller Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Account_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>dl-ebay-dl-ebay-eu-salesforce-support@ebay.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>EBH_EmailTemplates/UK_Call_Rescheduled_by_Seller_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>eBay_Ads_Next_Scheduled_Date_Reminder</fullName>
+        <description>eBay Ads - Next Scheduled Date Reminder</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/eBay_Ads_Next_Scheduled_Call_Reminder</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Unique_Id_c</fullName>
+        <description>US-0007901 - [LTTM]Bulk Upload Cohort Seller to include &quot;Account manager&quot; and &quot;Secondary AM&quot; for upload</description>
+        <field>Unique_Id__c</field>
+        <formula>CASESAFEID(BoB__c) &amp; &#39;_&#39; &amp;  Seller__r.EBH_OracleID__c</formula>
+        <name>Unique_Id__c</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Populate Bob Seller Unique Key</fullName>
+        <actions>
+            <name>Unique_Id_c</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>US-0007901 - [LTTM]Bulk Upload Cohort Seller to include &quot;Account manager&quot; and &quot;Secondary AM&quot; for upload</description>
+        <formula>NOT( ISBLANK(BoB__c) )  &amp;&amp;  NOT( ISBLANK( Seller__c ) )</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>eBay Ads - Next Scheduled Call Reminder</fullName>
+        <actions>
+            <name>eBay_Ads_Next_Scheduled_Date_Reminder</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(  $Setup.byPass__c.byPass_WFRule__c = FALSE, $Profile.Name = &quot;Standard Ads User Profile&quot;, Next_Call_Schedule_Date__c - TODAY() = 1  )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

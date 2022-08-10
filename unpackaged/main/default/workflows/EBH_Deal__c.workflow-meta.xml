@@ -1,0 +1,1735 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>AU_DealRejectTemplate</fullName>
+        <description>US-0006970:[AU] Deals Reject - Send Deals Rejection Template to AU Sellers</description>
+        <protected>false</protected>
+        <recipients>
+            <field>EBH_SellerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_DealsTemplates/AU_DealRejectTemplate</template>
+    </alerts>
+    <alerts>
+        <fullName>AU_Send_Notification_if_price_not_matching</fullName>
+        <description>AU Send Notification if price not matching</description>
+        <protected>false</protected>
+        <recipients>
+            <field>EBH_SellerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>produkt-aktionen@ebay.de</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>EBH_DealsTemplates/AU_Seller_Notification_when_Price_not_matching_is_set_to_true</template>
+    </alerts>
+    <alerts>
+        <fullName>Alert_DE_DealsReminderEmailwith_Subsidy</fullName>
+        <description>EPH-6986 Deals - Reminder - with Subsidy</description>
+        <protected>false</protected>
+        <recipients>
+            <field>EBH_SellerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_DealsTemplates/DE_EBH_ReminderDealswith_Subsidy</template>
+    </alerts>
+    <alerts>
+        <fullName>Alert_DE_DealsReminderEmailwithoutSubsidy</fullName>
+        <description>EPH-6986 Deals - Reminder withoutSubsidy</description>
+        <protected>false</protected>
+        <recipients>
+            <field>EBH_SellerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_DealsTemplates/DE_EBH_ReminderDealswithoutSubsidy</template>
+    </alerts>
+    <alerts>
+        <fullName>DD_Notify_Deal_Approved</fullName>
+        <ccEmails>Jaslau@ebay.com, johsu@ebay.com</ccEmails>
+        <description>DD - Notify Deal Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Daily_Deal_eBay_NA/DD_NA_Notify_SCC</template>
+    </alerts>
+    <alerts>
+        <fullName>DD_Notify_Merchant_of_Rejection_Send_to_Deal_Owner</fullName>
+        <description>DD - Notify Merchant of Rejection (Send to Deal Owner)</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Daily_Deal_eBay_NA/eBay_NA_Deal_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>DD_Notify_Merchant_of_Rejection_Send_to_Deal_Owner_with_CC</fullName>
+        <ccEmails>Jaslau@ebay.com, johsu@ebay.com</ccEmails>
+        <description>DD - Notify Merchant of Rejection (Send to Deal Owner) with CC</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Daily_Deal_eBay_NA/eBay_NA_Deal_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>DE_Deal_Seller_Invite</fullName>
+        <description>DE Deal Seller Invite</description>
+        <protected>false</protected>
+        <recipients>
+            <field>EBH_SellerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_DealsTemplates/DE_Deal_Seller_Invite</template>
+    </alerts>
+    <alerts>
+        <fullName>DE_EBH_DealsAcceptEmailwithSubsidy</fullName>
+        <description>DE [EBH] (EPH-4171) - Deals Accept Email with Subsidy</description>
+        <protected>false</protected>
+        <recipients>
+            <field>EBH_SellerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>LastModifiedById</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_DealsTemplates/DE_EBH_MassAcceptanceofDealswithSubsidy</template>
+    </alerts>
+    <alerts>
+        <fullName>DE_EBH_DealsAcceptEmailwithoutSubsidy</fullName>
+        <description>DE [EBH] (EPH-4171) - Deals Accept Email without Subsidy</description>
+        <protected>false</protected>
+        <recipients>
+            <field>EBH_SellerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>LastModifiedById</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_DealsTemplates/DE_EBH_MassAcceptanceofDealswithoutSubsidy</template>
+    </alerts>
+    <alerts>
+        <fullName>DE_EBH_DealsRejectionEmail</fullName>
+        <description>DE [EBH] (EPH-4176) - Deals Rejection Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>EBH_SellerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>LastModifiedById</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>produkt-aktionen@ebay.de</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>EBH_DealsTemplates/DE_EBH_MassRejectionofDeals</template>
+    </alerts>
+    <alerts>
+        <fullName>EBH_DealsAcceptEmailwithSubsidy</fullName>
+        <description>[EBH] (EPH-4171) - Deals Accept Email with Subsidy</description>
+        <protected>false</protected>
+        <recipients>
+            <field>EBH_SellerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>LastModifiedById</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_DealsTemplates/DE_EBH_MassAcceptanceofDealswithSubsidy</template>
+    </alerts>
+    <alerts>
+        <fullName>EBH_DealsAcceptEmailwithoutSubsidy</fullName>
+        <description>[EBH] (EPH-4171) - Deals Accept Email without Subsidy</description>
+        <protected>false</protected>
+        <recipients>
+            <field>EBH_SellerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>LastModifiedById</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_DealsTemplates/DE_EBH_MassAcceptanceofDealswithoutSubsidy</template>
+    </alerts>
+    <alerts>
+        <fullName>EBH_DealsRejectionEmail</fullName>
+        <description>[EBH] (EPH-4176) - Deals Rejection Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>EBH_SellerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>LastModifiedById</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_DealsTemplates/DE_EBH_MassRejectionofDeals</template>
+    </alerts>
+    <alerts>
+        <fullName>EBH_SendnotificationifeBayitemIDmissing</fullName>
+        <description>[EBH] (EPH-4179) - Send notification if eBay item ID missing</description>
+        <protected>false</protected>
+        <recipients>
+            <field>EBH_SellerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>produkt-aktionen@ebay.de</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>EBH_DealsTemplates/EBH_eBayItemIDBlank</template>
+    </alerts>
+    <alerts>
+        <fullName>EBH_Sendnotificationifpricenotmatching</fullName>
+        <description>[EBH] (EPH-4179) - Send notification if price not matching</description>
+        <protected>false</protected>
+        <recipients>
+            <field>EBH_SellerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>produkt-aktionen@ebay.de</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>EBH_DealsTemplates/EBH_PricenotmatchingBlank</template>
+    </alerts>
+    <alerts>
+        <fullName>EMAIL_AU_WIHTOUT_SUBSIDY</fullName>
+        <description>US-0009158 - [Hypercare] [AU] [Deals] Send Deal Contract email to the seller when changing the status to Planned</description>
+        <protected>false</protected>
+        <recipients>
+            <field>EBH_SellerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_DealsTemplates/AU_Deal_Template_without_Subsidy</template>
+    </alerts>
+    <alerts>
+        <fullName>EMAIL_AU_WIHT_SUBSIDY</fullName>
+        <description>US-0009158 - [Hypercare] [AU] [Deals] Send Deal Contract email to the seller when changing the status to Planned</description>
+        <protected>false</protected>
+        <recipients>
+            <field>EBH_SellerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_DealsTemplates/AU_Deal_Template_with_Subsidy</template>
+    </alerts>
+    <alerts>
+        <fullName>ES_EBH_DealsAcceptEmailwithSubsidy</fullName>
+        <description>ES [EBH] (EPH-4171) - Deals Accept Email with Subsidy</description>
+        <protected>false</protected>
+        <recipients>
+            <field>EBH_SellerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>LastModifiedById</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_DealsTemplates/ES_EBH_MassAcceptanceofDealswithSubsidy</template>
+    </alerts>
+    <alerts>
+        <fullName>ES_EBH_DealsAcceptEmailwithoutSubsidy</fullName>
+        <description>ES [EBH] (EPH-4171) - Deals Accept Email without Subsidy</description>
+        <protected>false</protected>
+        <recipients>
+            <field>EBH_SellerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>LastModifiedById</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_DealsTemplates/ES_EBH_MassAcceptanceofDealswithoutSubsidy</template>
+    </alerts>
+    <alerts>
+        <fullName>ES_EBH_DealsRejectionEmail</fullName>
+        <description>ES [EBH] (EPH-4176) - Deals Rejection Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>EBH_SellerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>LastModifiedById</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_DealsTemplates/ES_EBH_MassRejectionofDeals</template>
+    </alerts>
+    <alerts>
+        <fullName>FR_EBH_DealsAcceptEmailwithSubsidy</fullName>
+        <description>FR [EBH] (EPH-4171) - Deals Accept Email with Subsidy</description>
+        <protected>false</protected>
+        <recipients>
+            <field>EBH_SellerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>LastModifiedById</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_DealsTemplates/FR_EBH_MassAcceptanceofDealswithSubsidy</template>
+    </alerts>
+    <alerts>
+        <fullName>FR_EBH_DealsAcceptEmailwithoutSubsidy</fullName>
+        <description>FR [EBH] (EPH-4171) - Deals Accept Email without Subsidy</description>
+        <protected>false</protected>
+        <recipients>
+            <field>EBH_SellerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>LastModifiedById</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_DealsTemplates/FR_EBH_MassAcceptanceofDealswithoutSubsidy</template>
+    </alerts>
+    <alerts>
+        <fullName>FR_EBH_DealsRejectionEmail</fullName>
+        <description>FR [EBH] (EPH-4176) - Deals Rejection Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>EBH_SellerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>LastModifiedById</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_DealsTemplates/FR_EBH_MassRejectionofDeals</template>
+    </alerts>
+    <alerts>
+        <fullName>IT_EBH_DealsAcceptEmailwithSubsidy</fullName>
+        <description>IT [EBH] (EPH-4171) - Deals Accept Email with Subsidy</description>
+        <protected>false</protected>
+        <recipients>
+            <field>EBH_SellerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>LastModifiedById</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_DealsTemplates/IT_EBH_MassAcceptanceofDealswithSubsidy</template>
+    </alerts>
+    <alerts>
+        <fullName>IT_EBH_DealsAcceptEmailwithoutSubsidy</fullName>
+        <description>IT [EBH] (EPH-4171) - Deals Accept Email without Subsidy</description>
+        <protected>false</protected>
+        <recipients>
+            <field>EBH_SellerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>LastModifiedById</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_DealsTemplates/IT_EBH_MassAcceptanceofDealswithoutSubsidy</template>
+    </alerts>
+    <alerts>
+        <fullName>IT_EBH_DealsRejectionEmail</fullName>
+        <description>IT [EBH] (EPH-4176) - Deals Rejection Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>EBH_SellerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>LastModifiedById</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_DealsTemplates/IT_EBH_MassRejectionofDeals</template>
+    </alerts>
+    <alerts>
+        <fullName>NA_Deal_Send_To_Seller</fullName>
+        <description>US-0008102 : [US]* Deals Mass Submission for External Seller Approval Process</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Seller_Approver_1__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>Seller_Approver_2__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>Seller_Approver_3__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>Seller_Approver_4__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>Seller_Approver_5__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>sg-marketing-replies@ebay.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Daily_Deal_eBay_NA/NA_Deals_Send_to_Seller</template>
+    </alerts>
+    <alerts>
+        <fullName>NA_Deals_Notify_Approvals</fullName>
+        <description>NA Deals Notify Approvals</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Merchant_Approver__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Daily_Deal_eBay_NA/NA_Deals_Notify_Approvals</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_SCC_of_Revision</fullName>
+        <description>Notify SCC of Revision</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Daily_Deal_eBay_NA/DD_NA_Notify_SCC</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Seller_of_Revision</fullName>
+        <description>Notify Seller of Revision</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Seller_Approver_1__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>Seller_Approver_2__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>Seller_Approver_3__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>Seller_Approver_4__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>Seller_Approver_5__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Daily_Deal_eBay_NA/eBay_NA_Deal_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Deals_Invoice_Statement_DE</fullName>
+        <ccEmails>deal-invoices@ebay.de.invalid</ccEmails>
+        <description>Send Deals Invoice Statement DE</description>
+        <protected>false</protected>
+        <recipients>
+            <field>EBH_SellerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>deal-invoices@ebay.de</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>EBH_DealsTemplates/DE_Deals_Invoice_Statement</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Deals_Invoice_Statement_ES</fullName>
+        <description>Send Deals Invoice Statement ES</description>
+        <protected>false</protected>
+        <recipients>
+            <field>EBH_SellerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_DealsTemplates/ES_Deals_Invoice_Statement</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Deals_Invoice_Statement_FR</fullName>
+        <description>Send Deals Invoice Statement FR</description>
+        <protected>false</protected>
+        <recipients>
+            <field>EBH_SellerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>sg-marketing-replies@ebay.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>EBH_DealsTemplates/FR_Deals_Invoice_Statement</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Deals_Invoice_Statement_IT</fullName>
+        <description>Send Deals Invoice Statement IT</description>
+        <protected>false</protected>
+        <recipients>
+            <field>EBH_SellerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_DealsTemplates/IT_Deals_Invoice_Statement</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Deals_Invoice_Statement_UK</fullName>
+        <description>Send Deals Invoice Statement UK</description>
+        <protected>false</protected>
+        <recipients>
+            <field>EBH_SellerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>dealnominations@ebay.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>EBH_DealsTemplates/UK_Deals_Invoice_Statement</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_email_to_in_revision_Deal_Owner</fullName>
+        <description>Send email to in revision Deal Owner</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Seller_Approver_1__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>Seller_Approver_2__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>Seller_Approver_3__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>Seller_Approver_4__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>Seller_Approver_5__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Daily_Deal_eBay_NA/Document_Approval_Seller_Revision</template>
+    </alerts>
+    <alerts>
+        <fullName>UK_EBH_DealsAcceptEmailwithSubsidy</fullName>
+        <description>UK [EBH] (EPH-4171) - Deals Accept Email with Subsidy</description>
+        <protected>false</protected>
+        <recipients>
+            <field>EBH_SellerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>LastModifiedById</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>dealnominations@ebay.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>EBH_DealsTemplates/UK_EBH_MassAcceptanceofDealswithSubsidy</template>
+    </alerts>
+    <alerts>
+        <fullName>UK_EBH_DealsAcceptEmailwithoutSubsidy</fullName>
+        <description>UK [EBH] (EPH-4171) - Deals Accept Email without Subsidy</description>
+        <protected>false</protected>
+        <recipients>
+            <field>EBH_SellerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>LastModifiedById</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>dealnominations@ebay.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>EBH_DealsTemplates/UK_EBH_MassAcceptanceofDealswithoutSubsidy</template>
+    </alerts>
+    <alerts>
+        <fullName>UK_EBH_DealsRejectionEmail</fullName>
+        <description>UK [EBH] (EPH-4176) - Deals Rejection Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>EBH_SellerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>LastModifiedById</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>dealnominations@ebay.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>EBH_DealsTemplates/UK_EBH_MassRejectionofDeals</template>
+    </alerts>
+    <alerts>
+        <fullName>eBay_NA_Daily_Deal_Internally_Approved</fullName>
+        <description>eBay NA Daily Deal - Internally Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Daily_Deal_eBay_NA/eBay_NA_Internally_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>reminder_emails_to_seller</fullName>
+        <description>reminder emails to seller</description>
+        <protected>false</protected>
+        <recipients>
+            <field>EBH_SellerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_DealsTemplates/DE_EBH_MassAcceptanceofDealswithoutSubsidy</template>
+    </alerts>
+    <alerts>
+        <fullName>reminder_emails_to_seller_12_hour_before_startDate</fullName>
+        <description>reminder emails to seller 12 hour before startDate</description>
+        <protected>false</protected>
+        <recipients>
+            <field>EBH_SellerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_DealsTemplates/DE_EBH_MassAcceptanceofDealswithoutSubsidy</template>
+    </alerts>
+    <alerts>
+        <fullName>reminder_emails_to_seller_24_hour_before_startDate</fullName>
+        <description>reminder emails to seller 24 hour before startDate</description>
+        <protected>false</protected>
+        <recipients>
+            <field>EBH_SellerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_DealsTemplates/DE_EBH_MassAcceptanceofDealswithoutSubsidy</template>
+    </alerts>
+    <alerts>
+        <fullName>reminder_emails_to_seller_48_hour_before_startDate</fullName>
+        <description>reminder emails to seller 48 hour before startDate</description>
+        <protected>false</protected>
+        <recipients>
+            <field>EBH_SellerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_DealsTemplates/DE_EBH_MassAcceptanceofDealswithoutSubsidy</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Clear_Seller_Accepted</fullName>
+        <description>EPH-6984 Deals - Update defined fields when re-plan a deal with new conditions</description>
+        <field>EBH_SellerAccepted__c</field>
+        <name>Clear Seller Accepted</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Clear_Seller_accepted_From</fullName>
+        <description>EPH-6984 Deals - Update defined fields when re-plan a deal with new conditions</description>
+        <field>EBH_SellerAcceptedFrom__c</field>
+        <name>Clear Seller accepted From</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DealRejected</fullName>
+        <field>EBH_Status__c</field>
+        <literalValue>Internally Rejected</literalValue>
+        <name>Deal Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Deal_Check_Reminder</fullName>
+        <description>EPH-6986 Deals - Reminder email to agree on planned deal</description>
+        <field>Check_Reminder__c</field>
+        <literalValue>1</literalValue>
+        <name>Deal Check Reminder</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Deal_Internally_Approved</fullName>
+        <field>EBH_Status__c</field>
+        <literalValue>Internally Approved</literalValue>
+        <name>Deal Internally Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Deal_Negotiating</fullName>
+        <field>EBH_Status__c</field>
+        <literalValue>Negotiating</literalValue>
+        <name>Deal Negotiating</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>EBH_MoveDealtoAgreed</fullName>
+        <description>[EBH] (EPH-) - Move Deal to Agreed</description>
+        <field>EBH_Status__c</field>
+        <literalValue>Deal Agreed</literalValue>
+        <name>Move Deal to Agreed</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>EBH_MoveDealtoExecuted</fullName>
+        <description>[EBH] (EPH-4179) - Move Deal to Executed</description>
+        <field>EBH_Status__c</field>
+        <literalValue>Executed</literalValue>
+        <name>Move Deal to Executed</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>EBH_MoveDealtoRunning</fullName>
+        <description>[EBH] (EPH-4179) - Move Deal to Running</description>
+        <field>EBH_Status__c</field>
+        <literalValue>Running</literalValue>
+        <name>Move Deal to Running</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>EBH_PrefillMarketingTitle</fullName>
+        <description>[EBH] (EPH-4179) - Prefill Marketing Title</description>
+        <field>EBH_MarketingTitle__c</field>
+        <formula>EBH_ProductTitle__c</formula>
+        <name>Prefill Marketing Title</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>EBH_ResetPricenotmatching</fullName>
+        <description>[EBH] (EPH-4179) - Reset Price not matching</description>
+        <field>EBH_Pricenotmatching__c</field>
+        <literalValue>0</literalValue>
+        <name>Reset Price not matching</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>EBH_SetDealTrackingEndDate</fullName>
+        <description>Using CASE to be more flexibel in case Deals Team will request different tracking duration per country.</description>
+        <field>EBH_DealTrackingEndDate__c</field>
+        <formula>CASE( EBH_DealSiteId__c , 
+&quot;77&quot;,  EBH_DealEndDate__c  +30, 
+&quot;3&quot;, EBH_DealEndDate__c + 30,
+&quot;71&quot;, EBH_DealEndDate__c + 30,
+&quot;101&quot;, EBH_DealEndDate__c + 30,
+&quot;186&quot;, EBH_DealEndDate__c + 30,
+&quot;0&quot;, EBH_DealEndDate__c + 30,
+&quot;2&quot;, EBH_DealEndDate__c + 30,
+EBH_DealEndDate__c + 30)</formula>
+        <name>Set Deal Tracking End Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>EBH_UpdateVerticaltoCSA</fullName>
+        <description>[EBH] (EPH-4179) -  Update Vertical to CSA</description>
+        <field>EBH_Vertical__c</field>
+        <literalValue>Fashion</literalValue>
+        <name>Update Vertical to CSA</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>EBH_UpdateVerticaltoHG</fullName>
+        <description>[EBH] (EPH-4179) - Update Vertical to H&amp;G</description>
+        <field>EBH_Vertical__c</field>
+        <literalValue>H&amp;G</literalValue>
+        <name>Update Vertical to H&amp;G</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>EBH_UpdateVerticaltoOther</fullName>
+        <description>[EBH] (EPH-4179) - Update Vertical to Other</description>
+        <field>EBH_Vertical__c</field>
+        <literalValue>Other</literalValue>
+        <name>Update Vertical to Other</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>EBH_UpdateVerticaltoParts</fullName>
+        <description>[EBH] (EPH-4179) - Update Vertical to Parts</description>
+        <field>EBH_Vertical__c</field>
+        <literalValue>Parts &amp; BI</literalValue>
+        <name>Update Vertical to Parts</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>EBH_UpdateVerticaltoTech</fullName>
+        <description>[EBH] (EPH-4179) - Update Vertical to Tech</description>
+        <field>EBH_Vertical__c</field>
+        <literalValue>Electronics</literalValue>
+        <name>Update Vertical to Tech</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Reset_Deal_Checker</fullName>
+        <description>EPH-6986 Deals - Reminder email to agree on planned deal</description>
+        <field>Check_Reminder__c</field>
+        <literalValue>0</literalValue>
+        <name>Reset Deal Checker</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Reset_price_not_matching</fullName>
+        <description>US-0007061: [AU] Deals - Reminder to Seller if &quot;Price Not Matching&quot; is set to False</description>
+        <field>EBH_Pricenotmatching__c</field>
+        <literalValue>0</literalValue>
+        <name>Reset price not matching</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_In_Revision_DateTime</fullName>
+        <description>US-0010597 - Move Time-Base Deal Process Builder to Time-Base Deal Flow</description>
+        <field>DealV2_InRevision_DateTime__c</field>
+        <formula>NOW()</formula>
+        <name>Set In_Revision DateTime</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Statement_Send_Date</fullName>
+        <description>[#EPH-7342] Deals Invoicing Email - Deals Invoice Statement</description>
+        <field>Statement_Send_Date__c</field>
+        <formula>NOW()</formula>
+        <name>Set Statement Send Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_In_Approval</fullName>
+        <field>EBH_Status__c</field>
+        <literalValue>In Approval</literalValue>
+        <name>Status In Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Subsidy_Running</fullName>
+        <description>[#EPH-7598] Deal Object - Subsidy fields redesign for Invoicing
+US-0006818 - 2020-02-27</description>
+        <field>Subsidy_Running__c</field>
+        <formula>IF( ISPICKVAL( EBH_Status__c , &#39;running&#39;) ,  (EBH_SoldItems__c  *  EBH_Subsidy__c)/(VAT_N__c +1) , 0)</formula>
+        <name>Subsidy Running</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UpdateDisputeSubsidy</fullName>
+        <description>Update Dispute Subsidy (US-0009180),
+US-0010597 - Move Time-Base Deal Process Builder to Time-Base Deal Flow</description>
+        <field>Subsidy_Due_Disputes__c</field>
+        <formula>IF(INCLUDES(Dispute_Type__c, &#39;Quantity Variance&#39;) &amp;&amp; INCLUDES(Dispute_Type__c, &#39;Subsidy Per Unit&#39;), ((Sold_Items_60_Days__c + Sold_Items_Disputes__c) * Subsidy_Per_Unit_Disputes__c) - (X1st_Payout_Amount__c + X2nd_Payout_Amount__c), IF(INCLUDES(Dispute_Type__c, &#39;Quantity Variance&#39;) &amp;&amp; NOT(INCLUDES(Dispute_Type__c, &#39;Subsidy Per Unit&#39;)),  Sold_Items_Disputes__c * EBH_Subsidy__c, IF(NOT(INCLUDES(Dispute_Type__c, &#39;Quantity Variance&#39;)) &amp;&amp; INCLUDES(Dispute_Type__c, &#39;Subsidy Per Unit&#39;), (Sold_Items_60_Days__c * Subsidy_Per_Unit_Disputes__c) - (X1st_Payout_Amount__c + X2nd_Payout_Amount__c) , 0.00) ))</formula>
+        <name>UpdateDisputeSubsidy</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UpdateFurtherDisputeSubsidy</fullName>
+        <description>Update Further Dispute Subsidy (US-0009180),
+US-0010597 - Move Time-Base Deal Process Builder to Time-Base Deal Flow</description>
+        <field>Subsidy_Due_Further_Dispute__c</field>
+        <formula>IF(INCLUDES(Dispute_Type__c, &#39;Quantity Variance&#39;) &amp;&amp; INCLUDES(Dispute_Type__c, &#39;Subsidy Per Unit&#39;), ((Sold_Items_60_Days__c + Sold_Items_Disputes__c + Sold_Items_Further_Disputes__c ) * Subsidy_Per_Unit_Further_Disputes__c) - (X1st_Payout_Amount__c + X2nd_Payout_Amount__c + Subsidy_Due_Disputes__c ), IF(INCLUDES(Dispute_Type__c, &#39;Quantity Variance&#39;) &amp;&amp; NOT(INCLUDES(Dispute_Type__c, &#39;Subsidy Per Unit&#39;)),  Sold_Items_Further_Disputes__c * EBH_Subsidy__c, IF(NOT(INCLUDES(Dispute_Type__c, &#39;Quantity Variance&#39;)) &amp;&amp; INCLUDES(Dispute_Type__c, &#39;Subsidy Per Unit&#39;), (Sold_Items_60_Days__c * Subsidy_Per_Unit_Further_Disputes__c ) - (X1st_Payout_Amount__c + X2nd_Payout_Amount__c + Subsidy_Due_Disputes__c) , 0.00) ))</formula>
+        <name>UpdateFurtherDisputeSubsidy</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Status_To_Expired</fullName>
+        <description>US-0009533 - NA Deals: Update Deals to &#39;Expired&#39; status when expired</description>
+        <field>EBH_Status__c</field>
+        <literalValue>Expired</literalValue>
+        <name>Update Status To Expired</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Status_to_Verify</fullName>
+        <field>EBH_Status__c</field>
+        <literalValue>Verify Statement</literalValue>
+        <name>Update Status to Verify Statement</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Vertical_to_Soft_Home</fullName>
+        <field>EBH_Vertical__c</field>
+        <literalValue>H&amp;G</literalValue>
+        <name>Update Vertical to Soft Home</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_subsidy_payout_amount</fullName>
+        <description>US-0008132 : Deals - Subsidy Formula enable manual update</description>
+        <field>Subsidy_Payout_Amount__c</field>
+        <formula>SubsidyFinal_Servicing__c</formula>
+        <name>Update subsidy payout amount</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>status_update</fullName>
+        <field>EBH_Status__c</field>
+        <literalValue>Deal Agreed</literalValue>
+        <name>status update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>upadte_notify_counter</fullName>
+        <description>EPH-6986 Deals - Reminder email to agree on planned deal</description>
+        <field>Notify_Counter__c</field>
+        <formula>IF(ISNULL(Notify_Counter__c),1, Notify_Counter__c+ 1)</formula>
+        <name>upadte notify counter</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>DE Deals Invoice Statement</fullName>
+        <actions>
+            <name>Send_Deals_Invoice_Statement_DE</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Set_Statement_Send_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>EBH_Deal__c.EBH_DealSiteId__c</field>
+            <operation>equals</operation>
+            <value>77</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>EBH_Deal__c.EBH_Status__c</field>
+            <operation>equals</operation>
+            <value>Statement Verified</value>
+        </criteriaItems>
+        <description>[#EPH-7342] Deals Invoicing Email - Deals Invoice Statement</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Deal Back To Planned</fullName>
+        <actions>
+            <name>Clear_Seller_Accepted</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Clear_Seller_accepted_From</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>EPH-6984 Deals - Update defined fields when re-plan a deal with new conditions</description>
+        <formula>IF( AND(NOT(ISNEW()), ISCHANGED(EBH_Status__c),  ISPICKVAL(EBH_Status__c, &#39;Planned&#39;) ), true, false)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Deal Reminder Main</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>EBH_Deal__c.Check_Reminder__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>EPH-6986 Deals - Reminder email to agree on planned deal</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>upadte_notify_counter</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <timeLength>12</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Deal Reminder With Subsidy</fullName>
+        <actions>
+            <name>Alert_DE_DealsReminderEmailwith_Subsidy</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>EPH-6986 Deals - Reminder email to agree on planned deal</description>
+        <formula>IF(AND(NOT( ISNEW() ),ISCHANGED(TriggerEmailSubsidy__c) ,NOT( ISNULL(TriggerEmailSubsidy__c) ) )        ,true, false )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Deal Reminder Without Subsidy</fullName>
+        <actions>
+            <name>Alert_DE_DealsReminderEmailwithoutSubsidy</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>EPH-6986 Deals - Reminder email to agree on planned deal</description>
+        <formula>IF(AND(NOT( ISNEW() ),ISCHANGED(TriggerEmailNoSubsidy__c) ,NOT( ISNULL(TriggerEmailNoSubsidy__c) ) )        ,true, false )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Deals - Reminder email to agree on planned deal</fullName>
+        <active>false</active>
+        <description>RM 2019-06-14: This rule is deactivated and replaced by trigger.
+[#EPH-6986] Deals - Reminder email to agree on planned deal</description>
+        <formula>AND(ISPICKVAL(EBH_Status__c, &#39;Planned&#39;), ISPICKVAL(EBH_DealSiteId__c, &#39;77&#39;) , ISBLANK(EBH_SellerAccepted__c )  )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>reminder_emails_to_seller_12_hour_before_startDate</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>EBH_Deal__c.EBH_DealStartDate__c</offsetFromField>
+            <timeLength>-12</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>reminder_emails_to_seller_24_hour_before_startDate</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>EBH_Deal__c.EBH_DealStartDate__c</offsetFromField>
+            <timeLength>-24</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>reminder_emails_to_seller_48_hour_before_startDate</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>EBH_Deal__c.EBH_DealStartDate__c</offsetFromField>
+            <timeLength>-48</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>EBH_AUSendnotificationifpricenotmatching</fullName>
+        <actions>
+            <name>AU_Send_Notification_if_price_not_matching</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Reset_price_not_matching</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>EBH_Deal__c.EBH_Pricenotmatching__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>EBH_Deal__c.EBH_DealSiteId__c</field>
+            <operation>equals</operation>
+            <value>15</value>
+        </criteriaItems>
+        <description>[EBH] (EPH-4179) - Send notification if price not matching</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>EBH_DealAgreedWhenConfirmed</fullName>
+        <actions>
+            <name>EBH_MoveDealtoAgreed</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>[EBH] (EPH- ) - Deal Agreed When Confirmed</description>
+        <formula>AND(  ISPICKVAL( EBH_Status__c , &quot;Planned (Deal accepted)&quot;),  NOT(ISBLANK(EBH_SellerAccepted__c))  )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>EBH_DealTrackingEndDate</fullName>
+        <actions>
+            <name>EBH_SetDealTrackingEndDate</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Add deal performance tracking date based on the country.</description>
+        <formula>AND(        OR(              ISNEW(),              ISCHANGED( EBH_DealEndDate__c ) ||       ISCHANGED(EBH_DealSiteId__c)     ),   ISNULL( Amendment_Date__c )   )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>EBH_DealsMassAcceptwithSubsidy</fullName>
+        <actions>
+            <name>EBH_DealsAcceptEmailwithSubsidy</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>EBH_Deal__c.EBH_Status__c</field>
+            <operation>equals</operation>
+            <value>Planned</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>EBH_Deal__c.EBH_Subsidy__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </criteriaItems>
+        <description>[EBH] (EPH-4171) - Deals Mass Accept with Subsidy</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>EBH_DealsMassAcceptwithoutSubsidy</fullName>
+        <actions>
+            <name>EBH_DealsAcceptEmailwithoutSubsidy</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>EBH_Deal__c.EBH_Status__c</field>
+            <operation>equals</operation>
+            <value>Planned</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>EBH_Deal__c.EBH_Subsidy__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </criteriaItems>
+        <description>[EBH] (EPH-4171) - Deals Mass Accept without Subsidy</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>EBH_DealsMassRejection</fullName>
+        <actions>
+            <name>EBH_DealsRejectionEmail</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>EBH_Deal__c.EBH_Status__c</field>
+            <operation>equals</operation>
+            <value>Rejected</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>EBH_Deal__c.EBH_Don_t_send_email_to_sellers__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <description>[EBH] (EPH-4176) - Deals Mass Rejection
+// checks field dont send email to sellers</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>EBH_MoveDealtoExecuted</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>EBH_Deal__c.EBH_Status__c</field>
+            <operation>equals</operation>
+            <value>Running</value>
+        </criteriaItems>
+        <description>[EBH] (EPH-4179) - Move Deal to Executed
+US-0009179 - To be deactivated and move to Process builder (Deal Process)</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>EBH_MoveDealtoExecuted</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>EBH_Deal__c.EBH_DealEndDate__c</offsetFromField>
+            <timeLength>-1</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>EBH_MoveDealtoRunning</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>EBH_Deal__c.EBH_Status__c</field>
+            <operation>equals</operation>
+            <value>Deal Agreed</value>
+        </criteriaItems>
+        <description>[EBH] (EPH-4179) - Move Deal to Running
+US-0009179 - To be deactivated</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>EBH_MoveDealtoRunning</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>EBH_Deal__c.EBH_DealStartDate__c</offsetFromField>
+            <timeLength>-1</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>EBH_MoveDealtoRunningNew</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>EBH_Deal__c.EBH_Status__c</field>
+            <operation>equals</operation>
+            <value>Deal Agreed</value>
+        </criteriaItems>
+        <description>[EBH] (EPH-4179) - Move Deal to Running
+Changing the execution time to 6 hours before.
+US-0009179 - To be deactivated and move to Process builder (Deal Process)</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>EBH_MoveDealtoRunning</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>EBH_Deal__c.EBH_DealStartDate__c</offsetFromField>
+            <timeLength>-7</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>EBH_PrefillMarketingTitle</fullName>
+        <actions>
+            <name>EBH_PrefillMarketingTitle</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>[EBH] (EPH-4179) - Prefill Marketing Title</description>
+        <formula>ISBLANK(EBH_MarketingTitle__c)</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>EBH_SendnotificationifeBayitemIDmissing</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>EBH_Deal__c.EBH_Status__c</field>
+            <operation>equals</operation>
+            <value>Deal Agreed,Planned</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>EBH_Deal__c.EBH_eBayItemID__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>EBH_Deal__c.Seller_Growth_Portal_Culture__c</field>
+            <operation>equals</operation>
+            <value>DE</value>
+        </criteriaItems>
+        <description>[EBH] (EPH-4179) - Send notification if eBay item ID missing</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>EBH_SendnotificationifeBayitemIDmissing</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>EBH_Deal__c.EBH_DealStartDate__c</offsetFromField>
+            <timeLength>-20</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>EBH_Sendnotificationifpricenotmatching</fullName>
+        <actions>
+            <name>EBH_Sendnotificationifpricenotmatching</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>EBH_ResetPricenotmatching</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>EBH_Deal__c.EBH_Pricenotmatching__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>EBH_Deal__c.EBH_DealSiteId__c</field>
+            <operation>notEqual</operation>
+            <value>15</value>
+        </criteriaItems>
+        <description>[EBH] (EPH-4179) - Send notification if price not matching
+
+// Deactivated 2020 - 03 - 19 because it is sending emails to all sellers</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>EBH_UpdateVerticaltoCSA</fullName>
+        <actions>
+            <name>EBH_UpdateVerticaltoCSA</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>EBH_Deal__c.EBH_Category__c</field>
+            <operation>equals</operation>
+            <value>Beauty &amp; Gesundheit,Kleidung &amp; Accessoires,Uhren &amp; Schmuck,Sport</value>
+        </criteriaItems>
+        <description>[EBH] (EPH-4179) - Update Vertical to CSA</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>EBH_UpdateVerticaltoOther</fullName>
+        <actions>
+            <name>EBH_UpdateVerticaltoOther</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>EBH_Deal__c.EBH_Category__c</field>
+            <operation>equals</operation>
+            <value>Reisen,Antiquitäten &amp; Kunst,Auto &amp; Motorrad: Fahrzeuge,Briefmarken,Bücher,Büro &amp; Schreibwaren,Business &amp; Industrie,Filme &amp; DVDs,Immobilien,Musik,Sammeln &amp; Seltenes,Tickets</value>
+        </criteriaItems>
+        <description>[EBH] (EPH-4179) - Update Vertical to Other</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>EBH_UpdateVerticaltoParts</fullName>
+        <actions>
+            <name>EBH_UpdateVerticaltoParts</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>EBH_Deal__c.EBH_Category__c</field>
+            <operation>equals</operation>
+            <value>Auto &amp; Motorrad: Teile,Büro &amp; Schreibwaren,Business &amp; Industrie,Auto &amp; Motorrad: Fahrzeuge</value>
+        </criteriaItems>
+        <description>[EBH] (EPH-4179) - Update Vertical to Parts</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>EBH_UpdateVerticaltoTech</fullName>
+        <actions>
+            <name>EBH_UpdateVerticaltoTech</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>EBH_Deal__c.EBH_Category__c</field>
+            <operation>equals</operation>
+            <value>&quot;Computer, Tablets &amp; Netzwerk&quot;,Foto &amp; Camcorder,Handys &amp; Kommunikation,Musikinstrumente,&quot;TV, Video &amp; Audio&quot;,PC- &amp; Videospiele,Haushaltsgeräte</value>
+        </criteriaItems>
+        <description>[EBH] (EPH-4179) - Update Vertical to Tech</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>EBH_UpdateverticaltoH%26G</fullName>
+        <actions>
+            <name>EBH_UpdateVerticaltoHG</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>EBH_Deal__c.EBH_Category__c</field>
+            <operation>equals</operation>
+            <value>Münzen</value>
+        </criteriaItems>
+        <description>[EBH] (EPH-4179) - Update vertical to H&amp;G</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>EBH_UpdateverticaltoSoftHome</fullName>
+        <actions>
+            <name>Update_Vertical_to_Soft_Home</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>EBH_Deal__c.EBH_Category__c</field>
+            <operation>equals</operation>
+            <value>Baby,Bastel- &amp; Künstlerbedarf,Feinschmecker,Garten &amp; Terrasse,Haustierbedarf,Möbel &amp; Wohnen,Heimwerker,Modellbau,Reisen,Antiquitäten &amp; Kunst,Briefmarken,Bücher,Filme &amp; DVDs,Immobilien,Musik,Sammeln &amp; Seltenes,Tickets,Spielzeug</value>
+        </criteriaItems>
+        <description>[EBH] (EPH-4179) - Update vertical to SoftHome</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>ES Deals Invoice Statement</fullName>
+        <actions>
+            <name>Send_Deals_Invoice_Statement_ES</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Set_Statement_Send_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>EBH_Deal__c.EBH_DealSiteId__c</field>
+            <operation>equals</operation>
+            <value>186</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>EBH_Deal__c.EBH_Status__c</field>
+            <operation>equals</operation>
+            <value>Statement Verified</value>
+        </criteriaItems>
+        <description>[#EPH-7342] Deals Invoicing Email - Deals Invoice Statement (ES)</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>FR Deals Invoice Statement</fullName>
+        <actions>
+            <name>Send_Deals_Invoice_Statement_FR</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Set_Statement_Send_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>EBH_Deal__c.EBH_DealSiteId__c</field>
+            <operation>equals</operation>
+            <value>71</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>EBH_Deal__c.EBH_Status__c</field>
+            <operation>equals</operation>
+            <value>Statement Verified</value>
+        </criteriaItems>
+        <description>[#EPH-7865] Deals Invoicing Email - Deals Invoice Statement - FR and UK version</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>IT Deals Invoice Statement</fullName>
+        <actions>
+            <name>Send_Deals_Invoice_Statement_IT</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Set_Statement_Send_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>EBH_Deal__c.EBH_DealSiteId__c</field>
+            <operation>equals</operation>
+            <value>101</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>EBH_Deal__c.EBH_Status__c</field>
+            <operation>equals</operation>
+            <value>Statement Verified</value>
+        </criteriaItems>
+        <description>[#EPH-7342] Deals Invoicing Email - Deals Invoice Statement (IT)</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Populate Subsidy Payout Amount</fullName>
+        <actions>
+            <name>Update_subsidy_payout_amount</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>US-0008132 : Deals - Subsidy Formula enable manual update</description>
+        <formula>AND( ISPICKVAL(EBH_Status__c, &#39;Verify Statement&#39;),   ISBLANK( Subsidy_Payout_Amount__c )  )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Send_Approval_To_External_Seller</fullName>
+        <actions>
+            <name>NA_Deal_Send_To_Seller</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <description>US-0008102 : [US]* Deals Mass Submission for External Seller Approval Process
+US-0009436 - BUG: System Errors when trying to send 200 Deals to Seller, Disable this workflow</description>
+        <formula>AND( RecordType.DeveloperName =&#39;Deal_V2&#39;,  ISPICKVAL(EBH_Status__c , &#39;Sent to Seller&#39;) , ISPICKVAL( PRIORVALUE(EBH_Status__c),&#39;Sent to Seller&#39;) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>UK Deals Invoice Statement</fullName>
+        <actions>
+            <name>Send_Deals_Invoice_Statement_UK</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Set_Statement_Send_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>EBH_Deal__c.EBH_DealSiteId__c</field>
+            <operation>equals</operation>
+            <value>3</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>EBH_Deal__c.EBH_Status__c</field>
+            <operation>equals</operation>
+            <value>Statement Verified</value>
+        </criteriaItems>
+        <description>[#EPH-7865] Deals Invoicing Email - Deals Invoice Statement - FR and UK version</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Deal To Expired</fullName>
+        <active>false</active>
+        <booleanFilter>(1 OR 2 OR 3) AND (4 AND 5 AND 6 AND 7)</booleanFilter>
+        <criteriaItems>
+            <field>EBH_Deal__c.EBH_Status__c</field>
+            <operation>equals</operation>
+            <value>New</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>EBH_Deal__c.EBH_Status__c</field>
+            <operation>equals</operation>
+            <value>Internally Approved</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>EBH_Deal__c.EBH_Status__c</field>
+            <operation>equals</operation>
+            <value>Sent to Seller</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>EBH_Deal__c.EBH_DealStartDate__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>EBH_Deal__c.EBH_DealStartTime__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>EBH_Deal__c.Deal_Start_Date_Time2__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>EBH_Deal__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NA Deal,NA Deal</value>
+        </criteriaItems>
+        <description>-- it should be deactivated --0009649
+US-0009533 - NA Deals: Update Deals to &#39;Expired&#39; status when expired</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Update_Status_To_Expired</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>EBH_Deal__c.Deal_Start_Date_Time2__c</offsetFromField>
+            <timeLength>0</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Update subsidy running</fullName>
+        <actions>
+            <name>Subsidy_Running</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>EBH_Deal__c.EBH_Status__c</field>
+            <operation>contains</operation>
+            <value>Running,Planned,Deal Agreed,Executed</value>
+        </criteriaItems>
+        <description>[#EPH-7598] Deal Object - Subsidy fields redesign for Invoicing
+US-0006818 - 2020-02-27</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update_Dispute_Subsidy</fullName>
+        <actions>
+            <name>UpdateDisputeSubsidy</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Update Dispute Subsidy (US-0009180),
+US-0010597 - Move Time-Base Deal Process Builder to Time-Base Deal Flow</description>
+        <formula>AND(     NOT($Setup.byPass__c.byPass_WFRule__c),      RecordType.DeveloperName = &#39;Deal_V2&#39;,     OR(         ISCHANGED(Sold_Items_Disputes__c),         ISCHANGED(Subsidy_Per_Unit_Disputes__c)     ) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update_Further_Dispute_Subsidy</fullName>
+        <actions>
+            <name>UpdateFurtherDisputeSubsidy</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Update Further Dispute Subsidy (US-0009180),
+US-0010597 - Move Time-Base Deal Process Builder to Time-Base Deal Flow</description>
+        <formula>AND( 	NOT($Setup.byPass__c.byPass_WFRule__c), 	RecordType.DeveloperName = &#39;Deal_V2&#39;, 	OR(  		ISCHANGED(Sold_Items_Further_Disputes__c ), 		ISCHANGED(Subsidy_Per_Unit_Further_Disputes__c) 	) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Verify Statement</fullName>
+        <actions>
+            <name>Update_Status_to_Verify</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>EBH_Deal__c.NumberOfDaysSinceDealEnd__c</field>
+            <operation>equals</operation>
+            <value>32</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>EBH_Deal__c.EBH_Status__c</field>
+            <operation>equals</operation>
+            <value>Executed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>EBH_Deal__c.EBH_SubsidyFinal__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </criteriaItems>
+        <description>[EPH-7280] - Deals Status = to set &quot;Verify Statement&quot; automatically
+if field &quot;number deals days ended = 32 and Deals status = executed and subsidy final &gt; 0</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>eBay NA Daily Deal - Notify Merchant of In Approval</fullName>
+        <actions>
+            <name>NA_Deals_Notify_Approvals</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <description>US-0008083</description>
+        <formula>ISCHANGED(EBH_Status__c) &amp;&amp; ISPICKVAL( EBH_Status__c, &quot;In Approval&quot;) &amp;&amp;  !ISNULL( Merchant_Approver__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>eBay_NA_Daily_Deal_Internally_Approved</fullName>
+        <actions>
+            <name>eBay_NA_Daily_Deal_Internally_Approved</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>US-0010597 - Move Time-Base Deal Process Builder to Time-Base Deal Flow</description>
+        <formula>AND(     RecordType.DeveloperName = &#39;Deal_V2&#39;,     ISPICKVAL(EBH_Status__c , &#39;Internally Approved&#39;),     ISCHANGED(Internally_Approved_Rejected_Timestamp__c)          )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>eBay_NA_Daily_Deal_Notify_Merchant_of_Internally_Rejection</fullName>
+        <actions>
+            <name>DD_Notify_Merchant_of_Rejection_Send_to_Deal_Owner</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>US-0010597 - Move Time-Base Deal Process Builder to Time-Base Deal Flow</description>
+        <formula>AND(     RecordType.DeveloperName = &#39;Deal_V2&#39;,     ISPICKVAL(EBH_Status__c , &#39;Internally Rejected&#39;),     ISCHANGED(Internally_Approved_Rejected_Timestamp__c)          )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>eBay_NA_Daily_Deal_Notify_of_Revision</fullName>
+        <actions>
+            <name>Set_In_Revision_DateTime</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>US-0010597 - Move Time-Base Deal Process Builder to Time-Base Deal Flow</description>
+        <formula>RecordType.DeveloperName = &#39;Deal_V2&#39; &amp;&amp; ISPICKVAL(EBH_Status__c, &#39;In Revision&#39;)  &amp;&amp; ISCHANGED(EBH_Status__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

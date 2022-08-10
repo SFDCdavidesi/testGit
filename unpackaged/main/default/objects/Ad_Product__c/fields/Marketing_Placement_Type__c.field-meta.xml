@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marketing_Placement_Type__c</fullName>
+    <description>US-0010159 - ADS - Campaign Attribution Field Creation :
+Attribution 1PD Marketing Placement Type</description>
+    <externalId>false</externalId>
+    <label>Marketing Placement Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Marketing - TOPP</fullName>
+                <default>false</default>
+                <label>Marketing - TOPP</label>
+            </value>
+            <value>
+                <fullName>Marketing - Loyalty Banner</fullName>
+                <default>false</default>
+                <label>Marketing - Loyalty Banner</label>
+            </value>
+            <value>
+                <fullName>Loyalty - App</fullName>
+                <default>false</default>
+                <label>Loyalty - App</label>
+            </value>
+            <value>
+                <fullName>Marketing - PMB/MCTA PMB</fullName>
+                <default>false</default>
+                <label>Marketing - PMB/MCTA PMB</label>
+            </value>
+            <value>
+                <fullName>PMB Multi CTA - App</fullName>
+                <default>false</default>
+                <label>PMB Multi CTA - App</label>
+            </value>
+            <value>
+                <fullName>PMB Single CTA – App</fullName>
+                <default>false</default>
+                <label>PMB Single CTA – App</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

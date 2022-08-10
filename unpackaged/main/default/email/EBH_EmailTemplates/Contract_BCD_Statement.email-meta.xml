@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0011929 - [Contract BCD] Contract - BCD file generation email notification</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Hive_Letterhead</letterhead>
+    <name>Contract BCD Statement</name>
+    <style>freeForm</style>
+    <subject>BCD file for {!BCD_Statement__c.Rev_RollUp__c} ACP {!BCD_Statement__c.BCD_Statement_Quarter__c} {!BCD_Statement__c.BCD_Statement_Year__c} Credits is ready to download</subject>
+    <textOnly>Hello team,
+
+
+This is a notification to let you know that the BCD file for {!BCD_Statement__c.Rev_RollUp__c}
+
+ACP {!BCD_Statement__c.FVF_Promo_Month__c}
+
+Credits has been generated with a credit total value of {!BCD_Statement__c.Credit_Total_Value__c} {!BCD_Statement__c.CurrencyIsoCode}
+
+
+
+You can find it attached to the BCD Statement record accessible through this link {!BCD_Statement__c.Link}.
+
+
+RevRollup: {!BCD_Statement__c.Rev_RollUp__c}
+
+ACP Start Date: {!BCD_Statement__c.Start_date__c}
+
+ACP End Date: {!BCD_Statement__c.End_date__c}
+
+Number of sellers which are eligible for ACP Credits: {!BCD_Statement__c.Number_of_sellers__c}
+
+
+If you want to see more details in Hive, please click here {!BCD_Statement__c.Name}.
+
+
+Thank you,
+
+Hive</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

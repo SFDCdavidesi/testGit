@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Seller Portal Tickets Manager</name>
+    <queueMembers>
+        <users>
+            <user>liny.soeung@hive.project.com</user>
+            <user>mnallabothu@hive.project.com</user>
+            <user>sigolledge@hive.project.com</user>
+            <user>wkaboud@hive.project.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

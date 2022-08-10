@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>US-0009674 - Auto Rejection Rules for Deals</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Deal_Auto_Reject_Inventory__c.Category_Relevant_Yes_No__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Deal_Auto_Reject_Inventory__c.Category__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Deal_Auto_Reject_Inventory__c.Deal_Site__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Deal_Auto_Reject_Inventory__c.GMV_Planned__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Deal_Auto_Reject_Inventory__c.Quantity__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Manage Deal Auto Reject Inventory</label>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Deal_Auto_Reject_Inventory__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <tabSettings>
+        <tab>Deal_Auto_Reject_Inventory__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+</PermissionSet>

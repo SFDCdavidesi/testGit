@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <defaultValue>&#39;New&#39;</defaultValue>
+    <description>US-0008144 - [UK] FVF - Object creation for Invoicing</description>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New</fullName>
+                <default>true</default>
+                <label>New</label>
+            </value>
+            <value>
+                <fullName>BCD ready</fullName>
+                <default>false</default>
+                <label>BCD ready</label>
+            </value>
+            <value>
+                <fullName>BU Approval</fullName>
+                <default>false</default>
+                <label>BU Approval</label>
+            </value>
+            <value>
+                <fullName>Finance Approval</fullName>
+                <default>false</default>
+                <label>Finance Approval</label>
+            </value>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+            <value>
+                <fullName>Payment sent</fullName>
+                <default>false</default>
+                <label>Payment sent</label>
+            </value>
+            <value>
+                <fullName>Rejected (BU or Finance)</fullName>
+                <default>false</default>
+                <label>Rejected (BU or Finance)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

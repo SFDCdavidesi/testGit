@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0008130 - [US]* Deals External Seller Bulk/Mass Approval Functionality</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>NA Deals - Send PDF</name>
+    <style>none</style>
+    <subject>Deals Contract Agreement</subject>
+    <textOnly>Hi {!Deal_Contract_Agreement__c.Seller_Name__c}  
+
+Please click on the below PDF Attach file to view Deal Contract Agreement.
+
+Thanks</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

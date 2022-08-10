@@ -1,0 +1,10 @@
+<p data-aura-rendered-by="1337:581;a">Dear {!Owner} ,</p>
+<p data-aura-rendered-by="1337:581;a">&nbsp;</p>
+<p data-aura-rendered-by="1337:581;a">New Managed Payment records in Hive have now been created for the list of sellers uploaded on {!createdDate}</p>
+<p data-aura-rendered-by="1337:581;a">In total, {!countItem} records were created.</p>
+<p data-aura-rendered-by="1337:581;a">&nbsp;</p>
+<p data-aura-rendered-by="1337:581;a">Here is list of failed records if any:</p>
+<p data-aura-rendered-by="1337:581;a">{!failedRecords}</p>
+<p data-aura-rendered-by="1337:581;a">&nbsp;</p>
+<p data-aura-rendered-by="1337:581;a">Best,</p>
+<p data-aura-rendered-by="1337:581;a">HIVE team</p>

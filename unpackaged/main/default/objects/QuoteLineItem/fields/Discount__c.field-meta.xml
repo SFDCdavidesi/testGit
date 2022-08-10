@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Discount__c</fullName>
+    <description>INTEG - N || ** eBay Advertising ** || WF - N || AP - N || VAL - N ||Class - N || Definition: Discount || 00477099 |</description>
+    <externalId>false</externalId>
+    <formula>IF(
+ISPICKVAL(Billing_Category__c, &#39;CPM&#39;) &amp;&amp; ISBLANK( TEXT(Targeting_Type__c )), 
+( (UnitPrice  * Quantity__c) / 1000) - ((SalesPriceNet__c *  Quantity__c) / 1000),
+
+IF(
+ISPICKVAL(Billing_Category__c, &#39;CPD&#39;) &amp;&amp; ISBLANK( TEXT(Targeting_Type__c )), 
+(UnitPrice  * Quantity__c) - (SalesPriceNet__c * Quantity__c), 
+
+IF(
+ISPICKVAL(Billing_Category__c, &#39;CPC&#39;) &amp;&amp; ISBLANK( TEXT(Targeting_Type__c )), 
+(UnitPrice  * Quantity__c) - (SalesPriceNet__c * Quantity__c), 
+
+IF(
+ISPICKVAL(Billing_Category__c, &#39;FIXED&#39;) &amp;&amp; ISBLANK( TEXT(Targeting_Type__c )), 
+(UnitPrice  * Quantity__c) - (SalesPriceNet__c * Quantity__c), 
+0
+
+))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Discount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <type>Currency</type>
+</CustomField>

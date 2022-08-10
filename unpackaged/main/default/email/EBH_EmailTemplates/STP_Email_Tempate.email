@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+
+<body style="font-family:Arial;font-size:13px">
+    <p>Hi Advance App Team,</p>
+    <p>Please execute the below request on seller {!EBH_Project__c.EBH_Seller__c}  and advise when actioned.</p>
+    <table style="border-collapse: collapse;" border="1">
+    <colgroup>
+    <col style="width: 330px">
+    <col style="width: 150px">
+    </colgroup>
+    <thead>
+      <tr>
+        <th style="border-color:black;border-style:solid;border-width:1px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;background-color:#25498b;border-color:inherit;color:#ffffff;font-size:14px;text-align:left;vertical-align:top">Item</th>
+        <th style="border-color:black;border-style:solid;border-width:1px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;background-color:#25498b;border-color:inherit;color:#ffffff;font-size:14px;text-align:left;vertical-align:top">Required</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border-color:black;border-style:solid;border-width:1px;overflow:hidden;padding:10px 5px;word-break:normal;">Strike Through Pricing</td>
+        <td style="border-color:black;border-style:solid;border-width:1px;overflow:hidden;padding:10px 5px;word-break:normal;">{!EBH_Project__c.StrikethroughPricing__c}</td>
+      </tr>
+    </tbody>
+    </table>
+    </br>
+    <p>Thank You</p>     
+    <p>{!EBH_Project__c.OwnerFullName}</p>
+</body>
+</html>

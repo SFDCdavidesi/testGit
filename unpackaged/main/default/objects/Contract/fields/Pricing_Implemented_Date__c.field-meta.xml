@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pricing_Implemented_Date__c</fullName>
+    <description>[#EPH-7035] Contracts - Pricing Implemented Date fields in Contract Object</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This allow contract manager to report on when pricing is implemented and Execution - Implementation timelines. It will enable them to filter reports by contract / amendments that are not yet implemented.</inlineHelpText>
+    <label>Pricing Implemented Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

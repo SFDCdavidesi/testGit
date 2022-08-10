@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_BusinessNameEditRestriction</fullName>
+    <active>true</active>
+    <description>EPH-178, US-0007080</description>
+    <errorConditionFormula>ISCHANGED(Name) &amp;&amp; NOT(ISNEW()) &amp;&amp; NOT(OR($Profile.Name = &quot;System Administrator&quot;, $Profile.Name = &quot;Business Admin&quot; )) &amp;&amp;
+(RecordType.DeveloperName  == &#39;EBH_Partner&#39; ||
+RecordType.DeveloperName == &#39;EBH_Seller&#39;) &amp;&amp; NOT( $Setup.ActiveValidationRules__c.All_Validation_Rules_Deactivated__c )</errorConditionFormula>
+    <errorMessage>You are not allowed to change the Business Name</errorMessage>
+</ValidationRule>

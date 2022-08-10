@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0006475: Coupon - email alert to coupon owner : add coupon code before start date</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Email alert to coupon owner</name>
+    <style>none</style>
+    <subject>Coupon Reminder | Ensure that you have added the correct coupon code for {!Coupon__c.Marketing_Coupon_Name__c}</subject>
+    <textOnly>Dear {!Coupon__c.OwnerFullName},
+
+please note that your coupon {!Coupon__c.Marketing_Coupon_Name__c} will start in three days on  {!Coupon__c.Coupon_Start_Date__c}.
+
+So far you have stored the following coupon code in Hive: {!Coupon__c.Coupon_ID__c}.
+
+Please check if the code is still valid and up-to-date!
+
+If you do not add the correct coupon code, Hive won´t be able to track transactions and manage the seller invoice.
+
+Click here to update the Coupon Code  {!Coupon__c.Name} .
+
+Thank you,
+Hive</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

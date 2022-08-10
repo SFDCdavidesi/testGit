@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0009403 Deals Invoice VAT - Rejection Email template localization for UK, FR, IT &amp; ES</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>IT Deal Invoice Reject</name>
+    <style>none</style>
+    <subject>Richiesta importante sulla fattura relativa a Imperdibili del {!DealStartDate}</subject>
+    <textOnly>Non ci è stato possibile elaborare il pagamento relativo all’offerta Imperdibili del {!DealStartDate}.
+
+Motivo:
+
+{!RejectionComment}
+
+Apporta le modifiche necessarie e carica nuovamente la fattura per questa transazione usando l’apposito strumento.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

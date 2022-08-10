@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hive_Product_Backlog</fullName>
+    <columns>NAME</columns>
+    <columns>HIVE_Products__c</columns>
+    <columns>Hive_Project__c</columns>
+    <columns>OWNER.ALIAS</columns>
+    <columns>Status__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Notes__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Completed,Rejected</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Requirement_Request__c.Feature_Request</value>
+    </filters>
+    <label>Hive Product Backlog</label>
+</ListView>

@@ -1,0 +1,2347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deal_V1</fullName>
+    <active>true</active>
+    <label>Standard Deal</label>
+    <picklistValues>
+        <picklist>BillingStatus__c</picklist>
+        <values>
+            <fullName>Fully paid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None %28No Coinvest%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partly paid</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Dispute_Status__c</picklist>
+        <values>
+            <fullName>Completed - Action Taken</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed - No Action Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Dispute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Dispute_Type__c</picklist>
+        <values>
+            <fullName>Quantity Variance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subsidy Per Unit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>EBH_Category__c</picklist>
+        <values>
+            <fullName>Abbigliamento e accessori</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Altre categorie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Animalerie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Antiques</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Antiquitäten %26 Kunst</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Art</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Art%2C antiquités</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arte e antiquariato</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arte y antigüedades</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auto %26 Motorrad%3A Fahrzeuge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auto %26 Motorrad%3A Teile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auto%2C moto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auto%2C moto e altri veicoli</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Baby</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bastel- %26 Künstlerbedarf</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bateaux%2C voile%2C nautisme</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beauty %26 Gesundheit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beauté%2C bien-être%2C parfums</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bebés</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Belleza y salud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bellezza e salute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biglietti ed eventi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bijoux%2C montres</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Books%2C Comics %26 Magazines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Books%2C Magazines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bricolage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Briefmarken</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business %26 Industrie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business%2C Office %26 Industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bébé%2C puériculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bücher</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Büro %26 Schreibwaren</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cameras</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cameras %26 Photography</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cars%2C Bikes%2C Boats</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cars%2C Motorcycles %26 Vehicles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Casa%2C arredamento e bricolage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Casa%2C jardín y bricolaje</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cine%2C DVD y películas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clothes%2C Shoes %26 Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coches%2C Motos y Otros Vehíc%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coins</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coleccionismo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collectables</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collections</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collezionismo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercio%2C ufficio e Industria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Computer%2C Tablets %26 Netzwerk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Computers%2FTablets %26 Networking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consolas y videojuegos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crafts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cámaras y fotografía</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Céramiques%2C verres</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DVD%2C cinéma</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DVDs%2C Films %26 TV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deportes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dolls %26 Bears</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrodomésticos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electroménager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elettrodomestici</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entradas y eventos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equipamiento y maquinaria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Events Tickets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Everything Else</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feinschmecker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Film e DVD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Filme %26 DVDs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food %26 Drinks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foto %26 Camcorder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fotografia e video</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Francobolli</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fumetti</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Garden %26 Patio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Garten</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Garten %26 Terrasse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Giardino e arredamento esterni</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gift Cards %26 Vouchers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Giocattoli e modellismo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Handys %26 Kommunikation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Haushaltsgeräte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Haustierbedarf</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health %26 Beauty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heimwerker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hobby creativi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Holidays %26 Travel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home %26 Garden</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Appliances</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Entertainment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home%2C Furniture %26 DIY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Image%2C son</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Imagen y sonido</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Immobilien</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Immobilier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Infanzia e premaman</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Informatica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Informatique%2C réseaux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Informática y tablets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instrumentos musicales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instruments de musique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jardin%2C terrasse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jeux vidéo%2C consoles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jewellery %26 Watches</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jouets et jeux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Juguetes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kleidung %26 Accessoires</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Libri e riviste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Libros%2C revistas y cómics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Livres%2C BD%2C revues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loisirs créatifs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lots More%2E%2E%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maison</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobile Phones %26 Communication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modellbau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monedas y billetes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monete e banconote</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monnaies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motor%3A recambios y accesorios</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Movies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Music</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Musica%2C CD e vinili</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Musical Instruments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Musik</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Musikinstrumente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Musique%2C CD%2C vinyles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Móviles y telefonía</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Möbel %26 Wohnen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Música%2C CDs y vinilos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Münzen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nautica e imbarcazioni</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Orologi e gioielli</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Otras categorías</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PC- %26 Videospiele</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PME%2C artisans%2C agriculteurs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pet Supplies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phones %26 Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photo%2C caméscopes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pottery%2C Glass</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pottery%2C Porcelain %26 Glass</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reisen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relojes y joyas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ropa%2C calzado y complementos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sammeln %26 Seltenes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sellos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sound %26 Vision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spielzeug</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sport</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sport e viaggi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sporting Goods</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sports Memorabilia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sports%2C vacances</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stamps</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strumenti musicali</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TV%2C Video %26 Audio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TV%2C audio e video</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telefonia fissa e mobile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tickets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tickets%2C Travel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Timbres</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Toys %26 Games</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Toys%2C Hobbies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Téléphonie%2C mobilité</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uhren %26 Schmuck</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehicle Parts %26 Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Veicoli%3A ricambi e accessori</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verschiedenes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Viajes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Video Games %26 Consoles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Videogiochi e console</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vini%2C caffè e gastronomia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vinos y gastronomía</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vins%2C Gastronomie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Véhicules%3A pièces%2C accessoires</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vêtements%2C accessoires</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesale %26 Job Lots</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>EBH_DealFormat__c</picklist>
+        <values>
+            <fullName>Core</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Featured</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Primary</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>EBH_DealSiteId__c</picklist>
+        <values>
+            <fullName>101</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>186</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>71</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>77</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>EBH_ReasonforRejection__c</picklist>
+        <values>
+            <fullName>Abverkaufspotenzial zu gering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Already promoted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Angebotene Menge zu gering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Annonce déjà sponsorisée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bassa qualità delle immagini</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Basso potenziale di ricavi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cantidad demasiado baja</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Categoria eBay non corretta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Categoría de eBay incorrecta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catégorie eBay incorrecte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deal bereits anderweitig vereinbart</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deal-Frequenz zu hoch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Escaso potencial de rentabilidad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Faible potentiel de revenu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Falsche Kategorie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fehlende oder falsche Angaben</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fuera de temporada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fulfillment invite rejected by Seller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fuori stagione</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Già sponsorizzata</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hors saison</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Il prezzo è troppo alto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Imagen de mala calidad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorrect eBay category</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Información incorrecta o faltan datos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Informations manquantes ou incorrectes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Informazioni mancanti o non corrette</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ist bereits im Basket</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L%27offerta supera la domanda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>La oferta supera la demanda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>La quantità è troppo bassa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low revenue potential</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing or incorrect information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oferta similar ya aceptada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offre supérieure à la demande</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Out of season</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photo de mauvaise qualité</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor picture quality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Precio demasiado alto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preis zu hoch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price is too high</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prix trop élevé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prodotto non conforme a standard qualitativi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Promo similaire déjà acceptée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quantity is too low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quantité insuffisante</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saisonal nicht relevant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Schlechte Bildqualität</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Similar deal already agreed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supply exceeds demand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tempi di consegna eccessivamente lunghi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ya promocionada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>È stata già accettata un%27offerta simile</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>EBH_RecommendedRetailPriceWAS__c</picklist>
+        <values>
+            <fullName>List Price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RRP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WAS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>EBH_SpotlightFeature__c</picklist>
+        <values>
+            <fullName>Basic Fashion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Computer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Erotik</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fashion für Ihn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Haushaltsgeräte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heimwerken</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Entertainment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P%26A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Schuhe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Smartphones</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spielzeug</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sport</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weiter Elektronik</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zuhause%2FMöbel</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>EBH_Status__c</picklist>
+        <values>
+            <fullName>Clarification Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deal Agreed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Executed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice Rejected %28Email resend to Seller%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negotiating</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negotiating Amended</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Payment Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ready for Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Running</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seller Invite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Statement Verified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verify Invoice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verify Statement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>EBH_Vertical__c</picklist>
+        <values>
+            <fullName>APAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auto %26 Moto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auto et Moto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automotive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business %26 Industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Casa %26 Giardino</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Casa y Jardín</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coleccionismo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collectibles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collections %26 Antiquités</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collezionabili</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercio%2C Ufficio e Industria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deportes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrónica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fashion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fitness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>H%26G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hard Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health %26 Beauty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High-Tech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home %26 Garden</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Joyería y Belleza</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lifestyle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maison %26 Jardin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mode</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ocio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Otras categorías</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P%26A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parts %26 Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parts %26 BI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Soft Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sport %26 Viaggi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sports %26 Leisure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suministros industriales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tecnologia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Toys</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Item_Condition__c</picklist>
+        <values>
+            <fullName>Acceptable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Certified - Refurbished</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Excellent - Refurbished</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>For parts or not working</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Good</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Good - Refurbished</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Like new</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New with defects</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refurbished</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seller refurbished</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Used</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Very Good - Refurbished</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Very good</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Seller_Portal_Status__c</picklist>
+        <values>
+            <fullName>Clarification on invoicing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deal agreed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deal closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deal ended</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deal in execution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deal proposal rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deal sent for payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invitation to Deals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice rejected%2C please verify</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice verification in process by eBay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoicing in process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negotiation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negotiation Amended</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Deal proposed to eBay</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Payment completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment in process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Please agree on the proposed Deal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Please provide an invoice</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sub_Category__c</picklist>
+        <values>
+            <fullName>3D Printers %26 Supplies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Action Figures</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adhesives%2C Sealants %26 Tapes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arcade%2C Jukeboxes %26 Pinball</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Art Prints</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Art Supplies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automation%2C Motors %26 Drives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automotive Tools %26 Supplies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Baby</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Baby Gear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Baby Safety %26 Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bath</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bath %26 Body</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bathing %26 Grooming</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bedding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Binoculars %26 Telescopes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bird Supplies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bottles %26 Insulators</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Building Toys</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bullion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Camcorders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Camera %26 Photo Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Camera Drones</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Car Safety Seats</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carriers%2C Slings %26 Backpacks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cat Supplies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cell Phone Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cell Phones %26 Smartphones</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Children%27s Jewelry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Classic Toys</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clocks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coins%3A Canada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coins%3A US</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coins%3A World</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collectible Card Games</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Comics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Computer Components %26 Parts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cycling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DJ Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DVDs %26 Blu-ray Discs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Desktops %26 All-In-Ones</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diapering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diecast %26 Toy Vehicles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Cameras</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Gifts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dog Supplies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dollhouse Miniatures</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dolls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drives%2C Storage %26 Blank Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Educational</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical %26 Test Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronic%2C Battery %26 Wind-Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engagement %26 Wedding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Every Other Thing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facility Maintenance %26 Safety</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fan Apparel %26 Souvenirs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fashion Jewelry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fasteners %26 Hardware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feeding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fine Jewelry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fishing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fitness%2C Running %26 Yoga</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flashes %26 Flash Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food %26 Beverages</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fragrances</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fuel %26 Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Furniture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gadgets %26 Other Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Game Used Memorabilia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Games</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gift Cards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Glass</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Glass %26 Mosaics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Golf</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Greeting Cards %26 Party Supply</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guitars %26 Basses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hair Care %26 Styling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Historical Memorabilia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Holiday %26 Seasonal Décor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Arts %26 Crafts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Automation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Décor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Improvement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Networking %26 Connectivity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Surveillance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Household Supplies %26 Cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hunting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indoor Games</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jewelry Boxes %26 Organizers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Karaoke Entertainment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Keepsakes %26 Baby Announcements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Keyboards%2C Mice %26 Pointers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kids %26 Teens at Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kids%27 Clothing%2C Shoes %26 Accs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kids%27 Crafts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kitchen%2C Dining %26 Bar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lamps%2C Lighting %26 Ceiling Fans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laptop %26 Desktop Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laptops %26 Netbooks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lenses %26 Filters</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Light Equipment %26 Tools</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lighting %26 Studio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loose Diamonds %26 Gemstones</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Luggage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Luggage Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Major Appliances</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Makeup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing %26 Metalworking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Massage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Material Handling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical%2C Mobility %26 Disability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Men%27s Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Men%27s Clothing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Men%27s Jewelry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Men%27s Shoes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Model Railroads %26 Trains</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monitors%2C Projectors %26 Accs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multi-Purpose Craft Supplies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nail Care%2C Manicure %26 Pedicure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Natural %26 Alternative Remedies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Needlecrafts %26 Yarn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Sport Trading Cards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nonfiction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nursery Bedding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nursery Décor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nursery Furniture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oral Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Baby</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Cameras %26 Photo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Coins %26 Paper Money</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Crafts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Home %26 Garden</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Sporting Goods</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outdoor Sports</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outdoor Toys %26 Structures</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paper Money%3A US</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paper Money%3A World</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parts %26 Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pens %26 Writing Instruments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Percussion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone Cards %26 SIM Cards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pianos%2C Keyboards %26 Organs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pinbacks%2C Bobbles%2C Lunchboxes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portable Audio %26 Headphones</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Potty Training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prepaid Gaming Cards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preschool Toys %26 Pretend Play</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Printers%2C Scanners %26 Supplies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Printing %26 Graphic Arts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pro Audio Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Puzzles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radio Control %26 Control Line</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Records</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restaurant %26 Catering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail %26 Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Robots%2C Monsters %26 Space Toys</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rugs %26 Carpets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salon %26 Spa Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scrapbooking %26 Paper Crafts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sewing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shaving %26 Hair Removal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Skin Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Smart Watches</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sneakers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sports Trading Cards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stage Lighting %26 Effects</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>String</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strollers %26 Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sub Category 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sun Protection %26 Tanning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TV%2C Movie %26 Character Toys</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TV%2C Video %26 Home Audio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tablet %26 eBook Reader Parts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tablets %26 eBook Readers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Team Sports</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tools</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Toys for Baby</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unisex Clothing%2C Shoes %26 Accs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United States</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehicle Electronics %26 GPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Video Game Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Video Game Consoles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Video Games</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virtual Reality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vision Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vitamins %26 Dietary Supplements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Voice-Enabled Smart Assistants</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Watches%2C Parts %26 Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Sports</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wedding Supplies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Window Treatments %26 Hardware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Winter Sports</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Women%27s Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Women%27s Clothing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Women%27s Handbags %26 Bags</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Women%27s Shoes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yard%2C Garden %26 Outdoor Living</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>eBayReviewComments__c</picklist>
+        <values>
+            <fullName>Additional quantity is outside of subsidy window%2C unpaid items%2C cancellations and%2For returns%2E No adjustment%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Additional quantity is outside of subsidy window%2C unpaid items%2C cancellations and%2For returns%2E Revised%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maximum quantity to list%2E No adjustment%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maximum quantity to list%2E Revised%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No sales data for this listing ID during this period%2E No adjustment%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment reflected in the initial statement%2E No adjustment%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revised</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

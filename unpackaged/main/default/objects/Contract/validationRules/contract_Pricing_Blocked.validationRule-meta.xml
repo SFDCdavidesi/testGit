@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>contract_Pricing_Blocked</fullName>
+    <active>true</active>
+    <description>US-0007080</description>
+    <errorConditionFormula>AND(
+ISCHANGED(  Number_of_Pricing_records__c ),
+AND( $Profile.Name!=&quot;System Administrator&quot;,	$Profile.Name!=&quot;Business Admin&quot; ),
+AND( NOT(ISPickval( Status ,&quot;Draft&quot;)), NOT(ISPickval(Status ,&quot;In Negotiation&quot;)))) &amp;&amp; NOT( $Setup.ActiveValidationRules__c.All_Validation_Rules_Deactivated__c )</errorConditionFormula>
+    <errorMessage>You cannot change Pricing at this Contract Stage</errorMessage>
+</ValidationRule>

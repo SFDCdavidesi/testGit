@@ -1,0 +1,13 @@
+<p>Dear {!BOB__c.OwnerFullName}</p>
+<p>{!GCX_LEAD} has confirmed your new Managed Seller Group {!BOB__c.Name} and will shortly be loaded to the DW table.<br />To view your confirmed Managed Seller Group please click here <a href="{!BOB_URL}">Link to the Managed Seller Group</a></p>
+<p>In the csv attachment you can find the list of all New-In and Removed Sellers - so that GCX operations can adjust the following for affected sellers in Unify/AD:</p>
+<ul style="list-style-type: disc;">
+<li>P1 MAC Note</li>
+<li>SS Flag 4</li>
+<li>Seller Ribbon in Unify</li>
+<li>Issue Whitelisitng</li>
+<li>Please also see additional comments if additional flagging is required e.g. setting lisiting limits or any specific flags</li>
+</ul>
+<p>&nbsp;</p>
+<p>Thank you,</p>
+<p>HIVE</p>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Update_User_Availability__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>US-0011996 - Call booking for Ads</description>
+    <externalId>false</externalId>
+    <label>Update User Availability</label>
+    <type>Checkbox</type>
+</CustomField>

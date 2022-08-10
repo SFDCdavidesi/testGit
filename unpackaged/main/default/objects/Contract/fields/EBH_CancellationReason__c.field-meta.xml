@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_CancellationReason__c</fullName>
+    <description>[EBH] (EPH-127) : to capture the approval comment&#39;s rejection reason</description>
+    <externalId>false</externalId>
+    <label>Cancellation Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

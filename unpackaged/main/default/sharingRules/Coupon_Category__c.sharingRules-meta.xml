@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Share_for_DE_SEP</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>US-0011385 - External Sharing for Coupon Category/ Category Tree</description>
+        <label>Share for DE SEP</label>
+        <sharedTo>
+            <group>DE_Seller_Portal</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Is_Visible_in_Seller_Portal__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Coupon_Main_Site__c</field>
+            <operation>equals</operation>
+            <value>ebay.de</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_for_NA_SEP</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>US-0011755 - External Sharing for Category/ Category Tree for US</description>
+        <label>Share for NA SEP</label>
+        <sharedTo>
+            <group>NA_Seller_Portal</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Is_Visible_in_Seller_Portal__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Coupon_Main_Site__c</field>
+            <operation>equals</operation>
+            <value>ebay.com</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

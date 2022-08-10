@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Allow any user to run flow - assign permission set</description>
+    <flowAccesses>
+        <enabled>true</enabled>
+        <flow>Permission_set_assignment</flow>
+    </flowAccesses>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Run Flow - Assign Permission Set</label>
+</PermissionSet>

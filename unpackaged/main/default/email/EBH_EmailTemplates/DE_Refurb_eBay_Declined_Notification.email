@@ -1,0 +1,16 @@
+<div style="margin:0 auto; width:66.66%;">
+
+            <img src='https://hive--c.na124.content.force.com/servlet/servlet.ImageServer?id=0153u000002RNsV&oid=00D6A0000002Hft&lastMod=1628243969000'/>
+
+            <p style="text-decoration: underline;text-align:center;">eBay Refurbished – Programm</p>
+            <p>Zu unserem Bedauern müssen wir Ihnen mitteilen, dass Sie die Bedingungen für das eBay Refurbished-Programm nicht erfüllen und eine Teilnahme am Programm daher zunächst nicht möglich ist. 
+                Sie haben dennoch die Chance am Programm teilzunehmen, sobald Sie die erforderlichen Kriterien erfüllen. 
+                Für die Teilnahme-Voraussetzungen am Programm lesen Sie bitte die dazugehörigen „Refurbished-AGBs“, welche Sie unter {!TCs_URL__c} einsehen können.</p>
+
+            <div style="line-height: 0px;">
+                <p>Mit freundlichen Grüßen</p>
+                <p>Ihr eBay-Team</p>
+            </div>
+            <p>{!TCs_URL__c}</p>
+                
+</div>

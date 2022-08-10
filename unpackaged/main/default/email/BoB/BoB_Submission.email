@@ -1,0 +1,5 @@
+<p>Dear {!GCX_LEAD}</p>
+<p>{!BOB__c.OwnerFullName} has submitted a new BOB  {!BOB__c.Name}  that requires your confirmation.</p>
+<p>Please click here to view and confirm the proposed BOB <a title="Link to the BOB" href="{!BOB_URL}">Link to the BOB</a>.</p>
+<p>If you would like to raise any questions before you confirm the submitted BOB please use the Chatter Box on the right side in the BoB Object.</p>
+<p>Thank you,<br />HIVE </p>

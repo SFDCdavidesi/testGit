@@ -1,0 +1,7 @@
+Type: {!Case.RecordType} 
+
+Summary: {!Case.Summary__c}
+
+Description: {!Case.Description__c} 
+
+Internal Link to Ticket: {!Case.Link}

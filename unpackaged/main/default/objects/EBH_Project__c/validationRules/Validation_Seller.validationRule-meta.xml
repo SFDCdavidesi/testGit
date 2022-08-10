@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_Seller</fullName>
+    <active>true</active>
+    <description>US-0007652 - [EU &amp; AU] Mandatory to specify seller account on project</description>
+    <errorConditionFormula>AND(RecordType.DeveloperName=&#39;EUOnboarding&#39;, ISBLANK( EBH_Seller__c ) ,  OR(ISPICKVAL(EBH_Stage__c, &#39;Scaling (Warranty)&#39;) ,ISPICKVAL(EBH_Stage__c, &#39;Completed&#39;) ) )</errorConditionFormula>
+    <errorMessage>Only those projects that have a seller account attached ( via the field &quot;Seller&quot;) can move to the status Scaling (Warranty) or Completed.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>V1_Deal_Status_Cant_Change_to_Planned</fullName>
+    <active>true</active>
+    <description>US-0009554 - Block deals acceptance if Seller Rev Roll Up is CH or UK</description>
+    <errorConditionFormula>AND(
+  NOT($Setup.byPass__c.ByPass_Validation__c),
+   EBH_Subsidy__c  &gt; 0,
+  RecordType.DeveloperName = &#39;Deal_V1&#39;,
+  ISPICKVAL(EBH_DealSiteId__c, &quot;77&quot;),
+  ISCHANGED( EBH_Status__c ),
+  ISPICKVAL(EBH_Status__c,&quot;Planned&quot;),
+  OR( 
+    ISPICKVAL(EBH_BusinessName__r.EBH_RevRollup__c, &quot;CH&quot;),
+    ISPICKVAL(EBH_BusinessName__r.EBH_RevRollup__c, &quot;UK&quot;)
+  )
+)</errorConditionFormula>
+    <errorMessage>Due to the Seller registration is in UK/Switzerland, Deal Acceptance is not possible on Subsidized Deals. For further clarifications please contact EU controlling.</errorMessage>
+</ValidationRule>

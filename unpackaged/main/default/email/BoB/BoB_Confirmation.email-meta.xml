@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>EPH-6329 BOB MGMT - Submit / Approve / Activate BOB</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>BoB Confirmation</name>
+    <style>none</style>
+    <subject>Your submitted Managed Seller Group has been confirmed and activated</subject>
+    <textOnly>Dear {!BOB__c.OwnerFullName}
+
+{!GCX_LEAD} has confirmed your new Managed Seller Group {!BOB__c.Name} and will shortly be loaded to the DW table.
+To view your confirmed Managed Seller Group please click here Link to the Managed Seller Group
+
+In the csv attachment you can find the list of all New-In and Removed Sellers - so that GCX operations can adjust the following for affected sellers in Unify/AD:
+
+ - P1 MAC Note
+ - SS Flag 4
+ - Seller Ribbon in Unify
+ - Issue Whitelisitng
+ - Please also see additional comments if additional flagging is required e.g. setting lisiting limits or any specific flags
+
+
+Thank you,
+
+HIVE</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

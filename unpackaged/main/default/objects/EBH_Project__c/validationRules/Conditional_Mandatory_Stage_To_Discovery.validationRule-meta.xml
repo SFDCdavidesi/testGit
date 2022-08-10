@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conditional_Mandatory_Stage_To_Discovery</fullName>
+    <active>true</active>
+    <description>US-0010689 - Project Fields</description>
+    <errorConditionFormula>IF(AND(RecordType.DeveloperName = &#39;eBayAUSMB&#39;, 
+        TEXT(PRIORVALUE(EBH_Stage__c)) == &quot;Negotiate and Close&quot;,
+        CONTAINS(TEXT(EBH_Stage__c), &#39;Discovery&#39;),
+        OR(ISBLANK(Theoretical_Revenue__c),
+           ISBLANK(AcquisitionManager__c),
+           ISBLANK(Website__c),
+           ISBLANK(OtherMarketPlaces__c),
+           ISBLANK(eFF_Current_SKUs_in_Stock__c),
+           ISBLANK(Intended_Number_of_SKU_S_On_Ebay_Store__c),
+           ISPICKVAL(Customer_service_dept__c,&#39;&#39;),  
+           ISPICKVAL(Warehousing_and_shipping_responsibility__c,&#39;&#39;),
+           ISPICKVAL(ShippingPolicy__c,&#39;&#39;),
+           ISPICKVAL(Tracking__c,&#39;&#39;),
+           ISBLANK(Last_dispatch_time__c),
+           ISPICKVAL(Ebay_Store_advertising_plan__c,&#39;&#39;)
+           ),
+         NOT( $Setup.ActiveValidationRules__c.All_Validation_Rules_Deactivated__c),
+         NOT(CONTAINS($Profile.Name, &#39;System&#39;))
+        )
+,true
+,false)</errorConditionFormula>
+    <errorMessage>Please update fields(s) under each stage before proceeding</errorMessage>
+</ValidationRule>

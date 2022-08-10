@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>EPH-6718] Marketing Ticket - Auto-assign ticket</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Marketing Ticket Specialist Notification</name>
+    <style>none</style>
+    <subject>You are assigned Marketing Ticket {!Marketing_Ticket__c.Marketing_Ticket_ID__c}</subject>
+    <textOnly>You are assigned to {!Marketing_Ticket__c.Marketing_Ticket_ID__c} as a Specialist. Due date of this ticket is {!Marketing_Ticket__c.Due_Date__c} For details, please go to: {!Marketing_Ticket__c.Marketing_Ticket_ID__c}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

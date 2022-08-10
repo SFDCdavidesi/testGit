@@ -1,0 +1,50 @@
+<p style="text-align: center;text-decoration: underline;">Werbeaktions-Einzelvertrag</p>
+<p>Mit diesem Werbeaktions-Einzelvertrag und ihrer Anlage 1, die fester Bestandteil dessen ist, (nachfolgend gemeinsam &#8222;Werbeaktions-Einzelvertrag&ldquo;), bieten wir Ihnen die Teilnahme an einer Couponaktion zu den nachstehenden Konditionen sowie auf Basis der dazugeh&ouml;rigen &#8222;Werbeaktions-AGB&ldquo; an, welche Sie unter <a href="https://pages.ebay.de/werbeaktions-agb/index.html">https://pages.ebay.de/werbeaktions-agb/index.html</a> einsehen k&ouml;nnen.</p>
+<p>Durch Anklicken des nachstehenden Buttons &#8222;ICH STIMME ZU&ldquo; erkl&auml;ren Sie Ihre ausdr&uuml;ckliche Zustimmung zu diesem Werbeaktions-Einzelvertrag, den Werbeaktions-AGB, und somit Ihre Teilnahme an der Couponaktion. Wenn Sie allen Angaben zustimmen, klicken Sie bitte bis sp&auml;testens zum {ContractDueDate} auf den Button:</p>
+<p style="text-align: center;"><a href="{clickMeUrl}">ICH STIMME ZU</a></p>
+<table style="height: 233px; width: 631px; border-collapse: collapse;" border="1" cellspacing="0" cellpadding="5">
+<tbody>
+<tr>
+<td style="width: 199.556px;"><strong>Verk&auml;ufer</strong></td>
+<td style="width: 404.889px;">{LegalEntity}, {StreetName}, {Zip} {CityForSiteDE}</td>
+</tr>
+<tr>
+<td style="width: 199.556px;"><strong>Nutzername des Verk&auml;ufers f&uuml;r die Couponaktion</strong></td>
+<td style="width: 404.889px;">{eBaySellerID}</td>
+</tr>
+<tr>
+<td style="width: 199.556px;"><strong>eBay-Website(s) </strong></td>
+<td style="width: 404.889px;">{CouponSites}</td>
+</tr>
+<tr>
+<td style="width: 199.556px;"><strong>Coupon-</strong><br /> <strong>Werbeaktionszeitraum</strong></td>
+<td style="width: 404.889px;">{CouponStartTime} {CouponStartDate} bis {CouponEndTime} {CouponEndDate} (CET) oder jeder andere Zeitraum, welchen eBay bestimmt. Die exakte Werbedauer obliegt ausschlie&szlig;lich eBay.</td>
+</tr>
+<tr>
+<td style="width: 199.556px;"><strong>Vom Verk&auml;ufer an eBay zu entrichtende Erfolgspr&auml;mie</strong></td>
+<td style="width: 404.889px;">
+<p>Angaben in % bemessen am Einl&ouml;sewert des Coupons, sofern unten nichts anderes angegeben wurde</p>
+<p>{!catTable}</p>
+<p>Dieser Coupon wird nur f&uuml;r die vorgenannten Kategorien ausgestellt, einschlie&szlig;lich des Kofinanzierungsanteils f&uuml;r die Kategorien.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 199.556px;"><strong>Details zur Coupon-Aktion oder Promotion</strong></td>
+<td style="width: 404.889px;">
+<p>{CouponDiscount%}{CouponDiscountAmount} Rabatt auf den Artikelpreis.</p>
+<p>Bis zu einem maximalen Betrag von{CouponCap}pro Transaktion.</p>
+<p>Mindestbestellwert:{Minimum_Transaction_Value__c}</p>
+<p>Der Coupon kann maximal {Max_Redemptions__c}x je Nutzer eingel&ouml;st werden.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 199.556px;"><strong>eBay Vertragspartner</strong></td>
+<td style="width: 404.889px;">eBay GmbH, Albert-Einstein-Ring 2-6, 14532 Kleinmachnow</td>
+</tr>
+<tr>
+<td style="width: 199.556px;"><strong>Sonstiges</strong></td>
+<td style="width: 404.889px;">{AdditionalArrangement}</td>
+</tr>
+</tbody>
+</table>
+<p>Mit freundlichen Gr&uuml;&szlig;en<br> Ihr eBay-Team</p>

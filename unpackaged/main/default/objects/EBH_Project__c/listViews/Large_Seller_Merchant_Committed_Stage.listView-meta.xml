@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Large_Seller_Merchant_Committed_Stage</fullName>
+    <columns>NAME</columns>
+    <columns>GMVLast12Months__c</columns>
+    <columns>EBH_Stage__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>PaymentsInvitationDate__c</columns>
+    <columns>Comments__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>EBH_Project__c.ManagedPayment</value>
+    </filters>
+    <filters>
+        <field>NAME</field>
+        <operation>contains</operation>
+        <value>United Kingdom</value>
+    </filters>
+    <filters>
+        <field>EBH_Stage__c</field>
+        <operation>notEqual</operation>
+        <value>Preboarded,Onboarded</value>
+    </filters>
+    <filters>
+        <field>GMVLast12Months__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>USD 500000</value>
+    </filters>
+    <label>$500k+ Not Preboarded/Onboarded</label>
+</ListView>

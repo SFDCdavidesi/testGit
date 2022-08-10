@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Rejected Deals</label>
+    <protected>false</protected>
+    <values>
+        <field>Field_Set_Detail_Name__c</field>
+        <value xsi:type="xsd:string">BlankListView</value>
+    </values>
+    <values>
+        <field>Field_Set_Name__c</field>
+        <value xsi:type="xsd:string">Rejected_ListViewFields</value>
+    </values>
+    <values>
+        <field>Filter_Values__c</field>
+        <value xsi:type="xsd:string">EBH_Status__c = &#39;Rejected&#39;</value>
+    </values>
+    <values>
+        <field>Global_Search_Tab__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Maximum_Records__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>Number_Of_Records_To_Display__c</field>
+        <value xsi:type="xsd:double">10.0</value>
+    </values>
+    <values>
+        <field>Object_API_Name__c</field>
+        <value xsi:type="xsd:string">EBH_Deal__c</value>
+    </values>
+    <values>
+        <field>Order_Fields__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>Specific_Search_Field__c</field>
+        <value xsi:type="xsd:string">EBH_eBayItemID__c LIKE : key OR EBH_ProductTitle__c LIKE : key</value>
+    </values>
+</CustomMetadata>

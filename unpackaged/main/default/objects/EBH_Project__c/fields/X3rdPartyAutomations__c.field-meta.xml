@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X3rdPartyAutomations__c</fullName>
+    <description>US-0007708 - [AU] New fields for &#39;Managed Payment&#39; Pagelayout for Project</description>
+    <externalId>false</externalId>
+    <label>3rd Party Automations</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Inventory</fullName>
+                <default>false</default>
+                <label>Inventory</label>
+            </value>
+            <value>
+                <fullName>Listings</fullName>
+                <default>false</default>
+                <label>Listings</label>
+            </value>
+            <value>
+                <fullName>Shipping</fullName>
+                <default>false</default>
+                <label>Shipping</label>
+            </value>
+            <value>
+                <fullName>Orders</fullName>
+                <default>false</default>
+                <label>Orders</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

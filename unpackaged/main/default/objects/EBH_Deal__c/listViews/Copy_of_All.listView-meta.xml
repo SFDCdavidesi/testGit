@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Copy_of_All</fullName>
+    <columns>NAME</columns>
+    <columns>EBH_ProductTitle__c</columns>
+    <columns>EBH_DealFormat__c</columns>
+    <columns>EBH_DealStartDate__c</columns>
+    <columns>EBH_DealEndDate__c</columns>
+    <columns>EBH_Status__c</columns>
+    <columns>EBH_Category__c</columns>
+    <columns>EBH_Subsidy__c</columns>
+    <columns>EBH_DealSiteId__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>EBH_DealSiteId__c</field>
+        <operation>equals</operation>
+        <value>101</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>EBH_Deal__c.Deal_V1</value>
+    </filters>
+    <label>Deal Proposals Italy</label>
+</ListView>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>EPH-7932 Trading Engine. 1:1 communication. UK</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>TradingEngine UK</name>
+    <style>none</style>
+    <subject>Your Price Competitiveness report for Top Products</subject>
+    <textOnly>Dear …,
+
+
+At eBay we have recently developed a price competitiveness report that compares items listed on www.eBay.co.uk with other online stores.
+
+
+This report aims to help sellers ensure that their products are price competitive across the UK market. The report focuses on analyzing top selling products in the market that enjoy great demand by potential buyers.
+
+
+The Excel spreadsheet attached to this e-mail contains your items that have been flagged by our report, and the maximum price we recommend for them.
+
+
+In order to take advantage of the high demand for these products, we recommend the following measures for the top products listed in the Excel sheet.
+
+Price Optimization: Optimize the prices for your top products; ideally offer them within the Maximum Recommended Price guidelines we have advised (column F in the list)
+Sourcing Opportunity: Add featured Top Products to your eBay inventory
+
+
+Thank you in advance for your efforts and support. If you have any further questions, please contact the eBay team at: ****@ebay.com.
+
+
+Yours sincerely,
+XXX</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

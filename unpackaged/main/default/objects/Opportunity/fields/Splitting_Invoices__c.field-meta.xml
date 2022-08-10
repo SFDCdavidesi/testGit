@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Splitting_Invoices__c</fullName>
+    <description>US-0009254 - Migrate opportunity fields for EU ads</description>
+    <externalId>false</externalId>
+    <label>Splitting Invoices</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PO#</fullName>
+                <default>false</default>
+                <label>PO#</label>
+            </value>
+            <value>
+                <fullName>managerial country</fullName>
+                <default>false</default>
+                <label>managerial country</label>
+            </value>
+            <value>
+                <fullName>Profit Center</fullName>
+                <default>false</default>
+                <label>Profit Center</label>
+            </value>
+            <value>
+                <fullName>Product</fullName>
+                <default>false</default>
+                <label>Product</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AU_Partners</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>EBH_PartnerType__c</columns>
+    <columns>Partner_Country__c</columns>
+    <columns>CREATEDBY_USER.ALIAS</columns>
+    <columns>ACCOUNT.LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.EBH_Partner</value>
+    </filters>
+    <filters>
+        <field>Partner_Country__c</field>
+        <operation>equals</operation>
+        <value>AU</value>
+    </filters>
+    <label>AU Partners</label>
+</ListView>

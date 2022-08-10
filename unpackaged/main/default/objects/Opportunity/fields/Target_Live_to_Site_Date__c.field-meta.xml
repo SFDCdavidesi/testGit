@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Target_Live_to_Site_Date__c</fullName>
+    <description>US-0008585 - [NA] Merchant Integration - Initiate help request
+
+INTEG- Y &#39; DM takes this field &#39; || APEX – N || CC - N || 
+WF – Y &#39; xxxx&#39; || AP – N || FU – N || OM - N|| 
+Desc – &#39;Date that the merchant wants to go live‘ || 
+VAL - Y &#39; NA_RM_Target_LTS_Date_Required&#39; || CR# - 7486 ||</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Forecasted LIVE date</inlineHelpText>
+    <label>Target Live to Site Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

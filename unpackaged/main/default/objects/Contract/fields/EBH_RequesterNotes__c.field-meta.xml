@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_RequesterNotes__c</fullName>
+    <description>[EBH] (EPH-5469) - to capture the requester notes from the comments of Contract approval</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter more explanation of the reason for the request as well as any business case justification and special conditions to call</inlineHelpText>
+    <label>Requester Notes</label>
+    <length>2500</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

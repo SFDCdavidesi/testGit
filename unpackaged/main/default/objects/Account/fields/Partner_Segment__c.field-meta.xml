@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Segment__c</fullName>
+    <description>[#EPH-7476] Partner Record - Enhance fields for Partner Contact Management</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The Partner Segment defines the support model for the partner</inlineHelpText>
+    <label>Partner Segment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Key Partner</fullName>
+                <default>false</default>
+                <label>Key Partner</label>
+            </value>
+            <value>
+                <fullName>Managed</fullName>
+                <default>false</default>
+                <label>Managed</label>
+            </value>
+            <value>
+                <fullName>Unmanaged</fullName>
+                <default>false</default>
+                <label>Unmanaged</label>
+            </value>
+            <value>
+                <fullName>Point of Sale</fullName>
+                <default>false</default>
+                <label>Point of Sale</label>
+            </value>
+            <value>
+                <fullName>Covered</fullName>
+                <default>false</default>
+                <label>Covered</label>
+            </value>
+            <value>
+                <fullName>Long Tail</fullName>
+                <default>false</default>
+                <label>Long Tail</label>
+            </value>
+            <value>
+                <fullName>Direct</fullName>
+                <default>false</default>
+                <label>Direct</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

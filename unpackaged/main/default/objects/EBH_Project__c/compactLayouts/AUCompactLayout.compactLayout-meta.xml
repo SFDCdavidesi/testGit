@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AUCompactLayout</fullName>
+    <fields>LegalEntity__c</fields>
+    <fields>EBH_Stage__c</fields>
+    <fields>ExpectedLTSDate__c</fields>
+    <fields>StoreSubscription__c</fields>
+    <fields>Theoretical_Revenue__c</fields>
+    <fields>Traffic_Color__c</fields>
+    <label>AU Compact Layout</label>
+</CompactLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Log_Task__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>EPH-7946 Coupon Seller - attach the excel to the related</description>
+    <externalId>false</externalId>
+    <label>Log Task</label>
+    <type>Checkbox</type>
+</CustomField>

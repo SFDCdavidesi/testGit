@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>[#EPH-7342] Deals Invoicing Email - Deals Invoice Statement (IT)</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>IT Deals Invoice Statement</name>
+    <style>none</style>
+    <subject>Informazioni importanti: presentazione delle tariffe per gli Imperdibili a partire da {!EBH_Deal__c.EBH_DealStartDate__c}</subject>
+    <textOnly>Di seguito/In allegato trovi un riepilogo delle somme fatturabili per il supporto marketing relativo agli Imperdibili completati a partire da {!EBH_Deal__c.EBH_DealStartDate__c}:
+
+Dettagli sugli Imperdibili:
+
+{!EBH_Deal__c.EBH_DealStartDate__c} bis {!EBH_Deal__c.EBH_DealEndDate__c}
+{!EBH_Deal__c.EBH_ProductTitle__c}
+{!EBH_Deal__c.EBH_eBayItemID__c}
+{!EBH_Deal__c.EBH_LocalDealFormat__c}
+
+Supporto marketing fatturabile*:
+
+Volume delle vendite fatturabile: {!EBH_Deal__c.EBH_Payout_SI_calc__c}
+Supporto marketing per oggetto venduto: {!EBH_Deal__c.EBH_Subsidy__c}
+Totale netto per supporto marketing: {!EBH_Deal__c.Subsidy_Final_Net__c}
+IVA: {!EBH_Deal__c.VAT_N__c}%
+Totale lordo per supporto marketing: {!EBH_Deal__c.EBH_SubsidyFinal__c}
+
+*Questa non è una fattura utilizzabile ai fini IVA. La fattura è emessa dal venditore.
+
+Se sei d&#39;accordo con il riepilogo e l&#39;importo del pagamento, trasferiremo {!EBH_Deal__c.EBH_SubsidyFinal__c} (Totale lordo per supporto marketing) sul tuo conto PayPal.
+
+Invia una fattura usando questo strumento
+
+Clicca qui per ulteriori informazioni o se hai delle domande. Un addetto del Servizio clienti ti contatterà al più presto.
+
+Cordiali saluti,
+
+Il Team di eBay
+
+
+eBay ha inviato questo messaggio a {!EBH_Deal__c.EBH_BusinessName__c}.
+Il tuo nome è stato incluso in modo che sia chiaro che il messaggio è autentico.
+Per saperne di più
+eBay GmbH ti ha inviato questa email perché le tue Preferenze di notifica indicano che desideri ricevere informazioni su promozioni, offerte ed eventi speciali. Sei iscritto/a con l&#39;indirizzo {!EBH_Deal__c.EBH_SellerEmail__c} utilizzato per la tua registrazione su www.ebay.it.
+Puoi annullare in ogni momento l&#39;iscrizione a questa newsletter.
+Per ulteriori informazioni consulta l&#39;Accordo per gli utenti e l&#39;Informativa Privacy per gli utenti.
+Copyright © 2019 eBay Inc.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

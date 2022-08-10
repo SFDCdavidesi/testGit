@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_ExpectedSignUpDate__c</fullName>
+    <description>#US-0015700</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Date by when seller is expected to sign up in the Shutl portal</inlineHelpText>
+    <label>Expected Sign Up Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

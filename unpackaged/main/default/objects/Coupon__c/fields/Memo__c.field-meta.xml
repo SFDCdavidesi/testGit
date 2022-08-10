@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Memo__c</fullName>
+    <description>EPH-7724 Add new fields to Coupon Object</description>
+    <externalId>false</externalId>
+    <formula>&quot;Debit for &quot; &amp; Coupon_ID__c  &amp; &quot; Seller Funded Coupon &quot; &amp; TEXT(MONTH( Coupon_Start_Date__c )) &amp;&quot;/&quot;&amp; TEXT(DAY(Coupon_Start_Date__c )) &amp;&quot;/&quot;&amp; TEXT(YEAR( Coupon_Start_Date__c )) &amp; &quot; - &quot;  &amp; TEXT(MONTH( Coupon_End_Date__c )) &amp;&quot;/&quot;&amp; TEXT(DAY(Coupon_End_Date__c )) &amp;&quot;/&quot;&amp; TEXT(YEAR( Coupon_End_Date__c ))</formula>
+    <label>Memo</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

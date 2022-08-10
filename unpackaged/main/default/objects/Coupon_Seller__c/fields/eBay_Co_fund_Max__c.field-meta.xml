@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>eBay_Co_fund_Max__c</fullName>
+    <description>US-0011410 - Set Co-fund eBay max spends for NA Coupon Sellers
+US-0012217 - Modification for ebay co-fund max validation</description>
+    <externalId>false</externalId>
+    <inlineHelpText>eBay&#39;s cap on co-fund</inlineHelpText>
+    <label>eBay Co-fund Max</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>1</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

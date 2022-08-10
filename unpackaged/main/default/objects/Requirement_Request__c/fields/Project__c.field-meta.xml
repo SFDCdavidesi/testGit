@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project__c</fullName>
+    <externalId>false</externalId>
+    <label>Theme(N)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Acquisition Management</fullName>
+                <default>false</default>
+                <label>Acquisition Management</label>
+            </value>
+            <value>
+                <fullName>Ads 2020</fullName>
+                <default>false</default>
+                <label>Ads 2020</label>
+            </value>
+            <value>
+                <fullName>Advertising Management</fullName>
+                <default>false</default>
+                <label>Advertising Management</label>
+            </value>
+            <value>
+                <fullName>Campaign Management</fullName>
+                <default>false</default>
+                <label>Campaign Management</label>
+            </value>
+            <value>
+                <fullName>Contract Management</fullName>
+                <default>false</default>
+                <label>Contract Management</label>
+            </value>
+            <value>
+                <fullName>Coupon Management</fullName>
+                <default>false</default>
+                <label>Coupon Management</label>
+            </value>
+            <value>
+                <fullName>Customer 360</fullName>
+                <default>false</default>
+                <label>Customer 360</label>
+            </value>
+            <value>
+                <fullName>Deal Management</fullName>
+                <default>false</default>
+                <label>Deal Management</label>
+            </value>
+            <value>
+                <fullName>Final Value Fee</fullName>
+                <default>false</default>
+                <label>Final Value Fee</label>
+            </value>
+            <value>
+                <fullName>Fulfilment</fullName>
+                <default>false</default>
+                <label>Fulfilment</label>
+            </value>
+            <value>
+                <fullName>Inventory Sourcing &amp; Price Competitiveness</fullName>
+                <default>false</default>
+                <label>Inventory Sourcing &amp; Price Competitiveness</label>
+            </value>
+            <value>
+                <fullName>Payments</fullName>
+                <default>false</default>
+                <label>Payments</label>
+            </value>
+            <value>
+                <fullName>Reporting &amp; Analytics</fullName>
+                <default>false</default>
+                <label>Reporting &amp; Analytics</label>
+            </value>
+            <value>
+                <fullName>Seller Management (BoB)</fullName>
+                <default>false</default>
+                <label>Seller Management (BoB)</label>
+            </value>
+            <value>
+                <fullName>System Administration</fullName>
+                <default>false</default>
+                <label>System Administration</label>
+            </value>
+            <value>
+                <fullName>Targeting</fullName>
+                <default>false</default>
+                <label>Targeting</label>
+            </value>
+            <value>
+                <fullName>Technical Debt</fullName>
+                <default>false</default>
+                <label>Technical Debt</label>
+            </value>
+            <value>
+                <fullName>Trading</fullName>
+                <default>false</default>
+                <label>Trading</label>
+            </value>
+            <value>
+                <fullName>User XP</fullName>
+                <default>false</default>
+                <label>User XP</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

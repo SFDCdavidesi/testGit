@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>eBay_Ads_Letterhead</letterhead>
+    <name>Rate Card Exception</name>
+    <style>freeForm</style>
+    <subject>Rate Card Exception Approved</subject>
+    <textOnly>Hello {!Advertising_Request_Portal__c.OwnerFirstName},
+
+
+Account: {!Advertising_Request_Portal__c.Account__c}
+Opportunity: {!Advertising_Request_Portal__c.Opportunity__c}
+Business Justification: {!Advertising_Request_Portal__c.Business_Justification__c}
+
+Product 1:
+Requested Rate: {!Advertising_Request_Portal__c.Requested_Rate__c}
+Approved Rate: {!Advertising_Request_Portal__c.Approved_Rate__c}
+
+Product 2:
+Requested Rate: {!Advertising_Request_Portal__c.Requested_Rate2__c}
+Approved Rate: {!Advertising_Request_Portal__c.Approved_Rate2__c}
+
+Product 3:
+Requested Rate: {!Advertising_Request_Portal__c.Requested_Rate3__c}
+Approved Rate: {!Advertising_Request_Portal__c.Approved_Rate3__c}
+
+
+Comments from Approver:
+{!ApprovalRequest.Comments}
+
+
+{!Advertising_Request_Portal__c.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

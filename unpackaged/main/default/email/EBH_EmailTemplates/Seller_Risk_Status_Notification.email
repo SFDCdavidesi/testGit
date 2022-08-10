@@ -1,0 +1,6 @@
+<p><Strong>Business Name:</Strong> {!Account.Name}</p>
+<p><Strong>Risk Status:</Strong> {!Account.Risk_Status__c}</p>
+<p><Strong>Comments:</Strong> {!Account.Comments__c}</p>
+<p><Strong>Risk last modified by:</Strong> {!Account.Risk_Last_modified_by__c}</p></br>
+<p>For more details, please go to: {!Account.Link}.</p></br>
+<p>Thank you.</p>

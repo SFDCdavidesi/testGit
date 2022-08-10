@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Tasks_Churn_Optimisation</fullName>
+    <columns>WHAT_NAME</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>EBH_Account__c</columns>
+    <columns>Call_attempts__c</columns>
+    <columns>Order_Priority__c</columns>
+    <columns>STATUS</columns>
+    <columns>PRIORITY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>WHAT_NAME</field>
+        <operation>contains</operation>
+        <value>GCX_DE_B-Ware_Inventarsteigerung_Q4-20</value>
+    </filters>
+    <filters>
+        <field>STATUS</field>
+        <operation>equals</operation>
+        <value>Open,In Progress</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.FULL_NAME</field>
+        <operation>contains</operation>
+        <value>kick</value>
+    </filters>
+    <label>New Tasks Churn_Optimisation</label>
+</ListView>

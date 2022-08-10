@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Roles__c</fullName>
+    <description>US-0008096 - US_Update New User Creation Process to include Role</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Controlled by Profile</inlineHelpText>
+    <label>Roles</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Picklist__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Roles</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Account Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Acquisition</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Advertising NA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Advertising NA BP Team</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Advertising NA General</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Advertising NA Head of BP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Advertising NA Head of SPM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Advertising NA Legal Finance Accounting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Advertising NA Market Star</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Advertising NA Market Star API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Advertising NA Market Star General</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Advertising NA Placements.io</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Advertising NA Solution Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Advertising NA Solution Team</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Advertising NA SPM Team</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>ANZ C2C Marketing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>ANZ Marketing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>AU</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Business Analyst</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Category Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Channel &amp; Integrations Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Chief Operating Officer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Content Manager - Seller Marketing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Director Australia Service Delivery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Director Risk Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>eFulfillment Strategy Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Finance Analyst</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Finance Analyst FP&amp;A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>GCX Partner Profile</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>GCX Partner User</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Global</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Head of Brand &amp; Customer Acquisition</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Head Of C2C and Promotions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Head of FP&amp;A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Head of Hard Verticals</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Head of Legal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Head Of Pricing and Insights</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Head Of Shipping</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Head of SMB Growth</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Head of Soft Verticals</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Integration Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Journey Builder</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Legal Counsel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Manager Risk Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Operations Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Program Specialist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Promotions &amp; Seller Operations Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Promotions and Seller Operations Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Reporting Analyst</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Retail Marketing Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Retail Promotion Specialist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Sales Operations Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Scaling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Senior Director SMB &amp; Category Growth</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Senior Manager - Global Service Delivery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Senior Manager - Seller Marketing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Senior Manager - SMB Acquisition &amp; Scaling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Shipping Program Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Sr.Director-Finance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Sr.Director - Product and Shipping</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Sr.Manager APAC Seller Risk</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Sr.Manager APAC Trust</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Sr.Manager FP&amp;A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Strategic Partnership Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Support Functions2- Finance FP&amp;A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Support Functions - Finance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Support Functions - Finance FP&amp;A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>SVP, APAC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>SVP Global Customer Experience &amp; Ops</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Team Leader</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Traning Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>Vertical Lead</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>VP &amp; Country Manager Australia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>VP Service Delivery International</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standard User Profile</controllingFieldValue>
+            <controllingFieldValue>Marketing Profile</controllingFieldValue>
+            <controllingFieldValue>Business Admin</controllingFieldValue>
+            <controllingFieldValue>AU Standard User Profile</controllingFieldValue>
+            <valueName>VP Trust</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

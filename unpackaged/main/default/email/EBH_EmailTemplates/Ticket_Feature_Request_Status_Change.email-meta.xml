@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0007619  - Migrate to Cases - Migrate email templates / workflows, US-0006988 - Hive Feature Request - Status changed</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Ticket - Feature Request Status Change</name>
+    <style>none</style>
+    <subject>The status of your HIVE feature request ticket #{!Case.CaseNumber} - {!Case.Summary__c} has changed!</subject>
+    <textOnly>Hello {!Case.CreatedBy},
+
+The status of your HIVE feature request {!Case.CaseNumber} - {!Case.Summary__c} has changed to status {!Case.Status}.
+
+Please refer to the below list of possible status values and their definitions for further information.
+
+ - New
+A new ticket has been created and added to our HIVE new feature request ticket queue.
+
+ - Waiting for Feedback
+A HIVE Product Owner will reach out to you via HIVE chatter or in person to clarify open questions.
+
+ - Added to Product Backlog
+Your user story / stories have been added to the product backlog and are awaiting prioritization for sprint planning through the HIVE Product Manager.
+
+ - Deployed to Production
+Your user story / stories have been successfully depoyed to HIVE production and are ready to be used - yeah!
+
+ - Rejected
+Your HIVE Feature Request has been rejected. Please refer to the Rejection Reason field in the ticket for any details.
+
+For any questions please feel free to use our HIVE chatter group directly in the ticket.
+
+Thanks,
+Your HIVE Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

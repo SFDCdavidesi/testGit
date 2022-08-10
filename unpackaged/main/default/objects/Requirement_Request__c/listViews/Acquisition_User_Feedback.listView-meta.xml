@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Acquisition_User_Feedback</fullName>
+    <columns>HIVE_Product__c</columns>
+    <columns>Hive_Project__c</columns>
+    <columns>NAME</columns>
+    <columns>Requirement_Description__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>Status__c</columns>
+    <columns>Number_of_Users__c</columns>
+    <columns>Prio_AU__c</columns>
+    <columns>Prio_DE__c</columns>
+    <columns>Prio_EEC__c</columns>
+    <columns>Prio_UK__c</columns>
+    <columns>Prio_US__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>HIVE_Product__c</field>
+        <operation>equals</operation>
+        <value>Acquisition</value>
+    </filters>
+    <filters>
+        <field>Hive_Project__c</field>
+        <operation>equals</operation>
+        <value>User Feedback</value>
+    </filters>
+    <label>Acquisition-User Feedback</label>
+</ListView>

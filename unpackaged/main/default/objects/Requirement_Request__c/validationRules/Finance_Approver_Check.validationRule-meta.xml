@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Finance_Approver_Check</fullName>
+    <active>true</active>
+    <description>US-0008302 - Enhancement for financial approval on feature requests</description>
+    <errorConditionFormula>IF( AND(Financial_Impact__c, ISBLANK( Finance_Approver__c )  ),true,false)</errorConditionFormula>
+    <errorDisplayField>Finance_Approver__c</errorDisplayField>
+    <errorMessage>Please provide a Finance Approver for requests with financial impact.</errorMessage>
+</ValidationRule>

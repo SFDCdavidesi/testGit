@@ -1,0 +1,10 @@
+<p><img src='https://hive--c.na124.content.force.com/servlet/servlet.ImageServer?id=0153u000002RNsV&oid=00D23000000DTd6&lastMod=1628243969000'/></p>
+
+<p>Hello!</p>
+
+<p>Your ‘{!Contract.RecordType}’ for '{!Contract.Account}' has been approved.</p>
+			
+<p>For more details, please go to: <a href="{!Contract.EBH_RecordLink__c}">{!Contract.EBH_RecordLink__c}</a>.</p>
+			
+<p>Thank you.</p>
+<p>HIVE Team.</p>

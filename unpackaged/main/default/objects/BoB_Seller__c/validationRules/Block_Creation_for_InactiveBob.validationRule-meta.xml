@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Block_Creation_for_InactiveBob</fullName>
+    <active>true</active>
+    <description>US-0007698 - [Hyper care Bug LTTM] 1 seller cannot be in 2 different active LTTM record</description>
+    <errorConditionFormula>ISNEW() &amp;&amp; ISPICKVAL(BoB__r.Status__c, &#39;BoB Inactive&#39;)</errorConditionFormula>
+    <errorMessage>You cannot add a new seller to Inactive Cohort.</errorMessage>
+</ValidationRule>

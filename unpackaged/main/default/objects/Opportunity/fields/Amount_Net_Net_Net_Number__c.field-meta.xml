@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Amount_Net_Net_Net_Number__c</fullName>
+    <description>Workaround for problem with rollup summary with Advanced Currency Management: https://help.salesforce.com/articleView?id=000334299&amp;type=1&amp;mode=1</description>
+    <externalId>false</externalId>
+    <label>Amount Net Net Net Number</label>
+    <summarizedField>Ad_Product__c.Amount_Net_Net_Net_Number__c</summarizedField>
+    <summaryFilterItems>
+        <field>Ad_Product__c.Package_line_item__c</field>
+        <operation>equals</operation>
+        <value></value>
+    </summaryFilterItems>
+    <summaryForeignKey>Ad_Product__c.Opportunity__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

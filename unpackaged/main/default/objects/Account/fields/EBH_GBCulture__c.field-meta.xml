@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_GBCulture__c</fullName>
+    <description>US-0006931:[AU] Subscribe AU Sellers for Deals Program</description>
+    <externalId>false</externalId>
+    <label>Growth Portal Culture</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>DE</fullName>
+                <default>false</default>
+                <label>DE</label>
+            </value>
+            <value>
+                <fullName>en-GB</fullName>
+                <default>false</default>
+                <label>UK</label>
+            </value>
+            <value>
+                <fullName>FR</fullName>
+                <default>false</default>
+                <label>FR</label>
+            </value>
+            <value>
+                <fullName>IT</fullName>
+                <default>false</default>
+                <label>IT</label>
+            </value>
+            <value>
+                <fullName>ES</fullName>
+                <default>false</default>
+                <label>ES</label>
+            </value>
+            <value>
+                <fullName>en-AU</fullName>
+                <default>false</default>
+                <label>AU</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

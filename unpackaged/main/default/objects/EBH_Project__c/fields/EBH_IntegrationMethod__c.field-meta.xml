@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_IntegrationMethod__c</fullName>
+    <description>#US-0015700</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Type of the integration method that was chosen by a seller during the sign up process  (assisted  set up by a relevant 3PP or self- assisted set up)</inlineHelpText>
+    <label>Integration Method</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Assisted Set Up</fullName>
+                <default>false</default>
+                <label>Assisted Set Up</label>
+            </value>
+            <value>
+                <fullName>Self-Assisted Set Up</fullName>
+                <default>false</default>
+                <label>Self-Assisted Set Up</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

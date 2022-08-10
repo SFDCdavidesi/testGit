@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>US-0011511 - Additional approval step for Deal Release Statements</description>
+        <name>Approved_Deal_Statement_Summary_Email_ALert</name>
+        <label>Approved Deal Statement Summary Email ALert</label>
+        <locationX>50</locationX>
+        <locationY>455</locationY>
+        <actionName>Deal_Statement_Summary__c.Approved_Deal_Statement_Summary_Email_ALert</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>55.0</apiVersion>
+    <decisions>
+        <description>US-0011511 - Additional approval step for Deal Release Statements</description>
+        <name>Check_Status</name>
+        <label>Check Status</label>
+        <locationX>182</locationX>
+        <locationY>335</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Approve</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Approved</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Approved_Deal_Statement_Summary_Email_ALert</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Is Approve</label>
+        </rules>
+    </decisions>
+    <description>US-0011511 - Additional approval step for Deal Release Statements</description>
+    <environments>Default</environments>
+    <interviewLabel>Deal Statement Summary - Record Trigger Flow - After Context {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Deal Statement Summary - Record Trigger Flow - After Context</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_Status</targetReference>
+        </connector>
+        <object>Deal_Statement_Summary__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_ResponseDayRelative__c</fullName>
+    <description>[EBH] (EPH-1912) :Day of First Response relative (integer -&gt; number of days since the start of the campaign)</description>
+    <externalId>false</externalId>
+    <label>Response Day Relative</label>
+    <precision>11</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

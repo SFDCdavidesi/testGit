@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Q2IO_3</label>
+    <protected>false</protected>
+    <values>
+        <field>Default_Value__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Default__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>IO_Field__c</field>
+        <value xsi:type="xsd:string">IO_Paper__c</value>
+    </values>
+    <values>
+        <field>Media_Plan_Field__c</field>
+        <value xsi:type="xsd:string">IO_Paper__c</value>
+    </values>
+    <values>
+        <field>Opportunity_Field__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Quote_Field__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Update__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,23 @@
+<p><img src='https://hive--c.na124.content.force.com/servlet/servlet.ImageServer?id=0153u000002RNsV&oid=00D6A0000002Hft&lastMod=1628243969000'/></p>
+
+<p>Dear Contract Approver,</p>
+		
+<p>A ‘{!Contract.RecordType}’ contract has been requested with ‘{!Contract.Account}’ and will require your approval.</p>
+
+<p>Requester: {!Contract.OwnerFullName}</p>
+
+<p>Requester Comments: {!Contract.EBH_RequesterNotes__c}</p>
+
+<p>Approval Comments: {!ApprovalRequest.Comments}</p>
+
+<p>To approve or reject this item, reply to this email with the word APPROVE, APPROVED, YES, REJECT, REJECTED, or NO in the first line of the email message. To review the request follow the link:</p>
+	
+<p><a href="{!Contract.Link}">{!Contract.Link}</a></p>
+
+<p>If replying via email you can also add comments on the second line. The comments will be stored with the approval request in Hive.</p>
+
+<p>Note: For Hive to process your response the word APPROVE, APPROVED, YES, REJECT, REJECTED, or NO must be in the very first line of the reply email and any comment must be in the second line.</p>
+
+<p>Thank you,</p>
+	
+<p>The Hive Team</p>

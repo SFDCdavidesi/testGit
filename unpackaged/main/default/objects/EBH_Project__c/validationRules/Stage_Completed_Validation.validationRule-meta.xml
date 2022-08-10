@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage_Completed_Validation</fullName>
+    <active>true</active>
+    <description>US-0007801,
+S-0009913 [BUG] Update existing EU &amp; AU Onboarding validation rule</description>
+    <errorConditionFormula>AND(
+OR(
+   RecordType.DeveloperName == &#39;EUOnboarding&#39;,
+   RecordType.DeveloperName == &#39;eBayAUSMB&#39;
+),
+ISCHANGED(EBH_Stage__c),
+ISPICKVAL(EBH_Stage__c, &#39;Completed&#39;),
+NOT(AllowToComplete__c),
+NOT( $Setup.ActiveValidationRules__c.All_Validation_Rules_Deactivated__c )
+)</errorConditionFormula>
+    <errorMessage>Please use button &quot;Close Project&quot; to change status of this Onboarding project to &quot;Completed&quot;</errorMessage>
+</ValidationRule>

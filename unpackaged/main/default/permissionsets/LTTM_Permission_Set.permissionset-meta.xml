@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <classAccesses>
+        <apexClass>Batch_BobSellerBulkCSV</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>UploadController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>LTTM Permission Set</label>
+    <recordTypeVisibilities>
+        <recordType>BOB__c.Light_Touch_Category_Cohort</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <recordType>BOB__c.Managed_Cohort</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+</PermissionSet>

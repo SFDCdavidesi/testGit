@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HIVE_Product__c</fullName>
+    <description>US-0008600 - HIVE EPIC,
+US-0011331 - New Hive Products Object - Hive Products field changes</description>
+    <externalId>false</externalId>
+    <label>(NOT USED) HIVE Product</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Functional_Area</valueSetName>
+    </valueSet>
+</CustomField>

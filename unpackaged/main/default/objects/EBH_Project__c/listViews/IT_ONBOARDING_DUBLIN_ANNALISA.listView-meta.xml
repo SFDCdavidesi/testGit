@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IT_ONBOARDING_DUBLIN_ANNALISA</fullName>
+    <columns>EBH_Seller__c</columns>
+    <columns>OracleID__c</columns>
+    <columns>NAME</columns>
+    <columns>GMVLast12Months__c</columns>
+    <columns>EBH_Stage__c</columns>
+    <columns>Vertical__c</columns>
+    <columns>ABNVATNumber__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>greaterThan</operation>
+        <value>5/20/2021 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>Site__c</field>
+        <operation>equals</operation>
+        <value>IT</value>
+    </filters>
+    <filters>
+        <field>OWNER.FIRST_NAME</field>
+        <operation>equals</operation>
+        <value>Annalisa</value>
+    </filters>
+    <label>IT_ONBOARDING_DUBLIN_ANNALISA</label>
+</ListView>

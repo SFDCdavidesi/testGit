@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Client_Reporting_with_Schedule_only</fullName>
+    <active>true</active>
+    <description>When client reporting is activated, it always needs a schedule and a language or the scheduler script would stop.</description>
+    <errorConditionFormula>AND(Reporting_Active__c = True, OR(TEXT( Interval__c ) = &quot;&quot;,TEXT( Report_Language__c ) = &quot;&quot;) )</errorConditionFormula>
+    <errorMessage>Please always provide interval and report language when you activate Client Reporting schedule.</errorMessage>
+</ValidationRule>

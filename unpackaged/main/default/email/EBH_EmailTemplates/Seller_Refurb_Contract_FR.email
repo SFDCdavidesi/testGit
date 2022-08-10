@@ -1,0 +1,45 @@
+<p><img src='https://hive--c.na124.content.force.com/servlet/servlet.ImageServer?id=0153u000002RNsV&oid=00D6A0000002Hft&lastMod=1628243969000'/></p>
+<p style="text-align: justify;">
+Cher Vendeur,
+</p>
+<p style="text-align: justify;">
+Cet email, constituant le <strong>Formulaire de Participation au Programme « Reconditionné</strong> » (ci-après « <strong>le Formulaire</strong> »), vous invite à participer au Programme sur le Site eBay, tels que définis ci-dessous.
+</p>
+
+<table style="width: 978px; border-collapse: collapse; height: 168px;" border="1" cellspacing="5" cellpadding="5">
+<tbody>
+<tr>
+<td style="width: 248.667px;"><strong>Identifiant du Vendeur</strong></td>
+<td style="width: 706.444px;">{!EBH_ContractSeller__c.EBH_BusinessName__c}</td>
+<tr>
+<td style="width: 248.667px;"><strong>Programme</strong></td>
+<td style="width: 706.444px;">Programme « Reconditionné »</td>
+</tr>
+<tr>
+<td style="width: 248.667px;"><strong>Site eBay</strong></td>
+<td style="width: 706.444px;">eBay.fr</td>
+</tr>
+<tr>
+<td style="width: 248.667px;"><strong>Date de début</strong></td>
+<td style="width: 706.444px;">{!Contract.Contract_Send_Date__c}</td>
+</tr>
+</tbody>
+</table>
+
+<p style="text-align: justify;"><u>Procédure d’Admission</u></p>
+<p style="text-align: justify;">
+    Pour participer au Programme, veuillez lire et accepter les Conditions Générales (décrites ci-après) et répondre à cet email avec la mention « J’ACCEPTE ».
+</p>
+
+<p style="text-align: center;"><a href="{!$Label.SiteURL}?restype=contract&id={!Contract.Unique_Id__c}&reURL=www.ebay.fr">J’ACCEPTE</a></p>
+
+<p style="text-align: justify;"><u>Conditions Générales</u></p>
+<p style="text-align: justify;">
+    Les conditions du Formulaire et votre participation au Programme sont soumises aux <a href="{!Contract.TCs_URL__c}">Conditions de Participation du Programme « Reconditionné »</a>, applicables entre eBay GmbH (Albert-Einstein-Ring 2-6, 14532 Kleinmachnow, Allemagne ; numéro d’immatriculation : HRB13754P) et le Vendeur, ainsi qu'aux Règlements eBay qui y sont mentionnés.
+</p>
+<p style="text-align: justify;">
+    Les termes qui ne sont pas définis dans le présent Formulaire ont la signification qui leur est donnée dans les <a href="{!Contract.TCs_URL__c}">Conditions de Participation du Programme « Reconditionné »</a>. Toute modification à ces Conditions devra faire l’objet d’un avenant écrit (l’email n’est pas suffisant) entre le Vendeur et eBay.
+</p>
+
+<p>Cordialement,</p>
+<p>L’équipe eBay</p>

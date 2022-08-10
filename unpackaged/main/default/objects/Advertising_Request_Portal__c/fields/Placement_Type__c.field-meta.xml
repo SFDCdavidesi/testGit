@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Placement_Type__c</fullName>
+    <description>INTEG - N || ** eBay Advertising ** || WF - N || AP - N || VAL - N ||Class - N || Definition: Placement Type || CR - 00405201</description>
+    <externalId>false</externalId>
+    <label>Placement Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cross Device</fullName>
+                <default>false</default>
+                <label>Cross Device</label>
+            </value>
+            <value>
+                <fullName>Mobile Only</fullName>
+                <default>false</default>
+                <label>Mobile Only</label>
+            </value>
+            <value>
+                <fullName>Desktop Only</fullName>
+                <default>false</default>
+                <label>Desktop Only</label>
+            </value>
+            <value>
+                <fullName>Contextual/BT Targeting</fullName>
+                <default>false</default>
+                <label>Contextual/BT Targeting</label>
+            </value>
+            <value>
+                <fullName>Audience/Custom Audience targeting</fullName>
+                <default>false</default>
+                <label>Audience/Custom Audience targeting</label>
+            </value>
+            <value>
+                <fullName>Other targeting</fullName>
+                <default>false</default>
+                <label>Other targeting</label>
+            </value>
+            <value>
+                <fullName>Homepage Takeover W/ NPD</fullName>
+                <default>false</default>
+                <label>Homepage Takeover W/ NPD</label>
+            </value>
+            <value>
+                <fullName>Homepage Takeover W/out NPD</fullName>
+                <default>false</default>
+                <label>Homepage Takeover W/out NPD</label>
+            </value>
+            <value>
+                <fullName>Category Takeover</fullName>
+                <default>false</default>
+                <label>Category Takeover</label>
+            </value>
+            <value>
+                <fullName>Supernova</fullName>
+                <default>false</default>
+                <label>Supernova</label>
+            </value>
+            <value>
+                <fullName>No Targeting ROS</fullName>
+                <default>false</default>
+                <label>ROS-No Targeting</label>
+            </value>
+            <value>
+                <fullName>Halo/1PD</fullName>
+                <default>false</default>
+                <label>Halo/1PD</label>
+            </value>
+            <value>
+                <fullName>Audience/Contextual Targeting</fullName>
+                <default>false</default>
+                <label>Audience/Contextual Targeting</label>
+            </value>
+            <value>
+                <fullName>Takeovers/Roadblocks</fullName>
+                <default>false</default>
+                <label>Takeovers/Roadblocks</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

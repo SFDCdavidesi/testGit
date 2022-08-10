@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Remove_Sellers</fullName>
+    <availability>online</availability>
+    <description>US-0008068:[LTTM] Bulk Removal of Cohort Sellers capability and Field Label Change
+
+US-0012010 - Amends to &quot;Remove Sellers&quot; Button</description>
+    <displayType>massActionButton</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Delete Sellers</masterLabel>
+    <openType>sidebar</openType>
+    <page>RemoveCohortSeller</page>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+</WebLink>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deal_Window__c</fullName>
+    <description>US-0009621</description>
+    <externalId>false</externalId>
+    <formula>TEXT(Start_Retail_Week__c) +  IF(ISPICKVAL(End_Retail_Week__c,&#39;&#39;),&#39;&#39;,&#39;.&#39;) + TEXT(End_Retail_Week__c ) + IF(ISBLANK(Year__c),&#39;&#39;,&#39;-&#39;) + Year__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Deal Window</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

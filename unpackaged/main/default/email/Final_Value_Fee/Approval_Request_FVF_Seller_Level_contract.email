@@ -1,0 +1,3 @@
+<p>A new approval request for the FVF(seller level) contract has been submitted in Hive.</p>
+<p><a title="Approve or Reject" href="{!ApprovalRequest.Internal_URL}">Approve or Reject</a></p>
+<p><a title="Go to FVF(Seller Level)" href="{!Final_Value_Fee_FVF__c.Link}">Go to FVF(Seller Level)</a></p>

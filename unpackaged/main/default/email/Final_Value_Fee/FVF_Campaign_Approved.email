@@ -1,0 +1,3 @@
+<p data-aura-rendered-by="1365:590;a">Dear {!Final_Value_Fee_FVF__c.Requestor__c},</p>
+<p data-aura-rendered-by="1365:590;a">Your Final Value Fee Discount <a title="{!Final_Value_Fee_FVF__c.Name}" href="{!Final_Value_Fee_FVF__c.Link}">{!Final_Value_Fee_FVF__c.Name}</a>  has been Approved.</p>
+<p data-aura-rendered-by="1365:590;a">As a next step seller log into Hive to send the FVF contract to seller.</p>

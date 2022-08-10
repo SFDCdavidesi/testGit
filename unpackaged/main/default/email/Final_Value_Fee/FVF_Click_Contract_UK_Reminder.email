@@ -1,0 +1,7 @@
+<p>Dear&nbsp; {!Contact_Person__r.Name} ,&nbsp;</p>
+<p>Following my email&nbsp;on {!Contract_Send_Date__c} regarding the Final Value Fee rebate on the attached item list &ldquo;Nominated Items&rdquo; I would just like to remind you that you must click <strong>&lsquo;I agree&rsquo;</strong> to the contract in order for your rebate to be provided. If you could do this by&nbsp;{!Start_Date_w__c-1}, then I will be able to process your contract and provide a rebate. For your convenience, I am replicating the initial contract below.&nbsp;</p>
+<p>If you have any questions, please reply to this&nbsp;email&nbsp;and I will be in touch with you as soon as possible.&nbsp;</p>
+<p>Kind regards,&nbsp;</p>
+<p>{!CurrentUserName}</p>
+<p>&nbsp;</p>
+<p><em>{!OriginalFVFDiscountEmailBody}</em></p>

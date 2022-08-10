@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0008831 - Italy Coupon sellers. T&amp;Cs and contract templates</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>IT Item Coupon Contract</name>
+    <style>none</style>
+    <subject>Offerta Coupon | {eBaySellerID} | {CouponNameM} | {CouponStartDate} - {CouponEndDate}</subject>
+    <textOnly>Gentile Venditore,
+
+Ti preghiamo di verificare le seguenti informazioni relative alla tua partecipazione alla campagna di coupon (“Offerta Coupon” o “Promozione”). Se sono corrette e se intendi partecipare alla Offerta Coupon nei termini ed alle condizioni indicate nella seguente tabella, clicca sul pulsante “ACCETTO” che trovi sotto la tabella entro il {ContractDueDate}
+
+Venditore  {eBaySellerID} {LegalEntity}, {StreetName}, {Zip} {City}
+ID Venditore   {eBaySellerID}
+Siti eBay  {MainCouponSite}
+Periodo della Promozione  Dalle ore {CouponStartTime} CET del {CouponStartDate} alle ore {CouponEndTime} CET del {CouponEndDate}
+Prodotti inclusi nel Coupon e Valore di finanziamento
+
+Questo coupon è valido solo su prodotti selezionati e può essere utilizzato dagli utenti solo per l’acquisto degli stessi prodotti. La lista dei prodotti del venditore inclusa nel coupon (“ Prodotti inclusi ”) può essere visionata in allegato e specifica tutti i prodotti inclusi (IDs) e la relativa quota di finanziamento del venditore. Se altri prodotti devono essere aggiunti alla lista, questi devono essere concordati tra eBay e il Venditore via email almeno 5 giorni prima l’inizio del Coupon.
+
+Dettagli della Offerta Coupon
+
+- Coupon valido solo sui prodotti  inclusi  nella Offerta Coupon
+
+- Sconto applicato: {CouponDiscount%}{CouponDiscountAmount} di sconto sulla spesa totale effettuata da ogni utente utilizzando il Coupon (escluse eventuali spese di spedizione)
+
+- Sconto massimo ottenibile dagli utenti per ogni utilizzo Coupon: {CouponCap}.
+
+- Spesa minima richiesta agli utenti per ogni utilizzo Coupon: {Minimum_Transaction_Value__c}.
+
+- Numero massimo di utilizzi per ogni utente: {Max_Redemptions__c}.
+
+eBay  eBay GmbH, Albert-Einstein-Ring 2-6, 14532 Kleinmachnow
+Varie  {AdditionalArrangement}
+
+Cliccando su “ACCETTO” confermi quanto segue:
+
+gli oggetti che metti in vendita non sono contraffatti o copie non autorizzate;
+sei autorizzato a vendere/distribuire gli oggetti in vendita ed a spedirli nei luoghi da te indicati nell’inserzione;
+mettendo in vendita su eBay gli oggetti non stai violando gli obblighi derivanti da altri contratti;
+il prezzo di vendita indicato nella tabella (al netto dello sconto che vi si applicherà) rappresenta il prezzo consigliato dal produttore o il tuo prezzo di vendita corrente degli oggetti;
+non modificherai l’inserzione relativa agli oggetti durante il Periodo di Promozione senza l’approvazione scritta di eBay;
+dichiari di avere letto e compreso, ed accetti, i Termini e Condizioni qui riportati.
+
+Il presente documento ha il fine di regolare la specifica Offerta Coupon sui Siti eBay sopra elencati nei termini, nei modi e per la durata di quanto riportato nella tabella.  Per tutto quanto qui non indicato, si rimanda all’Accordo per gli Utenti di eBay ed ogni altra regola applicabile ai Siti eBay su cui la specifica Offerta Coupon avrà luogo.
+
+ACCETTO
+
+
+Cordiali saluti,
+Il team eBay</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

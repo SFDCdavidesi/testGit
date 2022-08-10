@@ -1,0 +1,9 @@
+Hello,
+
+Buyer has accepted the proposal for this Opportunity: {!Opportunity.Name}
+
+Buyer Seat Id: {!Opportunity.Buyer_Seat__c}
+DFP Proposal Id: {!Opportunity.Proposal_Id__c}
+DFP Order Id: {!Opportunity.Order_Id__c}
+
+{!Opportunity.Link}

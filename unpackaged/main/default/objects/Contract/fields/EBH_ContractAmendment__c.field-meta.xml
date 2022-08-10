@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_ContractAmendment__c</fullName>
+    <description>[EBH] (EPH-172,175) : Contract/Amendment</description>
+    <externalId>false</externalId>
+    <label>Contract/Amendment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Amendment</fullName>
+                <default>false</default>
+                <label>Amendment</label>
+            </value>
+            <value>
+                <fullName>Master/ Standalone</fullName>
+                <default>true</default>
+                <label>Master/ Standalone</label>
+            </value>
+            <value>
+                <fullName>Sub-agreement</fullName>
+                <default>false</default>
+                <label>Sub-agreement</label>
+            </value>
+            <value>
+                <fullName>Contract</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Contract</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

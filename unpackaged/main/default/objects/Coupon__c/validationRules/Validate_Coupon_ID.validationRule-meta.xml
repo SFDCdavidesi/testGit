@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Coupon_ID</fullName>
+    <active>true</active>
+    <description>EPH-7162 Object: Coupon__c - Create two record types</description>
+    <errorConditionFormula>AND(NOT(ISBLANK(Coupon_ID__c)),NOT( REGEX( SUBSTITUTE( Coupon_ID__c , &quot; &quot;, &quot;&quot;) , &quot;[a-zA-Z0-9_+-]+&quot;)))</errorConditionFormula>
+    <errorDisplayField>Coupon_ID__c</errorDisplayField>
+    <errorMessage>Invalid Coupon ID: all chars only alphanumerical values.</errorMessage>
+</ValidationRule>

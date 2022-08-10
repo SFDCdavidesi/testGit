@@ -1,0 +1,23 @@
+<p>Estimado {!ContFirstName}({!SellerName}),<br>
+Todos sabemos la alta competencia que actualmente existe entre los vendedores en las principales tiendas online existentes en España, y lo difícil que a veces resulta para dichos vendedores identificar sus mejores productos y mantenerse competitivos en precio. 
+</p>
+<p>Por esta razón, en eBay hemos desarrollado un nuevo informe que hemos llamado <b>“informe de competitividad”</b>.
+</p>
+<p>El objetivo de dicho informe es precisamente este, ayudar a los vendedores de eBay a <b>identificar</b> los productos con “mayor demanda” de su inventario, y también a <b>mantenerse competitivos</b> , recomendado un precio máximo de venta después de analizar y comparar los productos de nuestra web con los más vendidos en otras tiendas online del mercado español y que por tanto gozan de una gran demanda por parte de los consumidores. Este “precio máximo recomendado” es simplemente orientativo para el vendedor de eBay, siendo potestad del mismo decidir los precios finales de venta de sus productos. 
+</p>
+<p>Adjunto a este correo puedes encontrar el “informe de competitividad” generado por eBay para ti, con los artículos más demandados de tu inventario y el precio máximo recomendado a partir de las tendencias del mercado.
+</p>
+<p>Revisa los artículos que aparecen en el informe, y con el fin de aprovechar el potencial de los mismos, te recomendamos las siguientes medidas:  
+</p>
+<ul>
+<li><b>Optimización de precios:</b> ajusta los precios a tus productos intentando no sobrepasar el precio máximo recomendado que figura en el informe (columna H en el listado).</li>
+<li><b>Disponibilidad:</b> mantén siempre activos y con suficiente stock los anuncios de los productos más demandados en tu tienda de eBay. </li>
+</ul>
+<p>Recuerda este informe es puramente informativo, siendo el vendedor el que debe tomar sus propias decisiones. 
+</p>
+<p>eBay no se hace responsable de la información facilitada, que sólo muestra las tendencias del mercado, ni del uso de la misma por parte del vendedor.   
+</p>
+<p>Cualquier duda o consulta, por favor, contacta con nosotros.</p>
+<p>Gracias de antemano y esperamos que este nuevo “informe de competitividad” facilitado por eBay sea de gran utilidad para vosotros vendedores. </p>
+<p>Un saludo.</p>
+<p>{!CurrentUserFirstName} {!CurrentUserLastName}</p>

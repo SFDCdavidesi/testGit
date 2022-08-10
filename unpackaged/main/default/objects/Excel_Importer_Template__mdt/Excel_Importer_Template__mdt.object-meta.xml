@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>US-0011643 - SPIKE Implement Excel import module using JS to support copy paste</description>
+    <label>Excel Importer Template</label>
+    <pluralLabel>Excel Importer Templates</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

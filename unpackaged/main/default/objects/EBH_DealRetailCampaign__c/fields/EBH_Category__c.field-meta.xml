@@ -1,0 +1,1648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_Category__c</fullName>
+    <description>(EPH-5481) Category</description>
+    <externalId>false</externalId>
+    <label>Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>EBH_Country__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Antiquitäten &amp; Kunst</fullName>
+                <default>false</default>
+                <label>Antiquitäten &amp; Kunst</label>
+            </value>
+            <value>
+                <fullName>Auto &amp; Motorrad: Fahrzeuge</fullName>
+                <default>false</default>
+                <label>Auto &amp; Motorrad: Fahrzeuge</label>
+            </value>
+            <value>
+                <fullName>Auto &amp; Motorrad: Teile</fullName>
+                <default>false</default>
+                <label>Auto &amp; Motorrad: Teile</label>
+            </value>
+            <value>
+                <fullName>Baby</fullName>
+                <default>false</default>
+                <label>Baby</label>
+            </value>
+            <value>
+                <fullName>Bastel- &amp; Künstlerbedarf</fullName>
+                <default>false</default>
+                <label>Bastel- &amp; Künstlerbedarf</label>
+            </value>
+            <value>
+                <fullName>Beauty &amp; Gesundheit</fullName>
+                <default>false</default>
+                <label>Beauty &amp; Gesundheit</label>
+            </value>
+            <value>
+                <fullName>Briefmarken</fullName>
+                <default>false</default>
+                <label>Briefmarken</label>
+            </value>
+            <value>
+                <fullName>Bücher</fullName>
+                <default>false</default>
+                <label>Bücher</label>
+            </value>
+            <value>
+                <fullName>Büro &amp; Schreibwaren</fullName>
+                <default>false</default>
+                <label>Büro &amp; Schreibwaren</label>
+            </value>
+            <value>
+                <fullName>Business &amp; Industrie</fullName>
+                <default>false</default>
+                <label>Business &amp; Industrie</label>
+            </value>
+            <value>
+                <fullName>Computer, Tablets &amp; Netzwerk</fullName>
+                <default>false</default>
+                <label>Computer, Tablets &amp; Netzwerk</label>
+            </value>
+            <value>
+                <fullName>Feinschmecker</fullName>
+                <default>false</default>
+                <label>Feinschmecker</label>
+            </value>
+            <value>
+                <fullName>Filme &amp; DVDs</fullName>
+                <default>false</default>
+                <label>Filme &amp; DVDs</label>
+            </value>
+            <value>
+                <fullName>Foto &amp; Camcorder</fullName>
+                <default>false</default>
+                <label>Foto &amp; Camcorder</label>
+            </value>
+            <value>
+                <fullName>Garten &amp; Terrasse</fullName>
+                <default>false</default>
+                <label>Garten &amp; Terrasse</label>
+            </value>
+            <value>
+                <fullName>Handys &amp; Kommunikation</fullName>
+                <default>false</default>
+                <label>Handys &amp; Kommunikation</label>
+            </value>
+            <value>
+                <fullName>Haushaltsgeräte</fullName>
+                <default>false</default>
+                <label>Haushaltsgeräte</label>
+            </value>
+            <value>
+                <fullName>Haustierbedarf</fullName>
+                <default>false</default>
+                <label>Haustierbedarf</label>
+            </value>
+            <value>
+                <fullName>Heimwerker</fullName>
+                <default>false</default>
+                <label>Heimwerker</label>
+            </value>
+            <value>
+                <fullName>Immobilien</fullName>
+                <default>false</default>
+                <label>Immobilien</label>
+            </value>
+            <value>
+                <fullName>Kleidung &amp; Accessoires</fullName>
+                <default>false</default>
+                <label>Kleidung &amp; Accessoires</label>
+            </value>
+            <value>
+                <fullName>Möbel &amp; Wohnen</fullName>
+                <default>false</default>
+                <label>Möbel &amp; Wohnen</label>
+            </value>
+            <value>
+                <fullName>Modellbau</fullName>
+                <default>false</default>
+                <label>Modellbau</label>
+            </value>
+            <value>
+                <fullName>Münzen</fullName>
+                <default>false</default>
+                <label>Münzen</label>
+            </value>
+            <value>
+                <fullName>Musik</fullName>
+                <default>false</default>
+                <label>Musik</label>
+            </value>
+            <value>
+                <fullName>Musikinstrumente</fullName>
+                <default>false</default>
+                <label>Musikinstrumente</label>
+            </value>
+            <value>
+                <fullName>PC- &amp; Videospiele</fullName>
+                <default>false</default>
+                <label>PC- &amp; Videospiele</label>
+            </value>
+            <value>
+                <fullName>Reisen</fullName>
+                <default>false</default>
+                <label>Reisen</label>
+            </value>
+            <value>
+                <fullName>Sammeln &amp; Seltenes</fullName>
+                <default>false</default>
+                <label>Sammeln &amp; Seltenes</label>
+            </value>
+            <value>
+                <fullName>Spielzeug</fullName>
+                <default>false</default>
+                <label>Spielzeug</label>
+            </value>
+            <value>
+                <fullName>Sport</fullName>
+                <default>false</default>
+                <label>Sport</label>
+            </value>
+            <value>
+                <fullName>Tickets</fullName>
+                <default>false</default>
+                <label>Tickets</label>
+            </value>
+            <value>
+                <fullName>TV, Video &amp; Audio</fullName>
+                <default>false</default>
+                <label>TV, Video &amp; Audio</label>
+            </value>
+            <value>
+                <fullName>Uhren &amp; Schmuck</fullName>
+                <default>false</default>
+                <label>Uhren &amp; Schmuck</label>
+            </value>
+            <value>
+                <fullName>Verschiedenes</fullName>
+                <default>false</default>
+                <label>Verschiedenes</label>
+            </value>
+            <value>
+                <fullName>Antiques</fullName>
+                <default>false</default>
+                <label>Antiques</label>
+            </value>
+            <value>
+                <fullName>Art</fullName>
+                <default>false</default>
+                <label>Art</label>
+            </value>
+            <value>
+                <fullName>Books, Comics &amp; Magazines</fullName>
+                <default>false</default>
+                <label>Books, Comics &amp; Magazines</label>
+            </value>
+            <value>
+                <fullName>Business, Office &amp; Industrial</fullName>
+                <default>false</default>
+                <label>Business, Office &amp; Industrial</label>
+            </value>
+            <value>
+                <fullName>Cameras &amp; Photography</fullName>
+                <default>false</default>
+                <label>Cameras &amp; Photography</label>
+            </value>
+            <value>
+                <fullName>Cars, Motorcycles &amp; Vehicles</fullName>
+                <default>false</default>
+                <label>Cars, Motorcycles &amp; Vehicles</label>
+            </value>
+            <value>
+                <fullName>Clothes, Shoes &amp; Accessories</fullName>
+                <default>false</default>
+                <label>Clothes, Shoes &amp; Accessories</label>
+            </value>
+            <value>
+                <fullName>Coins</fullName>
+                <default>false</default>
+                <label>Coins</label>
+            </value>
+            <value>
+                <fullName>Collectables</fullName>
+                <default>false</default>
+                <label>Collectables</label>
+            </value>
+            <value>
+                <fullName>Computers/Tablets &amp; Networking</fullName>
+                <default>false</default>
+                <label>Computers/Tablets &amp; Networking</label>
+            </value>
+            <value>
+                <fullName>Crafts</fullName>
+                <default>false</default>
+                <label>Crafts</label>
+            </value>
+            <value>
+                <fullName>Dolls &amp; Bears</fullName>
+                <default>false</default>
+                <label>Dolls &amp; Bears</label>
+            </value>
+            <value>
+                <fullName>DVDs, Films &amp; TV</fullName>
+                <default>false</default>
+                <label>DVDs, Films &amp; TV</label>
+            </value>
+            <value>
+                <fullName>Events Tickets</fullName>
+                <default>false</default>
+                <label>Events Tickets</label>
+            </value>
+            <value>
+                <fullName>Everything Else</fullName>
+                <default>false</default>
+                <label>Everything Else</label>
+            </value>
+            <value>
+                <fullName>Garden &amp; Patio</fullName>
+                <default>false</default>
+                <label>Garden &amp; Patio</label>
+            </value>
+            <value>
+                <fullName>Health &amp; Beauty</fullName>
+                <default>false</default>
+                <label>Health &amp; Beauty</label>
+            </value>
+            <value>
+                <fullName>Holidays &amp; Travel</fullName>
+                <default>false</default>
+                <label>Holidays &amp; Travel</label>
+            </value>
+            <value>
+                <fullName>Home, Furniture &amp; DIY</fullName>
+                <default>false</default>
+                <label>Home, Furniture &amp; DIY</label>
+            </value>
+            <value>
+                <fullName>Jewellery &amp; Watches</fullName>
+                <default>false</default>
+                <label>Jewellery &amp; Watches</label>
+            </value>
+            <value>
+                <fullName>Mobile Phones &amp; Communication</fullName>
+                <default>false</default>
+                <label>Mobile Phones &amp; Communication</label>
+            </value>
+            <value>
+                <fullName>Music</fullName>
+                <default>false</default>
+                <label>Music</label>
+            </value>
+            <value>
+                <fullName>Musical Instruments</fullName>
+                <default>false</default>
+                <label>Musical Instruments</label>
+            </value>
+            <value>
+                <fullName>Pet Supplies</fullName>
+                <default>false</default>
+                <label>Pet Supplies</label>
+            </value>
+            <value>
+                <fullName>Pottery, Porcelain &amp; Glass</fullName>
+                <default>false</default>
+                <label>Pottery, Porcelain &amp; Glass</label>
+            </value>
+            <value>
+                <fullName>Property</fullName>
+                <default>false</default>
+                <label>Property</label>
+            </value>
+            <value>
+                <fullName>Sound &amp; Vision</fullName>
+                <default>false</default>
+                <label>Sound &amp; Vision</label>
+            </value>
+            <value>
+                <fullName>Sporting Goods</fullName>
+                <default>false</default>
+                <label>Sporting Goods</label>
+            </value>
+            <value>
+                <fullName>Sports Memorabilia</fullName>
+                <default>false</default>
+                <label>Sports Memorabilia</label>
+            </value>
+            <value>
+                <fullName>Stamps</fullName>
+                <default>false</default>
+                <label>Stamps</label>
+            </value>
+            <value>
+                <fullName>Toys &amp; Games</fullName>
+                <default>false</default>
+                <label>Toys &amp; Games</label>
+            </value>
+            <value>
+                <fullName>Vehicle Parts &amp; Accessories</fullName>
+                <default>false</default>
+                <label>Vehicle Parts &amp; Accessories</label>
+            </value>
+            <value>
+                <fullName>Video Games &amp; Consoles</fullName>
+                <default>false</default>
+                <label>Video Games &amp; Consoles</label>
+            </value>
+            <value>
+                <fullName>Wholesale &amp; Job Lots</fullName>
+                <default>false</default>
+                <label>Wholesale &amp; Job Lots</label>
+            </value>
+            <value>
+                <fullName>Animalerie</fullName>
+                <default>false</default>
+                <label>Animalerie</label>
+            </value>
+            <value>
+                <fullName>Art, antiquités</fullName>
+                <default>false</default>
+                <label>Art, antiquités</label>
+            </value>
+            <value>
+                <fullName>Auto, moto</fullName>
+                <default>false</default>
+                <label>Auto, moto</label>
+            </value>
+            <value>
+                <fullName>Bateaux, voile, nautisme</fullName>
+                <default>false</default>
+                <label>Bateaux, voile, nautisme</label>
+            </value>
+            <value>
+                <fullName>Beauté, bien-être, parfums</fullName>
+                <default>false</default>
+                <label>Beauté, bien-être, parfums</label>
+            </value>
+            <value>
+                <fullName>Bébé, puériculture</fullName>
+                <default>false</default>
+                <label>Bébé, puériculture</label>
+            </value>
+            <value>
+                <fullName>Bijoux, montres</fullName>
+                <default>false</default>
+                <label>Bijoux, montres</label>
+            </value>
+            <value>
+                <fullName>Bricolage</fullName>
+                <default>false</default>
+                <label>Bricolage</label>
+            </value>
+            <value>
+                <fullName>Céramiques, verres</fullName>
+                <default>false</default>
+                <label>Céramiques, verres</label>
+            </value>
+            <value>
+                <fullName>Collections</fullName>
+                <default>false</default>
+                <label>Collections</label>
+            </value>
+            <value>
+                <fullName>DVD, cinéma</fullName>
+                <default>false</default>
+                <label>DVD, cinéma</label>
+            </value>
+            <value>
+                <fullName>Electroménager</fullName>
+                <default>false</default>
+                <label>Electroménager</label>
+            </value>
+            <value>
+                <fullName>Image, son</fullName>
+                <default>false</default>
+                <label>Image, son</label>
+            </value>
+            <value>
+                <fullName>Immobilier</fullName>
+                <default>false</default>
+                <label>Immobilier</label>
+            </value>
+            <value>
+                <fullName>Informatique, réseaux</fullName>
+                <default>false</default>
+                <label>Informatique, réseaux</label>
+            </value>
+            <value>
+                <fullName>Instruments de musique</fullName>
+                <default>false</default>
+                <label>Instruments de musique</label>
+            </value>
+            <value>
+                <fullName>Jardin, terrasse</fullName>
+                <default>false</default>
+                <label>Jardin, terrasse</label>
+            </value>
+            <value>
+                <fullName>Jeux vidéo, consoles</fullName>
+                <default>false</default>
+                <label>Jeux vidéo, consoles</label>
+            </value>
+            <value>
+                <fullName>Jouets et jeux</fullName>
+                <default>false</default>
+                <label>Jouets et jeux</label>
+            </value>
+            <value>
+                <fullName>Livres, BD, revues</fullName>
+                <default>false</default>
+                <label>Livres, BD, revues</label>
+            </value>
+            <value>
+                <fullName>Loisirs créatifs</fullName>
+                <default>false</default>
+                <label>Loisirs créatifs</label>
+            </value>
+            <value>
+                <fullName>Maison</fullName>
+                <default>false</default>
+                <label>Maison</label>
+            </value>
+            <value>
+                <fullName>Monnaies</fullName>
+                <default>false</default>
+                <label>Monnaies</label>
+            </value>
+            <value>
+                <fullName>Musique, CD, vinyles</fullName>
+                <default>false</default>
+                <label>Musique, CD, vinyles</label>
+            </value>
+            <value>
+                <fullName>Photo, caméscopes</fullName>
+                <default>false</default>
+                <label>Photo, caméscopes</label>
+            </value>
+            <value>
+                <fullName>PME, artisans, agriculteurs</fullName>
+                <default>false</default>
+                <label>PME, artisans, agriculteurs</label>
+            </value>
+            <value>
+                <fullName>Sports, vacances</fullName>
+                <default>false</default>
+                <label>Sports, vacances</label>
+            </value>
+            <value>
+                <fullName>Téléphonie, mobilité</fullName>
+                <default>false</default>
+                <label>Téléphonie, mobilité</label>
+            </value>
+            <value>
+                <fullName>Timbres</fullName>
+                <default>false</default>
+                <label>Timbres</label>
+            </value>
+            <value>
+                <fullName>Véhicules: pièces, accessoires</fullName>
+                <default>false</default>
+                <label>Véhicules: pièces, accessoires</label>
+            </value>
+            <value>
+                <fullName>Vêtements, accessoires</fullName>
+                <default>false</default>
+                <label>Vêtements, accessoires</label>
+            </value>
+            <value>
+                <fullName>Vins, Gastronomie</fullName>
+                <default>false</default>
+                <label>Vins, Gastronomie</label>
+            </value>
+            <value>
+                <fullName>Abbigliamento e accessori</fullName>
+                <default>false</default>
+                <label>Abbigliamento e accessori</label>
+            </value>
+            <value>
+                <fullName>Altre categorie</fullName>
+                <default>false</default>
+                <label>Altre categorie</label>
+            </value>
+            <value>
+                <fullName>Arte e antiquariato</fullName>
+                <default>false</default>
+                <label>Arte e antiquariato</label>
+            </value>
+            <value>
+                <fullName>Auto, moto e altri veicoli</fullName>
+                <default>false</default>
+                <label>Auto, moto e altri veicoli</label>
+            </value>
+            <value>
+                <fullName>Bellezza e salute</fullName>
+                <default>false</default>
+                <label>Bellezza e salute</label>
+            </value>
+            <value>
+                <fullName>Biglietti ed eventi</fullName>
+                <default>false</default>
+                <label>Biglietti ed eventi</label>
+            </value>
+            <value>
+                <fullName>Casa, arredamento e bricolage</fullName>
+                <default>false</default>
+                <label>Casa, arredamento e bricolage</label>
+            </value>
+            <value>
+                <fullName>Collezionismo</fullName>
+                <default>false</default>
+                <label>Collezionismo</label>
+            </value>
+            <value>
+                <fullName>Commercio, ufficio e Industria</fullName>
+                <default>false</default>
+                <label>Commercio, ufficio e Industria</label>
+            </value>
+            <value>
+                <fullName>Elettrodomestici</fullName>
+                <default>false</default>
+                <label>Elettrodomestici</label>
+            </value>
+            <value>
+                <fullName>Film e DVD</fullName>
+                <default>false</default>
+                <label>Film e DVD</label>
+            </value>
+            <value>
+                <fullName>Fotografia e video</fullName>
+                <default>false</default>
+                <label>Fotografia e video</label>
+            </value>
+            <value>
+                <fullName>Francobolli</fullName>
+                <default>false</default>
+                <label>Francobolli</label>
+            </value>
+            <value>
+                <fullName>Fumetti</fullName>
+                <default>false</default>
+                <label>Fumetti</label>
+            </value>
+            <value>
+                <fullName>Giardino e arredamento esterni</fullName>
+                <default>false</default>
+                <label>Giardino e arredamento esterni</label>
+            </value>
+            <value>
+                <fullName>Giocattoli e modellismo</fullName>
+                <default>false</default>
+                <label>Giocattoli e modellismo</label>
+            </value>
+            <value>
+                <fullName>Hobby creativi</fullName>
+                <default>false</default>
+                <label>Hobby creativi</label>
+            </value>
+            <value>
+                <fullName>Infanzia e premaman</fullName>
+                <default>false</default>
+                <label>Infanzia e premaman</label>
+            </value>
+            <value>
+                <fullName>Informatica</fullName>
+                <default>false</default>
+                <label>Informatica</label>
+            </value>
+            <value>
+                <fullName>Libri e riviste</fullName>
+                <default>false</default>
+                <label>Libri e riviste</label>
+            </value>
+            <value>
+                <fullName>Monete e banconote</fullName>
+                <default>false</default>
+                <label>Monete e banconote</label>
+            </value>
+            <value>
+                <fullName>Musica, CD e vinili</fullName>
+                <default>false</default>
+                <label>Musica, CD e vinili</label>
+            </value>
+            <value>
+                <fullName>Nautica e imbarcazioni</fullName>
+                <default>false</default>
+                <label>Nautica e imbarcazioni</label>
+            </value>
+            <value>
+                <fullName>Orologi e gioielli</fullName>
+                <default>false</default>
+                <label>Orologi e gioielli</label>
+            </value>
+            <value>
+                <fullName>Sport e viaggi</fullName>
+                <default>false</default>
+                <label>Sport e viaggi</label>
+            </value>
+            <value>
+                <fullName>Strumenti musicali</fullName>
+                <default>false</default>
+                <label>Strumenti musicali</label>
+            </value>
+            <value>
+                <fullName>Telefonia fissa e mobile</fullName>
+                <default>false</default>
+                <label>Telefonia fissa e mobile</label>
+            </value>
+            <value>
+                <fullName>TV, audio e video</fullName>
+                <default>false</default>
+                <label>TV, audio e video</label>
+            </value>
+            <value>
+                <fullName>Veicoli: ricambi e accessori</fullName>
+                <default>false</default>
+                <label>Veicoli: ricambi e accessori</label>
+            </value>
+            <value>
+                <fullName>Videogiochi e console</fullName>
+                <default>false</default>
+                <label>Videogiochi e console</label>
+            </value>
+            <value>
+                <fullName>Vini, caffè e gastronomia</fullName>
+                <default>false</default>
+                <label>Vini, caffè e gastronomia</label>
+            </value>
+            <value>
+                <fullName>Arte y antigüedades</fullName>
+                <default>false</default>
+                <label>Arte y antigüedades</label>
+            </value>
+            <value>
+                <fullName>Bebés</fullName>
+                <default>false</default>
+                <label>Bebés</label>
+            </value>
+            <value>
+                <fullName>Belleza y salud</fullName>
+                <default>false</default>
+                <label>Belleza y salud</label>
+            </value>
+            <value>
+                <fullName>Cámaras y fotografía</fullName>
+                <default>false</default>
+                <label>Cámaras y fotografía</label>
+            </value>
+            <value>
+                <fullName>Casa, jardín y bricolaje</fullName>
+                <default>false</default>
+                <label>Casa, jardín y bricolaje</label>
+            </value>
+            <value>
+                <fullName>Cine, DVD y películas</fullName>
+                <default>false</default>
+                <label>Cine, DVD y películas</label>
+            </value>
+            <value>
+                <fullName>Coches, Motos y Otros Vehíc.</fullName>
+                <default>false</default>
+                <label>Coches, Motos y Otros Vehíc.</label>
+            </value>
+            <value>
+                <fullName>Coleccionismo</fullName>
+                <default>false</default>
+                <label>Coleccionismo</label>
+            </value>
+            <value>
+                <fullName>Consolas y videojuegos</fullName>
+                <default>false</default>
+                <label>Consolas y videojuegos</label>
+            </value>
+            <value>
+                <fullName>Deportes</fullName>
+                <default>false</default>
+                <label>Deportes</label>
+            </value>
+            <value>
+                <fullName>Electrodomésticos</fullName>
+                <default>false</default>
+                <label>Electrodomésticos</label>
+            </value>
+            <value>
+                <fullName>Entradas y eventos</fullName>
+                <default>false</default>
+                <label>Entradas y eventos</label>
+            </value>
+            <value>
+                <fullName>Equipamiento y maquinaria</fullName>
+                <default>false</default>
+                <label>Equipamiento y maquinaria</label>
+            </value>
+            <value>
+                <fullName>Imagen y sonido</fullName>
+                <default>false</default>
+                <label>Imagen y sonido</label>
+            </value>
+            <value>
+                <fullName>Informática y tablets</fullName>
+                <default>false</default>
+                <label>Informática y tablets</label>
+            </value>
+            <value>
+                <fullName>Instrumentos musicales</fullName>
+                <default>false</default>
+                <label>Instrumentos musicales</label>
+            </value>
+            <value>
+                <fullName>Juguetes</fullName>
+                <default>false</default>
+                <label>Juguetes</label>
+            </value>
+            <value>
+                <fullName>Libros, revistas y cómics</fullName>
+                <default>false</default>
+                <label>Libros, revistas y cómics</label>
+            </value>
+            <value>
+                <fullName>Monedas y billetes</fullName>
+                <default>false</default>
+                <label>Monedas y billetes</label>
+            </value>
+            <value>
+                <fullName>Motor: recambios y accesorios</fullName>
+                <default>false</default>
+                <label>Motor: recambios y accesorios</label>
+            </value>
+            <value>
+                <fullName>Móviles y telefonía</fullName>
+                <default>false</default>
+                <label>Móviles y telefonía</label>
+            </value>
+            <value>
+                <fullName>Música, CDs y vinilos</fullName>
+                <default>false</default>
+                <label>Música, CDs y vinilos</label>
+            </value>
+            <value>
+                <fullName>Otras categorías</fullName>
+                <default>false</default>
+                <label>Otras categorías</label>
+            </value>
+            <value>
+                <fullName>Relojes y joyas</fullName>
+                <default>false</default>
+                <label>Relojes y joyas</label>
+            </value>
+            <value>
+                <fullName>Ropa, calzado y complementos</fullName>
+                <default>false</default>
+                <label>Ropa, calzado y complementos</label>
+            </value>
+            <value>
+                <fullName>Sellos</fullName>
+                <default>false</default>
+                <label>Sellos</label>
+            </value>
+            <value>
+                <fullName>Viajes</fullName>
+                <default>false</default>
+                <label>Viajes</label>
+            </value>
+            <value>
+                <fullName>Vinos y gastronomía</fullName>
+                <default>false</default>
+                <label>Vinos y gastronomía</label>
+            </value>
+            <value>
+                <fullName>Books, Magazines</fullName>
+                <default>false</default>
+                <label>Books, Magazines</label>
+            </value>
+            <value>
+                <fullName>Business</fullName>
+                <default>false</default>
+                <label>Business</label>
+            </value>
+            <value>
+                <fullName>Cameras</fullName>
+                <default>false</default>
+                <label>Cameras</label>
+            </value>
+            <value>
+                <fullName>Cars, Bikes, Boats</fullName>
+                <default>false</default>
+                <label>Cars, Bikes, Boats</label>
+            </value>
+            <value>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+                <label>Electronics</label>
+            </value>
+            <value>
+                <fullName>Food &amp; Drinks</fullName>
+                <default>false</default>
+                <label>Food &amp; Drinks</label>
+            </value>
+            <value>
+                <fullName>Gift Cards &amp; Vouchers</fullName>
+                <default>false</default>
+                <label>Gift Cards &amp; Vouchers</label>
+            </value>
+            <value>
+                <fullName>Home &amp; Garden</fullName>
+                <default>false</default>
+                <label>Home &amp; Garden</label>
+            </value>
+            <value>
+                <fullName>Home Appliances</fullName>
+                <default>false</default>
+                <label>Home Appliances</label>
+            </value>
+            <value>
+                <fullName>Home Entertainment</fullName>
+                <default>false</default>
+                <label>Home Entertainment</label>
+            </value>
+            <value>
+                <fullName>Industrial</fullName>
+                <default>false</default>
+                <label>Industrial</label>
+            </value>
+            <value>
+                <fullName>Lots More...</fullName>
+                <default>false</default>
+                <label>Lots More...</label>
+            </value>
+            <value>
+                <fullName>Movies</fullName>
+                <default>false</default>
+                <label>Movies</label>
+            </value>
+            <value>
+                <fullName>Phones &amp; Accessories</fullName>
+                <default>false</default>
+                <label>Phones &amp; Accessories</label>
+            </value>
+            <value>
+                <fullName>Pottery, Glass</fullName>
+                <default>false</default>
+                <label>Pottery, Glass</label>
+            </value>
+            <value>
+                <fullName>Services</fullName>
+                <default>false</default>
+                <label>Services</label>
+            </value>
+            <value>
+                <fullName>Toys, Hobbies</fullName>
+                <default>false</default>
+                <label>Toys, Hobbies</label>
+            </value>
+            <value>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+                <label>Unknown</label>
+            </value>
+            <value>
+                <fullName>Tickets, Travel</fullName>
+                <default>false</default>
+                <label>Tickets, Travel</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Antiquitäten &amp; Kunst</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Auto &amp; Motorrad: Fahrzeuge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Auto &amp; Motorrad: Teile</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Baby</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Bastel- &amp; Künstlerbedarf</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Beauty &amp; Gesundheit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Briefmarken</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Bücher</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Büro &amp; Schreibwaren</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Business &amp; Industrie</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Computer, Tablets &amp; Netzwerk</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Feinschmecker</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Filme &amp; DVDs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Foto &amp; Camcorder</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Garten &amp; Terrasse</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Handys &amp; Kommunikation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Haushaltsgeräte</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Haustierbedarf</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Heimwerker</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Immobilien</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Kleidung &amp; Accessoires</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Möbel &amp; Wohnen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Modellbau</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Münzen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Musik</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Musikinstrumente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>PC- &amp; Videospiele</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Reisen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Sammeln &amp; Seltenes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Spielzeug</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Sport</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Tickets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>TV, Video &amp; Audio</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Uhren &amp; Schmuck</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Verschiedenes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Antiques</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Art</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>Books, Comics &amp; Magazines</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>Business, Office &amp; Industrial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>Cameras &amp; Photography</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>Cars, Motorcycles &amp; Vehicles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Clothes, Shoes &amp; Accessories</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Coins</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Collectables</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Computers/Tablets &amp; Networking</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Crafts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Dolls &amp; Bears</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>DVDs, Films &amp; TV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>Events Tickets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>Everything Else</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>Garden &amp; Patio</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Health &amp; Beauty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>Holidays &amp; Travel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>Home, Furniture &amp; DIY</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Jewellery &amp; Watches</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>Mobile Phones &amp; Communication</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Music</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Musical Instruments</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Pet Supplies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>Pottery, Porcelain &amp; Glass</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>Property</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>Sound &amp; Vision</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Sporting Goods</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>Sports Memorabilia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Stamps</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>Toys &amp; Games</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Vehicle Parts &amp; Accessories</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Video Games &amp; Consoles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>Wholesale &amp; Job Lots</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Animalerie</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Art, antiquités</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Auto, moto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Bateaux, voile, nautisme</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Beauté, bien-être, parfums</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Bébé, puériculture</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Bijoux, montres</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Bricolage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Céramiques, verres</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Collections</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>DVD, cinéma</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Electroménager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Image, son</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Immobilier</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Informatique, réseaux</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Instruments de musique</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Jardin, terrasse</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Jeux vidéo, consoles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Jouets et jeux</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Livres, BD, revues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Loisirs créatifs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Maison</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Monnaies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Musique, CD, vinyles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Photo, caméscopes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>PME, artisans, agriculteurs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Sports, vacances</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Téléphonie, mobilité</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Timbres</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Véhicules: pièces, accessoires</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Vêtements, accessoires</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Vins, Gastronomie</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Abbigliamento e accessori</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Altre categorie</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Arte e antiquariato</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Auto, moto e altri veicoli</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Bellezza e salute</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Biglietti ed eventi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Casa, arredamento e bricolage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Collezionismo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Commercio, ufficio e Industria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Elettrodomestici</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Film e DVD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Fotografia e video</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Francobolli</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Fumetti</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Giardino e arredamento esterni</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Giocattoli e modellismo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Hobby creativi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Infanzia e premaman</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Informatica</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Libri e riviste</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Monete e banconote</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Musica, CD e vinili</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Nautica e imbarcazioni</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Orologi e gioielli</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Sport e viaggi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Strumenti musicali</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Telefonia fissa e mobile</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>TV, audio e video</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Veicoli: ricambi e accessori</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Videogiochi e console</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Vini, caffè e gastronomia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Arte y antigüedades</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Bebés</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Belleza y salud</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Cámaras y fotografía</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Casa, jardín y bricolaje</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Cine, DVD y películas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Coches, Motos y Otros Vehíc.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Coleccionismo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Consolas y videojuegos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Deportes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Electrodomésticos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Entradas y eventos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Equipamiento y maquinaria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Imagen y sonido</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Informática y tablets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Instrumentos musicales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Juguetes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Libros, revistas y cómics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Monedas y billetes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Motor: recambios y accesorios</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Móviles y telefonía</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Música, CDs y vinilos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Otras categorías</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Relojes y joyas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Ropa, calzado y complementos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Sellos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Viajes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Vinos y gastronomía</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Books, Magazines</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Business</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Cameras</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Cars, Bikes, Boats</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Electronics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Food &amp; Drinks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Gift Cards &amp; Vouchers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Home &amp; Garden</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Home Appliances</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Home Entertainment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Industrial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Lots More...</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Movies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Phones &amp; Accessories</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Pottery, Glass</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Toys, Hobbies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Unknown</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Tickets, Travel</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

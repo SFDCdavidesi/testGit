@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_CouponSubtitleCopy</fullName>
+    <active>true</active>
+    <description>US-0008237 - Coupon Launch Reminder UK Templates - Conditional Content</description>
+    <errorConditionFormula>AND(  INCLUDES( Couponsite_s__c , &#39;ebay.co.uk&#39;) , ISBLANK( Coupon_Subtitle_Copy__c ) , ISPICKVAL( Stage__c , &#39;Seller Negotiation&#39;) )</errorConditionFormula>
+    <errorDisplayField>Coupon_Subtitle_Copy__c</errorDisplayField>
+    <errorMessage>Please ensure that Coupon Subtitle Copy field is populated before proceeding</errorMessage>
+</ValidationRule>

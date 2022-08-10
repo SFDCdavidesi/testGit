@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Complexity_Estimation_story_points__c</fullName>
+    <description>For HIVE team, used to estimate preliminary complexity of the request
+US-0011982</description>
+    <externalId>false</externalId>
+    <inlineHelpText>For HIVE team, used to estimate preliminary complexity of the request</inlineHelpText>
+    <label>Complexity Estimation (dev story points)</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

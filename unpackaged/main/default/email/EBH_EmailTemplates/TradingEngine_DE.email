@@ -1,0 +1,114 @@
+<p style="text-align: justify;">Liebe {!SellerName},&nbsp;</p>
+<p style="text-align: justify;">Aufgrund umfangreicher Nachfrage-Analysen konnten wir bestimmte <strong>Top Produkte</strong> identifizieren, die von potenziellen K&auml;ufern am Markt sehr h&auml;ufig nachgefragt werden. Einige dieser Produkte haben auch Sie in Ihrem Portfolio. Die Excel-Tabelle im Anhang an diese E-Mail enth&auml;lt Ihre Top Produkte mit tagesaktuellen Informationen zur momentanen Wettbewerbssituation. <br />Um die hohe Nachfrage nach diesen Produkten f&uuml;r sich zu nutzen, empfehlen wir Ihnen folgende Ma&szlig;nahmen f&uuml;r die in der Excel-Liste genannten Top Produkte:</p>
+<ul>
+<li style="text-align: justify;">Tabellenblatt &bdquo;Preisoptimierung&ldquo;: Optimieren Sie die Preise f&uuml;r Ihre Top Produkte; bieten Sie sie idealerweise zum gleichen Preis oder g&uuml;nstiger an wie der Wettbewerb (Spalte F in der Liste)&nbsp;</li>
+</ul>
+<ul>
+<li style="text-align: justify;">Tabellenblatt &bdquo;Sortimentsempfehlungen&ldquo;: Nehmen Sie empfohlene Top Produkte neu in Ihren eBay-Bestand auf&nbsp;</li>
+</ul>
+<p>Die Bedeutung der Spalten in der Tabelle habe ich Ihnen in der Legende ganz unten in dieser E-Mail erl&auml;utert.</p>
+<p>Durch diese Anpassungen k&ouml;nnen Sie ggf. auch von unseren Marketing-Kampagnen profitieren. N&auml;heres erl&auml;utere ich Ihnen gerne im Rahmen eines Telefongespr&auml;chs.</p>
+<p>Vorab schon einmal vielen Dank f&uuml;r Ihre Bem&uuml;hungen und Unterst&uuml;tzung.</p>
+<p>&nbsp;</p>
+<p>Mit freundlichen Gr&uuml;&szlig;en,</p>
+<p><strong>{!CurrentUserName}</strong></p>
+<p>&nbsp;</p>
+<table style="height: 234px; width: 847px; border-collapse: collapse;" border="1">
+<tbody>
+<tr>
+<td style="width: 835px; padding: 5px; text-align: center;" colspan="2">&nbsp;<strong>Tabellenblatt &bdquo; Preisoptimierung &ldquo;</strong></td>
+</tr>
+<tr>
+<td style="width: 228.111px; padding: 5px;"><strong>Spalten&uuml;berschrift:&nbsp;</strong></td>
+<td style="width: 606.889px; padding: 5px;"><strong>Erkl&auml;rung:</strong></td>
+</tr>
+<tr>
+<td style="width: 228.111px; padding: 5px;">Nutzername</td>
+<td style="width: 606.889px; padding: 5px; text-align: justify;">Die Empfehlungen in der Liste beziehen sich auf das hier genannte Nutzerkonto. Sollten Sie bei eBay &uuml;ber weitere Nutzerkonten verf&uuml;gen, fragen Sie bitte unsere Concierge-Mitarbeiter, ob auch daf&uuml;r Produktempfehlungen vorliegen.</td>
+</tr>
+<tr>
+<td style="width: 228.111px; padding: 5px;">Artikelnummer</td>
+<td style="width: 606.889px; padding: 5px; text-align: justify;">Artikelnummer bei eBay</td>
+</tr>
+<tr>
+<td style="width: 228.111px; padding: 5px;">Angebotstitel</td>
+<td style="width: 606.889px; padding: 5px; text-align: justify;">Der von Ihnen gew&auml;hlte Angebotstitel.</td>
+</tr>
+<tr>
+<td style="width: 228.111px; padding: 5px;">Ihr aktueller Verkaufspreis</td>
+<td style="width: 606.889px; padding: 5px; text-align: justify;">Der tagesaktuelle VK Preis, der heute in Ihrem Angebot angezeigt wird.</td>
+</tr>
+<tr>
+<td style="width: 228.111px; padding: 5px;">Empfohlener Verkaufspreis oder niedriger (mit Versandkosten)</td>
+<td style="width: 606.889px; padding: 5px; text-align: justify;">Der aktuell beste Preis f&uuml;r dieses Produkt, den wir im Markt finden. Bieten Sie Ihr Produkt zu diesem oder einem g&uuml;nstigeren Preis an, um Ihren Umsatz zu steigern.</td>
+</tr>
+<tr>
+<td style="width: 228.111px; padding: 5px;">Hauptkategorie</td>
+<td style="width: 606.889px; padding: 5px; text-align: justify;">eBay Hauptkategorie, in der Ihr Artikel eingestellt wurde</td>
+</tr>
+<tr>
+<td style="width: 228.111px; padding: 5px;">Kat.-ebene 3</td>
+<td style="width: 606.889px; padding: 5px; text-align: justify;">Unterkategorie der Ebene 3</td>
+</tr>
+<tr>
+<td style="width: 228.111px; padding: 5px;">Marke</td>
+<td style="width: 606.889px; padding: 5px; text-align: justify;">Markenname, wie Sie ihn in den Artikelmerkmalen hinterlegt haben oder wie er sich aus der hinterlegten EAN Nummer ergibt.&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 228.111px; padding: 5px;">EAN</td>
+<td style="width: 606.889px; padding: 5px; text-align: justify;">EAN steht f&uuml;r &bdquo;European Article Number&ldquo; und stellt eine international eindeutige Produktkennzeichnung f&uuml;r Artikel dar. F&uuml;r viele Artikel mit EAN gibt es im eBay-Katalog hinterlegte Katalogdaten, die Sie nutzen k&ouml;nnen.</td>
+</tr>
+<tr>
+<td style="width: 228.111px; padding: 5px;">Preisunterschied</td>
+<td style="width: 606.889px; padding: 5px; text-align: justify;">Gibt den Preisunterschied in Prozent wieder, den Ihr aktueller Verkaufspreis im Vergleich zum empfohlenen Verkaufspreis aufweist.</td>
+</tr>
+<tr>
+<td style="width: 228.111px; padding: 5px;">Feststellungsdatum</td>
+<td style="width: 606.889px; padding: 5px; text-align: justify;">Datum, an dem die nebenstehenden Werte aus der Datenbank gezogen wurden. Sowohl tats&auml;chliche Verkaufspreise wie auch Empfehlungen k&ouml;nnen t&auml;glichen Schwankungen unterliegen.</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table style="height: 234px; width: 847px; border-collapse: collapse;" border="1">
+<tbody>
+<tr>
+<td style="width: 835px; padding: 5px; text-align: center;" colspan="2"><strong> Tabellenblatt &bdquo; Sortimentsempfehlungen &ldquo;</strong></td>
+</tr>
+<tr>
+<td style="width: 228.111px; padding: 5px;"><strong>Spalten&uuml;berschrift:&nbsp;</strong></td>
+<td style="width: 606.889px; padding: 5px;"><strong>Erkl&auml;rung:</strong></td>
+</tr>
+<tr>
+<td style="width: 228.111px; padding: 5px;">Nutzername</td>
+<td style="width: 606.889px; padding: 5px; text-align: justify;">S.o.</td>
+</tr>
+<tr>
+<td style="width: 228.111px; padding: 5px;">Produktbezeichnung</td>
+<td style="width: 606.889px; padding: 5px; text-align: justify;">In der Regel vom Hersteller vergebener Name des empfohlenen Produktes</td>
+</tr>
+<tr>
+<td style="width: 228.111px; padding: 5px;">Empfohlener Verkaufspreis oder niedriger (mit Versandkosten)</td>
+<td style="width: 606.889px; padding: 5px; text-align: justify;">Der aktuell beste Preis f&uuml;r dieses Produkt, den wir im Markt finden. Bieten Sie Ihr Produkt zu diesem oder einem g&uuml;nstigeren Preis an, um Ihren Umsatz zu steigern.</td>
+</tr>
+<tr>
+<td style="width: 228.111px; padding: 5px;">Hauptkategorie</td>
+<td style="width: 606.889px; padding: 5px; text-align: justify;">eBay Hauptkategorie, in denen die empfohlenen Artikel &uuml;blicherweise eingestellt werden.</td>
+</tr>
+<tr>
+<td style="width: 228.111px; padding: 5px;">Kat.-ebene 3&nbsp;</td>
+<td style="width: 606.889px; padding: 5px; text-align: justify;">Unterkategorie der Ebene 3</td>
+</tr>
+<tr>
+<td style="width: 228.111px; padding: 5px;">Marke</td>
+<td style="width: 606.889px; padding: 5px; text-align: justify;">Markenname, wie Sie ihn in den Artikelmerkmalen hinterlegt haben oder wie er sich aus der hinterlegten EAN Nummer ergibt.&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 228.111px; padding: 5px;">EAN</td>
+<td style="width: 606.889px; padding: 5px; text-align: justify;">EAN steht f&uuml;r &bdquo;European Article Number&ldquo; und stellt eine international eindeutige Produktkennzeichnung f&uuml;r Artikel dar. F&uuml;r viele Artikel mit EAN gibt es im eBay-Katalog hinterlegte Katalogdaten, die Sie nutzen k&ouml;nnen.</td>
+</tr>
+<tr>
+<td style="width: 228.111px; padding: 5px;">Feststellungsdatum</td>
+<td style="width: 606.889px; padding: 5px; text-align: justify;">Datum, an dem die nebenstehenden Werte aus der Datenbank gezogen wurden. Sowohl tats&auml;chliche Verkaufspreise wie auch Empfehlungen k&ouml;nnen t&auml;glichen Schwankungen unterliegen.</td>
+</tr>
+</tbody>
+</table>

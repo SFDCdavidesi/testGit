@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NA_Seller_Portal_Eligible__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>US-0011168 - &#39;NA Seller Portal Eligible&#39; field on Account object,
+US-0011448 - Additional validation for NA un-sub to sub conversion rule</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Sets as true if the Seller meets all the requirements to use the Portal</inlineHelpText>
+    <label>NA Seller Portal Eligible</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>[EBH] (EPH-5) Active trigger controller - to switch on/off and bypass for deployment or data migration</description>
+    <enableFeeds>false</enableFeeds>
+    <label>Active Triggers</label>
+    <visibility>Public</visibility>
+</CustomObject>

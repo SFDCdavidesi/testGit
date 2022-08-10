@@ -1,0 +1,2 @@
+<p>Status of your Support Ticket #{!Case.CaseNumber} -&nbsp;{!Case.Summary__c}&nbsp;was changed to&nbsp;{!Case.Status}.</p>
+<p>Please contact HIVE team if you have any questions.</p>

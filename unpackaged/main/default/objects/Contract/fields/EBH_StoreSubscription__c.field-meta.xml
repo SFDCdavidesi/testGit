@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_StoreSubscription__c</fullName>
+    <description>[EBH] (US-0002) : Store Subscription</description>
+    <externalId>false</externalId>
+    <label>Store Subscription</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>EBH_Site__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Free</fullName>
+                <default>false</default>
+                <label>Free</label>
+            </value>
+            <value>
+                <fullName>Standard Price</fullName>
+                <default>false</default>
+                <label>Standard Price</label>
+            </value>
+            <value>
+                <fullName>Free Basic</fullName>
+                <default>false</default>
+                <label>Free Basic</label>
+            </value>
+            <value>
+                <fullName>Free Featured/ Top</fullName>
+                <default>false</default>
+                <label>Free Featured/ Top</label>
+            </value>
+            <value>
+                <fullName>Free Anchor/ Premium</fullName>
+                <default>false</default>
+                <label>Free Anchor/ Premium</label>
+            </value>
+            <value>
+                <fullName>Free Platinum</fullName>
+                <default>false</default>
+                <label>Free Platinum</label>
+            </value>
+            <value>
+                <fullName>Not Free</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Not Free</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>IE</controllingFieldValue>
+            <controllingFieldValue>UK</controllingFieldValue>
+            <controllingFieldValue>PL</controllingFieldValue>
+            <controllingFieldValue>DE</controllingFieldValue>
+            <controllingFieldValue>FR</controllingFieldValue>
+            <controllingFieldValue>IT</controllingFieldValue>
+            <controllingFieldValue>ES</controllingFieldValue>
+            <controllingFieldValue>Multi</controllingFieldValue>
+            <controllingFieldValue>NL</controllingFieldValue>
+            <controllingFieldValue>CH</controllingFieldValue>
+            <controllingFieldValue>AT</controllingFieldValue>
+            <controllingFieldValue>BE</controllingFieldValue>
+            <valueName>Standard Price</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IE</controllingFieldValue>
+            <controllingFieldValue>UK</controllingFieldValue>
+            <controllingFieldValue>PL</controllingFieldValue>
+            <controllingFieldValue>DE</controllingFieldValue>
+            <controllingFieldValue>FR</controllingFieldValue>
+            <controllingFieldValue>IT</controllingFieldValue>
+            <controllingFieldValue>ES</controllingFieldValue>
+            <controllingFieldValue>Multi</controllingFieldValue>
+            <controllingFieldValue>NL</controllingFieldValue>
+            <controllingFieldValue>CH</controllingFieldValue>
+            <controllingFieldValue>AT</controllingFieldValue>
+            <controllingFieldValue>BE</controllingFieldValue>
+            <valueName>Free Basic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IE</controllingFieldValue>
+            <controllingFieldValue>UK</controllingFieldValue>
+            <controllingFieldValue>PL</controllingFieldValue>
+            <controllingFieldValue>DE</controllingFieldValue>
+            <controllingFieldValue>FR</controllingFieldValue>
+            <controllingFieldValue>IT</controllingFieldValue>
+            <controllingFieldValue>ES</controllingFieldValue>
+            <controllingFieldValue>Multi</controllingFieldValue>
+            <controllingFieldValue>NL</controllingFieldValue>
+            <controllingFieldValue>CH</controllingFieldValue>
+            <controllingFieldValue>AT</controllingFieldValue>
+            <controllingFieldValue>BE</controllingFieldValue>
+            <valueName>Free Featured/ Top</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IE</controllingFieldValue>
+            <controllingFieldValue>UK</controllingFieldValue>
+            <controllingFieldValue>PL</controllingFieldValue>
+            <controllingFieldValue>DE</controllingFieldValue>
+            <controllingFieldValue>FR</controllingFieldValue>
+            <controllingFieldValue>IT</controllingFieldValue>
+            <controllingFieldValue>ES</controllingFieldValue>
+            <controllingFieldValue>Multi</controllingFieldValue>
+            <controllingFieldValue>NL</controllingFieldValue>
+            <controllingFieldValue>CH</controllingFieldValue>
+            <controllingFieldValue>AT</controllingFieldValue>
+            <controllingFieldValue>BE</controllingFieldValue>
+            <valueName>Free Anchor/ Premium</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DE</controllingFieldValue>
+            <controllingFieldValue>Multi</controllingFieldValue>
+            <valueName>Free Platinum</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

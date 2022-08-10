@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FVF_Campaign__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>US-0006963 FVF. Campaign</description>
+    <externalId>false</externalId>
+    <label>FVF Campaign</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Final_Value_Fee_FVF__c.RecordType.Name</field>
+            <operation>equals</operation>
+            <value>FVF (Campaign)</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Final_Value_Fee_FVF__c</referenceTo>
+    <relationshipLabel>Final Value Fee (FVF)</relationshipLabel>
+    <relationshipName>Final_Value_Fee_FVF</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

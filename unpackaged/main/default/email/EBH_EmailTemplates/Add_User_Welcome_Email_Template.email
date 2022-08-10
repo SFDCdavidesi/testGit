@@ -1,0 +1,16 @@
+<messaging:emailTemplate subject="{!$Label.Welcome_Label_Subject}" recipientType="Contact">
+<messaging:htmlEmailBody >
+<p>{!$Label.Label_Hello} {!recipient.Firstname} {!recipient.LastName},</p>
+<p>{!$Label.Welcome_Label_TXT_19} {!$User.FirstName} {!$User.LastName} ({!$User.Email}) {!$Label.Welcome_Label_TXT_1} {!$Label.Welcome_Label_TXT_20} {!$User.FirstName} {!$User.LastName}, {!$Label.Welcome_Label_TXT_21}</p>
+<c:WelcomeEmail Contact="{!recipient}"/>
+<p>{!$Label.Welcome_Label_TXT_3} <a href="{!$Network.NetworkUrlForUserEmails}" target="_blank">{!$Label.Welcome_Label_TXT_4}</a>, {!$Label.Welcome_Label_TXT_5}. {!$Label.Welcome_Label_TXT_22}.</p>
+<p>{!$Label.Welcome_Label_TXT_6} <a href="{!$Label.Seller_Portal_URL}" target="_blank">{!$Label.Welcome_Label_TXT_7}</a> {!$Label.Welcome_Label_TXT_8}, {!$Label.Welcome_Label_TXT_9}.</p>
+<p>{!$Label.Welcome_Label_TXT_10},<br/>
+{!$Label.Welcome_Label_TXT_11}</p>
+<p>{!$Label.Welcome_Label_TXT_12} <a href="https://www.ebay.de/help/account" target="_blank">{!$Label.Welcome_Label_TXT_13}</a>, {!$Label.Welcome_Label_TXT_14} <a href="http://www.ebay.de/help/policies/member-behavior-policies/datenschutzerklrung?id=4260" target="_blank">{!$Label.Welcome_Label_TXT_15}</a> {!$Label.Welcome_Label_TXT_16} <a href="http://www.ebay.de/help/policies/member-behavior-policies/allgemeine-geschftsbedingungen-fr-die-nutzung-der-deutschen-ebaydienste?id=4259" target="_blank">{!$Label.Welcome_Label_TXT_17}</a>.</p>
+<p>&copy; 1995-2022 eBay Inc.<br/>
+eBay GmbH, Albert-Einstein-Ring 2-6, 14532 Kleinmachnow, Deutschland <br/>
+Amtsgericht Potsdam, HRB 13754 P, {!$Label.Welcome_Label_TXT_18}: Oliver Klinck
+</p>
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>

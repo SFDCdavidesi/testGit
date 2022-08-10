@@ -1,0 +1,42 @@
+<p>Thank you for your nomination for the eBay AU Deals program.</p>
+
+
+<p>Product Title: {!EBH_Deal__c.EBH_ProductTitle__c}<br>
+
+Reason for rejection: {!EBH_Deal__c.EBH_ReasonforRejection__c}<br>
+
+Comment: {!EBH_Deal__c.EBH_ReasonforRejectionextd__c}<br>
+
+eBay account / username: {!EBH_Deal__c.EBH_BusinessName__c}<br>
+
+Title / Item Description: {!EBH_Deal__c.EBH_ProductTitle__c}<br>
+
+Quantity: {!EBH_Deal__c.EBH_Quantity__c}<br>
+
+List price : {!EBH_Deal__c.EBH_RRPWASPrice__c}<br>
+
+Offer price of the seller: {!EBH_Deal__c.EBH_DealPrice__c}</p>
+
+
+<p>On this occasion, your deal was not successful for selection. We make our selections based on a range of criteria including, but not limited to, the following:</p>
+
+
+<ul>
+<li>Market-leading value: Our customers should not be able to find the exact same product at a better price by visiting other retailers for the duration of the deal period.</li>
+
+<li>Relevancy for customers:– products on offer should be from category areas that are seasonally relevant or in demand.</li>
+
+<li>Sufficient stock: The product should be nominated as a deal in sufficient quantities to be available for the majority of the duration of the deal period.</li>
+
+<li>Breadth of selection: It's important that we provide eBay customers with a breadth of selection and, as a result, we may select a range of offers that represents the full range of choice at eBay.</li>
+</ul>
+
+<p>If you have any questions, please let us know by sending an email to <a href = "mailto: ebaydeals_submissions_au@ebay.com.au">ebaydeals_submissions_au@ebay.com.au</a>.</p>
+
+<p>We hope your next nomination is successful and that you submit another deal again soon.</p>
+
+
+<p>Regards,</p>
+
+
+<p>The eBay team</p>

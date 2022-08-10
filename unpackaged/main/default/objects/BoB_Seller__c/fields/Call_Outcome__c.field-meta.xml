@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_Outcome__c</fullName>
+    <externalId>false</externalId>
+    <label>Call Outcome</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>DMC Not reached</fullName>
+                <default>false</default>
+                <label>DMC Not reached</label>
+            </value>
+            <value>
+                <fullName>Follow up Required</fullName>
+                <default>false</default>
+                <label>Follow up Required</label>
+            </value>
+            <value>
+                <fullName>Wrong Phone Number</fullName>
+                <default>false</default>
+                <label>Wrong Phone Number</label>
+            </value>
+            <value>
+                <fullName>Next call scheduled</fullName>
+                <default>false</default>
+                <label>Next call scheduled</label>
+            </value>
+            <value>
+                <fullName>DMC Committed</fullName>
+                <default>false</default>
+                <label>DMC Committed</label>
+            </value>
+            <value>
+                <fullName>DMC Not Committed</fullName>
+                <default>false</default>
+                <label>DMC Not Committed</label>
+            </value>
+            <value>
+                <fullName>Coaching ended</fullName>
+                <default>false</default>
+                <label>Coaching ended</label>
+            </value>
+            <value>
+                <fullName>Call rescheduled by seller</fullName>
+                <default>false</default>
+                <label>Call rescheduled by seller</label>
+            </value>
+            <value>
+                <fullName>Exited Coaching</fullName>
+                <default>false</default>
+                <label>Exited Coaching</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

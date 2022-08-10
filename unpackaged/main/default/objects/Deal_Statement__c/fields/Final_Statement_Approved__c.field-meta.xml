@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Final_Statement_Approved__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>US-0010376:Set to TRUE if Final Statement is fully Approved</description>
+    <externalId>false</externalId>
+    <label>Final Statement Approved</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

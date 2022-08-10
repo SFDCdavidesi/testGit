@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Download_BCD</fullName>
+    <availability>online</availability>
+    <description>EPH-7723 Coupon Object - csv file + download functionality for BCD
+DEPRECATED with story US-0009947</description>
+    <displayType>button</displayType>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>page</linkType>
+    <masterLabel>Download BCD (Deprecated)</masterLabel>
+    <openType>newWindow</openType>
+    <page>CouponBCDFileDownload</page>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+</WebLink>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessMappings>
+        <accessLevel>Read</accessLevel>
+        <object>Account</object>
+        <objectField>Id</objectField>
+        <userField>Contact.Account</userField>
+    </accessMappings>
+    <accessMappings>
+        <accessLevel>Edit</accessLevel>
+        <object>Coupon_Co_Invest__c</object>
+        <objectField>Seller_Name__c</objectField>
+        <userField>Contact.RelatedAccount</userField>
+    </accessMappings>
+    <accessMappings>
+        <accessLevel>Edit</accessLevel>
+        <object>Coupon_Seller__c</object>
+        <objectField>Seller__c</objectField>
+        <userField>Contact.RelatedAccount</userField>
+    </accessMappings>
+    <accessMappings>
+        <accessLevel>Read</accessLevel>
+        <object>EBH_Deal__c</object>
+        <objectField>EBH_BusinessName__c</objectField>
+        <userField>Contact.Account</userField>
+    </accessMappings>
+    <accessMappings>
+        <accessLevel>Edit</accessLevel>
+        <object>Portal_User_Message_Item__c</object>
+        <objectField>Contact__c</objectField>
+        <userField>Contact</userField>
+    </accessMappings>
+    <name>eBay Seller Portal</name>
+    <profiles>NA - Seller Portal</profiles>
+</SharingSet>

@@ -1,0 +1,19 @@
+<apex:page standardcontroller="Case" title="{!Case.Deal_Statement__r.Name}" sidebar="false">
+<apex:includeLightning />
+ <div id="lightning"  /> 
+ 
+ <script>
+ 
+ //TH:14/07/2022:US-0011261 - TECHDEBT: Stored XSS : add JSENCODE
+  $Lightning.use("c:DD_DisputeAdjustmentsApp", function() {
+          $Lightning.createComponent("c:DD_DisputeAdjustments",
+          { title : "{!JSENCODE(Case.Deal_Statement__r.Name)}",parentID: "{!JSENCODE(Case.Id)}", recID : "{!JSENCODE(Case.Deal_Statement__c)}", Status : "{!JSENCODE(Case.Deal_Statement__r.Status__c)}" },
+          "lightning",
+          function(cmp) {
+            // do some stuff
+            
+          });
+  });
+        
+</script>
+</apex:page>

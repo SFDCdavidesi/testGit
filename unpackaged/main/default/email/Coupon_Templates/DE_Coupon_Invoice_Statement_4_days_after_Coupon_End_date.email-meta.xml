@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>EPH-7565 Coupon - Manhattan Invoice Statment send to coupon seller</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DE Coupon Invoice Statement 4 days after Coupon End date</name>
+    <style>none</style>
+    <subject>Gutschein-Aktion| Vorläufige Übersicht | {!Coupon_Seller__c.Coupon_ID__c} | {!Coupon_Seller__c.Coupon_Start_Date__c} - {!Coupon_Seller__c.Coupon_End_Date__c}</subject>
+    <textOnly>Lieber eBay-Verkäufer,
+
+die Gutschein-Kampagne {!Coupon_Seller__c.Coupon_ID__c} ist beendet und wir möchten uns an dieser Stelle für Ihre Teilnahme an der Aktion bedanken.
+
+Nachfolgend erhalten Sie eine vorläufige Übersicht der Umsätze, die mit Nutzung des Gutscheincodes während des Kampagnen-Zeitraums getätigt wurden.
+
+Gutschein Kampagnen-Zeitraums Umsatz mit Gutscheincode (EUR) Betrag aus Gutscheincode-Einlösung (EUR) Betrag aus Kostenbeteiligung (EUR)
+{!Coupon_Seller__c.Coupon_ID__c}  {!Coupon_Seller__c.Coupon_Start_Date__c} - {!Coupon_Seller__c.Coupon_End_Date__c}  {!Coupon_Seller__c.GMV_LC__c}  {!Coupon_Seller__c.Contra_LC__c}  {!Coupon_Seller__c.Cost_Share_Seller_LC__c}
+
+Bitte beachten Sie, dass sich die Werte möglicherweise durch Kaufabbrüche und Rückgaben verändern können.
+
+Die Abrechnung der Kampagne unter Berücksichtigung etwaiger Kostenbeteiligung wird frühestens nach Ablauf der 30 Tage Rückgabefrist erstellt. Der abzurechnende Betrag wird auf Ihrer monatlichen Rechnung ausgewiesen und zum darauffolgenden Rechnungszyklus über die hinterlegte Bezahlmethode abgebucht.
+
+Sollten Sie Rückfragen haben oder weitere Informationen benötigen, zögern Sie bitte nicht, Ihren eBay-Ansprechpartner für diese Aktion zu kontaktieren.
+
+Wir wünschen Ihnen weiterhin viel Erfolg beim Verkaufen auf eBay
+
+Mit besten Grüßen
+
+Ihr eBay-Team
+
+Diese E Mail wurde von der eBay GmbH im Zusammenhang mit Ihrem Mitgliedskonto bei www.ebay.de gesendet. Es handelt sich hierbei um eine einmalige Mitteilung. Eine Änderung Ihrer Benachrichtigungseinstellungen ist nicht erforderlich.
+
+Die eBay GmbH fragt niemals per E Mail nach persönlichen Daten (wie z.B. Passwort, Kreditkarten- oder Bankkontonummern).
+
+© 1995-{!CurrentYear} eBay Inc.
+
+Impressum
+
+eBay GmbH</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

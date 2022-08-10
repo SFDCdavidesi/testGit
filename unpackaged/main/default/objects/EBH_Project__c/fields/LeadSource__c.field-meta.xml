@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LeadSource__c</fullName>
+    <description>#US-0018736</description>
+    <externalId>false</externalId>
+    <label>Lead Source</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>2018 Amazon Leads</fullName>
+                <default>false</default>
+                <label>2018 Amazon Leads</label>
+            </value>
+            <value>
+                <fullName>2018 TTEC</fullName>
+                <default>false</default>
+                <label>2018 TTEC</label>
+            </value>
+            <value>
+                <fullName>2019 TTEC Leads</fullName>
+                <default>false</default>
+                <label>2019 TTEC Leads</label>
+            </value>
+            <value>
+                <fullName>Aegis</fullName>
+                <default>false</default>
+                <label>Aegis</label>
+            </value>
+            <value>
+                <fullName>Channel</fullName>
+                <default>false</default>
+                <label>Channel</label>
+            </value>
+            <value>
+                <fullName>Internal</fullName>
+                <default>false</default>
+                <label>Internal</label>
+            </value>
+            <value>
+                <fullName>Mid-Market</fullName>
+                <default>false</default>
+                <label>Mid-Market</label>
+            </value>
+            <value>
+                <fullName>New Zealand</fullName>
+                <default>false</default>
+                <label>New Zealand</label>
+            </value>
+            <value>
+                <fullName>PayPal</fullName>
+                <default>false</default>
+                <label>PayPal</label>
+            </value>
+            <value>
+                <fullName>Self Gen</fullName>
+                <default>false</default>
+                <label>Self Gen</label>
+            </value>
+            <value>
+                <fullName>Telstra</fullName>
+                <default>false</default>
+                <label>Telstra</label>
+            </value>
+            <value>
+                <fullName>Webform</fullName>
+                <default>false</default>
+                <label>Webform</label>
+            </value>
+            <value>
+                <fullName>Self Gen (Landing Page)</fullName>
+                <default>false</default>
+                <label>Self Gen (Landing Page)</label>
+            </value>
+            <value>
+                <fullName>Internal (Category/Account Manager)</fullName>
+                <default>false</default>
+                <label>Internal (Category/Account Manager)</label>
+            </value>
+            <value>
+                <fullName>Event</fullName>
+                <default>false</default>
+                <label>Event</label>
+            </value>
+            <value>
+                <fullName>Reactivation (existing &amp; declining sellers)</fullName>
+                <default>false</default>
+                <label>Reactivation (existing &amp; declining sellers)</label>
+            </value>
+            <value>
+                <fullName>External Provider</fullName>
+                <default>false</default>
+                <label>External Provider</label>
+            </value>
+            <value>
+                <fullName>Self Starters (existing newly on eBay)</fullName>
+                <default>false</default>
+                <label>Self Starters (existing newly on eBay)</label>
+            </value>
+            <value>
+                <fullName>3PP &amp; Trade Groups</fullName>
+                <default>false</default>
+                <label>3PP &amp; Trade Groups</label>
+            </value>
+            <value>
+                <fullName>Market Analytics (e.g. Minderest AZ Direct DCP live)</fullName>
+                <default>false</default>
+                <label>Market Analytics (e.g. Minderest AZ Direct DCP live)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

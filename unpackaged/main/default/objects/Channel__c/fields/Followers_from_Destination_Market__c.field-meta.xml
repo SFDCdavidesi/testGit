@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Followers_from_Destination_Market__c</fullName>
+    <description>US-0011805 - 1.2. Influencer (channel record types)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Percentage of followers that influencer has for destination market 
+(e.g.  what % of influencer&#39;s followers are from Germany, if this influencer is selected for German campaign)</inlineHelpText>
+    <label>Followers from Destination Market (%)</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

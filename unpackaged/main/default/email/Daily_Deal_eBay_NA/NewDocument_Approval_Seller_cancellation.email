@@ -1,0 +1,15 @@
+<messaging:emailTemplate subject="Deals Subsidy Contract Cancellation Notice" relatedToType="EBH_Deal__c">
+<messaging:htmlEmailBody >
+<div>The below deals from Contract {!relatedTo.Deal_Contract_Agreement__r.Name} has been canceled. </div>
+<br></br>
+
+<c:DocumentApproval deal_Status="Cancelled" deal_Agreement_Id="{!relatedTo.Deal_Contract_Agreement__c}"/>
+
+<div>Reason for cancellation: {!relatedTo.Cancellation_Reason__c}</div>
+<div>Note, this cancelled contract cannot be used for subsidy payment.</div>
+
+</messaging:htmlEmailBody>
+ <!--<messaging:attachment renderAs="pdf" filename="{!relatedTo.Name}.pdf">
+        <c:DocumentApproval d="{!relatedTo}"/>
+    </messaging:attachment>-->
+</messaging:emailTemplate>

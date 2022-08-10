@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ticket_Compact_Layout</fullName>
+    <fields>Subject</fields>
+    <fields>HIVE_Products__c</fields>
+    <fields>Priority__c</fields>
+    <fields>Status</fields>
+    <fields>Ticket_Number__c</fields>
+    <label>Ticket Compact Layout</label>
+</CompactLayout>

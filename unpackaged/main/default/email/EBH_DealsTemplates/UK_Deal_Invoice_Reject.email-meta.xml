@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0009403 Deals Invoice VAT - Rejection Email template localization for UK, FR, IT &amp; ES</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>UK Deal Invoice Reject</name>
+    <style>none</style>
+    <subject>Important accounting update regarding a Deal completed on {!DealStartDate}</subject>
+    <textOnly>Unfortunately, we were unable to process payment for a Deal completed on {!DealStartDate}.
+
+This was due to the following reason:
+
+{!RejectionComment}
+
+Please apply the appropriate changes and upload the invoice for this transaction again using the invoice tool.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

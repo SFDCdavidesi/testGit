@@ -1,0 +1,3428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>UK_EBH_DealsAcceptEmailwithoutSubsidy</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_11_A1</name>
+        <label>UK Approval without subsidy</label>
+        <locationX>1100</locationX>
+        <locationY>200</locationY>
+        <actionName>EBH_Deal__c.UK_EBH_DealsAcceptEmailwithoutSubsidy</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>myRule_11_A2</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>apexSelection</name>
+            <value>
+                <stringValue>EBH_DealTriggerHandler</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_11_A2</name>
+        <label>create UK task without subsidy</label>
+        <locationX>1100</locationX>
+        <locationY>300</locationY>
+        <actionName>EBH_DealTriggerHandler</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>SObject</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>listNew</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>maxOccurs</name>
+                <value>
+                    <numberValue>1.0</numberValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>objectType</name>
+                <value>
+                    <stringValue>EBH_Deal__c</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>SObject</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>listNew</name>
+            <value>
+                <elementReference>myVariable_current</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>UK_EBH_DealsRejectionEmail</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_13_A1</name>
+        <label>UK rejection email</label>
+        <locationX>1300</locationX>
+        <locationY>200</locationY>
+        <actionName>EBH_Deal__c.UK_EBH_DealsRejectionEmail</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>ES_EBH_DealsAcceptEmailwithSubsidy</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_15_A1</name>
+        <label>Es Approval with Subsidy</label>
+        <locationX>1500</locationX>
+        <locationY>200</locationY>
+        <actionName>EBH_Deal__c.ES_EBH_DealsAcceptEmailwithSubsidy</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>myRule_15_A2</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>apexSelection</name>
+            <value>
+                <stringValue>EBH_DealTriggerHandler</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_15_A2</name>
+        <label>create ES task with subsidy</label>
+        <locationX>1500</locationX>
+        <locationY>300</locationY>
+        <actionName>EBH_DealTriggerHandler</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>SObject</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>listNew</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>maxOccurs</name>
+                <value>
+                    <numberValue>1.0</numberValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>objectType</name>
+                <value>
+                    <stringValue>EBH_Deal__c</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>SObject</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>listNew</name>
+            <value>
+                <elementReference>myVariable_current</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>ES_EBH_DealsAcceptEmailwithoutSubsidy</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_17_A1</name>
+        <label>ES Approval WithOut Subsidy</label>
+        <locationX>1700</locationX>
+        <locationY>200</locationY>
+        <actionName>EBH_Deal__c.ES_EBH_DealsAcceptEmailwithoutSubsidy</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>myRule_17_A2</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>apexSelection</name>
+            <value>
+                <stringValue>EBH_DealTriggerHandler</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_17_A2</name>
+        <label>create ES task without subsidy</label>
+        <locationX>1700</locationX>
+        <locationY>300</locationY>
+        <actionName>EBH_DealTriggerHandler</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>SObject</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>listNew</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>maxOccurs</name>
+                <value>
+                    <numberValue>1.0</numberValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>objectType</name>
+                <value>
+                    <stringValue>EBH_Deal__c</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>SObject</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>listNew</name>
+            <value>
+                <elementReference>myVariable_current</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>ES_EBH_DealsRejectionEmail</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_19_A1</name>
+        <label>ES Rejection email</label>
+        <locationX>1900</locationX>
+        <locationY>200</locationY>
+        <actionName>EBH_Deal__c.ES_EBH_DealsRejectionEmail</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>apexSelection</name>
+            <value>
+                <stringValue>DD_MassApprovals</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_1_A1</name>
+        <label>skipCriteria</label>
+        <locationX>100</locationX>
+        <locationY>200</locationY>
+        <actionName>DD_MassApprovals</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>FR_EBH_DealsAcceptEmailwithSubsidy</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_21_A1</name>
+        <label>FR Approval with subsidy</label>
+        <locationX>2100</locationX>
+        <locationY>200</locationY>
+        <actionName>EBH_Deal__c.FR_EBH_DealsAcceptEmailwithSubsidy</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>myRule_21_A2</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>apexSelection</name>
+            <value>
+                <stringValue>EBH_DealTriggerHandler</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_21_A2</name>
+        <label>create FR task with subsidy</label>
+        <locationX>2100</locationX>
+        <locationY>300</locationY>
+        <actionName>EBH_DealTriggerHandler</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>SObject</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>listNew</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>maxOccurs</name>
+                <value>
+                    <numberValue>1.0</numberValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>objectType</name>
+                <value>
+                    <stringValue>EBH_Deal__c</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>SObject</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>listNew</name>
+            <value>
+                <elementReference>myVariable_current</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>FR_EBH_DealsAcceptEmailwithoutSubsidy</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_23_A1</name>
+        <label>FR Approval without subsidy</label>
+        <locationX>2300</locationX>
+        <locationY>200</locationY>
+        <actionName>EBH_Deal__c.FR_EBH_DealsAcceptEmailwithoutSubsidy</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>myRule_23_A2</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>apexSelection</name>
+            <value>
+                <stringValue>EBH_DealTriggerHandler</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_23_A2</name>
+        <label>create FR task without subsidy</label>
+        <locationX>2300</locationX>
+        <locationY>300</locationY>
+        <actionName>EBH_DealTriggerHandler</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>SObject</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>listNew</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>maxOccurs</name>
+                <value>
+                    <numberValue>1.0</numberValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>objectType</name>
+                <value>
+                    <stringValue>EBH_Deal__c</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>SObject</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>listNew</name>
+            <value>
+                <elementReference>myVariable_current</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>FR_EBH_DealsRejectionEmail</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_25_A1</name>
+        <label>FR Rejection Email</label>
+        <locationX>2500</locationX>
+        <locationY>200</locationY>
+        <actionName>EBH_Deal__c.FR_EBH_DealsRejectionEmail</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>IT_EBH_DealsAcceptEmailwithSubsidy</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_27_A1</name>
+        <label>IT Approval With Subsidy</label>
+        <locationX>2700</locationX>
+        <locationY>200</locationY>
+        <actionName>EBH_Deal__c.IT_EBH_DealsAcceptEmailwithSubsidy</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>myRule_27_A2</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>apexSelection</name>
+            <value>
+                <stringValue>EBH_DealTriggerHandler</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_27_A2</name>
+        <label>create IT task with subsidy</label>
+        <locationX>2700</locationX>
+        <locationY>300</locationY>
+        <actionName>EBH_DealTriggerHandler</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>SObject</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>listNew</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>maxOccurs</name>
+                <value>
+                    <numberValue>1.0</numberValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>objectType</name>
+                <value>
+                    <stringValue>EBH_Deal__c</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>SObject</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>listNew</name>
+            <value>
+                <elementReference>myVariable_current</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>IT_EBH_DealsAcceptEmailwithoutSubsidy</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_29_A1</name>
+        <label>IT Approval Without Subsidy</label>
+        <locationX>2900</locationX>
+        <locationY>200</locationY>
+        <actionName>EBH_Deal__c.IT_EBH_DealsAcceptEmailwithoutSubsidy</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>myRule_29_A2</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>apexSelection</name>
+            <value>
+                <stringValue>EBH_DealTriggerHandler</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_29_A2</name>
+        <label>create IT task without subsidy</label>
+        <locationX>2900</locationX>
+        <locationY>300</locationY>
+        <actionName>EBH_DealTriggerHandler</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>SObject</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>listNew</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>maxOccurs</name>
+                <value>
+                    <numberValue>1.0</numberValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>objectType</name>
+                <value>
+                    <stringValue>EBH_Deal__c</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>SObject</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>listNew</name>
+            <value>
+                <elementReference>myVariable_current</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>IT_EBH_DealsRejectionEmail</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_31_A1</name>
+        <label>IT Rejection Email</label>
+        <locationX>3100</locationX>
+        <locationY>200</locationY>
+        <actionName>EBH_Deal__c.IT_EBH_DealsRejectionEmail</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>AU_DealRejectTemplate</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_33_A1</name>
+        <label>AU Reject Email</label>
+        <locationX>3300</locationX>
+        <locationY>200</locationY>
+        <actionName>EBH_Deal__c.AU_DealRejectTemplate</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>EMAIL_AU_WIHT_SUBSIDY</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_35_A1</name>
+        <label>AU with subsidy</label>
+        <locationX>3500</locationX>
+        <locationY>200</locationY>
+        <actionName>EBH_Deal__c.EMAIL_AU_WIHT_SUBSIDY</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>myRule_35_A2</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>apexSelection</name>
+            <value>
+                <stringValue>EBH_DealTriggerHandler</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_35_A2</name>
+        <label>create AU task with subsidy</label>
+        <locationX>3500</locationX>
+        <locationY>300</locationY>
+        <actionName>EBH_DealTriggerHandler</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>SObject</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>listNew</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>maxOccurs</name>
+                <value>
+                    <numberValue>1.0</numberValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>objectType</name>
+                <value>
+                    <stringValue>EBH_Deal__c</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>SObject</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>listNew</name>
+            <value>
+                <elementReference>myVariable_current</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>EMAIL_AU_WIHTOUT_SUBSIDY</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_37_A1</name>
+        <label>AU without subsidy</label>
+        <locationX>3700</locationX>
+        <locationY>200</locationY>
+        <actionName>EBH_Deal__c.EMAIL_AU_WIHTOUT_SUBSIDY</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>myRule_37_A2</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>apexSelection</name>
+            <value>
+                <stringValue>EBH_DealTriggerHandler</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_37_A2</name>
+        <label>create AU task without subsidy</label>
+        <locationX>3700</locationX>
+        <locationY>300</locationY>
+        <actionName>EBH_DealTriggerHandler</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>SObject</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>listNew</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>maxOccurs</name>
+                <value>
+                    <numberValue>1.0</numberValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>objectType</name>
+                <value>
+                    <stringValue>EBH_Deal__c</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>SObject</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>listNew</name>
+            <value>
+                <elementReference>myVariable_current</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>DE_EBH_DealsAcceptEmailwithSubsidy</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_3_A1</name>
+        <label>approved email WITH SUBSIDY DE</label>
+        <locationX>300</locationX>
+        <locationY>200</locationY>
+        <actionName>EBH_Deal__c.DE_EBH_DealsAcceptEmailwithSubsidy</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>myRule_3_A2</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>apexSelection</name>
+            <value>
+                <stringValue>EBH_DealTriggerHandler</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_3_A2</name>
+        <label>create DE task with subsidy</label>
+        <locationX>300</locationX>
+        <locationY>300</locationY>
+        <actionName>EBH_DealTriggerHandler</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>SObject</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>listNew</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>maxOccurs</name>
+                <value>
+                    <numberValue>1.0</numberValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>objectType</name>
+                <value>
+                    <stringValue>EBH_Deal__c</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>SObject</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>listNew</name>
+            <value>
+                <elementReference>myVariable_current</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>DE_EBH_DealsAcceptEmailwithoutSubsidy</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_5_A1</name>
+        <label>approved email wo subsidy DE</label>
+        <locationX>500</locationX>
+        <locationY>200</locationY>
+        <actionName>EBH_Deal__c.DE_EBH_DealsAcceptEmailwithoutSubsidy</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>myRule_5_A2</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>apexSelection</name>
+            <value>
+                <stringValue>EBH_DealTriggerHandler</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_5_A2</name>
+        <label>create DE task without subsidy</label>
+        <locationX>500</locationX>
+        <locationY>300</locationY>
+        <actionName>EBH_DealTriggerHandler</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>SObject</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>listNew</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>maxOccurs</name>
+                <value>
+                    <numberValue>1.0</numberValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>objectType</name>
+                <value>
+                    <stringValue>EBH_Deal__c</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>SObject</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>listNew</name>
+            <value>
+                <elementReference>myVariable_current</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>DE_EBH_DealsRejectionEmail</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_7_A1</name>
+        <label>rejected email DE</label>
+        <locationX>700</locationX>
+        <locationY>200</locationY>
+        <actionName>EBH_Deal__c.DE_EBH_DealsRejectionEmail</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>UK_EBH_DealsAcceptEmailwithSubsidy</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_9_A1</name>
+        <label>Approved with subsidy UK</label>
+        <locationX>900</locationX>
+        <locationY>200</locationY>
+        <actionName>EBH_Deal__c.UK_EBH_DealsAcceptEmailwithSubsidy</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>myRule_9_A2</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>apexSelection</name>
+            <value>
+                <stringValue>EBH_DealTriggerHandler</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_9_A2</name>
+        <label>create UK task with subsidy</label>
+        <locationX>900</locationX>
+        <locationY>300</locationY>
+        <actionName>EBH_DealTriggerHandler</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>SObject</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>listNew</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>maxOccurs</name>
+                <value>
+                    <numberValue>1.0</numberValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>objectType</name>
+                <value>
+                    <stringValue>EBH_Deal__c</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>SObject</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>listNew</name>
+            <value>
+                <elementReference>myVariable_current</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>49.0</apiVersion>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision</name>
+        <label>myDecision</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision2</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_1</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_1_A1</targetReference>
+            </connector>
+            <label>SkipDealV2 US-0010597</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>5.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision10</name>
+        <label>myDecision10</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision12</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_11</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_11</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_11_pmetdec</targetReference>
+            </connector>
+            <label>UK Approval without subsidy</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>6.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision12</name>
+        <label>myDecision12</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision14</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_13</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_13</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_13_pmetdec</targetReference>
+            </connector>
+            <label>UK Rejectection Email</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>7.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision14</name>
+        <label>myDecision14</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision16</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_15</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_15</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_15_pmetdec</targetReference>
+            </connector>
+            <label>ES Approval With Subsidy</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>8.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision16</name>
+        <label>myDecision16</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision18</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_17</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_17</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_17_pmetdec</targetReference>
+            </connector>
+            <label>ES Approval without subsidy</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>9.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision18</name>
+        <label>myDecision18</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision20</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_19</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_19</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_19_pmetdec</targetReference>
+            </connector>
+            <label>ES Rejection email</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision2</name>
+        <label>myDecision2</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision4</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_3</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_3</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_3_A1</targetReference>
+            </connector>
+            <label>DE Approval Email WITH SUBSIDY</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>10.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision20</name>
+        <label>myDecision20</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision22</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_21</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_21</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_21_pmetdec</targetReference>
+            </connector>
+            <label>FR APPROVAL with subsidy</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>11.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision22</name>
+        <label>myDecision22</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision24</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_23</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_23</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_23_pmetdec</targetReference>
+            </connector>
+            <label>FR Approval Without Subsidy</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>12.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision24</name>
+        <label>myDecision24</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision26</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_25</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_25</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_25_pmetdec</targetReference>
+            </connector>
+            <label>FR Rejection email</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>13.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision26</name>
+        <label>myDecision26</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision28</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_27</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_27</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_27_pmetdec</targetReference>
+            </connector>
+            <label>IT Approval With Subisdy</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>14.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision28</name>
+        <label>myDecision28</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision30</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_29</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_29</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_29_pmetdec</targetReference>
+            </connector>
+            <label>IT Approval Without Subsidy</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>15.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision30</name>
+        <label>myDecision30</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision32</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_31</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_31</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_31_pmetdec</targetReference>
+            </connector>
+            <label>IT Rejection email</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>16.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision32</name>
+        <label>myDecision32</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision34</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_33</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_33</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_33_pmetdec</targetReference>
+            </connector>
+            <label>AU Rejection email</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>17.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision34</name>
+        <label>myDecision34</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision36</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_35</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_35</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_35_pmetdec</targetReference>
+            </connector>
+            <label>AU Send Deals Accept with Subsidy : US-0009158</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>18.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision36</name>
+        <label>myDecision36</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_37</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_37</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_37_pmetdec</targetReference>
+            </connector>
+            <label>AU Send Deals Accept without Subsidy:US-0009158</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>2.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision4</name>
+        <label>myDecision4</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision6</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_5</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_5</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_5_pmetdec</targetReference>
+            </connector>
+            <label>DE Approval email without subsidy</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>3.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision6</name>
+        <label>myDecision6</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision8</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_7</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_7</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_7_pmetdec</targetReference>
+            </connector>
+            <label>DE Rejected Email</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>4.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision8</name>
+        <label>myDecision8</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision10</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_9</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_9</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_9_pmetdec</targetReference>
+            </connector>
+            <label>UK Approval with Subsidy</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_11_pmetdec</name>
+        <label>Previously Met Decision</label>
+        <locationX>1100</locationX>
+        <locationY>100</locationY>
+        <defaultConnector>
+            <targetReference>myRule_11_A1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Previously Met</defaultConnectorLabel>
+        <rules>
+            <name>myRule_11_pmetnullrule</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_11_A1</targetReference>
+            </connector>
+            <label>Previously Met - Null</label>
+        </rules>
+        <rules>
+            <name>myRule_11_pmetrule</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_11_pmetrule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Previously Met - Prev</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_13_pmetdec</name>
+        <label>Previously Met Decision</label>
+        <locationX>1300</locationX>
+        <locationY>100</locationY>
+        <defaultConnector>
+            <targetReference>myRule_13_A1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Previously Met</defaultConnectorLabel>
+        <rules>
+            <name>myRule_13_pmetnullrule</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_13_A1</targetReference>
+            </connector>
+            <label>Previously Met - Null</label>
+        </rules>
+        <rules>
+            <name>myRule_13_pmetrule</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_13_pmetrule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Previously Met - Prev</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_15_pmetdec</name>
+        <label>Previously Met Decision</label>
+        <locationX>1500</locationX>
+        <locationY>100</locationY>
+        <defaultConnector>
+            <targetReference>myRule_15_A1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Previously Met</defaultConnectorLabel>
+        <rules>
+            <name>myRule_15_pmetnullrule</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_15_A1</targetReference>
+            </connector>
+            <label>Previously Met - Null</label>
+        </rules>
+        <rules>
+            <name>myRule_15_pmetrule</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_15_pmetrule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Previously Met - Prev</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_17_pmetdec</name>
+        <label>Previously Met Decision</label>
+        <locationX>1700</locationX>
+        <locationY>100</locationY>
+        <defaultConnector>
+            <targetReference>myRule_17_A1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Previously Met</defaultConnectorLabel>
+        <rules>
+            <name>myRule_17_pmetnullrule</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_17_A1</targetReference>
+            </connector>
+            <label>Previously Met - Null</label>
+        </rules>
+        <rules>
+            <name>myRule_17_pmetrule</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_17_pmetrule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Previously Met - Prev</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_19_pmetdec</name>
+        <label>Previously Met Decision</label>
+        <locationX>1900</locationX>
+        <locationY>100</locationY>
+        <defaultConnector>
+            <targetReference>myRule_19_A1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Previously Met</defaultConnectorLabel>
+        <rules>
+            <name>myRule_19_pmetnullrule</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_19_A1</targetReference>
+            </connector>
+            <label>Previously Met - Null</label>
+        </rules>
+        <rules>
+            <name>myRule_19_pmetrule</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_19_pmetrule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Previously Met - Prev</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_21_pmetdec</name>
+        <label>Previously Met Decision</label>
+        <locationX>2100</locationX>
+        <locationY>100</locationY>
+        <defaultConnector>
+            <targetReference>myRule_21_A1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Previously Met</defaultConnectorLabel>
+        <rules>
+            <name>myRule_21_pmetnullrule</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_21_A1</targetReference>
+            </connector>
+            <label>Previously Met - Null</label>
+        </rules>
+        <rules>
+            <name>myRule_21_pmetrule</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_21_pmetrule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Previously Met - Prev</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_23_pmetdec</name>
+        <label>Previously Met Decision</label>
+        <locationX>2300</locationX>
+        <locationY>100</locationY>
+        <defaultConnector>
+            <targetReference>myRule_23_A1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Previously Met</defaultConnectorLabel>
+        <rules>
+            <name>myRule_23_pmetnullrule</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_23_A1</targetReference>
+            </connector>
+            <label>Previously Met - Null</label>
+        </rules>
+        <rules>
+            <name>myRule_23_pmetrule</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_23_pmetrule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Previously Met - Prev</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_25_pmetdec</name>
+        <label>Previously Met Decision</label>
+        <locationX>2500</locationX>
+        <locationY>100</locationY>
+        <defaultConnector>
+            <targetReference>myRule_25_A1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Previously Met</defaultConnectorLabel>
+        <rules>
+            <name>myRule_25_pmetnullrule</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_25_A1</targetReference>
+            </connector>
+            <label>Previously Met - Null</label>
+        </rules>
+        <rules>
+            <name>myRule_25_pmetrule</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_25_pmetrule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Previously Met - Prev</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_27_pmetdec</name>
+        <label>Previously Met Decision</label>
+        <locationX>2700</locationX>
+        <locationY>100</locationY>
+        <defaultConnector>
+            <targetReference>myRule_27_A1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Previously Met</defaultConnectorLabel>
+        <rules>
+            <name>myRule_27_pmetnullrule</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_27_A1</targetReference>
+            </connector>
+            <label>Previously Met - Null</label>
+        </rules>
+        <rules>
+            <name>myRule_27_pmetrule</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_27_pmetrule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Previously Met - Prev</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_29_pmetdec</name>
+        <label>Previously Met Decision</label>
+        <locationX>2900</locationX>
+        <locationY>100</locationY>
+        <defaultConnector>
+            <targetReference>myRule_29_A1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Previously Met</defaultConnectorLabel>
+        <rules>
+            <name>myRule_29_pmetnullrule</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_29_A1</targetReference>
+            </connector>
+            <label>Previously Met - Null</label>
+        </rules>
+        <rules>
+            <name>myRule_29_pmetrule</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_29_pmetrule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Previously Met - Prev</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_31_pmetdec</name>
+        <label>Previously Met Decision</label>
+        <locationX>3100</locationX>
+        <locationY>100</locationY>
+        <defaultConnector>
+            <targetReference>myRule_31_A1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Previously Met</defaultConnectorLabel>
+        <rules>
+            <name>myRule_31_pmetnullrule</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_31_A1</targetReference>
+            </connector>
+            <label>Previously Met - Null</label>
+        </rules>
+        <rules>
+            <name>myRule_31_pmetrule</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_31_pmetrule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Previously Met - Prev</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_33_pmetdec</name>
+        <label>Previously Met Decision</label>
+        <locationX>3300</locationX>
+        <locationY>100</locationY>
+        <defaultConnector>
+            <targetReference>myRule_33_A1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Previously Met</defaultConnectorLabel>
+        <rules>
+            <name>myRule_33_pmetnullrule</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_33_A1</targetReference>
+            </connector>
+            <label>Previously Met - Null</label>
+        </rules>
+        <rules>
+            <name>myRule_33_pmetrule</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_33_pmetrule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Previously Met - Prev</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_35_pmetdec</name>
+        <label>Previously Met Decision</label>
+        <locationX>3500</locationX>
+        <locationY>100</locationY>
+        <defaultConnector>
+            <targetReference>myRule_35_A1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Previously Met</defaultConnectorLabel>
+        <rules>
+            <name>myRule_35_pmetnullrule</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_35_A1</targetReference>
+            </connector>
+            <label>Previously Met - Null</label>
+        </rules>
+        <rules>
+            <name>myRule_35_pmetrule</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_35_pmetrule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Previously Met - Prev</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_37_pmetdec</name>
+        <label>Previously Met Decision</label>
+        <locationX>3700</locationX>
+        <locationY>100</locationY>
+        <defaultConnector>
+            <targetReference>myRule_37_A1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Previously Met</defaultConnectorLabel>
+        <rules>
+            <name>myRule_37_pmetnullrule</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_37_A1</targetReference>
+            </connector>
+            <label>Previously Met - Null</label>
+        </rules>
+        <rules>
+            <name>myRule_37_pmetrule</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_37_pmetrule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Previously Met - Prev</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_5_pmetdec</name>
+        <label>Previously Met Decision</label>
+        <locationX>500</locationX>
+        <locationY>100</locationY>
+        <defaultConnector>
+            <targetReference>myRule_5_A1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Previously Met</defaultConnectorLabel>
+        <rules>
+            <name>myRule_5_pmetnullrule</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_5_A1</targetReference>
+            </connector>
+            <label>Previously Met - Null</label>
+        </rules>
+        <rules>
+            <name>myRule_5_pmetrule</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_5_pmetrule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Previously Met - Prev</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_7_pmetdec</name>
+        <label>Previously Met Decision</label>
+        <locationX>700</locationX>
+        <locationY>100</locationY>
+        <defaultConnector>
+            <targetReference>myRule_7_A1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Previously Met</defaultConnectorLabel>
+        <rules>
+            <name>myRule_7_pmetnullrule</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_7_A1</targetReference>
+            </connector>
+            <label>Previously Met - Null</label>
+        </rules>
+        <rules>
+            <name>myRule_7_pmetrule</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_7_pmetrule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Previously Met - Prev</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_9_pmetdec</name>
+        <label>Previously Met Decision</label>
+        <locationX>900</locationX>
+        <locationY>100</locationY>
+        <defaultConnector>
+            <targetReference>myRule_9_A1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Previously Met</defaultConnectorLabel>
+        <rules>
+            <name>myRule_9_pmetnullrule</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_9_A1</targetReference>
+            </connector>
+            <label>Previously Met - Null</label>
+        </rules>
+        <rules>
+            <name>myRule_9_pmetrule</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_9_pmetrule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Previously Met - Prev</label>
+        </rules>
+    </decisions>
+    <description>EPH-5120, US-0007313 - [AU]Assignment for AU Outreach Campaigns; US-0009158 - [Hypercare] [AU] [Deals] Send Deal Contract email to the seller when changing the status to Planned, US-0009960, US-0010597 - Move Time-Base Deal Process Builder to Time-Base Deal Flow, [DE-Deals-Fulfillment] Flag to Identify the fulfillment Invite Deals/ Few BU Feedback, US-0012108 - Update condition for DE Rejection email notification</description>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>[EBH_Deal__c].RecordType.DeveloperName = &#39;Deal_V2&#39;</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_1</name>
+        <dataType>Boolean</dataType>
+        <expression>{!myVariable_current.RecordType.DeveloperName} = &#39;Deal_V2&#39;</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>or(isnew(),
+ISCHANGED([EBH_Deal__c].EBH_Status__c) 
+)
+&amp;&amp;
+Text([EBH_Deal__c].EBH_Status__c) =&quot;Planned&quot;
+&amp;&amp;
+[EBH_Deal__c].Seller_Growth_Portal_Culture__c =&quot;en-GB&quot;
+&amp;&amp;
+ [EBH_Deal__c].EBH_Subsidy__c &lt;=0</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_11</name>
+        <dataType>Boolean</dataType>
+        <expression>or(isnew(),
+ISCHANGED({!myVariable_current.EBH_Status__c}) 
+)
+&amp;&amp;
+Text({!myVariable_current.EBH_Status__c}) =&quot;Planned&quot;
+&amp;&amp;
+{!myVariable_current.Seller_Growth_Portal_Culture__c} =&quot;en-GB&quot;
+&amp;&amp;
+ {!myVariable_current.EBH_Subsidy__c} &lt;=0</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>or(isnew(),
+ISCHANGED([EBH_Deal__c].EBH_Status__c) 
+)
+&amp;&amp;
+Text([EBH_Deal__c].EBH_Status__c) =&quot;Planned&quot;
+&amp;&amp;
+[EBH_Deal__c].Seller_Growth_Portal_Culture__c =&quot;en-GB&quot;
+&amp;&amp;
+ [EBH_Deal__c].EBH_Subsidy__c &lt;=0</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_11_pmetrule</name>
+        <dataType>Boolean</dataType>
+        <expression>or(isnew(),
+ISCHANGED({!myVariable_old.EBH_Status__c}) 
+)
+&amp;&amp;
+Text({!myVariable_old.EBH_Status__c}) =&quot;Planned&quot;
+&amp;&amp;
+{!myVariable_old.Seller_Growth_Portal_Culture__c} =&quot;en-GB&quot;
+&amp;&amp;
+ {!myVariable_old.EBH_Subsidy__c} &lt;=0</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>or(isnew(),
+ISCHANGED([EBH_Deal__c].EBH_Status__c) 
+)
+&amp;&amp;
+Text([EBH_Deal__c].EBH_Status__c) =&quot;Rejected&quot;
+&amp;&amp;
+[EBH_Deal__c].Seller_Growth_Portal_Culture__c =&quot;en-GB&quot;
+&amp;&amp;
+[EBH_Deal__c].EBH_Don_t_send_email_to_sellers__c = false
+&amp;&amp;
+NOT(ISBLANK([EBH_Deal__c].EBH_GPDealID__c))</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_13</name>
+        <dataType>Boolean</dataType>
+        <expression>or(isnew(),
+ISCHANGED({!myVariable_current.EBH_Status__c}) 
+)
+&amp;&amp;
+Text({!myVariable_current.EBH_Status__c}) =&quot;Rejected&quot;
+&amp;&amp;
+{!myVariable_current.Seller_Growth_Portal_Culture__c} =&quot;en-GB&quot;
+&amp;&amp;
+{!myVariable_current.EBH_Don_t_send_email_to_sellers__c} = false
+&amp;&amp;
+NOT(ISBLANK({!myVariable_current.EBH_GPDealID__c}))</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>or(isnew(),
+ISCHANGED([EBH_Deal__c].EBH_Status__c) 
+)
+&amp;&amp;
+Text([EBH_Deal__c].EBH_Status__c) =&quot;Rejected&quot;
+&amp;&amp;
+[EBH_Deal__c].Seller_Growth_Portal_Culture__c =&quot;en-GB&quot;
+&amp;&amp;
+[EBH_Deal__c].EBH_Don_t_send_email_to_sellers__c = false
+&amp;&amp;
+NOT(ISBLANK([EBH_Deal__c].EBH_GPDealID__c))</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_13_pmetrule</name>
+        <dataType>Boolean</dataType>
+        <expression>or(isnew(),
+ISCHANGED({!myVariable_old.EBH_Status__c}) 
+)
+&amp;&amp;
+Text({!myVariable_old.EBH_Status__c}) =&quot;Rejected&quot;
+&amp;&amp;
+{!myVariable_old.Seller_Growth_Portal_Culture__c} =&quot;en-GB&quot;
+&amp;&amp;
+{!myVariable_old.EBH_Don_t_send_email_to_sellers__c} = false
+&amp;&amp;
+NOT(ISBLANK({!myVariable_old.EBH_GPDealID__c}))</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>or(isnew(),
+ISCHANGED([EBH_Deal__c].EBH_Status__c) 
+)
+&amp;&amp;
+Text([EBH_Deal__c].EBH_Status__c) =&quot;Planned&quot;
+&amp;&amp;
+[EBH_Deal__c].Seller_Growth_Portal_Culture__c =&quot;ES&quot;
+&amp;&amp;
+ [EBH_Deal__c].EBH_Subsidy__c &gt;0</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_15</name>
+        <dataType>Boolean</dataType>
+        <expression>or(isnew(),
+ISCHANGED({!myVariable_current.EBH_Status__c}) 
+)
+&amp;&amp;
+Text({!myVariable_current.EBH_Status__c}) =&quot;Planned&quot;
+&amp;&amp;
+{!myVariable_current.Seller_Growth_Portal_Culture__c} =&quot;ES&quot;
+&amp;&amp;
+ {!myVariable_current.EBH_Subsidy__c} &gt;0</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>or(isnew(),
+ISCHANGED([EBH_Deal__c].EBH_Status__c) 
+)
+&amp;&amp;
+Text([EBH_Deal__c].EBH_Status__c) =&quot;Planned&quot;
+&amp;&amp;
+[EBH_Deal__c].Seller_Growth_Portal_Culture__c =&quot;ES&quot;
+&amp;&amp;
+ [EBH_Deal__c].EBH_Subsidy__c &gt;0</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_15_pmetrule</name>
+        <dataType>Boolean</dataType>
+        <expression>or(isnew(),
+ISCHANGED({!myVariable_old.EBH_Status__c}) 
+)
+&amp;&amp;
+Text({!myVariable_old.EBH_Status__c}) =&quot;Planned&quot;
+&amp;&amp;
+{!myVariable_old.Seller_Growth_Portal_Culture__c} =&quot;ES&quot;
+&amp;&amp;
+ {!myVariable_old.EBH_Subsidy__c} &gt;0</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>or(isnew(),
+ISCHANGED([EBH_Deal__c].EBH_Status__c) 
+)
+&amp;&amp;
+Text([EBH_Deal__c].EBH_Status__c) =&quot;Planned&quot;
+&amp;&amp;
+[EBH_Deal__c].Seller_Growth_Portal_Culture__c =&quot;ES&quot;
+&amp;&amp;
+ [EBH_Deal__c].EBH_Subsidy__c &lt;=0</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_17</name>
+        <dataType>Boolean</dataType>
+        <expression>or(isnew(),
+ISCHANGED({!myVariable_current.EBH_Status__c}) 
+)
+&amp;&amp;
+Text({!myVariable_current.EBH_Status__c}) =&quot;Planned&quot;
+&amp;&amp;
+{!myVariable_current.Seller_Growth_Portal_Culture__c} =&quot;ES&quot;
+&amp;&amp;
+ {!myVariable_current.EBH_Subsidy__c} &lt;=0</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>or(isnew(),
+ISCHANGED([EBH_Deal__c].EBH_Status__c) 
+)
+&amp;&amp;
+Text([EBH_Deal__c].EBH_Status__c) =&quot;Planned&quot;
+&amp;&amp;
+[EBH_Deal__c].Seller_Growth_Portal_Culture__c =&quot;ES&quot;
+&amp;&amp;
+ [EBH_Deal__c].EBH_Subsidy__c &lt;=0</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_17_pmetrule</name>
+        <dataType>Boolean</dataType>
+        <expression>or(isnew(),
+ISCHANGED({!myVariable_old.EBH_Status__c}) 
+)
+&amp;&amp;
+Text({!myVariable_old.EBH_Status__c}) =&quot;Planned&quot;
+&amp;&amp;
+{!myVariable_old.Seller_Growth_Portal_Culture__c} =&quot;ES&quot;
+&amp;&amp;
+ {!myVariable_old.EBH_Subsidy__c} &lt;=0</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>or(isnew(),
+ISCHANGED([EBH_Deal__c].EBH_Status__c) 
+)
+&amp;&amp;
+Text([EBH_Deal__c].EBH_Status__c) =&quot;Rejected&quot;
+&amp;&amp;
+[EBH_Deal__c].Seller_Growth_Portal_Culture__c =&quot;ES&quot;
+&amp;&amp;
+[EBH_Deal__c].EBH_Don_t_send_email_to_sellers__c = false
+&amp;&amp;
+NOT(ISBLANK([EBH_Deal__c].EBH_GPDealID__c))</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_19</name>
+        <dataType>Boolean</dataType>
+        <expression>or(isnew(),
+ISCHANGED({!myVariable_current.EBH_Status__c}) 
+)
+&amp;&amp;
+Text({!myVariable_current.EBH_Status__c}) =&quot;Rejected&quot;
+&amp;&amp;
+{!myVariable_current.Seller_Growth_Portal_Culture__c} =&quot;ES&quot;
+&amp;&amp;
+{!myVariable_current.EBH_Don_t_send_email_to_sellers__c} = false
+&amp;&amp;
+NOT(ISBLANK({!myVariable_current.EBH_GPDealID__c}))</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>or(isnew(),
+ISCHANGED([EBH_Deal__c].EBH_Status__c) 
+)
+&amp;&amp;
+Text([EBH_Deal__c].EBH_Status__c) =&quot;Rejected&quot;
+&amp;&amp;
+[EBH_Deal__c].Seller_Growth_Portal_Culture__c =&quot;ES&quot;
+&amp;&amp;
+[EBH_Deal__c].EBH_Don_t_send_email_to_sellers__c = false
+&amp;&amp;
+NOT(ISBLANK([EBH_Deal__c].EBH_GPDealID__c))</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_19_pmetrule</name>
+        <dataType>Boolean</dataType>
+        <expression>or(isnew(),
+ISCHANGED({!myVariable_old.EBH_Status__c}) 
+)
+&amp;&amp;
+Text({!myVariable_old.EBH_Status__c}) =&quot;Rejected&quot;
+&amp;&amp;
+{!myVariable_old.Seller_Growth_Portal_Culture__c} =&quot;ES&quot;
+&amp;&amp;
+{!myVariable_old.EBH_Don_t_send_email_to_sellers__c} = false
+&amp;&amp;
+NOT(ISBLANK({!myVariable_old.EBH_GPDealID__c}))</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>or(isnew(),
+ISCHANGED([EBH_Deal__c].EBH_Status__c) 
+)
+&amp;&amp;
+Text([EBH_Deal__c].EBH_Status__c) =&quot;Planned&quot;
+&amp;&amp;
+[EBH_Deal__c].Seller_Growth_Portal_Culture__c =&quot;FR&quot;
+&amp;&amp;
+ [EBH_Deal__c].EBH_Subsidy__c &gt;0</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_21</name>
+        <dataType>Boolean</dataType>
+        <expression>or(isnew(),
+ISCHANGED({!myVariable_current.EBH_Status__c}) 
+)
+&amp;&amp;
+Text({!myVariable_current.EBH_Status__c}) =&quot;Planned&quot;
+&amp;&amp;
+{!myVariable_current.Seller_Growth_Portal_Culture__c} =&quot;FR&quot;
+&amp;&amp;
+ {!myVariable_current.EBH_Subsidy__c} &gt;0</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>or(isnew(),
+ISCHANGED([EBH_Deal__c].EBH_Status__c) 
+)
+&amp;&amp;
+Text([EBH_Deal__c].EBH_Status__c) =&quot;Planned&quot;
+&amp;&amp;
+[EBH_Deal__c].Seller_Growth_Portal_Culture__c =&quot;FR&quot;
+&amp;&amp;
+ [EBH_Deal__c].EBH_Subsidy__c &gt;0</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_21_pmetrule</name>
+        <dataType>Boolean</dataType>
+        <expression>or(isnew(),
+ISCHANGED({!myVariable_old.EBH_Status__c}) 
+)
+&amp;&amp;
+Text({!myVariable_old.EBH_Status__c}) =&quot;Planned&quot;
+&amp;&amp;
+{!myVariable_old.Seller_Growth_Portal_Culture__c} =&quot;FR&quot;
+&amp;&amp;
+ {!myVariable_old.EBH_Subsidy__c} &gt;0</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>or(isnew(),
+ISCHANGED([EBH_Deal__c].EBH_Status__c) 
+)
+&amp;&amp;
+Text([EBH_Deal__c].EBH_Status__c) =&quot;Planned&quot;
+&amp;&amp;
+[EBH_Deal__c].Seller_Growth_Portal_Culture__c =&quot;FR&quot;
+&amp;&amp;
+ [EBH_Deal__c].EBH_Subsidy__c &lt;=0</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_23</name>
+        <dataType>Boolean</dataType>
+        <expression>or(isnew(),
+ISCHANGED({!myVariable_current.EBH_Status__c}) 
+)
+&amp;&amp;
+Text({!myVariable_current.EBH_Status__c}) =&quot;Planned&quot;
+&amp;&amp;
+{!myVariable_current.Seller_Growth_Portal_Culture__c} =&quot;FR&quot;
+&amp;&amp;
+ {!myVariable_current.EBH_Subsidy__c} &lt;=0</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>or(isnew(),
+ISCHANGED([EBH_Deal__c].EBH_Status__c) 
+)
+&amp;&amp;
+Text([EBH_Deal__c].EBH_Status__c) =&quot;Planned&quot;
+&amp;&amp;
+[EBH_Deal__c].Seller_Growth_Portal_Culture__c =&quot;FR&quot;
+&amp;&amp;
+ [EBH_Deal__c].EBH_Subsidy__c &lt;=0</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_23_pmetrule</name>
+        <dataType>Boolean</dataType>
+        <expression>or(isnew(),
+ISCHANGED({!myVariable_old.EBH_Status__c}) 
+)
+&amp;&amp;
+Text({!myVariable_old.EBH_Status__c}) =&quot;Planned&quot;
+&amp;&amp;
+{!myVariable_old.Seller_Growth_Portal_Culture__c} =&quot;FR&quot;
+&amp;&amp;
+ {!myVariable_old.EBH_Subsidy__c} &lt;=0</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>or(isnew(),
+ISCHANGED([EBH_Deal__c].EBH_Status__c) 
+)
+&amp;&amp;
+Text([EBH_Deal__c].EBH_Status__c) =&quot;Rejected&quot;
+&amp;&amp;
+[EBH_Deal__c].Seller_Growth_Portal_Culture__c =&quot;FR&quot;
+&amp;&amp;
+[EBH_Deal__c].EBH_Don_t_send_email_to_sellers__c = false
+&amp;&amp;
+NOT(ISBLANK([EBH_Deal__c].EBH_GPDealID__c))</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_25</name>
+        <dataType>Boolean</dataType>
+        <expression>or(isnew(),
+ISCHANGED({!myVariable_current.EBH_Status__c}) 
+)
+&amp;&amp;
+Text({!myVariable_current.EBH_Status__c}) =&quot;Rejected&quot;
+&amp;&amp;
+{!myVariable_current.Seller_Growth_Portal_Culture__c} =&quot;FR&quot;
+&amp;&amp;
+{!myVariable_current.EBH_Don_t_send_email_to_sellers__c} = false
+&amp;&amp;
+NOT(ISBLANK({!myVariable_current.EBH_GPDealID__c}))</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>or(isnew(),
+ISCHANGED([EBH_Deal__c].EBH_Status__c) 
+)
+&amp;&amp;
+Text([EBH_Deal__c].EBH_Status__c) =&quot;Rejected&quot;
+&amp;&amp;
+[EBH_Deal__c].Seller_Growth_Portal_Culture__c =&quot;FR&quot;
+&amp;&amp;
+[EBH_Deal__c].EBH_Don_t_send_email_to_sellers__c = false
+&amp;&amp;
+NOT(ISBLANK([EBH_Deal__c].EBH_GPDealID__c))</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_25_pmetrule</name>
+        <dataType>Boolean</dataType>
+        <expression>or(isnew(),
+ISCHANGED({!myVariable_old.EBH_Status__c}) 
+)
+&amp;&amp;
+Text({!myVariable_old.EBH_Status__c}) =&quot;Rejected&quot;
+&amp;&amp;
+{!myVariable_old.Seller_Growth_Portal_Culture__c} =&quot;FR&quot;
+&amp;&amp;
+{!myVariable_old.EBH_Don_t_send_email_to_sellers__c} = false
+&amp;&amp;
+NOT(ISBLANK({!myVariable_old.EBH_GPDealID__c}))</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>or(isnew(),
+ISCHANGED([EBH_Deal__c].EBH_Status__c) 
+)
+&amp;&amp;
+Text([EBH_Deal__c].EBH_Status__c) =&quot;Planned&quot;
+&amp;&amp;
+[EBH_Deal__c].Seller_Growth_Portal_Culture__c =&quot;IT&quot;
+&amp;&amp;
+ [EBH_Deal__c].EBH_Subsidy__c &gt;0</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_27</name>
+        <dataType>Boolean</dataType>
+        <expression>or(isnew(),
+ISCHANGED({!myVariable_current.EBH_Status__c}) 
+)
+&amp;&amp;
+Text({!myVariable_current.EBH_Status__c}) =&quot;Planned&quot;
+&amp;&amp;
+{!myVariable_current.Seller_Growth_Portal_Culture__c} =&quot;IT&quot;
+&amp;&amp;
+ {!myVariable_current.EBH_Subsidy__c} &gt;0</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>or(isnew(),
+ISCHANGED([EBH_Deal__c].EBH_Status__c) 
+)
+&amp;&amp;
+Text([EBH_Deal__c].EBH_Status__c) =&quot;Planned&quot;
+&amp;&amp;
+[EBH_Deal__c].Seller_Growth_Portal_Culture__c =&quot;IT&quot;
+&amp;&amp;
+ [EBH_Deal__c].EBH_Subsidy__c &gt;0</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_27_pmetrule</name>
+        <dataType>Boolean</dataType>
+        <expression>or(isnew(),
+ISCHANGED({!myVariable_old.EBH_Status__c}) 
+)
+&amp;&amp;
+Text({!myVariable_old.EBH_Status__c}) =&quot;Planned&quot;
+&amp;&amp;
+{!myVariable_old.Seller_Growth_Portal_Culture__c} =&quot;IT&quot;
+&amp;&amp;
+ {!myVariable_old.EBH_Subsidy__c} &gt;0</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>or(isnew(),
+ISCHANGED([EBH_Deal__c].EBH_Status__c) 
+)
+&amp;&amp;
+Text([EBH_Deal__c].EBH_Status__c) =&quot;Planned&quot;
+&amp;&amp;
+[EBH_Deal__c].Seller_Growth_Portal_Culture__c =&quot;IT&quot;
+&amp;&amp;
+ [EBH_Deal__c].EBH_Subsidy__c &lt;=0</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_29</name>
+        <dataType>Boolean</dataType>
+        <expression>or(isnew(),
+ISCHANGED({!myVariable_current.EBH_Status__c}) 
+)
+&amp;&amp;
+Text({!myVariable_current.EBH_Status__c}) =&quot;Planned&quot;
+&amp;&amp;
+{!myVariable_current.Seller_Growth_Portal_Culture__c} =&quot;IT&quot;
+&amp;&amp;
+ {!myVariable_current.EBH_Subsidy__c} &lt;=0</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>or(isnew(),
+ISCHANGED([EBH_Deal__c].EBH_Status__c) 
+)
+&amp;&amp;
+Text([EBH_Deal__c].EBH_Status__c) =&quot;Planned&quot;
+&amp;&amp;
+[EBH_Deal__c].Seller_Growth_Portal_Culture__c =&quot;IT&quot;
+&amp;&amp;
+ [EBH_Deal__c].EBH_Subsidy__c &lt;=0</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_29_pmetrule</name>
+        <dataType>Boolean</dataType>
+        <expression>or(isnew(),
+ISCHANGED({!myVariable_old.EBH_Status__c}) 
+)
+&amp;&amp;
+Text({!myVariable_old.EBH_Status__c}) =&quot;Planned&quot;
+&amp;&amp;
+{!myVariable_old.Seller_Growth_Portal_Culture__c} =&quot;IT&quot;
+&amp;&amp;
+ {!myVariable_old.EBH_Subsidy__c} &lt;=0</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>or(isnew(),
+ISCHANGED([EBH_Deal__c].EBH_Status__c))
+ 
+&amp;&amp;
+Text([EBH_Deal__c].EBH_Status__c) =&quot;Planned&quot;
+
+&amp;&amp;
+ [EBH_Deal__c].EBH_Subsidy__c &gt;0
+
+&amp;&amp; or(
+    [EBH_Deal__c].Seller_Growth_Portal_Culture__c =&quot;DE&quot;,
+    and(
+        TEXT([EBH_Deal__c].EBH_DealSiteId__c) = &quot;77&quot;,
+        [EBH_Deal__c].Fulfillment__c = true
+    )
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_3</name>
+        <dataType>Boolean</dataType>
+        <expression>or(isnew(),
+ISCHANGED({!myVariable_current.EBH_Status__c}))
+ 
+&amp;&amp;
+Text({!myVariable_current.EBH_Status__c}) =&quot;Planned&quot;
+
+&amp;&amp;
+ {!myVariable_current.EBH_Subsidy__c} &gt;0
+
+&amp;&amp; or(
+    {!myVariable_current.Seller_Growth_Portal_Culture__c} =&quot;DE&quot;,
+    and(
+        TEXT({!myVariable_current.EBH_DealSiteId__c}) = &quot;77&quot;,
+        {!myVariable_current.Fulfillment__c} = true
+    )
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>or(isnew(),
+ISCHANGED([EBH_Deal__c].EBH_Status__c) 
+)
+&amp;&amp;
+Text([EBH_Deal__c].EBH_Status__c) =&quot;Rejected&quot;
+&amp;&amp;
+[EBH_Deal__c].Seller_Growth_Portal_Culture__c =&quot;IT&quot;
+&amp;&amp;
+[EBH_Deal__c].EBH_Don_t_send_email_to_sellers__c = false
+&amp;&amp;
+NOT(ISBLANK([EBH_Deal__c].EBH_GPDealID__c))</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_31</name>
+        <dataType>Boolean</dataType>
+        <expression>or(isnew(),
+ISCHANGED({!myVariable_current.EBH_Status__c}) 
+)
+&amp;&amp;
+Text({!myVariable_current.EBH_Status__c}) =&quot;Rejected&quot;
+&amp;&amp;
+{!myVariable_current.Seller_Growth_Portal_Culture__c} =&quot;IT&quot;
+&amp;&amp;
+{!myVariable_current.EBH_Don_t_send_email_to_sellers__c} = false
+&amp;&amp;
+NOT(ISBLANK({!myVariable_current.EBH_GPDealID__c}))</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>or(isnew(),
+ISCHANGED([EBH_Deal__c].EBH_Status__c) 
+)
+&amp;&amp;
+Text([EBH_Deal__c].EBH_Status__c) =&quot;Rejected&quot;
+&amp;&amp;
+[EBH_Deal__c].Seller_Growth_Portal_Culture__c =&quot;IT&quot;
+&amp;&amp;
+[EBH_Deal__c].EBH_Don_t_send_email_to_sellers__c = false
+&amp;&amp;
+NOT(ISBLANK([EBH_Deal__c].EBH_GPDealID__c))</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_31_pmetrule</name>
+        <dataType>Boolean</dataType>
+        <expression>or(isnew(),
+ISCHANGED({!myVariable_old.EBH_Status__c}) 
+)
+&amp;&amp;
+Text({!myVariable_old.EBH_Status__c}) =&quot;Rejected&quot;
+&amp;&amp;
+{!myVariable_old.Seller_Growth_Portal_Culture__c} =&quot;IT&quot;
+&amp;&amp;
+{!myVariable_old.EBH_Don_t_send_email_to_sellers__c} = false
+&amp;&amp;
+NOT(ISBLANK({!myVariable_old.EBH_GPDealID__c}))</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>or(isnew(),
+ISCHANGED([EBH_Deal__c].EBH_Status__c) 
+)
+&amp;&amp;
+Text([EBH_Deal__c].EBH_Status__c) =&quot;Rejected&quot;
+&amp;&amp;
+ISPICKVAL([EBH_Deal__c].EBH_DealSiteId__c, &#39;15&#39;) 
+&amp;&amp;
+[EBH_Deal__c].EBH_Don_t_send_email_to_sellers__c = false
+&amp;&amp;
+NOT(ISBLANK([EBH_Deal__c].EBH_GPDealID__c))</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_33</name>
+        <dataType>Boolean</dataType>
+        <expression>or(isnew(),
+ISCHANGED({!myVariable_current.EBH_Status__c}) 
+)
+&amp;&amp;
+Text({!myVariable_current.EBH_Status__c}) =&quot;Rejected&quot;
+&amp;&amp;
+ISPICKVAL({!myVariable_current.EBH_DealSiteId__c}, &#39;15&#39;) 
+&amp;&amp;
+{!myVariable_current.EBH_Don_t_send_email_to_sellers__c} = false
+&amp;&amp;
+NOT(ISBLANK({!myVariable_current.EBH_GPDealID__c}))</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>or(isnew(),
+ISCHANGED([EBH_Deal__c].EBH_Status__c) 
+)
+&amp;&amp;
+Text([EBH_Deal__c].EBH_Status__c) =&quot;Rejected&quot;
+&amp;&amp;
+ISPICKVAL([EBH_Deal__c].EBH_DealSiteId__c, &#39;15&#39;) 
+&amp;&amp;
+[EBH_Deal__c].EBH_Don_t_send_email_to_sellers__c = false
+&amp;&amp;
+NOT(ISBLANK([EBH_Deal__c].EBH_GPDealID__c))</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_33_pmetrule</name>
+        <dataType>Boolean</dataType>
+        <expression>or(isnew(),
+ISCHANGED({!myVariable_old.EBH_Status__c}) 
+)
+&amp;&amp;
+Text({!myVariable_old.EBH_Status__c}) =&quot;Rejected&quot;
+&amp;&amp;
+ISPICKVAL({!myVariable_old.EBH_DealSiteId__c}, &#39;15&#39;) 
+&amp;&amp;
+{!myVariable_old.EBH_Don_t_send_email_to_sellers__c} = false
+&amp;&amp;
+NOT(ISBLANK({!myVariable_old.EBH_GPDealID__c}))</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+ISCHANGED([EBH_Deal__c].EBH_Status__c),
+ISPICKVAL([EBH_Deal__c].EBH_Status__c,&#39;Planned&#39;),
+ISPICKVAL([EBH_Deal__c].EBH_DealSiteId__c,&#39;15&#39;),
+NOT(ISBLANK([EBH_Deal__c].EBH_Subsidy__c)),
+[EBH_Deal__c].EBH_Subsidy__c&gt; 0
+) </stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_35</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+ISCHANGED({!myVariable_current.EBH_Status__c}),
+ISPICKVAL({!myVariable_current.EBH_Status__c},&#39;Planned&#39;),
+ISPICKVAL({!myVariable_current.EBH_DealSiteId__c},&#39;15&#39;),
+NOT(ISBLANK({!myVariable_current.EBH_Subsidy__c})),
+{!myVariable_current.EBH_Subsidy__c}&gt; 0
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+ISCHANGED([EBH_Deal__c].EBH_Status__c),
+ISPICKVAL([EBH_Deal__c].EBH_Status__c,&#39;Planned&#39;),
+ISPICKVAL([EBH_Deal__c].EBH_DealSiteId__c,&#39;15&#39;),
+NOT(ISBLANK([EBH_Deal__c].EBH_Subsidy__c)),
+[EBH_Deal__c].EBH_Subsidy__c&gt; 0
+) </stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_35_pmetrule</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+ISCHANGED({!myVariable_old.EBH_Status__c}),
+ISPICKVAL({!myVariable_old.EBH_Status__c},&#39;Planned&#39;),
+ISPICKVAL({!myVariable_old.EBH_DealSiteId__c},&#39;15&#39;),
+NOT(ISBLANK({!myVariable_old.EBH_Subsidy__c})),
+{!myVariable_old.EBH_Subsidy__c}&gt; 0
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+ISCHANGED([EBH_Deal__c].EBH_Status__c),
+ISPICKVAL([EBH_Deal__c].EBH_Status__c,&#39;Planned&#39;),
+ISPICKVAL([EBH_Deal__c].EBH_DealSiteId__c,&#39;15&#39;),
+NOT(ISBLANK([EBH_Deal__c].EBH_Subsidy__c)),
+[EBH_Deal__c].EBH_Subsidy__c&lt;=0
+) </stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_37</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+ISCHANGED({!myVariable_current.EBH_Status__c}),
+ISPICKVAL({!myVariable_current.EBH_Status__c},&#39;Planned&#39;),
+ISPICKVAL({!myVariable_current.EBH_DealSiteId__c},&#39;15&#39;),
+NOT(ISBLANK({!myVariable_current.EBH_Subsidy__c})),
+{!myVariable_current.EBH_Subsidy__c}&lt;=0
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+ISCHANGED([EBH_Deal__c].EBH_Status__c),
+ISPICKVAL([EBH_Deal__c].EBH_Status__c,&#39;Planned&#39;),
+ISPICKVAL([EBH_Deal__c].EBH_DealSiteId__c,&#39;15&#39;),
+NOT(ISBLANK([EBH_Deal__c].EBH_Subsidy__c)),
+[EBH_Deal__c].EBH_Subsidy__c&lt;=0
+) </stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_37_pmetrule</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+ISCHANGED({!myVariable_old.EBH_Status__c}),
+ISPICKVAL({!myVariable_old.EBH_Status__c},&#39;Planned&#39;),
+ISPICKVAL({!myVariable_old.EBH_DealSiteId__c},&#39;15&#39;),
+NOT(ISBLANK({!myVariable_old.EBH_Subsidy__c})),
+{!myVariable_old.EBH_Subsidy__c}&lt;=0
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>or(isnew(),
+ISCHANGED([EBH_Deal__c].EBH_Status__c) 
+)&amp;&amp;
+Text([EBH_Deal__c].EBH_Status__c) =&quot;Planned&quot;
+&amp;&amp;
+ [EBH_Deal__c].EBH_Subsidy__c &lt;=0
+&amp;&amp; or(
+    [EBH_Deal__c].Seller_Growth_Portal_Culture__c =&quot;DE&quot;,
+    and(
+        TEXT([EBH_Deal__c].EBH_DealSiteId__c) = &quot;77&quot;,
+        [EBH_Deal__c].Fulfillment__c = true
+    )
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_5</name>
+        <dataType>Boolean</dataType>
+        <expression>or(isnew(),
+ISCHANGED({!myVariable_current.EBH_Status__c}) 
+)&amp;&amp;
+Text({!myVariable_current.EBH_Status__c}) =&quot;Planned&quot;
+&amp;&amp;
+ {!myVariable_current.EBH_Subsidy__c} &lt;=0
+&amp;&amp; or(
+    {!myVariable_current.Seller_Growth_Portal_Culture__c} =&quot;DE&quot;,
+    and(
+        TEXT({!myVariable_current.EBH_DealSiteId__c}) = &quot;77&quot;,
+        {!myVariable_current.Fulfillment__c} = true
+    )
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>or(isnew(),
+ISCHANGED([EBH_Deal__c].EBH_Status__c) 
+)&amp;&amp;
+Text([EBH_Deal__c].EBH_Status__c) =&quot;Planned&quot;
+&amp;&amp;
+ [EBH_Deal__c].EBH_Subsidy__c &lt;=0
+&amp;&amp; or(
+    [EBH_Deal__c].Seller_Growth_Portal_Culture__c =&quot;DE&quot;,
+    and(
+        TEXT([EBH_Deal__c].EBH_DealSiteId__c) = &quot;77&quot;,
+        [EBH_Deal__c].Fulfillment__c = true
+    )
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_5_pmetrule</name>
+        <dataType>Boolean</dataType>
+        <expression>or(isnew(),
+ISCHANGED({!myVariable_old.EBH_Status__c}) 
+)&amp;&amp;
+Text({!myVariable_old.EBH_Status__c}) =&quot;Planned&quot;
+&amp;&amp;
+ {!myVariable_old.EBH_Subsidy__c} &lt;=0
+&amp;&amp; or(
+    {!myVariable_old.Seller_Growth_Portal_Culture__c} =&quot;DE&quot;,
+    and(
+        TEXT({!myVariable_old.EBH_DealSiteId__c}) = &quot;77&quot;,
+        {!myVariable_old.Fulfillment__c} = true
+    )
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>or(
+    isnew(),
+    ISCHANGED([EBH_Deal__c].EBH_Status__c) 
+)
+&amp;&amp; Text([EBH_Deal__c].EBH_Status__c) =&quot;Rejected&quot;
+&amp;&amp; [EBH_Deal__c].EBH_Don_t_send_email_to_sellers__c = false
+&amp;&amp; or(
+    [EBH_Deal__c].Seller_Growth_Portal_Culture__c = &quot;DE&quot;
+    ,
+    and(
+        TEXT([EBH_Deal__c].EBH_DealSiteId__c) = &quot;77&quot;,
+        [EBH_Deal__c].Fulfillment__c = true
+    ),
+    and(
+        TEXT([EBH_Deal__c].EBH_DealSiteId__c) = &quot;77&quot;,
+        [EBH_Deal__c].CreatedBy.Profile.Name =  &quot;DE - Seller Portal&quot;
+    )
+
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_7</name>
+        <dataType>Boolean</dataType>
+        <expression>or(
+    isnew(),
+    ISCHANGED({!myVariable_current.EBH_Status__c}) 
+)
+&amp;&amp; Text({!myVariable_current.EBH_Status__c}) =&quot;Rejected&quot;
+&amp;&amp; {!myVariable_current.EBH_Don_t_send_email_to_sellers__c} = false
+&amp;&amp; or(
+    {!myVariable_current.Seller_Growth_Portal_Culture__c} = &quot;DE&quot;
+    ,
+    and(
+        TEXT({!myVariable_current.EBH_DealSiteId__c}) = &quot;77&quot;,
+        {!myVariable_current.Fulfillment__c} = true
+    ),
+    and(
+        TEXT({!myVariable_current.EBH_DealSiteId__c}) = &quot;77&quot;,
+        {!myVariable_current.CreatedBy.Profile.Name} =  &quot;DE - Seller Portal&quot;
+    )
+
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>or(
+    isnew(),
+    ISCHANGED([EBH_Deal__c].EBH_Status__c) 
+)
+&amp;&amp; Text([EBH_Deal__c].EBH_Status__c) =&quot;Rejected&quot;
+&amp;&amp; [EBH_Deal__c].EBH_Don_t_send_email_to_sellers__c = false
+&amp;&amp; or(
+    [EBH_Deal__c].Seller_Growth_Portal_Culture__c = &quot;DE&quot;
+    ,
+    and(
+        TEXT([EBH_Deal__c].EBH_DealSiteId__c) = &quot;77&quot;,
+        [EBH_Deal__c].Fulfillment__c = true
+    ),
+    and(
+        TEXT([EBH_Deal__c].EBH_DealSiteId__c) = &quot;77&quot;,
+        [EBH_Deal__c].CreatedBy.Profile.Name =  &quot;DE - Seller Portal&quot;
+    )
+
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_7_pmetrule</name>
+        <dataType>Boolean</dataType>
+        <expression>or(
+    isnew(),
+    ISCHANGED({!myVariable_old.EBH_Status__c}) 
+)
+&amp;&amp; Text({!myVariable_old.EBH_Status__c}) =&quot;Rejected&quot;
+&amp;&amp; {!myVariable_old.EBH_Don_t_send_email_to_sellers__c} = false
+&amp;&amp; or(
+    {!myVariable_old.Seller_Growth_Portal_Culture__c} = &quot;DE&quot;
+    ,
+    and(
+        TEXT({!myVariable_old.EBH_DealSiteId__c}) = &quot;77&quot;,
+        {!myVariable_old.Fulfillment__c} = true
+    ),
+    and(
+        TEXT({!myVariable_old.EBH_DealSiteId__c}) = &quot;77&quot;,
+        {!myVariable_old.CreatedBy.Profile.Name} =  &quot;DE - Seller Portal&quot;
+    )
+
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>or(isnew(),
+ISCHANGED([EBH_Deal__c].EBH_Status__c) 
+)
+&amp;&amp;
+Text([EBH_Deal__c].EBH_Status__c) =&quot;Planned&quot;
+&amp;&amp;
+[EBH_Deal__c].Seller_Growth_Portal_Culture__c =&quot;en-GB&quot;
+&amp;&amp;
+ [EBH_Deal__c].EBH_Subsidy__c &gt;0</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_9</name>
+        <dataType>Boolean</dataType>
+        <expression>or(isnew(),
+ISCHANGED({!myVariable_current.EBH_Status__c}) 
+)
+&amp;&amp;
+Text({!myVariable_current.EBH_Status__c}) =&quot;Planned&quot;
+&amp;&amp;
+{!myVariable_current.Seller_Growth_Portal_Culture__c} =&quot;en-GB&quot;
+&amp;&amp;
+ {!myVariable_current.EBH_Subsidy__c} &gt;0</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>or(isnew(),
+ISCHANGED([EBH_Deal__c].EBH_Status__c) 
+)
+&amp;&amp;
+Text([EBH_Deal__c].EBH_Status__c) =&quot;Planned&quot;
+&amp;&amp;
+[EBH_Deal__c].Seller_Growth_Portal_Culture__c =&quot;en-GB&quot;
+&amp;&amp;
+ [EBH_Deal__c].EBH_Subsidy__c &gt;0</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_9_pmetrule</name>
+        <dataType>Boolean</dataType>
+        <expression>or(isnew(),
+ISCHANGED({!myVariable_old.EBH_Status__c}) 
+)
+&amp;&amp;
+Text({!myVariable_old.EBH_Status__c}) =&quot;Planned&quot;
+&amp;&amp;
+{!myVariable_old.Seller_Growth_Portal_Culture__c} =&quot;en-GB&quot;
+&amp;&amp;
+ {!myVariable_old.EBH_Subsidy__c} &gt;0</expression>
+    </formulas>
+    <interviewLabel>Deals_Emails_In_Local_Language-14_InterviewLabel</interviewLabel>
+    <label>Deals Emails In Local Language</label>
+    <processMetadataValues>
+        <name>ObjectType</name>
+        <value>
+            <stringValue>EBH_Deal__c</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>ObjectVariable</name>
+        <value>
+            <elementReference>myVariable_current</elementReference>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OldObjectVariable</name>
+        <value>
+            <elementReference>myVariable_old</elementReference>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>TriggerType</name>
+        <value>
+            <stringValue>onAllChanges</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Workflow</processType>
+    <startElementReference>myDecision</startElementReference>
+    <status>Active</status>
+    <variables>
+        <name>myVariable_current</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>EBH_Deal__c</objectType>
+    </variables>
+    <variables>
+        <name>myVariable_old</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>EBH_Deal__c</objectType>
+    </variables>
+</Flow>

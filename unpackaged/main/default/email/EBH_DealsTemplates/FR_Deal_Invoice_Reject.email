@@ -1,0 +1,12 @@
+<p>Nous n'avons pas pu traiter un versement pour la promo Bon Plan réalisée le {!DealStartDate}. </p>
+<p>La raison en est la suivante :</p>
+
+<table style="height: 156px; border: 1px solid black;" width="637">
+<tbody>
+<tr>
+<td style="width: 627.111px; text-align: justify; vertical-align: top; padding: 5px;">{!RejectionComment}</td>
+</tr>
+</tbody>
+</table>
+<p>Veuillez effectuer les modifications appropriées et charger à nouveau la facture pour cette transaction à l'aide de l'outil de facturation.
+</p>

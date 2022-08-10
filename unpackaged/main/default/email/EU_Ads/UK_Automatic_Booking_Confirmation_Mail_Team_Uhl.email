@@ -1,0 +1,9 @@
+Sehr geehrter Team Uhl,
+
+gerne bestätigen wir, dass eBay Advertising UK den Buchungsauftrag "{!Opportunity.Ext_Name_Campaign__c}" für den Kunden "{!Opportunity.Account}" auf https://www.ebay.co.uk/ ausführt.
+
+Besten Dank und viele Grüße,
+
+{!Opportunity.OwnerFullName}
+
+(ref: {!Opportunity.Id})

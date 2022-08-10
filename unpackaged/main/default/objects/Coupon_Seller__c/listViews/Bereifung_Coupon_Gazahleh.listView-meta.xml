@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bereifung_Coupon_Gazahleh</fullName>
+    <columns>NAME</columns>
+    <columns>Coupon_ID__c</columns>
+    <columns>Coupon__c</columns>
+    <columns>Seller__c</columns>
+    <columns>EBH_CouponSellerOwner__c</columns>
+    <columns>Promotions_T_Cs_agreed__c</columns>
+    <columns>Contract_Accept_Date__c</columns>
+    <columns>Coupon_Seller_Stage__c</columns>
+    <columns>Seller_Declined_Reasons__c</columns>
+    <columns>Email_Adress__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Coupon_Seller__c.Manhattan_Coupon</value>
+    </filters>
+    <filters>
+        <field>Coupon_ID__c</field>
+        <operation>equals</operation>
+        <value>BEREIFUNG22</value>
+    </filters>
+    <filters>
+        <field>EBH_CouponSellerOwner__c</field>
+        <operation>contains</operation>
+        <value>User</value>
+    </filters>
+    <label>Bereifung Coupon Gazahleh</label>
+</ListView>

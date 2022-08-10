@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ContactTimeZone__c</fullName>
+    <description>US-0009689 - [PL Adv] Ads PL Team Mate to be able to view “Mailing State” and “Timezone” of Seller Contact</description>
+    <externalId>false</externalId>
+    <label>Contact Time Zone</label>
+    <length>255</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

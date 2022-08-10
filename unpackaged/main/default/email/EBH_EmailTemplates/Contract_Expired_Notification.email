@@ -1,0 +1,4 @@
+<p>Dear {!Contract.OwnerFullName},</p>
+<p>Your {!Contract.RecordType} {!Contract.ContractNumber} for {!Contract.Account} is Expired as the Contract End date has reached.</p>
+<p>Please note you cannot reset an expired Contract to "Draft" status. You can always "Clone" the expired Contract to copy the related information from this expired Contract to create a new Draft version .</p>
+<p>Thank you,<br/>Hive</p>

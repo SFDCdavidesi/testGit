@@ -1,0 +1,7 @@
+Hello! 
+
+Your campaign brief for {!Campaign.Name} with the start date of {!Campaign.StartDate} has been reviewed and accepted. It has now been estimated and is scheduled for build.
+
+For more details, please go to {!Campaign.EBH_RecordLink__c}. 
+
+Thank you.

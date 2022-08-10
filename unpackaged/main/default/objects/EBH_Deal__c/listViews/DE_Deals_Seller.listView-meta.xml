@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Deals_Seller</fullName>
+    <columns>EBH_eBayItemID__c</columns>
+    <columns>EBH_DealStartDate__c</columns>
+    <columns>EBH_DealFormat__c</columns>
+    <columns>EBH_BusinessName__c</columns>
+    <columns>EBH_ProductTitle__c</columns>
+    <columns>EBH_SellerPrice__c</columns>
+    <columns>EBH_DealPrice__c</columns>
+    <columns>EBH_Subsidy__c</columns>
+    <columns>EBH_Sold_Items_at_Deal_Price__c</columns>
+    <columns>EBH_NonPayoutSI__c</columns>
+    <columns>EBH_SubsidyFinal__c</columns>
+    <columns>EBH_Status__c</columns>
+    <columns>EBH_SellerEmail__c</columns>
+    <columns>Statement_Send_Date__c</columns>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>EBH_DealStartDate__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>9/8/2019</value>
+    </filters>
+    <filters>
+        <field>EBH_Status__c</field>
+        <operation>equals</operation>
+        <value>Planned,Deal Agreed,Executed,Verify Statement,Statement Verified,Verify Invoice,Ready for Payment,Payment Sent,Payment Completed,Running</value>
+    </filters>
+    <filters>
+        <field>EBH_Subsidy__c</field>
+        <operation>greaterThan</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>EBH_BusinessName__c</field>
+        <operation>contains</operation>
+        <value>outlet_plaza</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>EBH_Deal__c.Deal_V1</value>
+    </filters>
+    <filters>
+        <field>NumberOfDaysSinceDealEnd__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>31</value>
+    </filters>
+    <label>DE - Deals Seller</label>
+</ListView>

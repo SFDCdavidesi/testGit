@@ -1,0 +1,116 @@
+<div class="textHeader">
+	<p style="font-size: 30px; text-align: center;">
+		<strong>Sie nehmen jetzt an der Coupon-Aktion teil</strong>
+	</p>
+</div>
+<div class="textContent">
+	<p style="text-align: justify;">Vielen Dank, dass Sie die Bedingungen des Werbeaktions-Einzelvertrags auf Basis der dazugeh&ouml;rigen Werbeaktions-AGB (zusammen &bdquo;Werbeaktions-Einzelvertrag&ldquo;) akzeptiert haben. Wir haben Ihnen eine Best&auml;tigungs-E-Mail geschickt.</p>
+	<p style="text-align: justify;">Die Gutschein-Werbeaktion&nbsp;<strong>&bdquo;</strong>{Marketing_Coupon_Name__c}&rdquo; l&auml;uft bis zum <strong>{CouponEndDate}</strong>. Wenn Sie weitere Fragen zur Aktion haben, wenden Sie sich bitte an Ihre Ansprechpartnerin oder Ihren Ansprechpartner bei eBay.</p>
+	<p style="text-align: justify;">Sie k&ouml;nnen den Werbeaktions-Einzelvertrag <a title="Sie k&ouml;nnen den Werbeaktions-Einzelvertrag hier" href="{!recordURL}" target="_blank">hier</a>, sowie die dazugeh&ouml;rigen <a title="Werbeaktions-AGB" href="https://pages.ebay.de/werbeaktions-agb/index.html" target="_blank" rel="noopener">Werbeaktions-AGB</a>&nbsp;&uuml;ber den entsprechenden Link, abrufen, speichern und ausdrucken. Falls Sie den Vertrag zu Zwecken der Beweissicherung, der Buchf&uuml;hrung oder zu anderen Zwecken ben&ouml;tigen, sind Sie selbst daf&uuml;r verantwortlich, den Vertrag auszudrucken und zu archivieren oder auf einem von eBay unabh&auml;ngigen Speichermedium zu archivieren.</p>
+</div>
+<div class="divTableMain"> 
+<table class="ql-table">
+	 
+		<tr>
+			<td>
+				<strong>Verk&auml;ufer</strong>
+			</td>
+			<td>
+				<p>{LegalEntity}, {StreetName}, {Zip}, {City}, {Country}</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<strong>Nutzername des Verk&auml;ufers f&uuml;r die Gutscheinaktion</strong>
+			</td>
+			<td>
+				<p>{eBaySellerID}</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<strong>eBay-Website(s)</strong>
+			</td>
+			<td>
+				<p>{CouponSites}</p>
+			</td>
+		</tr>
+                <tr>
+                        <td>
+                                <strong>Gutschein-Name</strong>
+                        </td>
+                        <td>
+                                <p>{Marketing_Coupon_Name__c}</p>
+                        </td>
+                </tr>
+                <tr>
+                        <td>
+                                <strong>Gutschein-Code</strong>
+                        </td>
+                        <td>
+                                <p>{CouponCode}</p>
+                        </td>
+                </tr>
+		<tr>
+			<td>
+				<strong>Gutschein-Werbeaktionszeitraum</strong>
+			</td>
+			<td>{CouponStartTime} {CouponStartDate} bis {CouponEndTime} {CouponEndDate} (CET)</td>
+		</tr>
+		<tr>
+			<td>
+				<p>
+					<strong>Details zur Gutscheinaktion oder Promotion</strong>
+				</p>
+			</td>
+			<td>
+				<p>{CouponDiscount%}{CouponDiscountAmount} Rabatt auf den Artikelpreis.</p>
+				<p>Bis zu einem maximalen Betrag von {CouponCap} pro Transaktion.</p>
+				<p>Mindestbestellwert: {Minimum_Transaction_Value__c}</p>
+				<p>Der Gutschein kann maximal {Max_Redemptions__c}x je Nutzer eingel&ouml;st werden.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<strong>eBay Vertragspartner</strong>
+			</td>
+			<td>eBay GmbH, Albert-Einstein-Ring 2-6, 14532 Kleinmachnow</td>
+		</tr>
+		<tr>
+			<td>
+				<strong>Sonstiges</strong>
+			</td>
+			<td>
+				<p>{AdditionalArrangement}</p>
+			</td>
+		</tr>
+		<tr class="trTable">
+			<td>
+				<strong>Artikel</strong>
+				 
+			</td>
+			<td class="tdTable">
+				<p>Gutscheine f&uuml;r diese Gutscheinaktion werden nur f&uuml;r bestimmte Artikel ausgegeben und k&ouml;nnen nur f&uuml;r diese eingel&ouml;st werden (&bdquo;Gutscheine auf Artikel-Basis&ldquo;). Welche Artikel dabei ber&uuml;cksichtigt werden, entnehmen Sie bitte der beigef&uuml;gten &Uuml;bersicht, darin werden die Artikel nach Artikelnummern oder SKUs aufgeschl&uuml;sselt.<br/>Sollen weitere Artikelnummern zu den berechtigten Artikeln hinzugenommen werden, so ist das mit eBay per E-Mail zu vereinbaren.</p>
+				<table class="tableItem">
+					<thead>
+						<tr>
+							<th>
+								<strong>Artikelnummer</strong>
+							</th>
+							<th>
+								<strong>Angebotstitel</strong>
+							</th>
+							<th>
+								<strong>Von Verk&auml;ufer an eBay zu entrichtende Erfolgspr&auml;mie %</strong>
+							</th>
+						</tr>
+					</thead>
+					<tbody> 
+				   {CAT_TABLE_ROWS} 
+					</tbody>
+				</table>
+			</td>
+		</tr>
+	 
+</table>
+</div>

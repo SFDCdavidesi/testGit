@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0012115 - NA localization - Seller Communication- Contract Signature Reminder</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>SP - Coupons - NA - Sign Agreement Reminder</name>
+    <pageDevName>SP_Coupons_NA_Sign_Agreement_Reminder</pageDevName>
+    <relatedEntityType>Seller_Communication__c</relatedEntityType>
+    <style>none</style>
+    <subject>[REMINDER] Contract Signature for Coupon | {{{Seller_Communication__c.Coupon_Marketing_Name__c}}} | {{{Seller_Communication__c.CouponStartDate__c}}} - {{{Seller_Communication__c.CouponEndDate__c}}}</subject>
+    <textOnly>**[REMINDER] Contract Signature for Coupon | {{{Seller_Communication__c.Coupon_Marketing_Name__c}}} | {{{Seller_Communication__c.CouponStartDate__c}}} - {{{Seller_Communication__c.CouponEndDate__c}}}
+----------------------------------------------------
+
+Hi {{{Seller_Communication__c.Contact__c}}}, 
+
+Friendly reminder, contract signature for coupon: {{{Seller_Communication__c.Coupon_Marketing_Name__c}}} is due by {{{Seller_Communication__c.Contract_Due_Date__c}}}
+
+To participate, please click the &quot;View Details&quot; button to review the applicable Promotion Individual Contract &amp; Terms of Service and click the &quot;I Agree&quot; button before the {{{Seller_Communication__c.Contract_Due_Date__c}}}. Don’t miss out!
+
+View Details &lt; {{{Seller_Communication__c.CouponURLPortalText__c}}} &gt; 
+
+Best Regards,
+
+eBay Seller Funded Coupons
+
+This email was sent by Ebay, Inc. Ebay will never ask you to provide confidential information (like your password or credit card details) via email.</textOnly>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

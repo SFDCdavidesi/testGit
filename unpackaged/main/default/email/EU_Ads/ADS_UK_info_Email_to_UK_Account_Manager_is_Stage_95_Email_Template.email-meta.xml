@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0010386 - ADS - UK info-Email to UK Account Manager when stage is set to 95%</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>ADS - UK info-Email to UK Account Manager is Stage 95 Email Template</name>
+    <style>none</style>
+    <subject>HIVE-Mail: &quot;{!Opportunity.Name}&quot; Probability was set to 95%</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

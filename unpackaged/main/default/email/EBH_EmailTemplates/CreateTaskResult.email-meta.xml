@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0007221 Hypercare - Create Tasks functionality causes APEX CPU Timeout</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CreateTaskResult</name>
+    <style>none</style>
+    <subject>Create Task Complete</subject>
+    <textOnly>Hello {!CurrentUser},
+
+Task creation is complete with the following result:
+
+Tasks Updated: {!taskUpdate}
+Tasks Deleted: {!taskDelete}
+Tasks Created: {!taskCreate}
+
+{!OutreachInfo}
+
+{!Error}
+
+Another background Job has been executed to Create/Update Campaign Members.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

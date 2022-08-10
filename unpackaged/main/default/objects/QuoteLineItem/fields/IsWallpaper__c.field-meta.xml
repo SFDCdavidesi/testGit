@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsWallpaper__c</fullName>
+    <description>US-0007824 - EU Advertising CPM Calculator</description>
+    <externalId>false</externalId>
+    <formula>IF( CONTAINS( PricebookEntry.Product2.Name , &quot;Wallpaper&quot; ) || CONTAINS( PricebookEntry.Product2.Name , &quot;Homepage Event&quot; ) || CONTAINS( PricebookEntry.Product2.Name , &quot;Takeover&quot; ) , &quot;Wallpaper&quot;, &quot;Standard&quot; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>IsWallpaper</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

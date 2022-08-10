@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0009403 Deals Invoice VAT - Rejection Email template localization for UK, FR, IT &amp; ES</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>ES Deal Invoice Reject</name>
+    <style>none</style>
+    <subject>Información importante sobre la contabilidad de la mejor oferta completada el {!DealStartDate}</subject>
+    <textOnly>No hemos podido procesar el pago de la mejor oferta completada el {!DealStartDate}.
+
+La razón es la siguiente :
+
+{!RejectionComment}
+
+Realiza los cambios necesarios y vuelve a subir la factura de esta transacción mediante la herramienta de facturas.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

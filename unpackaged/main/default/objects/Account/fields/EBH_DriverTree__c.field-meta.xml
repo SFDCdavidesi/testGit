@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_DriverTree__c</fullName>
+    <description>[EBH] (EPH-2240) - Driver tree link with parameter = oracle id</description>
+    <externalId>false</externalId>
+    <formula>HYPERLINK($Setup.EBH_OutboundLink__c.EBH_DriverTreeBaseURL__c &amp; &quot;?seller_id=&quot;&amp; EBH_OracleID__c, &quot;Open Driver Tree&quot;)</formula>
+    <inlineHelpText>Go to DriverTree for this Seller</inlineHelpText>
+    <label>Link to DriverTree</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

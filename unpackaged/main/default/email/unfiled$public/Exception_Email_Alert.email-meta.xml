@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>DD_CreateDealStatement</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Exception Email Alert</name>
+    <style>none</style>
+    <subject>Exception has occurred on batch process</subject>
+    <textOnly>An exception occurred during the running of the following code:
+
+Instance: {!Instance}
+
+Apex Class: {!ApexClass}
+
+Exception Message: {!ExceptionMessage}
+
+Please review and rectify the issue</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

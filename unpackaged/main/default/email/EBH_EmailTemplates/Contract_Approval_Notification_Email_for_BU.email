@@ -1,0 +1,16 @@
+Dear Contract Approver,
+
+A ‘{!Contract.RecordType}’ has been requested with ‘{!Contract.Account}’ and will require your approval.
+
+Contract Value: {!Contract.EBH_ContractValue__c}
+Contract Exposure: {!Contract.EBH_ContractExposure__c}
+
+Requester comments: {!ApprovalRequest.Comments}
+
+To review the request follow the link:
+
+{!ApprovalRequest.Internal_URL}
+
+Thank you,
+
+The Hive Team

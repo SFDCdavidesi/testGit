@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Workshop_Webinar_Date__c</fullName>
+    <description>US-0010569 - EU Acquisition: Adding Fields to Onboarding Projects</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Date of the workshop OR SMB seminar.</inlineHelpText>
+    <label>Workshop/Webinar Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsPendingDfpPush__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>INTEG - N || ** eBay Advertising ** || WF - N || AP - N || VAL - N ||Class - N || Definition: IsPendingDfpPush||</description>
+    <externalId>false</externalId>
+    <label>IsPendingDfpPush</label>
+    <type>Checkbox</type>
+</CustomField>

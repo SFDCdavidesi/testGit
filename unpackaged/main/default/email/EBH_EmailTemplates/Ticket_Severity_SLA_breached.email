@@ -1,0 +1,11 @@
+SLA has been breached for Ticket Number {!Case.Ticket_Number__c}.<p>
+
+Please reach out to the Ticket Creator and provide the required support.<p>
+
+<u>Details;</u><br>
+Severity: {!Case.Priority}<br>
+Record Type: {!Case.RecordType}<br>
+Ticket Creator: {!Case.CreatedBy}<br>
+Summary: {!Case.Summary__c}<p><p>
+
+Please provide a response/resolution for this <a href="{!Case.Link}">support ticket.</a>

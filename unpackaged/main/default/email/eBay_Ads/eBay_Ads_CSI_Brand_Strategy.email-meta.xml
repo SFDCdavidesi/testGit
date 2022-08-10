@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>send an email notification to Brand Strategy once a CSI brand strategy request is created</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>eBay_Ads_Letterhead</letterhead>
+    <name>eBay Ads - CSI Brand Strategy</name>
+    <style>freeForm</style>
+    <subject>Brand Strategy Request for {!Advertising_Request_Portal__c.Account__c} from {!Advertising_Request_Portal__c.OwnerFullName}</subject>
+    <textOnly>Hello,
+
+There&#39;s a new Brand Strategy Request created. Please find more details below:
+
+Name: {!Advertising_Request_Portal__c.Name__c}
+Account: {!Advertising_Request_Portal__c.Account__c}
+Request Type: {!Advertising_Request_Portal__c.Request_Type__c}
+Due Date: {!Advertising_Request_Portal__c.Due_Date__c}
+Requestor:  {!Advertising_Request_Portal__c.OwnerFullName}
+Brand Strategist: {!Advertising_Request_Portal__c.Brand_Strategist__c}
+
+
+{!Advertising_Request_Portal__c.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

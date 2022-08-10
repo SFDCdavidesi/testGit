@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>EPH-7701,7704 Trading Engine. Initiating 1:1 communication</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>TradingEngine_DE</name>
+    <style>none</style>
+    <subject>Empfehlungen zur Optimierung Ihres eBay-Sortiments und zur Ergänzung Ihres Inventars</subject>
+    <textOnly>Liebe {!SellerName},
+
+Aufgrund umfangreicher Nachfrage-Analysen konnten wir bestimmte Top Produkte identifizieren, die von potenziellen Käufern am Markt sehr häufig nachgefragt werden. Einige dieser Produkte haben auch Sie in Ihrem Portfolio. Die Excel-Tabelle im Anhang an diese E-Mail enthält Ihre Top Produkte mit tagesaktuellen Informationen zur momentanen Wettbewerbssituation.
+Um die hohe Nachfrage nach diesen Produkten für sich zu nutzen, empfehlen wir Ihnen folgende Maßnahmen für die in der Excel-Liste genannten Top Produkte:
+
+Tabellenblatt „Preisoptimierung“: Optimieren Sie die Preise für Ihre Top Produkte; bieten Sie sie idealerweise zum gleichen Preis oder günstiger an wie der Wettbewerb (Spalte F in der Liste)
+
+Tabellenblatt „Sortimentsempfehlungen“: Nehmen Sie empfohlene Top Produkte neu in Ihren eBay-Bestand auf
+
+Die Bedeutung der Spalten in der Tabelle habe ich Ihnen in der Legende ganz unten in dieser E-Mail erläutert.
+
+Durch diese Anpassungen können Sie ggf. auch von unseren Marketing-Kampagnen profitieren. Näheres erläutere ich Ihnen gerne im Rahmen eines Telefongesprächs.
+
+Vorab schon einmal vielen Dank für Ihre Bemühungen und Unterstützung.
+
+
+Mit freundlichen Grüßen,
+
+{!CurrentUserName}
+
+
+Tabellenblatt „ Preisoptimierung “
+Spaltenüberschrift:   Erklärung:
+Nutzername  Die Empfehlungen in der Liste beziehen sich auf das hier genannte Nutzerkonto. Sollten Sie bei eBay über weitere Nutzerkonten verfügen, fragen Sie bitte unsere Concierge-Mitarbeiter, ob auch dafür Produktempfehlungen vorliegen.
+Artikelnummer  Artikelnummer bei eBay
+Angebotstitel  Der von Ihnen gewählte Angebotstitel.
+Ihr aktueller Verkaufspreis  Der tagesaktuelle VK Preis, der heute in Ihrem Angebot angezeigt wird.
+Empfohlener Verkaufspreis oder niedriger (mit Versandkosten)  Der aktuell beste Preis für dieses Produkt, den wir im Markt finden. Bieten Sie Ihr Produkt zu diesem oder einem günstigeren Preis an, um Ihren Umsatz zu steigern.
+Hauptkategorie  eBay Hauptkategorie, in der Ihr Artikel eingestellt wurde
+Kat.-ebene 3  Unterkategorie der Ebene 3
+Marke  Markenname, wie Sie ihn in den Artikelmerkmalen hinterlegt haben oder wie er sich aus der hinterlegten EAN Nummer ergibt.
+EAN  EAN steht für „European Article Number“ und stellt eine international eindeutige Produktkennzeichnung für Artikel dar. Für viele Artikel mit EAN gibt es im eBay-Katalog hinterlegte Katalogdaten, die Sie nutzen können.
+Preisunterschied  Gibt den Preisunterschied in Prozent wieder, den Ihr aktueller Verkaufspreis im Vergleich zum empfohlenen Verkaufspreis aufweist.
+Feststellungsdatum  Datum, an dem die nebenstehenden Werte aus der Datenbank gezogen wurden. Sowohl tatsächliche Verkaufspreise wie auch Empfehlungen können täglichen Schwankungen unterliegen.
+
+
+Tabellenblatt „ Sortimentsempfehlungen “
+Spaltenüberschrift:   Erklärung:
+Nutzername  S.o.
+Produktbezeichnung  In der Regel vom Hersteller vergebener Name des empfohlenen Produktes
+Empfohlener Verkaufspreis oder niedriger (mit Versandkosten)  Der aktuell beste Preis für dieses Produkt, den wir im Markt finden. Bieten Sie Ihr Produkt zu diesem oder einem günstigeren Preis an, um Ihren Umsatz zu steigern.
+Hauptkategorie  eBay Hauptkategorie, in denen die empfohlenen Artikel üblicherweise eingestellt werden.
+Kat.-ebene 3   Unterkategorie der Ebene 3
+Marke  Markenname, wie Sie ihn in den Artikelmerkmalen hinterlegt haben oder wie er sich aus der hinterlegten EAN Nummer ergibt.
+EAN  EAN steht für „European Article Number“ und stellt eine international eindeutige Produktkennzeichnung für Artikel dar. Für viele Artikel mit EAN gibt es im eBay-Katalog hinterlegte Katalogdaten, die Sie nutzen können.
+Feststellungsdatum  Datum, an dem die nebenstehenden Werte aus der Datenbank gezogen wurden. Sowohl tatsächliche Verkaufspreise wie auch Empfehlungen können täglichen Schwankungen unterliegen.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

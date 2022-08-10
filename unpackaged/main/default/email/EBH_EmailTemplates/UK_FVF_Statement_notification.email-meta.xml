@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0008108 - [UK] FVF - BCD file generation email notification</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>UK FVF Statement notification</name>
+    <style>none</style>
+    <subject>BCD file for UK FVF {!BCD_Statement__c.FVF_Promo_Month__c} Promo credits is ready to download</subject>
+    <textOnly>Hello
+
+This is a notification to let you know that the BCD file for the UK FVF {!BCD_Statement__c.FVF_Promo_Month__c} Promo credits has been created with a Credit Total Value of  {!BCD_Statement__c.Credit_Total_Value__c} {!BCD_Statement__c.CurrencyIsoCode}.
+You can find it attached to the BCD Statement record accessible through this link {!BCD_Statement__c.Link}
+
+Thank You
+Hive</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

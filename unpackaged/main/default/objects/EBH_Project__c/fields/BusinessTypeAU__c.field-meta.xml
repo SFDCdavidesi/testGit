@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BusinessTypeAU__c</fullName>
+    <description>US-0007708 - [AU] New fields for &#39;Managed Payment&#39; Pagelayout for Project
+US-0009564 - UK Risk: GCX permission set and New fields on Project</description>
+    <externalId>false</externalId>
+    <label>Business Type (AU only)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Company</fullName>
+                <default>false</default>
+                <label>Company</label>
+            </value>
+            <value>
+                <fullName>Sole Trader</fullName>
+                <default>false</default>
+                <label>Sole Trader</label>
+            </value>
+            <value>
+                <fullName>Partnership</fullName>
+                <default>false</default>
+                <label>Partnership</label>
+            </value>
+            <value>
+                <fullName>Trust</fullName>
+                <default>false</default>
+                <label>Trust</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

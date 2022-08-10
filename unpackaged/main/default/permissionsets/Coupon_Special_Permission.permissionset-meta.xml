@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <classAccesses>
+        <apexClass>BulkSendCouponContractController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <description>US-0005984 Coupon Special Permission</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Coupon_Seller__c.Allow_reaccept_contract__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Coupon Special Permission</label>
+</PermissionSet>

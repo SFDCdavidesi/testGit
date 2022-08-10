@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>UK [EBH] (EPH-4176) - Mass Rejection of Deals</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>EBH_eBayBlankLetterhead</letterhead>
+    <name>UK Mass Rejection of Deals</name>
+    <style>freeForm</style>
+    <subject>We didn&#39;t accept your deal</subject>
+    <textOnly>Thank you for your nomination for the eBay UK Deals programme.
+
+Product Title: {!EBH_Deal__c.EBH_ProductTitle__c}
+Reason for rejection: {!EBH_Deal__c.EBH_ReasonforRejection__c}
+comment: {!EBH_Deal__c.EBH_ReasonforRejectionextd__c}
+eBay account / username: {!EBH_Deal__c.EBH_BusinessName__c}
+Title / Item Description: {!EBH_Deal__c.EBH_ProductTitle__c}
+Quantity: {!EBH_Deal__c.EBH_Quantity__c}
+List price : £ {!EBH_Deal__c.EBH_RRPWASPrice__c}
+Offer price of the seller: £ {!EBH_Deal__c.EBH_DealPrice__c}
+
+On this occasion, your deal was not successful for selection. We make our selections based on a range of criteria including, but not limited to, the following:
+
+• Market-leading value: Our customers should not be able to find the exact same product at a better price by visiting other retailers for the duration of the deal period.
+• Relevancy for customers:– products on offer should be from category areas that are seasonally relevant or in demand.
+• Sufficient stock: The product should be nominated as a deal in sufficient quantities to be available for the majority of the duration of the deal period.
+• Breadth of selection: It&#39;s important that we provide eBay customers with a breadth of selection and, as a result, we may select a range of offers that represents the full range of choice at eBay.
+
+We hope you next nomination is successful and that you submit another deal again soon.
+
+Regards,
+
+The eBay team</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SubsidyFinal_Servicing__c</fullName>
+    <description>US-0008132 : Deals - Subsidy Formula enable manual update
+US-TBD,
+US-0009686 - Hypercare: Updates needed to NA Deal Statement Attachment</description>
+    <externalId>false</externalId>
+    <formula>IF( RecordType.DeveloperName = &#39;Deal_V1&#39;,  
+IF( EBH_DealEndDate__c &lt;= DATEVALUE( NOW() ) - 31 , EBH_Payout_SI_calc__c * EBH_Subsidy__c, 0 ),
+EBH_Payout_SI_calc__c * EBH_Subsidy__c
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Subsidy Final (Gross) Servicing</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

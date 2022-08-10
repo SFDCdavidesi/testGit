@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marketing_Coupon_Name__c</fullName>
+    <description>US-0007064 [AU] Coupon Click Contract Template Amends</description>
+    <externalId>false</externalId>
+    <formula>Coupon__r.Marketing_Coupon_Name__c</formula>
+    <label>Marketing Coupon Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

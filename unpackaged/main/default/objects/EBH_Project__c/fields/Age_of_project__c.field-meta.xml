@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Age_of_project__c</fullName>
+    <description>US-0010604 - Project Stage duration</description>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK( CloseDate__c ), TODAY() , CloseDate__c ) - DATEVALUE( CreatedDate )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Age of project</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

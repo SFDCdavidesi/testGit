@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_EnvelopLink__c</fullName>
+    <description>[EBH] (EPH-3974) - DocuSign envelope link sent for signature</description>
+    <externalId>false</externalId>
+    <label>Envelop Link</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Url</type>
+</CustomField>

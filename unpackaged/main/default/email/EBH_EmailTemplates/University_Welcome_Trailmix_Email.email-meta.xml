@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0009937 - New User - University Welcome Trailmix Email</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>University Welcome Trailmix Email</name>
+    <style>none</style>
+    <subject>🐝 Hive New Starter Training Course [Action Required]</subject>
+    <textOnly>Hi {!trailheadapp__User_Trailmix__c.OwnerFirstName__c},
+
+Again welcome to Hive!
+
+We have created an exclusive Learning Trail for you containing everything you need to know about Hive for a successful start!  It is designed to give you knowledge that is relevant to your day-to-day operations, so you can be more confident, productive, and successful in your role:
+
+{!trailheadapp__User_Trailmix__c.Trailmix_Name__c}
+
+Description: {!trailheadapp__User_Trailmix__c.Description__c}
+
+
+Your success depends on having a growth mindset, and we want to prepare you for your role within eBay and support your ongoing development.
+
+Please complete this important training.
+
+We wish you a great start,
+
+Team Hive
+
+Start Course Now</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

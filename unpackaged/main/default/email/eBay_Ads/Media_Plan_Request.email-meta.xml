@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>eBay_Ads_Letterhead</letterhead>
+    <name>Media Plan Request</name>
+    <style>formalLetter</style>
+    <subject>{!Advertising_Request_Portal__c.Request_Type__c} Media Plan Request on {!Advertising_Request_Portal__c.Opportunity__c}</subject>
+    <textOnly>Hello {!Advertising_Request_Portal__c.Account_Manager__c},
+You have been assigned as the Media Plan Owner by {!Advertising_Request_Portal__c.CreatedBy} for {!Advertising_Request_Portal__c.Opportunity__c}.
+
+Name: {!Advertising_Request_Portal__c.Name__c}
+Request Type: {!Advertising_Request_Portal__c.Request_Type__c}
+Opportunity: {!Advertising_Request_Portal__c.Opportunity__c}
+Opportunity Type: {!Advertising_Request_Portal__c.Opportunity_Type__c}
+
+Campaign Objective: {!Advertising_Request_Portal__c.Campaign_Objective__c}
+KPI Benchmark: {!Advertising_Request_Portal__c.KPI_Benchmark__c}
+KPI Measurement:  {!Advertising_Request_Portal__c.KPI_Measurement__c}
+
+
+Tier 1 Budget: {!Advertising_Request_Portal__c.Tier_1_Budget__c}
+Tier 2 Budget: {!Advertising_Request_Portal__c.Tier_2_Budget__c}
+Tier 3 Budget: {!Advertising_Request_Portal__c.Tier_3_Budget__c}
+{!Advertising_Request_Portal__c.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

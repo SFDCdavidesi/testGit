@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Case Trigger</label>
+    <protected>false</protected>
+    <values>
+        <field>Method_1_name__c</field>
+        <value xsi:type="xsd:string">assignUniqueKey</value>
+    </values>
+    <values>
+        <field>Method_2_name__c</field>
+        <value xsi:type="xsd:string">autoPopulateProfile</value>
+    </values>
+    <values>
+        <field>Method_3_name__c</field>
+        <value xsi:type="xsd:string">validateSurveyVista</value>
+    </values>
+    <values>
+        <field>Method_4_name__c</field>
+        <value xsi:type="xsd:string">addPermissionAccess</value>
+    </values>
+    <values>
+        <field>Method_5_name__c</field>
+        <value xsi:type="xsd:string">checkCreateUsers</value>
+    </values>
+    <values>
+        <field>Method_6_name__c</field>
+        <value xsi:type="xsd:string">createTicketShare</value>
+    </values>
+    <values>
+        <field>Method_7_name__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Method_8_name__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Method_9_name__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>method1__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>method2__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>method3__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>method4__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>method5__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>method6__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>method7__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>method8__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>method9__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>eBay_Ads_Letterhead</letterhead>
+    <name>Incremental Closed Won</name>
+    <style>freeForm</style>
+    <subject>{!Opportunity.Incremental_Amount__c} Incremental added for {!Opportunity.Account}</subject>
+    <textOnly>Advertiser:   {!Opportunity.Account}
+Agency:       {!Opportunity.Agency__c}
+
+Incremental Amount: {!Opportunity.Incremental_Amount__c}
+Total Amount: {!Opportunity.Amount}
+
+Opportunity Owner: {!Opportunity.OwnerFullName}
+
+Campaign Start Date: {!Opportunity.Start_Date__c}
+Campaign End Date:  {!Opportunity.End_Date__c}
+
+
+Link to Opportunity: {!Opportunity.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

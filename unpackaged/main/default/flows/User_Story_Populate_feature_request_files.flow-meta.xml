@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>50.0</apiVersion>
+    <assignments>
+        <name>Assign_An_Email_Value_From_Hive_Product_Object_To_User_Story_Object_Field</name>
+        <label>Assign An Email Value From Hive Product Object To User Story Object Field</label>
+        <locationX>1293</locationX>
+        <locationY>431</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Hive_Product_Owner__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.HIVE_Products__r.Product_Owner__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>BA_is_empty</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Deployed_in_Prod</name>
+        <label>Deployed in Prod</label>
+        <locationX>842</locationX>
+        <locationY>2015</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.copado__Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Deployed in PROD</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>is_Feature_Request_Not_Empty</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Prepopulate_project_and_product</name>
+        <label>Prepopulate project and product</label>
+        <locationX>1293</locationX>
+        <locationY>1103</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Hive_Project__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Requirement_Request__r.Hive_Project__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.HIVE_Products__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Requirement_Request__r.HIVE_Products__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copado_project_not_null</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Status_SAT</name>
+        <label>Status = SAT</label>
+        <locationX>314</locationX>
+        <locationY>2015</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.copado__Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Deployed in QA</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>is_Feature_Request_Not_Empty</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Status_Staging</name>
+        <label>Status = Staging</label>
+        <locationX>1106</locationX>
+        <locationY>2015</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.copado__Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Staging</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>is_Feature_Request_Not_Empty</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Status_UAT</name>
+        <label>Status = UAT</label>
+        <locationX>578</locationX>
+        <locationY>2015</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.copado__Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Deployed in UAT</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>is_Feature_Request_Not_Empty</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_BA_with_created_by</name>
+        <label>Update BA with created by</label>
+        <locationX>1293</locationX>
+        <locationY>767</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.copado__Business_Analyst__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Feature_request_not_empty</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>US-0011960 - Managing prioritization of Product Backlog Items (PBIs)</description>
+        <name>Update_Bug_BusinessValuePoint</name>
+        <label>Update Bug Business Value Point</label>
+        <locationX>1425</locationX>
+        <locationY>3431</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Business_Value_Points__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>BugBusinessValuePoint</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Update_Credential</name>
+        <label>Update Credential</label>
+        <locationX>1293</locationX>
+        <locationY>1439</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.copado__Org_Credential__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Label.COPADO_CREDENTIAL_SPRINT_DEV</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Credential_not_null</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_default_test_level</name>
+        <label>Update default test level</label>
+        <locationX>1139</locationX>
+        <locationY>2999</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.copado__Promotion_Test_Level__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>RunSpecifiedTests</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_BusinessValuePoint_By_Priority</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_Hive_Epic</name>
+        <label>Update Hive Epic</label>
+        <locationX>1293</locationX>
+        <locationY>2543</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.hive_epic__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Requirement_Request__r.Hive_Epic__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Is_Update</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_Status_to_in_Dev</name>
+        <label>Update Status to in Dev</label>
+        <locationX>50</locationX>
+        <locationY>2015</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.copado__Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>In Dev</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>is_Feature_Request_Not_Empty</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>US-0011960 - Managing prioritization of Product Backlog Items (PBIs)</description>
+        <name>Update_UserStory_BusinessValuePoint</name>
+        <label>Update User Story Business Value Point</label>
+        <locationX>1161</locationX>
+        <locationY>3431</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Business_Value_Points__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>UserStoryBusinessValuePoint</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>BA_is_empty</name>
+        <label>BA is empty</label>
+        <locationX>1425</locationX>
+        <locationY>647</locationY>
+        <defaultConnector>
+            <targetReference>Feature_request_not_empty</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>BA_Empty_true</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.copado__Business_Analyst__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_BA_with_created_by</targetReference>
+            </connector>
+            <label>BA Empty = true</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Pre-popular an email from Hive Product Object</description>
+        <name>Check_Hive_Product_Owner_Email</name>
+        <label>Check Hive Product Owner Email</label>
+        <locationX>1425</locationX>
+        <locationY>311</locationY>
+        <defaultConnector>
+            <targetReference>BA_is_empty</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Hive_Product_Owner_Email_NOT_NULL</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.HIVE_Products__r.OwnerId</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.HIVE_Products__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_An_Email_Value_From_Hive_Product_Object_To_User_Story_Object_Field</targetReference>
+            </connector>
+            <label>Is Hive Product Owner Email NOT NULL</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Copado_project_not_null</name>
+        <label>Copado project not null</label>
+        <locationX>1425</locationX>
+        <locationY>1319</locationY>
+        <defaultConnector>
+            <targetReference>Credential_not_null</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>update_org_credential</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.copado__Project__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.copado__Org_Credential__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Credential</targetReference>
+            </connector>
+            <label>update org credential</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Credential_changed</name>
+        <label>Credential changed</label>
+        <locationX>1128</locationX>
+        <locationY>1775</locationY>
+        <defaultConnector>
+            <targetReference>is_Feature_Request_Not_Empty</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>credential_has_changed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.copado__Org_Credential__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Evaluate_Credential</targetReference>
+            </connector>
+            <label>credential has changed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Credential_not_null</name>
+        <label>Credential not null</label>
+        <locationX>1425</locationX>
+        <locationY>1655</locationY>
+        <defaultConnector>
+            <targetReference>is_Feature_Request_Not_Empty</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Credential_different_than_null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.copado__Org_Credential__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Credential_changed</targetReference>
+            </connector>
+            <label>Is Credential different than null?</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Evaluate_Credential</name>
+        <label>Evaluate Credential</label>
+        <locationX>710</locationX>
+        <locationY>1895</locationY>
+        <defaultConnector>
+            <targetReference>is_Feature_Request_Not_Empty</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Crediantial_DEV</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.copado__Org_Credential__r.Name</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>DEV</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Status_to_in_Dev</targetReference>
+            </connector>
+            <label>Crediantial = DEV</label>
+        </rules>
+        <rules>
+            <name>Credential_SAT</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.copado__Org_Credential__r.Name</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>SAT</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Status_SAT</targetReference>
+            </connector>
+            <label>Credential = SAT</label>
+        </rules>
+        <rules>
+            <name>Credential_UAT</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.copado__Org_Credential__r.Name</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>UAT</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Status_UAT</targetReference>
+            </connector>
+            <label>Credential = UAT</label>
+        </rules>
+        <rules>
+            <name>Credential_Production</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.copado__Org_Credential__r.Name</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Production</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Deployed_in_Prod</targetReference>
+            </connector>
+            <label>Credential = Production</label>
+        </rules>
+        <rules>
+            <name>Credential_Staging</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.copado__Org_Credential__r.Name</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Staging</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Status_Staging</targetReference>
+            </connector>
+            <label>Credential = Staging</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Feature_request_not_empty</name>
+        <label>Feature request not empty</label>
+        <locationX>1425</locationX>
+        <locationY>983</locationY>
+        <defaultConnector>
+            <targetReference>Copado_project_not_null</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Feature_request_is_not_empty</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Requirement_Request__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Prepopulate_project_and_product</targetReference>
+            </connector>
+            <label>Feature request is not empty</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>is_Feature_Request_Not_Empty</name>
+        <label>is Feature Request Not Empty</label>
+        <locationX>1425</locationX>
+        <locationY>2423</locationY>
+        <defaultConnector>
+            <targetReference>Is_Update</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>FR_not_empty</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Requirement_Request__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Requirement_Request__r.Hive_Epic__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Hive_Epic</targetReference>
+            </connector>
+            <label>FR not empty</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_Update</name>
+        <label>Is Update</label>
+        <locationX>1425</locationX>
+        <locationY>2759</locationY>
+        <defaultConnector>
+            <targetReference>Update_BusinessValuePoint_By_Priority</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Updated</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>update_promotion_test_level</targetReference>
+            </connector>
+            <label>Updated</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>US-0011960 - Managing prioritization of Product Backlog Items (PBIs)</description>
+        <name>Update_BusinessValuePoint_By_Priority</name>
+        <label>Update Business Value Point By Priority</label>
+        <locationX>1425</locationX>
+        <locationY>3311</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_BA_Priority</name>
+            <conditionLogic>1 AND 2 AND (3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>User_Story</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.BA_Priority__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.BA_Priority__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_UserStory_BusinessValuePoint</targetReference>
+            </connector>
+            <label>Is BA Priority</label>
+        </rules>
+        <rules>
+            <name>Is_Bug_Priority</name>
+            <conditionLogic>1 AND 2 AND (3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Bug</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Bug_Priority__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Bug_Priority__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Bug_BusinessValuePoint</targetReference>
+            </connector>
+            <label>Is Bug Priority</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>update_promotion_test_level</name>
+        <label>update promotion test level?</label>
+        <locationX>1271</locationX>
+        <locationY>2879</locationY>
+        <defaultConnector>
+            <targetReference>Update_BusinessValuePoint_By_Priority</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>has_apex_code_true</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.copado__Has_Apex_Code__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.copado__Promotion_Test_Level__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>NoTestRun</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.copado__Has_Apex_Code__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_default_test_level</targetReference>
+            </connector>
+            <label>has apex code = true</label>
+        </rules>
+    </decisions>
+    <description>US-0011331 - New Hive Products Object - Hive Products field changes
+-- UPDATED CREDENTIALS IN DEV
+--including credential as a custom label
+-- Added Stating
+US-0011430 - Product Owner checkbox validation
+US-0011960 - Managing prioritization of Product Backlog Items (PBIs)</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>US-0011960 - Managing prioritization of Product Backlog Items (PBIs)</description>
+        <name>BugBusinessValuePoint</name>
+        <dataType>Number</dataType>
+        <expression>CASE({!$Record.Bug_Priority__c}, 
+    &#39;Insprint&#39;, 550,
+    &#39;P1&#39;, 550,
+    &#39;P2&#39;, 450, 
+    &#39;P3&#39;, 350,
+    {!$Record.Business_Value_Points__c}
+)</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>CredentialCalculated</name>
+        <dataType>String</dataType>
+        <expression>&#39;a2p3u0000007FuOAAU&#39;</expression>
+    </formulas>
+    <formulas>
+        <description>US-0011960 - Managing prioritization of Product Backlog Items (PBIs)</description>
+        <name>UserStoryBusinessValuePoint</name>
+        <dataType>Number</dataType>
+        <expression>CASE({!$Record.BA_Priority__c} , 
+    &#39;Highest&#39;, 500, 
+    &#39;High&#39;, 400, 
+    &#39;Medium&#39;, 300, 
+    &#39;Low&#39;, 200, 
+    {!$Record.Business_Value_Points__c}
+)</expression>
+        <scale>0</scale>
+    </formulas>
+    <interviewLabel>User Story - Populate feature request files {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>User Story - Populate feature request files</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>1299</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_Hive_Product_Owner_Email</targetReference>
+        </connector>
+        <object>copado__User_Story__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

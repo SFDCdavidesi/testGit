@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>[EPH-3952] (Sprint 8) Domo Access for new user</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Domo Access</name>
+    <style>none</style>
+    <subject>Email to Access Domo for new user.</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

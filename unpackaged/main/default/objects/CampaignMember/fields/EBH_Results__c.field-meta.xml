@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_Results__c</fullName>
+    <description>[EBH] (EPH-1912) :Response</description>
+    <externalId>false</externalId>
+    <label>Response</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>In Queue</fullName>
+                <default>false</default>
+                <label>In Queue</label>
+            </value>
+            <value>
+                <fullName>Failed (Blocked)</fullName>
+                <default>false</default>
+                <label>Failed (Blocked)</label>
+            </value>
+            <value>
+                <fullName>Failed (Wrong Details)</fullName>
+                <default>false</default>
+                <label>Failed (Wrong Details)</label>
+            </value>
+            <value>
+                <fullName>Failed (Timeout)</fullName>
+                <default>false</default>
+                <label>Failed (Timeout)</label>
+            </value>
+            <value>
+                <fullName>Not Reached</fullName>
+                <default>false</default>
+                <label>Not Reached</label>
+            </value>
+            <value>
+                <fullName>Reached - No Action</fullName>
+                <default>false</default>
+                <label>Reached - No Action</label>
+            </value>
+            <value>
+                <fullName>Reached - Not Interested</fullName>
+                <default>false</default>
+                <label>Reached - Not Interested</label>
+            </value>
+            <value>
+                <fullName>Reached - Unsubscribe</fullName>
+                <default>false</default>
+                <label>Reached - Unsubscribe</label>
+            </value>
+            <value>
+                <fullName>Reached - Interested</fullName>
+                <default>false</default>
+                <label>Reached - Interested</label>
+            </value>
+            <value>
+                <fullName>Reached - Committed</fullName>
+                <default>false</default>
+                <label>Reached - Committed</label>
+            </value>
+            <value>
+                <fullName>Reached - Acted</fullName>
+                <default>false</default>
+                <label>Reached - Acted</label>
+            </value>
+            <value>
+                <fullName>Unknown Result</fullName>
+                <default>false</default>
+                <label>Unknown Result</label>
+            </value>
+            <value>
+                <fullName>Targeted</fullName>
+                <default>false</default>
+                <label>Targeted</label>
+            </value>
+            <value>
+                <fullName>Block Bounce</fullName>
+                <default>false</default>
+                <label>Block Bounce</label>
+            </value>
+            <value>
+                <fullName>Hard Bounce</fullName>
+                <default>false</default>
+                <label>Hard Bounce</label>
+            </value>
+            <value>
+                <fullName>Soft Bounce</fullName>
+                <default>false</default>
+                <label>Soft Bounce</label>
+            </value>
+            <value>
+                <fullName>Not Opened</fullName>
+                <default>false</default>
+                <label>Not Opened</label>
+            </value>
+            <value>
+                <fullName>Opened</fullName>
+                <default>false</default>
+                <label>Opened</label>
+            </value>
+            <value>
+                <fullName>Not Interested</fullName>
+                <default>false</default>
+                <label>Not Interested</label>
+            </value>
+            <value>
+                <fullName>Unsubscribed</fullName>
+                <default>false</default>
+                <label>Unsubscribed</label>
+            </value>
+            <value>
+                <fullName>Clicked</fullName>
+                <default>false</default>
+                <label>Clicked</label>
+            </value>
+            <value>
+                <fullName>Committed to Act</fullName>
+                <default>false</default>
+                <label>Committed to Act</label>
+            </value>
+            <value>
+                <fullName>Call Planned</fullName>
+                <default>false</default>
+                <label>Call Planned</label>
+            </value>
+            <value>
+                <fullName>Phone Blacklist</fullName>
+                <default>false</default>
+                <label>Phone Blacklist</label>
+            </value>
+            <value>
+                <fullName>Wrong Phone Number</fullName>
+                <default>false</default>
+                <label>Wrong Phone Number</label>
+            </value>
+            <value>
+                <fullName>Call Not Answered</fullName>
+                <default>false</default>
+                <label>Call Not Answered</label>
+            </value>
+            <value>
+                <fullName>DMC Not Reached</fullName>
+                <default>false</default>
+                <label>DMC Not Reached</label>
+            </value>
+            <value>
+                <fullName>DMC Not Interested</fullName>
+                <default>false</default>
+                <label>DMC Not Interested</label>
+            </value>
+            <value>
+                <fullName>Unsubscribe</fullName>
+                <default>false</default>
+                <label>Unsubscribe</label>
+            </value>
+            <value>
+                <fullName>DMC Interested</fullName>
+                <default>false</default>
+                <label>DMC Interested</label>
+            </value>
+            <value>
+                <fullName>DMC Committed</fullName>
+                <default>false</default>
+                <label>DMC Committed</label>
+            </value>
+            <value>
+                <fullName>Prepared </fullName>
+                <default>false</default>
+                <label>Prepared </label>
+            </value>
+            <value>
+                <fullName>Marketing Blocker</fullName>
+                <default>false</default>
+                <label>Marketing Blocker</label>
+            </value>
+            <value>
+                <fullName>N/A </fullName>
+                <default>false</default>
+                <label>N/A </label>
+            </value>
+            <value>
+                <fullName>Not Connected to Site </fullName>
+                <default>false</default>
+                <label>Not Connected to Site </label>
+            </value>
+            <value>
+                <fullName>Banner Not Shown</fullName>
+                <default>false</default>
+                <label>Banner Not Shown</label>
+            </value>
+            <value>
+                <fullName>Banner Not Clicked </fullName>
+                <default>false</default>
+                <label>Banner Not Clicked </label>
+            </value>
+            <value>
+                <fullName>Banner Clicked</fullName>
+                <default>false</default>
+                <label>Banner Clicked</label>
+            </value>
+            <value>
+                <fullName>Committed to Act </fullName>
+                <default>false</default>
+                <label>Committed to Act </label>
+            </value>
+            <value>
+                <fullName>Seller Ineligible</fullName>
+                <default>false</default>
+                <label>Seller Ineligible</label>
+            </value>
+            <value>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+                <label>Cancelled</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

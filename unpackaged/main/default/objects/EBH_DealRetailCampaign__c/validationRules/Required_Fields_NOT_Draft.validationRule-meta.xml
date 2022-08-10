@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Required_Fields_NOT_Draft</fullName>
+    <active>true</active>
+    <errorConditionFormula>(RecordType.Name = &quot;Deal Window&quot; || RecordType.Name = &quot;Deal Window Campaign&quot;) &amp;&amp;
+NOT(ISPICKVAL(Status__c,&quot;Draft&quot;)) &amp;&amp;
+
+(
+ISBLANK(EBH_DealTitle__c) ||
+ISBLANK(EBH_Date__c) ||
+ISBLANK(EPH_EndDate__c)
+)</errorConditionFormula>
+    <errorMessage>Please give this record a Name and Start and End Dates before moving out of Status = Draft</errorMessage>
+</ValidationRule>

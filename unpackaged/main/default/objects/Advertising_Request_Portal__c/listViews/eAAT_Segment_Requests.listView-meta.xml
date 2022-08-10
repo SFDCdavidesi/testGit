@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>eAAT_Segment_Requests</fullName>
+    <columns>NAME</columns>
+    <columns>Name__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Record_Type__c</field>
+        <operation>equals</operation>
+        <value>eaat segment request</value>
+    </filters>
+    <filters>
+        <field>Parent_Request__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>eAAT Segment Requests</label>
+</ListView>

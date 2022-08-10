@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_EBH_ExpectedSignUpDate</fullName>
+    <active>true</active>
+    <description>When I go to Project, Fulfilment
+and pick Response (acquisition) =Interested
+Then “Expected Sign Up date” is mandatory.</description>
+    <errorConditionFormula>AND( ISPICKVAL( EBH_ResponseAcquisition__c , &quot;DMC Interested&quot;) , ISBLANK(EBH_ExpectedSignUpDate__c) )</errorConditionFormula>
+    <errorDisplayField>EBH_ExpectedSignUpDate__c</errorDisplayField>
+    <errorMessage>Please populate Expected Sign Up Date for sellers that are Interested in Fulfilment project</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Seller_Share_P_h__c</fullName>
+    <description>07195 - Coupon Co-Invest records creation is causing System.LimitException: Too many SOQL queries: 101 error</description>
+    <externalId>false</externalId>
+    <formula>Coupon_Seller__r.SellerShareHolder__c</formula>
+    <label>Seller Share P</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

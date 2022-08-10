@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_Country__c</fullName>
+    <description>Deal Site ID</description>
+    <externalId>false</externalId>
+    <label>Deal Site</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>77</fullName>
+                <default>false</default>
+                <label>77</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>3</label>
+            </value>
+            <value>
+                <fullName>71</fullName>
+                <default>false</default>
+                <label>71</label>
+            </value>
+            <value>
+                <fullName>101</fullName>
+                <default>false</default>
+                <label>101</label>
+            </value>
+            <value>
+                <fullName>186</fullName>
+                <default>false</default>
+                <label>186</label>
+            </value>
+            <value>
+                <fullName>15</fullName>
+                <default>false</default>
+                <label>AU</label>
+            </value>
+            <value>
+                <fullName>0</fullName>
+                <default>false</default>
+                <label>US</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

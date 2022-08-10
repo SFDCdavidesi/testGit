@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>University_Welcome_Trailmix_Email</name>
+        <label>University Welcome Trailmix Email</label>
+        <locationX>490</locationX>
+        <locationY>648</locationY>
+        <actionName>trailheadapp__User_Trailmix__c.University_Welcome_Trailmix_Email_Alert</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>User_Trailmix.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>52.0</apiVersion>
+    <decisions>
+        <description>US-0011651 - Add permission set to all users upon creation</description>
+        <name>Check_User_License</name>
+        <label>Check User License</label>
+        <locationX>182</locationX>
+        <locationY>288</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>is_True</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Profile.UserLicense.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Salesforce</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Profile.UserLicense.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Salesforce Platform</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Profile.UserLicense.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Gold Partner</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Hive_Univeristy_MyTrailhead_base</targetReference>
+            </connector>
+            <label>is True</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>check if user trailmix have record.</description>
+        <name>IS_User_Trailmixes</name>
+        <label>Is User Trailmixes Has</label>
+        <locationX>622</locationX>
+        <locationY>528</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_User_Trailmixess</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>User_Trailmix.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>University_Welcome_Trailmix_Email</targetReference>
+            </connector>
+            <label>Is User Trailmixes true</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>if profile = Standard User AND PERMISSION SET = Growth Coaching</description>
+        <name>Profile_Standard_User_and_Permission_set_Growth_Coaching</name>
+        <label>Profile:Standard User and Permission set:Growth Coaching</label>
+        <locationX>820</locationX>
+        <locationY>288</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Welcome_Trailmix_Email_By_Specific_profile</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Profile.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Standard User Profile</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Profile.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>NA Standard User Base</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Profile.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Standard Ads EU User Profile</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Profile.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Standard Ads User Profile</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Profile.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>AU Standard User Profile</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>User_Trailmix</targetReference>
+            </connector>
+            <label>Welcome Trailmix Email By Specific profile</label>
+        </rules>
+    </decisions>
+    <description>US-0009937 - New User - University Welcome Trailmix Email
+US-0011240 - New AU User - University Welcome Trailmix Email
+US-0011651 - Add permission set to all users upon creation</description>
+    <environments>Default</environments>
+    <interviewLabel>University Welcome Trailmix Email {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>University Welcome_Trailmix Email</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_PermissionSetAssignment</name>
+        <label>Create PermissionSetAssignment</label>
+        <locationX>50</locationX>
+        <locationY>528</locationY>
+        <inputAssignments>
+            <field>AssigneeId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>PermissionSetId</field>
+            <value>
+                <elementReference>Get_Hive_Univeristy_MyTrailhead_base.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>PermissionSetAssignment</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <name>Get_Hive_Univeristy_MyTrailhead_base</name>
+        <label>Get Hive_Univeristy_MyTrailhead_base</label>
+        <locationX>50</locationX>
+        <locationY>408</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Create_PermissionSetAssignment</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Hive_Univeristy_MyTrailhead_base</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>PermissionSet</object>
+        <queriedFields>Id</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>User_Trailmix</name>
+        <label>User Trailmix</label>
+        <locationX>622</locationX>
+        <locationY>408</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>IS_User_Trailmixes</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>trailheadapp__User__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>trailheadapp__User_Trailmix__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>375</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_User_License</targetReference>
+        </connector>
+        <object>User</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <scheduledPaths>
+            <name>X24h_After_User_Creation</name>
+            <connector>
+                <targetReference>Profile_Standard_User_and_Permission_set_Growth_Coaching</targetReference>
+            </connector>
+            <label>24h After User Creation</label>
+            <offsetNumber>24</offsetNumber>
+            <offsetUnit>Hours</offsetUnit>
+            <recordField>CreatedDate</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

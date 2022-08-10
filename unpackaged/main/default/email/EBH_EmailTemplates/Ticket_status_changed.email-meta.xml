@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0007619 - Migrate to Cases - Migrate email templates / workflows, Email for notifying the user his ticket has been updated</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Ticket status changed</name>
+    <style>none</style>
+    <subject>Your ticket #{!Case.CaseNumber}&#39;s status has been updated to {!Case.Status}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

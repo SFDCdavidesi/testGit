@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deals</fullName>
+    <columns>NAME</columns>
+    <columns>Hive_Project__c</columns>
+    <columns>Status__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Hive_Epic__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>HIVE_Product__c</field>
+        <operation>equals</operation>
+        <value>Deals</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Completed,Rejected</value>
+    </filters>
+    <label>Deals</label>
+</ListView>

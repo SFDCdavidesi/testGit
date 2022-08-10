@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ClosedLostReasons__c</fullName>
+    <description>#US-0018736</description>
+    <externalId>false</externalId>
+    <label>Closed Lost Reasons</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Already on ebay</fullName>
+                <default>false</default>
+                <label>Already on ebay</label>
+            </value>
+            <value>
+                <fullName>Bad experience - eBay policies or standards</fullName>
+                <default>false</default>
+                <label>Bad experience - eBay policies or standards</label>
+            </value>
+            <value>
+                <fullName>Bad experience - high fees</fullName>
+                <default>false</default>
+                <label>Bad experience - high fees</label>
+            </value>
+            <value>
+                <fullName>Bad experience - insufficient sales</fullName>
+                <default>false</default>
+                <label>Bad experience - insufficient sales</label>
+            </value>
+            <value>
+                <fullName>Bad experience - time consuming</fullName>
+                <default>false</default>
+                <label>Bad experience - time consuming</label>
+            </value>
+            <value>
+                <fullName>Brand Association</fullName>
+                <default>false</default>
+                <label>Brand Association</label>
+            </value>
+            <value>
+                <fullName>Cost Factor - CS</fullName>
+                <default>false</default>
+                <label>Cost Factor - CS</label>
+            </value>
+            <value>
+                <fullName>Cost Factor - fees</fullName>
+                <default>false</default>
+                <label>Cost Factor - fees</label>
+            </value>
+            <value>
+                <fullName>Cost Factor - Integration</fullName>
+                <default>false</default>
+                <label>Cost Factor - Integration</label>
+            </value>
+            <value>
+                <fullName>Do Not Solicit anymore</fullName>
+                <default>false</default>
+                <label>Do Not Solicit anymore</label>
+            </value>
+            <value>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+                <label>Duplicate</label>
+            </value>
+            <value>
+                <fullName>Inappropriate titles</fullName>
+                <default>false</default>
+                <label>Inappropriate titles</label>
+            </value>
+            <value>
+                <fullName>Integration not possible</fullName>
+                <default>false</default>
+                <label>Integration not possible</label>
+            </value>
+            <value>
+                <fullName>No longer active</fullName>
+                <default>false</default>
+                <label>No longer active</label>
+            </value>
+            <value>
+                <fullName>No longer trading</fullName>
+                <default>false</default>
+                <label>No longer trading</label>
+            </value>
+            <value>
+                <fullName>Not looking to grow business</fullName>
+                <default>false</default>
+                <label>Not looking to grow business</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Overseas merchant</fullName>
+                <default>false</default>
+                <label>Overseas merchant</label>
+            </value>
+            <value>
+                <fullName>PayPal Unavailable</fullName>
+                <default>false</default>
+                <label>PayPal Unavailable</label>
+            </value>
+            <value>
+                <fullName>Previously contacted – Not Interested</fullName>
+                <default>false</default>
+                <label>Previously contacted – Not Interested</label>
+            </value>
+            <value>
+                <fullName>Products not suitable</fullName>
+                <default>false</default>
+                <label>Products not suitable</label>
+            </value>
+            <value>
+                <fullName>Services</fullName>
+                <default>false</default>
+                <label>Services</label>
+            </value>
+            <value>
+                <fullName>Shipping Options</fullName>
+                <default>false</default>
+                <label>Shipping Options</label>
+            </value>
+            <value>
+                <fullName>Subscription based site</fullName>
+                <default>false</default>
+                <label>Subscription based site</label>
+            </value>
+            <value>
+                <fullName>Supplier Issues</fullName>
+                <default>false</default>
+                <label>Supplier Issues</label>
+            </value>
+            <value>
+                <fullName>Time consuming</fullName>
+                <default>false</default>
+                <label>Time consuming</label>
+            </value>
+            <value>
+                <fullName>Unable to Contact</fullName>
+                <default>false</default>
+                <label>Unable to Contact</label>
+            </value>
+            <value>
+                <fullName>Unpleasant eBay experience</fullName>
+                <default>false</default>
+                <label>Unpleasant eBay experience</label>
+            </value>
+            <value>
+                <fullName>Unsupported platforms</fullName>
+                <default>false</default>
+                <label>Unsupported platforms</label>
+            </value>
+            <value>
+                <fullName>Unsustainable products</fullName>
+                <default>false</default>
+                <label>Unsustainable products</label>
+            </value>
+            <value>
+                <fullName>Wholesaler</fullName>
+                <default>false</default>
+                <label>Wholesaler</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

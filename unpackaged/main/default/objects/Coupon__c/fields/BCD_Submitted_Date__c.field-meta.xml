@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BCD_Submitted_Date__c</fullName>
+    <description>US-0007149: Coupon - New Invoice fields on Coupon Object</description>
+    <externalId>false</externalId>
+    <inlineHelpText>BCD submission should always be between the 16th and the last day of the month – make sure it is not between the 1st  and 15th of the month</inlineHelpText>
+    <label>BCD Submitted Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

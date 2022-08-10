@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_DaysInAcquisition__c</fullName>
+    <description>#US-0015700</description>
+    <externalId>false</externalId>
+    <formula>IF(
+ ISNULL(EBH_InitialCallDate__c), NULL,
+
+IF(
+AND(
+ISNULL( EBH_ThirdPartyProviderDate__c ), ISNULL( EBH_AcceptedTC__c )),
+TODAY() - EBH_InitialCallDate__c,
+
+
+IF(
+ISNULL(EBH_ThirdPartyProviderDate__c),
+EBH_AcceptedTC__c - EBH_InitialCallDate__c,
+
+
+IF(
+ISNULL( EBH_AcceptedTC__c ),
+EBH_ThirdPartyProviderDate__c - EBH_InitialCallDate__c,
+
+
+IF(
+EBH_AcceptedTC__c &gt; EBH_ThirdPartyProviderDate__c,
+EBH_ThirdPartyProviderDate__c - EBH_InitialCallDate__c,
+
+
+EBH_AcceptedTC__c - EBH_InitialCallDate__c
+
+
+
+)))))</formula>
+    <inlineHelpText>Number of Days that seller spent in the Acquisition stage (starting from the date when a seller got the first call to the date when he selected 3PP in Shutl or Accepted T&amp;Cs)</inlineHelpText>
+    <label>Days in Acquisition</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

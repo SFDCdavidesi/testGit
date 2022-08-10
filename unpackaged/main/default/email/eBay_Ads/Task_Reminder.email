@@ -1,0 +1,8 @@
+You have an open task due in 24 hours:
+
+Subject: {!Task.Subject}
+Account: {!Task.Account_Name__c}
+Status: {!Task.Status}
+Comments: {!Task.Description}
+
+{!Task.Link}

@@ -1,0 +1,8 @@
+{!Campaign.CreatedBy} has requested your approval for the following item:
+
+{!Campaign.EBH_RecordLink__c}
+
+Please click this link to approve or reject this record.
+
+Thank you,
+Salesforce

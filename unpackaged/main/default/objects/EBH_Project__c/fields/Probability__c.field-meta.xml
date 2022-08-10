@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Probability__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(EBH_Stage__c,
+   &#39;Closed Lost&#39;, 0,
+   &#39;Open&#39;, 0.1,
+   &#39;New Project&#39;, 0.1,
+   &#39;Engaged&#39;, 0.2,
+   &#39;Contacted&#39;, 0.2,
+   &#39;Proposal Created&#39;, 0.3,
+   &#39;Pitched&#39;, 0.4,
+   &#39;Negotiate and Close&#39;, 0.5,
+   &#39;Negotiation&#39;, 0.5,
+   &#39;On Hold&#39;, 0.5,
+   &#39;Paused&#39;, 0.5,
+   &#39;Paused during Integration&#39;, 0.5,
+   &#39;Paused After Going Live&#39;, 0.5,
+   &#39;Pre - Integration&#39;, 0.7,
+   &#39;Integration&#39;, 0.8,
+   &#39;Store Launched&#39;, 0.9,
+   &#39;Live to Site&#39;, 1, 
+0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Probability (%)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+            <value>
+                <fullName>Client Review</fullName>
+                <default>false</default>
+                <label>Client Review</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>Completed</label>
+            </value>
+            <value>
+                <fullName>CSI Awaiting Sales/AM/Client Feedback</fullName>
+                <default>false</default>
+                <label>CSI Awaiting Sales/AM/Client Feedback</label>
+            </value>
+            <value>
+                <fullName>CSI Passed Back to Offshore for Edits</fullName>
+                <default>false</default>
+                <label>CSI Passed Back to Offshore for Edits</label>
+            </value>
+            <value>
+                <fullName>CSI Reviewed and Updated - this is the trigger stage for Accenture or IAC to start</fullName>
+                <default>false</default>
+                <label>CSI Reviewed and Updated - this is the trigger stage for Accenture or IAC to start</label>
+            </value>
+            <value>
+                <fullName>CSI working to complete with existing data pull</fullName>
+                <default>false</default>
+                <label>CSI working to complete with existing data pull</label>
+            </value>
+            <value>
+                <fullName>CSI working to complete with existing DOMO Dashboard</fullName>
+                <default>false</default>
+                <label>CSI working to complete with existing DOMO Dashboard</label>
+            </value>
+            <value>
+                <fullName>Data Passed Back to Accenture for Revision</fullName>
+                <default>false</default>
+                <label>Data Passed Back to Accenture for Revision</label>
+            </value>
+            <value>
+                <fullName>Data Passed back to IAC for Revision</fullName>
+                <default>false</default>
+                <label>Data Passed back to IAC for Revision</label>
+            </value>
+            <value>
+                <fullName>Data Sent to Hypercube Owner for Data Science Creation</fullName>
+                <default>false</default>
+                <label>Data Sent to Hypercube Owner for Data Science Creation</label>
+            </value>
+            <value>
+                <fullName>Draft</fullName>
+                <default>true</default>
+                <label>Draft</label>
+            </value>
+            <value>
+                <fullName>New</fullName>
+                <default>false</default>
+                <label>New</label>
+            </value>
+            <value>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+                <label>In Progress</label>
+            </value>
+            <value>
+                <fullName>In CSI queue, IAC wating for details</fullName>
+                <default>false</default>
+                <label>In CSI queue, IAC wating for details</label>
+            </value>
+            <value>
+                <fullName>Ready for IAC Pickup</fullName>
+                <default>false</default>
+                <label>Ready for IAC Pickup</label>
+            </value>
+            <value>
+                <fullName>Waiting for feedback from the team</fullName>
+                <default>false</default>
+                <label>Waiting for feedback from the team</label>
+            </value>
+            <value>
+                <fullName>Data Sent back to CSI</fullName>
+                <default>false</default>
+                <label>Data Sent back to CSI</label>
+            </value>
+            <value>
+                <fullName>Data Sent back to IAC</fullName>
+                <default>false</default>
+                <label>Data Sent back to IAC</label>
+            </value>
+            <value>
+                <fullName>Complete</fullName>
+                <default>false</default>
+                <label>Complete</label>
+            </value>
+            <value>
+                <fullName>Legal Review</fullName>
+                <default>false</default>
+                <label>Legal Review</label>
+            </value>
+            <value>
+                <fullName>In IAC queue, waiting for Insights input</fullName>
+                <default>false</default>
+                <label>In IAC queue, waiting for Insights input</label>
+            </value>
+            <value>
+                <fullName>Ready for Accenture Pickup</fullName>
+                <default>false</default>
+                <label>Ready for Accenture Pickup</label>
+            </value>
+            <value>
+                <fullName>Ready for Insights</fullName>
+                <default>false</default>
+                <label>Ready for Insights</label>
+            </value>
+            <value>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+                <label>Rejected</label>
+            </value>
+            <value>
+                <fullName>Requested</fullName>
+                <default>false</default>
+                <label>Requested</label>
+            </value>
+            <value>
+                <fullName>Submitted for Approval</fullName>
+                <default>false</default>
+                <label>Submitted for Approval</label>
+            </value>
+            <value>
+                <fullName>Request pushed to Dashboard</fullName>
+                <default>false</default>
+                <label>Request pushed to Dashboard</label>
+            </value>
+            <value>
+                <fullName>Request Cancelled</fullName>
+                <default>false</default>
+                <label>Request Cancelled</label>
+            </value>
+            <value>
+                <fullName>CSI Reviewed and Updated - IAC Trigger</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CSI Reviewed and Updated - IAC Trigger</label>
+            </value>
+            <value>
+                <fullName>CSI sent back to offshore</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CSI sent back to offshore</label>
+            </value>
+            <value>
+                <fullName>CSI working to complete with existing DOMO data</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CSI working to complete with existing DOMO data</label>
+            </value>
+            <value>
+                <fullName>Data Sent to Hypercube</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Data Sent to Hypercube</label>
+            </value>
+            <value>
+                <fullName>In Progress – by CSI</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>In Progress – by CSI</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

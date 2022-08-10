@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>LoginErrorMsg</label>
+    <protected>false</protected>
+    <values>
+        <field>Value_Big__c</field>
+        <value xsi:type="xsd:string">Your access is disabled. Contact your site administrator.</value>
+    </values>
+    <values>
+        <field>Value__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>Value_in_German__c</field>
+        <value xsi:type="xsd:string">Ihr Zugriff ist deaktiviert. Um Ihr Konto zu reaktivieren, klicken Sie bitte auf „Mich anrufen“ unten auf unserer &lt;a title=&quot;Kundenservice-Seite&quot; href=&quot;https://www.ebay.de/help/home&quot; target=&quot;_blank&quot;&gt;Kundenservice-Seite&lt;/a&gt;.</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0009942 - [UK Risk] Pending items- High Priority</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Seller Risk Rejected Notification</name>
+    <style>none</style>
+    <subject>Seller Risk Management Ticket Number {!EBH_Project__c.Ticket_Number__c} was Rejected</subject>
+    <textOnly>Seller : {!EBH_Project__c.EBH_Seller__c}
+Request Type : {!EBH_Project__c.Request_Type__c}
+Reason for No : {!EBH_Project__c.Reason_for_No__c}
+Rejected Reason : {!EBH_Project__c.Rejected_Reason__c}
+Last modified by : {!EBH_Project__c.LastModifiedBy}
+
+For more details, please go to : {!EBH_Project__c.Link}
+
+Thank you.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

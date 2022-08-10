@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Duration__c</fullName>
+    <description>US-0010604 - Project Stage duration</description>
+    <externalId>false</externalId>
+    <label>Total Duration</label>
+    <summarizedField>Project_Stage_History__c.Duration_in_days_int__c</summarizedField>
+    <summaryForeignKey>Project_Stage_History__c.Project__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

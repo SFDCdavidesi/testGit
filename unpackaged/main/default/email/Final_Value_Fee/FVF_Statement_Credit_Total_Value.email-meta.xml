@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0008157 - [UK] FVF - BCD generation approval process</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>FVF Statement Credit Total Value</name>
+    <style>none</style>
+    <subject>Review approver for {!BCD_Statement__c.Name}</subject>
+    <textOnly>The FVF StatementCredit Total Value is more than $1m. Please send for the BCD file for approval to the correct approver.
+
+Go to BCD Statement</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

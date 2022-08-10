@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Related_Campaign__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>US-0015717 Survey ID - Read Only Field
+US-0007053-[Sub Campaign]Survey ID - to be made Read Only in &quot;Sub Campaigns&quot;</description>
+    <externalId>false</externalId>
+    <label>Related Campaign</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>(1 OR 2)</booleanFilter>
+        <errorMessage>Only Outreach Campaign allowed</errorMessage>
+        <filterItems>
+            <field>Campaign.RecordType.DeveloperName</field>
+            <operation>equals</operation>
+            <value>EBH_AMOutreach</value>
+        </filterItems>
+        <filterItems>
+            <field>Campaign.RecordType.DeveloperName</field>
+            <operation>equals</operation>
+            <value>EBH_SubCampaign</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Campaign</referenceTo>
+    <relationshipLabel>Tickets</relationshipLabel>
+    <relationshipName>Tickets1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

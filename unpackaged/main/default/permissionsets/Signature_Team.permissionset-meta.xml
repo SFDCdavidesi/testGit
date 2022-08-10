@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Signature_team_Custom_Permission</name>
+    </customPermissions>
+    <description>Signature Team Permission set to be used in combination of Custom Permission Signature TEam</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contract.EBH_EUSignNotes__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Signature Team</label>
+</PermissionSet>

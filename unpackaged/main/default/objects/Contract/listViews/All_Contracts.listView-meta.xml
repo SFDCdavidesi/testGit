@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Contracts</fullName>
+    <columns>CONTRACT.CONTRACT_NUMBER</columns>
+    <columns>SALES.ACCOUNT.NAME</columns>
+    <columns>CONTRACT.START_DATE</columns>
+    <columns>CONTRACT.END_DATE</columns>
+    <columns>CONTRACT.STATUS</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CONTRACT.RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CONTRACT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Contract.EBH_ACP,Contract.EBH_ListingAgreement,Contract.EBH_LockedACPContract,Contract.EBH_LockedLAContract,Contract.EBH_LockedRSContract,Contract.Refurbished,Contract.EBH_RevenueShare</value>
+    </filters>
+    <filters>
+        <field>SALES.ACCOUNT.NAME</field>
+        <operation>equals</operation>
+        <value>KP Family International GmbH</value>
+    </filters>
+    <label>All Contracts</label>
+</ListView>

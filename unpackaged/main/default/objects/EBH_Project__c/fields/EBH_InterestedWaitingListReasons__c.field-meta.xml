@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_InterestedWaitingListReasons__c</fullName>
+    <description>#US-0015700</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Constraints that prevents seller from participation in the Fulfilment programme.</inlineHelpText>
+    <label>Interested/ Waiting List reasons</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Needs time to decide/calculate</fullName>
+                <default>false</default>
+                <label>Needs time to decide/calculate</label>
+            </value>
+            <value>
+                <fullName>Waiting for lower prices</fullName>
+                <default>false</default>
+                <label>Waiting for lower prices</label>
+            </value>
+            <value>
+                <fullName>Waiting for better eBay ranking</fullName>
+                <default>false</default>
+                <label>Waiting for better eBay ranking</label>
+            </value>
+            <value>
+                <fullName>Waiting for other 3PP</fullName>
+                <default>false</default>
+                <label>Waiting for other 3PP</label>
+            </value>
+            <value>
+                <fullName>Waiting for different carrier</fullName>
+                <default>false</default>
+                <label>Waiting for different carrier</label>
+            </value>
+            <value>
+                <fullName>Waiting for returns</fullName>
+                <default>false</default>
+                <label>Waiting for returns</label>
+            </value>
+            <value>
+                <fullName>Waiting for restricted items</fullName>
+                <default>false</default>
+                <label>Waiting for restricted items</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

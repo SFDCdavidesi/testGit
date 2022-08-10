@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>[EBH] (EPH-4171) - Mass Acceptance of Deals without Subsidy</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>EBH_eBayBlankLetterhead</letterhead>
+    <name>Mass Acceptance of Deals with Subsidy</name>
+    <style>freeForm</style>
+    <subject>Akzeptiert: {!EBH_Deal__c.EBH_LocalDealFormat__c} {!EBH_Deal__c.EBH_ProductTitle__c} {!EBH_Deal__c.EBH_eBayItemID__c} {!EBH_Deal__c.EBH_DealStartDate__c}</subject>
+    <textOnly>Bitte stimmen Sie dem Deal zu, indem Sie unten auf den Button “Ich stimme zu” klicken, um Ihr Einverständnis mit den hier aufgeführten Einzelheiten zur Werbeaktion zu bestätigen.
+
+https://hive-prod.force.com/response?id={!EBH_Deal__c.Id}&amp;reURL=www.ebay.de
+
+Werbeaktions-Einzelheiten
+eBay-Konto/Nutzername: {!EBH_Deal__c.EBH_BusinessName__c}
+Titel/Beschreibung des Artikels: {!EBH_Deal__c.EBH_ProductTitle__c}
+Menge: {!EBH_Deal__c.EBH_Quantity__c}
+
+Werbeaktions-Format &amp; Datum: {!EBH_Deal__c.EBH_LocalDealFormat__c} | Woche {!EBH_Deal__c.EBH_DealStartDate__c} bis {!EBH_Deal__c.EBH_DealEndDate__c}
+
+Anfangsdatum der Werbeaktion: {!EBH_Deal__c.EBH_DealStartDate__c}
+Anfangszeitpunkt des Preisnachlasses: 08:00
+
+Enddatum der Werbeaktion: {!EBH_Deal__c.EBH_DealEndDate__c}
+Zeitpunkt der Preiserhöhung: 07:59
+
+Seite(n): DE
+
+Preis
+Listenpreis(UVP/Bisheriger Preis): €{!EBH_Deal__c.EBH_RRPWASPrice__c}
+Angebotspreis des Verkäufers: €{!EBH_Deal__c.EBH_SellerPrice__c}
+Ermäßigter Aktionspreis des Verkäufers: €{!EBH_Deal__c.EBH_DealPrice__c}
+(nach Vermarktungsunterstützung)
+
+Vermarktungsunterstützung
+Vermarktungsunterstützung pro verkauftem Artikel: €{!EBH_Deal__c.EBH_Subsidy__c}
+Maximale Vermarktungsunterstützung - Menge: {!EBH_Deal__c.EBH_Quantity__c}
+Maximale Vermarktungsunterstützung - Betrag: €{!EBH_Deal__c.EBH_SubsidyMax__c}
+
+Kommentar
+{!EBH_Deal__c.EBH_CommentfromeBaySourcer__c}
+
+
+Durch Ihre Zustimmung bestätigen Sie, dass:
+es sich bei dem von Ihnen angebotene Artikel nicht um Fälschungen oder Plagiate handelt; und
+Sie berechtigt sind, diesen Artikel zu verkaufen/vertreiben und an die in von Ihnen angegebenen Versandorte zu versenden; und
+Sie keinerlei Vertragspflichten aus anderen Verträgen verletzen, indem Sie diesen Artikel auf eBay zum Verkauf anbieten; und
+dass der von Ihnen angegebene oben genannte Listenpreis der aktuelle UVP bzw. der tatsächliche vorherige Verkaufspreis ist; und
+dass Sie während des oben angegeben Zeitraums der Werbeaktion das Angebot des eingestellten Artikels nicht ohne ausdrückliche schriftliche Zustimmung von eBay ändern werden
+
+Dieser Werbeaktions-Einzelvertrag dient der Dokumentation der Bedingungen einer Werbeaktion auf der/den oben aufgeführten eBay-Webseite(n) und ist Bestandteil des von Ihnen mit der eBay Marketplaces GmbH abgeschlossenen Werbeaktions- Rahmenvertrages.
+
+
+Mit vielen Grüβen
+Ihr eBay Team</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

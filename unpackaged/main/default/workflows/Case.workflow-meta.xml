@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Case_Ticket_Approval_Rejection_Notification</fullName>
+        <description>Case - Ticket Approval Rejection Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/Case_Approval_Rejection_User_Audit</template>
+    </alerts>
+    <alerts>
+        <fullName>Entitlements_Ticket_Severity_SLA_Breached</fullName>
+        <description>Entitlements - Ticket Severity - SLA Breached</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Ticket_Manager</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/Ticket_Severity_SLA_breached</template>
+    </alerts>
+    <alerts>
+        <fullName>Entitlements_Ticket_Severity_SLA_about_to_be_breached</fullName>
+        <description>Entitlements - Ticket Severity - SLA about to be breached</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Ticket_Manager</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/Ticket_Severity_SLA_about_to_be_breached</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_owners_of_the_ticket</fullName>
+        <ccEmails>DL-eBay-Hive-Tickets@ebay.com</ccEmails>
+        <description>Notify owners of the ticket</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/Ticket_assigned_notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_owners_of_the_ticket_Adv</fullName>
+        <description>Notify owners of the ticket - Adv</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Adv_Ticket_Manager</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/Ticket_assigned_notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_user_about_a_change_in_the_status_of_his_ticket</fullName>
+        <description>US-0007619 - Migrate to Cases - Migrate email templates / workflows, Notify user about a change in the status of his ticket</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/Ticket_status_changed</template>
+    </alerts>
+    <alerts>
+        <fullName>PII_Contract_Alert</fullName>
+        <description>US-0009366 - [Export Reports] - Manage PII access within Hive in a SOX compliant manner</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Who_should_have_admin_access__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/PII_Terms_Conditions</template>
+    </alerts>
+    <alerts>
+        <fullName>Support_Ticket_Approval_Request_Approved</fullName>
+        <description>Support Ticket Approval Request - Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Approvals/Support_Ticket_Approval_Request_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>Support_Ticket_Approval_Request_Rejected</fullName>
+        <description>Support Ticket Approval Request - Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Approvals/Support_Ticket_Approval_Request_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>Ticket_Support_Request_Notification</fullName>
+        <description>US-0007619 - Migrate to Cases - Migrate email templates / workflows, EPH-7362 Support Ticket Enhancements</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/Ticket_Support_Request</template>
+    </alerts>
+    <alerts>
+        <fullName>Ticket_Support_Status_Change_Notification</fullName>
+        <description>US-0007619 - Migrate to Cases - Migrate email templates / workflows, EPH-7362 Support Ticket Enhancements</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/Ticket_Status_Change</template>
+    </alerts>
+    <alerts>
+        <fullName>US_0007619_Feature_Request_Status_Change</fullName>
+        <description>US-0007619  - Migrate to Cases - Migrate email templates / workflows, US-0006988 - Feature Request Status Change</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/Ticket_Feature_Request_Status_Change</template>
+    </alerts>
+    <alerts>
+        <fullName>US_0007619_New_Feature_Request_Created</fullName>
+        <description>US-0007619  - Migrate to Cases - Migrate email templates / workflows, US-0006988 - New Feature Request Created</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/Ticket_New_Feature_Request</template>
+    </alerts>
+    <alerts>
+        <fullName>Welcome_email_for_new_user_in_Hive</fullName>
+        <description>Welcome email for new user in Hive</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email_address__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dl-ebay-hive-support@ebay.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>EBH_EmailTemplates/Welcome_Email_2021</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Assign_new_records_to_ticket_queue</fullName>
+        <description>US-0007619 - Migrate to Cases - Migrate email templates / workflows, EPH-2950] (Sprint-5) Assign New Records To Ticket</description>
+        <field>OwnerId</field>
+        <lookupValue>Case_Ticket_Manager</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Assign new records to ticket queue</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>First_Response_complete</fullName>
+        <description>US-0007623</description>
+        <field>Status</field>
+        <literalValue>In Progress</literalValue>
+        <name>First Response complete</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Investigation_Completed</fullName>
+        <description>US-0007623</description>
+        <field>Status</field>
+        <literalValue>Closed</literalValue>
+        <name>Investigation Completed</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Ticket_Pending</fullName>
+        <description>Update Ticket status to Pending when ticket has been submitted for approval</description>
+        <field>Status</field>
+        <literalValue>Pending</literalValue>
+        <name>Ticket - Pending</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Ticket_UpdateApproved</fullName>
+        <description>US-0007620 - Migrate to Cases - Check &quot;Approved&quot;</description>
+        <field>Approved__c</field>
+        <literalValue>1</literalValue>
+        <name>Ticket_UpdateApproved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Ticket_UpdateInProgress</fullName>
+        <description>US-0007620 - Migrate to Cases - New field update related to Case object</description>
+        <field>Status</field>
+        <literalValue>In Progress</literalValue>
+        <name>Ticket_UpdateInProgress</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_field_approved_by_finance</fullName>
+        <field>Approved_by_Finance__c</field>
+        <literalValue>1</literalValue>
+        <name>Update field approved by finance</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Assign new records to ticket queue</fullName>
+        <actions>
+            <name>Notify_owners_of_the_ticket</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>US-0007619 - Migrate to Cases - Migrate email templates / workflows, [EPH-2950] (Sprint-5) -To Assign new records to ticket queue
+Updated: US-0009930 - New Queue and assignment for support tickets relating to ADV</description>
+        <formula>RecordTypeId &lt;&gt; &quot;0123u0000019nl0&quot; &amp;&amp; Owner:Queue.Name = &quot;Ticket Manager&quot;  /*and (RecordTypeId &lt;&gt;&quot;0123u0000019nl0AAA&quot;, RecordTypeId&lt;&gt;&quot;0123u0000019nl0&quot;)*/</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>New Support Request</fullName>
+        <actions>
+            <name>Ticket_Support_Request_Notification</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Support Ticket</value>
+        </criteriaItems>
+        <description>US-0007619 - Migrate to Cases - Migrate email templates / workflows, EPH-7362 Support Ticket Enhancements</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Notify owners of the ticket - Adv</fullName>
+        <actions>
+            <name>Notify_owners_of_the_ticket_Adv</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>US-0009930 - New Queue and assignment for support tickets relating to ADV</description>
+        <formula>RecordTypeId &lt;&gt; &quot;0123u0000019nl0&quot; &amp;&amp; Owner:Queue.Name = &quot;Adv Ticket Manager&quot;</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Notify user when status changes</fullName>
+        <actions>
+            <name>Notify_user_about_a_change_in_the_status_of_his_ticket</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>US-0007619 - Migrate to Cases - Migrate email templates / workflows</description>
+        <formula>and ( not(isnew()),  I_want_to_be_notified__c ,  ISCHANGED( Status )  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Support Request Status Change</fullName>
+        <actions>
+            <name>Ticket_Support_Status_Change_Notification</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>US-0007619 - Migrate to Cases - Migrate email templates / workflows,EPH-7362 Support Ticket Enhancements</description>
+        <formula>IF(AND(NOT(ISNEW()),RecordType.DeveloperName =&#39;User_Ticket&#39;,ISCHANGED( Status ), OwnerId = LastModifiedById ),true,false)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Ticket - Feature Request Status Change</fullName>
+        <actions>
+            <name>US_0007619_Feature_Request_Status_Change</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>US-0007619  - Migrate to Cases - Migrate email templates / workflows, US-0006988 - Hive Feature Request - status change</description>
+        <formula>AND ( not(isnew()), ISCHANGED( Status ), RecordType.DeveloperName = &#39;Feature_Request&#39;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Ticket - New Feature Request</fullName>
+        <actions>
+            <name>US_0007619_New_Feature_Request_Created</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Feature Request</value>
+        </criteriaItems>
+        <description>US-0007619  - Migrate to Cases - Migrate email templates / workflows, US-0006988 - Hive New Feature Request</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Welcome Email</fullName>
+        <actions>
+            <name>Welcome_email_for_new_user_in_Hive</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND (2  or 4 )AND 3</booleanFilter>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Closed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>User Request Form</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Picklist__c</field>
+            <operation>notEqual</operation>
+            <value>GCX Partner Profile</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>User Reactivation</value>
+        </criteriaItems>
+        <description>US-0007619 - Migrate to Cases - Migrate email templates / workflows, [EPH-3824] (Sprint 7) Welcome Email for new users in Hive</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

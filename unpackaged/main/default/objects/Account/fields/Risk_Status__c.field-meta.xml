@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Risk_Status__c</fullName>
+    <description>US-0009325 - New fields on Seller 360 for UK CUD initiative</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Current status of the Seller Vetting process</inlineHelpText>
+    <label>Risk Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+            <value>
+                <fullName>Pending</fullName>
+                <default>false</default>
+                <label>Pending</label>
+            </value>
+            <value>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+                <label>Rejected</label>
+            </value>
+            <value>
+                <fullName>Vetting not-required</fullName>
+                <default>false</default>
+                <label>Vetting not-required</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

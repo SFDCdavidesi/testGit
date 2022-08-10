@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>FR [EBH] (EPH-4176) - Mass Rejection of Deals</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>EBH_eBayBlankLetterhead</letterhead>
+    <name>FR Mass Rejection of Deals</name>
+    <style>freeForm</style>
+    <subject>Proposition de promotion non retenue</subject>
+    <textOnly>Merci de votre intérêt pour le programme &lt;&lt; Bons Plans &gt;&gt; d&#39;eBay.fr.
+
+Titre de l&#39;objet : {!EBH_Deal__c.EBH_ProductTitle__c}
+Motif du rejet : {!EBH_Deal__c.EBH_ReasonforRejection__c}
+Commentaire : {!EBH_Deal__c.EBH_ReasonforRejectionextd__c}
+Compte/pseudo eBay : {!EBH_Deal__c.EBH_BusinessName__c}
+Titre/description de l&#39;objet : {!EBH_Deal__c.EBH_ProductTitle__c}
+Quantité : {!EBH_Deal__c.EBH_Quantity__c}
+Prix de vente : € {!EBH_Deal__c.EBH_RRPWASPrice__c}
+Montant de l&#39;offre du vendeur : € {!EBH_Deal__c.EBH_DealPrice__c}
+
+Votre proposition de promotion n&#39;a pas été sélectionnée cette fois-ci. Nos sélections sont basées sur différents critères, notamment :
+
+• Meilleur prix du marché : nos clients ne doivent pas pouvoir trouver le même produit à un prix plus intéressant sur les sites des autres détaillants pendant la période de la promotion.
+• Pertinence pour les acheteurs :– la catégorie des produits proposés doit être adaptée à la saison ou susciter de l&#39;intérêt.
+• Stock suffisant : le produit doit être proposé dans les Bons Plans en quantité suffisante pour assurer sa disponibilité pendant la majeure partie de la période promotionnelle.
+• Diversité de la sélection : soucieux de proposer aux clients eBay une sélection variée, nous avons pour objectif de sélectionner une gamme d&#39;offres représentative de l&#39;étendue du choix sur eBay.
+
+Nous espérons que vous nous soumettrez prochainement une nouvelle promotion et que votre proposition sera retenue.
+
+Cordialement,
+
+L&#39;équipe eBay</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

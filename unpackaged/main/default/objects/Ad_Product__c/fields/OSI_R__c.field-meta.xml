@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSI_R__c</fullName>
+    <description>US-0009161 - [Ads 2020] Migrate Formulas from Revenue 2 to Ad Product</description>
+    <externalId>false</externalId>
+    <formula>CASE( Billing_Category__c , &quot;Fix Price&quot;, 1, &quot;CPM&quot;,IF (Days_delivered__c &gt; 0 &amp;&amp; Booked_Quantity__c &gt; 0, (Runtime_Days__c / Days_delivered__c) * ( Delivered_AI_LT__c / Booked_Quantity__c),0), 
+
+&quot;CPC&quot; ,IF (Days_delivered__c &gt; 0 &amp;&amp; Booked_Quantity__c &gt; 0, (Runtime_Days__c / Days_delivered__c) * ( IF(Product2__r.Callisto__c , Callisto_Clicks_Recorded_LT__c, Clicks_Recorded_LT__c) / Booked_Quantity__c),0),
+
+&quot;CPO&quot; ,0,
+
+
+&quot;CPA&quot; ,IF (Days_delivered__c &gt; 0 &amp;&amp; Booked_Quantity__c &gt; 0, (Runtime_Days__c / Days_delivered__c) * ( Clicks_Recorded_LT__c / Booked_Quantity__c),0), 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Value is calculated based on the delivery data in salesforce.com and can differ from DFP</inlineHelpText>
+    <label>OSI % (R)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

@@ -1,0 +1,14 @@
+<p>Dear {!User.Name},</p>
+<p>New Final Value Fee Discount request has been created by {!Final_Value_Fee_FVF__c.OwnerFullName}.</p>
+<p>Below you will find a summary of the request:<br></p>
+<ul>
+   
+  <li>Seller: {!Final_Value_Fee_FVF__c.Seller_Name__c}</li>
+  <li>Business Reason: {!Final_Value_Fee_FVF__c.Business_Reason__c}</li>
+  <li>Start Date: {!Final_Value_Fee_FVF__c.Start_Date_w__c}</li>
+  <li>End Date: {!Final_Value_Fee_FVF__c.End_Date_w__c}</li>
+  <li>Manually Estimated Budget: {!Final_Value_Fee_FVF__c.Budget_Manually_Estimated__c}</li>
+  <li>Automatically Estimated Budget: {!Final_Value_Fee_FVF__c.Budget_estimated_w__c}</li>
+  <li>Total Number of Listings: {!Final_Value_Fee_FVF__c.Total_Number_of_Listings__c}</li>
+</ul>  
+<p>Please review <a href="{!Final_Value_Fee_FVF__c.Link}" style="text-decoration: none; color: #ff6666">{!Final_Value_Fee_FVF__c.Name}</a> and either <a title="Approve or Reject" href="{!ApprovalRequest.Internal_URL}">Approve or Reject</a></p>

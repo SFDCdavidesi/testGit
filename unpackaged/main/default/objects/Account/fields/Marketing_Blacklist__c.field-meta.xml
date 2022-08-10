@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marketing_Blacklist__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>EPH-5630 Seller - Quality &amp; Preference
+US-0008638 - Seller 360: Rename &quot;Blacklist&quot; to &quot;Blocklist&quot;</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indication that the seller has been blocklisted and will not receive any marketing communication.</inlineHelpText>
+    <label>Marketing Blocklist</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Types_of_Risk__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <externalId>false</externalId>
+    <label>Types of Risk</label>
+    <required>false</required>
+    <securityClassification>Public</securityClassification>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Data Protection</fullName>
+                <default>false</default>
+                <label>Data Protection</label>
+            </value>
+            <value>
+                <fullName>IP Usage</fullName>
+                <default>false</default>
+                <label>IP Usage</label>
+            </value>
+            <value>
+                <fullName>Misc Legal</fullName>
+                <default>false</default>
+                <label>Misc Legal</label>
+            </value>
+            <value>
+                <fullName>Non-payment</fullName>
+                <default>false</default>
+                <label>Non-payment</label>
+            </value>
+            <value>
+                <fullName>Operational Burden</fullName>
+                <default>false</default>
+                <label>Operational Burden</label>
+            </value>
+            <value>
+                <fullName>Overextension of Data Use</fullName>
+                <default>false</default>
+                <label>Overextension of Data Use</label>
+            </value>
+            <value>
+                <fullName>Privacy</fullName>
+                <default>false</default>
+                <label>Privacy</label>
+            </value>
+            <value>
+                <fullName>Unexpected Damages</fullName>
+                <default>false</default>
+                <label>Unexpected Damages</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>8</visibleLines>
+</CustomField>

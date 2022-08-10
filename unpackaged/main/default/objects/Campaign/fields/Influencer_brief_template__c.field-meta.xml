@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Influencer_brief_template__c</fullName>
+    <description>US-0011867</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Template for a brief that agency will send to influencers. 
+Down the line it is changed to be influencer-specific.</inlineHelpText>
+    <label>Influencer brief (template)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Url</type>
+</CustomField>

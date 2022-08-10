@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>email template for quotes that need approval</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>eBay_Ads_Letterhead</letterhead>
+    <name>Quote Approval Requested</name>
+    <style>freeForm</style>
+    <subject>Quote Submitted For Approval</subject>
+    <textOnly>{!Approval_Requesting_User.FirstName} {!Approval_Requesting_User.LastName} has requested your approval for the following item:
+
+
+Quote Name: {!Quote.Name}
+Advertiser: {!Quote.Advertiser__c}
+Total Discount: {!Quote.Total_Discount__c}
+Total Estimated Budget: {!Quote.Total_Estimated_Budget__c}
+
+
+To approve or reject this item, click this link {!ApprovalRequest.Internal_URL} or reply to this email with one of these words in the first line of the email message: APPROVE, APPROVED, YES, REJECT, REJECTED, NO
+
+
+If replying via email, you can also add comments on the second line. Comments will be stored with the approval request in Salesforce CRM.
+
+You can also approve, reject and comment on this request from your feed: https://hive.my.salesforce.com/_ui/core/chatter/ui/ChatterPage
+
+
+
+To view the request itself, click this link
+{!Quote.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

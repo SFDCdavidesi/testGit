@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PayPalIntegration__c</fullName>
+    <description>US-0007708 - [AU] New fields for &#39;Managed Payment&#39; Pagelayout for Project</description>
+    <externalId>false</externalId>
+    <label>PayPal Integration</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Integration with PayPal</fullName>
+                <default>false</default>
+                <label>Integration with PayPal</label>
+            </value>
+            <value>
+                <fullName>Seller uses PP Settlement Report</fullName>
+                <default>false</default>
+                <label>Seller uses PP Settlement Report</label>
+            </value>
+            <value>
+                <fullName>NA</fullName>
+                <default>false</default>
+                <label>NA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

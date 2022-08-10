@@ -1,0 +1,43 @@
+<p> Lieber eBay-Verkäufer, </p>
+
+<p>nachfolgend erhalten Sie die abschließende Übersicht der Umsätze und Kosten, die mit der Nutzung des Gutscheincodes {!Coupon_Seller__c.Coupon_ID__c} während des Werbeaktionszeitraums getätigt wurden und im nächsten Rechnungszyklus abgerechnet wird.</p>
+<table border="1" cellspacing="0" cellpadding="5">
+<tbody>
+<tr>
+<th>Gutschein</th>
+<th>Kampagnen-Zeitraum</th>
+<th>Umsatz mit Gutscheincode (EUR)</th>
+<th>Betrag aus Gutscheincode-Einlösung (EUR)</th>
+<th>Betrag aus Kostenbeteiligung (EUR)</th>
+</tr>
+<tr>
+<td>{!Coupon_Seller__c.Coupon_ID__c}</td>
+<td>{!Coupon_Seller__c.Coupon_Start_Date__c} - {!Coupon_Seller__c.Coupon_End_Date__c}</td>
+<td>{!Coupon_Seller__c.GMV_LC__c}</td>
+<td>{!Coupon_Seller__c.Contra_LC__c}</td>
+<td>{!Coupon_Seller__c.Cost_Share_Seller_LC__c}</td>
+</tr>
+</tbody>
+</table>
+
+<p>Die Übersicht der Einzeltransaktionen zur Aktion erhalten Sie auf Anfrage über Ihren eBay-Ansprechpartner. </p>
+
+<p>Sollten Sie Rückfragen haben oder weitere Informationen benötigen, zögern Sie bitte nicht, Kontakt aufzunehmen.</p>
+
+<p>Wir wünschen Ihnen weiterhin viel Erfolg beim Verkaufen auf eBay</p>
+
+<p>Mit besten Grüßen</p>
+<p>Ihr eBay-Team</p>
+
+<hr>
+<small>
+<p><span style="background-color: #ebebeb; color: gray;">Diese E Mail wurde von der eBay GmbH im Zusammenhang mit Ihrem Mitgliedskonto bei <a href="https://www.ebay.de/">www.ebay.de</a> gesendet. Es handelt sich hierbei um eine einmalige Mitteilung. Eine Änderung Ihrer Benachrichtigungseinstellungen ist nicht erforderlich.</span></p>
+
+<p><span style="background-color: #ebebeb;color: gray;">Die eBay GmbH fragt niemals per E Mail nach persönlichen Daten (wie z.B. Passwort, Kreditkarten- oder Bankkontonummern).</span></p>
+
+<p><span style="background-color: #ebebeb;color: gray;">© 1995-{!CurrentYear} eBay Inc.</span></p>
+
+<p><span style="background-color: #ebebeb;color: gray;"><a href="https://www.ebay.de/help/policies/member-behavior-policies/impressum?id=4714">Impressum</a></span></p>
+<small>
+
+<span style="background-color: #ebebeb;color: gray;">eBay GmbH</span>

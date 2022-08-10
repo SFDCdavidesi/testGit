@@ -1,0 +1,88 @@
+<apex:page standardController="Marketing_Ticket__c" lightningStylesheets="true">
+<apex:includeScript value="/lightning/lightning.out.js" />
+ <head>
+  <apex:slds /> 
+  <script src="/soap/ajax/40.0/connection.js" type="text/javascript"></script>
+    <script src="/soap/ajax/40.0/apex.js" type="text/javascript"></script>
+    <script>
+    	sforce.connection.sessionId='{!GETSESSIONID()}';
+    	
+    </script>
+    
+ 	<style>
+ 		.comContainer {
+		  width: 100%;
+		  white-space: normal;
+		  overflow: hidden;
+		}
+		.comContainer > div {
+		  width: 400px !important;
+		  display: inline-block;
+		  margin: 5px;
+		}
+ 	
+ 	</style> 
+ </head>
+  
+  <body class="slds-scope">
+  	<div style="position: fixed; left: 0; top: 0; bottom: 0; right: 0; z-index: 1001; margin: 15% 50%" id="div_loading">
+        <div style="display: inline-block; padding: 2px; background-color: #fff; width: 125px;">
+            <img src="/img/loading32.gif" style="float: left; margin: 8px;" />
+            <span style="display: inline-block; padding: 10px 0px;">Please Wait...</span>
+        </div>
+    </div>
+    
+    <div class="comContainer">
+    
+	  	<div id="lightning0" /> 
+	  	<div id="lightning1" /> 
+  		<div id="lightning2" /> 
+  	</div>
+  	<script>
+  		function hideLoading(){
+		 	document.getElementById("div_loading").style.display = "none";
+		 }
+	 	 
+	 	 function createCom(recIndex)
+	 	 {
+	 	 	var divId = "lightning" + recIndex;
+	 	 	$Lightning.use("c:TargetingDetailEditorApp", function() {
+  			  var params = {}; 
+	          $Lightning.createComponent("c:TargetingDetailEditor", params,divId,
+	          function(cmp) {
+					console.log('LOADED BR7');
+		            try{
+						//cmp.set("v.searchLayoutTicket",layoutAsObject["Ticket__c"]);
+						//cmp.set("v.searchLayoutOpportunity",layoutAsObject["Opportunity"]);
+					   
+					   }catch(e){
+						  console.log('>>lc page done: err:'+e);
+					   }
+				  
+				  if(recIndex < detailTargettings.length -1)
+				  {
+				  	createCom(recIndex+1);
+				  }else 
+				  {
+				  	hideLoading();
+				  } 
+	              
+	          });
+	        });
+	 	 } 
+	 	  
+	 	 	
+	 	 var detailTargettings = [];
+	 	 detailTargettings.push("xxx");
+	 	 detailTargettings.push("yyy");
+	 	 detailTargettings.push("zzz");
+	 	 
+	 	 createCom(0);
+	 		
+  		 
+	        
+	</script>
+	
+  </body>
+
+</apex:page>

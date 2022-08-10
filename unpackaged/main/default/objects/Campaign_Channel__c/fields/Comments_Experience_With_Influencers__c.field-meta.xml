@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comments_Experience_With_Influencers__c</fullName>
+    <description>US-0011876 - 1.4. Influencer Campaign (Channels for Campaign)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please only add process related comments (e.g. quality of content, timeline keeping etc.). No sensitive personal information.</inlineHelpText>
+    <label>Comments (experience with influencers)</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

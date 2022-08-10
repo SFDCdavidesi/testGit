@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Coupons_List_View_Fields_Detail</fullName>
+    <description>DE Seller Portal</description>
+    <displayedFields>
+        <field>Seller__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>DE Coupons List View Fields Detail</label>
+</FieldSet>

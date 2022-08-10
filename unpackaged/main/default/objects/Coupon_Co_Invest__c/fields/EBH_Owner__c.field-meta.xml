@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_Owner__c</fullName>
+    <description>(EPH-7591) Add new field Owner to Coupon Seller Object and Coupon Co-Invest Object</description>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&quot;/&quot; +  Coupon_Seller__r.EBH_CouponSellerOwner__c,  Coupon_Seller__r.EBH_CouponSellerOwner__r.FirstName + &quot; &quot; + Coupon_Seller__r.EBH_CouponSellerOwner__r.LastName )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Owner</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

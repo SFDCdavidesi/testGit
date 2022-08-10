@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Seller_Declined_Reasons__c</fullName>
+    <description>[#EPH-7254]Object: Coupon Seller - New field Seller Declined Reason</description>
+    <externalId>false</externalId>
+    <label>Seller Declined Reasons</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Internal Challenges (Logistics, holiday etc.)</fullName>
+                <default>false</default>
+                <label>Internal Challenges (Logistics, holiday etc.)</label>
+            </value>
+            <value>
+                <fullName>Only item based feasible, not category based</fullName>
+                <default>false</default>
+                <label>Only item based feasible, not category based</label>
+            </value>
+            <value>
+                <fullName>Only category based feasible, not item based</fullName>
+                <default>false</default>
+                <label>Only category based feasible, not item based</label>
+            </value>
+            <value>
+                <fullName>No interest in general - focus on In-the-River and/or Deals</fullName>
+                <default>false</default>
+                <label>No interest in general - focus on In-the-River and/or Deals</label>
+            </value>
+            <value>
+                <fullName>Does not want to have any promotion on current account</fullName>
+                <default>false</default>
+                <label>Does not want to have any promotion on current account</label>
+            </value>
+            <value>
+                <fullName>Participation only with other related account</fullName>
+                <default>false</default>
+                <label>Participation only with other related account</label>
+            </value>
+            <value>
+                <fullName>No appropriate Inventory available</fullName>
+                <default>false</default>
+                <label>No appropriate Inventory available</label>
+            </value>
+            <value>
+                <fullName>Too many coupons in a little while</fullName>
+                <default>false</default>
+                <label>Too many coupons in a little while</label>
+            </value>
+            <value>
+                <fullName>Cannot agree on share split</fullName>
+                <default>false</default>
+                <label>Cannot agree on share split</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Seller did not respond</fullName>
+                <default>false</default>
+                <label>Seller did not respond</label>
+            </value>
+            <value>
+                <fullName>Contract Breach</fullName>
+                <default>false</default>
+                <label>Contract Breach</label>
+            </value>
+            <value>
+                <fullName>Contract Voided</fullName>
+                <default>false</default>
+                <label>Contract Voided</label>
+            </value>
+            <value>
+                <fullName>Seller not reached</fullName>
+                <default>false</default>
+                <label>Seller not reached</label>
+            </value>
+            <value>
+                <fullName>Seller added to coupon by mistake</fullName>
+                <default>false</default>
+                <label>Seller added to coupon by mistake</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

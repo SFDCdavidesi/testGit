@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Seller_Comm_List</fullName>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Final_Value_Fee_FVF__c.Seller_Communication</value>
+    </filters>
+    <filters>
+        <field>Seller_Name__c</field>
+        <operation>equals</operation>
+        <value>Standard -DE Seller</value>
+    </filters>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>9/6/2019 12:00 AM</value>
+    </filters>
+    <label>Seller_Comm List</label>
+</ListView>

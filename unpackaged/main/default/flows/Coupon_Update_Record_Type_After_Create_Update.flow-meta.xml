@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <assignments>
+        <name>Add_each_Coupon_Category_into_List</name>
+        <label>Add each Coupon Category into List</label>
+        <locationX>292</locationX>
+        <locationY>1487</locationY>
+        <assignmentItems>
+            <assignToReference>listCouponCategory</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Iterate_each_Coupon_Category</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Iterate_each_Coupon_Category</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>US-0011830 - Map Coupon Type field to field on Coupon Seller record</description>
+        <name>Set_Coupon_Seller_Type_to_Item_Based</name>
+        <label>Set Coupon Seller Type to Item Based</label>
+        <locationX>50</locationX>
+        <locationY>575</locationY>
+        <assignmentItems>
+            <assignToReference>CouponSellerRecordType</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Item Based</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Coupon_Seller_field</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_Coupon_Category_Fields</name>
+        <label>Update Coupon Category Fields</label>
+        <locationX>292</locationX>
+        <locationY>1367</locationY>
+        <assignmentItems>
+            <assignToReference>Iterate_each_Coupon_Category.Is_Visible_in_Seller_Portal__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_each_Coupon_Category_into_List</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>US-0011755 - External Sharing for Category/ Category Tree for US</description>
+        <name>Check_Coupon_Record_Type</name>
+        <label>Check Coupon Record Type</label>
+        <locationX>336</locationX>
+        <locationY>1007</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>RT_Item_Based</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Item_Based</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Main_Coupon_Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ebay.com</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Seller Negotiation</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Coupon_Category</targetReference>
+            </connector>
+            <label>RT = Item Based</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Coupon_RecordType</name>
+        <label>Check Coupon RecordType</label>
+        <locationX>182</locationX>
+        <locationY>455</locationY>
+        <defaultConnector>
+            <targetReference>Update_Coupon_Seller_field</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>RecordType_ItemBased</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Item_Based</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Coupon_Seller_Type_to_Item_Based</targetReference>
+            </connector>
+            <label>RecordType ItemBased</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>US-0011830 - Map Coupon Type field to field on Coupon Seller record</description>
+        <name>Is_Record_Type_Not_Pop_Coupon</name>
+        <label>Is Record Type Not Pop Coupon</label>
+        <locationX>336</locationX>
+        <locationY>335</locationY>
+        <defaultConnector>
+            <targetReference>Check_Coupon_Record_Type</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>xIs_Record_Type_Not_Pop_Coupon</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Pop_Coupon</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordTypeId</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_Coupon_RecordType</targetReference>
+            </connector>
+            <label>Is Record Type Not Pop Coupon</label>
+        </rules>
+    </decisions>
+    <description>US-0011830 - Map Coupon Type field to field on Coupon Seller record</description>
+    <environments>Default</environments>
+    <interviewLabel>Coupon Update Record Type After Create, Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Coupon Update Record Type After Create, Update</label>
+    <loops>
+        <description>US-0011755 - External Sharing for Category/ Category Tree for US</description>
+        <name>Iterate_each_Coupon_Category</name>
+        <label>Iterate each Coupon Category</label>
+        <locationX>204</locationX>
+        <locationY>1247</locationY>
+        <collectionReference>Get_Coupon_Category</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Update_Coupon_Category_Fields</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Update_Coupon_Category</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>US-0011755 - External Sharing for Category/ Category Tree for US</description>
+        <name>Get_Coupon_Category</name>
+        <label>Get Coupon Category</label>
+        <locationX>204</locationX>
+        <locationY>1127</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Iterate_each_Coupon_Category</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Coupon__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Is_Visible_in_Seller_Portal__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Coupon_Category__c</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Is_Visible_in_Seller_Portal__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Coupon_Category</name>
+        <label>Update Coupon Category</label>
+        <locationX>204</locationX>
+        <locationY>1703</locationY>
+        <inputReference>listCouponCategory</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>US-0011830 - Map Coupon Type field to field on Coupon Seller record</description>
+        <name>Update_Coupon_Seller_field</name>
+        <label>Update Coupon Seller field</label>
+        <locationX>182</locationX>
+        <locationY>791</locationY>
+        <connector>
+            <targetReference>Check_Coupon_Record_Type</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Coupon__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Coupon_Type__c</field>
+            <value>
+                <elementReference>CouponSellerRecordType</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Coupon_Seller__c</object>
+    </recordUpdates>
+    <start>
+        <locationX>210</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Is_Record_Type_Not_Pop_Coupon</targetReference>
+        </connector>
+        <object>Coupon__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>US-0011830 - Map Coupon Type field to field on Coupon Seller record</description>
+        <name>CouponSellerRecordType</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Category Based</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>listCouponCategory</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Coupon_Category__c</objectType>
+    </variables>
+</Flow>

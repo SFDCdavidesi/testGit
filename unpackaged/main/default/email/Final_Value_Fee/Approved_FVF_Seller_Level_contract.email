@@ -1,0 +1,4 @@
+<p>The FVF(Seller Level) contract has been approved in Hive. </p>
+<p>Comments:</p>
+<p>{!ApprovalRequest.Comments}</p>
+<p><a title="Go to FVF(Seller Level)" href="{!Final_Value_Fee_FVF__c.Link}">Go to FVF(Seller Level)</a></p>

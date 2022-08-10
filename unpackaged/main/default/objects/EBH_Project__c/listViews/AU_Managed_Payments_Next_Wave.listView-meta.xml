@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AU_Managed_Payments_Next_Wave</fullName>
+    <columns>NAME</columns>
+    <columns>EBH_Seller__c</columns>
+    <columns>GMVLast12Months__c</columns>
+    <columns>Seller_Tier__c</columns>
+    <columns>EBH_Stage__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>OWNER.LAST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Seller_Tier__c</field>
+        <operation>contains</operation>
+        <value>Next Wave</value>
+    </filters>
+    <filters>
+        <field>OWNER.FIRST_NAME</field>
+        <operation>equals</operation>
+        <value>pooja</value>
+    </filters>
+    <label>AU Managed Payments - Next Wave</label>
+</ListView>

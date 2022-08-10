@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_ETLContactReadOnly</fullName>
+    <active>true</active>
+    <description>EPH-1913, US-0007080
+US-0009506 - NA Deals: DWH Contacts conflicts
+US-0011343  - restore contact of LinkAccount. added RT</description>
+    <errorConditionFormula>AND(
+NOT(ISNEW()),
+RecordType.DeveloperName = &#39;EBH_DWH&#39;,
+$Profile.Name != &#39;System Administrator&#39;,
+NOT(ISCHANGED(RecordTypeId)),
+NOT(ISCHANGED(Available_for_GCX__c)),
+NOT(ISCHANGED(Accepted_Current_Deals_Agreement__c)),
+NOT(ISCHANGED( Primary_Contact__c )),
+NOT(ISCHANGED( EBH_Decision_Maker_Role__c )),
+NOT(ISCHANGED( Contact_Role__c )),
+NOT(ISCHANGED(EBH_DoNotContact__c))
+) &amp;&amp; NOT( $Setup.ActiveValidationRules__c.All_Validation_Rules_Deactivated__c )</errorConditionFormula>
+    <errorMessage>This contact can not be changed</errorMessage>
+</ValidationRule>

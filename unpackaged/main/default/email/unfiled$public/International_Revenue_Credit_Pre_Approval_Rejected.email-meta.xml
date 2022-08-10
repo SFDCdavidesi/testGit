@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>eBay_Ads_Letterhead</letterhead>
+    <name>International Revenue Credit Pre Approval Rejected</name>
+    <style>freeForm</style>
+    <subject>International Revenue Credit Pre Approval Rejected</subject>
+    <textOnly>Hello,
+
+&#39;{!Advertising_Request_Portal__c.Name__c}&#39; has been rejected
+
+Please review the details below:
+
+Account: {!Advertising_Request_Portal__c.Account__c}
+Opportunity: {!Advertising_Request_Portal__c.Opportunity__c}
+Amount: {!Advertising_Request_Portal__c.Opportunity_Amount__c}
+Business Justification: {!Advertising_Request_Portal__c.Business_Justification__c}
+
+Additional Information: {!Advertising_Request_Portal__c.Additional_Information__c}
+
+Seller: {!Advertising_Request_Portal__c.CreatedBy}
+
+{!Advertising_Request_Portal__c.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

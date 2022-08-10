@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Level_Name__c</fullName>
+    <description>[#EPH-7350] New field for Object: Coupon Category</description>
+    <externalId>false</externalId>
+    <formula>CASE(Category__r.Level__c, 0, &#39;Site Level&#39;, 1, &#39;Meta Category&#39;, 2, &#39;L2 Category&#39;, 3, &#39;L3 Category &#39;, &#39;&#39;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Level Name</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

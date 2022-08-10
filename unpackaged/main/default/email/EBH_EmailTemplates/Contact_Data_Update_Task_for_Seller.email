@@ -1,0 +1,20 @@
+Dear {!Account.OwnerFullName},<br/><br/>
+
+The following contact for {!Account.Name} has been identified with either an invalid email or invalid phone number. We won't be able to reach the contact in our upcoming campaigns if this won't be updated! <br/><br/>
+
+Name: {Contact Name} <br/>
+Invalid Email: {Email_Bounced__c} <br/>
+Invalid Phone: {Incorrect_Phone_Number__c} <br/>
+Contact Record Type: {RecordTypeId} <br/><br/>
+
+For more details, please check the related tab. Click Here <a href="{sellerUrl}">{!Account.Name}</a><br/> <br/>
+If it is a DWH Contact (the contact that is registered on eBay) please forward the following link to your managed contact and kindly ask your contact to update the phone and/or email address in my eBay.<br/><br/>
+For DE: https://scgi.ebay.de/ws1/eBayISAPI.dll?ChangeRegistrationShow&guest=1<br/>
+For UK: https://scgi.ebay.co.uk/ws1/eBayISAPI.dll?ChangeRegistrationShow&guest=1<br/>
+For AU: https://scgi.ebay.com.au/ws1/eBayISAPI.dll?ChangeRegistrationShow&guest=1<br/>
+For FR: https://scgi.ebay.co.fr/ws1/eBayISAPI.dll?ChangeRegistrationShow&guest=1<br/>
+For IT: https://scgi.ebay.it/ws1/eBayISAPI.dll?ChangeRegistrationShow&guest=1<br/>
+For ES: https://scgi.ebay.es/ws1/eBayISAPI.dll?ChangeRegistrationShow&guest=1<br/><br/>
+
+Thank you,<br/><br/>
+Team Hive

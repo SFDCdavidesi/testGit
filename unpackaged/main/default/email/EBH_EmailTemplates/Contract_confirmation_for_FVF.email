@@ -1,0 +1,9 @@
+Dear  {!Final_Value_Fee_FVF__c.Requestor__c},<br/>
+<br/>
+This email is to inform you that FVF contract has been signed by a  {!Final_Value_Fee_FVF__c.Seller_Name__c}.<br/>
+<br/>
+Click here to view the details: {!Final_Value_Fee_FVF__c.Link}.<br/>
+<br/>
+Thank you,<br/>
+<br/>
+HIVE team

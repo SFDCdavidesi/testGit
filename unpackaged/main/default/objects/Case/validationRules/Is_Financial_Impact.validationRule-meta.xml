@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Financial_Impact</fullName>
+    <active>true</active>
+    <description>US-0008189 - Enhancement for financial approval on support tickets</description>
+    <errorConditionFormula>AND(Financial_Impact__c  = TRUE, ISBLANK( Finance_Approver__c ) )</errorConditionFormula>
+    <errorDisplayField>Finance_Approver__c</errorDisplayField>
+    <errorMessage>Please provide a Finance Approver for tickets with financial impact.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Integration_type__c</fullName>
+    <externalId>false</externalId>
+    <label>Integration type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Site__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Direct</fullName>
+                <default>false</default>
+                <label>Direct</label>
+            </value>
+            <value>
+                <fullName>Plug in</fullName>
+                <default>false</default>
+                <label>Plug in</label>
+            </value>
+            <value>
+                <fullName>Custom</fullName>
+                <default>false</default>
+                <label>Custom</label>
+            </value>
+            <value>
+                <fullName>CSV</fullName>
+                <default>false</default>
+                <label>CSV</label>
+            </value>
+            <value>
+                <fullName>MIP</fullName>
+                <default>false</default>
+                <label>MIP</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>API</fullName>
+                <default>false</default>
+                <label>API</label>
+            </value>
+            <value>
+                <fullName>3PP</fullName>
+                <default>false</default>
+                <label>3PP</label>
+            </value>
+            <value>
+                <fullName>API Hybrid</fullName>
+                <default>false</default>
+                <label>API Hybrid</label>
+            </value>
+            <value>
+                <fullName>MIP Hybrid</fullName>
+                <default>false</default>
+                <label>MIP Hybrid</label>
+            </value>
+            <value>
+                <fullName>Low-touch</fullName>
+                <default>false</default>
+                <label>Low-touch</label>
+            </value>
+            <value>
+                <fullName>SMB</fullName>
+                <default>false</default>
+                <label>SMB</label>
+            </value>
+            <value>
+                <fullName>CSV (file exchange)</fullName>
+                <default>false</default>
+                <label>CSV (file exchange)</label>
+            </value>
+            <value>
+                <fullName>Cart plug in</fullName>
+                <default>false</default>
+                <label>Cart plug in</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>UK</controllingFieldValue>
+            <controllingFieldValue>AU</controllingFieldValue>
+            <controllingFieldValue>DE</controllingFieldValue>
+            <controllingFieldValue>FR</controllingFieldValue>
+            <controllingFieldValue>IT</controllingFieldValue>
+            <controllingFieldValue>ES</controllingFieldValue>
+            <valueName>MIP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UK</controllingFieldValue>
+            <controllingFieldValue>DE</controllingFieldValue>
+            <controllingFieldValue>FR</controllingFieldValue>
+            <controllingFieldValue>IT</controllingFieldValue>
+            <controllingFieldValue>ES</controllingFieldValue>
+            <valueName>API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UK</controllingFieldValue>
+            <controllingFieldValue>DE</controllingFieldValue>
+            <controllingFieldValue>FR</controllingFieldValue>
+            <controllingFieldValue>IT</controllingFieldValue>
+            <controllingFieldValue>ES</controllingFieldValue>
+            <valueName>3PP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UK</controllingFieldValue>
+            <controllingFieldValue>DE</controllingFieldValue>
+            <controllingFieldValue>FR</controllingFieldValue>
+            <controllingFieldValue>IT</controllingFieldValue>
+            <controllingFieldValue>ES</controllingFieldValue>
+            <valueName>API Hybrid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UK</controllingFieldValue>
+            <controllingFieldValue>DE</controllingFieldValue>
+            <controllingFieldValue>FR</controllingFieldValue>
+            <controllingFieldValue>IT</controllingFieldValue>
+            <controllingFieldValue>ES</controllingFieldValue>
+            <valueName>MIP Hybrid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UK</controllingFieldValue>
+            <controllingFieldValue>DE</controllingFieldValue>
+            <controllingFieldValue>FR</controllingFieldValue>
+            <controllingFieldValue>IT</controllingFieldValue>
+            <controllingFieldValue>ES</controllingFieldValue>
+            <valueName>Low-touch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UK</controllingFieldValue>
+            <controllingFieldValue>DE</controllingFieldValue>
+            <controllingFieldValue>FR</controllingFieldValue>
+            <controllingFieldValue>IT</controllingFieldValue>
+            <controllingFieldValue>ES</controllingFieldValue>
+            <valueName>SMB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UK</controllingFieldValue>
+            <controllingFieldValue>DE</controllingFieldValue>
+            <controllingFieldValue>FR</controllingFieldValue>
+            <controllingFieldValue>IT</controllingFieldValue>
+            <controllingFieldValue>ES</controllingFieldValue>
+            <valueName>CSV (file exchange)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UK</controllingFieldValue>
+            <controllingFieldValue>DE</controllingFieldValue>
+            <controllingFieldValue>FR</controllingFieldValue>
+            <controllingFieldValue>IT</controllingFieldValue>
+            <controllingFieldValue>ES</controllingFieldValue>
+            <valueName>Cart plug in</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AU</controllingFieldValue>
+            <valueName>Direct</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AU</controllingFieldValue>
+            <valueName>Plug in</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AU</controllingFieldValue>
+            <valueName>Custom</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AU</controllingFieldValue>
+            <valueName>CSV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AU</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

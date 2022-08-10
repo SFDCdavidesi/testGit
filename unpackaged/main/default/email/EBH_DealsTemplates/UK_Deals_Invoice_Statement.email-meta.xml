@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>[#EPH-7865] Deals Invoicing Email - Deals Invoice Statement - FR and UK version (UK)</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>UK Deals Invoice Statement</name>
+    <style>none</style>
+    <subject>Important Information: Overview of Billing for Top Deal starting on {!EBH_Deal__c.EBH_DealStartDate__c}</subject>
+    <textOnly>Below/Attached you will find an overview of the billable marketing support for the completed Top Deal starting on {!EBH_Deal__c.EBH_DealStartDate__c}:
+
+Details of the Top Deal:
+
+{!EBH_Deal__c.EBH_DealStartDate__c} to {!EBH_Deal__c.EBH_DealEndDate__c}
+{!EBH_Deal__c.EBH_ProductTitle__c}
+{!EBH_Deal__c.EBH_eBayItemID__c}
+{!EBH_Deal__c.EBH_LocalDealFormat__c}
+
+Billable marketing support*:
+
+Billable sales volume: {!EBH_Deal__c.EBH_Payout_SI_calc__c}
+Marketing support per sold item: {!EBH_Deal__c.EBH_Subsidy__c}
+Total net marketing support: {!EBH_Deal__c.Subsidy_Final_Net__c}
+VAT: {!EBH_Deal__c.VAT_N__c}%
+Total gross marketing support: {!EBH_Deal__c.EBH_SubsidyFinal__c}
+
+
+* Please note This is not an invoice for VAT purposes.
+
+If you agree with the overview above, please
+issue and upload an invoice for the final subsidy gross amount by using the invoice tool founder here: upload tool.
+
+Once you have uploaded your invoice, eBay will transfer the invoiced sum to your PayPal account.
+
+Click on the following link if you need further information or if you have questions regarding the overview: clarification link.
+and an eBay agent will contact you.
+
+
+Sincerely,
+
+Your eBay team
+
+
+eBay is committed to your privacy. Read our user agreement and privacy policy. Learn how to recognise fake (spoof) emails.
+
+We do not check replies sent to this email. If you have questions, we want to help you find an answer.
+
+Copyright ©2018 eBay Inc. All Rights Reserved. Designated trademarks and brands are the property of their respective owners. eBay and the eBay logo are trademarks of eBay Inc., eBay Europe S.à r.l. 22-24 Boulevard Royal, L-2449, Luxembourg</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

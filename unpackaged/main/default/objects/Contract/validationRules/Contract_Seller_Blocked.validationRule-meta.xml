@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_Seller_Blocked</fullName>
+    <active>true</active>
+    <description>US-0007080</description>
+    <errorConditionFormula>AND( 
+AND(NOT(BEGINS($Profile.Name,&quot;System Administrator&quot;)),$Profile.Name!=&quot;Business Admin&quot;),
+    AND(
+       NOT(ISPickval( Status ,&quot;Draft&quot;)),
+       NOT(ISPickval(Status ,&quot;In Negotiation&quot;)),
+       NOT(ISPickval(Status ,&quot;Sent for Finance Pre-check&quot;))
+       ),
+    OR( 
+
+        ISCHANGED( Number_of_sellers__c )
+       ) 
+     ) &amp;&amp; NOT( $Setup.ActiveValidationRules__c.All_Validation_Rules_Deactivated__c )</errorConditionFormula>
+    <errorMessage>You cannot change Contract Sellers at this Contract Stage</errorMessage>
+</ValidationRule>

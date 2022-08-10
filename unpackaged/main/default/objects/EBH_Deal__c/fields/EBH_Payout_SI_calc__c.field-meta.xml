@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_Payout_SI_calc__c</fullName>
+    <description>US-0008748 - Deals - Limiting Subsidy Payout Calculation to Max Agreed Qty
+US-0010371</description>
+    <externalId>false</externalId>
+    <formula>IF(EBH_Payout_SI__c &gt; EBH_Quantity__c, EBH_Quantity__c, EBH_Payout_SI__c +  AdjustedSoldItems__c )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Items sold at agreed Deal Price excluding returns and cancelations. Cannot be higher than the agreed Quantity for the deal.
+Default tracking period is 30 days after Deal End Date.</inlineHelpText>
+    <label>Payout Sold Items</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

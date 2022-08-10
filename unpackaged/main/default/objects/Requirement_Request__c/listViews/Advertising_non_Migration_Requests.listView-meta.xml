@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Advertising_non_Migration_Requests</fullName>
+    <booleanFilter>(1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7) OR (8 AND 6)</booleanFilter>
+    <columns>NAME</columns>
+    <columns>Requirement_Description__c</columns>
+    <columns>Hive_Project__c</columns>
+    <columns>Status__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>Prio_US__c</columns>
+    <columns>Prio_DE__c</columns>
+    <columns>Prio_UK__c</columns>
+    <columns>Prio_FR__c</columns>
+    <columns>Prio_IT__c</columns>
+    <columns>Prio_ES__c</columns>
+    <columns>Prio_Average__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Requirement_Request__c.Feature_Request</value>
+    </filters>
+    <filters>
+        <field>HIVE_Product__c</field>
+        <operation>equals</operation>
+        <value>Advertising</value>
+    </filters>
+    <filters>
+        <field>Hive_Project__c</field>
+        <operation>notEqual</operation>
+        <value>Advertising Migration</value>
+    </filters>
+    <filters>
+        <field>Hive_Project__c</field>
+        <operation>notEqual</operation>
+        <value>3. EU Ads Migration</value>
+    </filters>
+    <filters>
+        <field>Hive_Project__c</field>
+        <operation>notEqual</operation>
+        <value>1. US Ads Migration</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Completed,Rejected</value>
+    </filters>
+    <filters>
+        <field>Hive_Project__c</field>
+        <operation>notEqual</operation>
+        <value>4. AU Ads Migration</value>
+    </filters>
+    <filters>
+        <field>OWNER.ALIAS</field>
+        <operation>equals</operation>
+        <value>ttsag</value>
+    </filters>
+    <label>Advertising non Migration Requests</label>
+</ListView>

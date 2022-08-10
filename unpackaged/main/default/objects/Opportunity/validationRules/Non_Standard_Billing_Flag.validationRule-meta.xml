@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Non_Standard_Billing_Flag</fullName>
+    <active>true</active>
+    <description>if non standard billing is true, non standard billing details is required</description>
+    <errorConditionFormula>AND(
+
+$Setup.byPass__c.byPass_WFRule__c = FALSE,
+$Profile.Name = &quot;Standard Ads User Profile&quot;,
+
+
+RecordType.DeveloperName = $Label.OPP_RECORDTYPEDEVNAME_DIRECT,
+Non_Standard_Billing_Terms__c = TRUE,
+ISBLANK(text(Non_Standard_Billing_Details__c ))
+
+
+)</errorConditionFormula>
+    <errorDisplayField>Non_Standard_Billing_Details__c</errorDisplayField>
+    <errorMessage>please fill out the non standard billing details</errorMessage>
+</ValidationRule>

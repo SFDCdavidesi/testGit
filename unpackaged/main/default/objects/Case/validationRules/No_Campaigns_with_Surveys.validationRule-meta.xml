@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_Campaigns_with_Surveys</fullName>
+    <active>true</active>
+    <description>US-0009469 A Validate Survey Case can&#39;t be created if the related Campaign already has either a Survey or a ClickTools Survey filled in.</description>
+    <errorConditionFormula>and (
+not(text(Status)=&#39;Closed&#39;),not(text(Status)=&#39;Validated&#39;),
+ RecordTypeId=&#39;0123u0000019nl3AAA&#39;,
+
+
+or(
+not(isblank(Related_Campaign__r.Survey_ID__c )),
+not(isblank(Related_Campaign__r.Ardira_Survey__c  )))
+)</errorConditionFormula>
+    <errorDisplayField>Related_Campaign__c</errorDisplayField>
+    <errorMessage>The selected Campaign already has a Survey populated. Please select a different Campaign.</errorMessage>
+</ValidationRule>

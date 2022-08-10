@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Pop Coupon</label>
+    <recordTypeVisibilities>
+        <recordType>Coupon_Co_Invest__c.Coupon_Co_Invest_Pop</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <recordType>Coupon_Seller__c.Pop_Coupon</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <recordType>Coupon__c.Pop_Coupon</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+</PermissionSet>

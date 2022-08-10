@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_ThirdPartyProviderChosen__c</fullName>
+    <description>#US-0015700</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Third party provider that was selected as a part of the Onboarding process in Shutl</inlineHelpText>
+    <label>3PP Selected</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PLENTYMARKETS</fullName>
+                <default>false</default>
+                <label>PLENTYMARKETS</label>
+            </value>
+            <value>
+                <fullName>JTL</fullName>
+                <default>false</default>
+                <label>JTL</label>
+            </value>
+            <value>
+                <fullName>AFTERBUY</fullName>
+                <default>false</default>
+                <label>AFTERBUY</label>
+            </value>
+            <value>
+                <fullName>DREAMROBOT</fullName>
+                <default>false</default>
+                <label>DREAMROBOT</label>
+            </value>
+            <value>
+                <fullName>DREAMROBOTS</fullName>
+                <default>false</default>
+                <label>DREAMROBOTS</label>
+            </value>
+            <value>
+                <fullName>ESDEMARCA</fullName>
+                <default>false</default>
+                <label>ESDEMARCA</label>
+            </value>
+            <value>
+                <fullName>CHANNELADVISOR</fullName>
+                <default>false</default>
+                <label>CHANNELADVISOR</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

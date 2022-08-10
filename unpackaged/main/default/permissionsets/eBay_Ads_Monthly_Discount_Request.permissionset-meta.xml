@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Advertising_Request_Portal__c.Description__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>eBay Ads - Monthly Discount Request</label>
+    <recordTypeVisibilities>
+        <recordType>Advertising_Request_Portal__c.Monthly_Discount_Approval</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+</PermissionSet>

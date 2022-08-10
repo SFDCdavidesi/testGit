@@ -1,0 +1,52 @@
+<div style="margin:0 auto; width:66.66%;">
+
+            <img src='https://hive--c.na124.content.force.com/servlet/servlet.ImageServer?id=0153u000002RNsV&oid=00D6A0000002Hft&lastMod=1628243969000'/>
+
+            <p style="text-decoration: underline;text-align:center;">eBay Refurbished – Programm</p>
+            <p>Zu unserem Bedauern müssen wir Ihre Teilnahme am eBay Refurbished-Programm
+            beenden: Eine Überprüfung hat ergeben, dass Ihr Nutzerkonto und/oder die
+            von Ihnen im Rahmen des Programms angebotenen Artikel die Anforderungen des
+            Top-Verkäuferstatus und/oder die Kriterien für geeignete Artikel nicht mehr erfüllen.
+            Für die Teilnahme-Voraussetzungen am Programm lesen Sie bitte die dazugehörigen
+            „Refurbished-AGBs“, welche Sie unter {!TCs_URL__c} einsehen können.</p>
+        
+            <table style="width:100%;border: 1px solid black;border-collapse: collapse;">
+                <tr>
+                    <td style="border: 1px solid black;padding: 5px;"><p>Verkäufer</p></td>
+                    <td style="border: 1px solid black;padding: 5px;">
+                        <p>{!Account.Name}</p>
+                        <p>{!Business_Contact__r.EBH_MailingAddress__c}</p>
+                        <p>{!Business_Contact__r.EBH_MailingStreet__c}</p>
+                        <p>{!Business_Contact__r.EBH_MailingPostalCode__c}</p>
+                        <p>{!Business_Contact__r.EBH_MailingCity__c}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black;padding: 5px;"><p>Shop Name des Verkäufers</p></td>
+                    <td style="border: 1px solid black;padding: 5px;"><p>{!EBH_ContractsForSeller__r.EBH_BusinessName__c}</p></td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black;padding: 5px;"><p>eBay Programm</p></td>
+                    <td style="border: 1px solid black;padding: 5px;"><p>Refurbished</p></td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black;padding: 5px;"><p>Programm Ende</p></td>
+                    <td style="border: 1px solid black;padding: 5px;"><p>{!EndDate}</p></td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black;padding: 5px;"><p>eBay-Websites(s)</p></td>
+                    <td style="border: 1px solid black;padding: 5px;"><p>ebay.de</p></td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black;padding: 5px;"><p>Ebay Vertragspartner</p></td>
+                    <td style="border: 1px solid black;padding: 5px;"><p>eBay GmbH, Albert-Einstein-Ring 2-6, 14532 Kleinmachnow</p></td>
+                </tr>
+            </table>
+
+            <div style="line-height: 0px;">
+                <p>Mit freundlichen Grüßen</p>
+                <p>Ihr eBay-Team</p>
+            </div>
+            <p>{!TCs_URL__c}</p>
+                
+        </div>

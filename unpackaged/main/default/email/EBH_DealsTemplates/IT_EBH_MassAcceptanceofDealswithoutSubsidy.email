@@ -1,0 +1,70 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="IT" style="font-size: 12pt; line-height: 107%; font-family: Arial, sans-serif;">Clicca su </span><span class="MsoHyperlink" style="font-size: 12pt;"><span lang="IT" style="font-size: 12pt; line-height: 107%; font-family: Arial, sans-serif; color: windowtext;"><a href="{!EBH_Deal__c.SiteURL__c}/?id={!EBH_Deal__c.Id}&amp;amp;reURL=www.ebay.it">Accetto</a></span></span><span lang="IT" style="font-size: 12pt; line-height: 107%; font-family: Arial, sans-serif;"> per confermare
+il l’offerta.</span></div><div style="">
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="IT" style="font-size: 12pt; line-height: 107%; font-family: Arial, sans-serif;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><b><span lang="IT" style="font-size: 12pt; line-height: 107%; font-family: Arial, sans-serif;">Dettagli:</span></b><span lang="IT" style="font-size: 12pt; line-height: 107%; font-family: Arial, sans-serif;"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="IT" style="color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-size: 12pt; line-height: 107%;">Nome utente
+eBay:&nbsp;</span><font face="Arial, sans-serif"><span style="font-size: 14.6667px;">{!EBH_Deal__c.EBH_BusinessName__c}</span></font></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="IT" style="color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-size: 12pt; line-height: 107%;">Titolo:&nbsp;</span><font face="Arial, sans-serif"><span style="font-size: 14.6667px;">{!EBH_Deal__c.EBH_ProductTitle__c}</span></font></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="IT" style="color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-size: 12pt; line-height: 107%;">Quantità:&nbsp;</span><font face="Arial, sans-serif"><span style="font-size: 14.6667px;">{!EBH_Deal__c.EBH_Quantity__c}</span></font></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="IT" style="font-size: 12pt; line-height: 107%; font-family: Arial, sans-serif;">Formato:&nbsp;<o:p></o:p></span><span style="background-color: white; font-family: Arial, sans-serif; font-size: 11pt;">{!EBH_Deal__c.EBH_LocalDealFormat__c}</span></p>
+
+<p class="MsoNormal" style=""><span lang="IT" style="color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-size: 12pt; line-height: 107%;">Data di
+inizio:&nbsp;</span><font face="Arial, sans-serif">{!EBH_Deal__c.EBH_DealStartDate__c}</font></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="IT" style="color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-size: 12pt; line-height: 107%;">Data di scadenza:&nbsp;</span><font face="Arial, sans-serif"><span style="font-size: 14.6667px;">{!EBH_Deal__c.EBH_DealEndDate__c}</span></font></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="IT" style="color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-size: 12pt; line-height: 107%;">Prezzo iniziale:&nbsp;</span><span style="background-color: white;"><font face="Arial, sans-serif"><span style="font-size: 14.6667px;">{!EBH_Deal__c.EBH_RRPWASPrice__c}</span><span style="font-size: 11pt;">&nbsp;</span></font></span><span style="color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-size: 12pt;">EUR</span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="IT" style="font-size: 12pt; line-height: 107%; font-family: Arial, sans-serif;">Prezzo scontato:&nbsp;<span style="font-size: 11pt; line-height: 107%; background: white;">{!EBH_Deal__c.EBH_SellerPrice__c}</span>&nbsp;EUR<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="IT" style="font-size: 12pt; line-height: 107%; font-family: Arial, sans-serif;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><b style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="IT" style="font-size: 12pt; line-height: 107%; font-family: Arial, sans-serif;">Commenti eBay:&nbsp;</span></b><font face="Arial, sans-serif">{!EBH_Deal__c.EBH_CommentfromeBaySourcer__c}</font></p><p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span style="font-family: Arial, sans-serif; background: white;"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="IT" style="font-size: 12pt; line-height: 107%; font-family: Arial, sans-serif;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><b><span lang="IT" style="font-size: 12pt; line-height: 107%; font-family: Arial, sans-serif;">Accettando,
+confermi che:</span></b><span lang="IT" style="font-size: 12pt; line-height: 107%; font-family: Arial, sans-serif;"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="IT" style="font-size: 12pt; line-height: 107%; font-family: Arial, sans-serif;">• L'oggetto
+che metti in vendita non è una contraffazione né&nbsp;un'imitazione.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="IT" style="font-size: 12pt; line-height: 107%; font-family: Arial, sans-serif;">• Sei
+autorizzato a vendere e distribuire questo oggetto e a inviarlo nei luoghi che
+hai specificato.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="IT" style="font-size: 12pt; line-height: 107%; font-family: Arial, sans-serif;">• Mettendo in
+vendita questo oggetto su eBay, non stai violando alcun obbligo contrattuale
+previsto da altri contratti.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="IT" style="font-size: 12pt; line-height: 107%; font-family: Arial, sans-serif;">• Il prezzo di
+vendita sopra indicato è l'effettivo prezzo di vendita iniziale.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="IT" style="font-size: 12pt; line-height: 107%; font-family: Arial, sans-serif;">• Non
+modificherai il prezzo scontato dell'oggetto durante il periodo promozionale
+sopra indicato senza l'esplicito consenso scritto di eBay.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="IT" style="font-size: 12pt; line-height: 107%; font-family: Arial, sans-serif;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="IT" style="font-size: 12pt; line-height: 107%; font-family: Arial, sans-serif;">Questi Termini
+e condizioni regolano la promozione sui siti eBay sopra indicati e sono parte
+integrante dell'accordo che hai stipulato con eBay GmbH.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="IT" style="font-size: 12pt; line-height: 107%; font-family: Arial, sans-serif;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="IT" style="font-size: 12pt; line-height: 107%; font-family: Arial, sans-serif;">Cordiali
+saluti,<o:p></o:p></span></p>
+
+<span lang="IT" style="color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-size: 12pt; line-height: 107%;">Il
+team eBay</span></div>]]></td>
+</tr>
+</table>

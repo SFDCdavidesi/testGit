@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_BUApproverGroup__c</fullName>
+    <description>[EBH] (EPH-4032) - To populate BU Approver Group based on the country and threshold</description>
+    <externalId>false</externalId>
+    <label>BU Approver Group</label>
+    <length>200</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

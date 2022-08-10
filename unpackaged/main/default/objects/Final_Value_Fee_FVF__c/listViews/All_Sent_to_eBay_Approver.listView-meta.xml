@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Sent_to_eBay_Approver</fullName>
+    <columns>NAME</columns>
+    <columns>Seller_Name__c</columns>
+    <columns>Final_Value_Fee_Stage__c</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>Budget_estimated_w__c</columns>
+    <columns>Budget_Manually_Estimated__c</columns>
+    <columns>Total_Number_of_Listings__c</columns>
+    <columns>Primary_Site__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Final_Value_Fee_Stage__c</field>
+        <operation>equals</operation>
+        <value>Sent_to_eBay_Approval</value>
+    </filters>
+    <label>All with Status &quot;Sent to eBay Approver&quot;</label>
+</ListView>

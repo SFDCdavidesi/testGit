@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Managed_Sellers</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Primary_Contact__c</columns>
+    <columns>Primary_Contact_Email__c</columns>
+    <columns>EBH_GMVLast12Months__c</columns>
+    <columns>EBH_DealsProgram__c</columns>
+    <columns>EBH_eBayPlusAdoption__c</columns>
+    <columns>EBH_BOBVertical__c</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <filterScope>Mine</filterScope>
+    <label>My Managed Sellers</label>
+    <sharedTo>
+        <role>Account_Manager</role>
+    </sharedTo>
+</ListView>

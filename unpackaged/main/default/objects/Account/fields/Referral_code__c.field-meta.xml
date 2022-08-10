@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Referral_code__c</fullName>
+    <description>US-0009501 - [Acqui. FR] create new fields on Lead and Seller</description>
+    <externalId>false</externalId>
+    <inlineHelpText>As part of Collectible B2C sellers referral program</inlineHelpText>
+    <label>Referral code</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

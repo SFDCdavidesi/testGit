@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_GMV_Generated_at_Deal_Price__c</fullName>
+    <externalId>false</externalId>
+    <formula>EBH_Sold_Items_at_Deal_Price__c *  EBH_DealPrice__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>GMV generated at agreed Deal Price only. Items sold by higher or lower price are excluded.</inlineHelpText>
+    <label>GMV (Deal Price)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

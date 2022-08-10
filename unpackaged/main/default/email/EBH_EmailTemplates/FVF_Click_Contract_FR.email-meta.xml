@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0006873 User Story FR. FVF Contract</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>FVF Click Contract FR</name>
+    <style>none</style>
+    <subject>Formulaire de remise sur la commission sur le prix finale pour {!FVF_SellerName} - La remise démarre le {!FVF_StartDate}</subject>
+    <textOnly>L’Accord individuel de promotion sur la commission sur le prix final
+
+Conformément au présent Accord individuel de promotion sur la commission sur le prix final et à son Annexe I qui fait partie intégrante de l’Accord de promotion sur la commission sur le prix final (tous deux dénommés ci-après « Accord individuel »), nous vous accordons une réduction sur la commission sur le prix final selon les conditions définies ci-après et les Conditions générales de la promotion.
+
+Veuillez accepter le présent Accord individuel au plus tard un jour avant le début de la promotion en cliquant sur le bouton ci-dessous
+
+J&#39;ACCEPTE
+
+
+Pseudo(s) du vendeur pour la Promotion  {!FVF_SellerName}
+Site eBay  www.ebay.fr
+Période de la Promotion  Du {!FVF_StartDate} à {!FVF_StartTime} au {!FVF_EndDate} à {!FVF_EndTime}
+
+eBay peut, à sa seule discrétion, retarder la Période de la Promotion et modifier ainsi la durée de la Promotion. Le cas échéant, eBay en informera le vendeur.
+
+Réduction sur la commission sur le prix final accordée par eBay   {!FVF_DiscountFVF} de réduction sur la commission sur le prix final (« Réduction »)
+Objets couverts par la Promotion
+
+La Promotion s&#39;applique à tous les objets indiqués dans l&#39;Annexe 1 ci-après, qui sont vendus par le vendeur aux Prix maximum recommandés, tel qu’indiqué dans l’Annexe 1 pendant la Période de la Promotion.
+
+Vous pouvez, à votre discrétion, vendre les objets couverts par la Promotion à des prix inférieurs aux prix convenus dans le présent Accord individuel.
+
+Divers   {!FVF_AddtionalTerm}
+
+{ifFreeShipping}
+
+
+La commission sur le prix final sera d’abord facturée intégralement. Le montant de la Réduction sera ensuite crédité sur votre compte dans un délai d’un mois à compter du dernier jour de la Période de la Promotion. Si la Promotion dure plusieurs mois, eBay vous créditera mensuellement le montant de Réduction. Par exemple, si la Promotion commence le 11 novembre et se termine le 11 décembre. eBay vous versera le montant de la Réduction en décembre pour les objets vendus au cours du mois de novembre et le montant de la Réduction en janvier pour les objets vendus en décembre. Les objets ayant fait l’objet d’un retour ne sont pas éligibles à la Promotion.
+
+Veuillez noter que le montant de la Réduction est indiqué hors taxe. Le montant de la Réduction crédité sur votre compte est soumis au même traitement en matière de TVA que les autres frais pouvant être facturés par eBay, pendant la Période de la Promotion, pour les objets non concernés par la Promotion.
+
+Le présent Accord individuel est conclu entre fra {!LegalEntity} - {!SellerAddress1} (« Vendeur ») et eBay GmbH, Albert-Einstein-Ring 2-6 à 14532 Kleinmachnow (Allemagne) (« eBay »). La participation du Vendeur est soumise au présent Accord individuel et aux Conditions générales de la promotion.
+
+Toute modification du présent Accord doit être approuvé par écrit par les deux parties (un e-mail est suffisant).</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

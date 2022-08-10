@@ -1,0 +1,11 @@
+<p>
+<Strong>Seller : </Strong>{!EBH_Project__c.EBH_Seller__c}<br/>
+<Strong>Request Type : </Strong>{!EBH_Project__c.Request_Type__c}<br/>
+<Strong>Last modified by : </Strong>{!EBH_Project__c.LastModifiedBy}
+</p>
+<p>
+For more details, please go to: {!EBH_Project__c.Link}.
+</p>
+<p>
+Thank you.
+</p>

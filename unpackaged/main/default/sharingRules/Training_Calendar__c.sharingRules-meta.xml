@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>All_Internal_User</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>US-0007909 - Training Calendar Object</description>
+        <label>All Internal User</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>Training_Status__c</field>
+            <operation>equals</operation>
+            <value>In Preparation</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Training_Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

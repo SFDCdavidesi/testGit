@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_AcceleratorThreshold__c</fullName>
+    <description>[EBH] (EPH-133) : Accelerator Threshold,
+US-0010717 - Accelerator &amp; Decelerator target fields tooltip descriptions</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the percentage of target the customer needs to achieve to qualify for the accelerator tier rebate</inlineHelpText>
+    <label>Accelerator Tier Threshold (% of Target)</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

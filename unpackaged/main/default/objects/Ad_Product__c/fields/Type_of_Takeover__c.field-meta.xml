@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_Takeover__c</fullName>
+    <description>INTEG - N || ** eBay Advertising ** || WF - N || AP - N || VAL - N ||Class - N || Definition: Type of Takeover	 || 00471106 |</description>
+    <externalId>false</externalId>
+    <label>Type of Takeover</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Home Page</fullName>
+                <default>false</default>
+                <label>Home Page</label>
+            </value>
+            <value>
+                <fullName>My eBay</fullName>
+                <default>false</default>
+                <label>My eBay</label>
+            </value>
+            <value>
+                <fullName>Category Lockout</fullName>
+                <default>false</default>
+                <label>Category Lockout</label>
+            </value>
+            <value>
+                <fullName>Homepage Takeover with NPD</fullName>
+                <default>false</default>
+                <label>Homepage Takeover with NPD</label>
+            </value>
+            <value>
+                <fullName>Homepage Roadblock (Desktop, mweb)</fullName>
+                <default>false</default>
+                <label>Homepage Roadblock (Desktop, mweb)</label>
+            </value>
+            <value>
+                <fullName>SRP</fullName>
+                <default>false</default>
+                <label>SRP</label>
+            </value>
+            <value>
+                <fullName>Signout Takeover</fullName>
+                <default>false</default>
+                <label>Signout Takeover</label>
+            </value>
+            <value>
+                <fullName>Order Details Page</fullName>
+                <default>false</default>
+                <label>Order Details Page</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

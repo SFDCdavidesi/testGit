@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>eBay_DE_Login</label>
+    <protected>false</protected>
+    <values>
+        <field>API_Level__c</field>
+        <value xsi:type="xsd:string">967</value>
+    </values>
+    <values>
+        <field>Auth_URL__c</field>
+        <value xsi:type="xsd:string">https://auth.ebay.de/oauth2/authorize</value>
+    </values>
+    <values>
+        <field>Base_Server__c</field>
+        <value xsi:type="xsd:string">https://api.ebay.com</value>
+    </values>
+    <values>
+        <field>Callback_URL__c</field>
+        <value xsi:type="xsd:string">https://sprintdev-hive-partner.cs7.force.com/services/authcallback/eBay_DE_Login</value>
+    </values>
+    <values>
+        <field>Client_Id__c</field>
+        <value xsi:type="xsd:string">vounvadh-vadhanak-PRD-7a27f5081-cbcdae7a</value>
+    </values>
+    <values>
+        <field>Client_Secret__c</field>
+        <value xsi:type="xsd:string">PRD-a27f50819324-bd98-4a47-9d0a-52f1</value>
+    </values>
+    <values>
+        <field>Consent_Screen_Url__c</field>
+        <value xsi:type="xsd:string">https://signin.ebay.de</value>
+    </values>
+    <values>
+        <field>Dev_ID__c</field>
+        <value xsi:type="xsd:string">51dc69e5-4c20-494a-a729-1b85f18c8279</value>
+    </values>
+    <values>
+        <field>FindingService_Endpoint__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Link_Account_Callback_Url__c</field>
+        <value xsi:type="xsd:string">https://sprintdev-hive-partner.cs7.force.com/s/linked-accounts</value>
+    </values>
+    <values>
+        <field>RuName__c</field>
+        <value xsi:type="xsd:string">voun_vadhanak-vounvadh-vadhan-usipovexs</value>
+    </values>
+    <values>
+        <field>Scope__c</field>
+        <value xsi:type="xsd:string">https://api.ebay.com/oauth/api_scope/commerce.identity.readonly</value>
+    </values>
+    <values>
+        <field>Token_URL__c</field>
+        <value xsi:type="xsd:string">https://api.ebay.com/identity/v1/oauth2/token</value>
+    </values>
+    <values>
+        <field>User_Info_URL__c</field>
+        <value xsi:type="xsd:string">https://apiz.ebay.com/commerce/identity/v1/user/</value>
+    </values>
+</CustomMetadata>

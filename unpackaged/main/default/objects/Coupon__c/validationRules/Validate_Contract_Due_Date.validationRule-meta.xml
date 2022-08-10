@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Contract_Due_Date</fullName>
+    <active>true</active>
+    <description>[#EPH-7944] Coupon Object - New field Contract Due Date</description>
+    <errorConditionFormula>Contract_Due_Date__c  &gt;=  Coupon_Start_Date__c</errorConditionFormula>
+    <errorDisplayField>Contract_Due_Date__c</errorDisplayField>
+    <errorMessage>Contract Due Date must be &lt; Coupon Start Date</errorMessage>
+</ValidationRule>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Adjust_Deal_Slots_Daily</fullName>
+    <columns>NAME</columns>
+    <columns>EBH_Date__c</columns>
+    <columns>EBH_Country__c</columns>
+    <columns>EBH_Vertical__c</columns>
+    <columns>EBH_Slots__c</columns>
+    <columns>EBH_DealFormat__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>EBH_Country__c</field>
+        <operation>equals</operation>
+        <value>77,DE</value>
+    </filters>
+    <filters>
+        <field>EBH_DealFormat__c</field>
+        <operation>equals</operation>
+        <value>Primary</value>
+    </filters>
+    <filters>
+        <field>EBH_Date__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>TODAY</value>
+    </filters>
+    <filters>
+        <field>EBH_Category__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>Adjust Deal Slots - Daily</label>
+</ListView>

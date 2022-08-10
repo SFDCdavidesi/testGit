@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>V2_Seller_Approver_Same_Account</fullName>
+    <active>true</active>
+    <description>US-0008843 - [NA] Migrate NA Deals Validation Rules to Hive,
+US-0009181 - [NA] Use Contact Roles for Deals instead of Contact Decision Maker Role</description>
+    <errorConditionFormula>AND(
+    RecordType.DeveloperName =&#39;Deal_V2&#39;,
+    NOT($Setup.byPass__c.ByPass_Validation__c),
+    OR(
+        AND(
+            NOT(ISBLANK(Seller_Approver_1__c)),
+            OR(
+                EBH_BusinessName__c &lt;&gt; Seller_Approver_1__r.AccountId,
+                NOT(INCLUDES(Seller_Approver_1__r.Contact_Role__c , &#39;Deals&#39;))
+            )
+        ),
+        AND( 
+            NOT(ISBLANK(Seller_Approver_2__c)),
+            OR(
+                EBH_BusinessName__c &lt;&gt; Seller_Approver_2__r.AccountId,
+                NOT(INCLUDES(Seller_Approver_2__r.Contact_Role__c, &#39;Deals&#39;))
+            )
+        ),
+        AND( 
+            NOT(ISBLANK(Seller_Approver_3__c)),
+            OR(
+                EBH_BusinessName__c &lt;&gt; Seller_Approver_3__r.AccountId,
+                NOT(INCLUDES(Seller_Approver_3__r.Contact_Role__c, &#39;Deals&#39;))
+            )
+        ),
+        AND( 
+            NOT(ISBLANK(Seller_Approver_4__c)),
+            OR(
+                EBH_BusinessName__c &lt;&gt; Seller_Approver_4__r.AccountId,
+                NOT(INCLUDES(Seller_Approver_4__r.Contact_Role__c, &#39;Deals&#39;))
+            )
+        ),
+        AND(
+            NOT(ISBLANK(Seller_Approver_5__c)),
+            OR(
+                EBH_BusinessName__c &lt;&gt; Seller_Approver_5__r.AccountId,
+                NOT(INCLUDES(Seller_Approver_5__r.Contact_Role__c, &#39;Deals&#39;))
+            )
+        )
+    ),
+    NOT(
+        OR( 
+            ISPICKVAL( EBH_Status__c,&#39;Running&#39;),
+            ISPICKVAL(EBH_Status__c,&#39;Completed&#39;)
+        )
+    )
+)</errorConditionFormula>
+    <errorMessage>Seller Approvers must be related to the same Account as the eBay Seller record and designated as a Daily Deals Contact (Contact Role must include: NA Deals Contracts)</errorMessage>
+</ValidationRule>

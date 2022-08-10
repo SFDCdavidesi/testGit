@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Influencer__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>US-0011805 - 1.2. Influencer (channel record types)</description>
+    <externalId>false</externalId>
+    <label>Influencer</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Influencer field requires Account RecordType Influencer</errorMessage>
+        <filterItems>
+            <field>Account.RecordType.DeveloperName</field>
+            <operation>equals</operation>
+            <value>Influencer</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Channels</relationshipLabel>
+    <relationshipName>Influencers</relationshipName>
+    <required>true</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

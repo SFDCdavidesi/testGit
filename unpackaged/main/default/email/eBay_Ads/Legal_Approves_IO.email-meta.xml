@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>email alert to IO owner notifying IO has been approved by Legal</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>eBay_Ads_Letterhead</letterhead>
+    <name>Legal Approves IO</name>
+    <style>freeForm</style>
+    <subject>{!IO__c.Name} has been approved by Legal</subject>
+    <textOnly>Hello {!IO__c.OwnerFullName},
+
+{!ApprovalRequest.Process_Approver} has approved your request for {!IO__c.Name}.
+
+Best,
+
+SF Support Team</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

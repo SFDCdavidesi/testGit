@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Survey_ID__c</fullName>
+    <description>Please note that only HIVE Admins can populate Survey ID value.
+
+Open a new &quot;Validate survey&quot; ticket with Survey ID and Campaign Information. Once the HIVE admins provide your survey settings, you will be able to create Tasks.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please note that only HIVE Admins can populate Survey ID value.
+
+Open a new &quot;Validate survey&quot; ticket with Survey ID and Campaign Information. Once the HIVE admins provide your survey settings, you will be able to create Tasks.</inlineHelpText>
+    <label>Survey ID</label>
+    <length>20</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

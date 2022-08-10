@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Supporting_Documents_attachments__c</fullName>
+    <description>US-0009462 - UK Risk: new permission, record type and page layout on Project</description>
+    <externalId>false</externalId>
+    <inlineHelpText>You will be able to attach Selected Documents under the &quot;Files&quot; section after creating the record</inlineHelpText>
+    <label>Supporting Documents/attachments</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Proof of Identity</fullName>
+                <default>false</default>
+                <label>Proof of Identity</label>
+            </value>
+            <value>
+                <fullName>Proof of Address</fullName>
+                <default>false</default>
+                <label>Proof of Address</label>
+            </value>
+            <value>
+                <fullName>Proof of Business</fullName>
+                <default>false</default>
+                <label>Proof of Business</label>
+            </value>
+            <value>
+                <fullName>Proof of Merchandise</fullName>
+                <default>false</default>
+                <label>Proof of Merchandise</label>
+            </value>
+            <value>
+                <fullName>Proof of Delivery</fullName>
+                <default>false</default>
+                <label>Proof of Delivery</label>
+            </value>
+            <value>
+                <fullName>Supplier Agreements</fullName>
+                <default>false</default>
+                <label>Supplier Agreements</label>
+            </value>
+            <value>
+                <fullName>Certificates of Authenticity</fullName>
+                <default>false</default>
+                <label>Certificates of Authenticity</label>
+            </value>
+            <value>
+                <fullName>Financial Statements (on file or as requested to complete review)</fullName>
+                <default>false</default>
+                <label>Financial Statements (on file or as requested to complete review)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

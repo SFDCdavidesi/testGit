@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0007639 - US-0008170 - Coupon Launch Reminder Templates</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>UK Coupon Launch Reminder Templates</name>
+    <style>none</style>
+    <subject>Coupon Launch Reminder | {eBaySellerID} | {CouponNameM} | {CouponStartDate} - {CouponEndDate}</subject>
+    <textOnly>This email is to remind you of your participation in the following eBay Coupon, which you agreed to on {CONTRACT_ACCEPT_DATE}.
+
+Seller User ID  {eBaySellerID}
+Coupon Code  {Coupon_ID__c}
+Promotion Period  From {CouponStartTime} on {CouponStartDate} until {CouponEndTime} on {CouponEndDate} (GMT)
+Coupon Amount or Percentage   {CouponDiscount%}{CouponDiscountAmount}
+Included Categories  {!CatNameIdTable}
+Excluded Categories
+
+Cars, Motorcycles &amp; Vehicles (9800)
+Property (10542)
+Coins (11116)
+
+Minimum Transaction Value  {Minimum_Transaction_Value__c}
+Maximum Discount Value  {CouponCap}
+Number of Buyer Redemptions  {Max_Redemptions__c}
+Terms &amp; Conditions  https://pages.ebay.co.uk/coupon-form-terms-and-conditions/index.html
+
+Finally, please ensure your listings have accurate and sufficient stock levels.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

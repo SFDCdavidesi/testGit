@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_OutreachDetailifany__c</fullName>
+    <defaultValue>&quot;Criteria for leadpool identification: &lt;i.e. Seller segmentation criteria&gt;&quot; &amp; BR() &amp; BR() &amp;
+&quot;Estimated leadpool size (indicative, will be verified by Seller Growth): &lt;i.e. how many sellers to contact for each channel&gt;&quot; &amp; BR() &amp; BR() &amp;
+&quot;# of decision maker calls: &lt;i.e. how many decision makers out of your total leadpool do you want us to talk to&gt;&quot; &amp; BR()</defaultValue>
+    <description>[EBH] (EPH-2905) : Outreach Detail (if any)</description>
+    <externalId>false</externalId>
+    <label>Outreach Detail (if any)</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>6</visibleLines>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Seller_Cannot_Be_Changed</fullName>
+    <active>true</active>
+    <description>EPH-5727 BOB MGMT - Seller BOB Object - Fields</description>
+    <errorConditionFormula>ISCHANGED( Seller__c )</errorConditionFormula>
+    <errorDisplayField>Seller__c</errorDisplayField>
+    <errorMessage>Once created, seller cannot be changed.</errorMessage>
+</ValidationRule>

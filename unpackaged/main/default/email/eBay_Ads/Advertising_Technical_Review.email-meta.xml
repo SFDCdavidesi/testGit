@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>email alert for ads stories in technical review</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Advertising - Technical Review</name>
+    <style>none</style>
+    <subject>{!copado__User_Story__c.Name} - Technical Review</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

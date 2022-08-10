@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_MSKUCompliantPBCPer__c</fullName>
+    <description>MSKU compliant with PBC Mandate (%)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Calculation: # variations compliant with PBC / # variations covered by PBC]. 
+Values can be &quot;NULL&quot; and between 0% and 100%. A value of &quot;NULL&quot; would mean seller does not have any MSKU listed in a PBC mandatory category.</inlineHelpText>
+    <label>MSKU compliant with PBC Mandate (%)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

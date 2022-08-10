@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>After campaign</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Automated_Endreporting_Template_DE</name>
+    <style>none</style>
+    <subject>eBay Endreport, [opp.Account.Name], [opp.Ext_Name_Campaign__c], [Campaign_Start__c] – [Campaign_End__c]</subject>
+    <textOnly>Hallo [name]
+
+anbei finden Sie einen detaillierten Endreport der kürzlich ausgelaufenen Kampagne [opp.Ext_Name_Campaign__c] auf eBay. Dieser ist nach Tagen, Platzierungen und  Werbemitteln aufgeschlüsselt.
+
+Die tagesbasierte Auswertung befindet sich im zweiten Reiter des angehängten Excel Reports.
+
+[Additional_Mail_Text__c]
+
+Mit besten Grüßen,
+
+Ihr eBay Advertising Team
+
+
+eBay GmbH I Albert-Einstein-Ring 2-6 I 14532 Kleinmachnow I Deutschland
+Geschäftsführer: Eben Sermon
+HRB 13754 P, Amtsgericht: Potsdam - Sitz der Gesellschaft: Kleinmachnow</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

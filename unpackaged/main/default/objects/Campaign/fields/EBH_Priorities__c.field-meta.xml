@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_Priorities__c</fullName>
+    <description>[EBH] (EPH-1806) - Priorities</description>
+    <externalId>false</externalId>
+    <label>Priorities</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Mandatory Product, Policy, and Compliance Plans</fullName>
+                <default>false</default>
+                <label>Mandatory Product, Policy, and Compliance Plans</label>
+            </value>
+            <value>
+                <fullName>Monetisation &amp; Commercial Model</fullName>
+                <default>false</default>
+                <label>Monetisation &amp; Commercial Model</label>
+            </value>
+            <value>
+                <fullName>Lifecycle Management</fullName>
+                <default>false</default>
+                <label>Lifecycle Management</label>
+            </value>
+            <value>
+                <fullName>Inventory Management</fullName>
+                <default>false</default>
+                <label>Inventory Management</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

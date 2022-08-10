@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_ServiceProvider__c</fullName>
+    <description>[EPH] (EPH-1881) - To indicate the service provider Created:</description>
+    <externalId>false</externalId>
+    <label>Service Provider</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Publicare</fullName>
+                <default>false</default>
+                <label>Publicare</label>
+            </value>
+            <value>
+                <fullName>Emarsys</fullName>
+                <default>false</default>
+                <label>Emarsys</label>
+            </value>
+            <value>
+                <fullName>GCX</fullName>
+                <default>false</default>
+                <label>GCX</label>
+            </value>
+            <value>
+                <fullName>AM Outreach</fullName>
+                <default>false</default>
+                <label>AM Outreach</label>
+            </value>
+            <value>
+                <fullName>Marketing Cloud</fullName>
+                <default>false</default>
+                <label>Marketing Cloud</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

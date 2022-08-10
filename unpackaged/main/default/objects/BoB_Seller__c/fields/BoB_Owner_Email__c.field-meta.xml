@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BoB_Owner_Email__c</fullName>
+    <description>US-0011429 - [PT] Email Notification to Internal users when Call outcome is updated</description>
+    <externalId>false</externalId>
+    <label>BoB_Owner_Email</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Email</type>
+    <unique>false</unique>
+</CustomField>

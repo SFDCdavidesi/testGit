@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_SegmentLM__c</fullName>
+    <description>[EBH] (EPH-2855) - Historical segmentation - LM</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Historical B2C segmentation (This Year Last Month).</inlineHelpText>
+    <label>B2C Segment (Last Month)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>HV-HGMV</fullName>
+                <default>false</default>
+                <label>HV-HGMV</label>
+            </value>
+            <value>
+                <fullName>HV-LGMV</fullName>
+                <default>false</default>
+                <label>HV-LGMV</label>
+            </value>
+            <value>
+                <fullName>LV-HGMV</fullName>
+                <default>false</default>
+                <label>LV-HGMV</label>
+            </value>
+            <value>
+                <fullName>LV-LGMV</fullName>
+                <default>false</default>
+                <label>LV-LGMV</label>
+            </value>
+            <value>
+                <fullName>TINY-GMV</fullName>
+                <default>false</default>
+                <label>TINY-GMV</label>
+            </value>
+            <value>
+                <fullName>VIP</fullName>
+                <default>false</default>
+                <label>VIP</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

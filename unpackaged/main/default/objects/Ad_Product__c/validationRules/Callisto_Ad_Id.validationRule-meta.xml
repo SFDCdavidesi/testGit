@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Callisto_Ad_Id</fullName>
+    <active>true</active>
+    <description>stop users from adding the Ids for Callisto placement that start with AP or QLI</description>
+    <errorConditionFormula>AND(
+
+$Setup.byPass__c.ByPass_Validation__c = FALSE,
+
+OR(
+LEFT(Ad_Id__c , 3) = &#39;QLI&#39;,
+LEFT(Ad_Id__c , 2) = &#39;AP&#39;
+)
+)</errorConditionFormula>
+    <errorDisplayField>Ad_Id__c</errorDisplayField>
+    <errorMessage>The Ad Id for this Callisto placement will have to be the 18 digit ID in the url above. It can&#39;t begin with QLI- or AP-</errorMessage>
+</ValidationRule>

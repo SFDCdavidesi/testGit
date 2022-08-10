@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_StatusInChannel__c</fullName>
+    <description>[EBH] (EPH-3300) : Status In Channel</description>
+    <externalId>false</externalId>
+    <label>Status In Channel</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Prelaunch</fullName>
+                <default>false</default>
+                <label>Prelaunch</label>
+            </value>
+            <value>
+                <fullName>Launched</fullName>
+                <default>false</default>
+                <label>Launched</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>Completed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,23 @@
+Dear Contract Admin
+
+ __ 
+
+The '{!Contract.RecordType}' with ‘{!Contract.Account}’ is now ready for review and potentially for eBay Signature.
+
+Contract Value: {!Contract.EBH_ContractValue__c} {!Contract.CurrencyIsoCode}
+
+Contract Exposure: {!Contract.EBH_ContractExposure__c} {!Contract.CurrencyIsoCode}
+
+ 
+
+ __ 
+
+To review the contract please follow the link:
+
+{!Contract.Link}
+ 
+
+Thank you.
+
+ 
+—

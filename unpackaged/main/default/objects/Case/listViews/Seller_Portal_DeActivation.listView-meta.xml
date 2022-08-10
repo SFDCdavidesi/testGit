@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Seller_Portal_DeActivation</fullName>
+    <columns>Ticket_Number__c</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Description__c</columns>
+    <columns>CREATEDBY_USER.ALIAS</columns>
+    <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Seller_Portal_Deactivation</value>
+    </filters>
+    <label>Seller Portal DeActivation</label>
+</ListView>

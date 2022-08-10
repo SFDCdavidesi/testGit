@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reminder_Period__c</fullName>
+    <description>EPH-112 Receiving a reminder on the contract expiration date</description>
+    <externalId>false</externalId>
+    <formula>If(EndDate =  TODAY() ,&#39;Today&#39;,&#39;in &#39;&amp;TEXT(EndDate - TODAY())&amp;&#39; days&#39;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Reminder Period</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

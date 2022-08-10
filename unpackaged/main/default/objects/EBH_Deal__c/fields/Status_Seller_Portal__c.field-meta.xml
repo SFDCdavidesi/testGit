@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_Seller_Portal__c</fullName>
+    <description>US-0009685, US-0011032, US-0012156</description>
+    <externalId>false</externalId>
+    <formula>IF(TEXT( Seller_Portal_Status__c ) =&quot;Clarification on invoicing&quot;&amp;&amp;$Profile.Name=&quot;DE - Seller Portal&quot;,&quot;Klärung zur Abrechnung&quot;,
+
+IF(TEXT( Seller_Portal_Status__c ) =&quot;Deal agreed&quot;&amp;&amp;$Profile.Name=&quot;DE - Seller Portal&quot;,&quot;WOW! Angebot vereinbart, startet in Kürze&quot;,
+
+IF(TEXT( Seller_Portal_Status__c ) =&quot;Deal closed&quot;&amp;&amp;$Profile.Name=&quot;DE - Seller Portal&quot;,&quot;Beendet&quot;,
+
+IF(TEXT( Seller_Portal_Status__c ) =&quot;Deal ended&quot;&amp;&amp;$Profile.Name=&quot;DE - Seller Portal&quot;,&quot;WOW! Angebot beendet&quot;,
+
+IF(TEXT( Seller_Portal_Status__c ) =&quot;Deal in execution&quot;&amp;&amp;$Profile.Name=&quot;DE - Seller Portal&quot;,&quot;WOW! Angebot in Durchführung&quot;,
+
+IF(TEXT(Seller_Portal_Status__c) =&quot;Deal proposal rejected&quot;&amp;&amp;$Profile.Name=&quot;DE - Seller Portal&quot;,&quot;WOW! Angebot abgelehnt&quot;,
+
+IF(TEXT(Seller_Portal_Status__c) =&quot;Deal sent for payment&quot;&amp;&amp;$Profile.Name=&quot;DE - Seller Portal&quot;,&quot;Auszahlung ist veranlasst&quot;,
+
+IF(TEXT(Seller_Portal_Status__c) =&quot;Invitation to Deals&quot;&amp;&amp;$Profile.Name=&quot;DE - Seller Portal&quot;,&quot;eBay WOW! Einladung&quot;,
+
+IF(TEXT(Seller_Portal_Status__c) =&quot;Invoice rejected, please verify&quot;&amp;&amp;$Profile.Name=&quot;DE - Seller Portal&quot;,&quot;Rechnung abgelehnt, bitte prüfen Sie die Abrechnung&quot;,
+
+IF(TEXT(Seller_Portal_Status__c) =&quot;Invoice verification in process by eBay&quot;&amp;&amp;$Profile.Name=&quot;DE - Seller Portal&quot;,&quot;Rechnung in Prüfung durch eBay&quot;,
+
+IF(TEXT(Seller_Portal_Status__c) =&quot;Invoicing in process&quot;&amp;&amp;$Profile.Name=&quot;DE - Seller Portal&quot;,&quot;Abrechnung erfolgt in Kürze&quot;,
+
+IF(TEXT(Seller_Portal_Status__c) =&quot;Negotiation&quot;&amp;&amp;$Profile.Name=&quot;DE - Seller Portal&quot;,&quot;WOW! Angebot in Verhandlung&quot;,
+
+IF(TEXT(Seller_Portal_Status__c) =&quot;Negotiation Amended&quot;&amp;&amp;$Profile.Name=&quot;DE - Seller Portal&quot;,&quot;WOW! Angebot Verhandlung geändert&quot;,
+
+IF(TEXT(Seller_Portal_Status__c) =&quot;New Deal proposed to eBay&quot;&amp;&amp;$Profile.Name=&quot;DE - Seller Portal&quot;,&quot;WOW! Angebot eingereicht&quot;,
+
+IF(TEXT(Seller_Portal_Status__c) =&quot;Payment completed&quot;&amp;&amp;$Profile.Name=&quot;DE - Seller Portal&quot;,&quot;Auszahlung durchgeführt&quot;,
+
+IF(TEXT(Seller_Portal_Status__c) =&quot;Payment in process&quot;&amp;&amp;$Profile.Name=&quot;DE - Seller Portal&quot;,&quot;Auszahlung erfolgt in Kürze&quot;,
+
+IF(TEXT(Seller_Portal_Status__c) =&quot;Payment rejected&quot;&amp;&amp;$Profile.Name=&quot;DE - Seller Portal&quot;,&quot;Auszahlung abgelehnt, bitte konktaktieren Sie eBay&quot;,
+
+IF(TEXT(Seller_Portal_Status__c) =&quot;Please agree on the proposed Deal&quot;&amp;&amp;$Profile.Name=&quot;DE - Seller Portal&quot;,&quot;Bestätigen Sie das WOW! Angebot&quot;,
+
+IF(TEXT(Seller_Portal_Status__c) =&quot;Please provide an invoice&quot;&amp;&amp;$Profile.Name=&quot;DE - Seller Portal&quot;,&quot;Rechnung hochladen&quot;,
+
+TEXT (Seller_Portal_Status__c))))))))))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,11 @@
+Hello!
+
+Your request for {!Campaign.Name} for {!Campaign.StartDate} has been accepted.
+
+Country: {!Campaign.EBH_Site__c}
+Channel: {!Campaign.EBH_ChannelMP__c}
+Brief Deadline: {!Campaign.EBH_BriefDeadline__c}.
+
+For more details, please go to {!Campaign.EBH_RecordLink__c}.
+
+Thank you.

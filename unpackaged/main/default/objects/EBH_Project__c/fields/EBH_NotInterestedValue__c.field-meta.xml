@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_NotInterestedValue__c</fullName>
+    <description>#US-0015700</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Reasons why seller is not willing to participate in the Fulfilment programme.</inlineHelpText>
+    <label>Not Interested Value</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Amazon FF (active)</fullName>
+                <default>false</default>
+                <label>Amazon FF (active)</label>
+            </value>
+            <value>
+                <fullName>Amazon FF (bad experience)</fullName>
+                <default>false</default>
+                <label>Amazon FF (bad experience)</label>
+            </value>
+            <value>
+                <fullName>Hangs up the phone</fullName>
+                <default>false</default>
+                <label>Hangs up the phone</label>
+            </value>
+            <value>
+                <fullName>Prices are too high</fullName>
+                <default>false</default>
+                <label>Prices are too high</label>
+            </value>
+            <value>
+                <fullName>Sees no clear advantage (price, seller protection, EDD)</fullName>
+                <default>false</default>
+                <label>Sees no clear advantage (price, seller protection, EDD)</label>
+            </value>
+            <value>
+                <fullName>Goods are shipped directly from a manufacturer, dropshipping</fullName>
+                <default>false</default>
+                <label>Goods are shipped directly from a manufacturer, dropshipping</label>
+            </value>
+            <value>
+                <fullName>Don&#39;t want to change business model</fullName>
+                <default>false</default>
+                <label>Don&#39;t want to change business model</label>
+            </value>
+            <value>
+                <fullName>Unsuitable inventory (custom items, etc)</fullName>
+                <default>false</default>
+                <label>Unsuitable inventory (custom items, etc)</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

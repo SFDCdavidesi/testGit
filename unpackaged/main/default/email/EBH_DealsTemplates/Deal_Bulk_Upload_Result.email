@@ -1,0 +1,10 @@
+<p>Dear {UploadUser},</p>
+<p>Hive has completed the processing of Listing IDs uploaded on {DateTimeUploading} <br/>
+In total, {totalSuccessDeals} records were created.</p>
+<div style="display:{isError}">
+<p> Here is list of failed records if any:</p>
+{listRecordsFail}
+</div>
+<p>Best,<br/>
+HIVE team
+</p>

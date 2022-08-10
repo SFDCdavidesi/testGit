@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_AllLegalEntities</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>EBH_OracleID__c</columns>
+    <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+    <columns>EBH_BillingCountry__c</columns>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.EBH_LegalEntity</value>
+    </filters>
+    <filters>
+        <field>EBH_BillingCountry__c</field>
+        <operation>contains</operation>
+        <value>US</value>
+    </filters>
+    <label>All Legal Entities</label>
+</ListView>

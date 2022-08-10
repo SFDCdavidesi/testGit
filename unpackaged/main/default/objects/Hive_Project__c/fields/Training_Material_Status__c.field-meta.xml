@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Training_Material_Status__c</fullName>
+    <defaultValue>&quot;Not Started&quot;</defaultValue>
+    <externalId>false</externalId>
+    <inlineHelpText>For HIVE team to track status of training materials</inlineHelpText>
+    <label>Training Material Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not Started</fullName>
+                <default>false</default>
+                <label>Not Started</label>
+            </value>
+            <value>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+                <label>In Progress</label>
+            </value>
+            <value>
+                <fullName>Signed off by BA/PO</fullName>
+                <default>false</default>
+                <label>Signed off by BA/PO</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>Completed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

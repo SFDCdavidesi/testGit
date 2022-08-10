@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_ResponseDayAbsolute__c</fullName>
+    <description>[EBH] (EPH-1912) :Day of First Response absolute (integer -&gt; number of days since 2015-01-01)</description>
+    <externalId>false</externalId>
+    <label>Response Day Absolute</label>
+    <precision>11</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>UK Booking Confirmation mail after setting Opportunity to 100%</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>UK Automatic Booking Confirmation Mail (Team Uhl)</name>
+    <style>none</style>
+    <subject>Confirmation-Mail: &quot;{!Opportunity.Name}&quot; - Order Number: &quot;{!Opportunity.Your_order_no__c}&quot;</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<font face="arial" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span style="font-size: 12pt;">Hello CM,</span></font><div><font face="arial" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span style="font-size: 12pt;"><br></span></font><div style=""><span style="background-color: rgb(255, 255, 255); font-size: 12pt;">{!Quote.Name}&nbsp;</span><span style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">has just been approved. A proposal can now be created on the opportunity by clicking on the booking button.&nbsp;</span></div><div style=""><br></div><div style=""><font face="arial">{!Quote.Link}</font></div></div>]]></td>
+</tr>
+</table>

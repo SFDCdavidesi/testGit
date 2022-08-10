@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fulfillment_DE</fullName>
+    <columns>NAME</columns>
+    <columns>EBH_Stage__c</columns>
+    <columns>EBH_Seller__c</columns>
+    <columns>EBH_EBFSKUID__c</columns>
+    <columns>EBH_ThirdPartyProviderDate__c</columns>
+    <columns>EBH_ThirdPartyProviderChosen__c</columns>
+    <columns>EBH_AcceptedTC__c</columns>
+    <columns>EBH_DaysInAcquisition__c</columns>
+    <columns>EBH_DaysInActivation__c</columns>
+    <columns>EBH_DaysInOnboarding__c</columns>
+    <columns>Sold_Items_Fulfillment_30d__c</columns>
+    <columns>EBH_DaysInScaling__c</columns>
+    <columns>EBH_ExpectedSignUpDate__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>EBH_Project__c.Fulfilment</value>
+    </filters>
+    <filters>
+        <field>LeadSource__c</field>
+        <operation>equals</operation>
+        <value>Self Gen (Landing Page)</value>
+    </filters>
+    <filters>
+        <field>Site__c</field>
+        <operation>equals</operation>
+        <value>DE</value>
+    </filters>
+    <label>Fulfillment DE</label>
+</ListView>

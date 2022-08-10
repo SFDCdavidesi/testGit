@@ -1,0 +1,9 @@
+Dear user,
+
+The ticket #{!Case.CaseNumber} has been updated to  {!Case.Status}
+
+Ticket details: {!Case.Link}
+
+Ticket description : {!Case.Description__c}
+
+Ticket summary : {!Case.Summary__c}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0011141 - IT Email Notification for Contract Status = &quot;eBay Declined&quot;</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>IT Refurb eBay Declined Notification</name>
+    <style>none</style>
+    <subject>Email Subject: La tua partecipazione al programma Ricondizionato dal venditore| {!EBH_ContractsForSeller__r.EBH_BusinessName__c}| {!EndDate}</subject>
+    <textOnly>Programma Ricondizionato dal venditore
+
+Ciao,
+siamo spiacenti di informarti che non soddisfi le condizioni per il programma Ricondizionato dal venditore (“Programma”) e che pertanto non puoi al momento partecipare al Programma. Avrai la possibilità di partecipare una volta che il tuo account e gli oggetti che offri soddisferanno i requisiti del Programma. Per maggiori informazioni, ti invitiamo a leggere i Termini e condizioni del Programma.
+
+Cordiali saluti,
+
+Il team eBay</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

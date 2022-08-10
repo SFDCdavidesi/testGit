@@ -1,0 +1,485 @@
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------
+@ Page:           EBH_CSVUploader
+@ Version:        1.0
+@ Author:         JOY MONDOL (jmondol@deloitte.co.uk)
+@ Purpose:        [EBH] (EPH-2834) - CSV uploader for targeted sellers of manual targeting engine
+..................................................................................................................................................................
+@ Change history: 22.06.2017 / JOY MONDOL (jmondol@deloitte.co.uk) / Created the page.
+@				: 29.05.2018/ Vadhanak Voun (vadhanak.voun@gaea-sys.com)/ [#EPH-5452] Target Engine - Manual Seller List Upload - Error Message Refinement
+@				: 25.12.2018/ Vadhanakk Voun (vadhanak.voun@gaea-sys.com)/ EPH-6850 Targeting Engine with Priority
+@				: 20.06.2019/ Acmatac Seing (acmatac.seing@gaea-sys.com)/ EPH-6435 Manaual Targetlist: Allow users to create Targetlist even if errror in csv. file
+@               : 20.05.2022/ Sophal Noch / US-0011717 - Enable new column "Campaign Related Seller Details" in the Target List to create/update Key metrics in campaign members
+----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<apex:page standardController="EBH_Filter__c" extensions="EBH_CSVUploaderController">  
+    
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+        <!--------------------------------------------------------------------------------------------------------------------------------------------------------
+        @ Section: Styles
+        --------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <apex:stylesheet value="{!URLFOR($Resource.EBH_CSVUploaderStyles)}"/>        
+        <apex:slds />
+        
+        <!--------------------------------------------------------------------------------------------------------------------------------------------------------
+        @ Section: Body
+        --------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <!-- Overlay -->
+        
+        <div class="ovrly" id="ovrly" style="display:none; overflow: hidden; z-index:2000">
+            <img src="/img/loading32.gif" class="loading"/>
+            <!-- LOADING NOTIFICATION -->
+            <div class="notify">                    
+                <apex:pageMessage title="{!$Label.EBH_Uploading}" severity="info" strength="1" summary="{!$Label.EBH_WaitMessage}"/>
+            </div>
+        </div>
+        
+        <!-- EPH-5451 --- show link to the template file -->
+        <input type="file" id="csvfile"/><br/><br/>
+        <!-- US-0007074 Give a possibility to upload Excel file in Targeting engine -->
+        <div>
+            <p>CSV Separator</p>
+            <select id="inputCSVSeparator" >
+                <option value=",">Comma Separator(,)</option>
+                <option value=";">Semi-colon Separator(;)</option>
+            </select> 
+        </div>   
+        <br/>
+        <div>
+            <p>Number Format</p>
+            <select id="numberFormat" >
+                <option value="en">Decimal Place(.) And Thousands (,)</option>
+                <option value="de">Decimal Place(,) And Thousands (.)</option>
+            </select>
+        </div>
+        <br/>
+          <apex:pageMessage title="{!$Label.EBH_Attention}" severity="info" strength="1" summary="{!$Label.EBH_ManualAttentionMessage}"/>
+       <br/>  
+        <b> <a target="_blank" href="{!$Label.EBH_CSVUploader_Sample_Link}
+">LINK
+         </a></b>
+
+        <!-- SUCCESS NOTIFICATION -->
+        <div class="notify" id="succ" style="display:none;">                   
+            <apex:pageMessage title="{!$Label.EBH_UploadSuccessful}" severity="confirm" strength="1" summary="{!$Label.EBH_UploadSuccessfulMessage}"/>
+        </div>
+        
+        <!-- FAIL NOTIFICATION -->
+        <div class="notify" id="fail" style="display:none;">                   
+            <apex:pageMessage title="{!$Label.EBH_UploadFailed}" severity="error" strength="1" />
+        </div>
+        
+        <!-- ------------------Message location----------------------------------------------- -->
+           <p style="padding: 10px;"/>
+           <div class="message errorM4" id="msgLocation" style="display:none">
+			  <table border="0" cellpadding="0" cellspacing="0" class="messageTable" style="padding:0px;margin:0px;">
+			          <tbody>
+					<tr valign="top">
+						<td>
+							<img alt="warning" class="msgIcon" src="/s.gif" title="warning" />
+						</td>
+						<td class="messageCell">
+							<div class="messageText">
+								<h4>
+									<span id="msgTitle">
+									</span>
+								</h4>
+								<span id="msgDetail">
+										<br/>
+								</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2"><br/><input id="btnDownload" type="button" onclick="enableDownload();return false;" value="Download Invalid Ids"/></td>
+					</tr>
+				</tbody>
+			</table>
+			
+		  </div>
+        <!-- -------------------end Message location----------------------------------------- -->
+        
+        <!-- -------------------Modal----------------------------------------- -->
+		<div style="height:640px;display: none;" id="divModal">
+		    <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+		        <div class="slds-modal__container">
+		            <header class="slds-modal__header" style="background-color: #c0392b; color: #ffffff;">
+		                <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Error</h2>
+		            </header>
+		            <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+		                <div class="slds-text-heading_small slds-text-color_error">
+		                    <apex:outputText value="{!$Label.Label_SellerListUploadErrorMsg}" escape="false" />
+		                </div>
+		            </div>
+		            <footer class="slds-modal__footer slds-modal__footer_directional">
+		                <button class="slds-button slds-button_neutral" onclick="closeModal();return false;">Resubmit</button>
+		                <button class="slds-button slds-button_brand" onclick="continueCreateTS();return false;">Continue</button>
+		            </footer>
+		        </div>
+		    </section>
+		    <div class="slds-backdrop slds-backdrop_open"></div>
+		</div>
+		<!-- -------------------End Modal------------------------------------- -->
+    </html>
+    
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------------
+    @ Section: Scripts
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <apex:includeScript value="{!$Resource.EBH_JQuery}"/>
+    <apex:includeScript value="{!$Resource.EBH_JQueryUI}"/>
+    <apex:includeScript value="{!$Resource.PapaParse}"/>
+    
+    <script type="text/javascript">
+    	
+        var ROW_LIMIT = 8500;
+        //jQuery.noConflict();        
+        jQuery( document ).ready(function($){
+        
+            $("#csvfile").click(function(evt) { 
+               this.value = null;
+            });
+
+            $('#csvfile').change(function(evt){
+                //HIDE SUCCESS/FAIL NOTIFICATION
+                    $('#succ').hide();
+                    $('#fail').hide();      
+                    
+                    $("#msgLocation").hide();
+                    $('#ovrly').show();
+                
+                    try
+                    {
+                        var papaConfig = buildConfig();
+                        Papa.parse(evt.target.files[0],papaConfig);
+                    }catch(e)
+                    {
+                        console.log("parsing error...:");
+                        console.log(e);
+                    } 
+            });
+
+        });
+        //NK:27/05/2018
+    	//msgType: 0: error, 1: warning, 2: info
+        function showMessage(msgType,msgTitle,msgBody)
+        {
+        	$("#btnDownload").hide(); //show only need
+        	var classStyle = msgType==0?"message errorM4":(msgType==1?"message warningM4":"message infoM4");
+        	$("#msgTitle").text(msgTitle);
+        	$("#msgDetail").html(msgBody);
+        	$("#msgLocation").removeAttr('class').attr('class', '');
+        	$("#msgLocation").addClass(classStyle);
+        	$("#msgLocation").show();
+        }
+        
+        function buildConfig()
+        {
+        	return {
+        		header :true,
+        		delimiter: $('#inputCSVSeparator').val(),  //to get comma seperator or semiconlon seperator
+        		skipEmptyLines: true,
+        		complete : processPapaCSV 
+        		 
+        	};
+        } 
+		
+		function valiateFormat(row_header)
+		{
+			//check field, header...
+			//return row_header["Id"] != undefined && row_header["Id"] !='';
+            console.log('row_header>>>', row_header);
+			return containsKey(row_header,'oracle id') || containsKey(row_header,'id');
+		}
+		//24/12/2018: EPH-6850
+		function containsKey(object, key) {
+		  return !!Object.keys(object).find(k => k.toLowerCase() === key.toLowerCase());
+		}
+
+		var csvStringInvalidId = '';
+		 //html-5 download uri has browser compatiblity issue, regarding csv name, use vf page instead
+		function enableDownload()
+		{
+			$('#ovrly').show();
+			//console.log('>>csvStringInvalidId: '+csvStringInvalidId);
+		 	 //1, when click download, temporary save as attachment
+		 	 try {
+                     Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.EBH_CSVUploaderController.createAttachment}', csvStringInvalidId,'{!EBH_Filter__c.Id}',
+                         function(result, event) {
+                             if(event.status) {
+                             	console.log('attid: '+result.attId);
+                                 //2, when oncomplete, open the csvpage
+                                 //window.open('/apex/TE_InvalidIdCSV?attId='+result.attId);
+                                 window.location = ('/apex/TE_InvalidIdCSV?attId='+result.attId);
+                                 $('#ovrly').hide();
+                             } else if (event.type === 'exception') {
+                                 showMessage(0,'Error Download', event.message);
+                                 $('#ovrly').hide();
+                                 console.log('exception Download', event.message, event.where);
+                             } else {
+                                 showMessage(0,'Error Download', event.message);
+                                 $('#ovrly').hide();
+                                 console.log('error Download', event.message);
+                             }
+                         }, { buffer: false, timeout: 120000 }
+                     );
+                 } catch(e) {
+                     console.log('Exception', e);
+                     showMessage(0,'Unknown Error @ Download', e);
+                     $('#ovrly').hide();  
+                 }
+		 	 
+		}
+		var sIds_cloned, id_priority_cloned, id_fields_cloned;
+        function processPapaCSV(results)
+        {
+        	var hasPriority;
+        	console.log('#### start process ...'); 
+        	if (results && results.errors.length>0)
+			{
+				 
+				console.log(results.errors);
+				console.log("Error: "+results.errors.length +". FirstError: "+results.errors[0].message);
+				showMessage(0,'Invalid CSV', '{!$Label.Error_TE_Upload_NotCSV}');
+				 
+				$('#ovrly').hide();	
+				return;
+				
+			}else if(results && results.errors.length<=0)
+			{
+				//console.log('>>results.data[0]: '+results.data[0]);
+
+                if(results.data){  // 20.05.2022 / Sophal Noch / US-0011717
+                    var strResultData = JSON.stringify(results.data);
+                    strResultData = strResultData.replace(/"campaignrelatedsellerdetails":/gi, "\"campaignrelatedsellerdetails\":");
+                    results.data = JSON.parse(strResultData);
+                }
+
+				 var isValid = valiateFormat(results.data[0]);
+                 hasPriority = containsKey(results.data[0],'priority'); //24/12/2018: EPH-6850
+                 hasCrsDetails = containsKey(results.data[0],'campaignrelatedsellerdetails'); // 20.05.2022 / Sophal Noch / US-0011717
+
+				//validate correct format
+				if(!isValid)
+				{
+					showMessage(0,'Invalid CSV', '{!$Label.Error_TE_Upload_NotCSV}');
+					
+					$('#ovrly').hide();	
+					return;
+				}
+				console.log('>>length: '+results.data.length );
+				if(results.data.length > ROW_LIMIT)
+				{
+					showMessage(0,'CSV Too Large', '{!$Label.Error_TE_Upload_TooLarge}');
+					$('#ovrly').hide();	
+					return;
+				}
+			
+			}
+			//console.log('#### ok ...');
+			//return;
+			
+             var upldData = results.data;
+             //console.log(upldData);
+             var sIds = [];
+             var validSids = [];
+             var invalidSids = [];
+             
+             // var id_priority = {};
+             //console.log(upldData);
+
+             var id_fields = {}; // 20.05.2022 / Sophal Noch / US-0011717
+             
+             //Changes 01/23/202 : Sreymeas Nao : Give a possibility to upload Excel file in Targeting engine
+             $.each(upldData, function(i, h) { 
+                 h = cleanObject(h);
+                 console.log(h);
+                 var idval ='';
+                 console.log('#### '+h['id']);
+                 if(h['Id'] != undefined && h['Id'] != '') {
+                     idval = h['Id'];
+                     //console.log('#### '+h['Id']);
+                 }else if(h['ID'] != undefined && h['ID'] != '')
+                 {
+                 	idval = h['ID'] ;
+                 }else if(h['id'] != undefined && h['id'] != ''){ //check header == id 
+                     idval = h['id'] ;
+                 }else if(h['oracle id'] != undefined && h['oracle id'] != ''){ //check header == oracle id
+                     idval = h['oracle id'] ;
+                 }
+                 sIds.push(idval);
+
+                 id_fields[idval] = {}; // 20.05.2022 / Sophal Noch / US-0011717
+
+                 if(hasPriority)
+                 {
+                 	var priorityVal = '';
+                 	if(h['Priority'] != undefined && h['Priority'] != '') 
+                 	{
+                     	priorityVal = h['Priority']; 
+                      
+	                 }else if(h['priority'] != undefined && h['priority'] != '')
+	                 {
+	                 	priorityVal = h['priority']; 
+                     }
+                     //DE use (.) as thousand and (,) as Decimal place else use (.) as Decimal place and (,) as thousand 
+                     priorityVal = $('#numberFormat').val() == 'de' ? priorityVal.replace('.','').replace(',','.') : priorityVal.replace(',','');
+                     // id_priority[idval] = priorityVal; //mapping id to priority
+                     
+                     console.log('priorityVal',priorityVal);
+
+                     id_fields[idval]['Priority__c'] = priorityVal; // 20.05.2022 / Sophal Noch / US-0011717
+                 }
+
+                 if(hasCrsDetails){ // 20.05.2022 / Sophal Noch / US-0011717
+                    var crsDetailsVal = '';
+                    if(h['campaignrelatedsellerdetails'] != undefined && h['campaignrelatedsellerdetails'] != '') {
+                        crsDetailsVal = h['campaignrelatedsellerdetails'];
+                    }
+                    id_fields[idval]['Campaign_Related_Seller_Details__c'] = crsDetailsVal;
+                 }
+
+             });
+             //console.log('>>>>id_priority: ');
+             // console.log(id_priority);
+
+             // console.log('nsp: id_fields == ',id_fields);
+             
+             if(sIds.length < 1) {
+                showMessage(0,'Invalid CSV', '{!$Label.Error_TE_Upload_NotCSV}');
+				$('#ovrly').hide();	
+				 
+             } else {
+                 try {
+                     Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.EBH_CSVUploaderController.fetchSellers}', sIds,
+                         function(result, event) {
+                             if(event.status) {
+                                 //parse the id list from result map to match the validity of the csv ids
+                                 $.each(result['Ids'], function(i,v) {
+                                     validSids.push(v);
+                                 });
+                                 
+                                 //parse the oracle id list from result map to match the validity of the csv oracle ids
+                                 $.each(result['oIds'], function(i,v) {
+                                     validSids.push(v);
+                                 });
+                                 
+                                 $.each(sIds, function(i,v) {
+                                     if(!validSids.includes(v)) {
+                                         invalidSids.push(v);
+                                     }
+                                 });
+                                 
+                                 //block targeted seller creation if invalid ids/oracle ids founf in csv
+                                 if(invalidSids.length > 0) {                                
+                                     $('#succ').hide();                                          
+                                     $('#ovrly').hide();
+                                     showMessage(0,'Invalid Ids', ('{!$Label.Error_TE_Upload_NotFound}'+ '<br/>' + invalidSids.join("<br/>")) );
+                                     
+                                     invalidSids.unshift("Invalid Id"); 
+                                     csvStringInvalidId = invalidSids.join("\n");
+                                     
+                                     // 20.06.19, amt : updated for EPH-6435
+                                     $("#btnDownload").show();
+                                     sIds_cloned = sIds;
+                                     // id_priority_cloned = id_priority;
+                                     id_fields_cloned = id_fields; // 20.05.2022 / Sophal Noch / US-0011717
+                                
+                                     $("#divModal").show();          
+                                 }else {
+                                     //initiate the targeted seller refresh/uploader
+                                     // createTS(sIds, id_priority);
+                                     createTS(sIds, id_fields); // 20.05.2022 / Sophal Noch / US-0011717
+                                 }
+                             } else if (event.type === 'exception') {
+                                 //SHOW FAIL NOTIFICATION
+                                 showMessage(0,'Error fetchSellers', event.message);
+                                 $('#ovrly').hide();
+                                 console.log('exception', event.message, event.where);
+                             } else {
+                                 //SHOW FAIL NOTIFICATION
+                                 showMessage(0,'Error fetchSellers', event.message);
+                                 $('#ovrly').hide();
+                                 console.log('error', event.message);
+                             }
+                         }, { buffer: false, timeout: 120000 }
+                     );
+                 } catch(e) {
+                     console.log('Exception', e);
+                     showMessage(0,'Unknown Error', e);
+                      $('#ovrly').hide();
+                 }
+             }
+        } 
+        
+         	/*************************************************************************************************************************************************
+            @ Function:       cleanObject
+            @ Version:        1.0
+            @ Author:         Vadhanak Voun (vadhanak.voun@gaea-sys.com)
+            @ Purpose:        Some csv generated with "Byte order marks by encoding,  ï»¿", hidden char that previously directed-comparing return 'false'
+            @                 remove the hidden char and return cleaned object
+            @                 https://en.wikipedia.org/wiki/Byte_order_mark
+            @--------------------------------------------------------------------------------------------------------------------------------------------------
+            @ Change history: 03.01.2018 / Vadhanak Voun / Created the function.
+            **************************************************************************************************************************************************/
+            function cleanObject(obj)
+            {
+                var str = JSON.stringify(obj) ;
+                str = str.replace("ï»¿","");
+                var obj2 = JSON.parse(str);
+                
+                return obj2 
+            }
+            
+            
+            /*************************************************************************************************************************************************
+            @ Function:       closeModal(new), continueCreateTS(new), createTS(updated)
+            @ Version:        1.0
+            @ Author:         Acmatac Seing (acmatac.seing@gaea-sys.com)
+            @ Purpose:        EPH-6435, AC2) When a user uploaded a targetlist an recieved an errormessage a new window should pop-up and display should two options:
+            @                 a) resubmit the the revised list 
+            @                 b) continue and create targetlist without the "error" users
+            @--------------------------------------------------------------------------------------------------------------------------------------------------
+            @ Change history: 20.6.2019 / Acmatac Seing / Created the function.
+            **************************************************************************************************************************************************/
+			function closeModal(){
+				$("#divModal").hide();
+			}
+			
+			function continueCreateTS(){
+				$("#divModal").hide();
+				// createTS(sIds_cloned, id_priority_cloned);
+                createTS(sIds_cloned, id_fields_cloned); // 20.05.2022 / Sophal Noch / US-0011717
+			}
+            // function createTS(sIds, id_priority){
+			function createTS(sIds, id_fields){ // 20.05.2022 / Sophal Noch / US-0011717
+				//initiate the targeted seller refresh/uploader
+	            try {
+	                Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.EBH_CSVUploaderController.createTargetedSellers2}', 
+	                    // sIds, '{!EBH_Filter__c.Id}',JSON.stringify(id_priority),
+                        sIds, '{!EBH_Filter__c.Id}', JSON.stringify(id_fields), // 20.05.2022 / Sophal Noch / US-0011717
+	                    function(result, event) {
+	                        if(event.status) {
+	                            //SHOW SUCCESS NOTIFICATION 
+	                            $('#succ').show();
+	                            $('#ovrly').hide();
+	                            $("#msgLocation").hide();
+	                        } else if (event.type === 'exception') {
+	                            showMessage(0,'Error createTargetedSellers', event.message);
+	                            $('#ovrly').hide();
+	                            console.log('exception', event.message, event.where);
+	                        } else {
+	                            //SHOW FAIL NOTIFICATION
+	                            showMessage(0,'Error', event.message);
+	                            $('#ovrly').hide();
+	                            console.log('error', event.message);
+	                        }
+	                    }, { buffer: false, timeout: 120000 }
+	                );
+	            } catch(e) {
+	            	showMessage(0,'Unknown Error', e);
+	                console.log('Exception', e);
+	                $('#ovrly').hide();
+	            }
+            }
+    </script>
+  
+</apex:page>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>SEP_Loginfail_Label2</label>
+    <protected>false</protected>
+    <values>
+        <field>Value_Big__c</field>
+        <value xsi:type="xsd:string">We can&#39;t log you in because of an authentication error. For help, please Start Here, click on &#39;&lt;a title=&quot;Contact Us&quot; href=&quot;https://www.ebay.com/help/home&quot; target=&quot;_blank&quot;&gt;Contact Us&lt;/a&gt;&#39; button at the bottom of the page.</value>
+    </values>
+    <values>
+        <field>Value__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>Value_in_German__c</field>
+        <value xsi:type="xsd:string">Wenn Sie Hilfe ben&amp;ouml;tigen, klicken Sie &amp;bdquo;Mich anrufen&amp;ldquo; unten auf unserer &lt;a title=&quot;Kundenservice-Seite&quot; href=&quot;https://www.ebay.de/help/home&quot; target=&quot;_blank&quot;&gt;Kundenservice-Seite&lt;/a&gt;.</value>
+    </values>
+</CustomMetadata>

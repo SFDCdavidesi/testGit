@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bill_to_Agency</fullName>
+    <active>true</active>
+    <description>if you&#39;re billing to agency, make sure agency field is populated</description>
+    <errorConditionFormula>AND(
+
+$Setup.byPass__c.ByPass_Validation__c = FALSE,
+$Profile.Name = &quot;Standard Ads User Profile&quot;,
+
+RecordType.DeveloperName = $Label.OPP_RECORDTYPEDEVNAME_DIRECT,
+ISPICKVAL(Bill_To_Party__c, &#39;Agency&#39;),
+ISBLANK(Agency__c)
+
+
+)</errorConditionFormula>
+    <errorDisplayField>Agency__c</errorDisplayField>
+    <errorMessage>If billing to Agency, make sure Agency is added</errorMessage>
+</ValidationRule>

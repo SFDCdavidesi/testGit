@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BCD_External_Id__c</fullName>
+    <description>US-0018872 Hypercare Coupon - Correct BCD File missing fields
+US-0007348 Coupon Correction for External ID (2020-04-02)</description>
+    <externalId>false</externalId>
+    <formula>IF(AND(EBH_OracleID__c != NULL, ISO_Currency_Code__c != NULL),(TEXT(VALUE(EBH_OracleID__c) * 1000 + VALUE(ISO_Currency_Code__c))), NULL)</formula>
+    <label>BCD External Id</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

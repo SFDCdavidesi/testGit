@@ -1,0 +1,7 @@
+The probability of the opportunity "{!Opportunity.Name}"  {!Opportunity.Offer_number_old__c} was set to greater or equal to 95%.
+
+Link to Opportunity:
+{!Opportunity.Link}
+
+Love,
+Your SF Zuperuser

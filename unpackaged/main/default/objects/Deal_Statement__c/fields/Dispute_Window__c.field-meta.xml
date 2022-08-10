@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dispute_Window__c</fullName>
+    <description>US-0008778 - [NA] Monthly Deal Statement Creation</description>
+    <externalId>false</externalId>
+    <formula>IF( ISBLANK(Subsidy_Final_Calculation__c), &quot;Not Open&quot;, 
+IF( ((TODAY() - (DATEVALUE(X2nd_Statement_Sent_Out__c)))) - 
+(CASE(MOD( DATEVALUE(X2nd_Statement_Sent_Out__c) - DATE(1985,6,24),7), 
+0 , CASE( MOD( TODAY() - DATEVALUE(X2nd_Statement_Sent_Out__c), 7),1,0,2,0,3,0,4,0,5,1,6,2,0), 
+1 , CASE( MOD( TODAY() - DATEVALUE(X2nd_Statement_Sent_Out__c), 7),0,0,1,0,2,0,3,0,4,0,5,2,2), 
+2 , CASE( MOD( TODAY() - DATEVALUE(X2nd_Statement_Sent_Out__c), 7),0,0,1,0,2,0,3,1,2), 
+3 , CASE( MOD( TODAY() - DATEVALUE(X2nd_Statement_Sent_Out__c), 7),0,0,1,0,2,1,2), 
+4 , CASE( MOD( TODAY() - DATEVALUE(X2nd_Statement_Sent_Out__c), 7),0,0,1,1,2), 
+5 , CASE( MOD( TODAY() - DATEVALUE(X2nd_Statement_Sent_Out__c), 7),0,1,2), 
+6 , CASE( MOD( TODAY() - DATEVALUE(X2nd_Statement_Sent_Out__c), 7),6,2,1), 
+999) + (FLOOR(( (TODAY()) - (DATEVALUE(X2nd_Statement_Sent_Out__c )))/7)*2)) &gt; 10 &amp;&amp; ISBLANK(Disputes_Payout__c), &quot;Closed&quot;, 
+IF(((TODAY() - (DATEVALUE(Dispute_Statement_Sent_Out__c)))) - 
+(CASE(MOD( DATEVALUE(Dispute_Statement_Sent_Out__c) - DATE(1985,6,24),7), 
+0 , CASE( MOD( TODAY() - DATEVALUE(Dispute_Statement_Sent_Out__c), 7),1,0,2,0,3,0,4,0,5,1,6,2,0), 
+1 , CASE( MOD( TODAY() - DATEVALUE(Dispute_Statement_Sent_Out__c), 7),0,0,1,0,2,0,3,0,4,0,5,2,2), 
+2 , CASE( MOD( TODAY() - DATEVALUE(Dispute_Statement_Sent_Out__c), 7),0,0,1,0,2,0,3,1,2), 
+3 , CASE( MOD( TODAY() - DATEVALUE(Dispute_Statement_Sent_Out__c), 7),0,0,1,0,2,1,2), 
+4 , CASE( MOD( TODAY() - DATEVALUE(Dispute_Statement_Sent_Out__c), 7),0,0,1,1,2), 
+5 , CASE( MOD( TODAY() - DATEVALUE(Dispute_Statement_Sent_Out__c), 7),0,1,2), 
+6 , CASE( MOD( TODAY() - DATEVALUE(Dispute_Statement_Sent_Out__c), 7),6,2,1), 
+999) + (FLOOR(( (TODAY()) - (DATEVALUE(Dispute_Statement_Sent_Out__c )))/7)*2)) &gt; 10, &quot;Closed&quot;, &quot;Open&quot;
+)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Dispute Window</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Sponsor__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>US-0006986 - Lookup to User object to identify business sponsor for feature request</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please enter the budget owner who will pay for the new feature requested</inlineHelpText>
+    <label>Business Sponsor</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Tickets3</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

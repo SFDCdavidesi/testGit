@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Trusted Shops First Heading</label>
+    <protected>false</protected>
+    <values>
+        <field>Bigger_Body_Test__c</field>
+        <value xsi:type="xsd:string">Wir wollen, dass Sie sich voll auf Ihr Wachstum konzentrieren können. Die rechtliche Seite des Verkaufens bei eBay soll für Sie so einfach wie möglich sein. Daher haben wir zusammen mit Trusted Shops ein Service-Paket für Sie zusammengestellt, mit dem Sie sich vor Abmahnungen schützen und preiswert rechtlich beraten lassen können.</value>
+    </values>
+    <values>
+        <field>Heading__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Help_Text__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Inner_Help_Text__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FVF_Campaign</fullName>
+    <active>true</active>
+    <description>Request for the Final Value Fee Discount to multiple seller and for the specific range of existing listings. There will be a possibility to upload a list of sellers with proposed listings and target price later in the process.</description>
+    <label>FVF (Campaign)</label>
+    <picklistValues>
+        <picklist>Final_Value_Fee_Stage__c</picklist>
+        <values>
+            <fullName>Contract Sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Draft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Executed Campaigns</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Running Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent_to_eBay_Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>eBay Approved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Site__c</picklist>
+        <values>
+            <fullName>DE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UK</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

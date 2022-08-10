@@ -1,0 +1,21 @@
+Sie haben die eBay-Artikelnummer Ihres WOW! Angebots noch nicht hinterlegt. 
+
+Bitte tragen Sie die eBay-Artikelnummer jetzt im WOW! Angebote Bereich des Wachstumsportals ein.
+
+Einzelheiten zum WOW! Angebot
+
+eBay-Nutzername: {!EBH_Deal__c.EBH_BusinessName__c}
+Produktname: {!EBH_Deal__c.EBH_MarketingTitle__c}
+Verfügbare Stückzahl: {!EBH_Deal__c.EBH_Quantity__c}
+Aktionsformat: {!EBH_Deal__c.EBH_LocalDealFormat__c}
+
+Anfangsdatum der Werbeaktion: {!EBH_Deal__c.EBH_DealStartDate__c}
+Anfangszeitpunkt des Preisnachlasses: 08:00
+
+Enddatum der Werbeaktion: {!EBH_Deal__c.EBH_DealEndDate__c}
+Zeitpunkt der Preiserhöhung: 07:59
+
+Website(s):  DE
+
+Beste Grüße
+Ihr eBay Team

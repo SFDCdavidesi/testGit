@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Minimum_Campaign_Size_Exception</fullName>
+    <columns>NAME</columns>
+    <columns>Name__c</columns>
+    <columns>Account__c</columns>
+    <columns>Opportunity__c</columns>
+    <columns>Requested_Budget__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Advertising_Request_Portal__c.Minimum_Campaign_Size_Exception</value>
+    </filters>
+    <label>Minimum Campaign Size Exception</label>
+</ListView>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Sellers_Managed_Payments</fullName>
+    <columns>NAME</columns>
+    <columns>EBH_Seller__c</columns>
+    <columns>GMVLast12Months__c</columns>
+    <columns>EBH_Stage__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>EBH_DMCInterestedCommittedDate__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>EBH_Project__c.ManagedPayment</value>
+    </filters>
+    <filters>
+        <field>EBH_Contact__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>All Sellers Managed Payments</label>
+</ListView>

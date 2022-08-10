@@ -1,0 +1,10 @@
+Hi {!EBH_Deal__c.Merchant_Approver__c}
+<br/><br/>
+You currently have Daily Deals that are ready for approval. 
+<br/><br/>
+{!EBH_Deal__c.EBH_Vertical__c}
+<br/><br/>
+Please <a href="{!EBH_Deal__c.Link}/../apex/DD_MassApprovals">click here</a> to login into Salesforce to review the Deals and Approve or Reject
+
+</br><br/>
+Thanks

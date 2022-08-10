@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deals_Proposals_Fashion_DE</fullName>
+    <columns>NAME</columns>
+    <columns>GalleryDealPicture__c</columns>
+    <columns>EBH_eBayItemID__c</columns>
+    <columns>EBH_MarketingTitle__c</columns>
+    <columns>EBH_BusinessName__c</columns>
+    <columns>EBH_SellerPrice__c</columns>
+    <columns>EBH_DealPrice__c</columns>
+    <columns>EBH_SubsidyP__c</columns>
+    <columns>EBH_Quantity__c</columns>
+    <columns>EBH_DealStartDate__c</columns>
+    <columns>EBH_DealEndDate__c</columns>
+    <columns>EBH_SpotlightCategory__c</columns>
+    <columns>EBH_IdealoLink__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>EBH_Status__c</field>
+        <operation>equals</operation>
+        <value>New</value>
+    </filters>
+    <filters>
+        <field>EBH_Vertical__c</field>
+        <operation>equals</operation>
+        <value>Fashion,Health &amp; Beauty</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>EBH_Deal__c.Deal_V1</value>
+    </filters>
+    <label>Deals Proposals  - Fashion DE Test</label>
+</ListView>

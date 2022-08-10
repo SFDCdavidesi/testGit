@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_DefectReason__c</fullName>
+    <description>[EBH] (EPH-2969) : Sprint 5: Seller behavior that caused the recent drop in GMV.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Seller behavior that caused the drop in GMV and/or predicted drop in seller standard.</inlineHelpText>
+    <label>Urgency Action</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Increase live listings</fullName>
+                <default>false</default>
+                <label>Increase live listings</label>
+            </value>
+            <value>
+                <fullName>Improve conversion rate</fullName>
+                <default>false</default>
+                <label>Improve conversion rate</label>
+            </value>
+            <value>
+                <fullName>Review average selling price</fullName>
+                <default>false</default>
+                <label>Review average selling price</label>
+            </value>
+            <value>
+                <fullName>Refer driver tree for insights</fullName>
+                <default>false</default>
+                <label>Refer driver tree for insights</label>
+            </value>
+            <value>
+                <fullName>Order Defects Due to INR/SNAD/Stockout</fullName>
+                <default>false</default>
+                <label>Order Defects Due to INR/SNAD/Stockout</label>
+            </value>
+            <value>
+                <fullName>Seller at Fault due to INR/SNAD</fullName>
+                <default>false</default>
+                <label>Seller at Fault due to INR/SNAD</label>
+            </value>
+            <value>
+                <fullName>Late Shipment</fullName>
+                <default>false</default>
+                <label>Late Shipment</label>
+            </value>
+            <value>
+                <fullName>Multiple</fullName>
+                <default>false</default>
+                <label>Multiple</label>
+            </value>
+            <value>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+                <label>Unknown</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>GMV or transaction threshold</fullName>
+                <default>false</default>
+                <label>GMV or transaction threshold</label>
+            </value>
+            <value>
+                <fullName>Multiple Diagnostic Issues</fullName>
+                <default>false</default>
+                <label>Multiple Diagnostic Issues</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

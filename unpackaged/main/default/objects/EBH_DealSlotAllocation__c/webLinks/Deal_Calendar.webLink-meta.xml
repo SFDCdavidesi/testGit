@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deal_Calendar</fullName>
+    <availability>online</availability>
+    <description>US-0006860 - Deals - Masterschedule - FUNCTION INCREASE SLOTS FOR DAILY VIEW</description>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Deal Calendar</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>/apex/DealSlotAllocation_Deal_Calendar?viewName=day</url>
+</WebLink>

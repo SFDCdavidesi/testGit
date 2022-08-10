@@ -1,0 +1,2335 @@
+<apex:page id="pg" standardStylesheets="false" controller="DD_DealStatementSpreadsheetController" contenttype="application/vnd.ms-excel#DealStatementSpreadsheet.xls;charset=UTF-8" action="{!updateAdjustPayout}">
+
+<apex:outputText value="{!xmlheader}"/>
+
+
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Mitra, Joyeeta(AWF)</Author>  
+  <Company>eBay, Inc.</Company>
+  <Version>12.00</Version>
+ </DocumentProperties>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>10704</WindowHeight>
+  <WindowWidth>25596</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <Calculation>ManualCalculation</Calculation>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s4523" ss:Name="Comma">
+   <NumberFormat ss:Format="{!numberFormat}"/>
+  </Style>
+  <Style ss:ID="s4516" ss:Name="Currency">
+   <NumberFormat
+    ss:Format="{!currencyFormat}"/>
+  </Style>
+  <Style ss:ID="m100969280">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#FFFFFF"/>
+   <Interior ss:Color="#538ED5" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="m100969300">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"/>
+   <Interior ss:Color="#C5D9F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="m100969320">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#FFFFFF"/>
+   <Interior ss:Color="#538ED5" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="m100968960">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"/>
+   <Interior ss:Color="#C5D9F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="m100969000">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#FFFFFF"
+    ss:Bold="1"/>
+   <Interior ss:Color="#538ED5" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="m100969060">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#FFFFFF"/>
+   <Interior ss:Color="#538ED5" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="m100969920">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#FF0000"
+    ss:Bold="1"/>
+   <Interior ss:Color="#FFFF99" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="m104686016">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14"/>
+   <Interior ss:Color="#FFFF99" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s4527">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Interior/>
+   <NumberFormat ss:Format="#,##0"/>
+  </Style>
+  <Style ss:ID="s4529">
+   <NumberFormat ss:Format="[$-409]m/d/yy\ h:mm\ AM/PM;@"/>
+  </Style>
+  <Style ss:ID="s4530">
+   <Alignment ss:Vertical="Center"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="9" ss:Color="#1F497D"
+    ss:Italic="1"/>
+  </Style>
+  <Style ss:ID="s4531">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s4532">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"/>
+   <NumberFormat ss:Format="[$-409]m/d/yy\ h:mm\ AM/PM;@"/>
+  </Style>
+  <Style ss:ID="s4533">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s4534">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+   <NumberFormat ss:Format="[$-409]m/d/yy\ h:mm\ AM/PM;@"/>
+  </Style>
+  <Style ss:ID="s4535">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+  </Style>
+  <Style ss:ID="s4536">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat ss:Format="#,##0"/>
+  </Style>
+  <Style ss:ID="s4537">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"
+    ss:Bold="1"/>
+   <NumberFormat
+    ss:Format="{!swissFormat}"/>
+  </Style>
+  <Style ss:ID="s4538">
+   <Alignment ss:Vertical="Center"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#1F497D"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s4539">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s4540">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"
+    ss:Bold="1"/>
+   <NumberFormat ss:Format="0"/>
+  </Style>
+  <Style ss:ID="s4541">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s4542">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"
+    ss:Bold="1"/>
+   <NumberFormat ss:Format="[$-409]m/d/yy\ h:mm\ AM/PM;@"/>
+  </Style>
+  <Style ss:ID="s4543">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"
+    ss:Bold="1"/>
+   <NumberFormat ss:Format="0"/>
+  </Style>
+  <Style ss:ID="s4544">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"
+    ss:Bold="1"/>
+   <NumberFormat ss:Format="0"/>
+  </Style>
+  <Style ss:ID="s4545">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"
+    ss:Bold="1"/>
+   <NumberFormat ss:Format="[$-409]m/d/yy\ h:mm\ AM/PM;@"/>
+  </Style>
+  <Style ss:ID="s4546">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"
+    ss:Bold="1"/>
+   <NumberFormat ss:Format="0"/>
+  </Style>
+  <Style ss:ID="s4547" ss:Parent="s4516">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior/>
+   <NumberFormat ss:Format="#,##0"/>
+  </Style>
+  <Style ss:ID="s4548" ss:Parent="s4516">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior/>
+   <NumberFormat ss:Format="#,##0"/>
+  </Style>
+  <Style ss:ID="s4552">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat ss:Format="0"/>
+  </Style>
+  <Style ss:ID="s4553">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"/>
+   <NumberFormat ss:Format="0"/>
+  </Style>
+  <Style ss:ID="s4554">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s4555">
+   <Alignment ss:Vertical="Center"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#1F497D"/>
+   <NumberFormat ss:Format="[ENG][$-409]mmmm\ d\,\ yyyy;@"/>
+  </Style>
+  <Style ss:ID="s4556" ss:Parent="s4516">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s4557">
+   <Alignment ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Bold="1"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s4558">
+   <Borders/>
+  </Style>
+  <Style ss:ID="s4559">
+   <Borders/>
+   <NumberFormat ss:Format="[$-409]m/d/yy\ h:mm\ AM/PM;@"/>
+  </Style>
+  <Style ss:ID="s4560">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders/>
+  </Style>
+  <Style ss:ID="s4561">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s4562">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s4568">
+   <Alignment ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Bold="1"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s4569">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior ss:Color="#BFBFBF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s4570">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"/>
+   <Interior ss:Color="#BFBFBF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="0"/>
+  </Style>
+  <Style ss:ID="s4572">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:Indent="3"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s4573">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#FFFFFF"
+    ss:Bold="1"/>
+   <Interior ss:Color="#538ED5" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s4574">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <NumberFormat ss:Format="0"/>
+  </Style>
+  <Style ss:ID="s4575">
+   <NumberFormat ss:Format="0"/>
+  </Style>
+  <Style ss:ID="s4576">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#1F497D"
+    ss:Bold="1"/>
+   <NumberFormat ss:Format="0"/>
+  </Style>
+  <Style ss:ID="s4577">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:Indent="3"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#1F497D"/>
+  </Style>
+  <Style ss:ID="s4579">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"
+    ss:Bold="1"/>
+   <NumberFormat ss:Format="0"/>
+  </Style>
+  <Style ss:ID="s4580">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior/>
+   <NumberFormat ss:Format="0"/>
+  </Style>
+  <Style ss:ID="s4581">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat ss:Format="0"/>
+  </Style>
+  <Style ss:ID="s4582">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat ss:Format="[$-409]m/d/yy\ h:mm\ AM/PM;@"/>
+  </Style>
+  <Style ss:ID="s4583" ss:Parent="s4516">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat ss:Format="0"/>
+  </Style>
+  <Style ss:ID="s4584">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat ss:Format="0"/>
+  </Style>
+  <Style ss:ID="s4585">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior/>
+   <NumberFormat ss:Format="0"/>
+  </Style>
+  <Style ss:ID="s4586">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior/>
+   <NumberFormat ss:Format="0"/>
+  </Style>
+  <Style ss:ID="s4587">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior/>
+   <NumberFormat ss:Format="[$-409]m/d/yy\ h:mm\ AM/PM;@"/>
+  </Style>
+  <Style ss:ID="s4588">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior/>
+   <NumberFormat ss:Format="0"/>
+  </Style>
+  <Style ss:ID="s4589">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior ss:Color="#92D050" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="0"/>
+  </Style>
+  <Style ss:ID="s4590">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior ss:Color="#92D050" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="0"/>
+  </Style>
+  <Style ss:ID="s4591">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior ss:Color="#92D050" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="[$-409]m/d/yy\ h:mm\ AM/PM;@"/>
+  </Style>
+  <Style ss:ID="s4592">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior ss:Color="#92D050" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="0"/>
+  </Style>
+  <Style ss:ID="s4593" ss:Parent="s4516">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior ss:Color="#92D050" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="0"/>
+  </Style>
+  <Style ss:ID="s4594">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Interior/>
+   <NumberFormat ss:Format="0"/>
+  </Style>
+  <Style ss:ID="s4595">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+   <NumberFormat ss:Format="0"/>
+  </Style>
+  <Style ss:ID="s4596">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"/>
+   <Interior ss:Color="#C5D9F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s4597">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#FFFFFF"/>
+   <Interior ss:Color="#538ED5" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s4598">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"/>
+   <Interior ss:Color="#C5D9F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s4599">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#FFFFFF"/>
+   <Interior ss:Color="#538ED5" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s4600">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+  </Style>
+  <Style ss:ID="s4601">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders/>
+  </Style>
+  <Style ss:ID="s4602">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"/>
+   <Interior ss:Color="#BFBFBF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="0"/>
+  </Style>
+  <Style ss:ID="s4604" ss:Parent="s4516">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior/>
+   <NumberFormat ss:Format="#,##0"/>
+  </Style>
+  <Style ss:ID="s4605">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:Indent="3"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#FF0000"/>
+  </Style>
+  <Style ss:ID="s4606" ss:Parent="s4516">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#FFFFFF"
+    ss:Bold="1"/>
+   <Interior ss:Color="#4F81BD" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s4607" ss:Parent="s4516">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s4608" ss:Parent="s4516">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s4609">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:Indent="3"
+    ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s4610">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:Indent="3"
+    ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s4611">
+   <Alignment ss:Vertical="Center"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="9" ss:Color="#FF0000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s4612">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s4613">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s4614">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"/>
+  </Style>
+  <Style ss:ID="s4615">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s4616">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#FF0000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s4617">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s4618">
+   <Alignment ss:Vertical="Center"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Italic="1"/>
+  </Style>
+  <Style ss:ID="s4619">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:Indent="5"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"/>
+  </Style>
+  <Style ss:ID="s4620">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:Indent="10"
+    ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#FF0000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s4621">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:Indent="10"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s4622">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:Indent="10"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#FF0000" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s4623">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"/>
+   <NumberFormat ss:Format="0"/>
+  </Style>
+  <Style ss:ID="s4624">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s4627" ss:Parent="s4516">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s4628" ss:Parent="s4523">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat ss:Format="#,##0"/>
+  </Style>
+  <Style ss:ID="s4629" ss:Parent="s4523">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior/>
+   <NumberFormat ss:Format="#,##0"/>
+  </Style>
+  <Style ss:ID="s4630" ss:Parent="s4516">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s4639">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"/>
+   <NumberFormat ss:Format="0"/>
+  </Style>
+  <Style ss:ID="s4640" ss:Parent="s4516">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s4642" ss:Parent="s4516">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s4644">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"/>
+   <Interior ss:Color="#C5D9F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s4645">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#FFFFFF"/>
+   <Interior ss:Color="#538ED5" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s4646">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"/>
+   <NumberFormat ss:Format="0"/>
+  </Style>
+  <Style ss:ID="s4650" ss:Parent="s4516">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s4654">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s4655">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"/>
+   <Interior ss:Color="#DBE5F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s4656">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"/>
+   <NumberFormat ss:Format="[$-409]m/d/yy\ h:mm\ AM/PM;@"/>
+  </Style>
+  <Style ss:ID="s4657">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"/>
+   <Interior ss:Color="#DBE5F1" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="[$-409]m/d/yy\ h:mm\ AM/PM;@"/>
+  </Style>
+  <Style ss:ID="s4660">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s4661">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Bold="1"/>
+   <NumberFormat ss:Format="0"/>
+  </Style>
+  <Style ss:ID="s4662">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s4663">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14"/>
+   <NumberFormat ss:Format="[$-409]m/d/yy\ h:mm\ AM/PM;@"/>
+  </Style>
+  <Style ss:ID="s4664" ss:Parent="s4516">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14"/>
+  </Style>
+  <Style ss:ID="s4665">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14"/>
+   <Interior/>
+   <NumberFormat ss:Format="#,##0"/>
+  </Style>
+  <Style ss:ID="s4666">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14"/>
+  </Style>
+  <Style ss:ID="s4667" ss:Parent="s4516">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s4668">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Bold="1"/>
+   <NumberFormat ss:Format="[$-409]m/d/yy\ h:mm\ AM/PM;@"/>
+  </Style>
+  <Style ss:ID="s4669" ss:Parent="s4516">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s4670">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Bold="1"/>
+   <Interior/>
+   <NumberFormat ss:Format="#,##0"/>
+  </Style>
+  <Style ss:ID="s4671" ss:Parent="s4523">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat ss:Format="#,##0"/>
+  </Style>
+  <Style ss:ID="s4672">
+   <Borders>    
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"/>
+   <NumberFormat ss:Format="0"/>
+  </Style>
+  <Style ss:ID="s4673">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s4674">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"/>
+   <NumberFormat ss:Format="[$-409]m/d/yy\ h:mm\ AM/PM;@"/>
+  </Style>
+  <Style ss:ID="s4675" ss:Parent="s4516">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s4676" ss:Parent="s4516">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s4698">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:Indent="3"
+    ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s4703">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#FFFFFF"
+    ss:Bold="1"/>
+   <Interior ss:Color="#538ED5" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s4704">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"/>
+   <Interior ss:Color="#C5D9F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s95">
+   <Alignment ss:Vertical="Center"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="20" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+
+  <Style ss:ID="s4705">
+    <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14"/>
+    <Borders>
+      <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+      <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+      <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+      <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+    </Borders>
+    <Interior ss:Color="#FFFF99" ss:Pattern="Solid"/>
+   </Style>
+
+<!-- // 20.05.2021 / Sophal Noch / US-0009544 new styles for new fields and cell -->
+
+  <!-- cell under column : Listing ID -->
+  <Style ss:ID="s4706_even" ss:Parent="s4624">
+      <Interior ss:Color="#DCE6F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s4706_odd" ss:Parent="s4624">
+    <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+
+  <!-- cell under column : ITEM DESCRIPTION -->
+  <Style ss:ID="s4707_even" ss:Parent="s4624">
+      <Interior ss:Color="#DCE6F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s4707_odd" ss:Parent="s4624">
+      <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+
+  <!-- cell under column : START DATE/TIME -->
+  <Style ss:ID="s4708_even" ss:Parent="s4532">
+    <Interior ss:Color="#DCE6F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s4708_odd" ss:Parent="s4532">
+    <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+
+  <!-- cell under column : END DATE/TIME -->
+  <Style ss:ID="s4709_even" ss:Parent="s4532">
+    <Interior ss:Color="#DCE6F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s4709_odd" ss:Parent="s4532">
+    <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+
+  <!-- cell under column : SUBSIDY PER UNIT -->
+  <Style ss:ID="s4710_even" ss:Parent="s4556">
+    <Interior ss:Color="#DCE6F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s4710_odd" ss:Parent="s4556">
+    <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+
+  <!-- cell under column : EBAY PRIOR PROPOSED FINAL UNITS SOLD  -->
+  <Style ss:ID="s4711_even" ss:Parent="s4628">
+    <Interior ss:Color="#DCE6F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s4711_odd" ss:Parent="s4628">
+    <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+
+  <!-- cell under column : SELLER PROPOSED FINAL UNITS SOLD  -->
+  <Style ss:ID="s4712_even" ss:Parent="s4628">
+    <Interior ss:Color="#DCE6F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s4712_odd" ss:Parent="s4628">
+    <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+
+  <!-- cell under column : ERROR TYPE  -->
+  <Style ss:ID="s4713_even" ss:Parent="s4624">
+    <Alignment ss:Horizontal="Center"/>
+    <Interior ss:Color="#DCE6F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s4713_odd" ss:Parent="s4624">
+    <Alignment ss:Horizontal="Center"/>
+    <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+
+  <!-- cell under column : EBAY REVIEW  -->
+  <Style ss:ID="s4714_even" ss:Parent="s4624">
+    <Alignment ss:Horizontal="Center"/>
+    <Interior ss:Color="#DCE6F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s4714_odd" ss:Parent="s4624">
+    <Alignment ss:Horizontal="Center"/>
+    <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+
+  <!-- cell under column : COMMENT  -->
+  <Style ss:ID="s4715_even" ss:Parent="s4624">
+    <Alignment ss:Horizontal="Center"/>
+    <Interior ss:Color="#DCE6F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s4715_odd" ss:Parent="s4624">
+    <Alignment ss:Horizontal="Center"/>
+    <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+
+  <!-- cell under column : FINAL UNITS SOLD -->
+  <Style ss:ID="s4716_even" ss:Parent="s4628">
+    <Interior ss:Color="#DCE6F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s4716_odd" ss:Parent="s4628">
+    <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+
+   <!-- cell under column : ADJUSTED UNITS -->
+   <Style ss:ID="s4722_even" ss:Parent="s4628">
+    <Interior ss:Color="#DCE6F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s4722_odd" ss:Parent="s4628">
+    <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+
+  <!-- cell under column : TOTAL SUBSIDIDY DUE -->
+  <Style ss:ID="s4717_even" ss:Parent="s4627">
+    <Interior ss:Color="#DCE6F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s4717_odd" ss:Parent="s4627">
+    <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+
+  <!-- (bold) cell under column : Listing ID -->
+  <Style ss:ID="s4718_even" ss:Parent="s4624">
+    <Interior ss:Color="#DCE6F1" ss:Pattern="Solid"/>
+    <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s4718_odd" ss:Parent="s4624">
+      <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+      <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000" ss:Bold="1"/>
+  </Style>
+
+  <!-- (bold) cell under column : ITEM DESCRIPTION -->
+  <Style ss:ID="s4719_even" ss:Parent="s4624">
+      <Interior ss:Color="#DCE6F1" ss:Pattern="Solid"/>
+      <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s4719_odd" ss:Parent="s4624">
+      <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+      <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000" ss:Bold="1"/>
+  </Style>
+
+
+  <!-- (bold) cell under column : FINAL UNITS SOLD -->
+  <Style ss:ID="s4720_even" ss:Parent="s4628">
+    <Interior ss:Color="#DCE6F1" ss:Pattern="Solid"/>
+    <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s4720_odd" ss:Parent="s4628">
+    <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+    <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000" ss:Bold="1"/>
+  </Style>
+
+  <!-- (bold) cell under column : TOTAL SUBSIDIDY DUE -->
+  <Style ss:ID="s4721_even" ss:Parent="s4627">
+    <Interior ss:Color="#DCE6F1" ss:Pattern="Solid"/>
+    <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s4721_odd" ss:Parent="s4627">
+    <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+    <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000" ss:Bold="1"/>
+  </Style>
+
+
+  
+ </Styles>
+ <Worksheet ss:Name="{!dealList.dealSheetName}">
+  
+  <Table  x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="14.4">
+   <Column ss:AutoFitWidth="0" ss:Width="93.600000000000009"/>
+   <Column ss:AutoFitWidth="0" ss:Width="655.19999999999993"/>
+   <Column ss:StyleID="s4529" ss:AutoFitWidth="0" ss:Width="136.19999999999999"/>
+   <Column ss:StyleID="s4529" ss:Width="127.19999999999999"/>
+   <Column ss:StyleID="s4607" ss:Width="119.4"/>
+   <Column ss:Width="142.80000000000001"/>
+   <Column ss:StyleID="s4630" ss:Width="142.80000000000001"/>
+   <Column  ss:AutoFitWidth="0" ss:Width="91.8"/>
+   <Row ss:AutoFitHeight="0" ss:Height="49.949999999999996">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">{!$Label.DD_eBay_Deals}</Data></Cell>
+   </Row>
+
+   <Row>
+   </Row>
+
+   <Row>
+   </Row>
+
+   <Row>
+   </Row>
+   
+   <Row>
+   </Row>
+
+   <Row>
+   </Row>
+   
+   <Row ss:Height="18">
+    <Cell ss:StyleID="s4538"><Data ss:Type="String">{! $Label.DD_SSG_SELLER_NAME} </Data></Cell>
+    <Cell ss:StyleID="s4539"><Data ss:Type="String">{!dealList.ds.eBay_seller__r.Name}</Data></Cell>
+    <Cell ss:StyleID="s4538"><Data ss:Type="String">{! $Label.DD_SSG_DATE}</Data></Cell>
+    <Cell ss:StyleID="s4555"><Data ss:Type="DateTime">{!dealList.createdDate}</Data></Cell>
+   </Row>
+   <Row>    
+   </Row>
+   <Row ss:Index="10" ss:AutoFitHeight="0" ss:Height="39.75">
+    <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_LISTING_ID}</Data><NamedCell
+      ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_ITEM_DESCRIPTION}</Data><NamedCell
+      ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_START_DATE_TIME}</Data><NamedCell
+      ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_END_DATE_TIME}</Data><NamedCell
+      ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_SUBSIDY_PER_UNIT}</Data><NamedCell
+      ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_FINAL_UNITS_SOLD}</Data><NamedCell
+      ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell>
+    <apex:outputText rendered="{!dealList.isAdjustStatement}">
+        <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_ADJUSTED_UNITS}</Data><NamedCell
+          ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell>
+    </apex:outputText>
+  
+    <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_TOTAL_SUBSIDY_DUE}</Data><NamedCell
+      ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+
+   <!-- // 20.05.2021 / Sophal Noch / US-0009544 varible dealIndex is for highlight cell/row -->
+   <apex:variable var="dealIndex" value="{!(-1)}"/>
+   <apex:repeat value="{!dealList.deals}" var="deals">
+
+       <apex:repeat value="{!deals}" var="deal">
+
+          <apex:variable var="dealIndex" value="{!(dealIndex+1)}"/>
+          <apex:variable var="dealEvenOdd" value="{!IF(mod(dealIndex,2) == 0,'even','odd')}"/>
+
+           <Row ss:Height="18">
+            <Cell ss:StyleID="s4706_{!dealEvenOdd}"><Data ss:Type="String">{!deal.eBayItemId}</Data></Cell>
+            <Cell ss:StyleID="s4707_{!dealEvenOdd}"><Data ss:Type="String">{!HTMLENCODE(deal.productTitle)}</Data></Cell>
+            <Cell ss:StyleID="s4708_{!dealEvenOdd}"><Data ss:Type="DateTime"><apex:outputText rendered="{! If(deal.startTime!=null,true,false) }" value="{0,date,yyyy-MM-dd'T'HH:mm:ss.SSS}"><apex:param value="{! deal.startTime }" /></apex:outputText></Data></Cell>
+            <Cell ss:StyleID="s4709_{!dealEvenOdd}"><Data ss:Type="DateTime"><apex:outputText rendered="{! If(deal.endTime!=null,true,false) }" value="{0,date,yyyy-MM-dd'T'HH:mm:ss.SSS}"><apex:param value="{! deal.endTime }" /></apex:outputText></Data></Cell>
+            <Cell ss:StyleID="s4710_{!dealEvenOdd}"><Data ss:Type="Number">{!deal.subsidy}</Data></Cell>
+            <Cell ss:StyleID="s4716_{!dealEvenOdd}"><Data ss:Type="Number">{!deal.finalSoldItems}</Data></Cell>
+            <apex:outputText rendered="{!dealList.isAdjustStatement}">
+              <Cell ss:StyleID="s4722_{!dealEvenOdd}"><Data ss:Type="Number">{!deal.adjustedUnits}</Data></Cell>
+            </apex:outputText>
+            
+            <Cell ss:StyleID="s4717_{!dealEvenOdd}"><Data ss:Type="Number">{!deal.netSubsidyAmount}</Data></Cell>
+           </Row>
+       </apex:repeat>
+   </apex:repeat>
+
+   <apex:variable var="dealIndex" value="{!(1)}"/>
+   <apex:variable var="dealEvenOdd" value="{!IF(mod(dealIndex,2) == 0,'even','odd')}"/>
+
+   <Row ss:Height="18">
+    <Cell ss:StyleID="s4706_{!dealEvenOdd}"></Cell>
+    <Cell ss:StyleID="s4707_{!dealEvenOdd}"></Cell>
+    <Cell ss:StyleID="s4708_{!dealEvenOdd}"></Cell>
+    <Cell ss:StyleID="s4709_{!dealEvenOdd}"></Cell>
+    <Cell ss:StyleID="s4710_{!dealEvenOdd}"></Cell>
+    <Cell ss:StyleID="s4716_{!dealEvenOdd}"></Cell>
+    <apex:outputText rendered="{!dealList.isAdjustStatement}">
+      <Cell ss:StyleID="s4722_{!dealEvenOdd}"></Cell>
+    </apex:outputText>
+    <Cell ss:StyleID="s4717_{!dealEvenOdd}"></Cell>
+   </Row>
+
+   <apex:variable var="dealIndex" value="{!(dealIndex+1)}"/>
+   <apex:variable var="dealEvenOdd" value="{!IF(mod(dealIndex,2) == 0,'even','odd')}"/>
+
+   <Row ss:Height="18">
+    <Cell ss:StyleID="s4718_{!dealEvenOdd}"><Data ss:Type="String">{!$Label.DD_SSG_SUBTOTAL}</Data></Cell>
+    <Cell ss:StyleID="s4719_{!dealEvenOdd}"><Data ss:Type="String">{!dealList.subTotalLabel}</Data></Cell>
+    <Cell ss:StyleID="s4708_{!dealEvenOdd}"></Cell>
+    <Cell ss:StyleID="s4709_{!dealEvenOdd}"></Cell>
+    <Cell ss:StyleID="s4710_{!dealEvenOdd}"></Cell>
+    <Cell ss:StyleID="s4720_{!dealEvenOdd}"><Data
+      ss:Type="Number">{!dealList.totalItem}</Data></Cell>
+    <apex:outputText rendered="{!dealList.isAdjustStatement}">
+      <Cell ss:StyleID="s4722_{!dealEvenOdd}"></Cell>
+    </apex:outputText>
+    <Cell ss:StyleID="s4721_{!dealEvenOdd}"><Data ss:Type="Number">{!dealList.total}</Data></Cell>
+   </Row>
+
+
+    <apex:outputText rendered="{! If(dealList.ds.Disputes_Payout__c==null,true,false) }">
+
+      <apex:variable var="dealIndex" value="{!(dealIndex+1)}"/>
+      <apex:variable var="dealEvenOdd" value="{!IF(mod(dealIndex,2) == 0,'even','odd')}"/>
+
+      <Row ss:Height="18">
+        <Cell ss:StyleID="s4718_{!dealEvenOdd}"></Cell>
+        <Cell ss:StyleID="s4719_{!dealEvenOdd}"><Data ss:Type="String">{!dealList.remainingLabel}</Data></Cell>
+        <Cell ss:StyleID="s4708_{!dealEvenOdd}"></Cell>
+        <Cell ss:StyleID="s4709_{!dealEvenOdd}"></Cell>
+        <Cell ss:StyleID="s4710_{!dealEvenOdd}"></Cell>
+        <Cell ss:StyleID="s4720_{!dealEvenOdd}"></Cell>
+        <apex:outputText rendered="{!dealList.isAdjustStatement}">
+          <Cell ss:StyleID="s4722_{!dealEvenOdd}"></Cell>
+        </apex:outputText>
+        
+        <Cell ss:StyleID="s4721_{!dealEvenOdd}" ><Data ss:Type="Number">{!dealList.remainingPay}</Data></Cell>
+      </Row>
+
+    </apex:outputText>
+
+  <apex:outputText rendered="{! If(and(!dealList.isAdjustStatement,dealList.ds.Disputes_Payout__c!=null),true,false) }">
+
+    <apex:variable var="dealIndex" value="{!(dealIndex+1)}"/>
+    <apex:variable var="dealEvenOdd" value="{!IF(mod(dealIndex,2) == 0,'even','odd')}"/>
+    
+    <Row ss:Height="18">
+    <Cell ss:StyleID="s4718_{!dealEvenOdd}"></Cell>
+    <Cell ss:StyleID="s4719_{!dealEvenOdd}"><Data ss:Type="String">{!dealList.alreadyPaidLabel}</Data></Cell>
+    <Cell ss:StyleID="s4708_{!dealEvenOdd}"></Cell>
+    <Cell ss:StyleID="s4709_{!dealEvenOdd}"></Cell>
+    <Cell ss:StyleID="s4710_{!dealEvenOdd}"></Cell>
+    <Cell ss:StyleID="s4720_{!dealEvenOdd}"></Cell>
+    <Cell ss:StyleID="s4721_{!dealEvenOdd}" ><Data ss:Type="Number">{!dealList.alreadyPaid}</Data></Cell>
+   </Row>
+
+   <Row ss:Height="18">
+
+    <apex:variable var="dealIndex" value="{!(dealIndex+1)}"/>
+    <apex:variable var="dealEvenOdd" value="{!IF(mod(dealIndex,2) == 0,'even','odd')}"/>
+
+    <Cell ss:StyleID="s4718_{!dealEvenOdd}"></Cell>
+    <Cell ss:StyleID="s4719_{!dealEvenOdd}"><Data ss:Type="String">{!dealList.monthDisputeAdjustmentPaid}</Data></Cell>
+    <Cell ss:StyleID="s4708_{!dealEvenOdd}"></Cell>
+    <Cell ss:StyleID="s4709_{!dealEvenOdd}"></Cell>
+    <Cell ss:StyleID="s4710_{!dealEvenOdd}"></Cell>
+    <Cell ss:StyleID="s4720_{!dealEvenOdd}"></Cell>
+    <apex:outputText rendered="{!dealList.isAdjustStatement}">
+      <Cell ss:StyleID="s4722_{!dealEvenOdd}"></Cell>
+    </apex:outputText>
+    <Cell ss:StyleID="s4721_{!dealEvenOdd}" ><Data ss:Type="Number">{!dealList.ds.Disputes_Payout__c}</Data></Cell>
+   </Row>
+
+  </apex:outputText>
+
+  <apex:outputText rendered="{! If(and(!dealList.isAdjustStatement,dealList.ds.Further_Dispute_Payout__c!=null),true,false) }">
+
+    <apex:variable var="dealIndex" value="{!(dealIndex+1)}"/>
+    <apex:variable var="dealEvenOdd" value="{!IF(mod(dealIndex,2) == 0,'even','odd')}"/>
+
+    <Row ss:Height="18">
+      <Cell ss:StyleID="s4718_{!dealEvenOdd}"></Cell>
+      <Cell ss:StyleID="s4719_{!dealEvenOdd}"><Data ss:Type="String">{!dealList.monthFurtherDisputeAdjustmentPaid}</Data></Cell>
+      <Cell ss:StyleID="s4708_{!dealEvenOdd}"></Cell>
+      <Cell ss:StyleID="s4709_{!dealEvenOdd}"></Cell>
+      <Cell ss:StyleID="s4710_{!dealEvenOdd}"></Cell>
+      <Cell ss:StyleID="s4720_{!dealEvenOdd}"></Cell>
+      <Cell ss:StyleID="s4721_{!dealEvenOdd}" ><Data ss:Type="Number">{!dealList.ds.Further_Dispute_Payout__c}</Data></Cell>
+    </Row>
+
+  </apex:outputText>
+
+  <apex:outputText rendered="{! dealList.isAdjustStatement }">
+
+    <apex:variable var="dealIndex" value="{!(dealIndex+1)}"/>
+    <apex:variable var="dealEvenOdd" value="{!IF(mod(dealIndex,2) == 0,'even','odd')}"/>
+    
+    <Row ss:Height="18">
+    <Cell ss:StyleID="s4718_{!dealEvenOdd}"></Cell>
+    <Cell ss:StyleID="s4719_{!dealEvenOdd}"><Data ss:Type="String">{!dealList.monthAdjustmentPayout1}</Data></Cell>
+    <Cell ss:StyleID="s4708_{!dealEvenOdd}"></Cell>
+    <Cell ss:StyleID="s4709_{!dealEvenOdd}"></Cell>
+    <Cell ss:StyleID="s4710_{!dealEvenOdd}"></Cell>
+    <Cell ss:StyleID="s4720_{!dealEvenOdd}"></Cell>
+    <Cell ss:StyleID="s4722_{!dealEvenOdd}"></Cell>
+    <Cell ss:StyleID="s4721_{!dealEvenOdd}" ><Data ss:Type="Number">{!dealList.ds.Initial_Payout__c}</Data></Cell>
+   </Row>
+  </apex:outputText>
+
+  <apex:outputText rendered="{! dealList.isAdjustStatement }">
+
+    <apex:variable var="dealIndex" value="{!(dealIndex+1)}"/>
+    <apex:variable var="dealEvenOdd" value="{!IF(mod(dealIndex,2) == 0,'even','odd')}"/>
+
+    <Row ss:Height="18">
+      <Cell ss:StyleID="s4718_{!dealEvenOdd}"></Cell>
+      <Cell ss:StyleID="s4719_{!dealEvenOdd}"><Data ss:Type="String">{!dealList.monthAdjustmentPayout2}</Data></Cell>
+      <Cell ss:StyleID="s4708_{!dealEvenOdd}"></Cell>
+      <Cell ss:StyleID="s4709_{!dealEvenOdd}"></Cell>
+      <Cell ss:StyleID="s4710_{!dealEvenOdd}"></Cell>
+      <Cell ss:StyleID="s4720_{!dealEvenOdd}"></Cell>
+      <Cell ss:StyleID="s4722_{!dealEvenOdd}"></Cell>
+      <Cell ss:StyleID="s4721_{!dealEvenOdd}" ><Data ss:Type="Number">{!dealList.ds.Second_Payout__c}</Data></Cell>
+    </Row>
+
+  </apex:outputText>
+
+   <apex:variable var="dealIndex" value="{!(1)}"/>
+   <apex:variable var="dealEvenOdd" value="{!IF(mod(dealIndex,2) == 0,'even','odd')}"/>
+
+   <Row ss:Height="18">
+    <Cell ss:StyleID="s4718_{!dealEvenOdd}"></Cell>
+    <Cell ss:StyleID="s4719_{!dealEvenOdd}"></Cell>
+    <Cell ss:StyleID="s4708_{!dealEvenOdd}"></Cell>
+    <Cell ss:StyleID="s4709_{!dealEvenOdd}"></Cell>
+    <Cell ss:StyleID="s4710_{!dealEvenOdd}"></Cell>
+    <Cell ss:StyleID="s4720_{!dealEvenOdd}"></Cell>
+    <apex:outputText rendered="{!dealList.isAdjustStatement}">
+      <Cell ss:StyleID="s4722_{!dealEvenOdd}"></Cell>
+    </apex:outputText>
+    <Cell ss:StyleID="s4721_{!dealEvenOdd}"></Cell>
+   </Row>
+
+   <apex:variable var="dealIndex" value="{!(dealIndex+1)}"/>
+   <apex:variable var="dealEvenOdd" value="{!IF(mod(dealIndex,2) == 0,'even','odd')}"/>
+
+   <Row ss:Height="18">
+    <Cell ss:StyleID="s4718_{!dealEvenOdd}"><Data ss:Type="String">{!$Label.DD_SSG_TOTAL}</Data></Cell>
+    <Cell ss:StyleID="s4719_{!dealEvenOdd}"><Data ss:Type="String">{!dealList.totalLabel}</Data></Cell>
+    <Cell ss:StyleID="s4708_{!dealEvenOdd}"></Cell>
+    <Cell ss:StyleID="s4709_{!dealEvenOdd}"></Cell>
+    <Cell ss:StyleID="s4710_{!dealEvenOdd}"></Cell>
+    <Cell ss:StyleID="s4720_{!dealEvenOdd}"></Cell>
+    <apex:outputText rendered="{!dealList.isAdjustStatement}">
+      <Cell ss:StyleID="s4722_{!dealEvenOdd}"></Cell>
+    </apex:outputText>
+    <Cell ss:StyleID="s4721_{!dealEvenOdd}"><Data ss:Type="Number">{!dealList.currentPay}</Data></Cell>
+   </Row>
+
+   <apex:variable var="dealIndex" value="{!(dealIndex+1)}"/>
+   <apex:variable var="dealEvenOdd" value="{!IF(mod(dealIndex,2) == 0,'even','odd')}"/>
+
+   <Row ss:Height="18">
+    <Cell ss:StyleID="s4718_{!dealEvenOdd}"/>
+    <Cell ss:StyleID="s4719_{!dealEvenOdd}"/>
+    <Cell ss:StyleID="s4708_{!dealEvenOdd}"/>
+    <Cell ss:StyleID="s4709_{!dealEvenOdd}"/>
+    <Cell ss:StyleID="s4710_{!dealEvenOdd}"/>
+    <Cell ss:StyleID="s4720_{!dealEvenOdd}"/>
+    <apex:outputText rendered="{!dealList.isAdjustStatement}">
+      <Cell ss:StyleID="s4722_{!dealEvenOdd}"></Cell>
+    </apex:outputText>
+    <Cell ss:StyleID="s4721_{!dealEvenOdd}"/>
+   </Row>
+
+   <apex:variable var="dealIndex" value="{!(dealIndex+1)}"/>
+   <apex:variable var="dealEvenOdd" value="{!IF(mod(dealIndex,2) == 0,'even','odd')}"/>
+
+   <Row ss:Height="18">
+    <Cell ss:StyleID="s4718_{!dealEvenOdd}"/>
+    <Cell ss:StyleID="s4719_{!dealEvenOdd}"/>
+    <Cell ss:StyleID="s4708_{!dealEvenOdd}"/>
+    <Cell ss:StyleID="s4709_{!dealEvenOdd}"/>
+    <Cell ss:StyleID="s4710_{!dealEvenOdd}"/>
+    <Cell ss:StyleID="s4720_{!dealEvenOdd}"/>
+    <apex:outputText rendered="{!dealList.isAdjustStatement}">
+      <Cell ss:StyleID="s4722_{!dealEvenOdd}"></Cell>
+    </apex:outputText>
+    <Cell ss:StyleID="s4721_{!dealEvenOdd}"/>
+   </Row>
+
+   <apex:variable var="dealIndex" value="{!(dealIndex+1)}"/>
+   <apex:variable var="dealEvenOdd" value="{!IF(mod(dealIndex,2) == 0,'even','odd')}"/>
+
+   <Row ss:Height="18">
+    <Cell ss:StyleID="s4718_{!dealEvenOdd}"/>
+    <Cell ss:StyleID="s4719_{!dealEvenOdd}"/>
+    <Cell ss:StyleID="s4708_{!dealEvenOdd}"/>
+    <Cell ss:StyleID="s4709_{!dealEvenOdd}"/>
+    <Cell ss:StyleID="s4710_{!dealEvenOdd}"/>
+    <Cell ss:StyleID="s4720_{!dealEvenOdd}"/>
+    <apex:outputText rendered="{!dealList.isAdjustStatement}">
+      <Cell ss:StyleID="s4722_{!dealEvenOdd}"></Cell>
+    </apex:outputText>
+    <Cell ss:StyleID="s4721_{!dealEvenOdd}"/>
+   </Row>
+
+   <apex:variable var="dealIndex" value="{!(dealIndex+1)}"/>
+   <apex:variable var="dealEvenOdd" value="{!IF(mod(dealIndex,2) == 0,'even','odd')}"/>
+
+   <Row ss:Height="18">
+    <Cell ss:StyleID="s4718_{!dealEvenOdd}"/>
+    <Cell ss:StyleID="s4719_{!dealEvenOdd}"/>
+    <Cell ss:StyleID="s4708_{!dealEvenOdd}"/>
+    <Cell ss:StyleID="s4709_{!dealEvenOdd}"/>
+    <Cell ss:StyleID="s4710_{!dealEvenOdd}"/>
+    <Cell ss:StyleID="s4720_{!dealEvenOdd}"/>
+    <apex:outputText rendered="{!dealList.isAdjustStatement}">
+      <Cell ss:StyleID="s4722_{!dealEvenOdd}"></Cell>
+    </apex:outputText>
+    <Cell ss:StyleID="s4721_{!dealEvenOdd}"/>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Layout x:CenterHorizontal="1"/>
+    <Header x:Margin="0.3" x:Data="&amp;C&amp;&quot;-,Bold&quot;&amp;16DAILY DEALS SUBSIDY STATEMENT"/>
+    <Footer x:Margin="0.3" x:Data="&amp;C&amp;N"/>
+    <PageMargins x:Bottom="0.5" x:Left="0.45" x:Right="0.45" x:Top="0.5"/>
+   </PageSetup>
+   <FitToPage/>
+   <Print>
+    <ValidPrinterInfo/>
+    <Scale>26</Scale>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Zoom>70</Zoom>
+   <Selected/>
+   <DoNotDisplayGridlines/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>6</ActiveRow>
+     <ActiveCol>1</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+
+  <Worksheet ss:Name="Payment Dispute Guidelines">
+    <Names>
+      <NamedRange ss:Name="Print_Area"
+      ss:RefersTo="='Payment Dispute Guidelines'!R1C1:R39C4"/>
+    </Names>
+    <Table ss:ExpandedColumnCount="7" x:FullColumns="1"
+    x:FullRows="1" ss:DefaultColumnWidth="49.8" ss:DefaultRowHeight="14.4">
+    <Column ss:AutoFitWidth="0" ss:Width="689"/>
+    <Column ss:AutoFitWidth="0" ss:Width="530"/>
+    <Column ss:StyleID="s4529" ss:AutoFitWidth="0" ss:Width="213"/>
+    <Column ss:StyleID="s4529" ss:AutoFitWidth="0" ss:Width="68"/>
+    <Column ss:StyleID="s4535" ss:AutoFitWidth="0" ss:Width="375"/>
+    <Column ss:AutoFitWidth="0" ss:Width="94"/>
+    <Column ss:AutoFitWidth="0" ss:Width="242"/>
+    <Row ss:AutoFitHeight="0" ss:Height="49.949999999999996">
+      <Cell ss:StyleID="s95"><Data ss:Type="String">{!$Label.DD_eBay_Deals}</Data></Cell>
+    </Row>
+    <Row>
+      <Cell ss:StyleID="s4530"></Cell>
+    </Row>
+    <Row>
+      <Cell ss:StyleID="s4530"></Cell>
+    </Row>
+    <Row>
+      <Cell ss:StyleID="s4530"></Cell>
+    </Row>
+    <Row>
+      <Cell ss:StyleID="s4530"></Cell>
+    </Row>
+    <Row ss:Height="18">
+      <Cell ss:StyleID="s4557"><Data ss:Type="String">PAYMENT DISPUTE PROCESS - REVIEW CAREFULLY BEFORE SUBMITTING A REQUEST</Data></Cell>
+      <Cell ss:StyleID="s4557"></Cell>
+      <Cell ss:StyleID="s4557"></Cell>
+      <Cell ss:StyleID="s4557"></Cell>
+      <Cell ss:StyleID="Default"/>
+    </Row>
+    <Row ss:AutoFitHeight="0" ss:Height="10.5">
+      <Cell ss:StyleID="s4568"></Cell>
+      <Cell ss:StyleID="s4568"></Cell>
+      <Cell ss:StyleID="s4568"></Cell>
+      <Cell ss:StyleID="s4557"></Cell>
+      <Cell ss:StyleID="Default"/>
+    </Row>
+    <Row ss:AutoFitHeight="0" ss:Height="15.75" ss:StyleID="s4533">
+      <Cell ss:StyleID="s4617"><Data ss:Type="String">PAYMENT DISPUTE GUIDELINES</Data></Cell>
+      <Cell ss:StyleID="s4613"></Cell>
+      <Cell ss:StyleID="s4613"></Cell>
+      <Cell ss:StyleID="s4534"></Cell>
+    </Row>
+    <Row ss:AutoFitHeight="0" ss:Height="16.5" ss:StyleID="s4533">
+      <Cell ss:StyleID="s4618"><Data ss:Type="String">A) Quantity Discrepancies</Data></Cell>
+      <Cell ss:StyleID="s4614"></Cell>
+      <Cell ss:StyleID="s4614"></Cell>
+      <Cell ss:StyleID="s4534"></Cell>
+    </Row>
+    <Row ss:AutoFitHeight="0" ss:Height="15.75" ss:StyleID="s4533">
+      <Cell ss:StyleID="s4619"><Data ss:Type="String">1.&#160;&#160;&#160;&#160;&#160;&#160;Using the &quot;Seller Payment Dispute&quot; tab, complete each column with the subsidy offer details that were approved and submitted to the Daily Deals team.  Only include deals that were incorrect in your subsidy statement.    </Data></Cell>
+      <Cell ss:StyleID="s4613"></Cell>
+      <Cell ss:StyleID="s4613"></Cell>
+      <Cell ss:StyleID="s4534"></Cell>
+    </Row>
+    <Row ss:AutoFitHeight="0" ss:Height="15.75" ss:StyleID="s4533">
+      <Cell ss:StyleID="s4619"><Data ss:Type="String"
+        >2.<Font html:Face="Times New Roman"
+        x:Family="Roman">&#160;&#160;&#160;&#160;&#160;&#160;</Font><Font>Use the drop-down menu to select &quot;quantity variance&quot; as the error type.                     </Font></Data></Cell>
+      <Cell ss:StyleID="s4610"></Cell>
+      <Cell ss:StyleID="s4610"></Cell>
+      <Cell ss:StyleID="s4534"></Cell>
+    </Row>
+    <Row ss:AutoFitHeight="0" ss:Height="15.75" ss:StyleID="s4533">
+      <Cell ss:StyleID="s4619"><Data ss:Type="String"
+        >3.<Font html:Face="Times New Roman"
+        x:Family="Roman">&#160;&#160;&#160;&#160;&#160;&#160;</Font><B xmlns="http://www.w3.org/TR/REC-html40">Exclude the following transactions from your dispute: </B><Font>items that exceed the quantity limit, unpaid items, cancellations, returns and units sold outside of the subsidy period*. </Font></Data></Cell>
+      <Cell ss:StyleID="s4610"></Cell>
+      <Cell ss:StyleID="s4610"></Cell>
+      <Cell ss:StyleID="s4534"></Cell>
+    </Row>
+    <Row ss:Height="15.600000000000001">
+      <Cell ss:StyleID="s4619"><Data ss:Type="String"
+        >4.<Font html:Face="Times New Roman"
+        x:Family="Roman">&#160;&#160;&#160;&#160;&#160;&#160;</Font><Font>Attach the complete subsidy approval email(s) </Font><B xmlns="http://www.w3.org/TR/REC-html40">only if you are disputing the maximum quantity to list from your subsidy offer.</B></Data></Cell>
+      <Cell ss:StyleID="s4533"></Cell>
+      <Cell ss:StyleID="s4534"></Cell>
+      <Cell ss:Index="5" ss:StyleID="Default"/>
+    </Row>
+    <Row ss:Height="15.600000000000001">
+      <Cell ss:StyleID="s4562"></Cell>
+      <Cell ss:StyleID="s4533"></Cell>
+      <Cell ss:StyleID="s4534"></Cell>
+      <Cell ss:Index="5" ss:StyleID="Default"/>
+    </Row>
+    <Row ss:AutoFitHeight="0" ss:Height="15.75" ss:StyleID="s4533">
+      <Cell ss:StyleID="s4618"><Data ss:Type="String">B) Deal Omissions/Other Discrepancies</Data></Cell>
+      <Cell ss:StyleID="s4612"></Cell>
+      <Cell ss:StyleID="s4612"></Cell>
+      <Cell ss:StyleID="s4534"></Cell>
+    </Row>
+    <Row ss:AutoFitHeight="0" ss:Height="15.75" ss:StyleID="s4533">
+      <Cell ss:StyleID="s4619"><Data ss:Type="String">1.&#160;&#160;&#160;&#160;&#160;&#160;Using the &quot;Seller Payment Dispute&quot; tab, complete each column with the subsidy offer details that were approved and submitted to the Daily Deals team.  Only include deals that were incorrect in your subsidy statement.                                         </Data></Cell>
+      <Cell ss:StyleID="s4613"></Cell>
+      <Cell ss:StyleID="s4613"></Cell>
+      <Cell ss:StyleID="s4534"></Cell>
+    </Row>
+    <Row ss:AutoFitHeight="0" ss:Height="15.75" ss:StyleID="s4533">
+      <Cell ss:StyleID="s4619"><Data ss:Type="String"
+        >2.<Font html:Face="Times New Roman"
+        x:Family="Roman">&#160;&#160;&#160;&#160;&#160;&#160;</Font><Font>Use the drop-down menu to select &quot;deal omitted from subsidy statement&quot;, &quot;subsidy per unit&quot; or &quot;other, please describe&quot; as the error type.                              </Font></Data></Cell>
+      <Cell ss:StyleID="s4613"></Cell>
+      <Cell ss:StyleID="s4613"></Cell>
+      <Cell ss:StyleID="s4534"></Cell>
+      <Cell ss:StyleID="s4561"/>
+    </Row>
+    <Row ss:AutoFitHeight="0" ss:Height="15.75">
+      <Cell ss:StyleID="s4619"><Data ss:Type="String"
+        >3.<Font html:Face="Times New Roman"
+        x:Family="Roman">&#160;&#160;&#160;&#160;&#160;&#160;</Font><B xmlns="http://www.w3.org/TR/REC-html40">Exclude the following transactional units from your dispute:</B><Font> items that exceed the quantity limit, unpaid items, cancellations, returns and units sold outside of the subsidy period*. </Font></Data></Cell>
+      <Cell ss:StyleID="s4613"></Cell>
+      <Cell ss:StyleID="s4613"></Cell>
+    </Row>
+    <Row ss:Height="15.600000000000001">
+      <Cell ss:StyleID="s4619"><Data ss:Type="String"
+        >4.<Font html:Face="Times New Roman"
+        x:Family="Roman">&#160;&#160;&#160;&#160;&#160;&#160;</Font><Font>Attach the complete subsidy approval email that was submitted to the Daily Deals team. This includes the subsidy offer, the listing ID(s), and an explicit approval of each Individual Order Form. </Font></Data></Cell>
+      <Cell ss:StyleID="s4533"></Cell>
+      <Cell ss:StyleID="s4534"></Cell>
+    </Row>
+    <Row ss:Height="15.600000000000001">
+      <Cell ss:StyleID="s4611"><Data ss:Type="String">*Transaction data will no longer be provided for error reports that include transactional items that should be excluded.</Data></Cell>
+      <Cell ss:StyleID="s4533"></Cell>
+      <Cell ss:StyleID="s4534"></Cell>
+    </Row>
+    <Row ss:AutoFitHeight="0" ss:Height="15.75">
+      <Cell ss:StyleID="s4618"><Data ss:Type="String">C) Submitting Your Dispute</Data></Cell>
+      <Cell ss:StyleID="s4615"></Cell>
+      <Cell ss:StyleID="s4615"></Cell>
+    </Row>
+    <Row ss:AutoFitHeight="0" ss:Height="15.75">
+      <Cell ss:StyleID="s4619"><Data ss:Type="String"
+        >1.<Font html:Face="Times New Roman"
+        x:Family="Roman">&#160;&#160;&#160;&#160;&#160;&#160;</Font><Font>Before sending your dispute, review and confirm that your submissions are complete and accurate. </Font></Data></Cell>
+      <Cell ss:StyleID="s4615"></Cell>
+      <Cell ss:StyleID="s4615"></Cell>
+    </Row>
+    <Row ss:AutoFitHeight="0" ss:Height="15.75">
+      <Cell ss:StyleID="s4619"><Data ss:Type="String"
+        >2.<Font html:Face="Times New Roman"
+        x:Family="Roman">&#160;&#160;&#160;&#160;&#160;&#160;</Font><Font>Attach subsidy approval emails based on the error type selected.                            </Font></Data></Cell>
+      <Cell ss:StyleID="s4615"></Cell>
+      <Cell ss:StyleID="s4615"></Cell>
+    </Row>
+    <Row ss:AutoFitHeight="0" ss:Height="15.75">
+      <Cell ss:StyleID="s4619"><Data ss:Type="String"
+        >3.<Font html:Face="Times New Roman"
+        x:Family="Roman">&#160;&#160;&#160;&#160;&#160;&#160;</Font><Font>Reply to your monthly statement email (without changing the subject heading) and attach all requested documents. </Font></Data></Cell>
+      <Cell ss:StyleID="s4615"></Cell>
+      <Cell ss:StyleID="s4615"></Cell>
+    </Row>
+    <Row ss:AutoFitHeight="0" ss:Height="15.75">
+      <Cell ss:StyleID="s4621"><Data ss:Type="String"
+        ><Font html:Color="#000000">a.&#160;&#160;&#160;&#160;&#160;Reports are sent to </Font><B xmlns="http://www.w3.org/TR/REC-html40"><Font
+          html:Color="#000000">deals_subsidy_support@ebay.com</Font></B><Font
+        html:Color="#000000"> </Font></Data></Cell>
+      <Cell ss:StyleID="s4620"></Cell>
+      <Cell ss:StyleID="s4616"></Cell>
+    </Row>
+    <Row ss:AutoFitHeight="0" ss:Height="15.75" ss:StyleID="s4533">
+     
+      <Cell ss:StyleID="s4622"><Data ss:Type="String">b.&#160;&#160;&#160;&#160;&#160;REMINDER: Review all guidelines and documents for accuracy and completion.</Data></Cell>
+      
+      <Cell ss:StyleID="s4617"></Cell>
+      <Cell ss:StyleID="s4617"></Cell>
+      <Cell ss:StyleID="s4534"></Cell>
+      <Cell ss:StyleID="s4561"/>
+    </Row>
+    <Row ss:AutoFitHeight="0" ss:Height="15.75">
+      <Cell ss:StyleID="s4617"></Cell>
+      <Cell ss:StyleID="s4617"></Cell>
+      <Cell ss:StyleID="s4617"></Cell>
+    </Row>
+    <Row ss:Height="15.600000000000001">
+      <Cell ss:StyleID="s4562"><Data ss:Type="String">D) EBAY REVIEW KEY</Data></Cell>
+      <Cell ss:StyleID="s4609"></Cell>
+      <Cell ss:StyleID="s4609"></Cell>
+    </Row>
+    <Row ss:Height="15.600000000000001">
+      <Cell ss:StyleID="s4572"><Data ss:Type="String">Once you receive your eBay review, it may include the following comments. A description of these comments are provided for your convenience. </Data></Cell>
+      <Cell ss:StyleID="s4609"></Cell>
+      <Cell ss:StyleID="s4609"></Cell>
+    </Row>
+    <Row ss:Height="15.600000000000001">
+ 
+      <Cell ss:StyleID="s4605"><Data ss:Type="String"><Font xmlns="http://www.w3.org/TR/REC-html40" Color="#FF0000"><B>Note:</B> Transaction data will no longer be provided if cancellations, returns, unpaid items and units sold outside of the subsidy window are not excluded from the seller's error report.</Font></Data></Cell>
+      
+      <Cell ss:StyleID="s4609"></Cell>
+      <Cell ss:StyleID="s4609"></Cell>
+    </Row>
+    <Row ss:Height="16.2">
+      <Cell ss:MergeAcross="2" ss:StyleID="s4698"></Cell>
+    </Row>
+    <Row ss:Height="15">
+      <Cell ss:MergeAcross="2" ss:StyleID="m100969000"><Data ss:Type="String">EBAY REVIEW KEY</Data></Cell>
+    </Row>
+    <Row>
+      <Cell ss:StyleID="s4573"><Data ss:Type="String">EBAY REVIEW COMMENTS</Data></Cell>
+      <Cell ss:MergeAcross="1" ss:StyleID="s4703"><Data ss:Type="String">DESCRIPTION</Data></Cell>
+    </Row>
+    <Row>
+      <Cell ss:StyleID="s4596"><Data ss:Type="String">Revised.</Data></Cell>
+      <Cell ss:MergeAcross="1" ss:StyleID="s4704"><Data ss:Type="String">eBay agrees with the seller's dispute and has adjusted the subsidy statement accordingly. </Data></Cell>
+    </Row>
+    <Row ss:AutoFitHeight="0" ss:Height="15">
+      <Cell ss:StyleID="s4597"><Data ss:Type="String">Maximum quantity to list. No adjustment. </Data></Cell>
+      <Cell ss:MergeAcross="1" ss:StyleID="m100969060"><Data ss:Type="String">The deal reached the maximum quantity listed in the subsidy offer. Units in excess of the subsidy offer are not eligible for subsidy credit.</Data></Cell>
+    </Row>
+    <Row ss:AutoFitHeight="0" ss:Height="30.75">
+      <Cell ss:StyleID="s4598"><Data ss:Type="String">Maximum quantity to list. Revised. </Data></Cell>
+      <Cell ss:MergeAcross="1" ss:StyleID="m100968960"><Data ss:Type="String">The deal reached the maximum quantity listed in the subsidy offer. There is a partial payment adjustment for this deal. Units in excess of the subsidy offer are not eligible for subsidy credit.</Data></Cell>
+    </Row>
+    <Row ss:AutoFitHeight="0" ss:Height="17">
+      <Cell ss:StyleID="s4597"><Data ss:Type="String">Payment reflected in initial statement. No adjustment. </Data></Cell>
+      <Cell ss:MergeAcross="1" ss:StyleID="m100969280"><Data ss:Type="String">Payment has already been provided for the disputed item. There is no adjustment for this deal. </Data></Cell>
+    </Row>
+    <Row ss:Height="17">
+      <Cell ss:StyleID="s4598"><Data ss:Type="String">No sales data for this listing ID during this period. No adjustment. </Data></Cell>
+      <Cell ss:MergeAcross="1" ss:StyleID="m100969300"><Data ss:Type="String">Transactional data did not generate sales information for this deal period. There is no adjustment for this deal. </Data></Cell>
+    </Row>
+    <Row ss:Height="30.75">
+      <Cell ss:StyleID="s4599"><Data ss:Type="String">Additional quantity is outside of subsidy window, unpaid items, cancellations and/or returns. No adjustment. </Data></Cell>
+      <Cell ss:MergeAcross="1" ss:StyleID="m100969320"><Data ss:Type="String">The seller disputed quantity in excess of eBay transactional data which may include unpaid items, cancellations, returns or items outside of the subsidy window. There is no further payment adjustment for this deal.</Data></Cell>
+    </Row>
+    <Row ss:Height="30.75">
+      <Cell ss:StyleID="s4644"><Data ss:Type="String">Additional quantity is outside of subsidy window, unpaid items, cancellations and/or returns. Revised. </Data></Cell>
+      <Cell ss:MergeAcross="1" ss:StyleID="s4644"><Data ss:Type="String">Some of the quantity disputed by the seller is in excess of eBay transactional data which may include unpaid items, cancellations, returns or items outside of the subsidy window. There is a partial payment adjustment for this deal.</Data></Cell>
+      <Cell ss:StyleID="Default"/>
+      <Cell ss:StyleID="Default"/>
+    </Row>
+    <Row ss:AutoFitHeight="0" ss:Height="16.5">
+      <Cell ss:StyleID="s4645"><Data ss:Type="String">Other</Data></Cell>
+      <Cell ss:MergeAcross="1" ss:StyleID="s4645"><Data ss:Type="String">The seller has a unique error dispute and the description provided should adequately explain the results of eBay's review. </Data></Cell>
+      <Cell ss:StyleID="Default"/>
+      <Cell ss:StyleID="Default"/>
+    </Row>
+    <Row>
+      <Cell ss:StyleID="s4529"/>
+      <Cell ss:StyleID="s4535"/>
+      <Cell ss:StyleID="Default"/>
+      <Cell ss:StyleID="Default"/>
+      <Cell ss:StyleID="Default"/>
+    </Row>
+    <Row>
+      <Cell ss:StyleID="s4529"/>
+      <Cell ss:StyleID="s4535"/>
+      <Cell ss:StyleID="Default"/>
+      <Cell ss:StyleID="Default"/>
+      <Cell ss:StyleID="Default"/>
+    </Row>
+    <Row>
+      <Cell ss:StyleID="s4529"/>
+      <Cell ss:StyleID="s4535"/>
+      <Cell ss:StyleID="Default"/>
+      <Cell ss:StyleID="Default"/>
+      <Cell ss:StyleID="Default"/>
+    </Row>
+    
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Layout x:CenterHorizontal="1"/>
+    <Header x:Margin="0.3"
+     x:Data="&amp;C&amp;&quot;-,Bold&quot;&amp;14ERRORS AND OMISSIONS REVIEW PROCESS"/>
+    <Footer x:Margin="0.3" x:Data="&amp;C&amp;N"/>
+    <PageMargins x:Bottom="0.5" x:Left="0.45" x:Right="0.45" x:Top="0.5"/>
+   </PageSetup>
+   <FitToPage/>
+   <Print>
+    <ValidPrinterInfo/>
+    <Scale>54</Scale>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Zoom>90</Zoom>
+   <DoNotDisplayGridlines/>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+   <EnableSelection>NoSelection</EnableSelection>
+  </WorksheetOptions>
+ </Worksheet>
+
+
+ <!-- <apex:outputText rendered="{! If(dealList.ds.Status__c=='Dispute Payout Approved' || dealList.ds.Status__c=='Dispute Statement Sent Out',true,false) }"> -->
+ <Worksheet ss:Name="Seller Payment Dispute">
+  <Table  x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="50.4" ss:DefaultRowHeight="14.4">
+   <Column ss:Width="100.8"/>
+   <Column ss:Width="484.2"/>
+   <Column  ss:AutoFitWidth="0" ss:Width="120"/>
+   <Column  ss:AutoFitWidth="0" ss:Width="120"/>
+   <Column ss:AutoFitWidth="0" ss:Width="120"/>
+   <!-- <Column ss:AutoFitWidth="0" ss:Width="109.8"/> -->
+   <Column ss:AutoFitWidth="0" ss:Width="150"/>
+   <Column ss:AutoFitWidth="0" ss:Width="120"/>
+   <Column ss:AutoFitWidth="0" ss:Width="400"/>
+   <!-- <Column ss:AutoFitWidth="0" ss:Width="109.8"/>
+   <Column ss:AutoFitWidth="0" ss:Width="109.8"/>
+   <Column ss:AutoFitWidth="0" ss:Width="109.8"/>
+   <Column ss:AutoFitWidth="0" ss:Width="109.8"/>
+   <Column ss:AutoFitWidth="0" ss:Width="109.8"/> -->
+
+   <Row ss:AutoFitHeight="0" ss:Height="49.949999999999996">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">{!$Label.DD_eBay_Deals}</Data></Cell>
+   </Row>
+   <Row>
+    
+   </Row>
+   <Row>
+    
+   </Row>
+   <Row>
+    
+   </Row>
+   <Row ss:Height="19">
+      <Cell ss:StyleID="s4705" ss:MergeAcross="7"><Data ss:Type="String"><Font xmlns="http://www.w3.org/TR/REC-html40" Color="#FF0000"><B>IMPORTANT:</B></Font> Carefully review<B xmlns="http://www.w3.org/TR/REC-html40"> "Payment Dispute Guidelines"</B> before completing this page.</Data></Cell>
+   </Row>
+   <Row>
+    
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="39.75">
+    <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_LISTING_ID}</Data><NamedCell
+      ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_ITEM_DESCRIPTION}</Data><NamedCell
+      ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_START_DATE_TIME}</Data><NamedCell
+      ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_END_DATE_TIME}</Data><NamedCell
+      ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_SUBSIDY_PER_UNIT}</Data><NamedCell
+      ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell>
+    <!-- <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_SUBSIDY_PER_UNIT}</Data><NamedCell
+      ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell> -->
+    <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_EPP_FINAL_UNITS_SOLD}</Data><NamedCell
+        ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_SP_FINAL_UNITS_SOLD}</Data><NamedCell
+          ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_ERROR_TYPE}</Data></Cell>
+        
+    <!-- <apex:outputText rendered="{! If(dealList.isQtyVarianceAndSubPerUnit,true,false) }">
+         <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_Sellers_Dispute_Quantity}</Data><NamedCell
+        ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell>
+        <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_Sold_Items_Disputes}</Data><NamedCell
+          ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell>
+        <apex:outputText rendered="{! If(dealList.isHasSoldItemFurtherDisputes,true,false) }">
+            <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_Sold_Items_Further_Disputes}</Data><NamedCell
+            ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell>
+        </apex:outputText>  
+        <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_Sellers_Dispute_Subsidy}</Data><NamedCell
+        ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell>
+        <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_Subsidy_per_Unit_Disputes}</Data><NamedCell
+          ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell>
+        <apex:outputText rendered="{! If(dealList.isHsSubsidyPerUnitFurtherDisputes,true,false) }">
+            <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_Subsidy_per_Unit_Further_Disputes}</Data><NamedCell
+            ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell>
+        </apex:outputText> 
+    </apex:outputText>
+    <apex:outputText rendered="{! If(dealList.isQtyVarianceAndSubPerUnit==false && dealList.isQuantityVariance,true,false) }">
+         <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_Sellers_Dispute_Quantity}</Data><NamedCell
+        ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell>
+        <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_Sold_Items_Disputes}</Data><NamedCell
+          ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell>
+        <apex:outputText rendered="{! If(dealList.isHasSoldItemFurtherDisputes,true,false) }">
+            <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_Sold_Items_Further_Disputes}</Data><NamedCell
+            ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell>
+        </apex:outputText>    
+    </apex:outputText>
+    <apex:outputText rendered="{! If(dealList.isQtyVarianceAndSubPerUnit==false && dealList.isSubsidyPerUnit ,true,false) }">
+         <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_Sellers_Dispute_Subsidy}</Data><NamedCell
+        ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell>
+        <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_Subsidy_per_Unit_Disputes}</Data><NamedCell
+          ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell>
+        <apex:outputText rendered="{! If(dealList.isHsSubsidyPerUnitFurtherDisputes,true,false) }">
+            <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_Subsidy_per_Unit_Further_Disputes}</Data><NamedCell
+            ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell>
+        </apex:outputText> 
+    </apex:outputText>
+            <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_Disputes_Subsidy_Due}</Data><NamedCell
+          ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell>
+        <apex:outputText rendered="{! If(dealList.isHsSubsidyPerUnitFurtherDisputes,true,false) }">
+            <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_Further_Disputes_Subsidy_Due}</Data><NamedCell
+          ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell>  
+        </apex:outputText>
+            <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_Dispute_Approval_Comments}</Data><NamedCell
+          ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell> -->
+
+          
+   </Row>
+
+   <!-- // 20.05.2021 / Sophal Noch / US-0009544 varible spdIndex is for highlight cell/row -->
+   <apex:variable var="spdIndex" value="{!(-1)}"/>
+   <apex:repeat value="{!dealList.diputes}" var="deal">
+   <!-- <apex:repeat value="{!spdRow}" var="row"> -->
+
+      <apex:variable var="spdIndex" value="{!(spdIndex+1)}"/>
+      <apex:variable var="spdEvenOdd" value="{!IF(mod(spdIndex,2) == 0,'even','odd')}"/> 
+
+      <Row ss:Height="18">
+        <Cell ss:StyleID="s4706_{!spdEvenOdd}"><Data ss:Type="String">{!deal.eBayItemId}</Data></Cell>
+        <Cell ss:StyleID="s4707_{!spdEvenOdd}"><Data ss:Type="String">{!HTMLENCODE(deal.productTitle)}</Data></Cell>
+        <Cell ss:StyleID="s4708_{!spdEvenOdd}"><Data ss:Type="DateTime"><apex:outputText rendered="{! If(deal.startTime!=null,true,false) }" value="{0,date,yyyy-MM-dd'T'HH:mm:ss.SSS}"><apex:param value="{! deal.startTime }" /></apex:outputText></Data></Cell>
+        <Cell ss:StyleID="s4709_{!spdEvenOdd}"><Data ss:Type="DateTime"><apex:outputText rendered="{! If(deal.endTime!=null,true,false) }" value="{0,date,yyyy-MM-dd'T'HH:mm:ss.SSS}"><apex:param value="{! deal.endTime }" /></apex:outputText></Data></Cell>
+        <Cell ss:StyleID="s4710_{!spdEvenOdd}"><Data ss:Type="Number">{!deal.subsidy}</Data></Cell>
+        
+        <!-- // 17.05.2022 / Sophal Noch / US-0011767 - NA Adjusted Statement generation (continuation) -->
+        <!-- <Cell ss:StyleID="s4711_{!spdEvenOdd}"><Data ss:Type="Number">{!deal.finalSoldItems}</Data></Cell> -->
+        <Cell ss:StyleID="s4711_{!spdEvenOdd}"><Data ss:Type="Number">{!deal.ppFinalUnitSold}</Data></Cell>
+        
+        <Cell ss:StyleID="s4712_{!spdEvenOdd}"><Data ss:Type="Number">{!deal.spFinalUnitsSold}</Data></Cell>
+        <Cell ss:StyleID="s4713_{!spdEvenOdd}"><Data ss:Type="String"><apex:outputText rendered="{! If(deal.deal.Dispute_Type__c!=null,true,false) }">{!deal.deal.Dispute_Type__c}</apex:outputText></Data></Cell>
+          
+        <!-- <Cell ss:StyleID="s4706_{!spdEvenOdd}"><Data ss:Type="String"></Data></Cell>
+        <Cell ss:StyleID="s4707_{!spdEvenOdd}"><Data ss:Type="String"></Data></Cell>
+        <Cell ss:StyleID="s4708_{!spdEvenOdd}"><Data ss:Type="String"></Data></Cell>
+        <Cell ss:StyleID="s4709_{!spdEvenOdd}"><Data ss:Type="String"></Data></Cell>
+        <Cell ss:StyleID="s4710_{!spdEvenOdd}"><Data ss:Type="String"></Data></Cell>
+        <Cell ss:StyleID="s4711_{!spdEvenOdd}"><Data ss:Type="String"></Data></Cell>
+        <Cell ss:StyleID="s4712_{!spdEvenOdd}"><Data ss:Type="String"></Data></Cell>
+        <Cell ss:StyleID="s4713_{!spdEvenOdd}"><Data ss:Type="String"></Data></Cell> -->
+
+
+      </Row>
+   </apex:repeat>
+
+    <apex:variable var="spdIndex" value="{!(spdIndex+1)}"/>
+    <apex:variable var="spdEvenOdd" value="{!IF(mod(spdIndex,2) == 0,'even','odd')}"/>
+   
+   <Row ss:Height="18">
+    <Cell ss:StyleID="s4706_{!spdEvenOdd}"></Cell>
+    <Cell ss:StyleID="s4707_{!spdEvenOdd}"></Cell>
+    <Cell ss:StyleID="s4708_{!spdEvenOdd}"></Cell>
+    <Cell ss:StyleID="s4709_{!spdEvenOdd}"></Cell>
+    <Cell ss:StyleID="s4710_{!spdEvenOdd}"></Cell>
+    <Cell ss:StyleID="s4711_{!spdEvenOdd}"></Cell>
+    <Cell ss:StyleID="s4712_{!spdEvenOdd}"></Cell>
+    <Cell ss:StyleID="s4713_{!spdEvenOdd}"></Cell>
+   </Row>
+
+   <!-- <apex:variable var="spdIndex" value="{!(spdIndex+1)}"/>
+   <apex:variable var="spdEvenOdd" value="{!IF(mod(spdIndex,2) == 0,'even','odd')}"/>
+
+   <Row ss:Height="18">
+    <Cell ss:StyleID="s4706_{!spdEvenOdd}"><Data ss:Type="String"><B xmlns="http://www.w3.org/TR/REC-html40">{!$Label.DD_SSG_GRAND_TOTAL}</B></Data></Cell>
+    <Cell ss:StyleID="s4707_{!spdEvenOdd}" ss:MergeAcross="6"></Cell>
+   </Row> -->
+
+
+   
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Layout x:CenterHorizontal="1"/>
+    <Header x:Margin="0.3" x:Data="&amp;C&amp;&quot;-,Bold&quot;&amp;16SELLER PAYMENT DISPUTE"/>
+    <Footer x:Margin="0.3" x:Data="&amp;C&amp;N"/>
+    <PageMargins x:Bottom="0.5" x:Left="0.45" x:Right="0.45" x:Top="0.5"/>
+   </PageSetup>
+   <FitToPage/>
+   <Print>
+    <ValidPrinterInfo/>
+    <Scale>26</Scale>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Zoom>80</Zoom>
+   <Selected/>
+   <DoNotDisplayGridlines/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>6</ActiveRow>
+     <ActiveCol>1</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <!-- </apex:outputText> -->
+
+
+<Worksheet ss:Name="eBay Review">
+
+  <Table  x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="50.4" ss:DefaultRowHeight="14.4">
+   <Column ss:Width="100.8"/>
+   <Column ss:Width="484.2"/>
+   <Column  ss:AutoFitWidth="0" ss:Width="120"/>
+   <Column  ss:AutoFitWidth="0" ss:Width="120"/>
+   <Column ss:AutoFitWidth="0" ss:Width="120"/>
+   <Column ss:AutoFitWidth="0" ss:Width="150"/>
+   <Column ss:AutoFitWidth="0" ss:Width="150"/>
+   <Column ss:AutoFitWidth="0" ss:Width="220"/>
+   <Column ss:AutoFitWidth="0" ss:Width="100"/>
+   <Column ss:Width="484.2"/>
+
+   <Row ss:AutoFitHeight="0" ss:Height="49.949999999999996">
+    <Cell ss:StyleID="s95"><Data ss:Type="String">{!$Label.DD_eBay_Deals}</Data></Cell>
+   </Row>
+   <Row>
+    
+   </Row>
+   <Row>
+    
+   </Row>
+   <Row>
+    
+   </Row>
+   <Row ss:Height="15">
+    
+   </Row>
+   <Row>
+    
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="55">
+    <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_LISTING_ID}</Data><NamedCell
+      ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_ITEM_DESCRIPTION}</Data><NamedCell
+      ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_START_DATE_TIME}</Data><NamedCell
+      ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_END_DATE_TIME}</Data><NamedCell
+      ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_SUBSIDY_PER_UNIT}</Data><NamedCell
+      ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_EPP_FINAL_UNITS_SOLD}</Data><NamedCell
+        ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_SP_FINAL_UNITS_SOLD}</Data><NamedCell
+          ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_ERROR_TYPE}</Data><NamedCell
+          ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_EBAY_REVIEW}</Data><NamedCell
+          ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s4606"><Data ss:Type="String">{!$Label.DD_SSG_EBAY_COMMENTS}</Data><NamedCell
+          ss:Name="Print_Titles"/><NamedCell ss:Name="Print_Area"/></Cell>
+        
+
+          
+   </Row>
+   
+   <!-- // 20.05.2021 / Sophal Noch / US-0009544 varible erIndex is for highlight cell/row -->
+  <apex:variable var="erIndex" value="{!(-1)}"/>
+
+  <apex:repeat value="{!dealList.diputes}" var="deal"> 
+  <!--<apex:repeat value="{!erRow}" var="row">-->
+     
+    <apex:variable var="erIndex" value="{!(erIndex+1)}"/>
+    <apex:variable var="eREvenOdd" value="{!IF(mod(erIndex,2) == 0,'even','odd')}"/> 
+
+
+   <Row ss:Height="18">
+    <Cell ss:StyleID="s4706_{!eREvenOdd}"><Data ss:Type="String">{!deal.eBayItemId}</Data></Cell>
+    <Cell ss:StyleID="s4707_{!eREvenOdd}"><Data ss:Type="String">{!HTMLENCODE(deal.productTitle)}</Data></Cell>
+    <Cell ss:StyleID="s4708_{!eREvenOdd}"><Data ss:Type="DateTime"><apex:outputText rendered="{! If(deal.startTime!=null,true,false) }" value="{0,date,yyyy-MM-dd'T'HH:mm:ss.SSS}"><apex:param value="{! deal.startTime }" /></apex:outputText></Data></Cell>
+    <Cell ss:StyleID="s4709_{!eREvenOdd}"><Data ss:Type="DateTime"><apex:outputText rendered="{! If(deal.endTime!=null,true,false) }" value="{0,date,yyyy-MM-dd'T'HH:mm:ss.SSS}"><apex:param value="{! deal.endTime }" /></apex:outputText></Data></Cell>
+    <Cell ss:StyleID="s4710_{!eREvenOdd}"><Data ss:Type="Number">{!deal.subsidy}</Data></Cell>
+    
+    <!-- // 17.05.2022 / Sophal Noch / US-0011767 - NA Adjusted Statement generation (continuation) -->
+    <!-- <Cell ss:StyleID="s4711_{!eREvenOdd}"><Data ss:Type="Number">{!deal.finalSoldItems}</Data></Cell> -->
+    <Cell ss:StyleID="s4711_{!eREvenOdd}"><Data ss:Type="Number">{!deal.ppFinalUnitSold}</Data></Cell>
+
+    <Cell ss:StyleID="s4712_{!eREvenOdd}"><Data ss:Type="Number">{!deal.spFinalUnitsSold}</Data></Cell>
+    <Cell ss:StyleID="s4713_{!eREvenOdd}"><Data ss:Type="String"><apex:outputText rendered="{! If(deal.deal.Dispute_Type__c!=null,true,false) }">{!deal.deal.Dispute_Type__c}</apex:outputText></Data></Cell>
+    <Cell ss:StyleID="s4714_{!eREvenOdd}"><Data ss:Type="Number">{!deal.ebayReview}</Data></Cell>
+    <Cell ss:StyleID="s4715_{!eREvenOdd}"><Data ss:Type="String">{!deal.comments}</Data></Cell> 
+
+   <!--<Cell ss:StyleID="s4706_{!eREvenOdd}"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s4707_{!eREvenOdd}"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s4708_{!eREvenOdd}"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s4709_{!eREvenOdd}"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s4710_{!eREvenOdd}"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s4711_{!eREvenOdd}"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s4712_{!eREvenOdd}"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s4713_{!eREvenOdd}"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s4714_{!eREvenOdd}"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s4715_{!eREvenOdd}"><Data ss:Type="String"></Data></Cell>-->
+
+   </Row>
+  </apex:repeat>
+
+   <apex:variable var="erIndex" value="{!(erIndex+1)}"/>
+   <apex:variable var="eREvenOdd" value="{!IF(mod(erIndex,2) == 0,'even','odd')}"/>
+   
+   <Row ss:Height="18">
+    <Cell ss:StyleID="s4706_{!eREvenOdd}"></Cell>
+    <Cell ss:StyleID="s4707_{!eREvenOdd}"></Cell>
+    <Cell ss:StyleID="s4708_{!eREvenOdd}"></Cell>
+    <Cell ss:StyleID="s4709_{!eREvenOdd}"></Cell>
+    <Cell ss:StyleID="s4710_{!eREvenOdd}"></Cell>
+    <Cell ss:StyleID="s4711_{!eREvenOdd}"></Cell>
+    <Cell ss:StyleID="s4712_{!eREvenOdd}"></Cell>
+    <Cell ss:StyleID="s4713_{!eREvenOdd}"></Cell>
+    <Cell ss:StyleID="s4714_{!eREvenOdd}"></Cell>
+    <Cell ss:StyleID="s4715_{!eREvenOdd}"></Cell>
+   </Row>
+
+   <!-- <apex:variable var="erIndex" value="{!(erIndex+1)}"/>
+   <apex:variable var="eREvenOdd" value="{!IF(mod(erIndex,2) == 0,'even','odd')}"/>
+
+   <Row ss:Height="18">
+    <Cell ss:StyleID="s4706_{!eREvenOdd}"><Data ss:Type="String"><B xmlns="http://www.w3.org/TR/REC-html40">{!$Label.DD_SSG_GRAND_TOTAL}</B></Data></Cell>
+    <Cell ss:StyleID="s4707_{!eREvenOdd}" ss:MergeAcross="8"></Cell>
+   </Row> -->
+   
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Layout x:CenterHorizontal="1"/>
+    <Header x:Margin="0.3" x:Data="&amp;C&amp;&quot;-,Bold&quot;&amp;16EBAY REVIEW"/>
+    <Footer x:Margin="0.3" x:Data="&amp;C&amp;N"/>
+    <PageMargins x:Bottom="0.5" x:Left="0.45" x:Right="0.45" x:Top="0.5"/>
+   </PageSetup>
+   <FitToPage/>
+   <Print>
+    <ValidPrinterInfo/>
+    <Scale>26</Scale>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Zoom>80</Zoom>
+   <Selected/>
+   <DoNotDisplayGridlines/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>6</ActiveRow>
+     <ActiveCol>1</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+   <Visible>{!dealList.ebayReviewVisible}</Visible>
+  </WorksheetOptions>
+
+</Worksheet>
+
+ 
+
+
+
+
+
+ 
+</Workbook>
+
+
+<apex:outputText value="{!endfile}" escape="false"/>
+
+</apex:page>

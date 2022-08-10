@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_Projects_ES</fullName>
+    <columns>NAME</columns>
+    <columns>EBH_Stage__c</columns>
+    <columns>Comments__c</columns>
+    <columns>EBH_Seller__c</columns>
+    <columns>RegistrationCountry__c</columns>
+    <columns>MainVertical__c</columns>
+    <columns>EBH_DMCInterestedCommittedDate__c</columns>
+    <columns>Main3PP__c</columns>
+    <columns>OWNER.ALIAS</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Manager__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>EBH_Project__c.ManagedPayment</value>
+    </filters>
+    <filters>
+        <field>RegistrationCountry__c</field>
+        <operation>equals</operation>
+        <value>Spain</value>
+    </filters>
+    <filters>
+        <field>EBH_Seller__c</field>
+        <operation>equals</operation>
+        <value>sharkdeals_shop</value>
+    </filters>
+    <label>Payment Projects ES</label>
+</ListView>

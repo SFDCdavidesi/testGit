@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Promotion_Type__c</fullName>
+    <description>US-0007162: Fulfilment Promotion type information</description>
+    <externalId>false</externalId>
+    <label>Promotion Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>100€ Start Offer</fullName>
+                <default>false</default>
+                <label>100€ Start Offer</label>
+            </value>
+            <value>
+                <fullName>Acceleration Startoffer</fullName>
+                <default>false</default>
+                <label>Acceleration Startoffer</label>
+            </value>
+            <value>
+                <fullName>50 Transactions</fullName>
+                <default>false</default>
+                <label>50 Transactions</label>
+            </value>
+            <value>
+                <fullName>Orange Connex</fullName>
+                <default>false</default>
+                <label>Orange Connex</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Requests_Pending_Review_EEC</fullName>
+    <columns>CAMPAIGN.NAME</columns>
+    <columns>CAMPAIGN.START_DATE</columns>
+    <columns>EBH_Priorities__c</columns>
+    <columns>EBH_Site__c</columns>
+    <columns>EBH_ChannelMP__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CAMPAIGN.LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CAMPAIGN.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Campaign.EBH_CampaignRequest</value>
+    </filters>
+    <filters>
+        <field>CAMPAIGN.STATUS</field>
+        <operation>equals</operation>
+        <value>Submitted</value>
+    </filters>
+    <filters>
+        <field>EBH_Site__c</field>
+        <operation>notEqual</operation>
+        <value>UK,DE</value>
+    </filters>
+    <label>All Requests Pending Review EEC</label>
+</ListView>

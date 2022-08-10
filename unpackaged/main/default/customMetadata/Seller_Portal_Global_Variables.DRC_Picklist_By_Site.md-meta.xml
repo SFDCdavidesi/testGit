@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>DRC_Picklist_By_Site</label>
+    <protected>false</protected>
+    <values>
+        <field>Value_Big__c</field>
+        <value xsi:type="xsd:string">SELECT Id, Name, EBH_DealTitle__c, EBH_OpenSeatsAvailable__c, EBH_Country__c, EBH_AcceptProposalsStart__c, EBH_AcceptProposalsEnd__c, EBH_DealSlotDisabled__c, EBH_Date__c, EPH_EndDate__c FROM EBH_DealRetailCampaign__c WHERE EBH_Country__c =:siteNumber  AND RecordType.DeveloperName = &#39;Deal_Campaign_V1&#39; AND EBH_DealSlotDisabled__c= false AND EBH_AcceptProposalsStart__c &lt;= TODAY AND EBH_AcceptProposalsEnd__c &gt;= TODAY AND EBH_OpenSeatsAvailable__c &gt; 0</value>
+    </values>
+    <values>
+        <field>Value__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>Value_in_German__c</field>
+        <value xsi:nil="true" />
+    </values>
+</CustomMetadata>

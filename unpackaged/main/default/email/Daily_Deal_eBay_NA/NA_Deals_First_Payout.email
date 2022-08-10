@@ -1,0 +1,193 @@
+<body>
+
+
+    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><strong><span style='font-family:"Arial",sans-serif;color:#0B3A6F;'>{!Deal_Statement__c.eBay_Seller__c},<br>&nbsp;<br>Thank you for participating in the&nbsp;</span></strong><strong><span style='font-family:"Arial",sans-serif;color:#0B3A6F;'>{!Deal_Statement__c.Month__c}&nbsp;</span></strong><strong><span style='font-family:"Arial",sans-serif;color:#0B3A6F;'>{!Deal_Statement__c.Year__c}&nbsp;eBay Deals Promotions!</span></strong></p>
+    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="color:#0B3A6F;">Attached is the summary of your <span style='font-family:"Arial",sans-serif;color:#0B3A6F;'>{!Deal_Statement__c.Month__c}&nbsp;</span>deals and the total subsidy amount due to you according to our first reconciliation. <strong>You will receive 60% of this total reconciled amount</strong> from our first batch which will be reflected in your PayPal account in 3-5 Business Days. The remainder (~ 40%) will be delivered in a second payment after accounting for all unpaid or canceled items, returns, and disputes.</span></p>
+    <br>
+    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><strong><span style="color:#0B3A6F;">DEALS MASTER SERVICE AGREEMENT REMINDERS:</span></strong></p>
+    <ol start="1" style="margin-bottom:0cm;" type="1">
+        <li style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;color:#0B3A6F;'>Seller must review and report any error or omission regarding the Subsidy Payment for a Deal <strong>no later than ten (10) business days after receipt of the second Statement</strong> from eBay post 60 days if a Subsidy Payment is due (&ldquo;Subsidy Final Settlement Date&rdquo;). Seller shall be precluded from requesting any correction or adjustment to the Statement or Subsidy Payment after the Subsidy Final Settlement Date.</li>
+        <li style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;color:#0B3A6F;'><strong>Seller must wait until the second reconciliation period post 60 days and final remainder amount is paid out until he sends in a dispute for quantity variance.</strong> If there was a deal missing or dates incorrect, seller shall inform us and the merchant immediately to review accordingly in order to include potential missed payouts in the <strong>second Statement</strong>.&nbsp;</li>
+        <li style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;color:#0B3A6F;'>For a period of at least two (2) years after the Deal Stop Date/Time, Seller shall keep and maintain all appropriate books and records related to the Deal, including but not limited to copies of the approved Deal Terms and records of the purchases, deliveries and returns for the Deal (&ldquo;Deal Records&rdquo;).</li>
+    </ol>
+    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
+<hr>
+    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><strong><span style="color:#0B3A6F;">PAYMENT DISPUTE GUIDELINES</span></strong><span style="color:#0B3A6F;"><br> <em>A) Quantity Discrepancies</em></span></p>
+    <ol start="1" style="margin-bottom:0cm;" type="1">
+        <li style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;color:#0B3A6F;'>Using the <em>&quot;Seller Payment Dispute&quot;</em> tab, complete each column with the subsidy offer details that were approved and submitted to the Daily Deals team. <strong>Only include deals that were incorrect in your subsidy statement.</strong></li>
+        <li style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;color:#0B3A6F;'>Use the drop-down menu to select &quot;quantity variance&quot; as the error type.</li>
+        <li style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;color:#0B3A6F;'><strong>Exclude the following transactions from your dispute:</strong> items that exceed the quantity limit, unpaid items, cancellations, returns and units sold outside of the subsidy period*.</li>
+        <li style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;color:#0B3A6F;'>Attach the complete subsidy approval email(s) <strong>only if you are disputing the maximum quantity to list from your subsidy offer.</strong></li>
+    </ol>
+    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><em><span style="color:#0B3A6F;">B) Deal Omissions/Other Discrepancies</span></em></p>
+    <ol start="1" style="margin-bottom:0cm;" type="1">
+        <li style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;color:#0B3A6F;'>Using the &quot;Seller Payment Dispute&quot; tab, complete each column with the subsidy offer details that were approved and submitted to the Daily Deals team. <strong>Only include deals that were incorrect in your subsidy statement.</strong></li>
+        <li style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;color:#0B3A6F;'>Use the drop-down menu to select &quot;deal omitted from subsidy statement&quot;, &quot;subsidy per unit&quot; <strong>or</strong> &quot;other, please describe&quot; as the error type.</li>
+        <li style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;color:#0B3A6F;'><strong>Exclude the following transactions from your dispute:</strong> items that exceed the quantity limit, unpaid items, cancellations, returns and units sold outside of the subsidy period* or at a higher than agreed upon listing price.</li>
+        <li style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;color:#0B3A6F;'>Attach the complete subsidy approval email(s) that was submitted to the Daily Deals team. This includes the subsidy offer, the listing ID(s), and an explicit approval of each Individual Order Form.</li>
+    </ol>
+    <br>
+    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><strong><span style="color:#BF0000;">*Transaction data will no longer be provided for error reports that include transactions that should be excluded. See A.3. and B.3.</span></strong></p>
+    <br>
+    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><em><span style="color:#0B3A6F;">C) Submitting Your Dispute</span></em></p>
+    <ol start="1" style="margin-bottom:0cm;" type="1">
+        <li style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;color:#0B3A6F;'>Before sending your dispute, review and confirm that your submissions are complete and accurate.</li>
+        <li style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;color:#0B3A6F;'>Attach subsidy approval emails based on the error type selected.</li>
+        <li style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;color:#0B3A6F;'>Reply to your monthly statement email (without changing the subject heading) and attach all requested documents.<ol start="1" style="margin-bottom:0cm;" type="a">
+                <li style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;color:#0B3A6F;'>Reports are sent to&nbsp;<span style="color:windowtext;"><a href="mailto:deals_subsidy_support@ebay.com"><strong><span style="color:#000064;">deals_subsidy_support@ebay.com</span></strong></a></span></li>
+                <li style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;color:#0B3A6F;'><strong>REMINDER: Review all guidelines and documents for accuracy and completion.</strong></li>
+            </ol>
+        </li>
+    </ol>
+    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><em><span style="color:#0B3A6F;">D) Review Timeline</span></em></p>
+    <ol start="1" style="margin-bottom:0cm;" type="1">
+        <li style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;color:#0B3A6F;'>Payment disputes submitted <strong>within</strong> 10 business days of receiving the <strong>second final Statement</strong> will be reviewed and completed within the next 7 business days after the due date. We will review them in one batch after the deadline is up and then submit to our Finance and controllership team for approval before payment can be sent out via PayPal.</li>
+        <li style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;color:#0B3A6F;'>Payment disputes submitted <strong>after</strong> 10 business days of receiving the <strong>second final Statement</strong> will no longer be adjusted.</li>
+        <li style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;color:#0B3A6F;'>Payment disputes submitted after an initial review has been completed will be reviewed within 20 business days.</li>
+        <li style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;color:#0B3A6F;'>Payment disputes submitted incorrectly will delay your review.</li>
+    </ol>
+    <br>
+    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><strong><span style="color:#0B3A6F;">UPDATING SUBSIDY ACCOUNT AND CONTACT INFORMATION</span></strong></p>
+    <br>
+    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="color:#0B3A6F;">Complete the following information and send to&nbsp;</span><a href="mailto:deals_subsidy_support@ebay.com"><strong><span style="color:#000064;">deals_subsidy_support@ebay.com</span></strong></a></p>
+    <br>
+    <table style="width:1023.75pt;border-collapse:collapse;border:none;">
+        <tbody>
+            <tr>
+                <td style="border:solid white 1.0pt;background:#40AEFF;padding:.75pt .75pt .75pt .75pt;">
+                    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;text-align:center;'><strong><span style="color:black;">PAYMENT CONTACT INFORMATION</span></strong></p>
+                </td>
+                <td style="border:solid white 1.0pt;border-left:none;background:#40AEFF;padding:.75pt .75pt .75pt .75pt;">
+                    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;text-align:center;'><strong><span style="color:black;">CURRENT ACCOUNT INFORMATION</span></strong></p>
+                </td>
+                <td style="border:solid white 1.0pt;border-left:none;background:#40AEFF;padding:.75pt .75pt .75pt .75pt;">
+                    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;text-align:center;'><strong><span style="color:black;">PROPOSED ACCOUNT CHANGES</span></strong></p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border:solid white 1.0pt;border-top:none;padding:.75pt .75pt .75pt .75pt;">
+                    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><strong>Seller name</strong></p>
+                    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><em><span style="color:#0B3A6F;">The account name used to execute subsidy deals.</span></em></p>
+                </td>
+                <td style="border-top:none;border-left:none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt;"><br></td>
+                <td style="border-top:none;border-left:none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt;"><br></td>
+            </tr>
+            <tr>
+                <td style="border:solid white 1.0pt;border-top:none;padding:.75pt .75pt .75pt .75pt;">
+                    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><strong>Parent Account (if applicable)</strong></p>
+                    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><em><span style="color:#0B3A6F;">If the seller name provided is a child account, provide the parent account name.</span></em></p>
+                </td>
+                <td style="border-top:none;border-left:none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt;"><br></td>
+                <td style="border-top:none;border-left:none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt;"><br></td>
+            </tr>
+            <tr>
+                <td style="border:solid white 1.0pt;border-top:none;padding:.75pt .75pt .75pt .75pt;">
+                    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><strong>Primary Recipient Name (First/Last):</strong></p>
+                    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><em><span style="color:#0B3A6F;">The contact who should receive subsidy communication, including monthly review and payment statements.</span></em></p>
+                </td>
+                <td style="border-top:none;border-left:none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt;"><br></td>
+                <td style="border-top:none;border-left:none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt;"><br></td>
+            </tr>
+            <tr>
+                <td style="border:solid white 1.0pt;border-top:none;padding:.75pt .75pt .75pt .75pt;">
+                    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><strong>Primary Email:</strong></p>
+                    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><em><span style="color:#0B3A6F;">The email will be addressed to this contact.</span></em></p>
+                </td>
+                <td style="border-top:none;border-left:none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt;"><br></td>
+                <td style="border-top:none;border-left:none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt;"><br></td>
+            </tr>
+            <tr>
+                <td style="border:solid white 1.0pt;border-top:none;padding:.75pt .75pt .75pt .75pt;">
+                    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><strong>Secondary Recipient Name(s)(First/Last):</strong></p>
+                    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><em><span style="color:#0B3A6F;">Additional contact(s) who should also be copied on subsidy communication.</span></em></p>
+                </td>
+                <td style="border-top:none;border-left:none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt;"><br></td>
+                <td style="border-top:none;border-left:none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt;"><br></td>
+            </tr>
+            <tr>
+                <td style="border:solid white 1.0pt;border-top:none;padding:.75pt .75pt .75pt .75pt;">
+                    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><strong>Secondary Email:</strong></p>
+                    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><em><span style="color:#0B3A6F;">This contact(s) will be cc&rsquo;d on this email..</span></em></p>
+                </td>
+                <td style="border-top:none;border-left:none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt;"><br></td>
+                <td style="border-top:none;border-left:none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt;"><br></td>
+            </tr>
+            <tr>
+                <td style="border:solid white 1.0pt;border-top:none;padding:.75pt .75pt .75pt .75pt;">
+                    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><strong>PayPal Email Address of Recipient:</strong></p>
+                    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><em><span style="color:#0B3A6F;">PayPal account where funds should be sent.</span></em></p>
+                </td>
+                <td style="border-top:none;border-left:none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt;"><br></td>
+                <td style="border-top:none;border-left:none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt;"><br></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><strong><span style="color:#0B3A6F;">SUBSIDY FAQs</span></strong></p>
+    <br>
+    <table style="width:1023.75pt;border-collapse:collapse;border:none;">
+        <tbody>
+            <tr>
+                <td style="border:solid white 1.0pt;background:#40AEFF;padding:.75pt .75pt .75pt .75pt;">
+                    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;text-align:center;'><strong><span style="color:black;">SELLER QUESTIONS</span></strong></p>
+                </td>
+                <td style="border:solid white 1.0pt;border-left:none;background:#40AEFF;padding:.75pt .75pt .75pt .75pt;">
+                    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;text-align:center;'><strong><span style="color:black;">EBAY ANSWERS</span></strong></p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border:solid white 1.0pt;border-top:none;padding:.75pt .75pt .75pt .75pt;">
+                    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><strong>My subsidized deal ran in June. When will I receive payment?</strong></p>
+                </td>
+                <td style="border-top:none;border-left:none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt;">
+                    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'>Subsidy payments are submitted in two batches: The first reconciliation occurs post 30 days, then another after 60 days from the last day of the month that the deal was live on the site. Each payment will hit the seller accounts within 3 to 5 business days of statement receipt.&nbsp;</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border:solid white 1.0pt;border-top:none;padding:.75pt .75pt .75pt .75pt;">
+                    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><strong>My subsidized deal ran June 23rd through July 3rd. Is this considered a June deal or a July deal?</strong></p>
+                </td>
+                <td style="border-top:none;border-left:none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt;">
+                    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'>Subsidy is paid based on the first day the deal was live on the site. In this example, this deal would be included in the June subsidy statement.</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border:solid white 1.0pt;border-top:none;padding:.75pt .75pt .75pt .75pt;">
+                    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><strong>My subsidy statement shows fewer units sold than our reporting tools. Why is our reporting different?</strong></p>
+                </td>
+                <td style="border-top:none;border-left:none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt;">
+                    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'>Subsidy payments are based on a listing&rsquo;s <strong>net units sold</strong>, excluding transactions that are returns, cancellations, unpaid items and/or items sold outside of the subsidy window. Sellers should exclude these items when submitting error reports, which should help identify any outstanding variances between the seller&rsquo;s and eBay&rsquo;s reporting.</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border:solid white 1.0pt;border-top:none;padding:.75pt .75pt .75pt .75pt;">
+                    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><strong>Why are there deals missing from my subsidy statement?</strong></p>
+                </td>
+                <td style="border-top:none;border-left:none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt;">
+                    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'>Contract amendments impact how deals are input into our reporting tools. Finalizing all contract changes before the deal is live on the site will eliminate deal omissions when processing payment. Sellers are expected to maintain all approved contracts to properly dispute payment variances.</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border:solid white 1.0pt;border-top:none;padding:.75pt .75pt .75pt .75pt;">
+                    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><strong>I can&rsquo;t locate my payment in my PayPal account. Do you have a transaction ID?</strong></p>
+                </td>
+                <td style="border-top:none;border-left:none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt;">
+                    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'>eBay does not maintain transaction IDs that correspond to the transaction IDs found in your PayPal account. In order to locate your payment, search for sender,&nbsp;<a href="mailto:ebaygiftcert2@ebay.com"><span style="color:#000064;">ebaygiftcert2@ebay.com</span></a>, with a confirmation message that confirms the subsidy month.</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style='font-family:"-webkit-standard",serif;color:black;'><br>&nbsp;</span></p>
+    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="color:#0B3A6F;">Thanks again for your support!</span></p>
+    <br>
+    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><strong><span style="color:#0B3A6F;">Deals Subsidy Operations</span></strong></p>
+    <br>
+    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style='font-family:"Times New Roman",serif;'><img width="131" src="https://hive.my.salesforce.com/file-asset-public/DealsEmailLogoPng2?oid=00D6A0000002Hft" alt="icon"></span></p>
+<br>
+    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style='font-family:"Trebuchet",serif;color:#2A2A2A;'>This message is intended only for the use of the Addressee and contain information that is EBAY CONFIDENTIAL. If you are not the intended recipient, dissemination of this communication is prohibited. If you have received this communication in error, please erase all copies immediately.</span></p>
+    <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
+
+
+
+
+</body>

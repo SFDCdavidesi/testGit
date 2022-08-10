@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Triggered_Send_Name__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>EPH-6485 Synchronise campaign feedback from SFMC to SFDC</description>
+    <externalId>false</externalId>
+    <label>Triggered Send Name</label>
+    <referenceTo>et4ae5__Automated_Send__c</referenceTo>
+    <relationshipLabel>Campaigns</relationshipLabel>
+    <relationshipName>Campaigns</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

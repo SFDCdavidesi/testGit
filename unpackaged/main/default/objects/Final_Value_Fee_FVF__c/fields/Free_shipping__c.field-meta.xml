@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Free_shipping__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>US-0015762 New Field in the ETL flow.FVF</description>
+    <externalId>false</externalId>
+    <inlineHelpText>By clicking this checkbox you are making it mandatory for the seller to sell items with free shipping in order to receive a FVF discount.</inlineHelpText>
+    <label>Free shipping required</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

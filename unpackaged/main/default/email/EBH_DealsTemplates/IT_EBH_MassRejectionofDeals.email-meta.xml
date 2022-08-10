@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>IT [EBH] (EPH-4176) - Mass Rejection of Deals</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>EBH_eBayBlankLetterhead</letterhead>
+    <name>IT Mass Rejection of Deals</name>
+    <style>freeForm</style>
+    <subject>eBay Imperdibili – Nuova offerta rifiutata</subject>
+    <textOnly>Grazie per il tuo interesse al programma eBay Imperdibili.
+
+
+Dettagli:
+
+Nome utente eBay: {!EBH_Deal__c.EBH_BusinessName__c}
+
+Titolo: {!EBH_Deal__c.EBH_ProductTitle__c}
+
+Quantità: {!EBH_Deal__c.EBH_Quantity__c}
+
+Prezzo precedente: {!EBH_Deal__c.EBH_RRPWASPrice__c} EUR
+
+Prezzo scontato: {!EBH_Deal__c.EBH_DealPrice__c} EUR
+
+Motivo del rifiuto: {!EBH_Deal__c.EBH_ReasonforRejection__c}
+
+
+Commenti eBay: {!EBH_Deal__c.EBH_ReasonforRejectionextd__c}
+
+
+Questa volta, purtroppo, la tua offerta non ha superato la selezione. Le nostre decisioni si basano su una serie di criteri, fra cui:
+
+
+• Prezzo: l’offerta proposta deve essere migliore rispetto a quella  dialtri rivenditori online.
+
+• Rilevanza: gli oggetti in offerta devono appartenere a categorie rilevanti dal punto di vista stagionale o della domanda.
+
+• Stock: l’oggetto in offerta deve essere presente in quantità sufficiente per coprire la domanda del periodo.
+
+• Selezione: per noi è importante poter scegliere tra una vasta gamma di oggetti.
+
+
+Inviaci una nuova offerta e saremmo lieti di valutarla quanto prima! Grazie per la collaborazione.
+
+
+
+Cordiali saluti,
+
+Il team eBay</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

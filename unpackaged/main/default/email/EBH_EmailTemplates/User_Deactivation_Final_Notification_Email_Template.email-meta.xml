@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0010516 - Bug in user deactivation email notification process</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>User Deactivation Final Notification Email Template</name>
+    <style>none</style>
+    <subject>Final Notification before deactivation</subject>
+    <textOnly>Dear {!Target_User.Email}!
+Your access to Hive has been revoked due to not logging in. Hive users are automatically deactivated after 45 days with no login due to the high value of licences.
+If you wish to reactivate your Hive Profile, a colleague with access to Hive will have to raise a Reactivation Ticket on your behalf.  To do this ask your colleague to click the link below and select &quot;User Reactivation&quot; from the menu:
+
+RAISE HIVE TICKET
+
+We are sorry to see you go!
+The Hive Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

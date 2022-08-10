@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Reason__c</fullName>
+    <description>US-0006888: Specify Business Reason for FVF</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please provide the business reason and the expected outcome of this campaign. What kind of inventory is targeted and how you would define the current business relationship to the seller.</inlineHelpText>
+    <label>Business Reason</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

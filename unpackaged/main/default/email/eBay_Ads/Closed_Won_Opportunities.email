@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[Advertiser:&nbsp; &nbsp;{!Opportunity.Account}&nbsp;<br>Agency:&nbsp; &nbsp; &nbsp; &nbsp;{!Opportunity.Agency__c}<br>Amount:&nbsp; &nbsp; &nbsp; &nbsp;{!Opportunity.Amount}&nbsp;<br><br>Opportunity Owner:&nbsp;{!Opportunity.OwnerFullName}<div><br>Campaign Start Date:&nbsp;{!Opportunity.Start_Date__c}<br>Campaign End Date:&nbsp; {!Opportunity.End_Date__c}<br><br>Link to Opportunity: {!Opportunity.Link}</div>]]></td>
+</tr>
+</table>

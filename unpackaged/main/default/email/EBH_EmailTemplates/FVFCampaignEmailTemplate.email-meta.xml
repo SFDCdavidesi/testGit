@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0007065 Status change. FVF Campaign</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>FVFCampaignEmailTemplate</name>
+    <style>none</style>
+    <subject>FVF Campaign Contract Send</subject>
+    <textOnly>Thank you for changing the status of your campaign to &quot;Contract(s) Sent&quot;.
+Final Value Fee contracts have been triggered from the system.
+{!successSend} were successfully sent.
+{!failSend} could not be sent.
+{!possibleReason}{!reasonFail}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

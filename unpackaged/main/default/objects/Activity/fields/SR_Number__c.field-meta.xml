@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SR_Number__c</fullName>
+    <description>US-0007466 - [AU] Changes to AU Task Recordtype</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the relevant SR number</inlineHelpText>
+    <label>SR-Number</label>
+    <length>250</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

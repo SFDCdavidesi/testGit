@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>EPH-112 Receiving a reminder on the contract expiration date: Update-22-04-2021:US-0009399</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Contract Expiration Reminder</name>
+    <style>none</style>
+    <subject>Action required: Your {!Contract.RecordType} for {!Contract.Account} will expire {!Contract.Pricing_Reminder_Period__c}</subject>
+    <textOnly>Dear {!Contract.OwnerFullName},
+
+Your {!Contract.RecordType} {!Contract.ContractNumber} for {!Contract.Account} is about to expire {!Contract.Pricing_Reminder_Period__c}.
+
+Please take action {!Contract.ContractNumber}
+
+Thank you,
+Hive</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

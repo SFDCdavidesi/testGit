@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0007619  - Migrate to Cases - Migrate email templates / workflows, US-0006988 - Hive Feature Request - New ticket created</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Ticket - New Feature Request</name>
+    <style>none</style>
+    <subject>You have created a new HIVE feature request ticket #{!Case.CaseNumber}</subject>
+    <textOnly>Hello {!Case.CreatedBy},
+
+
+Thanks for creating a new HIVE feature request - Ticket ID: {!Case.CaseNumber}
+
+Please find below a summary of your ticket information:
+
+
+Summary: {!Case.Summary__c}
+Description: {!Case.Description__c}
+Business Sponsor: {!Case.Business_Sponsor__c}
+Business Priority: {!Case.Business_Priority__c}
+Functional Area: {!Case.HIVE_Product_Name__c}
+Number of Users: {!Case.Number_of_Users__c}
+Region(s): {!Case.Region__c}
+Request Category: {!Case.Request_Category__c}
+
+
+We will notify you again when your ticket will be processed and status will change.
+
+
+Feel free to reach out via the HIVE chatter group referencing your Ticket ID for any urgent questions in between.
+
+
+Thanks,
+
+Your HIVE team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

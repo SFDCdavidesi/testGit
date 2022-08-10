@@ -1,0 +1,6 @@
+<p>The following salesforce change request has been assigned to you for finance approval.<br /> <br /> Ticket Submitter:&nbsp;{!Requirement_Request__c.CreatedBy}</p>
+<p>Feature Request:&nbsp;{!Requirement_Request__c.Name}</p>
+<p>Link to Ticket:&nbsp;{!Requirement_Request__c.Link}</p>
+<p><br /> Ticket Details:&nbsp;</p>
+<p>{!Requirement_Request__c.Requirement_Description__c}</p>
+<p><br /> Link to approval: {!ApprovalRequest.Internal_URL}</p>

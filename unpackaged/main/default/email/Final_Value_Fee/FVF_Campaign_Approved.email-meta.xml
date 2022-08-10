@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0007178 FVF Campaign Approval Process</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>FVF_Campaign_Approved</name>
+    <style>none</style>
+    <subject>Your FVF Campaign has been approved</subject>
+    <textOnly>Dear {!Final_Value_Fee_FVF__c.Requestor__c},
+
+Your Final Value Fee Discount {!Final_Value_Fee_FVF__c.Name} has been Approved.
+
+As a next step seller log into Hive to send the FVF contract to seller.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

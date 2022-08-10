@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+
+<body style="font-family:Arial;font-size:13px">
+    <p>Hello {!EBH_Project__c.CategoryManager__c},</p>
+    <br/>
+    <p>Project <a href="{!EBH_Project__c.Link}">{!EBH_Project__c.Name}</a> has been moved to the status "Completed".</p>
+    <p>Project is closed by Acquisition and Merchant Integration team now and handed over to you as category manager.</p>
+    <br/>
+    <p>eBay Team</p>
+</body>
+</html>

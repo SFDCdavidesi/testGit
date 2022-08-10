@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Create_Chatter_Post</name>
+        <label>Create Chatter Post</label>
+        <locationX>182</locationX>
+        <locationY>911</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <connector>
+            <targetReference>US_0010893_Check_Product_Owner</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>A new feature request {!$Record.Name} has been raised for one of your products. Please review timely and update status.   </stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <actionCalls>
+        <name>US_0010893_Create_A_Feature_Request_Email_Alert</name>
+        <label>US-0010893 - Create A Feature Request Email Alert</label>
+        <locationX>50</locationX>
+        <locationY>1151</locationY>
+        <actionName>Requirement_Request__c.Create_A_Feature_Request_Email_Alert</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>US-0011705 - Product Manager Notifications</description>
+        <name>US_0011705_Create_A_Feature_Request_Email_Alert_To_Product_Manager</name>
+        <label>US-0011705 - Create A Feature Request Email Alert To Product Manager</label>
+        <locationX>248</locationX>
+        <locationY>575</locationY>
+        <actionName>Requirement_Request__c.Create_A_Feature_Request_Email_Alert_To_Product_Manager</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>X1_Check_if_Feature_Request_is_just_Populated_Owner</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>52.0</apiVersion>
+    <decisions>
+        <name>Check_Feature_Request_Create</name>
+        <label>Check Feature Request Create</label>
+        <locationX>380</locationX>
+        <locationY>455</locationY>
+        <defaultConnector>
+            <targetReference>X1_Check_if_Feature_Request_is_just_Populated_Owner</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Check_if_Feature_Request_Create</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.CreatedDate</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.LastModifiedDate</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>US_0011705_Create_A_Feature_Request_Email_Alert_To_Product_Manager</targetReference>
+            </connector>
+            <label>Check if Feature Request Create</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>US_0010893_Check_Product_Owner</name>
+        <label>US-0010893 - Check Product Owner</label>
+        <locationX>182</locationX>
+        <locationY>1031</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Check_Product_Owner</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.HIVE_Products__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>US_0010893_Create_A_Feature_Request_Email_Alert</targetReference>
+            </connector>
+            <label>Check Product Owner</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>X1_Check_if_Feature_Request_is_just_Populated_Owner</name>
+        <label>1) Check if Feature Request is just Populated Owner</label>
+        <locationX>380</locationX>
+        <locationY>791</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Owner_just_Populated</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.HIVE_Products__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record__Prior.HIVE_Products__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_Chatter_Post</targetReference>
+            </connector>
+            <label>Owner just Populated</label>
+        </rules>
+    </decisions>
+    <description>US-0009779 - Send Notification on Feature Request creation
+us-0011122 mention Nicole as well,
+US-0011331 New Hive Products Object - Hive Products field changes
+US-0010893 - Product Owner name assignment and flag validation
+US-0011705 - Product Manager Notifications</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>varNotfiMsgBody</name>
+        <dataType>String</dataType>
+        <expression>&quot;A new feature request &quot; + {!$Record.Name} + &quot; has been raised for one of your products. Please review timely and update status.&quot;</expression>
+    </formulas>
+    <interviewLabel>Feature Request - Record Create/Update - After Trigger {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Feature Request - Record Create/Update - After Trigger</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Product_Owner_Id</name>
+        <label>Get Product Owner Id</label>
+        <locationX>380</locationX>
+        <locationY>335</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_Feature_Request_Create</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>IsActive</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>FirstName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Nicole</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>LastName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Franzen</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>User</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>254</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Product_Owner_Id</targetReference>
+        </connector>
+        <object>Requirement_Request__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>varRecipient</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

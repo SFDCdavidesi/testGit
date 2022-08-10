@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_AU_CM_Seller_Outreach_Tasks</fullName>
+    <columns>SUBJECT</columns>
+    <columns>DUE_DATE</columns>
+    <columns>EBH_Account__c</columns>
+    <columns>WHO_NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>WHAT_NAME</columns>
+    <columns>STATUS</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>Order_Priority__c</columns>
+    <columns>EBH_fResponseCode__c</columns>
+    <columns>RECORDTYPE</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>SUBJECT</field>
+        <operation>contains</operation>
+        <value>AU CM Seller Outreach</value>
+    </filters>
+    <filters>
+        <field>STATUS</field>
+        <operation>equals</operation>
+        <value>Open,Paused</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Task.Standard_Task</value>
+    </filters>
+    <label>My AU CM Seller Outreach Tasks</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

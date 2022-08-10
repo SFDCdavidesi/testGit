@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rebate_In_Kind_Reason__c</fullName>
+    <description>US-0007824 - EU Advertising CPM Calculator</description>
+    <externalId>false</externalId>
+    <label>Rebate In Kind (Reason)</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Additional Delivery</fullName>
+                <default>false</default>
+                <label>Additional Delivery</label>
+            </value>
+            <value>
+                <fullName>Compensation</fullName>
+                <default>false</default>
+                <label>Compensation</label>
+            </value>
+            <value>
+                <fullName>Contract Component</fullName>
+                <default>false</default>
+                <label>Contract Component</label>
+            </value>
+            <value>
+                <fullName>On Top Service</fullName>
+                <default>false</default>
+                <label>On Top Service</label>
+            </value>
+            <value>
+                <fullName>Added Value</fullName>
+                <default>false</default>
+                <label>Added Value</label>
+            </value>
+            <value>
+                <fullName>Cancellation</fullName>
+                <default>false</default>
+                <label>Cancellation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

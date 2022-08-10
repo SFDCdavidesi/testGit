@@ -1,0 +1,9 @@
+Hello,
+
+A Credit Request has been submitted by {!Advertising_Request_Portal__c.OwnerFullName}. Please review in the link below.
+
+Account: {!Advertising_Request_Portal__c.Account__c}
+Opportunity: {!Advertising_Request_Portal__c.Opportunity__c}
+Amount: {!Advertising_Request_Portal__c.Opportunity_Amount__c}
+
+{!Advertising_Request_Portal__c.Link}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>EPH-7940 Deals Invoice - Rejection VAT Invoice email w/ Reason - DE</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DE Deal Invoice Reject</name>
+    <style>none</style>
+    <subject>Wichtige Rückfrage zur Abrechnung für WOW! Angebot vom {!DealStartDate}</subject>
+    <textOnly>Für die Abrechnung zum durchgeführten WOW! Angebot vom {!DealStartDate} konnte keine Auszahlung veranlasst werden.
+
+Der Grund dafür ist:
+
+{!RejectionComment}
+
+
+Bitte nehmen Sie entsprechende Änderungen vor und laden Sie hierfür die Rechnung erneut im Rechnungstool hoch.
+
+
+Details zum WOW! Angebot:
+
+Werbeaktionszeitraum: {!DealStartDate} bis {!DealEndDate}
+Produktname: {!ProductTitle}
+Artikelnummer: {!eBayItemId}
+Aktionsformat: {!LocalDealFormat}
+
+Abrechenbare Vermarktungsunterstützung:*
+
+Abrechenbare Verkaufsmenge: {!PayoutSICalc}
+Vermarktungsunterstützung pro verkauftem Artikel (inkl. USt.): {!Subsidy}
+Gesamt Vermarktungsunterstützung netto: {!SubsidyFinalNet}
+Umsatzsteuerbetrag: {!VAT_N}
+Gesamt Vermarktungsunterstützung brutto: {!SubsidyFinal}
+
+*Dies ist keine umsatzsteuerliche Rechnung. Die Rechnung wird vom Verkäufer gestellt.
+
+
+Wenn Sie mit der Übersicht und dem Auszahlungsbetrag übereinstimmen, werden wir den Betrag in Höhe von {!SubsidyFinal} auf Ihr hinterlegtes PayPal Konto auszahlen.
+
+Bitte laden Sie hierfür eine Rechnung im Rechnungstool hoch: Rechnung hochladen.
+
+
+Wenn Sie weitere Informationen benötigen oder Rückfragen zur Übersicht haben, klicken Sie bitte auf folgenden Link: Klärung einleiten.
+
+Ein eBay Mitarbeiter wird kurzfristig mit Ihnen Kontakt aufnehmen.
+
+
+Mit freundlichen Grüßen,
+
+Ihr eBay Team
+
+
+Diese E Mail wurde von der eBay GmbH im Zusammenhang mit Ihrem Mitgliedskonto bei www.ebay.de gesendet. Es handelt sich hierbei um eine einmalige Mitteilung. Eine Änderung Ihrer Benachrichtigungseinstellungen ist nicht erforderlich.
+
+Die eBay GmbH fragt niemals per E Mail nach persönlichen Daten (wie z.B. Passwort, Kreditkarten- oder Bankkontonummern).
+
+© 1995-2019 eBay Inc.
+
+Impressum
+eBay GmbH</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

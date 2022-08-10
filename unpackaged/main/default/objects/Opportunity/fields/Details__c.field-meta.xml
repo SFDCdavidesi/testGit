@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Details__c</fullName>
+    <description>INTEG - N || ** eBay Advertising ** || WF - N || AP - N || VAL - N ||Class - N || Definition: Details ||</description>
+    <externalId>false</externalId>
+    <label>Details</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Customer KPIs met</fullName>
+                <default>false</default>
+                <label>Customer KPIs met</label>
+            </value>
+            <value>
+                <fullName>Customer KPIs not met</fullName>
+                <default>false</default>
+                <label>Customer KPIs not met</label>
+            </value>
+            <value>
+                <fullName>Campaign Performance Issue</fullName>
+                <default>false</default>
+                <label>Campaign Performance Issue</label>
+            </value>
+            <value>
+                <fullName>Campaign Operational Issue</fullName>
+                <default>false</default>
+                <label>Campaign Operational Issue</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Cancelled During Campaign</controllingFieldValue>
+            <controllingFieldValue>Cancelled Before Campaign</controllingFieldValue>
+            <controllingFieldValue>Paused</controllingFieldValue>
+            <controllingFieldValue>Campaign Complete</controllingFieldValue>
+            <valueName>Customer KPIs met</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelled During Campaign</controllingFieldValue>
+            <controllingFieldValue>Cancelled Before Campaign</controllingFieldValue>
+            <controllingFieldValue>Paused</controllingFieldValue>
+            <controllingFieldValue>Campaign Complete</controllingFieldValue>
+            <valueName>Customer KPIs not met</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelled During Campaign</controllingFieldValue>
+            <controllingFieldValue>Cancelled Before Campaign</controllingFieldValue>
+            <controllingFieldValue>Paused</controllingFieldValue>
+            <controllingFieldValue>Campaign Complete</controllingFieldValue>
+            <valueName>Campaign Performance Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelled During Campaign</controllingFieldValue>
+            <controllingFieldValue>Cancelled Before Campaign</controllingFieldValue>
+            <controllingFieldValue>Paused</controllingFieldValue>
+            <controllingFieldValue>Campaign Complete</controllingFieldValue>
+            <valueName>Campaign Operational Issue</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

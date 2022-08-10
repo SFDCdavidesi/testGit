@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>FR [EBH] (EPH-4171) - Mass Acceptance of Deals without Subsidy</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>EBH_eBayBlankLetterhead</letterhead>
+    <name>FR Mass Acceptance of Deals with Subsidy</name>
+    <style>freeForm</style>
+    <subject>Vous trouverez ci-dessous le Bon de commande de votre promotion eBay / Please find below the Order form for your eBay promotion</subject>
+    <textOnly>Veuillez accepter ce bon de commande concernant votre opération promotionnelle en sélectionnant :
+J&#39;accepte
+
+Pseudo eBay : {!EBH_Deal__c.EBH_BusinessName__c}
+Titre : {!EBH_Deal__c.EBH_ProductTitle__c}
+Quantité : {!EBH_Deal__c.EBH_Quantity__c}
+
+Détails
+Format: {!EBH_Deal__c.EBH_LocalDealFormat__c}
+Date de début : {!EBH_Deal__c.EBH_DealStartDate__c}
+Date de fin : {!EBH_Deal__c.EBH_DealEndDate__c}
+Prix de vente hors promotion (prix de vente initial ou prix conseillé) : € {!EBH_Deal__c.EBH_RRPWASPrice__c}
+Prix après réduction : € {!EBH_Deal__c.EBH_SellerPrice__c}
+Frais pour le vendeur (après support marketing) : € {!EBH_Deal__c.EBH_DealPrice__c}
+Support marketing par objet vendu : {!EBH_Deal__c.EBH_Subsidy__c}
+Support marketing maximum - Quantité : € {!EBH_Deal__c.EBH_Quantity__c}
+Support marketing maximum - Montant : € {!EBH_Deal__c.EBH_SubsidyMax__c}
+
+Commentaires d&#39;eBay
+{!EBH_Deal__c.EBH_CommentfromeBaySourcer__c}
+
+En acceptant, vous garantissez et confirmez ce qui suit :
+
+L&#39;objet que vous proposez n&#39;est ni une contrefaçon ni une copie.
+Vous êtes autorisé à vendre ou distribuer cet objet, et à effectuer la livraison dans l’ensemble des pays que vous avez indiqués.
+Vous  n’enfreignez aucune obligation contractuelle issue d&#39;autres contrats en proposant cet objet à la vente sur eBay.
+Le prix de vente hors promotion indiqué ci-dessus est réel.
+Vous ne modifierez pas l&#39;annonce de l&#39;objet pendant la période promotionnelle indiquée ci-dessus sans l&#39;autorisation écrite expresse d&#39;eBay.
+En cas d’annonces de réduction de prix, Vous respectez les dispositions de l’article L.112-1-1 du Code de la consommation, qui exige que le prix antérieur affiché soit le prix le plus bas que Vous avez pratiqué au cours des 30 derniers jours précédant l&#39;application de la réduction de prix.
+
+
+Le présent bon de commande définit les conditions de l’opération promotionnelle sur le ou les site(s) d&#39;eBay indiqué(s) ci-dessus et fait partie intégrante des Conditions relatives aux promotions sur les prix que vous avez conclues avec eBay GmbH.
+
+
+
+Cordialement
+L&#39;équipe eBay
+
+
+
+
+
+English version
+
+
+
+Please accept this order form for your promotion selecting :
+
+I accept
+
+
+
+eBay Pseudo : {!EBH_Deal__c.EBH_BusinessName__c}
+
+Title : {!EBH_Deal__c.EBH_ProductTitle__c}
+
+Quantity : {!EBH_Deal__c.EBH_Quantity__c}
+
+
+
+Details
+
+Format : {!EBH_Deal__c.EBH_LocalDealFormat__c}
+
+Start Date : {!EBH_Deal__c.EBH_DealStartDate__c}
+
+End Date : {!EBH_Deal__c.EBH_DealEndDate__c}
+
+Item price excluding promotion (Was price or recommended retail price) : € {!EBH_Deal__c.EBH_RRPWASPrice__c}
+
+Discounted price : € {!EBH_Deal__c.EBH_SellerPrice__c}
+
+Fees for the Seller (after marketing support) : € {!EBH_Deal__c.EBH_DealPrice__c}
+
+Marketing support per item sold : {!EBH_Deal__c.EBH_Subsidy__c}
+
+Maximum marketing support – Quantity : € {!EBH_Deal__c.EBH_Quantity__c}
+
+Maximum marketing support – Amount : € {!EBH_Deal__c.EBH_SubsidyMax__c}
+
+
+eBay comments:
+
+{!EBH_Deal__c.EBH_CommentfromeBaySourcer__c}
+
+
+By accepting, You warrant and confirm the following:
+
+
+The item you sell is not an infringement or a copy.
+You are authorized to sell or distribute this item, and to ship it to any countries you indicated.
+You are not in breach of any contractual obligations arising from other contracts by offering this item for sale on eBay.
+The item price excluding promotion shown above is real and accurate.
+You will not modify the listing of the item during the promotion period, as specified above, without eBay’s express written permission.
+If You promote a price reduction based on the item&#39;s previous price (“was” price), You comply with the provisions of Article L.112-1-1 of the French Consumer Code, which requires that the previous price displayed be the lowest price You have applied during the last 30 days prior to the application of the price reduction.
+
+
+This order form sets forth the terms and conditions of the promotion on the eBay website(s) indicated above and is subject to the Pricing Promotion Agreement you have entered into with eBay GmbH.
+
+
+Sincerely,
+
+
+eBay team</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

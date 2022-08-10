@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Amount_Net__c</fullName>
+    <description>US-0007824 - EU Advertising CPM Calculator</description>
+    <externalId>false</externalId>
+    <formula>Sales_Price_incl_Targeting__c * IF (ISPICKVAL(Billing_Category__c, &#39;CPM&#39;),Quantity__c/1000, Quantity__c) * (1 - Rate_Card_Discount_percent__c) * (1- Rate_Discount_I__c) * (1- Rate_Discount_II__c) * (1- Special_Agency_Discount_shadow__c)
+
+/*
+IF(ISBLANK(Package_Line_Item__c), 
+Sales_Price_incl_Targeting__c * 
+IF (ISPICKVAL(Billing_Category__c, &#39;CPM&#39;),Quantity__c/1000, Quantity__c)* 
+(1 - Rate_Card_Discount_percent__c) * (1- Rate_Discount_I__c) * (1- Rate_Discount_II__c) * (1- Special_Agency_Discount_shadow__c),
+0)
+*/</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Amount gross less any discounts</inlineHelpText>
+    <label>Discounted Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <type>Currency</type>
+</CustomField>

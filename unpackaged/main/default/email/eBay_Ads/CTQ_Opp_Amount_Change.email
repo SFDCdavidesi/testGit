@@ -1,0 +1,8 @@
+Opportunity Details:
+
+Previous Amount: {!Opportunity.Previous_Opportunity_Amount__c}
+New Amount: {!Opportunity.Amount}
+Opportunity Name: {!Opportunity.Name}
+Opportunity Owner: {!Opportunity.OwnerFullName}
+
+Link to Opportunity: {!Opportunity.Link}

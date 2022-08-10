@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>eBay_Letterhead_Standard</letterhead>
+    <name>Approval Assignment</name>
+    <style>freeForm</style>
+    <subject>Approval ASSIGNMENT - {!Quote.Name} ({!Quote.Advertiser__c})</subject>
+    <textOnly>The following quote has been assigned to you. Please check for approval:
+
+Account: {!Quote.Advertiser__c}
+Quote Name: {!Quote.Name}
+Quote Owner: {!Quote.OwnerFullName}
+
+Amount_NetNetNet: {!Quote.Amount_Net_Net_Net__c}
+Rate Card Discount: {!Opportunity.Rate_Card_Discount_this_Order__c}
+Special Agency Discount: {!Quote.Special_Agency_Discount__c}
+Rate Discount I: {!Quote.Rate_Discount_I__c}
+AE: {!Quote.AE__c}
+
+Turnover Last 180 Days: {!Account.Turnover_180_Days__c}
+Pre-Approved Template: {!Quote.Pre_approved_template__c}
+Exit-Agreement: {!Quote.Exit_Clause__c}
+
+
+Link external: {!ApprovalRequest.External_URL}
+Link internal: {!ApprovalRequest.Internal_URL}
+
+Floor Price Checker</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

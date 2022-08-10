@@ -1,0 +1,68 @@
+<!-- <apex:page showHeader="false" title="{!$Label.site.in_maintenance}" cache="false">
+  <apex:composition template="StdExceptionTemplate">
+    <apex:define name="icon">
+      <apex:image url="{!URLFOR($Resource.SiteSamples, 'img/warning.png')}"/>
+    </apex:define>
+    <apex:define name="error">
+      <apex:outputText escape="false" styleClass="title" value="{!$Label.site.down_for_maintenance}">
+        <apex:param value="{!$Site.BaseUrl}"/>
+      </apex:outputText>
+      <br/>
+      <br/>
+      <apex:outputText value="{!$Label.site.sorry_for_inconvenience_back_shortly}"/>
+      <apex:outputText escape="false" value=" {!$Label.site.get_in_touch}">
+      <apex:param value="mailto:{!HTMLENCODE($Site.AdminEmailAddress)}"/>
+      <apex:param value="{!$Label.site.email_us}"/>
+    </apex:outputText>
+   </apex:define>
+  </apex:composition>
+</apex:page> -->
+<!-- US-0011676 - Override the standard force.com message when Seller Portal unavailable -->
+
+<apex:page showHeader="false" cache="false" lightningStylesheets="true" language="{!IF(CONTAINS($Label.SEP_Domain_DE, $Site.Domain),'de','en')}">
+  <apex:includeScript value="/lightning/lightning.out.js" />
+  <apex:slds />
+  <style>
+    .slds-scope:not(html), .slds-scope body {
+      background-color: #f8f9fb; 
+    }
+    .centered {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      /* bring your own prefixes */
+      transform: translate(-50%, -50%);
+    }
+    .wrapper{
+        position: relative;
+        background-color: #f8f9fb;
+        overflow: hidden;
+        width: 1100px;
+    }
+   </style> 
+   <div class="centered">
+    <div class="wrapper">
+      <div id="lightning" />
+      
+      <script>
+        $Lightning.use("c:lwcGenericErrorMessageApp", function() {
+            $Lightning.createComponent(
+                "c:lwcGenericErrorMessage",
+                {
+                  customError: 'true',
+                  titleName: '{!$Label.site.down_for_maintenance}', 
+                  baseUrl: '{!$Site.BaseUrl}', 
+                  labelHomeButton: "{!$Label.lwcGenericErrorMessage_Homebutton}",
+                  customLabel:  "{!$Label.MessageErrorInMaintenance}",
+                  adminEmailAddress:  "{!$Site.AdminEmailAddress}"
+                },
+                "lightning",
+                function (cmp) {
+                    // 
+                }
+            );
+        });
+      </script>
+    </div>
+  </div>
+</apex:page>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>ES [EBH] (EPH-4176) - Mass Rejection of Deals</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>EBH_eBayBlankLetterhead</letterhead>
+    <name>ES Mass Rejection of Deals</name>
+    <style>freeForm</style>
+    <subject>Propuesta de oferta rechazada</subject>
+    <textOnly>Estimado vendedor:
+
+Gracias por enviar tu propuesta para el programa de ofertas de eBay.
+
+
+Cuenta o seudónimo de eBay: {!EBH_Deal__c.EBH_BusinessName__c}
+
+Título del producto: {!EBH_Deal__c.EBH_ProductTitle__c}
+
+Cantidad: {!EBH_Deal__c.EBH_Quantity__c}
+
+Precio original (PVP/precio anterior): € {!EBH_Deal__c.EBH_RRPWASPrice__c}
+
+Precio de la oferta del vendedor: € {!EBH_Deal__c.EBH_DealPrice__c}
+
+Motivo del rechazo: {!EBH_Deal__c.EBH_ReasonforRejection__c}
+
+Comentarios: {!EBH_Deal__c.EBH_ReasonforRejectionextd__c}
+
+
+En esta ocasión lamentablemente no hemos seleccionado tu oferta.
+
+
+Recuerda: las ofertas se seleccionan teniendo en cuenta varios criterios, entre los que se incluyen los siguientes:
+
+
+• Precio competitivo en el mercado: durante el periodo de validez de la oferta, los consumidores no deberían poder encontrar el mismo producto a un precio más bajo en ningún otro lugar.
+
+• Relevancia para los usuarios: los artículos ofrecidos deben pertenecer a categorías con una gran demanda en el mercado o responder a necesidades específicas según la temporada
+
+• Suficiente stock: el vendedor debe disponer de una cantidad suficiente del artículo propuesto para hacer frente a la demanda generada en el periodo de validez de la oferta.
+
+• Variedad: es importante ofrecer a los usuarios la mayor variedad posible de ofertas que representen la extensa gama de artículos disponibles en eBay.
+
+
+Esperamos que nos envíes otras ofertas muy pronto y esta vez sean aprobadas.
+
+
+Un saludo,
+
+
+El equipo de eBay</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

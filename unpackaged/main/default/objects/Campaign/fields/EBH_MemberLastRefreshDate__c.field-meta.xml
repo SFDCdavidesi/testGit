@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_MemberLastRefreshDate__c</fullName>
+    <description>[EBH] (EPH-5624) - to capture member last refresh date when refresh members button has been clicked</description>
+    <externalId>false</externalId>
+    <label>Member Last Refresh Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>eBay_Data_used_in_Targeting</fullName>
+    <active>true</active>
+    <description>this field is required if opportunity stage is verbal commit, contract processing</description>
+    <errorConditionFormula>AND(
+
+$Setup.byPass__c.ByPass_Validation__c = FALSE,
+$Profile.Name = &quot;Standard Ads User Profile&quot;,
+
+OR(
+RecordType.DeveloperName = $Label.OPP_RECORDTYPEDEVNAME_DIRECT,
+RecordType.DeveloperName = $Label.OPP_RECORDTYPEDEVNAME_PROGRAMMATIC,
+RecordType.DeveloperName = $Label.OPP_RECORDTYPEDEVNAME_PMP
+),
+
+ISBLANK( TEXT(eBay_Data_used_in_Targeting__c )),
+
+OR(
+ISPICKVAL( StageName, &#39;Verbal Commitment&#39;),
+ISPICKVAL( StageName, &#39;Contract Processing &amp; Review&#39;)
+)
+)</errorConditionFormula>
+    <errorDisplayField>eBay_Data_used_in_Targeting__c</errorDisplayField>
+    <errorMessage>please fill out this field</errorMessage>
+</ValidationRule>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>Owner</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>loumang.seng@copado.hive</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>tdelmege@hive.project.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <label>step 1</label>
+        <name>step_1</name>
+    </approvalStep>
+    <description>US-0006886 [AU] Approval Process for eBay AU SMB Project with lead Source &quot;Self Gen&quot;</description>
+    <emailTemplate>EBH_DealsTemplates/AU_SMB_Self_Gen_Lead_Approval</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5</booleanFilter>
+        <criteriaItems>
+            <field>Lead.RecordType</field>
+            <operation>equals</operation>
+            <value>New Seller Registration Process</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.LeadSource</field>
+            <operation>equals</operation>
+            <value>Self Gen</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.isapproved__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.LeadSegment__c</field>
+            <operation>equals</operation>
+            <value>SMB</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Site__c</field>
+            <operation>equals</operation>
+            <value>AU</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Lead_Check_Approve</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <label>AU SMB Self Gen Lead Approval</label>
+    <processOrder>1</processOrder>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

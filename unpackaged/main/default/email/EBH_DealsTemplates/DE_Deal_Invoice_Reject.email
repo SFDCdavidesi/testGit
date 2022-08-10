@@ -1,0 +1,41 @@
+<p>F&uuml;r die Abrechnung zum durchgef&uuml;hrten WOW! Angebot vom {!DealStartDate} konnte keine Auszahlung veranlasst werden.</p>
+<p>Der Grund daf&uuml;r ist:</p>
+<table style="height: 156px; border: 1px solid black;" width="637">
+<tbody>
+<tr>
+<td style="width: 627.111px; text-align: justify; vertical-align: top; padding: 5px;">{!RejectionComment}</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>Bitte nehmen Sie entsprechende &Auml;nderungen vor und laden Sie hierf&uuml;r die Rechnung erneut im Rechnungstool hoch.</p>
+<p>&nbsp;</p>
+<p>Details zum WOW! Angebot:</p>
+<ul>
+<li>Werbeaktionszeitraum: {!DealStartDate} bis {!DealEndDate}</li>
+<li>Produktname: {!ProductTitle}</li>
+<li>Artikelnummer: {!eBayItemId}</li>
+<li>Aktionsformat: {!LocalDealFormat}</li>
+</ul>
+<p><strong>Abrechenbare Vermarktungsunterst&uuml;tzung:*</strong></p>
+<ul>
+<li>Abrechenbare Verkaufsmenge: {!PayoutSICalc}</li>
+<li>Vermarktungsunterst&uuml;tzung pro verkauftem Artikel (inkl. USt.): {!Subsidy}</li>
+<li>Gesamt Vermarktungsunterst&uuml;tzung netto: {!SubsidyFinalNet}</li>
+<li>Umsatzsteuerbetrag: {!VAT_N}</li>
+<li>Gesamt Vermarktungsunterst&uuml;tzung brutto: {!SubsidyFinal}</li>
+</ul>
+<p>*Dies ist keine umsatzsteuerliche Rechnung. Die Rechnung wird vom Verk&auml;ufer gestellt.</p>
+<p>&nbsp;</p>
+<p>Wenn Sie mit der &Uuml;bersicht und dem Auszahlungsbetrag &uuml;bereinstimmen, werden wir den Betrag in H&ouml;he von {!SubsidyFinal} auf Ihr hinterlegtes PayPal Konto auszahlen.</p>
+<p>Bitte laden Sie hierf&uuml;r eine Rechnung im Rechnungstool hoch: <a title="Rechnung hochladen" href="{!UrlInvoiceUpload}">Rechnung hochladen</a>.</p>
+<p>&nbsp;</p>
+<p>Wenn Sie weitere Informationen ben&ouml;tigen oder R&uuml;ckfragen zur &Uuml;bersicht haben, klicken Sie bitte auf folgenden Link: <a title="Kl&auml;rung einleiten" href="{!UrlClarification}">Kl&auml;rung einleiten</a>.</p>
+<p>Ein eBay Mitarbeiter wird kurzfristig mit Ihnen Kontakt aufnehmen.</p>
+<p>&nbsp;</p>
+<p>Mit freundlichen Gr&uuml;&szlig;en,<br /><br />Ihr eBay Team</p>
+<p>&nbsp;</p>
+<p><span style="font-size: 10px;">Diese E Mail wurde von der eBay GmbH im Zusammenhang mit Ihrem Mitgliedskonto bei <a title="www.ebay.de" href="https://www.ebay.de/">www.ebay.de</a> gesendet. Es handelt sich hierbei um eine einmalige Mitteilung. Eine &Auml;nderung Ihrer Benachrichtigungseinstellungen ist nicht erforderlich.</span></p>
+<p><span style="font-size: 10px;">Die eBay GmbH fragt niemals per E Mail nach pers&ouml;nlichen Daten (wie z.B. Passwort, Kreditkarten- oder Bankkontonummern).</span></p>
+<p><span style="font-size: 10px;">&copy; 1995-2019 eBay Inc.</span></p>
+<p><span style="font-size: 10px;">Impressum<br />eBay GmbH</span></p>

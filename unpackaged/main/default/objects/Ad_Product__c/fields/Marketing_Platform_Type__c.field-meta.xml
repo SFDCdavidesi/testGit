@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marketing_Platform_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Marketing Platform Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Madrona</fullName>
+                <default>false</default>
+                <label>Madrona</label>
+            </value>
+            <value>
+                <fullName>UEM</fullName>
+                <default>false</default>
+                <label>UEM</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

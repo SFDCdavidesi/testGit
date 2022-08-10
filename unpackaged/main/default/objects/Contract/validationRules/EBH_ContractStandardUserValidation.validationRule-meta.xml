@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_ContractStandardUserValidation</fullName>
+    <active>true</active>
+    <description>US-0024, US-0007080</description>
+    <errorConditionFormula>AND(
+OR(
+ISPICKVAL(Status, &#39;Sent for Seller Signature&#39;),
+ISPICKVAL(Status, &#39;Approved&#39;)
+),
+!EBH_Approved__c ,
+NOT(ISNEW()) &amp;&amp; NOT(OR($Profile.Name = &quot;System Administrator&quot;, $Profile.Name = &quot;Business Admin&quot; ,$Permission.EBH_ContractAdmin))
+) &amp;&amp; NOT( $Setup.ActiveValidationRules__c.All_Validation_Rules_Deactivated__c )</errorConditionFormula>
+    <errorMessage>This contract status change is not allowed, please contact your admin.</errorMessage>
+</ValidationRule>

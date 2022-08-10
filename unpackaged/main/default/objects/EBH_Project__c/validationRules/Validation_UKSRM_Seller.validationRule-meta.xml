@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_UKSRM_Seller</fullName>
+    <active>true</active>
+    <description>US-0009646 - UK Risk: Enable Activity/Chatter, Files &amp; additional Validations</description>
+    <errorConditionFormula>NOT($Setup.byPass__c.ByPass_Validation__c) &amp;&amp;
+$Permission.UK_Seller_Risk_Management_BU &amp;&amp;
+ISBLANK(EBH_Seller__c) &amp;&amp;
+RecordType.DeveloperName = &#39;Seller_Risk_Management&#39;</errorConditionFormula>
+    <errorDisplayField>EBH_Seller__c</errorDisplayField>
+    <errorMessage>Complete this field.</errorMessage>
+</ValidationRule>

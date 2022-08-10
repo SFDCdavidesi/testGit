@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">Hello {!Case.CreatedBy},
+<p>&nbsp;</p>
+
+<p>Thanks for creating a new HIVE feature request - Ticket ID: <a href="{!Case.Link}" style="text-decoration:none">{!Case.CaseNumber}</a></p>
+
+<p>Please find below a summary of your ticket information:</p>
+
+<p>&nbsp;</p>
+
+<ul>
+	<li>Summary: {!Case.Summary__c}</li>
+	<li>Description: {!Case.Description__c}</li>
+	<li>Business Sponsor: {!Case.Business_Sponsor__c}</li>
+	<li>Business Priority: {!Case.Business_Priority__c}</li>
+	<li>Functional Area: {!Case.HIVE_Product_Name__c}</li>
+	<li>Number of Users: {!Case.Number_of_Users__c}</li>
+	<li>Region(s): {!Case.Region__c}</li>
+	<li>Request Category: {!Case.Request_Category__c}</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>We will notify you again when your ticket will be processed and status will change.</p>
+
+<p>&nbsp;</p>
+
+<p>Feel free to reach out via the HIVE chatter group referencing your Ticket ID for any urgent questions in between.</p>
+
+<p>&nbsp;</p>
+
+<p>Thanks,</p>
+
+<p>Your HIVE team</p>
+</body>
+</html>

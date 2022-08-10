@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0006971 [AU] Deals Accept - Send Deals Accept with/without Subsidy Template to AU Sellers, US-0011815 - Item ID is not populating in Deal Contract sent out to Sellers</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>AU Deal Template without Subsidy</name>
+    <style>none</style>
+    <subject>Deals Portal Term Sheet – Your participation in the Deals Program</subject>
+    <textOnly>PARTIES
+eBay, us
+
+eBay Marketplaces GmbH, a company incorporated in Bern, whose principal place of business is at Helvetiastrasse 15/17, CH-3005 Bern, Switzerland.
+
+You or Your
+
+{!EBH_Deal__c.CompanyName__c}, (ABN {!EBH_Deal__c.SellerVATNumber__c}) a company incorporated in Australia, with its principal place of business at {!EBH_Deal__c.SellerAddress__c}.
+
+The terms of this email are subject to the Deals Portal Master Terms and Conditions between eBay and You, which is set out at: [https://pages.ebay.com.au/deals-portal/terms]. Terms not defined shall have the meaning given to them in the Deals Portal Master Terms and Conditions.
+
+Your participation in the Deals Program has been approved by eBay. Pursuant to the Deals Portal Master Terms and Conditions, You and eBay agree to enter into a Deals Portal Term Sheet as set out in this email. The details of Your participation in the Deals Program are as set out below:
+
+Seller User ID  User ID: {!EBH_Deal__c.eBay_Seller_Name__c}
+Deal Period  From time (“Start Time”)  {!EBH_Deal__c.EBH_DealStartTime__c}
+From date (“Start Date”)  {!EBH_Deal__c.EBH_DealStartDate__c}
+To time (“End Time”)  {!EBH_Deal__c.EBH_DealEndTime__c}
+To date (“End Date”)  {!EBH_Deal__c.EBH_DealEndDate__c}
+
+Deal:
+
+Item  Item Number  Current Price (List Price or RRP)  Agreed Deal Price to Customers  Quantity/Units
+{!EBH_Deal__c.EBH_ProductTitle__c}  {!EBH_Deal__c.EBH_eBayItemID__c}  {!EBH_Deal__c.EBH_RRPWASPrice__c}  {!EBH_Deal__c.EBH_DealPrice__c}  {!EBH_Deal__c.EBH_Quantity__c}
+
+IF YOU ACCEPT THE TERMS OF THIS EMAIL, CLICK “I AGREE” BELOW. BY CLICKING “I AGREE” BELOW, YOU ARE CONFIRMING THAT YOU ARE DULY AUTHORISED TO ENTER INTO AN AGREEMENT WITH EBAY AND THAT THE INFORMATION PROVIDED IS ACCURATE.
+
+I AGREE</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SellerNotInvitedReason__c</fullName>
+    <description>US-0007672 - &quot;Light Touch Seller Layout&quot; page layout,New field and help text updates</description>
+    <externalId>false</externalId>
+    <label>Seller not Invited Reason</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Invited</fullName>
+                <default>false</default>
+                <label>Invited by email or Message Centre</label>
+            </value>
+            <value>
+                <fullName>To be Invited</fullName>
+                <default>false</default>
+                <label>To be Invited</label>
+            </value>
+            <value>
+                <fullName>Not Eligible</fullName>
+                <default>false</default>
+                <label>Not Eligible</label>
+            </value>
+            <value>
+                <fullName>Eligible - no emails nor MCs opted-in</fullName>
+                <default>false</default>
+                <label>Eligible - no emails nor MCs opted-in</label>
+            </value>
+            <value>
+                <fullName>Suppressed</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Suppressed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Priority__c</fullName>
+    <description>US-0006986 - Hive feature request improvements</description>
+    <externalId>false</externalId>
+    <inlineHelpText>High = Business is blocked - adds business value and no workaround exists
+Medium = adding business value - workaround exists
+Low = not business critical - workaround exists</inlineHelpText>
+    <label>Business Priority</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>BA_Priority</valueSetName>
+    </valueSet>
+</CustomField>

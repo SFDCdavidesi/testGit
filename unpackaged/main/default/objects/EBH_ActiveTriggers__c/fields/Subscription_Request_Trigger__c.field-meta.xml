@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subscription_Request_Trigger__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>US-0010561 - [AM] Store Account Manager Subscription Requests in Hive</description>
+    <externalId>false</externalId>
+    <label>Subscription_Request_Trigger</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

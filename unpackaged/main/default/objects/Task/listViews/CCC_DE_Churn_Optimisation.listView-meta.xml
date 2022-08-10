@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CCC_DE_Churn_Optimisation</fullName>
+    <columns>WHAT_NAME</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>EBH_Account__c</columns>
+    <columns>Call_attempts__c</columns>
+    <columns>Order_Priority__c</columns>
+    <columns>Campaign_Priority__c</columns>
+    <columns>STATUS</columns>
+    <columns>PRIORITY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>WHAT_NAME</field>
+        <operation>contains</operation>
+        <value>GCX_PL_DE_2021_SLA</value>
+    </filters>
+    <filters>
+        <field>STATUS</field>
+        <operation>equals</operation>
+        <value>Open,In Progress</value>
+    </filters>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>greaterThan</operation>
+        <value>5/26/2021 12:00 AM</value>
+    </filters>
+    <label>SLA 2021</label>
+</ListView>

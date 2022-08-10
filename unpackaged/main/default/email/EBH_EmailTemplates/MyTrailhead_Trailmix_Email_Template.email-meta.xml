@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0009491 - MyTrailhead - Create Trailmix assignement Email</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>MyTrailhead Trailmix Email Template</name>
+    <style>none</style>
+    <subject>🐝 Hive University: New Trailmix {!trailheadapp__Trailmix__c.Name} assigned to you</subject>
+    <textOnly>Hi {!trailheadapp__User_Trailmix__c.OwnerFirstName__c},
+
+a new learning Trailmix has been assigned to you:
+
+{!trailheadapp__User_Trailmix__c.Trailmix_Name__c}
+
+Description: {!trailheadapp__User_Trailmix__c.Description__c}
+
+Stay up-to-date with our latest Hive features by completing this important training,
+
+Team Hive
+
+Start Course Now</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

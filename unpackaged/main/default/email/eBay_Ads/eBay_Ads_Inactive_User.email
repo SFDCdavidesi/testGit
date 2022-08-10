@@ -1,0 +1,5 @@
+This user has just been deactivated:
+
+{!Target_User.FirstName} {!Target_User.LastName}
+{!Target_User.Email}
+{!Target_User.Profile}

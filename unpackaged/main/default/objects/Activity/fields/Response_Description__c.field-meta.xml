@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Response_Description__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Filled by the Assignee</inlineHelpText>
+    <label>Response Description</label>
+    <required>false</required>
+    <type>TextArea</type>
+</CustomField>

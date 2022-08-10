@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Issue_97_flag__c</fullName>
+    <description>US-0009564 - UK Risk: GCX permission set and New fields on Project</description>
+    <externalId>false</externalId>
+    <inlineHelpText>check if issue 97 was placed on the account</inlineHelpText>
+    <label>Issue 97 flag</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Internally_Approved_Rejected_Timestamp__c</fullName>
+    <description>US-0010280 - Email is not sent when deal is internally approved</description>
+    <externalId>false</externalId>
+    <label>Internally Approved/Rejected Timestamp</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

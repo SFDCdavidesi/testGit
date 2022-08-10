@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_PreventCampaignMemberDeletion</fullName>
+    <active>true</active>
+    <description>EPH-3308, US-0007080</description>
+    <errorConditionFormula>ISCHANGED( EBH_NumberofCampaignMembers__c ) &amp;&amp; EBH_NumberofCampaignMembers__c &lt; PRIORVALUE(EBH_NumberofCampaignMembers__c) 
+
+&amp;&amp; !($Profile.Name ==&#39;Business Admin&#39; || $Profile.Name ==&#39;System Administrator&#39;) &amp;&amp;
+ !$Setup.EBH_DataOrigin__c.EBH_CampaignDeleteValidation__c &amp;&amp; NOT( $Setup.ActiveValidationRules__c.All_Validation_Rules_Deactivated__c )</errorConditionFormula>
+    <errorMessage>Campaign Member cannot be deleted.</errorMessage>
+</ValidationRule>

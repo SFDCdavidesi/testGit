@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_FirstListDate__c</fullName>
+    <description>[EBH] (US-0031) : First List Date</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Seller´s first listing date.</inlineHelpText>
+    <label>First List Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

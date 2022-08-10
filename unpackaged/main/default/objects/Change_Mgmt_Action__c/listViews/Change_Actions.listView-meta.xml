@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Change_Actions</fullName>
+    <columns>NAME</columns>
+    <columns>Change_Type__c</columns>
+    <columns>Status__c</columns>
+    <columns>Priority__c</columns>
+    <columns>Due_Date__c</columns>
+    <columns>Hive_Project__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>Change Actions</label>
+</ListView>

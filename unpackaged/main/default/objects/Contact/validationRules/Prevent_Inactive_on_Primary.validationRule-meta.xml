@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Inactive_on_Primary</fullName>
+    <active>true</active>
+    <description>EPH-7586, US-0007080</description>
+    <errorConditionFormula>AND( Primary_Contact__c ,  ISPICKVAL( EBH_Status__c , &#39;Inactive&#39;) ) &amp;&amp; NOT( $Setup.ActiveValidationRules__c.All_Validation_Rules_Deactivated__c )</errorConditionFormula>
+    <errorMessage>Please make sure to assign the primary contact flag to another active user before progressing setting this contact to inactive</errorMessage>
+</ValidationRule>

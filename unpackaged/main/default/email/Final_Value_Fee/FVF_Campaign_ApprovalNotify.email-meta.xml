@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0007178 FVF Campaign Approval Process</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>FVF_Campaign_ApprovalNotify</name>
+    <style>none</style>
+    <subject>New Final Value Fee Campaign Request</subject>
+    <textOnly>Dear {!User.Name},
+
+New Final Value Fee Campaign request has been created by {!CurrentUser}
+
+Below you will find a summary of the request:
+
+Total Number of sellers: {!Final_Value_Fee_FVF__c.Total_Number_of_Sellers__c}
+Total Number of Listings: {!Final_Value_Fee_FVF__c.Total_Number_of_Listings_fvfcampaign__c}
+Business Reason: {!Final_Value_Fee_FVF__c.Business_Reason__c}
+Start Date: {!Final_Value_Fee_FVF__c.Start_Date_w__c}
+End Date: {!Final_Value_Fee_FVF__c.End_Date_w__c}
+Manually Estimated Budget: {!Final_Value_Fee_FVF__c.Budget_Manually_Estimated__c}
+Automatically Estimated Budget: {!Final_Value_Fee_FVF__c.Budget_estimated_w__c}
+
+
+Please review {!Final_Value_Fee_FVF__c.Name} and either approve or reject the request.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

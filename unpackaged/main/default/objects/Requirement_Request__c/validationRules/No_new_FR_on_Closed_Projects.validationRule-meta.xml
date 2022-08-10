@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_new_FR_on_Closed_Projects</fullName>
+    <active>true</active>
+    <description>US-0010666 - AC3</description>
+    <errorConditionFormula>AND( TEXT(Hive_Project__r.Status__c)=&quot;Completed&quot; , ISNEW() )</errorConditionFormula>
+    <errorDisplayField>Hive_Project__c</errorDisplayField>
+    <errorMessage>The Hive Project attached is in status Completed yet. Please attach any new requests to Hive Project product maintenance.</errorMessage>
+</ValidationRule>

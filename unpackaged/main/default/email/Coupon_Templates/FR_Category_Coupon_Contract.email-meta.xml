@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0015705: Coupon Contract Localization for FR, IT &amp; ES (and updates to UK and DE version)</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>FR_Category_Coupon_Contract</name>
+    <style>none</style>
+    <subject>Campagne de bons d’achat | {eBaySellerID} | {Coupon_ID__c} | {CouponNameM} | {CouponStartDate} - {CouponEndDate}</subject>
+    <textOnly>Vous trouverez ci-dessous les informations concernant votre participation à la campagne de bons d’achat {Coupon_ID__c}. Veuillez valider ces informations en cliquant sur le bouton suivant avant le {ContractDueDate}:
+
+J&#39;ACCEPTE
+
+Vendeur  {LegalEntity}, {StreetName}, {Zip} {City}
+Pseudo(s) du vendeur pour la campagne de bons d’achat  {eBaySellerID}
+Site(s) eBay  {CouponSites}
+Période promotionnelle de la campagne de bons d’achat  Du {CouponStartDate} à {CouponStartTime} au {CouponEndDate} à {CouponEndTime} (Heure d&#39;Europe centrale) ou toute autre période définie par eBay. eBay se réserve le droit de déterminer les dates exactes de la période promotionnelle.
+Frais dus par le vendeur à eBay en cas de vente avec les bons d’achat
+
+{!catTable}
+
+sur la valeur utilisée des bons d’achat mis à disposition du vendeur
+
+Détails de la campagne de bons d’achat ou de la promotion   -Réduction de {CouponDiscount%}{CouponDiscountAmount} sur le prix de l&#39;objet
+
+
+-Réduction maximale par transaction : {CouponCap}
+
+
+-Montant minimum de la commande: {Minimum_Transaction_Value__c}
+
+
+-Utilisable {Max_Redemptions__c} fois par acheteur
+Partenaire contractuel eBay  eBay GmbH, Albert-Einstein-Ring 2-6, 14532 Kleinmachnow
+Divers  {AdditionalArrangement}
+
+
+En acceptant, vous confirmez et garantissez ce qui suit :
+
+Tout objet que vous mettez en vente n&#39;est ni une contrefaçon ni une copie non autorisée.
+Vous êtes autorisé(e) à vendre/distribuer les objets et à les envoyer vers les lieux de livraison que vous avez indiqués.
+Vous ne manquez à aucune obligation découlant d’autres contrats en mettant en vente des objets sur eBay.
+
+Le présent accord documente les modalités et conditions de la campagne de bons d’achat sur le ou les site(s) eBay indiqué(s) ci-dessus et fait partie des Conditions relatives aux promotions sur les prix sur la place de marché eBay conclu entre eBay et vous.
+
+
+Cordialement,
+
+L&#39;équipe eBay</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

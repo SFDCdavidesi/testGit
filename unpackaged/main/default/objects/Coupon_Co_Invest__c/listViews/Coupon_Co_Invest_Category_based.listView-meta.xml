@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Coupon_Co_Invest_Category_based</fullName>
+    <columns>Coupon_Name__c</columns>
+    <columns>Coupon_Code__c</columns>
+    <columns>Coupon_Seller__c</columns>
+    <columns>Seller_Name__c</columns>
+    <columns>Category__c</columns>
+    <columns>Co_Invest__c</columns>
+    <columns>EBH_Owner__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Coupon_Name__c</field>
+        <operation>equals</operation>
+        <value>C-000571</value>
+    </filters>
+    <filters>
+        <field>Seller_Name__c</field>
+        <operation>notEqual</operation>
+        <value>schredders-reifen,rsu_gmbh,reifenchampion,atushop,reifencloud,pneurope,shredders-reifen,mm_concepts</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Coupon_Co_Invest__c.Coupon_Co_Invest_Category</value>
+    </filters>
+    <label>Coupon Co-Invest - Category based</label>
+</ListView>

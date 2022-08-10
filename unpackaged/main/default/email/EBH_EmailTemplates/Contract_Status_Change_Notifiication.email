@@ -1,0 +1,5 @@
+<p>Dear {!Coupon__c.Budget_Manager__c}</p>
+<p>{!Coupon__c.OwnerFullName} has submitted a new&nbsp;{!Coupon__c.RecordType} Coupon <strong>{!Coupon__c.Marketing_Coupon_Name__c}</strong>&nbsp; with rundate from {!Coupon__c.Coupon_Start_Date__c} to {!Coupon__c.Coupon_End_Date__c}. The requested Budget amount is {!Coupon__c.eBay_Budget__c} and seller co-funding {!Coupon__c.Seller_Co_funding_share_forecast__c}.</p>
+<p>Please screen the coupon request in Hive and set to stage Budget confirmed to ensure the {!Coupon__c.OwnerFullName} can continue with the set up. Link to Coupon record: <a href="{!Coupon__c.Link}">Coupon Link</a></p>
+<p>Thank you,</p>
+<p>Hive</p>

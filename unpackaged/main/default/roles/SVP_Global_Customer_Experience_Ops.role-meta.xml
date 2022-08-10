@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>SVP Global Customer Experience &amp; Ops</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>SVP Global Customer Experience &amp; Ops</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>AU</parentRole>
+</Role>

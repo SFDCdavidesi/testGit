@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Regional_Availability__c</fullName>
+    <description>US-0010711</description>
+    <externalId>false</externalId>
+    <label>Regional Availability</label>
+    <required>false</required>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Site</valueSetName>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

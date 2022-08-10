@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_IsContractAdminLogin__c</fullName>
+    <description>[EBH] (EPH-4159) - Show &#39;Send with DocuSign&#39; button for  Contract Admins only</description>
+    <externalId>false</externalId>
+    <formula>$Permission.EBH_ContractAdmin</formula>
+    <label>Is Contract Admin Login</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

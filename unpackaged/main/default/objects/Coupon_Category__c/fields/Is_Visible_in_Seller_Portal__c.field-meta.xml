@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Visible_in_Seller_Portal__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>US-0011385 - External Sharing for Coupon Category/ Category Tree</description>
+    <externalId>false</externalId>
+    <label>Is Visible in Seller Portal</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

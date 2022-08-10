@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0011779 - Internal Coupon Seller Approval flow for NA</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>NA Coupons Co-fund approval Template</name>
+    <style>none</style>
+    <subject>{!Coupon_Seller__c.Coupon__c} for {!Coupon_Seller__c.Seller_Name__c} is Ready for Approval</subject>
+    <textOnly>Dear User,
+
+
+Coupon {!Coupon_Seller__c.Coupon_ID__c} for Seller {!Coupon_Seller__c.Seller_Name__c} is now ready for your approval
+
+
+Coupon Start Date: {!Coupon_Seller__c.Coupon_Start_Date__c}
+
+Coupon End Date: {!Coupon_Seller__c.Coupon_End_Date__c}
+
+Coupon Seller Owner: {!Coupon_Seller__c.EBH_CouponSellerOwner__c}
+
+eBay co-fund max: {!Coupon_Seller__c.eBay_Co_fund_Max__c}
+
+Please click the following link to approve the record (link to Approval page)
+
+
+Thank you</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

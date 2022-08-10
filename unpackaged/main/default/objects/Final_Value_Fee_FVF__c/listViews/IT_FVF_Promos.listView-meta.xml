@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IT_FVF_Promos</fullName>
+    <columns>NAME</columns>
+    <columns>Final_Value_Fee_Stage__c</columns>
+    <columns>Requestor__c</columns>
+    <columns>Seller_Name__c</columns>
+    <columns>Start_Date_w__c</columns>
+    <columns>End_Date_w__c</columns>
+    <columns>Contact_Person__c</columns>
+    <columns>Contract_Accept_Date__c</columns>
+    <columns>Discount_FVF__c</columns>
+    <columns>Total_Number_of_Listings__c</columns>
+    <columns>Rev_RollUp__c</columns>
+    <columns>Budget_Manually_Estimated__c</columns>
+    <columns>Approved_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Primary_Site__c</field>
+        <operation>equals</operation>
+        <value>IT</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Final_Value_Fee_FVF__c.FVF_Listing_Level</value>
+    </filters>
+    <label>IT FVF Promos</label>
+</ListView>

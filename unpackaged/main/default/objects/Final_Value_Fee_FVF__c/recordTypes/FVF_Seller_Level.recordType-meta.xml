@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FVF_Seller_Level</fullName>
+    <active>true</active>
+    <description>(ONLY FOR UK)  Request for the Final Value Fee Discount to one sellers and for all listings that seller will sell during the FVF period.</description>
+    <label>FVF (Seller Level)</label>
+    <picklistValues>
+        <picklist>Final_Value_Fee_Stage__c</picklist>
+        <values>
+            <fullName>Contract Declined</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Signed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Draft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Executed Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Running Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent_to_eBay_Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>eBay Approved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Site__c</picklist>
+        <values>
+            <fullName>DE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UK</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0010204 - [Refurb] Email Notification when Contract Status is set to &quot;Program Cancelled&quot;</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>DE Refurb Program Cancelled Notification</name>
+    <style>none</style>
+    <subject>Kündigung des eBay Refurbished Programm | {!EBH_ContractsForSeller__r.EBH_BusinessName__c} | {!EndDate}</subject>
+    <textOnly>eBay Refurbished – Programm
+
+Zu unserem Bedauern müssen wir Ihre Teilnahme am eBay Refurbished-Programm beenden: Eine Überprüfung hat ergeben, dass Ihr Nutzerkonto und/oder die von Ihnen im Rahmen des Programms angebotenen Artikel die Anforderungen des Top-Verkäuferstatus und/oder die Kriterien für geeignete Artikel nicht mehr erfüllen. Für die Teilnahme-Voraussetzungen am Programm lesen Sie bitte die dazugehörigen „Refurbished-AGBs“, welche Sie unter {!TCs_URL__c} einsehen können.
+
+Verkäufer
+{!Account.Name}
+{!Business_Contact__r.EBH_MailingAddress__c}
+{!Business_Contact__r.EBH_MailingStreet__c}
+{!Business_Contact__r.EBH_MailingPostalCode__c}
+{!Business_Contact__r.EBH_MailingCity__c}
+
+Shop Name des Verkäufers
+{!EBH_ContractsForSeller__r.EBH_BusinessName__c}
+
+eBay Programm
+Refurbished
+
+Programm Ende
+{!EndDate}
+
+eBay-Websites(s)
+ebay.de
+
+Ebay Vertragspartner
+eBay GmbH, Albert-Einstein-Ring 2-6, 14532 Kleinmachnow
+
+Mit freundlichen Grüßen
+Ihr eBay-Team
+
+{!TCs_URL__c}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

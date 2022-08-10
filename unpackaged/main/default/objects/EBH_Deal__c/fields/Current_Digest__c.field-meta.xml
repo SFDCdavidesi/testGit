@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Current_Digest__c</fullName>
+    <description>US-0008102 : [US]* Deals Mass Submission for External Seller Approval Process</description>
+    <externalId>false</externalId>
+    <formula>SUBSTITUTE(Deal_Contract_Agreement__r.Current_Digest__c, &#39;+&#39;, &#39;%2B&#39;)</formula>
+    <label>Current Digest</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

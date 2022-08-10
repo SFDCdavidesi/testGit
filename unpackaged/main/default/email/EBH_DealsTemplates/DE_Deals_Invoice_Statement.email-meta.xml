@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>[#EPH-7342] Deals Invoicing Email - Deals Invoice Statement</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DE Deals Invoice Statement</name>
+    <style>none</style>
+    <subject>Wichtige Information: Übersicht zur Abrechnung für WOW! Angebot vom {!EBH_Deal__c.EBH_DealStartDate__c}</subject>
+    <textOnly>Für das durchgeführte WOW! Angebot vom {!EBH_Deal__c.EBH_DealStartDate__c}, erhalten Sie im Folgenden / im Anhang eine Übersicht der abrechenbaren Vermarktungsunterstützung:
+
+
+Details zum WOW! Angebot:
+
+Werbeaktionszeitraum: {!EBH_Deal__c.EBH_DealStartDate__c} bis {!EBH_Deal__c.EBH_DealEndDate__c}
+Produktname: {!EBH_Deal__c.EBH_ProductTitle__c}
+Artikelnummer: {!EBH_Deal__c.EBH_eBayItemID__c}
+Aktionsformat: {!EBH_Deal__c.EBH_LocalDealFormat__c}
+
+Abrechenbare Vermarktungsunterstützung:*
+
+Abrechenbare Verkaufsmenge: {!EBH_Deal__c.EBH_Payout_SI_calc__c}
+Vermarktungsunterstützung pro verkauftem Artikel (inkl. USt.): {!EBH_Deal__c.EBH_Subsidy__c} EUR
+Gesamt Vermarktungsunterstützung netto: {!EBH_Deal__c.Subsidy_Final_Net__c} EUR
+Umsatzsteuerbetrag: {!EBH_Deal__c.VAT_N__c}%
+Gesamt Vermarktungsunterstützung brutto: {!EBH_Deal__c.EBH_SubsidyFinal__c} EUR
+
+
+*Dies ist keine umsatzsteuerliche Rechnung. Die Rechnung wird vom Verkäufer gestellt.
+
+
+Wenn Sie mit der Übersicht und dem Auszahlungsbetrag übereinstimmen, werden wir den Betrag in Höhe von {!EBH_Deal__c.EBH_SubsidyFinal__c} EUR auf Ihr hinterlegtes Paypal Konto auszahlen.
+
+Bitte laden Sie hierfür eine Rechnung im Rechnungstool hoch: Rechnung hochladen.
+
+
+Wenn Sie weitere Informationen benötigen oder Rückfragen zur Übersicht haben, klicken Sie bitte auf folgenden Link: Klärung einleiten.
+
+Ein eBay Mitarbeiter wird kurzfristig mit Ihnen Kontakt aufnehmen.
+
+
+Mit freundlichen Grüßen,
+
+
+Ihr eBay Team
+
+Diese E Mail wurde von der eBay GmbH im Zusammenhang mit Ihrem Mitgliedskonto bei www.ebay.de gesendet. Es handelt sich hierbei um eine einmalige Mitteilung. Eine Änderung Ihrer Benachrichtigungseinstellungen ist nicht erforderlich.
+
+Die eBay GmbH fragt niemals per E Mail nach persönlichen Daten (wie z.B. Passwort, Kreditkarten- oder Bankkontonummern).
+
+© 1995-2019 eBay Inc.
+
+Impressum
+eBay GmbH</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

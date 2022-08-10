@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>production</label>
+    <protected>true</protected>
+    <values>
+        <field>API_Server__c</field>
+        <value xsi:type="xsd:string">https://academy.ebay.com</value>
+    </values>
+    <values>
+        <field>Private_Key__c</field>
+        <value xsi:type="xsd:string">MIIEowIBAAKCAQEA2QV3TX7EW7CPHQJ+dQtCALfOqyTVfwo63ALM6ey2+NywScuN
+Jf+Ed6YARS4fVliacH728mhehnCoYuO+aQXo+PG539LxCAiDJNeYR6aalIJjygnw
+J2NL+SJ83IWgZhgMbwhUDKt9crRnnO3fVJPI1OMSgzQv7awfguBexkPBEc8cEHrQ
+vYG1z5lDudLtvTCi4LXv85lpUpJjNo+LYvFJH+WG0nNwy+56Fl79mO15i0YbYT2r
+0VO5nCgFWWIoEhwQqDzvPiwX6f5XKCka+4mtN6ugUg38cl4Ukz5WKRVDhf5+yPqg
+52bWWbi3mrdY8LNoY2oNXg1a0fUNONQSdPhnlQIDAQABAoIBAGAshvFF01jaxqFR
+gJ737TkKO8EmYqKY8vqbFxo3d+KTUmBxn0yOjrLDUu1VgjeurkpaSa+lRvaHKGgi
+izhZkSP5Y6jn/z7THuMN1AM0tt5HZlebzdx2qa1vdiv339w+ngv6gdzXhpF1l1E5
+LTZ7A44sTwDr+K14EMLcEcQFNKNh9u//EGUmdsgBXFa7uMgrfk5ZPFRO9ayAdmGe
+YYiml2B3TcA9cnP38ylvh1EQ3BInh1fqQ1FTP6/Ap0JjaKzYI0rj0RDBGNMboIWx
+vTiuR3QmyML5Q99L2fGGKapDprQZcHs/v0YCAkr+Pn9Kwgeokp+/VExgOblKN1Xu
+tAwVo4ECgYEA9hIeb2PTq3mIznFln3iJCY57qCmddOqtr2B0kHGJ+w2ybBdnwK/m
+PhkJm/TcW/jLi/f1CXB85Pz0LOJb58yLjyHf+PzFcJvCRdc5NrKCrysr+Uo0YDVZ
+ouYfk2jPJSrMXGkVdWMOXUwCCL69UfKtAoFP40RjzzeEaHoKYNBf5CECgYEA4cdF
+Jov6CixjVEWPzRwqzH2pK31W5Oxo3AwmN6g3KyyFyFzuaulxLcb1oaoPJg943Qlr
+pv3tLx7Z8jq6LCMcNL3JsHvJc0oR+QeChZ9aLr7HaYZtH2J0ffgc9f6yDXhGDwwO
+7bY08p1S47ubhifYNRnRtW8UQwUfZQYY0m9QlPUCgYBLWGLvUo7Gi5EjPT+To9G6
+FmGwrQVkflMuRweKDunj8F64kDYZnwKN8xapJUGv+68/rW3fNQ1ZBEcz0x+3Cz+U
+VRgCYkuGXnsO7Ya8Q86WGk79pwYAi3Vl1rbGaSo8RC2NAjQq3GjSkmpxCQ5pIDhv
+cu7mNNOm6GXno6631DX4YQKBgQC3euREZh7F47q5AmrRaeGSG1C+SfayxTiWEr2A
+H5Dt4hm6cWNDuQBEDlsRjQ0QhiRXpM86f0MgNvcxNe6T7dh/N/jPFlno+jnO4f59
+LrnwIRQXOqo1hiJbOKX4d4olDigJFGiRX7B5tcZl0dGa3YiD5r6YrnON33za8XB8
+mv+mfQKBgHDA+D9UHdbW3OxmFGlwWxv183Rch8JeU+VKOSXwJTsXhK8hELLA5dUl
+x5g3dDNoe/0eKlSN5If9IaVVZWpjVyQiqOX81GqPc6AtKqou3jzbxua1tqYjpMG6
+nKf5C9HJ0AzJXQVsqmTE2IU2DbbvByM/O7Tx1dLpxRCMu2yT/Q4L</value>
+    </values>
+    <values>
+        <field>Scope__c</field>
+        <value xsi:type="xsd:string">admin_read admin_write</value>
+    </values>
+    <values>
+        <field>UID__c</field>
+        <value xsi:type="xsd:string">0f6281f6bf91554576ef7c384cfe25e984db30949ccd3dd578c2206487d543e9</value>
+    </values>
+    <values>
+        <field>Version_Path__c</field>
+        <value xsi:type="xsd:string">/api/v3/</value>
+    </values>
+</CustomMetadata>

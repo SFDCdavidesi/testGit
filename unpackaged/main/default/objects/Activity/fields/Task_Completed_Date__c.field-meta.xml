@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Task_Completed_Date__c</fullName>
+    <description>EPH-7879 &quot;Open Related Tasks&quot; and &quot;Completed Related Tasks&quot; tab in Task Detail Page</description>
+    <externalId>false</externalId>
+    <label>Task Completed Date</label>
+    <required>false</required>
+    <type>DateTime</type>
+</CustomField>

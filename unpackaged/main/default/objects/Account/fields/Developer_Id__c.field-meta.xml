@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Developer_Id__c</fullName>
+    <description>US-0011440 - New Fields &amp; Picklists for Customer Partner record Type</description>
+    <externalId>false</externalId>
+    <formula>IF( RecordType.DeveloperName == &#39;EBH_Partner&#39; ,  EBH_OracleID__c ,&#39;&#39;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Developer Id</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

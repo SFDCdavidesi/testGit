@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Invoid_Number</fullName>
+    <active>true</active>
+    <description>EPH-7157 Object: Coupon Seller</description>
+    <errorConditionFormula>AND(NOT(ISBLANK( Invoice_Number__c )),NOT( REGEX( SUBSTITUTE( Invoice_Number__c , &quot; &quot;, &quot;&quot;) , &quot;[a-zA-Z0-9_+-]+&quot;)))</errorConditionFormula>
+    <errorDisplayField>Invoice_Number__c</errorDisplayField>
+    <errorMessage>Invalid Invoice Number : all chars only alphanumerical values.</errorMessage>
+</ValidationRule>

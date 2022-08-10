@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Block_ETL_field_Updates_after_submissio</fullName>
+    <active>true</active>
+    <description>US-0008313 - [UK] FVF - Attach transactional data to record - BCD file
+Block record field updates after status was changed to any other except New.</description>
+    <errorConditionFormula>AND( NOT(ISPICKVAL( Status__c , &#39;New&#39;)), 
+OR(
+  ISCHANGED( Name ) , 
+  ISCHANGED( Credit_Total_Value__c ) ,
+  ISCHANGED( CurrencyIsoCode ) ,
+  ISCHANGED( End_date__c ) ,
+  ISCHANGED( Number_of_sellers__c ) ,
+  ISCHANGED( RecordTypeId ) ,
+  ISCHANGED( Site__c ) ,
+  ISCHANGED( Start_date__c ) ,
+  ISCHANGED( BCD_created_date__c ) 
+))</errorConditionFormula>
+    <errorMessage>You cannot change submitted BCD record. Please contact your administrator.</errorMessage>
+</ValidationRule>

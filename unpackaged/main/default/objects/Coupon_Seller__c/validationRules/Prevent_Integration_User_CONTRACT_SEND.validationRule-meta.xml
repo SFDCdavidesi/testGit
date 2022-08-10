@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Integration_User_CONTRACT_SEND</fullName>
+    <active>true</active>
+    <description>EPH-7919</description>
+    <errorConditionFormula>IF( AND(ISCHANGED( Coupon_Seller_Stage__c ), ISPICKVAL(Coupon_Seller_Stage__c , &#39;Contract Send&#39;), OR(EBH_CouponSellerOwner__r.FirstName=&#39;Integration&#39;,EBH_CouponSellerOwner__r.FirstName=&#39;Deployment&#39;) 
+		)
+,true,false
+)</errorConditionFormula>
+    <errorMessage>You need to assign appropriate owner for the Coupon Seller record before sending out the coupon contract.</errorMessage>
+</ValidationRule>

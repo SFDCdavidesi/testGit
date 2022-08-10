@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AttributionType__c</fullName>
+    <description>US-0010159 - ADS - Campaign Attribution Field Creation :
+Attribution type associated with 1PD</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please select the most appropriate only</inlineHelpText>
+    <label>Attribution type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Seller / Store</fullName>
+                <default>false</default>
+                <label>Seller / Store</label>
+            </value>
+            <value>
+                <fullName>Landingpage</fullName>
+                <default>false</default>
+                <label>Landingpage</label>
+            </value>
+            <value>
+                <fullName>Custom item list</fullName>
+                <default>false</default>
+                <label>Custom item list</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

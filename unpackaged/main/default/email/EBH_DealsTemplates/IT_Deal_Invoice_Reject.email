@@ -1,0 +1,12 @@
+<p>Non ci è stato possibile elaborare il pagamento relativo all’offerta Imperdibili del {!DealStartDate}. </p>
+<p>Motivo:</p>
+
+<table style="height: 156px; border: 1px solid black;" width="637">
+<tbody>
+<tr>
+<td style="width: 627.111px; text-align: justify; vertical-align: top; padding: 5px;">{!RejectionComment}</td>
+</tr>
+</tbody>
+</table>
+<p>Apporta le modifiche necessarie e carica nuovamente la fattura per questa transazione usando l’apposito strumento.
+</p>

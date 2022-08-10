@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Agency_Brief__c</fullName>
+    <description>US-0011867</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Brief provided by eBay for agencies.</inlineHelpText>
+    <label>Agency Brief</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Url</type>
+</CustomField>

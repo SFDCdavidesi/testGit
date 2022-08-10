@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Stage_Review_If_Not_Item_Based</fullName>
+    <active>true</active>
+    <description>US-0011958 - Change Requests Focus 75</description>
+    <errorConditionFormula>AND(ISCHANGED(Coupon_Seller_Stage__c),  ISPICKVAL(Coupon_Seller_Stage__c, &#39;Review&#39;), NOT(ISPICKVAL(Coupon_Type__c, &#39;Item Based&#39;)))</errorConditionFormula>
+    <errorMessage>This status can only be selected for Item-Based coupons.</errorMessage>
+</ValidationRule>

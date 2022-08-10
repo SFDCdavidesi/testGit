@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lock_Coupon_Discount_Amount</fullName>
+    <active>true</active>
+    <description>[#EPH-7399]Coupon Object - Field Coupon Discount Amount and Coupon Discount % - Validation Rule</description>
+    <errorConditionFormula>IF( OR(ISNULL(Coupon_Discount__c),ISNULL( Coupon_Discount_Amount__c )), false, true)</errorConditionFormula>
+    <errorMessage>Only ONE of COUPON DISCOUNT % or COUPON DISCOUNT AMOUNT can be filled at a time.</errorMessage>
+</ValidationRule>

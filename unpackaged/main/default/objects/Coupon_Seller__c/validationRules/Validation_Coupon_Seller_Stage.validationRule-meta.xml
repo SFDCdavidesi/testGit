@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_Coupon_Seller_Stage</fullName>
+    <active>true</active>
+    <description>US-0007262: POP COUPON - Coupon Seller - Stage Validation</description>
+    <errorConditionFormula>IF(AND( RecordType.DeveloperName=&#39;Pop_Coupon&#39; ,!Pitch_Records_Available__c, !ISPICKVAL( Coupon_Seller_Stage__c , &#39;New&#39;) ), true, false)</errorConditionFormula>
+    <errorMessage>You cannot progress until Co-invest records have been created. Note: Backend process requires about 24 hours to create Co-invest records after Coupon Seller record was created.</errorMessage>
+</ValidationRule>

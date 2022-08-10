@@ -1,0 +1,41 @@
+<style>
+	.ul-dash {
+              list-style-type: none;
+         }
+
+.ul-dash li:before {
+  content: '- ';
+  position: absolute;
+  margin-left: -20px;
+}
+	 
+</style>
+<p>A continuaci&oacute;n/adjunto, encontrar&aacute;s los detalles de la asistencia de marketing facturable por las mejores ofertas completadas desde {!EBH_Deal__c.EBH_DealStartDate__c}:</p>
+<p><strong>Detalles de las mejores ofertas:</strong></p>
+<ul>
+<li>{!EBH_Deal__c.EBH_DealStartDate__c} bis {!EBH_Deal__c.EBH_DealEndDate__c}</li>
+<li>{!EBH_Deal__c.EBH_ProductTitle__c}</li>
+<li>{!EBH_Deal__c.EBH_eBayItemID__c}</li>
+<li>{!EBH_Deal__c.EBH_LocalDealFormat__c}</li>
+</ul>
+<p><strong>Asistencia de marketing facturable*:</strong>&nbsp;</p>
+<ul class="ul-dash">
+<li>Volumen de ventas facturable: {!EBH_Deal__c.EBH_Payout_SI_calc__c}</li>
+<li>Asistencia de marketing por art&iacute;culo vendido: {!EBH_Deal__c.EBH_Subsidy__c}</li>
+<li>Total neto de asistencia de marketing: {!EBH_Deal__c.Subsidy_Final_Net__c}</li>
+<li>IVA al: {!EBH_Deal__c.VAT_N__c}%</li>
+<li>Total bruto de asistencia de marketing:&nbsp;{!EBH_Deal__c.EBH_SubsidyFinal__c}</li>
+</ul>
+<p>&nbsp;</p>
+<p>* Esta no es una factura v&aacute;lida a efectos de IVA. La factura la emite el vendedor.</p>
+<p>Si est&aacute;s de acuerdo con los detalles y el importe de pago, realizaremos una transferencia de {!EBH_Deal__c.EBH_SubsidyFinal__c} a tu cuenta PayPal.<br />Para ello, m&aacute;ndanos una factura mediante la <a title="herramienta de env&iacute;o de facturas" href="{!EBH_Deal__c.SiteURL__c}/EBH_InvoiceUploadLandingPage?id={!EBH_Deal__c.Unique_Id_Ext__c}">herramienta de env&iacute;o de facturas</a>.</p>
+<p>Pulsa el v&iacute;nculo siguiente si deseas obtener m&aacute;s informaci&oacute;n o si tienes dudas respecto a los detalles: <a title="v&iacute;nculo con aclaraciones" href="{!EBH_Deal__c.SiteURL__c}/EBH_ClarificationRequiredPage?id={!EBH_Deal__c.Unique_Id_Ext__c}">v&iacute;nculo con aclaraciones</a>.<br />Un agente de eBay se pondr&aacute; en contacto contigo muy pronto.</p>
+<p>&nbsp;</p>
+<p>Atentamente,</p>
+<p>Tu equipo de eBay</p>
+<p>&nbsp;</p>
+<p>eBay te ha enviado este mensaje a {!EBH_Deal__c.EBH_BusinessName__c}.<br />Este mensaje incluye el nombre con el que te registraste para demostrar que procede de eBay.</p>
+<p><a title="M&aacute;s informaci&oacute;n" href="http://pages.ebay.es/help/account/ebay-email.html">M&aacute;s informaci&oacute;n</a></p>
+<p><span style="font-size: 11px;">Este mensaje te ha sido enviado por eBay GmbH, que puede utilizar a sus filiales para prestar sus servicios. Si no eres residente en la UE, por favor encuentra los datos de contacto de tu proveedor de servicios en las Condiciones de Uso.<br />Se te ha enviado este mensaje de correo electr&oacute;nico porque tus preferencias de notificaci&oacute;n indican que quieres recibir informaci&oacute;n sobre promociones, ofertas y eventos especiales. Est&aacute;s registrado en www.ebay.es. Si deseas que no te enviemos m&aacute;s mensajes promocionales <a title="pulsa aqu&iacute;" href="http://my.ebay.es/ws/eBayISAPI.dll?MyEbayBeta&amp;CurrentPage=MyeBayNextNotificationPreferences&amp;ssPageName=STRK:ME:LNLK">pulsa aqu&iacute;</a>.</span></p>
+<p><span style="font-size: 11px;">Tal como se se&ntilde;ala en las Condiciones de uso, te enviaremos informaci&oacute;n peri&oacute;dica sobre los cambios y las mejoras realizados en nuestro sitio. Si tienes alguna pregunta, por favor visita nuestras <a title="Condiciones de uso" href="http://pages.ebay.es/help/policies/user-agreement.html">Condiciones de uso</a> y <a title="Aviso sobre privacidad" href="http://pages.ebay.es/help/policies/privacy-policy.html">Aviso sobre privacidad</a>.</span></p>
+<p><span style="font-size: 12px;">Copyright &copy; 2019 eBay Inc.</span></p>

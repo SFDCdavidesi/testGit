@@ -1,0 +1,12 @@
+Hallo, <br/><br/><br/>
+
+ 
+
+der Händler {!Subscription_Request__c.Seller__c} hat soeben seinen Account Manager gekündigt.<br/><br/>
+Das Account Management-Abonnement bleibt aktiv bis zum {!Subscription_Request__c.Opt_Out_Effective_Date__c}.
+<br/><br/>
+{!Subscription_Request__c.Link}
+
+ 
+<br/><br/><br/>
+Vielen Dank.

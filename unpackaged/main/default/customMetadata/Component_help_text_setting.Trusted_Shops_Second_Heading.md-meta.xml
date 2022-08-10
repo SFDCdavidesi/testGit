@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Trusted Shops Second Heading</label>
+    <protected>false</protected>
+    <values>
+        <field>Bigger_Body_Test__c</field>
+        <value xsi:type="xsd:string">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h&gt;Ihr Vorteile:&lt;/h&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Abmahnsichere Rechtstexte&lt;/li&gt;
+  &lt;li&gt;Haftungsübernahme durch Trusted Shops &lt;/li&gt;
+  &lt;li&gt;Update-Service bei Änderungen&lt;/li&gt;
+  &lt;li&gt;Leichte Einbindung der Rechtstexte&lt;/li&gt;
+  &lt;li&gt;Erstellen eines Verarbeitungsverzeichnisses mit dem DSGVO-Manager
+&lt;/li&gt;
+  
+&lt;/ul&gt;  
+
+&lt;/body&gt;
+&lt;/html&gt;</value>
+    </values>
+    <values>
+        <field>Heading__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Help_Text__c</field>
+        <value xsi:type="xsd:string">Kostenlos für alle Verkäufer mit einem eBay Shop</value>
+    </values>
+    <values>
+        <field>Inner_Help_Text__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

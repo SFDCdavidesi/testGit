@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <assignments>
+        <description>US-0010785 - Refactor Coupon Seller object to support standard search</description>
+        <name>Populate_Coupon_Info_into_Coupon_Seller</name>
+        <label>Populate Coupon Info into Coupon Seller</label>
+        <locationX>457</locationX>
+        <locationY>2879</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Coupon_Marketing_Name__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Coupon__r.Marketing_Coupon_Name__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Coupon_Code__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Coupon__r.Coupon_ID__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_Coupon_Contract_Due_Date</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>US-0011435 - Creation of seller communication records for coupons</description>
+        <name>PrePopulate_Coupon_Contract_Due_Date</name>
+        <label>PrePopulate Coupon Contract Due Date</label>
+        <locationX>457</locationX>
+        <locationY>3215</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Contract_Due_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Coupon__r.Contract_Due_Date__c</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>US-0011830 - Map Coupon Type field to field on Coupon Seller record</description>
+        <name>Set_Coupon_Type_Item_Based</name>
+        <label>Set Coupon Type Item Based</label>
+        <locationX>457</locationX>
+        <locationY>431</locationY>
+        <assignmentItems>
+            <assignToReference>CouponType</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Item Based</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Set_Coupon_Type_to_Auto_Populated_Value</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>US-0011830 - Map Coupon Type field to field on Coupon Seller record</description>
+        <name>Set_Coupon_Type_to_Auto_Populated_Value</name>
+        <label>Set Coupon Type to Auto Populated Value</label>
+        <locationX>589</locationX>
+        <locationY>647</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Coupon_Type__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>CouponType</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_Event</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>SetCofundDateToNull</name>
+        <label>SetCofundDateToNull</label>
+        <locationX>83</locationX>
+        <locationY>1775</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Cofund_End_Date__c</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Cofund_Start_Date__c</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <connector>
+            <targetReference>ChangeContractTerminationDate</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>US-0009949</description>
+        <name>SetCofundEndDate</name>
+        <label>SetCofundEndDate</label>
+        <locationX>457</locationX>
+        <locationY>2207</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Cofund_End_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>CurrentEndMonth</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>CouponSellerStage</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>SetCofundStartDate</name>
+        <label>SetCofundStartDate</label>
+        <locationX>457</locationX>
+        <locationY>2543</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Cofund_Start_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>CurrentDate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_Coupon</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>SetValueForCofundStart_EndDate</name>
+        <label>SetValueForCofundStart/EndDate</label>
+        <locationX>523</locationX>
+        <locationY>1775</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Cofund_Start_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Coupon__r.Coupon_Start_Date__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Cofund_End_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Coupon__r.Coupon_End_Date__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>ChangeContractTerminationDate</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>ChangeContractTerminationDate</name>
+        <label>ChangeContractTerminationDate</label>
+        <locationX>589</locationX>
+        <locationY>2087</locationY>
+        <defaultConnector>
+            <targetReference>CouponSellerStage</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>ContractTerminationDate</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Contract_Termination_Date__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pop_Coupon</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetCofundEndDate</targetReference>
+            </connector>
+            <label>ContractTerminationDate?</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Additional_Term</name>
+        <label>Check Additional Term</label>
+        <locationX>182</locationX>
+        <locationY>1007</locationY>
+        <defaultConnector>
+            <targetReference>Check_RecordType_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Additional_Term_is_null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Additional_Terms__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Coupon_Seller_Additional_Terms_Inherit_From_Coupon</targetReference>
+            </connector>
+            <label>Additional Term is null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Condition</name>
+        <label>Check Condition</label>
+        <locationX>215</locationX>
+        <locationY>1655</locationY>
+        <defaultConnector>
+            <targetReference>ChangeContractTerminationDate</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Check_Coupon_Stage</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Coupon_Seller_Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>New</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetCofundDateToNull</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Check Coupon Stage</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Condition2</name>
+        <label>Check Condition</label>
+        <locationX>655</locationX>
+        <locationY>1655</locationY>
+        <defaultConnector>
+            <targetReference>ChangeContractTerminationDate</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Check_Coupon_Date</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Coupon__r.Coupon_Start_Date__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Coupon__r.Coupon_End_Date__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetValueForCofundStart_EndDate</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Check Coupon Date</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Coupon</name>
+        <label>Check Coupon</label>
+        <locationX>589</locationX>
+        <locationY>2759</locationY>
+        <defaultConnector>
+            <targetReference>Check_Coupon_Contract_Due_Date</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Coupon_is_not_Null_or_Coupon_is_Change</name>
+            <conditionLogic>(1 AND 2) OR (1 AND (3 OR 4))</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Coupon__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Coupon__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Coupon_Marketing_Name__c</leftValueReference>
+                <operator>EqualTo</operator>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Coupon_Code__c</leftValueReference>
+                <operator>EqualTo</operator>
+            </conditions>
+            <connector>
+                <targetReference>Populate_Coupon_Info_into_Coupon_Seller</targetReference>
+            </connector>
+            <label>Coupon is not Null or Coupon is Change</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Coupon_Contract_Due_Date</name>
+        <label>Check Coupon Contract Due Date</label>
+        <locationX>589</locationX>
+        <locationY>3095</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Coupon_Contract_Due_Date_is_not_NULL</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Coupon__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Coupon__r.Contract_Due_Date__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>PrePopulate_Coupon_Contract_Due_Date</targetReference>
+            </connector>
+            <label>Coupon Contract Due Date is not NULL</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Event</name>
+        <label>Check Event</label>
+        <locationX>589</locationX>
+        <locationY>767</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_New_Record</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_RecordType</targetReference>
+            </connector>
+            <label>Is New Record</label>
+        </rules>
+        <rules>
+            <name>Is_Update_Record</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_RecordType_0</targetReference>
+            </connector>
+            <label>Is Update Record</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>[EPH-6086] have coupon details in Hive
+US-0009949</description>
+        <name>Check_RecordType</name>
+        <label>Check RecordType</label>
+        <locationX>336</locationX>
+        <locationY>887</locationY>
+        <defaultConnector>
+            <targetReference>Check_RecordType_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Pop_And_Manhattan</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Manhattan_Coupon</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pop_Coupon</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_Additional_Term</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Pop And Manhattan</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>[EPH-6086] have coupon details in Hive
+US-0009949</description>
+        <name>Check_RecordType_0</name>
+        <label>Check RecordType</label>
+        <locationX>589</locationX>
+        <locationY>1535</locationY>
+        <defaultConnector>
+            <targetReference>ChangeContractTerminationDate</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>PoPCoupon_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pop_Coupon</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_Condition</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>PoPCoupon</label>
+        </rules>
+        <rules>
+            <name>ManhattanCoupon_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Manhattan_Coupon</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_Condition2</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>ManhattanCoupon</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>CouponSellerStage</name>
+        <label>CouponSellerStage</label>
+        <locationX>589</locationX>
+        <locationY>2423</locationY>
+        <defaultConnector>
+            <targetReference>Check_Coupon</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>ContractAccepted</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Coupon_Seller_Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Contract Accepted</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Coupon_Seller_Stage__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record__Prior.Coupon_Seller_Stage__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pop_Coupon</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetCofundStartDate</targetReference>
+            </connector>
+            <label>ContractAccepted?</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>US-0011830 - Map Coupon Type field to field on Coupon Seller record</description>
+        <name>if_Couon_Record_Type_Item_Based</name>
+        <label>if Couon Record Type Item Based</label>
+        <locationX>589</locationX>
+        <locationY>311</locationY>
+        <defaultConnector>
+            <targetReference>Set_Coupon_Type_to_Auto_Populated_Value</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>xif_Couon_Record_Type_Item_Based</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Coupon__r.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Item_Based</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Coupon_Type_Item_Based</targetReference>
+            </connector>
+            <label>if Couon Record Type Item Based</label>
+        </rules>
+    </decisions>
+    <description>US-0009949,
+US-0011349,
+US-0011830,
+US-0011435,
+US-0010785</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>CurrentDate</name>
+        <dataType>Date</dataType>
+        <expression>Today()</expression>
+    </formulas>
+    <formulas>
+        <name>CurrentEndMonth</name>
+        <dataType>Date</dataType>
+        <expression>IF(MONTH( {!DateValueContractTerminationDate} ) = 12,
+DATE( YEAR( {!DateValueContractTerminationDate} ), 12, 31 ) ,
+DATE( YEAR( {!DateValueContractTerminationDate} ),
+MONTH ( {!DateValueContractTerminationDate} ) + 1, 1 ) - 1
+)</expression>
+    </formulas>
+    <formulas>
+        <name>DateValueContractTerminationDate</name>
+        <dataType>Date</dataType>
+        <expression>DATEVALUE( {!$Record.Contract_Termination_Date__c})</expression>
+    </formulas>
+    <interviewLabel>Coupon Seller - Record Trigger Flow - Before Context {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Coupon Seller - Record Trigger Flow - Before Context</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Coupon_Seller_Additional_Terms_Inherit_From_Coupon</name>
+        <label>Coupon Seller Additional Terms Inherit From Coupon</label>
+        <locationX>50</locationX>
+        <locationY>1127</locationY>
+        <connector>
+            <targetReference>Check_RecordType_0</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Additional_Terms__c</field>
+            <value>
+                <elementReference>$Record.Coupon__r.Coupon_Additional_Terms__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>463</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>if_Couon_Record_Type_Item_Based</targetReference>
+        </connector>
+        <object>Coupon_Seller__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>US-0011830 - Map Coupon Type field to field on Coupon Seller record</description>
+        <name>CouponType</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Category Based</stringValue>
+        </value>
+    </variables>
+</Flow>

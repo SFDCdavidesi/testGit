@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BCD_Submitted__c</fullName>
+    <description>US-0007149: Coupon - New Invoice fields on Coupon Object</description>
+    <externalId>false</externalId>
+    <formula>NOT( ISBLANK( BCD_Submitted_Date__c ) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>BCD Submitted</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bill_to_PO_Required__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(
+
+ISPICKVAL(Bill_To_Party__c, &#39;Advertiser&#39;), Account.PO_required__c,
+
+if(
+ISPICKVAL(Bill_To_Party__c, &#39;Agency&#39;), Agency__r.PO_required__c, NULL))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Bill to PO Required</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

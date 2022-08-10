@@ -1,0 +1,5 @@
+<p>A&nbsp;new approval request for the BCD file&nbsp;has been submitted for approval in Hive.</p>
+<p>Per the new process for FVF Promos and also subtitling invoicing, we&nbsp;need to obtain business and then finance approval.</p>
+<p>Please review and approve the Total Amount of credits&nbsp;which covers B2C investment activity.</p>
+<p><a title="Approve or Reject" href="{!ApprovalRequest.Internal_URL}">Approve or Reject</a></p>
+<p><a title="Go to BCD Statement" href="{!BCD_Statement__c.Link}">Go to BCD Statement</a></p>

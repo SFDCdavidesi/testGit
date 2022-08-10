@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AU_Growth_Portal_Contacts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>FULL_NAME</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>EBH_Decision_Maker_Role__c</columns>
+    <columns>Account.EBH_AccountManageName__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Account.EBH_GBCulture__c</field>
+        <operation>equals</operation>
+        <value>en-AU</value>
+    </filters>
+    <label>AU Growth Portal Contacts</label>
+</ListView>

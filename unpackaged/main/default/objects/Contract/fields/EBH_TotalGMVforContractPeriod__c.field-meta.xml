@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_TotalGMVforContractPeriod__c</fullName>
+    <description>[EBH] (EPH-5474) - To display the GMV Contract for Period for both ACP as well as Listing</description>
+    <externalId>false</externalId>
+    <formula>EBH_GMVforContractPeriod__c + EBH_EstimatedGMVforContractPeriod__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>GMV for Contract Period</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

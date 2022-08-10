@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_of_sellers__c</fullName>
+    <description>US-0008144 - [UK] FVF - Object creation for Invoicing</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Count of distinct sellers in this BCD statement.</inlineHelpText>
+    <label>Number of Sellers</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

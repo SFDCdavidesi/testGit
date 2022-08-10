@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Division__c</fullName>
+    <description>[EPH-3309] (Sprint-6) Provides all divisions in eBay</description>
+    <externalId>false</externalId>
+    <label>Division</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>COO – CRM &amp; Insight</fullName>
+                <default>false</default>
+                <label>COO – CRM &amp; Insight</label>
+            </value>
+            <value>
+                <fullName>COO - Marketing</fullName>
+                <default>false</default>
+                <label>COO - Marketing</label>
+            </value>
+            <value>
+                <fullName>COO – Seller Experience</fullName>
+                <default>false</default>
+                <label>COO – Seller Experience</label>
+            </value>
+            <value>
+                <fullName>COO – GCX &amp; Monetisation</fullName>
+                <default>false</default>
+                <label>COO – GCX &amp; Monetisation</label>
+            </value>
+            <value>
+                <fullName>COO – Partnership</fullName>
+                <default>false</default>
+                <label>COO – Partnership</label>
+            </value>
+            <value>
+                <fullName>COO – Enterprise sales</fullName>
+                <default>false</default>
+                <label>COO – Enterprise sales</label>
+            </value>
+            <value>
+                <fullName>COO – Others</fullName>
+                <default>false</default>
+                <label>COO – Others</label>
+            </value>
+            <value>
+                <fullName>COO - LT</fullName>
+                <default>false</default>
+                <label>COO - LT</label>
+            </value>
+            <value>
+                <fullName>EU Finance – Analytics</fullName>
+                <default>false</default>
+                <label>EU Finance – Analytics</label>
+            </value>
+            <value>
+                <fullName>Advertising</fullName>
+                <default>false</default>
+                <label>Advertising</label>
+            </value>
+            <value>
+                <fullName>GCX</fullName>
+                <default>false</default>
+                <label>GCX</label>
+            </value>
+            <value>
+                <fullName>EEC</fullName>
+                <default>false</default>
+                <label>EEC</label>
+            </value>
+            <value>
+                <fullName>DE</fullName>
+                <default>false</default>
+                <label>DE</label>
+            </value>
+            <value>
+                <fullName>UK</fullName>
+                <default>false</default>
+                <label>UK</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

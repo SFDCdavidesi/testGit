@@ -1,0 +1,54 @@
+<p style="text-align: center;"><strong>Contrato de promoción individual</strong></p>
+<p style="text-align: justify;">En base a este Contrato de promoción individual y su Anexo 1 (denominados conjuntamente en lo sucesivo "Contrato de promoción individual"), que es una parte integral de este Contrato de promoción individual, te ofrecemos un descuento en la comisión por venta realizada de acuerdo con las condiciones aquí indicadas. Es necesario que aceptes este contrato de promoción individual a más tardar <u>1 día antes del inicio de la promoción</u> haciendo clic en el botón siguiente
+</p>
+<p style="text-align: center;"><a title="ACEPTO" href="{!urlAccept}">ACEPTO</a></p>
+<p style="text-align: center;">&nbsp;</p>
+<table style="height: 282px; width: 1012px; border-collapse: collapse;" border="1" cellspacing="5" cellpadding="5">
+<tbody>
+<tr>
+<td style="width: 194.444px; background-color: #f0f0f0;"><strong>ID(s) de usuario del vendedor para la promoción</strong></td>
+<td style="width: 794.444px;">{!FVF_SellerName}</td>
+</tr>
+<tr>
+<td style="width: 194.444px; background-color: #f0f0f0;"><strong>Sitio de eBay</strong></td>
+<td style="width: 794.444px;">www.ebay.es</td>
+</tr>
+<tr>
+<td style="width: 194.444px; background-color: #f0f0f0;"><strong>Periodo promocional</strong></td>
+<td style="width: 794.444px;"><strong>{!FVF_StartDate}&nbsp;a las&nbsp;{!FVF_StartTime}</strong>&nbsp;<strong>hasta&nbsp;{!FVF_EndDate}&nbsp;a las&nbsp;{!FVF_EndTime} </strong>
+</p>eBay podrá aplazar el periodo promocional y cambiar la duración de la promoción según su criterio. De ser así, eBay informará al vendedor al respecto.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 194.444px; background-color: #f0f0f0;"><strong>Descuento en comisión por venta realizada que aportará por eBay</strong></td>
+<td style="width: 794.444px;">{!FVF_DiscountFVF} de descuento</td>
+</tr>
+<tr>
+<td style="width: 194.444px; background-color: #f0f0f0;"><strong>Artículos con descuento</strong></td>
+<td style="width: 794.444px;">
+<p>El descuento se aplica a los artículos del vendedor mencionados en el Anexo 1, únicamente cuando éstos se venden dentro del periodo promocional al precio máximo indicado. Vender los artículos correspondientes a precios más bajos que los convenidos aquí queda a discreción del vendedor.
+</p>
+</td>
+</tr>
+<tr>
+<td style="width: 194.444px; background-color: #f0f0f0;"><strong>Otros</strong></td>
+<td style="width: 794.444px;">
+{!FVF_AddtionalTerm}
+<p>{ifFreeShipping}</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p style="text-align: justify;">
+En primer lugar se cobrará la comisión por venta realizada. El descuento aquí acordado será abonado a tu cuenta dentro de los 60 días siguientes al mes en el que haya tenido lugar el último día de la promoción. Todo artículo devuelto/deducido está excluido del descuento.
+</p>
+<p style="text-align: justify;">
+Ten en cuenta que los importes de descuento para la comisión por venta realizada no incluyen IVA. El importe de descuento sobre la comisión por venta realizada abonado a tu cuenta está sujeto al mismo régimen de IVA que otras comisiones aplicables a artículos no incluidos en la promoción durante el periodo promocional. 
+</p>
+<p style="text-align: justify;">
+Este contrato de promoción individual se firma entre {!LegalEntity} - {!SellerAddress1} ("<strong>Vendedor</strong>") e eBay GmbH, Albert-Einstein-Ring 2-6 en 14532 Kleinmachnow ("<strong>eBay</strong>"). La participación del vendedor en la promoción se efectúa exclusivamente sobre la base de este contrato de promoción individual, así como el subyacente  <a title="Acuerdo para promociones con fijación de precios" href="https://cloud.forbusiness.ebay.com/fvf-promo-general-terms-and-conditions-ES">Acuerdo para promociones con fijación de precios</a> entre el vendedor y eBay ("<strong>Acuerdo</strong>"). 
+</p>
+<p style="text-align: justify;">
+Cualesquiera términos y condiciones adicionales o divergentes deben ser acordados entre las partes contratantes por escrito (por correo electrónico es suficiente).
+</p>

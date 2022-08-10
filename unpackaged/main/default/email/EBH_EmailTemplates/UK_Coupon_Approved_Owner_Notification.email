@@ -1,0 +1,7 @@
+<p>Dear {!Coupon_Seller__c.EBH_CouponSellerOwner__c},</p>
+<p>Your seller {!Coupon_Seller__c.Seller__c} has been approved for the Coupon {!Coupon_Seller__c.Marketing_Coupon_Name__c}.<br>
+Please proceed to send out the contract.<br>
+The seller can accept the contract latest by {!Coupon__c.Contract_Due_Date__c}.<br>
+Access your seller here: {!Coupon_Seller__c.Link}</p> 
+<p>Thank you,<br>
+Hive </p>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RelatedCouponSeller__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>US-0007574 - [AU] GCX: related coupons seller and project</description>
+    <externalId>false</externalId>
+    <label>Related Coupon Seller</label>
+    <referenceTo>Coupon_Seller__c</referenceTo>
+    <relationshipLabel>Activities</relationshipLabel>
+    <relationshipName>Activities</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

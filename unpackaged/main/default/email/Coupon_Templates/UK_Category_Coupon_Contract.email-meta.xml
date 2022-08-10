@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>EPH-7604 Coupon Contract Localization for UK, FR, IT &amp; ES</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>UK Category Coupon Contract</name>
+    <style>none</style>
+    <subject>Coupon Contract | {eBaySellerID} | {CouponNameM} | {CouponStartDate} - {CouponEndDate}</subject>
+    <textOnly>This e-mail is to offer You the opportunity to run a coupon campaign (“Coupon”) on eBay. As discussed, please find the relevant terms below. Please click on “I AGREE” below by {!ContractDueDate} to accept.
+
+I AGREE
+
+Seller User ID  {eBaySellerID}
+Coupon Code   To be provided 5 days prior to the start of the Promotion Period
+Coupon Process   Process B (invoice to SELLER)
+Promotion Period  From {CouponStartTime} on {CouponStartDate} until {CouponEndTime} on {CouponEndDate} (GMT)
+Coupon Amount or Percentage   {CouponDiscount%}{CouponDiscountAmount}
+Included Categories  {!CatNameIdTable}
+Excluded Categories
+
+Cars, Motorcycles &amp; Vehicles (9800)
+Property (10542)
+Coins (11116)
+
+Seller funding fee payable to eBay
+
+% of the redeemed value of the Coupon, unless otherwise specified below.
+
+{!catTable}
+
+Minimum Transaction Value  {Minimum_Transaction_Value__c}
+Maximum Discount Value  {CouponCap}
+Number of Buyer Redemptions  {Max_Redemptions__c}
+Additional Terms  {Coupon_Additional_Terms__c}
+
+
+The terms of this email are subject to the terms and conditions between eBay (UK) Limited, 1 More London Place, SE1 2AF, London, United Kingdom, registered in England &amp; Wales with company number 03726028 (“eBay”) and {LegalEntity}, {StreetName}, {Zip}, {City} (“Seller, You”), available at (“Coupon Terms and Conditions”). Terms not defined here shall have the meaning given to them in the Coupon Terms and Conditions.
+
+Any additional, alternate or amended terms must be expressly and mutually agreed by the parties in writing (email shall suffice).</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

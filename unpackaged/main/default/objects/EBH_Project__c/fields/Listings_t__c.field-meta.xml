@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Listings_t__c</fullName>
+    <description>US-0009564 - UK Risk: GCX permission set and New fields on Project</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Categories, listing practices, T&amp;Cs</inlineHelpText>
+    <label>Listings</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

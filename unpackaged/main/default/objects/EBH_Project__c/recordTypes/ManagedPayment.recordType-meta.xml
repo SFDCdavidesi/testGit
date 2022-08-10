@@ -1,0 +1,2731 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ManagedPayment</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>AUCompactLayout</compactLayoutAssignment>
+    <description>Outreach tracking of eligible sellers to Managed Payments</description>
+    <label>Managed Payment</label>
+    <picklistValues>
+        <picklist>API__c</picklist>
+        <values>
+            <fullName>Inventory API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other eBay API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trading API</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Appeal_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AutomatedFeedback__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>BusinessTypeAU__c</picklist>
+        <values>
+            <fullName>Company</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partnership</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sole Trader</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trust</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CE_Certification_Status__c</picklist>
+        <values>
+            <fullName>CE Certificate Incomplete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CE Certificate Positive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CE Certificate sent to agency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mass mailing sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No CE Certificate Needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>See Comments</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CSTraining__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CategoryMapping__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ClickCollectEnabled__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ClosedLostReasons__c</picklist>
+        <values>
+            <fullName>Already on ebay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bad experience - eBay policies or standards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bad experience - high fees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bad experience - insufficient sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bad experience - time consuming</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brand Association</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cost Factor - CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cost Factor - Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cost Factor - fees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Do Not Solicit anymore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inappropriate titles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integration not possible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No longer active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No longer trading</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not looking to grow business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overseas merchant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PayPal Unavailable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Previously contacted %E2%80%93 Not Interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Products not suitable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping Options</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subscription based site</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supplier Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Time consuming</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unable to Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unpleasant eBay experience</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unsupported platforms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unsustainable products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesaler</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CombinedInvoicingEnabled__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CommercialTeamSignOff__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Commercials__c</picklist>
+        <values>
+            <fullName>LMO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ConfirmSellingLimits__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Customer_service_dept__c</picklist>
+        <values>
+            <fullName>External</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DirectAPIManagedby__c</picklist>
+        <values>
+            <fullName>External IT Team</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Local IT Team</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DisableMessageAtCheckout__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>EBH_CarrierOther__c</picklist>
+        <values>
+            <fullName>DHL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DPD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GLS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>EBH_IntegrationMethod__c</picklist>
+        <values>
+            <fullName>Assisted Set Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self-Assisted Set Up</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>EBH_InterestedWaitingListReasons__c</picklist>
+        <values>
+            <fullName>Needs time to decide%2Fcalculate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting for better eBay ranking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting for different carrier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting for lower prices</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting for other 3PP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting for restricted items</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting for returns</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>EBH_NotInterestedValue__c</picklist>
+        <values>
+            <fullName>Amazon FF %28active%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Amazon FF %28bad experience%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Don%27t want to change business model</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Goods are shipped directly from a manufacturer%2C dropshipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hangs up the phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prices are too high</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sees no clear advantage %28price%2C seller protection%2C EDD%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unsuitable inventory %28custom items%2C etc%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>EBH_ResponseAcquisition__c</picklist>
+        <values>
+            <fullName>Call Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call not answered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMC Committed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMC Interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMC Not Interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMC Not Reached</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Queue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not reached</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seller Ineligible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong Phone Number</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>EBH_Response__c</picklist>
+        <values>
+            <fullName>Call Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call not answered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMC Committed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMC Interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMC Not Interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMC not reached</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Queue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not reached</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seller Ineligible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong phone number</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>EBH_Stage__c</picklist>
+        <values>
+            <fullName>Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merchant Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merchant Interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negotiate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Onboarded</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preboarded</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Present %26 Validate</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>EBH_ThirdPartyProvider3PPOther__c</picklist>
+        <values>
+            <fullName>4sellers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Afterbuy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Channeladvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dreamrobot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JTL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No 3PP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Own API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plentymarkets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Speed4Trade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tradebyte</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>EBH_ThirdPartyProviderChosen__c</picklist>
+        <values>
+            <fullName>AFTERBUY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHANNELADVISOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DREAMROBOT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DREAMROBOTS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ESDEMARCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JTL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PLENTYMARKETS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ebay_Store_advertising_plan__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>EnableEbayCategoriesForStorefront__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>EndToEndTesting__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>EngagementStatus__c</picklist>
+        <values>
+            <fullName>Disengaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engaged</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ExcludePOBoxes__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Express_Shipping_offered__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ExtendedTechnicalIntegration__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Requested</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FeeTiersAUOnly__c</picklist>
+        <values>
+            <fullName>LMO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>VOD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>GoodTilCancelledEnabled__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ImagesOver500Pixels__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ImmediatePaymentEnabled__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Integration_type__c</picklist>
+        <values>
+            <fullName>3PP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>API Hybrid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CSV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CSV %28file exchange%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cart plug in</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Custom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low-touch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MIP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MIP Hybrid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plug in</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMB</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>InventoryUploaded__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Inventory__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ItemSpecificMandatesIfRequired__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Kick_off_call__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSegment__c</picklist>
+        <values>
+            <fullName>Brand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Charity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enterprise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMB</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource__c</picklist>
+        <values>
+            <fullName>2018 Amazon Leads</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2018 TTEC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2019 TTEC Leads</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3PP %26 Trade Groups</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aegis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Channel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal %28Category%2FAccount Manager%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mid-Market</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Zealand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PayPal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reactivation %28existing %26 declining sellers%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self Gen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self Gen %28Landing Page%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self Starters %28existing newly on eBay%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telstra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Webform</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ListingTemplateUploaded__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Merchant_Type__c</picklist>
+        <values>
+            <fullName>Individual%2F Un-registered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LLP%3A Limited Liability Partnership</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LP%3A Limited Partnership</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LTD%3A Private Limited Company</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PLC%3A Public Limited Company</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sole-Trader%2FSole Proprietor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OnHoldReason__c</picklist>
+        <values>
+            <fullName>Channel Partner Delays</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Channel Partner Fees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Engagement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No or Lack of Seller Resources</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Marketplace Priority</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Priority Change for Seller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Timeline to Go Live</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OrderIntegration__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OrdersReceivedByRetailer__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OtherMarketPlaces__c</picklist>
+        <values>
+            <fullName>Alibaba</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aliexpress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Amazon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Etsy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FNAC%2F Darty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fishpond</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Greys Online</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gumtree</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Iconic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mano Mano</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Marketplaces</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price Minister</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rakuten</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rue du commerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VeePee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>cDiscount</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OutOfStockEnabledStatus__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Out_of_eFF_reasons__c</picklist>
+        <values>
+            <fullName>Closed account to use another</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dissatifaction with Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dissatisaction with Price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dissatisfaction with Carrier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dissatisfaction with Logistics Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Needs Returns to be introduced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not happy with current advantages %28ranking%2C etc%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not worth the effort</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal %2F Business Reasons</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problems with WaWi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scope of possible inventory not enough</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User Agreement Violation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wants to use another Carrier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wants to use other 3PP%2Fdirect API</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Out_of_eFF_type__c</picklist>
+        <values>
+            <fullName>Seller Paused</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seller Quit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seller Suspensions</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PLWhitelisting__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PartnerSignOff__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PayPalAccountLinked__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PayPalIntegration__c</picklist>
+        <values>
+            <fullName>Integration with PayPal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seller uses PP Settlement Report</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PayPalWorkingCapitalLoan__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High Touch High Urgency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High Touch Low Urgency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Highest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Touch High Urgency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Touch Low Urgency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ProductPriceListing__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ProductsUploaded__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ProfilePageConfigured__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Project_Type__c</picklist>
+        <values>
+            <fullName>Reacquisition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scaling</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Promotion_Type__c</picklist>
+        <values>
+            <fullName>100%E2%82%AC Start Offer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50 Transactions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Acceleration Startoffer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ReasonNotInterested__c</picklist>
+        <values>
+            <fullName>3PP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Additional accounting effort</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change resistance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coronavirus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fear of Profit Loss</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lack of forms of payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lack of trust%2Ftransparency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overall P2%2E0 features</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PP Fee Increase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PPWC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ReconciliationType__c</picklist>
+        <values>
+            <fullName>3rd Party</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>eBay</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RefundProcess__c</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PayPal API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PayPal Manual</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rejected_Reason__c</picklist>
+        <values>
+            <fullName>3A - Did Not Fail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3A - Did Not Fail but Financial concerns</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 - Below Standard Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 - Defect Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 - Late Delivery Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 - No vat number%2Finvalid vat number</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 - Payment Temporary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 - Recent Dormant Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 - Recent Low Volume Seller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 - SPS Manipulation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 - Temporary Restricted Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 - Financials %2F Pom required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 - Financials %2F confirm company details</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 - Financials %2F sole trader Pom required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 - Financials%2F Financials required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 -Financials %2F Serious Financials concerns</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6 - Dormant Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6 - Invalid User Name</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6 - Low Volume Seller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6 - Payment Full Restriction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6 - Permanent Selling Restriction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6 - SPS Manipulation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RemovalReasons__c</picklist>
+        <values>
+            <fullName>Closing store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Language Barrier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not interested %28declined%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restricted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uncontactable</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Request_Type__c</picklist>
+        <values>
+            <fullName>New Seller Underwriting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RequireMobileForDelivery__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RetailerSignOff__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ReturnsPolicy__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Scalability__c</picklist>
+        <values>
+            <fullName>High %28recommend for AM%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unscalable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Very high %28recommend for AM%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SellerABNRegistered__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SellerManagerProEnabled__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SellerStatus__c</picklist>
+        <values>
+            <fullName>DisEngaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engaged</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Seller_Account_Status__c</picklist>
+        <values>
+            <fullName>Closed %2FDormant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open %2FActive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suspended</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SendReceiveEmailIDSetup__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SexualWellness__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ship_from_store__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ShippedStatusSentToEbay__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ShippingPolicy__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Shipping__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Site__c</picklist>
+        <values>
+            <fullName>AU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UK</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SmartQAInMyeBay__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>StoreBanner__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>StoreIDCreationPayPalAccountLinking__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>StorePromotion__c</picklist>
+        <values>
+            <fullName>12 Month Anchor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 Month Anchor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 Month Basic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 Month Feature</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6 Month Anchor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6 Month Basic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6 Month Feature</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>StoreSubscriptionEnabled__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>StoreSubscription__c</picklist>
+        <values>
+            <fullName>Anchor Shop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Basic Shop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Featured Shop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platinum Shop</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>StrikethroughPricing__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Supply_Chain__c</picklist>
+        <values>
+            <fullName>Drop shipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre-selling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supplier Confirmed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Supporting_Documents_attachments__c</picklist>
+        <values>
+            <fullName>Certificates of Authenticity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial Statements %28on file or as requested to complete review%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proof of Address</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proof of Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proof of Delivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proof of Identity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proof of Merchandise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supplier Agreements</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TechnicalPlanningProcess__c</picklist>
+        <values>
+            <fullName>Don%E2%80%99t Know</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Template__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started%2C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TestOrdersIfRequired__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on it</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ticket_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tracking__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Traffic_Light__c</picklist>
+        <values>
+            <fullName>Amber</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Green</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grey</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Red</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Verification_Status__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Vertical__c</picklist>
+        <values>
+            <fullName>Business %26 Industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collectibles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fashion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health %26 Beauty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home %26 Garden</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LifeStyle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parts %26 Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Toys %26 Hobbies</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Warehousing_and_shipping_responsibility__c</picklist>
+        <values>
+            <fullName>External</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fulfilment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>X30_day_returns__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>X3rdPartyAutomations__c</picklist>
+        <values>
+            <fullName>Inventory</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Listings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Orders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>eBF_2_0_Status__c</picklist>
+        <values>
+            <fullName>Existing eBF1%2E0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New to eBF2%2E0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other %28see comments%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Will not join</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>eBF1%2E0 committed to move</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>eBF1%2E0 organizing move</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

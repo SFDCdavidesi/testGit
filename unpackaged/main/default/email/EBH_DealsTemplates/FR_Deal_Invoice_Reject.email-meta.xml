@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0009403 Deals Invoice VAT - Rejection Email template localization for UK, FR, IT &amp; ES</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>FR Deal Invoice Reject</name>
+    <style>none</style>
+    <subject>Question importante concernant la prise en compte de la promo Bon Plan réalisée le {!DealStartDate}</subject>
+    <textOnly>Nous n&#39;avons pas pu traiter un versement pour la promo Bon Plan réalisée le {!DealStartDate}.
+
+La raison en est la suivante :
+
+{!RejectionComment}
+
+Veuillez effectuer les modifications appropriées et charger à nouveau la facture pour cette transaction à l&#39;aide de l&#39;outil de facturation.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

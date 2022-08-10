@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0007173: UK Coupon Approval Email - to Coupon Seller Owner [NOTE: THIS IS NOT STANDARD SF APPROVAL FLOW]</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>UK Coupon Approved Owner Notification</name>
+    <style>none</style>
+    <subject>{!Coupon_Seller__c.Name} has been approved for Coupon {!Coupon_Seller__c.Marketing_Coupon_Name__c} – Please send out the contract</subject>
+    <textOnly>Dear {!Coupon_Seller__c.EBH_CouponSellerOwner__c},
+
+Your seller {!Coupon_Seller__c.Seller__c} has been approved for the Coupon {!Coupon_Seller__c.Marketing_Coupon_Name__c}.
+Please proceed to send out the contract.
+The seller can accept the contract latest by {!Coupon__c.Contract_Due_Date__c}.
+Access your seller here: {!Coupon_Seller__c.Link}
+
+Thank you,
+Hive</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

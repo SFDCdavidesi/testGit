@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Ready for resubmission</label>
+    <protected>false</protected>
+    <values>
+        <field>Value_Big__c</field>
+        <value xsi:type="xsd:string">/s/my-deal-lists?tabset-30037=2d5de#SELECT COUNT() FROM EBH_Deal__c WHERE Seller_Portal_Status__c = &#39;Deal proposal rejected&#39; AND Can_ReSubmit__c = TRUE</value>
+    </values>
+    <values>
+        <field>Value__c</field>
+        <value xsi:type="xsd:string">{X} Deal(s) available for resubmission</value>
+    </values>
+    <values>
+        <field>Value_in_German__c</field>
+        <value xsi:type="xsd:string">{X} WOW! Angebote - zur Wiedervorlage verfügbar</value>
+    </values>
+</CustomMetadata>

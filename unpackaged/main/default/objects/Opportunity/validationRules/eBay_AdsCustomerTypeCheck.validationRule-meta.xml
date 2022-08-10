@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>eBay_AdsCustomerTypeCheck</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+
+$Profile.Name = &quot;Standard Ads User Profile&quot;,
+$Setup.byPass__c.byPass_WFRule__c = FALSE,
+
+OR(
+RecordType.DeveloperName = $Label.OPP_RECORDTYPEDEVNAME_DIRECT,
+RecordType.DeveloperName = $Label.OPP_RECORDTYPEDEVNAME_PROGRAMMATIC,
+RecordType.DeveloperName = $Label.OPP_RECORDTYPEDEVNAME_PMP,
+RecordType.Name = &#39;eBay Ads - Incremental Placeholder&#39;
+),
+
+NOT(ISPICKVAL( Account.Customer_Type__c, &#39;1P and 3P&#39; )),
+
+TEXT(Account.Customer_Type__c) &lt;&gt; TEXT(Customer_Type__c)
+
+)</errorConditionFormula>
+    <errorDisplayField>Customer_Type__c</errorDisplayField>
+    <errorMessage>You can only create an opportunity if the customer type matches the customer type on the account</errorMessage>
+</ValidationRule>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>EPH-7608 Send click contract to a seller as part of FVF process</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>FVF Click Contract UK</name>
+    <style>none</style>
+    <subject>FVF Discount Form {!Action_Require}{!FVF_SellerName} {!FVF_StartDate}</subject>
+    <textOnly>This e-mail is to offer You a discount on your final value fees (“FVF Discount”) for the items and/or categories and/or stores specified below.
+
+We charge a final value fee (“FVF”) when your item(s) sell(s). The FVF charged per order consists of: (i) a variable portion (“Variable Portion FVF”) which is calculated as a percentage of the Total Sale Amount, and (ii) a fixed portion (“Fixed Portion FVF”) for example 30p, as per the terms of your Special Pricing Agreement with eBay.  The Total Sale Amount means the amount the buyer pays for an order, including any shipping charges. An order is any number of items purchased by the same buyer at checkout with the same shipping method.
+
+The FVF Discount applies to the Variable Portion FVF (net of any other discounts). If the FVF Discount applies to specific items/categories/stores, an Excel spreadsheet will be attached to this email, referenced in the table below and will be part of this agreement.
+
+You can accept this FVF Discount Form and the applicable terms by clicking on “I AGREE” below as soon as is practicable but in any event before the start of the Promotion Period.
+
+I AGREE
+
+
+Seller User ID  {!FVF_SellerName}
+FVF Discount %   {!FVF_DiscountFVF} on the variable % of the FVF. The fixed transaction cost (e.g. 30p) will not be discounted.
+Promotion Period  From {!FVF_StartTime} on {!FVF_StartDate} until {!FVF_EndTime} on {!FVF_EndDate} (GMT)
+Applicable to  The items/categories/stores specified in the attached Excel spreadsheet {!FVF_ApplicableTo}
+Excluded categories
+
+The below categories will always be excluded from the FVF Discount:
+
+Property;
+Cars, Motorcycles &amp; Vehicles; and
+Coins, Banknotes &amp; Bullion
+
+Additional terms    {!FVF_AddtionalTerm}
+
+
+Full FVF will be charged during the Promotion Period. The FVF Discount will be credited to your account within 60 days of the end of the Promotion Period. Please note that such credit may subsequently be reversed to account for any outstanding returns or cancellations.
+
+Please note that any FVF Discount amounts are exclusive of VAT. The FVF Discount credited to your account will follow the same VAT treatment as the initial fees charged during the Promotion Period.
+
+The terms of this email are subject to the terms and conditions between eBay (UK) Limited, 1 More London Place, SE1 2AF, London, United Kingdom, registered in England &amp; Wales with company number 03726028 (“eBay”) and {!FVF_SellerName}, {!SellerAddress1} , VAT Number: {!SellerVatNumber} (“Seller, You”), available at “Business Seller FVF Discount Terms and Conditions”. Terms not defined here shall have the meaning given to them in the Business Seller FVF Discount Terms and Conditions.
+
+Any additional, alternate or amended terms must be expressly and mutually agreed by the parties in writing (email shall suffice).</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>eBay_3P_consent__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>US-0008199 - DE Managed Fulfillment - Landing page consent form</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Seller’s consent for eBay GmbH to pass on personal data provided above to 3rd party Orange Connex Global Germany GmbH, so that they can contact by email and / or phone about services and Orange Connex offers...</inlineHelpText>
+    <label>eBay 3P consent</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

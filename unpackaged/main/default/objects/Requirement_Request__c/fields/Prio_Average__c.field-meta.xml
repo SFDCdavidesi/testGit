@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prio_Average__c</fullName>
+    <externalId>false</externalId>
+    <formula>(
+  nullvalue(VALUE( TEXT(Prio_AU__c ) )*0.1,0) +
+ NULLVALUE( VALUE(TEXT(  Prio_ES__c ) )*0.0333,0) +
+ NULLVALUE( VALUE(TEXT(   Prio_FR__c ) )*0.0333,0) +
+NULLVALUE(  VALUE(TEXT(  Prio_IT__c ) )*0.0333 ,0) +
+NULLVALUE(  VALUE(TEXT(  Prio_DE__c  ) )*0.2  ,0) +
+NULLVALUE(   VALUE(TEXT(  Prio_UK__c  ) )*0.2 ,0) +
+NULLVALUE(   VALUE(TEXT(  Prio_US__c  ) )*0.4,0) 
+ )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Prio (Average)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

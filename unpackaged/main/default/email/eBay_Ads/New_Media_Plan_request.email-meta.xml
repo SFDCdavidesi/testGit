@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>** eBay Ads Sends Email to Media Planners Queue on New Media Plan Request***</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>eBay_Ads_Letterhead</letterhead>
+    <name>New Media Plan request</name>
+    <style>freeForm</style>
+    <subject>Media Plan Request Submission:{!Media_Plan__c.CreatedBy} - {!Media_Plan__c.CreatedDate}</subject>
+    <textOnly>A Media Plan request has been submitted. Please login to your queue to review the details or Click the link to view the Media Plan request.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Promoted_Adv_Listings_Net_Rev_Last_Wk__c</fullName>
+    <description>US-0010581 - ADS - PLA Revenue Data on Seller Account</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Revenue generated from PL Advanced listings through sponsored slots.</inlineHelpText>
+    <label>PLA Revenue (last retail week)</label>
+    <precision>15</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

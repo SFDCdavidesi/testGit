@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NA_BCD_Finance_Below_50K_BCD_Statement</fullName>
+    <filterScope>Queue</filterScope>
+    <label>NA BCD Finance Below $50K</label>
+    <queue>NA_BCD_Finance_Below_50K</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

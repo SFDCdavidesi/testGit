@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_DealPrice__c</fullName>
+    <description>[EBH] (EPH-4163) - Deal Price</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Price of deal, including any eBay subsidy. If no eBay subsidy is applied, Deal Price and Seller Price are same amount</inlineHelpText>
+    <label>Deal Price</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

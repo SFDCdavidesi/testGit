@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_Accept</fullName>
+    <availability>online</availability>
+    <description>[EBH] (EPH-3291) - Deal Accept</description>
+    <displayType>massActionButton</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Accept</masterLabel>
+    <openType>sidebar</openType>
+    <page>EBH_AcceptDeal</page>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+</WebLink>

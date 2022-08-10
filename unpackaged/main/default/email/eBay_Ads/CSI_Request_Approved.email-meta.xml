@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>CSI Request Approved</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>eBay_Ads_Letterhead</letterhead>
+    <name>CSI Request Approved</name>
+    <style>freeForm</style>
+    <subject>{!Advertising_Request_Portal__c.Request_Type__c} Complete</subject>
+    <textOnly>Hello {!Advertising_Request_Portal__c.OwnerFullName},
+
+Your {!Advertising_Request_Portal__c.Request_Type__c} request is now complete.
+
+{!Advertising_Request_Portal__c.Link}
+
+Thanks,
+
+{!Advertising_Request_Portal__c.CSI_Team_Member__c}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

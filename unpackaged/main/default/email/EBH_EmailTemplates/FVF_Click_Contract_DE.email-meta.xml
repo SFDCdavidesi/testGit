@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0009433 - Click contract to a seller as part of FVF process. DE version</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>FVF_Click_Contract_DE</name>
+    <style>none</style>
+    <subject>Werbeaktions-Einzelvertrag - {!FVF_SellerName}</subject>
+    <textOnly>Werbeaktions-Einzelvertrag
+
+Mit diesem Werbeaktions-Einzelvertrag und ihrer Anlage 1, die fester Bestandteil dessen ist, (nachfolgend gemeinsam „Werbeaktions-Einzelvertrag“), bieten wir Ihnen die Teilnahme an einem Maximalpreisangebot zu den nachstehenden Konditionen sowie auf Basis der dazugehörigen „Werbeaktions-AGB“ an, welche Sie unter https://pages.ebay.de/werbeaktions-agb/index.html einsehen können.
+
+Durch Anklicken des nachstehenden Buttons „ICH STIMME ZU“ erklären Sie Ihre ausdrückliche Zustimmung zu diesem Werbeaktions-Einzelvertrag, den Werbeaktions-AGB, und somit Ihre Teilnahme an dem Maximalpreisangebot. Die Zustimmung muss spätestens 1 Tag vor dem Start der Werbeaktion erfolgt sein.
+
+ICH STIMME ZU
+
+
+Verkäufer User ID(s) für die Werbeaktion  {!FVF_SellerName}
+eBay Seite  www.ebay.de
+Werbeaktionszeitraum  {!FVF_StartDate} {!FVF_StartTime} bis {!FVF_EndDate} {!FVF_EndTime} Eine Verschiebung des Werbeaktionszeitraums sowie der Dauer dieses liegt im freien Ermessen von eBay. eBay wird den Verkäufer im gegebenen Fall hierüber jedoch informieren.
+Von eBay finanzierter Rabatt auf die Verkaufsprovision  {!FVF_DiscountFVF} Rabatt
+Vom Rabatt erfasste Artikel
+
+Der Rabatt gilt für die in der Anlage 1 genannten Artikel des Verkäufers, wenn diese während des Werbeaktionszeitraums zum dem darin angegeben Maximalpreis verkauft werden. Es liegt in Ihrem freien Ermessen, die betreffenden Artikel auch zu geringeren als den hier vereinbarten Preisen zu verkaufen.
+
+Sonstiges
+
+{ifFreeShipping}
+
+{!FVF_AddtionalTerm}
+
+
+Bitte beachten Sie, dass alle Rabattbeträge für die Verkaufsprovision ohne Mehrwertsteuer angegeben sind. Der Rabatt auf die Verkaufsprovision, der Ihrem Konto gutgeschrieben wird, unterliegt der gleichen Mehrwertsteuerbehandlung wie die sonstigen Gebühren, die auch während des Aktionszeitraums für die von der Aktion nicht erfassten Artikel berechnet werden.
+
+Mit freundlichen Grüßen
+
+Ihr eBay-Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

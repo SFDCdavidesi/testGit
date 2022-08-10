@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <available>true</available>
+    <description>US-0011130 - Email Notification for Deal Statement Summary approval</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Approved Deal Statement Summary Email 2</name>
+    <style>none</style>
+    <subject>Your Deal Statement Summary status has been updated to {Name}</subject>
+    <type>visualforce</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

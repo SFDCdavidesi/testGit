@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0009878 - Hive University - Permission Set Assignment Automation for Survey Vista</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>University - Permission Set Assignment Automation for Survey Vista</name>
+    <style>none</style>
+    <subject>🐝 Hive: Congratulations - You have a new permission!</subject>
+    <textOnly>Hi {!trailheadapp__User_Badge__c.OwnerFirstName__c},
+
+congratulations you have just completed the {!trailheadapp__User_Badge__c.Badge_Name__c} module and have been assigned new  permission(s).
+
+{!trailheadapp__User_Badge__c.Permission_Set_Description__c}
+
+Team Hive</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

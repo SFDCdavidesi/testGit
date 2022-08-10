@@ -1,0 +1,108 @@
+<p style="font-size: 30px; text-align: center;">
+	<strong>Sie nehmen jetzt an der Coupon-Aktion teil</strong>
+</p>
+<p style="text-align: justify;">Vielen Dank, dass Sie die Bedingungen des Werbeaktions-Einzelvertrags auf Basis der dazugeh&ouml;rigen Werbeaktions-AGB (zusammen &bdquo;Werbeaktions-Einzelvertrag&ldquo;) akzeptiert haben. Wir haben Ihnen eine Best&auml;tigungs-E-Mail geschickt.</p>
+<p style="text-align: justify;">Die Gutschein-Werbeaktion&nbsp;<strong>&bdquo;</strong>{Marketing_Coupon_Name__c}&rdquo; l&auml;uft bis zum <strong>{CouponEndDate}</strong>. Wenn Sie weitere Fragen zur Aktion haben, wenden Sie sich bitte an Ihre Ansprechpartnerin oder Ihren Ansprechpartner bei eBay.</p>
+<p style="text-align: justify;">Sie k&ouml;nnen den Werbeaktions-Einzelvertrag <a title="Sie k&ouml;nnen den Werbeaktions-Einzelvertrag hier" href="{!recordURL}" target="_blank">hier</a>, sowie die dazugeh&ouml;rigen <a title="Werbeaktions-AGB" href="https://pages.ebay.de/werbeaktions-agb/index.html" target="_blank" rel="noopener">Werbeaktions-AGB</a>&nbsp;&uuml;ber den entsprechenden Link, abrufen, speichern und ausdrucken. Falls Sie den Vertrag zu Zwecken der Beweissicherung, der Buchf&uuml;hrung oder zu anderen Zwecken ben&ouml;tigen, sind Sie selbst daf&uuml;r verantwortlich, den Vertrag auszudrucken und zu archivieren oder auf einem von eBay unabh&auml;ngigen Speichermedium zu archivieren.</p>
+<p>&nbsp;</p>
+<table class="ql-table">
+	 
+		<tr>
+			<td >
+				<strong>Verk&auml;ufer</strong>
+			</td>
+			<td >
+				<p>{LegalEntity}, {StreetName}, {Zip}, {City}, {Country}</p>
+			</td>
+		</tr>
+		<tr>
+			<td >
+				<strong>Nutzername des Verk&auml;ufers f&uuml;r die Gutscheinaktion</strong>
+			</td>
+			<td >
+				<p>{eBaySellerID}</p>
+			</td>
+		</tr>
+		<tr>
+			<td >
+				<strong>eBay-Website(s)</strong>
+			</td>
+			<td >
+				<p>{CouponSites}</p>
+			</td>
+		</tr>
+                <tr>
+                        <td>
+                                <strong>Gutschein-Name</strong>
+                        </td>
+                        <td>
+                                <p>{Marketing_Coupon_Name__c}</p>
+                        </td>
+                </tr>
+                <tr>
+                        <td>
+                                <strong>Gutschein-Code</strong>
+                        </td>
+                        <td>
+                                <p>{CouponCode}</p>
+                        </td>
+                </tr>
+		<tr>
+			<td >
+				<strong>Gutschein-Werbeaktionszeitraum</strong>
+			</td>
+			<td >
+				 {CouponStartTime} {CouponStartDate} bis {CouponEndTime} {CouponEndDate} (CET)
+			</td>
+		</tr>
+		<tr>
+			<td >
+				<p>
+					<strong>Vom Verk&auml;ufer an eBay zuentrichtende Erfolgspr&auml;mie</strong>
+				</p>
+			</td>
+			<td >
+				<p>Angaben bemessen in Prozent (%) des Einl&ouml;sewerts des Gutscheins</p>
+				<table class="catTable">
+					<thead>
+						<tr>
+							<th >Kategorie</th>
+							<th >Kategorie-ID</th>
+							<th >
+								<strong>Von Verk&auml;ufer an eBay zu&nbsp;entrichtende Erfolgspr&auml;mie(%)</strong></th>
+						</tr>
+					</thead>
+					<tbody>
+						{CAT_TABLE_ROWS}
+					</tbody>
+				</table>
+				<p>Dieser Coupon wird nur f&uuml;r die vorgenannten Kategorien ausgestellt.</p>
+			</td>
+		</tr>
+		<tr>
+			<td >
+				<strong>Details zur Gutscheinaktion</strong>
+			</td>
+			<td >
+				<p>{CouponDiscount%}{CouponDiscountAmount} Rabatt auf den Artikelpreis.</p>
+				<p>Bis zu einem maximalen Betrag von {CouponCap} pro Transaktion.</p>
+				<p>Mindestbestellwert: {Minimum_Transaction_Value__c}</p>
+				<p>Der Gutschein kann maximal {Max_Redemptions__c}x je Nutzer eingel&ouml;st werden.</p>
+			</td>
+		</tr>
+		<tr>
+			<td >
+				<strong>eBay Vertragspartner</strong>
+			</td>
+			<td >eBay GmbH, Albert-Einstein-Ring 2-6, 14532 Kleinmachnow</td>
+		</tr>
+		<tr>
+			<td >
+				<strong>Sonstiges</strong>
+			</td>
+			<td >
+				<p>{AdditionalArrangement}</p>
+			</td>
+		</tr>
+	 
+</table>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Create_Actions_for_Selected_Sellers</fullName>
+    <availability>online</availability>
+    <description>US-0008799 - [LTTM Plus]Create Actions for selected Subset of Light touch cohort Sellers</description>
+    <displayType>massActionButton</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Create Actions for Selected Sellers</masterLabel>
+    <openType>sidebar</openType>
+    <page>CreateActionForCohortSeller</page>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+</WebLink>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_BreachReason</fullName>
+    <active>true</active>
+    <description>[AU] Coupon Seller Object - New Reason Codes for Declined Reason</description>
+    <errorConditionFormula>AND( ISPICKVAL( Seller_Declined_Reasons__c , &quot;Contract Breach&quot;) , ISBLANK( Breach_Reason__c ) )</errorConditionFormula>
+    <errorDisplayField>Breach_Reason__c</errorDisplayField>
+    <errorMessage>Please fill the text in Breach Reason!</errorMessage>
+</ValidationRule>

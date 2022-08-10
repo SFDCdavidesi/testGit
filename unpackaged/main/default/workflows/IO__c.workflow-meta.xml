@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Auto_Approved_IO</fullName>
+        <description>Auto Approved IO</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/Auto_Approved_IO</template>
+    </alerts>
+    <alerts>
+        <fullName>IO_approved_by_Finance</fullName>
+        <description>IO approved by Finance</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/Finance_approves_IO</template>
+    </alerts>
+    <alerts>
+        <fullName>IO_approved_by_Legal</fullName>
+        <description>IO approved by Legal</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/Legal_Approves_IO</template>
+    </alerts>
+    <alerts>
+        <fullName>IO_rejected_by_Finance</fullName>
+        <description>IO rejected by Finance</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/Finance_rejects_IO</template>
+    </alerts>
+    <alerts>
+        <fullName>IO_rejected_by_Legal</fullName>
+        <description>IO rejected by Legal</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/Legal_Rejects_IO</template>
+    </alerts>
+    <alerts>
+        <fullName>Marketing_Sold</fullName>
+        <description>Marketing Sold</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ttsagong@hive.project.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/Marketing_Sold</template>
+    </alerts>
+    <alerts>
+        <fullName>eBay_Ads_IO_alert_to_CM</fullName>
+        <ccEmails>DL-eBay-ADV-Campaigns@ebay.com</ccEmails>
+        <description>eBay Ads - IO alert to CM</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/IO_alert_to_CM</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Field_Update</fullName>
+        <field>IO_Status__c</field>
+        <literalValue>Submitted for Approval</literalValue>
+        <name>Field Update Submitted for Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Field_Update2</fullName>
+        <field>Finance_Approval_Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Field Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Field_Update_Approved</fullName>
+        <field>IO_Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Field Update Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Field_Update_Approved2</fullName>
+        <field>IO_Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Field Update Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Field_Update_Rejected</fullName>
+        <field>IO_Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Field Update Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Finance_Status_Approved</fullName>
+        <description>finance status = approved</description>
+        <field>Finance_Approval_Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Finance Status Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Finance_Status_Rejected</fullName>
+        <description>finance status = rejected</description>
+        <field>Finance_Approval_Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Finance Status Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Finance_Status_Submitted</fullName>
+        <field>Finance_Approval_Status__c</field>
+        <literalValue>Submitted</literalValue>
+        <name>Finance Status Submitted</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>IO_Legal_Approval_Status_Approved</fullName>
+        <field>Legal_Approval_Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>IO Legal Approval Status  Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>IO_Legal_Approval_Status_Rejected</fullName>
+        <field>Legal_Approval_Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>IO Legal Approval Status Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>IO_Legal_Approval_Status_Submitted</fullName>
+        <field>Legal_Approval_Status__c</field>
+        <literalValue>Submitted</literalValue>
+        <name>IO Legal Approval Status Submitted</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Incremental_IO_Amount</fullName>
+        <field>Incremental_Amount__c</field>
+        <formula>Revised_Total_Order_Amount__c - PRIORVALUE(Revised_Total_Order_Amount__c)</formula>
+        <name>Incremental IO Amount</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_IO_RT_to_Direct</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Direct</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Update IO RT to Direct</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_IO_RT_to_Progrmmatic</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Programmatic</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Update IO RT to Programmatic</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>eBay_Ads_Bridget_Davies</fullName>
+        <field>IO_Contract_Signer__c</field>
+        <lookupValue>akazim@hive.project.com</lookupValue>
+        <lookupValueType>User</lookupValueType>
+        <name>eBay Ads - Bridget Davies</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>eBay_Ads_Kristy_Troup</fullName>
+        <field>IO_Contract_Signer__c</field>
+        <lookupValue>wimills@hive.project.com</lookupValue>
+        <lookupValueType>User</lookupValueType>
+        <name>eBay Ads - Kristy Troup</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>eBay_Ads_Scott_Kelliher</fullName>
+        <field>IO_Contract_Signer__c</field>
+        <lookupValue>ttsagong@hive.project.com</lookupValue>
+        <lookupValueType>User</lookupValueType>
+        <name>eBay Ads - Scott Kelliher</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Finance Approval</fullName>
+        <actions>
+            <name>Finance_Status_Submitted</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 or 2</booleanFilter>
+        <criteriaItems>
+            <field>IO__c.Total_Order_Amount__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>&quot;USD 2,000,000&quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>IO__c.Revised_Total_Order_Amount__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>&quot;USD 2,000,000&quot;</value>
+        </criteriaItems>
+        <description>if initial or revise amount is greater 2m, finance approval is required</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Incremental Value</fullName>
+        <actions>
+            <name>Incremental_IO_Amount</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>AND(     ISCHANGED(Revised_Total_Order_Amount__c),     NOT(ISBLANK(Revised_Total_Order_Amount__c)) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Marketing Sold</fullName>
+        <actions>
+            <name>Marketing_Sold</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <formula>AND(  $Setup.byPass__c.byPass_WFRule__c = FALSE,  OR( INCLUDES(Marketing_Type_Sold__c  ,&quot;Holiday&quot;), INCLUDES(Marketing_Type_Sold__c,&quot;Integrated Program&quot;), INCLUDES(Marketing_Type_Sold__c,&quot;EAAT&quot;), INCLUDES(Marketing_Type_Sold__c,&quot;Case Study&quot;), INCLUDES(Marketing_Type_Sold__c,&quot;Ad Effectiveness Measurement Study&quot;) )  )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>eBay Ads - IO alert to CM</fullName>
+        <actions>
+            <name>eBay_Ads_IO_alert_to_CM</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <formula>AND(  $Setup.byPass__c.byPass_WFRule__c = FALSE,  OR( RecordType.Name = &#39;Direct&#39;, RecordType.Name = &#39;Programmatic&#39; ),  ISPICKVAL(IO_Status__c, &#39;Approved&#39;),  OR( Dually_Signed_IO__c = TRUE, Buyer_Accepted__c = TRUE )  )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>eBay Ads - Internal Contract Signer</fullName>
+        <actions>
+            <name>eBay_Ads_Bridget_Davies</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>if the IO amount is &gt; 1M + customer type is 3P, assign Godert van Dedem as the Internal Contract signer</description>
+        <formula>AND(  $Setup.byPass__c.byPass_WFRule__c = FALSE, RecordType.Name = &#39;Direct&#39;, Revised_Total_Order_Amount__c &gt;= 1000000,  OR( ISPICKVAL( Most_Recent_Opportunity__r.Customer_Type__c, &quot;3P&quot;), ISPICKVAL( Most_Recent_Opportunity__r.Customer_Type__c, &quot;1P + 3P&quot;) )   )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>eBay Ads - Internal Contract Signer %3C 1M</fullName>
+        <actions>
+            <name>eBay_Ads_Scott_Kelliher</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>if the IO amount is &lt; 1M &amp; customer type is 3P, assign Scott Kelliher as the Internal Contract signer</description>
+        <formula>AND(  $Setup.byPass__c.byPass_WFRule__c = FALSE,  RecordType.Name = &#39;Direct&#39;,  OR( ISPICKVAL( Most_Recent_Opportunity__r.Customer_Type__c, &quot;3P&quot;), ISPICKVAL( Most_Recent_Opportunity__r.Customer_Type__c, &quot;1P + 3P&quot;) ),  Revised_Total_Order_Amount__c &lt;= 1000000  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>eBay Ads - Internal Contract Signer %3C 1M 1P</fullName>
+        <actions>
+            <name>eBay_Ads_Kristy_Troup</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>if the IO amount is &lt;= 500K &amp; customer type is 1P, assign Billy Mills as the Internal Contract signer</description>
+        <formula>AND(  $Setup.byPass__c.byPass_WFRule__c = FALSE, RecordType.Name = &#39;Direct&#39;,  ISPICKVAL(  Most_Recent_Opportunity__r.Customer_Type__c, &quot;1P&quot;), Revised_Total_Order_Amount__c &lt;= 500000  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>eBay Ads - Internal Contract Signer 1P</fullName>
+        <actions>
+            <name>eBay_Ads_Scott_Kelliher</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>if the IO amount is &gt; 500K &amp; &lt;=1M &amp; customer type is 1P, assign Scott Kelliher as the Internal Contract signer</description>
+        <formula>AND(  $Setup.byPass__c.byPass_WFRule__c = FALSE, RecordType.Name = &#39;Direct&#39;,  ISPICKVAL(  Most_Recent_Opportunity__r.Customer_Type__c, &quot;1P&quot;), Revised_Total_Order_Amount__c &gt; 500000, Revised_Total_Order_Amount__c &lt;= 1000000  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>eBay Ads - Internal Contract Signer 1P %3E 1M</fullName>
+        <actions>
+            <name>eBay_Ads_Bridget_Davies</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>if the IO amount is &gt; 1M &amp; customer type is 1P, assign Godert van Dedem as the Internal Contract signer</description>
+        <formula>AND(  $Setup.byPass__c.byPass_WFRule__c = FALSE, RecordType.Name = &#39;Direct&#39;,  ISPICKVAL(  Most_Recent_Opportunity__r.Customer_Type__c, &quot;1P&quot;), Revised_Total_Order_Amount__c &gt; 1000000  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>eBay Ads - Update IO RT to Direct</fullName>
+        <actions>
+            <name>Update_IO_RT_to_Direct</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>AND( $Setup.byPass__c.byPass_WFRule__c = FALSE,  Most_Recent_Opportunity__r.RecordType.DeveloperName  =  $Label.OPP_RECORDTYPEDEVNAME_DIRECT  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>eBay Ads - Update IO RT to Programmatic</fullName>
+        <actions>
+            <name>Update_IO_RT_to_Progrmmatic</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>AND(  $Setup.byPass__c.byPass_WFRule__c = FALSE,  Most_Recent_Opportunity__r.RecordType.DeveloperName  =    $Label.OPP_RECORDTYPEDEVNAME_PROGRAMMATIC  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

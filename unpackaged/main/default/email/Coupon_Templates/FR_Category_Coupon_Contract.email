@@ -1,0 +1,56 @@
+<p style="text-align: justify;">Vous trouverez ci-dessous les informations concernant votre participation &agrave; la campagne de bons d&rsquo;achat {Coupon_ID__c}. Veuillez valider ces informations en cliquant sur le bouton suivant avant le {ContractDueDate}:</p>
+<p style="text-align: center;"><a title="J'ACCEPTE" href="{clickMeUrl}">J'ACCEPTE</a></p>
+<table style="width: 909px; border-collapse: collapse; height: 621px;" border="1" cellspacing="0" cellpadding="5">
+<tbody>
+<tr>
+<td style="width: 218.556px;"><strong>Vendeur</strong></td>
+<td style="width: 667.444px;">{LegalEntity}, {StreetName}, {Zip} {City}</td>
+</tr>
+<tr>
+<td style="width: 218.556px;"><strong>Pseudo(s) du vendeur pour la campagne de bons d&rsquo;achat</strong></td>
+<td style="width: 667.444px;">{eBaySellerID}</td>
+</tr>
+<tr>
+<td style="width: 218.556px;"><strong>Site(s) eBay</strong></td>
+<td style="width: 667.444px;">{CouponSites}</td>
+</tr>
+<tr>
+<td style="width: 218.556px;"><strong>P&eacute;riode promotionnelle de la campagne de bons d&rsquo;achat</strong></td>
+<td style="width: 667.444px;">Du {CouponStartDate} &agrave; {CouponStartTime} au {CouponEndDate} &agrave; {CouponEndTime} (Heure d'Europe centrale) ou toute autre p&eacute;riode d&eacute;finie par eBay. eBay se r&eacute;serve le droit de d&eacute;terminer les dates exactes de la p&eacute;riode promotionnelle.</td>
+</tr>
+<tr>
+<td style="width: 218.556px;"><strong>Frais dus par le vendeur &agrave; eBay en cas de vente avec les bons d&rsquo;achat</strong></td>
+<td style="width: 667.444px;">&nbsp;
+<p>{!catTable}</p>
+<p style="font-size: 12px;">sur la valeur utilis&eacute;e des bons d&rsquo;achat mis &agrave; disposition du vendeur</p>
+</td>
+</tr>
+<tr>
+<td style="width: 218.556px;"><strong>D&eacute;tails de la campagne de bons d&rsquo;achat ou de la promotion</strong></td>
+<td style="width: 667.444px;">&nbsp;-R&eacute;duction de {CouponDiscount%}{CouponDiscountAmount} sur le prix de l'objet
+<p><br /> -R&eacute;duction maximale par transaction : {CouponCap}</p>
+<p><br /> -Montant minimum de la commande: {Minimum_Transaction_Value__c}</p>
+<p>&nbsp;</p>
+-Utilisable {Max_Redemptions__c} fois par acheteur</td>
+</tr>
+<tr>
+<td style="width: 218.556px;"><strong>Partenaire contractuel eBay</strong></td>
+<td style="width: 667.444px;">eBay GmbH, Albert-Einstein-Ring 2-6, 14532 Kleinmachnow&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 218.556px;"><strong>Divers</strong></td>
+<td style="width: 667.444px;">{AdditionalArrangement}</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>En acceptant, vous confirmez et garantissez ce qui suit&nbsp;:</p>
+<ul>
+<li>Tout objet que vous mettez en vente n'est ni une contrefa&ccedil;on ni une copie non autoris&eacute;e.</li>
+<li>Vous &ecirc;tes autoris&eacute;(e) &agrave; vendre/distribuer les objets et &agrave; les envoyer vers les lieux de livraison que vous avez indiqu&eacute;s.</li>
+<li>Vous ne manquez &agrave; aucune obligation d&eacute;coulant d&rsquo;autres contrats en mettant en vente des objets sur eBay.</li>
+</ul>
+<p><strong>Le pr&eacute;sent accord documente les modalit&eacute;s et conditions de la campagne de bons d&rsquo;achat sur le ou les site(s) eBay indiqu&eacute;(s) ci-dessus et fait partie des Conditions relatives aux promotions sur les prix&nbsp;sur la place de march&eacute; eBay conclu entre eBay&nbsp;et vous.</strong></p>
+<p>&nbsp;</p>
+<p>Cordialement,</p>
+<p>L'&eacute;quipe eBay</p>

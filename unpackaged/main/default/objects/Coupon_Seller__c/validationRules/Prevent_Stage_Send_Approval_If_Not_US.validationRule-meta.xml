@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Stage_Send_Approval_If_Not_US</fullName>
+    <active>true</active>
+    <description>US-0011779 - Internal Coupon Seller Approval flow for NA</description>
+    <errorConditionFormula>AND(ISCHANGED(Coupon_Seller_Stage__c),  ISPICKVAL(Coupon_Seller_Stage__c, &#39;Sent for Approval&#39;),Contract_Language__c != &#39;US&#39;)</errorConditionFormula>
+    <errorMessage>This status can be selected for only US .</errorMessage>
+</ValidationRule>

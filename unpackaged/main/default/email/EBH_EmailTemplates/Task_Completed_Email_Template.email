@@ -1,0 +1,11 @@
+<p><b>Recipients</b>: {!Task.CreatedBy};</p><br/>
+
+<p><b>Seller</b>: {!EBH_Project__c.EBH_Seller__c}</p>
+<p><b>Task Reason</b>: {!Task.Reason__c}</p>
+<p><b>Request</b>: {!Task.Request_Description__c}</p>
+<p><b>Response</b>: {!Task.Response_Description__c}</p><br/>
+
+<p>For more details, please go to: <a href="{!Task.Link}">{!Task.Subject}</a>.</p>
+<p>Related Ticket: <a href="{!EBH_Project__c.Link}">{!EBH_Project__c.Name}</a>.</p><br/>
+
+<p>Thank you.</p>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0012016 - NA localization - Seller Communication- Item Upload Invitation</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>SP - Coupons - NA - Upload Items Invitation</name>
+    <pageDevName>SP_Coupons_NA_Upload_Items_Invitation</pageDevName>
+    <relatedEntityType>Seller_Communication__c</relatedEntityType>
+    <style>none</style>
+    <subject>Item Submissions are Now Open for Coupon | {{{Seller_Communication__c.Coupon_Marketing_Name__c}}}</subject>
+    <textOnly>**Item Submissions are Now Open for Coupon | {{{Seller_Communication__c.Coupon_Marketing_Name__c}}}
+----------------------------------------------------
+
+Hello {{{Seller_Communication__c.Contact__c}}},
+
+You were invited by {{{Seller_Communication__c.CouponSellerOwner__c}}}to Participate in a coupon campaign
+
+{{{Seller_Communication__c.Coupon_Marketing_Name__c}}} from {{{Seller_Communication__c.CouponStartDate__c}}} to {{{Seller_Communication__c.CouponEndDate__c}}}
+
+Please upload your eBay items against the coupon by clicking the &quot;Upload Item&quot; button.
+
+Upload Items &lt; {{{Seller_Communication__c.CouponURLPortalText__c}}} &gt; 
+
+Best Regards,
+
+eBay Seller Funded Coupons
+
+This email was sent by Ebay, Inc. Ebay will never ask you to provide confidential information (like your password or credit card details) via email.</textOnly>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

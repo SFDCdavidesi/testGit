@@ -1,0 +1,43 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">Hello {!Case.CreatedBy},
+<p>&nbsp;</p>
+
+<p>The status of your HIVE feature request <a href="{!Case.Link}" style="text-decoration:none">{!Case.CaseNumber}</a> - {!Case.Summary__c} has changed to status {!Case.Status}.</p>
+
+<p>&nbsp;</p>
+
+<p>Please refer to the below list of possible status values and their definitions for further information.</p>
+
+<p>&nbsp;</p>
+
+<p style="margin-left:2%"><b>New</b></p>
+
+<p style="margin-left:4%">A new ticket has been created and added to our HIVE new feature request ticket queue.</p>
+
+<p style="margin-left:2%"><b>Waiting for Feedback</b></p>
+
+<p style="margin-left:4%">A HIVE Product Owner will reach out to you via HIVE chatter or in person to clarify open questions.</p>
+
+<p style="margin-left:2%"><b>Added to Product Backlog</b></p>
+
+<p style="margin-left:4%">Your user story / stories have been added to the product backlog and are awaiting prioritization for sprint planning through the HIVE Product Manager.</p>
+
+<p style="margin-left:2%"><b>Deployed to Production</b></p>
+
+<p style="margin-left:4%">Your user story / stories have been successfully depoyed to HIVE production and are ready to be used - yeah!</p>
+
+<p style="margin-left:2%"><b>Rejected</b></p>
+
+<p style="margin-left:4%">Your HIVE Feature Request has been rejected. Please refer to the Rejection Reason field in the ticket for any details.</p>
+For any questions please feel free to use our HIVE chatter group directly in the ticket.
+
+<p>&nbsp;</p>
+
+<p>Thanks,</p>
+
+<p>Your HIVE Team</p>
+</body>
+</html>

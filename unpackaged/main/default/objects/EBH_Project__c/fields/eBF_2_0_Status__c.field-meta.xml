@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>eBF_2_0_Status__c</fullName>
+    <description>US-0008217 - DE Managed Fulfillment - field for eBF 2.0 Status</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicate seller&#39;s progress in transitioning to the new eBay Fulfillment program.</inlineHelpText>
+    <label>eBF 2.0 Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Existing eBF1.0</fullName>
+                <default>false</default>
+                <label>Existing eBF1.0</label>
+            </value>
+            <value>
+                <fullName>New to eBF2.0</fullName>
+                <default>false</default>
+                <label>New to eBF2.0</label>
+            </value>
+            <value>
+                <fullName>eBF1.0 committed to move</fullName>
+                <default>false</default>
+                <label>eBF1.0 committed to move</label>
+            </value>
+            <value>
+                <fullName>eBF1.0 organizing move</fullName>
+                <default>false</default>
+                <label>eBF1.0 organizing move</label>
+            </value>
+            <value>
+                <fullName>Will not join</fullName>
+                <default>false</default>
+                <label>Will not join</label>
+            </value>
+            <value>
+                <fullName>Other (see comments)</fullName>
+                <default>false</default>
+                <label>Other (see comments)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

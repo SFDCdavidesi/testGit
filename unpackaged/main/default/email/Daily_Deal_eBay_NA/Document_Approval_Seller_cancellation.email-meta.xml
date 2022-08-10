@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Document Approval Seller cancellation Not Use</name>
+    <style>none</style>
+    <subject>Deals Subsidy Contract Cancellation Notice</subject>
+    <textOnly>The below deals from Contract has been canceled.
+
+{!EBH_Deal__c.Link}
+
+Reason for cancellation: {!EBH_Deal__c.Cancellation_Reason__c}
+
+Note, this cancelled contract cannot be used for subsidy payment.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

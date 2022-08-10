@@ -1,0 +1,8 @@
+Hello!
+
+Your Marketing Support Request has been approved by {!ApprovalRequest.Process_Approver} 
+{!Campaign.Approved_Or_Rejected_By__c}
+
+You will be informed about a campaign that will be initiated based on your request.
+
+Thank you.

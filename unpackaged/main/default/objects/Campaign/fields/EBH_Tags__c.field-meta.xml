@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_Tags__c</fullName>
+    <externalId>false</externalId>
+    <label>Tags</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Acquisition</fullName>
+                <default>false</default>
+                <label>Acquisition</label>
+            </value>
+            <value>
+                <fullName>Advertising</fullName>
+                <default>false</default>
+                <label>Advertising</label>
+            </value>
+            <value>
+                <fullName>Inventory Management</fullName>
+                <default>false</default>
+                <label>Inventory Management</label>
+            </value>
+            <value>
+                <fullName>Lifecycle Management</fullName>
+                <default>false</default>
+                <label>Lifecycle Management</label>
+            </value>
+            <value>
+                <fullName>Monetisation &amp; Commercial Model</fullName>
+                <default>false</default>
+                <label>Monetisation &amp; Commercial Model</label>
+            </value>
+            <value>
+                <fullName>Onboarding</fullName>
+                <default>false</default>
+                <label>Onboarding</label>
+            </value>
+            <value>
+                <fullName>Product, Policy, and Compliance Plans</fullName>
+                <default>false</default>
+                <label>Product, Policy, and Compliance Plans</label>
+            </value>
+            <value>
+                <fullName>Promoted Listings</fullName>
+                <default>false</default>
+                <label>Promoted Listings</label>
+            </value>
+            <value>
+                <fullName>Promotions &amp; Incentives</fullName>
+                <default>false</default>
+                <label>Promotions &amp; Incentives</label>
+            </value>
+            <value>
+                <fullName>Retention</fullName>
+                <default>false</default>
+                <label>Retention</label>
+            </value>
+            <value>
+                <fullName>S-18-00</fullName>
+                <default>false</default>
+                <label>S-18-00</label>
+            </value>
+            <value>
+                <fullName>Scaling</fullName>
+                <default>false</default>
+                <label>Scaling</label>
+            </value>
+            <value>
+                <fullName>Shipping</fullName>
+                <default>false</default>
+                <label>Shipping</label>
+            </value>
+            <value>
+                <fullName>Tag</fullName>
+                <default>false</default>
+                <label>Tag</label>
+            </value>
+            <value>
+                <fullName>Vertical Initiatives</fullName>
+                <default>false</default>
+                <label>Vertical Initiatives</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

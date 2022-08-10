@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Blank_spaces_not_allowed</fullName>
+    <active>true</active>
+    <description>0009219</description>
+    <errorConditionFormula>CONTAINS( eBay_Corp_ID__c , &quot; &quot;)</errorConditionFormula>
+    <errorDisplayField>eBay_Corp_ID__c</errorDisplayField>
+    <errorMessage>eBay Corp Id Cannot contain blank spaces</errorMessage>
+</ValidationRule>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Requested_By__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>US-0011082 - Allow Sellers to link Accounts</description>
+    <externalId>false</externalId>
+    <label>Requested By</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Requested By</relationshipLabel>
+    <relationshipName>Requested_By</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

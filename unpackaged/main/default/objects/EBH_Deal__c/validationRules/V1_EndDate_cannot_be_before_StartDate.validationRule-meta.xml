@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>V1_EndDate_cannot_be_before_StartDate</fullName>
+    <active>true</active>
+    <description>US-0012195 - Deal Object field validation</description>
+    <errorConditionFormula>AND(NOT($Setup.byPass__c.ByPass_Validation__c),
+RecordType.DeveloperName = &#39;Deal_V1&#39;,
+DATETIMEVALUE(Deal_End_Date_Time__c+&#39;:00&#39;) &lt; DATETIMEVALUE(Deal_Start_Date_Time__c+&#39;:00&#39;)
+)</errorConditionFormula>
+    <errorMessage>Deal End Date/Time cannot be before the Deal Start Date/Time.</errorMessage>
+</ValidationRule>

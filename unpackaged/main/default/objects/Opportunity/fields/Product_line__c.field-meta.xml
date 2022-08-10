@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_line__c</fullName>
+    <description>Thi Field is matching the SAP &quot;Product line key&quot;.
+Guidance:
+•Adsales = a deal which is not multinational and not ad network, and for which only IAB standard advertising products are involved
+• Partnership = a deal which is not multinational and not ad network, and for which more than just IAB standard advertising products are involved
+• Agency = sales house with which eBay has a contract, which resells placements on our behalf, and to which we give monthly or quarterly commission
+• AdCommerce: to be used only when AdCommerce placement is sold on its own, otherwise it should be under Adsales, Partnership or Agency.
+US-0007934 - [Ads 2020] Daily Ads Revenue - Required EU Fields for Accruals</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Guidance:
+• Adsales = only IAB standard advertising products, NO mulitinational deal nor adnetworks
+• Partnership =with non-IAB-standard products
+• Agency =For sales house only
+• AdCommerce: only for single adcommerce sales</inlineHelpText>
+    <label>Product line</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Adsales (10046)</fullName>
+                <default>false</default>
+                <label>Adsales (10046)</label>
+            </value>
+            <value>
+                <fullName>Partnership (10010)</fullName>
+                <default>false</default>
+                <label>Partnership (10010)</label>
+            </value>
+            <value>
+                <fullName>Agency (10049)</fullName>
+                <default>false</default>
+                <label>Agency (10049)</label>
+            </value>
+            <value>
+                <fullName>Multinational (10058)</fullName>
+                <default>false</default>
+                <label>Multinational (10058)</label>
+            </value>
+            <value>
+                <fullName>AdNetworks (10059)</fullName>
+                <default>false</default>
+                <label>AdNetworks (10059)</label>
+            </value>
+            <value>
+                <fullName>GoogleADXchange (10084)</fullName>
+                <default>false</default>
+                <label>GoogleADXchange (10084)</label>
+            </value>
+            <value>
+                <fullName>Programmatic Selling (10111)</fullName>
+                <default>false</default>
+                <label>Programmatic Selling (10111)</label>
+            </value>
+            <value>
+                <fullName>Shipping (10007)</fullName>
+                <default>false</default>
+                <label>Shipping (10007)</label>
+            </value>
+            <value>
+                <fullName>House</fullName>
+                <default>false</default>
+                <label>House</label>
+            </value>
+            <value>
+                <fullName>Comm. Trading Desk (10029)</fullName>
+                <default>false</default>
+                <label>Comm. Trading Desk (10029)</label>
+            </value>
+            <value>
+                <fullName>Brand Solutions (10172)</fullName>
+                <default>false</default>
+                <label>Brand Solutions (10172)</label>
+            </value>
+            <value>
+                <fullName>Merchant Promotions (10174)</fullName>
+                <default>false</default>
+                <label>Merchant Promotions (10174)</label>
+            </value>
+            <value>
+                <fullName>Audience Extension (10029)</fullName>
+                <default>false</default>
+                <label>Audience Extension (10029)</label>
+            </value>
+            <value>
+                <fullName>Criteo PL (10218)</fullName>
+                <default>false</default>
+                <label>Criteo PL (10218)</label>
+            </value>
+            <value>
+                <fullName>PG &amp; PMP Forecasting</fullName>
+                <default>false</default>
+                <label>PG &amp; PMP Forecasting</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ad_Id__c</fullName>
+    <description>US-0007908 [Ads 2020] Migrate DFP Batch Process to Hive</description>
+    <externalId>true</externalId>
+    <inlineHelpText>For GAM, this is the line item GAM ID. For Callisto, this is the Salesforce Line Item ID</inlineHelpText>
+    <label>GAM/HIVE Line Item ID</label>
+    <length>25</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,809 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1' />
+	
+	<style>
+	.body {
+		background-color:#F9F9F9
+	}
+
+	a {
+		color:inherit;
+		text-decoration:none !important;
+		text-decoration:none;
+	}
+
+	a.cta_button {
+		color:#fff
+	}
+	@media screen and (max-width:560px) {
+		.row{
+			width:100%!important;
+			width:100%;
+		}
+		.fi{
+			font-size:14px!important;
+		}
+		.ttl, .ttl a{
+            font-size:22px!important;
+        }
+        .dscr, .dscr p, .dscr span, .dscr div, .dscr .div{
+			font-size:18px !important;
+			font-size:18px;
+		}
+		.small-12 .dscr{
+			width:100%;
+			width:100%!important;
+			min-width:100%;
+		}
+		.small-float-center, .small-text-center {
+			text-align:center !important;
+		}
+		.small-float-center {
+			margin:0 auto !important;
+			float:none !important;
+		}
+		.small-text-left {
+			text-align:left !important;
+		}
+		.small-text-right {
+			text-align:right !important;
+		}
+		.hide-for-large {
+			display:block !important;
+			width:auto !important;
+			overflow:visible !important;
+			max-height:none !important;
+			font-size:inherit !important;
+			line-height:inherit !important
+		}
+		center{
+			min-width:0!important;
+		}
+		table.container{
+			width:100%!important;
+		}
+		table.body table.container .hide-for-large, table.body table.container .row.hide-for-large {
+			display:table !important;
+			width:100% !important
+		}
+		table.body table.container .callout-inner.hide-for-large {
+			display:table-cell !important;
+			width:100% !important
+		}
+		table.body table.container .show-for-large {
+			display:none !important;
+			width:0;
+			mso-hide:all;
+			overflow:hidden
+		}
+		table.body img {
+			width:auto;
+			height:auto
+		}
+		table.body center {
+			min-width:0 !important
+		}
+		table.body .container {
+			width:95% !important
+		}
+		table.body .column, table.body .columns {
+			height:auto !important;
+			-moz-box-sizing:border-box;
+			-webkit-box-sizing:border-box;
+			box-sizing:border-box;
+		}
+		table.body .columns.large-6, table.body .columns.large-4, table.body .columns.large-3{
+			padding-left:8px !important;
+			padding-right:8px !important
+		}
+		table.body .collapse .column, table.body .collapse .columns, table.body .column .column, table.body .column .columns, table.body .columns .column, table.body .columns .columns {
+			padding-left:0 !important;
+			padding-right:0 !important
+		}
+		td.small-6, th.small-6, img.small-6 {
+			display:inline-block !important;
+			width:50% !important
+		}
+		img.small-12,
+		td.small-12,
+		th.small-12 {
+			width:100% !important;
+			display:inline-block !important;
+		}
+		.column td.small-12, .column th.small-12, .columns td.small-12, .columns th.small-12 {
+			display:block !important;
+			width:100% !important
+		}
+		img.sclbtn{
+			min-width:24px!important;
+			min-height:24px!important;
+			max-width:100px!important;
+		}
+		.mcnPreviewText{
+			display:none !important;
+		}
+		.ssc{
+			display:inline-block;
+			margin:5px 0;
+		}
+	}
+	</style>
+</head>
+<body class='body' style='-moz-box-sizing:border-box;-ms-text-size-adjust:100%;-webkit-box-sizing:border-box;-webkit-text-size-adjust:100%;background:#F9F9F9!important;box-sizing:border-box;font-size:1px;margin:0;min-width:100%;padding:0;width:100%!important'>
+	
+	<table class='body' id='publicateemailcontainer' style='background:#F9F9F9!important;background-color:#F9F9F9;border-collapse:collapse;border-spacing:0;font-size:1px;height:100%;line-height:0;margin:0;padding:0;vertical-align:top;width:100%'>
+		<tbody>
+			<tr style='padding:0;vertical-align:top'>
+				<td dir='auto'  class='float-center' align='center' valign='top' style='border-collapse:collapse!important;float:none;font-size:1px;line-height:0;margin:0 auto;padding:0;text-align:center;vertical-align:top;word-wrap:break-word;-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;hyphens:none;'><table width='640' align='center' class='container float-center' style='background:#FFFFFF;border-collapse:collapse;border-spacing:0;float:none;margin:0 auto;padding:0;text-align:center;vertical-align:top;width:600px'>
+      <tbody>
+         <tr style='padding:0;vertical-align:top'>
+            <td dir='auto' style='padding:0'><table class='row' border='0' cellpadding='0' cellspacing='0' style='border-collapse:collapse; background-color:transparent;  mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0;display:table;padding:0;position:relative;vertical-align:top;width:100%;margin:0;'>
+		<tbody>
+			<tr style='padding:0;vertical-align:top' valign='top'>
+	<th dir='auto'  class='small-12 large-12 columns' style='margin:0 auto;padding:0;padding-bottom:15px;padding-top:15px;padding-left:6px;padding-right:6px;width:564px' valign='top'>
+		<table style='border-collapse:collapse;border-spacing:0;padding:0;vertical-align:top;width:100%'>
+			<tbody>
+				<tr style='padding:0;vertical-align:top'>
+					<th dir='auto' align='left' style='padding:0;background-color:transparent;color:inherit;font-family:helvetica,arial,verdana,sans-serif;font-size:17px;font-weight:normal;line-height:1.5;margin:0;'><table bgcolor='transparent' style='background-color: transparent;border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;width:100%' width='100%' dir='auto'><tr><td width='100%' style='padding: 0; text-align:center'><img alt='' border='0' width='629' height='165' style='vertical-align:top; display:inline-block; border:none; outline:0; float:none; clear:both; text-decoration:none; width:629px; margin:0; ' src='https://pblc.it/i/951x308x9.f.S3/c9be2/welcome1-1703961-1.png' class='small-12 img629x165' /></td></tr></table></th>
+				</tr>
+			</tbody>
+		</table>
+	</th></tr>
+		</tbody>
+	</table>
+	<!--[if (gte mso 9)|(IE)]>
+		</td></tr><tr style='padding:0;vertical-align:top'><td dir='auto' style='-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:inherit;font-family:inherit;font-size:1px;font-weight:normal;hyphens:auto;line-height:0;margin:0;padding:0;vertical-align:top;word-wrap:break-word'>
+	<![endif]--><table class='row' border='0' cellpadding='0' cellspacing='0' style='border-collapse:collapse; background-color:transparent;  mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0;display:table;padding:0;position:relative;vertical-align:top;width:100%;margin:0;'>
+		<tbody>
+			<tr style='padding:0;vertical-align:top' valign='top'>
+	<th dir='auto'  class='small-12 large-12 columns' style='margin:0 auto;padding:0;padding-bottom:10px;padding-top:0px;padding-left:6px;padding-right:6px;width:564px' valign='top'>
+		<table style='border-collapse:collapse;border-spacing:0;padding:0;vertical-align:top;width:100%'>
+			<tbody>
+				<tr style='padding:0;vertical-align:top'>
+					<th dir='auto' align='left' style='padding:0;background-color:transparent;color:inherit;font-family:helvetica,arial,verdana,sans-serif;font-size:17px;font-weight:normal;line-height:1.5;margin:0;'><table bgcolor='transparent' style='background-color: transparent;border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;width:100%' width='100%' dir='auto'><tr>
+															<td width='100%' height='5' style='font-size:1px; line-height:5px;height:5px;'>&nbsp;</td>
+														</tr>
+												<tr>
+													<td style='padding:0 8px 0 8px;padding-left:8px;padding-right:8px;' dir='auto'><div class='dscr' style='color:#555555;margin:0;font-family: helvetica,arial,verdana,sans-serif; font-size: 14px; font-weight:300; line-height: 1.5;' dir='auto'><span><div style="font-size: 14px; font-family: helvetica,arial,verdana,sans-serif; color: inherit;">Congratulations {!Case.First_Name__c}!&nbsp;</div>
+<div style="font-size: 14px; font-family: helvetica,arial,verdana,sans-serif; color: inherit;">&nbsp;</div>
+<div style="font-size: 14px; font-family: helvetica,arial,verdana,sans-serif; color: inherit;">We have activated your login and are excited to welcome you to Hive!&nbsp;</div>
+<div style="font-size: 14px; font-family: helvetica,arial,verdana,sans-serif; color: inherit;"><br />Please save this email as it contains links to training resources and Hive support which you may need to refer back to!<br />&nbsp;&nbsp;<br />Hive is eBay&rsquo;s central CRM (customer relationship management) system enabling you to connect with your customers, manage your accounts, prioritize your workload and gain access to meaningful insights.</div></span></div></td>
+												</tr>
+											<tr><td style='font-size:1px; height:10px' height='10'></td></tr></table></th>
+				</tr>
+			</tbody>
+		</table>
+	</th></tr>
+		</tbody>
+	</table>
+	<!--[if (gte mso 9)|(IE)]>
+		</td></tr><tr style='padding:0;vertical-align:top'><td dir='auto' style='-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:inherit;font-family:inherit;font-size:1px;font-weight:normal;hyphens:auto;line-height:0;margin:0;padding:0;vertical-align:top;word-wrap:break-word'>
+	<![endif]--><table class='row' border='0' cellpadding='0' cellspacing='0' style='border-collapse:collapse; background-color:#1DCBCA;  mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0;display:table;padding:0;position:relative;vertical-align:top;width:100%;margin:0;'>
+		<tbody>
+			<tr style='padding:0;vertical-align:top' valign='top'>
+	<th dir='auto'  class='small-12 large-12 columns' style='margin:0 auto;padding:0;padding-bottom:10px;padding-top:15px;padding-left:6px;padding-right:6px;width:564px' valign='top'>
+		<table style='border-collapse:collapse;border-spacing:0;padding:0;vertical-align:top;width:100%'>
+			<tbody>
+				<tr style='padding:0;vertical-align:top'>
+					<th dir='auto' align='left' style='padding:0;background-color:transparent;color:inherit;font-family:helvetica,arial,verdana,sans-serif;font-size:17px;font-weight:normal;line-height:1.5;margin:0;'><table bgcolor='transparent' style='background-color: transparent;border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;width:100%' width='100%' dir='auto'><tr>
+															<td width='100%' height='5' style='font-size:1px; line-height:5px;height:5px;'>&nbsp;</td>
+														</tr>
+												<tr>
+													<td style='padding:0 8px 0 8px;padding-left:8px;padding-right:8px;' dir='auto'><div class='dscr' style='color:#555555;margin:0;font-family: helvetica,arial,verdana,sans-serif; font-size: 14px; font-weight:300; line-height: 1.5;' dir='auto'><span><div style="font-size: 14px; font-family: helvetica, arial, verdana, sans-serif; color: inherit; text-align: center;"><span style="color: #ffffff; font-size: 28px;"><strong>Getting Started with Hive:</strong></span></div></span></div></td>
+												</tr>
+											<tr><td style='font-size:1px; height:10px' height='10'></td></tr></table></th>
+				</tr>
+			</tbody>
+		</table>
+	</th></tr>
+		</tbody>
+	</table>
+	<!--[if (gte mso 9)|(IE)]>
+		</td></tr><tr style='padding:0;vertical-align:top'><td dir='auto' style='-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:inherit;font-family:inherit;font-size:1px;font-weight:normal;hyphens:auto;line-height:0;margin:0;padding:0;vertical-align:top;word-wrap:break-word'>
+	<![endif]--><table class='row' border='0' cellpadding='0' cellspacing='0' style='border-collapse:collapse; background-color:transparent;  mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0;display:table;padding:0;position:relative;vertical-align:top;width:100%;margin:0;'>
+		<tbody>
+			<tr style='padding:0;vertical-align:top' valign='top'>
+	<th dir='auto'  class='small-12 large-12 columns' style='margin:0 auto;padding:0;padding-bottom:15px;padding-top:15px;padding-left:6px;padding-right:6px;width:564px' valign='top'>
+		<table style='border-collapse:collapse;border-spacing:0;padding:0;vertical-align:top;width:100%'>
+			<tbody>
+				<tr style='padding:0;vertical-align:top'>
+					<th dir='auto' align='left' style='padding:0;background-color:transparent;color:inherit;font-family:helvetica,arial,verdana,sans-serif;font-size:17px;font-weight:normal;line-height:1.5;margin:0;'><table bgcolor='transparent' style='background-color: transparent;border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;width:100%' width='100%' dir='auto'><tr>
+															<td width='100%' height='5' style='font-size:1px; line-height:5px;height:5px;'>&nbsp;</td>
+														</tr>
+												<tr>
+													<td style='padding:0 8px 0 8px;padding-left:8px;padding-right:8px;' dir='auto'><div class='dscr' style='color:#555555;margin:0;font-family: helvetica,arial,verdana,sans-serif; font-size: 14px; font-weight:300; line-height: 1.5;' dir='auto'><span><div style="font-size: 14px; font-family: helvetica,arial,verdana,sans-serif; color: inherit;">Log in to Hive using the Google Chrome browser.&nbsp; Don&rsquo;t forget to bookmark the link!&nbsp; If you are in the office or signed into the eBay VPN you will be logged in automatically, otherwise click the eBay SSO button to sign in.&nbsp; Please note that you must log in to Hive at least once per month to keep your profile active.&nbsp; Licences are automatically reassigned after 45 days if they are not being used.</div></span></div></td>
+												</tr>
+											<tr><td style='font-size:1px; height:10px' height='10'></td></tr>		<tr>
+									<td width='100%' style='font-size:1px; line-height: 1px;' height='5'>&nbsp;</td>
+								</tr>
+					        	<tr>
+					        		<td align='center'>
+					        			<table align='center' style='mso-cellspacing: 0px; mso-padding-alt: 0; mso-table-lspace:0pt; mso-table-rspace:0pt;'>
+					        				<tr>
+								         		<td style='font-size: 14px;line-height:1;border:none;background-color:#121258;;padding: 10px 20px; -webkit-border-radius: 5px; -moz-border-radius:5px; border-radius:5px;' bgcolor='#121258'>
+								         			<a class='cta_button' href='https://r.pblc.it/c/211647067?alt_obj=cta&method=email&url=https%3A%2F%2Fhive.lightning.force.com%2Flightning%2Fpage%2Fhome' target='_blank' style='line-height:1.2;text-align:center;display:block;font-style:normal;font-size: 14px; font-family: helvetica,arial,verdana,sans-serif; font-weight: bold; color:#ffffff; text-decoration: none; display: inline-block;'>
+								         			Log in to Hive
+								         			</a>
+								         		</td>
+								         	</tr>
+								        </table>
+								    </td>
+					       		</tr>
+									<tr><td style='font-size:1px;height:10px;' height='10'></td></tr></table></th>
+				</tr>
+			</tbody>
+		</table>
+	</th></tr>
+		</tbody>
+	</table>
+	<!--[if (gte mso 9)|(IE)]>
+		</td></tr><tr style='padding:0;vertical-align:top'><td dir='auto' style='-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:inherit;font-family:inherit;font-size:1px;font-weight:normal;hyphens:auto;line-height:0;margin:0;padding:0;vertical-align:top;word-wrap:break-word'>
+	<![endif]--><table class='row' border='0' cellpadding='0' cellspacing='0' style='border-collapse:collapse; background-color:transparent;  mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0;display:table;padding:0;position:relative;vertical-align:top;width:100%;margin:0;'>
+		<tbody>
+			<tr style='padding:0;vertical-align:top' valign='top'>
+	<th dir='auto'  class='small-12 large-12 columns' style='margin:0 auto;padding:0;padding-bottom:15px;padding-top:15px;padding-left:6px;padding-right:6px;width:564px' valign='top'>
+		<table style='border-collapse:collapse;border-spacing:0;padding:0;vertical-align:top;width:100%'>
+			<tbody>
+				<tr style='padding:0;vertical-align:top'>
+					<th dir='auto' align='left' style='padding:0;background-color:transparent;color:#555555;font-family:helvetica,arial,verdana,sans-serif;font-size:17px;font-weight:normal;line-height:1.5;margin:0;'><table cellpadding='0' cellspacing='0' border='0' width='100%' style='margin:0;'><tr><td align= 'center'><hr size=1 width='66%' noshade style='margin:0;margin:0!important;color:#bbbbbb;border-color:#bbbbbb;background-color:#bbbbbb;' /></td></tr></table></th>
+				</tr>
+			</tbody>
+		</table>
+	</th></tr>
+		</tbody>
+	</table>
+	<!--[if (gte mso 9)|(IE)]>
+		</td></tr><tr style='padding:0;vertical-align:top'><td dir='auto' style='-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:inherit;font-family:inherit;font-size:1px;font-weight:normal;hyphens:auto;line-height:0;margin:0;padding:0;vertical-align:top;word-wrap:break-word'>
+	<![endif]--><table class='row' border='0' cellpadding='0' cellspacing='0' style='border-collapse:collapse; background-color:transparent;  mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0;display:table;padding:0;position:relative;vertical-align:top;width:100%;margin:0;'>
+		<tbody>
+			<tr style='padding:0;vertical-align:top' valign='top'>
+	<th dir='auto'  class='small-12 large-12 columns' style='margin:0 auto;padding:0;padding-bottom:15px;padding-top:15px;padding-left:6px;padding-right:6px;width:564px' valign='top'>
+		<table style='border-collapse:collapse;border-spacing:0;padding:0;vertical-align:top;width:100%'>
+			<tbody>
+				<tr style='padding:0;vertical-align:top'>
+					<th dir='auto' align='left' style='padding:0;background-color:transparent;color:inherit;font-family:helvetica,arial,verdana,sans-serif;font-size:17px;font-weight:normal;line-height:1.5;margin:0;'><table bgcolor='transparent' style='background-color: transparent;border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;width:100%' width='100%' dir='auto'><tr>
+															<td width='100%' height='5' style='font-size:1px; line-height:5px;height:5px;'>&nbsp;</td>
+														</tr>
+												<tr>
+													<td style='padding:0 8px 0 8px;padding-left:8px;padding-right:8px;' dir='auto'><div class='dscr' style='color:#555555;margin:0;font-family: helvetica,arial,verdana,sans-serif; font-size: 14px; font-weight:300; line-height: 1.5;' dir='auto'><span><div style="font-size: 14px; font-family: helvetica,arial,verdana,sans-serif; color: inherit;">Email Hive Support via the link below if you are having trouble signing in.&nbsp; Please note this email is ONLY to be used for Hive Login issues.&nbsp; For other issues or questions, please raise a Support Ticket or post in the Help &amp; Support Chatter Group - details below.</div></span></div></td>
+												</tr>
+											<tr><td style='font-size:1px; height:10px' height='10'></td></tr>		<tr>
+									<td width='100%' style='font-size:1px; line-height: 1px;' height='5'>&nbsp;</td>
+								</tr>
+					        	<tr>
+					        		<td align='center'>
+					        			<table align='center' style='mso-cellspacing: 0px; mso-padding-alt: 0; mso-table-lspace:0pt; mso-table-rspace:0pt;'>
+					        				<tr>
+								         		<td style='font-size: 14px;line-height:1;border:none;background-color:#121258;;padding: 10px 20px; -webkit-border-radius: 5px; -moz-border-radius:5px; border-radius:5px;' bgcolor='#121258'>
+								         			<a class='cta_button' href='mailto:DL-eBay-DL-eBay-EU-salesforce-support@ebay.com' target='_blank' style='line-height:1.2;text-align:center;display:block;font-style:normal;font-size: 14px; font-family: helvetica,arial,verdana,sans-serif; font-weight: bold; color:#ffffff; text-decoration: none; display: inline-block;'>
+								         			Email Hive Login Support
+								         			</a>
+								         		</td>
+								         	</tr>
+								        </table>
+								    </td>
+					       		</tr>
+									<tr><td style='font-size:1px;height:10px;' height='10'></td></tr></table></th>
+				</tr>
+			</tbody>
+		</table>
+	</th></tr>
+		</tbody>
+	</table>
+	<!--[if (gte mso 9)|(IE)]>
+		</td></tr><tr style='padding:0;vertical-align:top'><td dir='auto' style='-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:inherit;font-family:inherit;font-size:1px;font-weight:normal;hyphens:auto;line-height:0;margin:0;padding:0;vertical-align:top;word-wrap:break-word'>
+	<![endif]--><table class='row' border='0' cellpadding='0' cellspacing='0' style='border-collapse:collapse; background-color:#121258;  mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0;display:table;padding:0;position:relative;vertical-align:top;width:100%;margin:0;'>
+		<tbody>
+			<tr style='padding:0;vertical-align:top' valign='top'>
+	<th dir='auto'  class='small-12 large-12 columns' style='margin:0 auto;padding:0;padding-bottom:0px;padding-top:15px;padding-left:6px;padding-right:6px;width:564px' valign='top'>
+		<table style='border-collapse:collapse;border-spacing:0;padding:0;vertical-align:top;width:100%'>
+			<tbody>
+				<tr style='padding:0;vertical-align:top'>
+					<th dir='auto' align='left' style='padding:0;background-color:transparent;color:inherit;font-family:helvetica,arial,verdana,sans-serif;font-size:17px;font-weight:normal;line-height:1.5;margin:0;'><table bgcolor='transparent' style='background-color: transparent;border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;width:100%' width='100%' dir='auto'><tr>
+															<td width='100%' height='5' style='font-size:1px; line-height:5px;height:5px;'>&nbsp;</td>
+														</tr>
+												<tr>
+													<td style='padding:0 8px 0 8px;padding-left:8px;padding-right:8px;' dir='auto'><div class='dscr' style='color:#555555;margin:0;font-family: helvetica,arial,verdana,sans-serif; font-size: 14px; font-weight:300; line-height: 1.5;' dir='auto'><span><div style="font-size: 14px; font-family: helvetica, arial, verdana, sans-serif; color: inherit; text-align: center;"><strong><span style="font-size: 21px; color: #1dcbca;">Hive Support Tickets</span></strong></div></span></div></td>
+												</tr>
+											<tr><td style='font-size:1px; height:10px' height='10'></td></tr></table></th>
+				</tr>
+			</tbody>
+		</table>
+	</th></tr>
+		</tbody>
+	</table>
+	<!--[if (gte mso 9)|(IE)]>
+		</td></tr><tr style='padding:0;vertical-align:top'><td dir='auto' style='-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:inherit;font-family:inherit;font-size:1px;font-weight:normal;hyphens:auto;line-height:0;margin:0;padding:0;vertical-align:top;word-wrap:break-word'>
+	<![endif]--><table class='row' border='0' cellpadding='0' cellspacing='0' style='border-collapse:collapse; background-color:transparent;  mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0;display:table;padding:0;position:relative;vertical-align:top;width:100%;margin:0;'>
+		<tbody>
+			<tr style='padding:0;vertical-align:top' valign='top'>
+	<th dir='auto'  class='small-12 large-12 columns' style='margin:0 auto;padding:0;padding-bottom:15px;padding-top:15px;padding-left:6px;padding-right:6px;width:564px' valign='top'>
+		<table style='border-collapse:collapse;border-spacing:0;padding:0;vertical-align:top;width:100%'>
+			<tbody>
+				<tr style='padding:0;vertical-align:top'>
+					<th dir='auto' align='left' style='padding:0;background-color:#121258;color:inherit;font-family:helvetica,arial,verdana,sans-serif;font-size:17px;font-weight:normal;line-height:1.5;margin:0;'><table bgcolor='#121258' style='background-color: #121258;border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;width:100%' width='100%' dir='auto'><tr><td width='100%' style='padding: 0; text-align:center'><img alt='' border='0' width='629' height='133' style='vertical-align:top; display:inline-block; border:none; outline:0; float:none; clear:both; text-decoration:none; width:629px; margin:0; ' src='https://pblc.it/i/951x308x9.f.S3/e9abb/support-tick-1707980-1.png' class='small-12 img629x133' /></td></tr><tr>
+															<td width='100%' height='5' style='font-size:1px; line-height:5px;height:5px;'>&nbsp;</td>
+														</tr>
+												<tr>
+													<td style='padding:0 8px 0 8px; padding-bottom:10px; ' dir='auto'><div class='dscr' style='color:#555555;margin:0;font-family: helvetica,arial,verdana,sans-serif; font-size: 14px; font-weight:300; line-height: 1.5;' dir='auto'><span><div style="text-align: left; font-size: 14px; font-family: helvetica,arial,verdana,sans-serif; color: inherit;"><span style="color: #ffffff;">Raise a Support Ticket if you are experiencing any specific technical issues, error messages or other unexpected behaviour with Hive which requires an individual response.&nbsp; To ensure your issue is handled effectively, please include a screenshot of the error message and the URL you were on when the problem occurred.</span></div></span></div></td>
+												</tr>
+													<tr>
+									<td width='100%' style='font-size:1px; line-height: 1px;' height='5'>&nbsp;</td>
+								</tr>
+					        	<tr>
+					        		<td align='center'>
+					        			<table align='center' style='mso-cellspacing: 0px; mso-padding-alt: 0; mso-table-lspace:0pt; mso-table-rspace:0pt;'>
+					        				<tr>
+								         		<td style='font-size: 14px;line-height:1;border:none;background-color:#1DCBCA;;padding: 10px 20px; -webkit-border-radius: 5px; -moz-border-radius:5px; border-radius:5px;' bgcolor='#1DCBCA'>
+								         			<a class='cta_button' href='https://r.pblc.it/c/212763954?alt_obj=cta&method=email&url=https%3A%2F%2Fhive.lightning.force.com%2Flightning%2Fo%2FCase%2Fnew%3Fcount%3D1%26nooverride%3D1%26useRecordTypeCheck%3D1%26navigationLocation%3DMRU_LIST%26backgroundContext%3D%252Flightning%252Fo%252FCase%252Flist%253FfilterName%253DRecent%26recordTypeId%3D0123u0000019nkzAAA' target='_blank' style='line-height:1.2;text-align:center;display:block;font-style:normal;font-size: 14px; font-family: helvetica,arial,verdana,sans-serif; font-weight: bold; color:#ffffff; text-decoration: none; display: inline-block;'>
+								         			Raise a Support Ticket
+								         			</a>
+								         		</td>
+								         	</tr>
+								        </table>
+								    </td>
+					       		</tr>
+									<tr><td style='font-size:1px;height:10px;' height='10'></td></tr></table></th>
+				</tr>
+			</tbody>
+		</table>
+	</th></tr>
+		</tbody>
+	</table>
+	<!--[if (gte mso 9)|(IE)]>
+		</td></tr><tr style='padding:0;vertical-align:top'><td dir='auto' style='-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:inherit;font-family:inherit;font-size:1px;font-weight:normal;hyphens:auto;line-height:0;margin:0;padding:0;vertical-align:top;word-wrap:break-word'>
+	<![endif]--><table class='row' border='0' cellpadding='0' cellspacing='0' style='border-collapse:collapse; background-color:transparent;  mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0;display:table;padding:0;position:relative;vertical-align:top;width:100%;margin:0;'>
+		<tbody>
+			<tr style='padding:0;vertical-align:top' valign='top'>
+	<th dir='auto'  class='small-12 large-12 columns' style='margin:0 auto;padding:0;padding-bottom:px;padding-top:px;padding-left:0px;padding-right:0px;width:564px' valign='top'>
+		<table style='border-collapse:collapse;border-spacing:0;padding:0;vertical-align:top;width:100%'>
+			<tbody>
+				<tr style='padding:0;vertical-align:top'>
+					<th dir='auto' align='left' style='padding:0;background-color:transparent;color:inherit;font-family:helvetica,arial,verdana,sans-serif;font-size:17px;font-weight:normal;line-height:1.5;margin:0;'><table class='spacer' style='border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%'>
+											<tbody>
+												<tr style='padding:0;text-align:left;vertical-align:top'>
+													<td height='<span>10px</span>' style='-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:helvetica,arial,verdana,sans-serif;font-size:<span>10px</span>;font-weight:300;hyphens:auto;line-height:<span>10px</span>;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word'>&nbsp;</td>
+												</tr>
+											</tbody>
+										</table></th>
+				</tr>
+			</tbody>
+		</table>
+	</th></tr>
+		</tbody>
+	</table>
+	<!--[if (gte mso 9)|(IE)]>
+		</td></tr><tr style='padding:0;vertical-align:top'><td dir='auto' style='-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:inherit;font-family:inherit;font-size:1px;font-weight:normal;hyphens:auto;line-height:0;margin:0;padding:0;vertical-align:top;word-wrap:break-word'>
+	<![endif]--><table class='row' border='0' cellpadding='0' cellspacing='0' style='border-collapse:collapse; background-color:#121258;  mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0;display:table;padding:0;position:relative;vertical-align:top;width:100%;margin:0;'>
+		<tbody>
+			<tr style='padding:0;vertical-align:top' valign='top'>
+	<th dir='auto'  class='small-12 large-12 columns' style='margin:0 auto;padding:0;padding-bottom:0px;padding-top:15px;padding-left:6px;padding-right:6px;width:564px' valign='top'>
+		<table style='border-collapse:collapse;border-spacing:0;padding:0;vertical-align:top;width:100%'>
+			<tbody>
+				<tr style='padding:0;vertical-align:top'>
+					<th dir='auto' align='left' style='padding:0;background-color:transparent;color:inherit;font-family:helvetica,arial,verdana,sans-serif;font-size:17px;font-weight:normal;line-height:1.5;margin:0;'><table bgcolor='transparent' style='background-color: transparent;border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;width:100%' width='100%' dir='auto'><tr>
+															<td width='100%' height='5' style='font-size:1px; line-height:5px;height:5px;'>&nbsp;</td>
+														</tr>
+												<tr>
+													<td style='padding:0 8px 0 8px;padding-left:8px;padding-right:8px;' dir='auto'><div class='dscr' style='color:#555555;margin:0;font-family: helvetica,arial,verdana,sans-serif; font-size: 14px; font-weight:300; line-height: 1.5;' dir='auto'><span><div style="font-size: 14px; font-family: helvetica, arial, verdana, sans-serif; color: inherit; text-align: center;"><span style="font-size: 21px; color: #1dcbca;"><strong>&nbsp; &nbsp; &nbsp; &nbsp; Hive Help &amp; Support Chatter Group</strong></span></div></span></div></td>
+												</tr>
+											<tr><td style='font-size:1px; height:10px' height='10'></td></tr></table></th>
+				</tr>
+			</tbody>
+		</table>
+	</th></tr>
+		</tbody>
+	</table>
+	<!--[if (gte mso 9)|(IE)]>
+		</td></tr><tr style='padding:0;vertical-align:top'><td dir='auto' style='-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:inherit;font-family:inherit;font-size:1px;font-weight:normal;hyphens:auto;line-height:0;margin:0;padding:0;vertical-align:top;word-wrap:break-word'>
+	<![endif]--><table class='row' border='0' cellpadding='0' cellspacing='0' style='border-collapse:collapse; background-color:#121258;  mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0;display:table;padding:0;position:relative;vertical-align:top;width:100%;margin:0;'>
+		<tbody>
+			<tr style='padding:0;vertical-align:top' valign='top'>
+	<th dir='auto'  class='small-12 large-12 columns' style='margin:0 auto;padding:0;padding-bottom:15px;padding-top:15px;padding-left:6px;padding-right:6px;width:564px' valign='top'>
+		<table style='border-collapse:collapse;border-spacing:0;padding:0;vertical-align:top;width:100%'>
+			<tbody>
+				<tr style='padding:0;vertical-align:top'>
+					<th dir='auto' align='left' style='padding:0;background-color:transparent;color:inherit;font-family:helvetica,arial,verdana,sans-serif;font-size:17px;font-weight:normal;line-height:1.5;margin:0;'><table bgcolor='transparent' style='background-color: transparent;border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;width:100%' width='100%' dir='auto'><tr><td style='padding:0' valign='top'><table bgcolor='transparent' style='background-color: transparent;border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;width:100%' width='100%' dir='auto'><tr><td style='padding:0; font-family: helvetica,arial,verdana,sans-serif; text-align: inherit!important; font-weight:bold; line-height:1.5; text-decoration:none; text-decoration:none!important; margin:0; margin:0!important; display:block;;font-weight:bold'><div class='ttl' style='font-family: helvetica,arial,verdana,sans-serif; text-align: inherit!important; font-weight:bold; line-height:1.5; text-decoration:none; text-decoration:none!important; margin:0; margin:0!important; display:block;;font-weight:bold'><a target='_blank' href='https://r.pblc.it/c/211647078?method=email&token=1954079PyjI7'><img hspace='10' align='left' alt='' border='0' width='150' height='87.903225806452' style='padding-right:10px;padding-bottom:0;padding-left:0; vertical-align:top; display:block; border:none; outline:0; text-decoration:none; margin:0;' src='https://pblc.it/i/600x352x9.f.S3/bf19b/cahtter-1704077-1.png' class='small-6 img171x100' /></a><span><div style="text-align:left; font-size:19px;font-family:helvetica,arial,verdana,sans-serif;color:inherit;font-weight:bold;"></div></span></div><div class='dscr' style='color:#555555;margin:0;font-family: helvetica,arial,verdana,sans-serif; font-size: 14px; font-weight:300; line-height: 1.5;' dir='auto'><span><div style="text-align: left; font-size: 14px; font-family: helvetica,arial,verdana,sans-serif; color: inherit;"><span style="color: #ffffff;">Post in the Help &amp; Support Chatter group if you have a question or general issue with Hive which doesn't require an immediate response from support.&nbsp; An example of this would be a 'How do I?' question.&nbsp; </span><span style="color: #ffffff;">To ensure your query is answered effectively, you are able to @mention the name of the specific Hive team member responsible for the particular area of Hive - a full list can be found on the right-hand side of the group.</span></div></span></div><table style='width:100%'>		<tr>
+									<td width='100%' style='font-size:1px; line-height: 1px;' height='5'>&nbsp;</td>
+								</tr>
+					        	<tr>
+					        		<td align='center'>
+					        			<table align='center' style='mso-cellspacing: 0px; mso-padding-alt: 0; mso-table-lspace:0pt; mso-table-rspace:0pt;'>
+					        				<tr>
+								         		<td style='font-size: 14px;line-height:1;border:none;background-color:#1DCBCA;;padding: 10px 20px; -webkit-border-radius: 5px; -moz-border-radius:5px; border-radius:5px;' bgcolor='#1DCBCA'>
+								         			<a class='cta_button' href='https://r.pblc.it/c/211647078?alt_obj=cta&method=email&url=https%3A%2F%2Fhive.lightning.force.com%2Flightning%2Fr%2FCollaborationGroup%2F0F96A000000UFxLSAW%2Fview' target='_blank' style='line-height:1.2;text-align:center;display:block;font-style:normal;font-size: 14px; font-family: helvetica,arial,verdana,sans-serif; font-weight: bold; color:#ffffff; text-decoration: none; display: inline-block;'>
+								         			Hive Help &amp; Support Chatter Group
+								         			</a>
+								         		</td>
+								         	</tr>
+								        </table>
+								    </td>
+					       		</tr>
+									<tr><td style='font-size:1px;height:10px;' height='10'></td></tr></table></td></tr></table></td></tr></table></th>
+				</tr>
+			</tbody>
+		</table>
+	</th></tr>
+		</tbody>
+	</table>
+	<!--[if (gte mso 9)|(IE)]>
+		</td></tr><tr style='padding:0;vertical-align:top'><td dir='auto' style='-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:inherit;font-family:inherit;font-size:1px;font-weight:normal;hyphens:auto;line-height:0;margin:0;padding:0;vertical-align:top;word-wrap:break-word'>
+	<![endif]--><table class='row' border='0' cellpadding='0' cellspacing='0' style='border-collapse:collapse; background-color:transparent;  mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0;display:table;padding:0;position:relative;vertical-align:top;width:100%;margin:0;'>
+		<tbody>
+			<tr style='padding:0;vertical-align:top' valign='top'>
+	<th dir='auto'  class='small-12 large-12 columns' style='margin:0 auto;padding:0;padding-bottom:px;padding-top:px;padding-left:0px;padding-right:0px;width:564px' valign='top'>
+		<table style='border-collapse:collapse;border-spacing:0;padding:0;vertical-align:top;width:100%'>
+			<tbody>
+				<tr style='padding:0;vertical-align:top'>
+					<th dir='auto' align='left' style='padding:0;background-color:transparent;color:inherit;font-family:helvetica,arial,verdana,sans-serif;font-size:17px;font-weight:normal;line-height:1.5;margin:0;'><table class='spacer' style='border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%'>
+											<tbody>
+												<tr style='padding:0;text-align:left;vertical-align:top'>
+													<td height='<span>10px</span>' style='-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:helvetica,arial,verdana,sans-serif;font-size:<span>10px</span>;font-weight:300;hyphens:auto;line-height:<span>10px</span>;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word'>&nbsp;</td>
+												</tr>
+											</tbody>
+										</table></th>
+				</tr>
+			</tbody>
+		</table>
+	</th></tr>
+		</tbody>
+	</table>
+	<!--[if (gte mso 9)|(IE)]>
+		</td></tr><tr style='padding:0;vertical-align:top'><td dir='auto' style='-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:inherit;font-family:inherit;font-size:1px;font-weight:normal;hyphens:auto;line-height:0;margin:0;padding:0;vertical-align:top;word-wrap:break-word'>
+	<![endif]--><table class='row' border='0' cellpadding='0' cellspacing='0' style='border-collapse:collapse; background-color:#121258;  mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0;display:table;padding:0;position:relative;vertical-align:top;width:100%;margin:0;'>
+		<tbody>
+			<tr style='padding:0;vertical-align:top' valign='top'>
+	<th dir='auto'  class='small-12 large-12 columns' style='margin:0 auto;padding:0;padding-bottom:0px;padding-top:15px;padding-left:6px;padding-right:6px;width:564px' valign='top'>
+		<table style='border-collapse:collapse;border-spacing:0;padding:0;vertical-align:top;width:100%'>
+			<tbody>
+				<tr style='padding:0;vertical-align:top'>
+					<th dir='auto' align='left' style='padding:0;background-color:transparent;color:inherit;font-family:helvetica,arial,verdana,sans-serif;font-size:17px;font-weight:normal;line-height:1.5;margin:0;'><table bgcolor='transparent' style='background-color: transparent;border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;width:100%' width='100%' dir='auto'><tr>
+															<td width='100%' height='5' style='font-size:1px; line-height:5px;height:5px;'>&nbsp;</td>
+														</tr>
+												<tr>
+													<td style='padding:0 8px 0 8px;padding-left:8px;padding-right:8px;' dir='auto'><div class='dscr' style='color:#555555;margin:0;font-family: helvetica,arial,verdana,sans-serif; font-size: 14px; font-weight:300; line-height: 1.5;' dir='auto'><span><div style="font-size: 14px; font-family: helvetica, arial, verdana, sans-serif; color: inherit; text-align: center;"><span style="font-size: 21px; color: #1dcbca;"><strong>Hive Training Materials</strong></span></div></span></div></td>
+												</tr>
+											<tr><td style='font-size:1px; height:10px' height='10'></td></tr></table></th>
+				</tr>
+			</tbody>
+		</table>
+	</th></tr>
+		</tbody>
+	</table>
+	<!--[if (gte mso 9)|(IE)]>
+		</td></tr><tr style='padding:0;vertical-align:top'><td dir='auto' style='-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:inherit;font-family:inherit;font-size:1px;font-weight:normal;hyphens:auto;line-height:0;margin:0;padding:0;vertical-align:top;word-wrap:break-word'>
+	<![endif]--><table class='row' border='0' cellpadding='0' cellspacing='0' style='border-collapse:collapse; background-color:#121258;  mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0;display:table;padding:0;position:relative;vertical-align:top;width:100%;margin:0;'>
+		<tbody>
+			<tr style='padding:0;vertical-align:top' valign='top'>
+	<th dir='auto'  class='small-12 large-12 columns' style='margin:0 auto;padding:0;padding-bottom:15px;padding-top:15px;padding-left:6px;padding-right:6px;width:564px' valign='top'>
+		<table style='border-collapse:collapse;border-spacing:0;padding:0;vertical-align:top;width:100%'>
+			<tbody>
+				<tr style='padding:0;vertical-align:top'>
+					<th dir='auto' align='left' style='padding:0;background-color:transparent;color:inherit;font-family:helvetica,arial,verdana,sans-serif;font-size:17px;font-weight:normal;line-height:1.5;margin:0;'><table bgcolor='transparent' style='background-color: transparent;border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;width:100%' width='100%' dir='auto'><tr><td style='padding:0' valign='top'><table bgcolor='transparent' style='background-color: transparent;border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;width:100%' width='100%' dir='auto'><tr><td style='padding:0; font-family: helvetica,arial,verdana,sans-serif; text-align: inherit!important; font-weight:bold; line-height:1.5; text-decoration:none; text-decoration:none!important; margin:0; margin:0!important; display:block;;font-weight:bold'><div class='ttl' style='font-family: helvetica,arial,verdana,sans-serif; text-align: inherit!important; font-weight:bold; line-height:1.5; text-decoration:none; text-decoration:none!important; margin:0; margin:0!important; display:block;;font-weight:bold'><a target='_blank' href='https://r.pblc.it/c/211647071?method=email&token=1953982ucEZb'><img hspace='10' align='left' alt='' border='0' width='150' height='153.85934819897' style='padding-right:10px;padding-bottom:0;padding-left:0; vertical-align:top; display:block; border:none; outline:0; text-decoration:none; margin:0;' src='https://pblc.it/i/600x615x9.f.S3/7dd82/help-training-1703983-1.png' class='small-6 img171x175' /></a><span><div style="text-align:left; font-size:19px;font-family:helvetica,arial,verdana,sans-serif;color:inherit;font-weight:bold;"></div></span></div><div class='dscr' style='color:#555555;margin:0;font-family: helvetica,arial,verdana,sans-serif; font-size: 14px; font-weight:300; line-height: 1.5;' dir='auto'><span><div style="text-align: left; font-size: 14px; font-family: helvetica,arial,verdana,sans-serif; color: inherit;"><span style="color: #ffffff;">Review the Training Documentation which you can access in the &lsquo;<strong>Hive Help &amp; Training</strong>&rsquo; section on the homepage.&nbsp; This section contains written training materials and videos to get you started with Hive and familiarise yourself with the different features specific to your role. The Intro to Hive module can be found here:</span></div></span></div><table style='width:100%'>		<tr>
+									<td width='100%' style='font-size:1px; line-height: 1px;' height='5'>&nbsp;</td>
+								</tr>
+					        	<tr>
+					        		<td align='center'>
+					        			<table align='center' style='mso-cellspacing: 0px; mso-padding-alt: 0; mso-table-lspace:0pt; mso-table-rspace:0pt;'>
+					        				<tr>
+								         		<td style='font-size: 14px;line-height:1;border:none;background-color:#1DCBCA;;padding: 10px 20px; -webkit-border-radius: 5px; -moz-border-radius:5px; border-radius:5px;' bgcolor='#1DCBCA'>
+								         			<a class='cta_button' href='https://r.pblc.it/c/211647071?alt_obj=cta&method=email&url=https%3A%2F%2Fhive.my.salesforce.com%2Fsfc%2Fp%2F%236A0000002Hft%2Fa%2F6A000000PBgm%2F82GQXBJgxFgZK79CVCEO1lGcqPPlNEZpugSPHB9Evvo' target='_blank' style='line-height:1.2;text-align:center;display:block;font-style:normal;font-size: 14px; font-family: helvetica,arial,verdana,sans-serif; font-weight: bold; color:#ffffff; text-decoration: none; display: inline-block;'>
+								         			Intro to Hive Training Document
+								         			</a>
+								         		</td>
+								         	</tr>
+								        </table>
+								    </td>
+					       		</tr>
+									<tr><td style='font-size:1px;height:10px;' height='10'></td></tr></table></td></tr></table></td></tr></table></th>
+				</tr>
+			</tbody>
+		</table>
+	</th></tr>
+		</tbody>
+	</table>
+	<!--[if (gte mso 9)|(IE)]>
+		</td></tr><tr style='padding:0;vertical-align:top'><td dir='auto' style='-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:inherit;font-family:inherit;font-size:1px;font-weight:normal;hyphens:auto;line-height:0;margin:0;padding:0;vertical-align:top;word-wrap:break-word'>
+	<![endif]--><table class='row' border='0' cellpadding='0' cellspacing='0' style='border-collapse:collapse; background-color:transparent;  mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0;display:table;padding:0;position:relative;vertical-align:top;width:100%;margin:0;'>
+		<tbody>
+			<tr style='padding:0;vertical-align:top' valign='top'>
+	<th dir='auto'  class='small-12 large-12 columns' style='margin:0 auto;padding:0;padding-bottom:px;padding-top:px;padding-left:0px;padding-right:0px;width:564px' valign='top'>
+		<table style='border-collapse:collapse;border-spacing:0;padding:0;vertical-align:top;width:100%'>
+			<tbody>
+				<tr style='padding:0;vertical-align:top'>
+					<th dir='auto' align='left' style='padding:0;background-color:transparent;color:inherit;font-family:helvetica,arial,verdana,sans-serif;font-size:17px;font-weight:normal;line-height:1.5;margin:0;'><table class='spacer' style='border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%'>
+											<tbody>
+												<tr style='padding:0;text-align:left;vertical-align:top'>
+													<td height='<span>10px</span>' style='-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:helvetica,arial,verdana,sans-serif;font-size:<span>10px</span>;font-weight:300;hyphens:auto;line-height:<span>10px</span>;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word'>&nbsp;</td>
+												</tr>
+											</tbody>
+										</table></th>
+				</tr>
+			</tbody>
+		</table>
+	</th></tr>
+		</tbody>
+	</table>
+	<!--[if (gte mso 9)|(IE)]>
+		</td></tr><tr style='padding:0;vertical-align:top'><td dir='auto' style='-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:inherit;font-family:inherit;font-size:1px;font-weight:normal;hyphens:auto;line-height:0;margin:0;padding:0;vertical-align:top;word-wrap:break-word'>
+	<![endif]--><table class='row' border='0' cellpadding='0' cellspacing='0' style='border-collapse:collapse; background-color:#121258;  mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0;display:table;padding:0;position:relative;vertical-align:top;width:100%;margin:0;'>
+		<tbody>
+			<tr style='padding:0;vertical-align:top' valign='top'>
+	<th dir='auto'  class='small-12 large-12 columns' style='margin:0 auto;padding:0;padding-bottom:0px;padding-top:15px;padding-left:6px;padding-right:6px;width:564px' valign='top'>
+		<table style='border-collapse:collapse;border-spacing:0;padding:0;vertical-align:top;width:100%'>
+			<tbody>
+				<tr style='padding:0;vertical-align:top'>
+					<th dir='auto' align='left' style='padding:0;background-color:transparent;color:inherit;font-family:helvetica,arial,verdana,sans-serif;font-size:17px;font-weight:normal;line-height:1.5;margin:0;'><table bgcolor='transparent' style='background-color: transparent;border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;width:100%' width='100%' dir='auto'><tr>
+															<td width='100%' height='5' style='font-size:1px; line-height:5px;height:5px;'>&nbsp;</td>
+														</tr>
+												<tr>
+													<td style='padding:0 8px 0 8px;padding-left:8px;padding-right:8px;' dir='auto'><div class='dscr' style='color:#555555;margin:0;font-family: helvetica,arial,verdana,sans-serif; font-size: 14px; font-weight:300; line-height: 1.5;' dir='auto'><span><div style="font-size: 14px; font-family: helvetica, arial, verdana, sans-serif; color: inherit; text-align: center;"><span style="font-size: 21px; color: #1dcbca;"><strong>Hive Training Calendar</strong></span></div></span></div></td>
+												</tr>
+											<tr><td style='font-size:1px; height:10px' height='10'></td></tr></table></th>
+				</tr>
+			</tbody>
+		</table>
+	</th></tr>
+		</tbody>
+	</table>
+	<!--[if (gte mso 9)|(IE)]>
+		</td></tr><tr style='padding:0;vertical-align:top'><td dir='auto' style='-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:inherit;font-family:inherit;font-size:1px;font-weight:normal;hyphens:auto;line-height:0;margin:0;padding:0;vertical-align:top;word-wrap:break-word'>
+	<![endif]--><table class='row' border='0' cellpadding='0' cellspacing='0' style='border-collapse:collapse; background-color:#121258;  mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0;display:table;padding:0;position:relative;vertical-align:top;width:100%;margin:0;'>
+		<tbody>
+			<tr style='padding:0;vertical-align:top' valign='top'>
+	<th dir='auto'  class='small-12 large-12 columns' style='margin:0 auto;padding:0;padding-bottom:15px;padding-top:15px;padding-left:6px;padding-right:6px;width:564px' valign='top'>
+		<table style='border-collapse:collapse;border-spacing:0;padding:0;vertical-align:top;width:100%'>
+			<tbody>
+				<tr style='padding:0;vertical-align:top'>
+					<th dir='auto' align='left' style='padding:0;background-color:transparent;color:inherit;font-family:helvetica,arial,verdana,sans-serif;font-size:17px;font-weight:normal;line-height:1.5;margin:0;'><table bgcolor='transparent' style='background-color: transparent;border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;width:100%' width='100%' dir='auto'><tr><td style='padding:0' valign='top'><table bgcolor='transparent' style='background-color: transparent;border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;width:100%' width='100%' dir='auto'><tr><td style='padding:0; font-family: helvetica,arial,verdana,sans-serif; text-align: inherit!important; font-weight:bold; line-height:1.5; text-decoration:none; text-decoration:none!important; margin:0; margin:0!important; display:block;;font-weight:bold'><div class='ttl' style='font-family: helvetica,arial,verdana,sans-serif; text-align: inherit!important; font-weight:bold; line-height:1.5; text-decoration:none; text-decoration:none!important; margin:0; margin:0!important; display:block;;font-weight:bold'><a target='_blank' href='https://r.pblc.it/c/211647072?method=email&token=1953993SxxSf'><img hspace='10' align='left' alt='' border='0' width='150' height='142.15851602024' style='padding-right:10px;padding-bottom:0;padding-left:0; vertical-align:top; display:block; border:none; outline:0; text-decoration:none; margin:0;' src='https://pblc.it/i/600x569x9.f.S3/7c527/training-calendar-1703994-1.png' class='small-6 img171x162' /></a><span><div style="text-align:left; font-size:19px;font-family:helvetica,arial,verdana,sans-serif;color:inherit;font-weight:bold;"></div></span></div><div class='dscr' style='color:#555555;margin:0;font-family: helvetica,arial,verdana,sans-serif; font-size: 14px; font-weight:300; line-height: 1.5;' dir='auto'><span><div style="text-align: auto;"><span style="color: #ffffff;">View upcoming live training sessions and sign up for training in the Hive Training Calendar, including the monthly New User training and role-specific sessions:</span></div></span></div><table style='width:100%'>		<tr>
+									<td width='100%' style='font-size:1px; line-height: 1px;' height='5'>&nbsp;</td>
+								</tr>
+					        	<tr>
+					        		<td align='center'>
+					        			<table align='center' style='mso-cellspacing: 0px; mso-padding-alt: 0; mso-table-lspace:0pt; mso-table-rspace:0pt;'>
+					        				<tr>
+								         		<td style='font-size: 14px;line-height:1;border:none;background-color:#1DCBCA;;padding: 10px 20px; -webkit-border-radius: 5px; -moz-border-radius:5px; border-radius:5px;' bgcolor='#1DCBCA'>
+								         			<a class='cta_button' href='https://r.pblc.it/c/211647072?alt_obj=cta&method=email&url=https%3A%2F%2Fhive.lightning.force.com%2Flightning%2Fo%2FTraining_Calendar__c%2Flist%3FfilterName%3DAll_Upcoming_Trainings' target='_blank' style='line-height:1.2;text-align:center;display:block;font-style:normal;font-size: 14px; font-family: helvetica,arial,verdana,sans-serif; font-weight: bold; color:#ffffff; text-decoration: none; display: inline-block;'>
+								         			Sign up for Training
+								         			</a>
+								         		</td>
+								         	</tr>
+								        </table>
+								    </td>
+					       		</tr>
+									<tr><td style='font-size:1px;height:10px;' height='10'></td></tr></table></td></tr></table></td></tr></table></th>
+				</tr>
+			</tbody>
+		</table>
+	</th></tr>
+		</tbody>
+	</table>
+	<!--[if (gte mso 9)|(IE)]>
+		</td></tr><tr style='padding:0;vertical-align:top'><td dir='auto' style='-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:inherit;font-family:inherit;font-size:1px;font-weight:normal;hyphens:auto;line-height:0;margin:0;padding:0;vertical-align:top;word-wrap:break-word'>
+	<![endif]--><table class='row' border='0' cellpadding='0' cellspacing='0' style='border-collapse:collapse; background-color:transparent;  mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0;display:table;padding:0;position:relative;vertical-align:top;width:100%;margin:0;'>
+		<tbody>
+			<tr style='padding:0;vertical-align:top' valign='top'>
+	<th dir='auto'  class='small-12 large-12 columns' style='margin:0 auto;padding:0;padding-bottom:px;padding-top:px;padding-left:0px;padding-right:0px;width:564px' valign='top'>
+		<table style='border-collapse:collapse;border-spacing:0;padding:0;vertical-align:top;width:100%'>
+			<tbody>
+				<tr style='padding:0;vertical-align:top'>
+					<th dir='auto' align='left' style='padding:0;background-color:transparent;color:inherit;font-family:helvetica,arial,verdana,sans-serif;font-size:17px;font-weight:normal;line-height:1.5;margin:0;'><table class='spacer' style='border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%'>
+											<tbody>
+												<tr style='padding:0;text-align:left;vertical-align:top'>
+													<td height='<span>10px</span>' style='-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:helvetica,arial,verdana,sans-serif;font-size:<span>10px</span>;font-weight:300;hyphens:auto;line-height:<span>10px</span>;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word'>&nbsp;</td>
+												</tr>
+											</tbody>
+										</table></th>
+				</tr>
+			</tbody>
+		</table>
+	</th></tr>
+		</tbody>
+	</table>
+	<!--[if (gte mso 9)|(IE)]>
+		</td></tr><tr style='padding:0;vertical-align:top'><td dir='auto' style='-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:inherit;font-family:inherit;font-size:1px;font-weight:normal;hyphens:auto;line-height:0;margin:0;padding:0;vertical-align:top;word-wrap:break-word'>
+	<![endif]--><table class='row' border='0' cellpadding='0' cellspacing='0' style='border-collapse:collapse; background-color:#121258;  mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0;display:table;padding:0;position:relative;vertical-align:top;width:100%;margin:0;'>
+		<tbody>
+			<tr style='padding:0;vertical-align:top' valign='top'>
+	<th dir='auto'  class='small-12 large-12 columns' style='margin:0 auto;padding:0;padding-bottom:0px;padding-top:15px;padding-left:6px;padding-right:6px;width:564px' valign='top'>
+		<table style='border-collapse:collapse;border-spacing:0;padding:0;vertical-align:top;width:100%'>
+			<tbody>
+				<tr style='padding:0;vertical-align:top'>
+					<th dir='auto' align='left' style='padding:0;background-color:transparent;color:inherit;font-family:helvetica,arial,verdana,sans-serif;font-size:17px;font-weight:normal;line-height:1.5;margin:0;'><table bgcolor='transparent' style='background-color: transparent;border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;width:100%' width='100%' dir='auto'><tr>
+															<td width='100%' height='5' style='font-size:1px; line-height:5px;height:5px;'>&nbsp;</td>
+														</tr>
+												<tr>
+													<td style='padding:0 8px 0 8px;padding-left:8px;padding-right:8px;' dir='auto'><div class='dscr' style='color:#555555;margin:0;font-family: helvetica,arial,verdana,sans-serif; font-size: 14px; font-weight:300; line-height: 1.5;' dir='auto'><span><div style="font-size: 14px; font-family: helvetica, arial, verdana, sans-serif; color: inherit; text-align: center;"><span style="font-size: 21px; color: #1dcbca;"><strong>Hive In-Tool Guidance</strong></span></div></span></div></td>
+												</tr>
+											<tr><td style='font-size:1px; height:10px' height='10'></td></tr></table></th>
+				</tr>
+			</tbody>
+		</table>
+	</th></tr>
+		</tbody>
+	</table>
+	<!--[if (gte mso 9)|(IE)]>
+		</td></tr><tr style='padding:0;vertical-align:top'><td dir='auto' style='-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:inherit;font-family:inherit;font-size:1px;font-weight:normal;hyphens:auto;line-height:0;margin:0;padding:0;vertical-align:top;word-wrap:break-word'>
+	<![endif]--><table class='row' border='0' cellpadding='0' cellspacing='0' style='border-collapse:collapse; background-color:#121258;  mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0;display:table;padding:0;position:relative;vertical-align:top;width:100%;margin:0;'>
+		<tbody>
+			<tr style='padding:0;vertical-align:top' valign='top'>
+	<th dir='auto'  class='small-12 large-12 columns' style='margin:0 auto;padding:0;padding-bottom:15px;padding-top:15px;padding-left:6px;padding-right:6px;width:564px' valign='top'>
+		<table style='border-collapse:collapse;border-spacing:0;padding:0;vertical-align:top;width:100%'>
+			<tbody>
+				<tr style='padding:0;vertical-align:top'>
+					<th dir='auto' align='left' style='padding:0;background-color:transparent;color:inherit;font-family:helvetica,arial,verdana,sans-serif;font-size:17px;font-weight:normal;line-height:1.5;margin:0;'><table bgcolor='transparent' style='background-color: transparent;border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;width:100%' width='100%' dir='auto'><tr><td style='padding:0' valign='top'><table bgcolor='transparent' style='background-color: transparent;border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;width:100%' width='100%' dir='auto'><tr><td style='padding:0; font-family: helvetica,arial,verdana,sans-serif; text-align: inherit!important; font-weight:bold; line-height:1.5; text-decoration:none; text-decoration:none!important; margin:0; margin:0!important; display:block;;font-weight:bold'><div class='ttl' style='font-family: helvetica,arial,verdana,sans-serif; text-align: inherit!important; font-weight:bold; line-height:1.5; text-decoration:none; text-decoration:none!important; margin:0; margin:0!important; display:block;;font-weight:bold'><a target='_blank' href='https://r.pblc.it/c/211647075?method=email&token=1954024vF2vZ'><img hspace='10' align='left' alt='' border='0' width='150' height='78.5' style='padding-right:10px;padding-bottom:0;padding-left:0; vertical-align:top; display:block; border:none; outline:0; text-decoration:none; margin:0;' src='https://pblc.it/i/600x314x9.f.S3/313f9/walkme2-1704022-1.jpg' class='small-6 img171x89' /></a><span><div style="text-align:left; font-size:19px;font-family:helvetica,arial,verdana,sans-serif;color:inherit;font-weight:bold;"></div></span></div><div class='dscr' style='color:#555555;margin:0;font-family: helvetica,arial,verdana,sans-serif; font-size: 14px; font-weight:300; line-height: 1.5;' dir='auto'><span><div style="text-align: left; font-size: 14px; font-family: helvetica,arial,verdana,sans-serif; color: inherit;"><span style="color: #ffffff;">Hive provides in-tool help &amp; guidance via WalkMe which is a browser extension enabled on Google Chrome.&nbsp; Make sure you have the latest version of the WalkMe extension installed on your Chrome browser by downloading it directly from the eBay Software Centre:</span></div></span></div><table style='width:100%'>		<tr>
+									<td width='100%' style='font-size:1px; line-height: 1px;' height='5'>&nbsp;</td>
+								</tr>
+					        	<tr>
+					        		<td align='center'>
+					        			<table align='center' style='mso-cellspacing: 0px; mso-padding-alt: 0; mso-table-lspace:0pt; mso-table-rspace:0pt;'>
+					        				<tr>
+								         		<td style='font-size: 14px;line-height:1;border:none;background-color:#1DCBCA;;padding: 10px 20px; -webkit-border-radius: 5px; -moz-border-radius:5px; border-radius:5px;' bgcolor='#1DCBCA'>
+								         			<a class='cta_button' href='https://r.pblc.it/c/211647075?alt_obj=cta&method=email&url=http%3A%2F%2Fsoftwarecenter%3ASoftwareID%3DScopeId_1819ECA9-CC4E-433B-8E05-D4D81FE27E15%2FApplication_e455f6dd-014d-46f9-802c-ad8c2e9bba31' target='_blank' style='line-height:1.2;text-align:center;display:block;font-style:normal;font-size: 14px; font-family: helvetica,arial,verdana,sans-serif; font-weight: bold; color:#ffffff; text-decoration: none; display: inline-block;'>
+								         			WalkMe Chrome Extension
+								         			</a>
+								         		</td>
+								         	</tr>
+								        </table>
+								    </td>
+					       		</tr>
+									<tr><td style='font-size:1px;height:10px;' height='10'></td></tr></table></td></tr></table></td></tr></table></th>
+				</tr>
+			</tbody>
+		</table>
+	</th></tr>
+		</tbody>
+	</table>
+	<!--[if (gte mso 9)|(IE)]>
+		</td></tr><tr style='padding:0;vertical-align:top'><td dir='auto' style='-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:inherit;font-family:inherit;font-size:1px;font-weight:normal;hyphens:auto;line-height:0;margin:0;padding:0;vertical-align:top;word-wrap:break-word'>
+	<![endif]--><table class='row' border='0' cellpadding='0' cellspacing='0' style='border-collapse:collapse; background-color:transparent;  mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0;display:table;padding:0;position:relative;vertical-align:top;width:100%;margin:0;'>
+		<tbody>
+			<tr style='padding:0;vertical-align:top' valign='top'>
+	<th dir='auto'  class='small-12 large-12 columns' style='margin:0 auto;padding:0;padding-bottom:px;padding-top:px;padding-left:0px;padding-right:0px;width:564px' valign='top'>
+		<table style='border-collapse:collapse;border-spacing:0;padding:0;vertical-align:top;width:100%'>
+			<tbody>
+				<tr style='padding:0;vertical-align:top'>
+					<th dir='auto' align='left' style='padding:0;background-color:transparent;color:inherit;font-family:helvetica,arial,verdana,sans-serif;font-size:17px;font-weight:normal;line-height:1.5;margin:0;'><table class='spacer' style='border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%'>
+											<tbody>
+												<tr style='padding:0;text-align:left;vertical-align:top'>
+													<td height='<span>10px</span>' style='-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:helvetica,arial,verdana,sans-serif;font-size:<span>10px</span>;font-weight:300;hyphens:auto;line-height:<span>10px</span>;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word'>&nbsp;</td>
+												</tr>
+											</tbody>
+										</table></th>
+				</tr>
+			</tbody>
+		</table>
+	</th></tr>
+		</tbody>
+	</table>
+	<!--[if (gte mso 9)|(IE)]>
+		</td></tr><tr style='padding:0;vertical-align:top'><td dir='auto' style='-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:inherit;font-family:inherit;font-size:1px;font-weight:normal;hyphens:auto;line-height:0;margin:0;padding:0;vertical-align:top;word-wrap:break-word'>
+	<![endif]--><table class='row' border='0' cellpadding='0' cellspacing='0' style='border-collapse:collapse; background-color:#121258;  mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0;display:table;padding:0;position:relative;vertical-align:top;width:100%;margin:0;'>
+		<tbody>
+			<tr style='padding:0;vertical-align:top' valign='top'>
+	<th dir='auto'  class='small-12 large-12 columns' style='margin:0 auto;padding:0;padding-bottom:0px;padding-top:15px;padding-left:6px;padding-right:6px;width:564px' valign='top'>
+		<table style='border-collapse:collapse;border-spacing:0;padding:0;vertical-align:top;width:100%'>
+			<tbody>
+				<tr style='padding:0;vertical-align:top'>
+					<th dir='auto' align='left' style='padding:0;background-color:transparent;color:inherit;font-family:helvetica,arial,verdana,sans-serif;font-size:17px;font-weight:normal;line-height:1.5;margin:0;'><table bgcolor='transparent' style='background-color: transparent;border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;width:100%' width='100%' dir='auto'><tr>
+															<td width='100%' height='5' style='font-size:1px; line-height:5px;height:5px;'>&nbsp;</td>
+														</tr>
+												<tr>
+													<td style='padding:0 8px 0 8px;padding-left:8px;padding-right:8px;' dir='auto'><div class='dscr' style='color:#555555;margin:0;font-family: helvetica,arial,verdana,sans-serif; font-size: 14px; font-weight:300; line-height: 1.5;' dir='auto'><span><div style="font-size: 14px; font-family: helvetica, arial, verdana, sans-serif; color: inherit; text-align: center;"><span style="font-size: 21px; color: #1dcbca;"><strong>Hive NPS Survey &amp; Feature Request</strong></span></div></span></div></td>
+												</tr>
+											<tr><td style='font-size:1px; height:10px' height='10'></td></tr></table></th>
+				</tr>
+			</tbody>
+		</table>
+	</th></tr>
+		</tbody>
+	</table>
+	<!--[if (gte mso 9)|(IE)]>
+		</td></tr><tr style='padding:0;vertical-align:top'><td dir='auto' style='-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:inherit;font-family:inherit;font-size:1px;font-weight:normal;hyphens:auto;line-height:0;margin:0;padding:0;vertical-align:top;word-wrap:break-word'>
+	<![endif]--><table class='row' border='0' cellpadding='0' cellspacing='0' style='border-collapse:collapse; background-color:#121258;  mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0;display:table;padding:0;position:relative;vertical-align:top;width:100%;margin:0;'>
+		<tbody>
+			<tr style='padding:0;vertical-align:top' valign='top'>
+	<th dir='auto'  class='small-12 large-12 columns' style='margin:0 auto;padding:0;padding-bottom:15px;padding-top:15px;padding-left:6px;padding-right:6px;width:564px' valign='top'>
+		<table style='border-collapse:collapse;border-spacing:0;padding:0;vertical-align:top;width:100%'>
+			<tbody>
+				<tr style='padding:0;vertical-align:top'>
+					<th dir='auto' align='left' style='padding:0;background-color:transparent;color:inherit;font-family:helvetica,arial,verdana,sans-serif;font-size:17px;font-weight:normal;line-height:1.5;margin:0;'><table bgcolor='transparent' style='background-color: transparent;border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;width:100%' width='100%' dir='auto'><tr><td style='padding:0' valign='top'><table bgcolor='transparent' style='background-color: transparent;border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;width:100%' width='100%' dir='auto'><tr><td style='padding:0; font-family: helvetica,arial,verdana,sans-serif; text-align: inherit!important; font-weight:bold; line-height:1.5; text-decoration:none; text-decoration:none!important; margin:0; margin:0!important; display:block;;font-weight:bold'><div class='ttl' style='font-family: helvetica,arial,verdana,sans-serif; text-align: inherit!important; font-weight:bold; line-height:1.5; text-decoration:none; text-decoration:none!important; margin:0; margin:0!important; display:block;;font-weight:bold'><a target='_blank' href='https://r.pblc.it/c/211647080?method=email&token=1954095918-D'><img hspace='10' align='left' alt='' border='0' width='150' height='183.14785373609' style='padding-right:10px;padding-bottom:0;padding-left:0; vertical-align:top; display:block; border:none; outline:0; text-decoration:none; margin:0;' src='https://pblc.it/i/600x733x9.f.S3/3b278/nps-real-1704093-1.png' class='small-6 img171x209' /></a><span><div style="text-align:left; font-size:19px;font-family:helvetica,arial,verdana,sans-serif;color:inherit;font-weight:bold;"></div></span></div><div class='dscr' style='color:#555555;margin:0;font-family: helvetica,arial,verdana,sans-serif; font-size: 14px; font-weight:300; line-height: 1.5;' dir='auto'><span><div style="text-align: left; font-size: 14px; font-family: helvetica,arial,verdana,sans-serif; color: inherit;"><span style="color: #ffffff;">When logging in, you will periodically be presented with our NPS survey.&nbsp; This is to gauge how satisfied you are with Hive and enable you to give your feedback about what you feel could be improved.&nbsp; The survey takes less than a minute to complete and you will only see it about once per month.&nbsp; In the meantime, if you have any suggestions for improvements you can suggest a new feature via the Feature Request link below:</span></div></span></div><table style='width:100%'>		<tr>
+									<td width='100%' style='font-size:1px; line-height: 1px;' height='5'>&nbsp;</td>
+								</tr>
+					        	<tr>
+					        		<td align='center'>
+					        			<table align='center' style='mso-cellspacing: 0px; mso-padding-alt: 0; mso-table-lspace:0pt; mso-table-rspace:0pt;'>
+					        				<tr>
+								         		<td style='font-size: 14px;line-height:1;border:none;background-color:#1DCBCA;;padding: 10px 20px; -webkit-border-radius: 5px; -moz-border-radius:5px; border-radius:5px;' bgcolor='#1DCBCA'>
+								         			<a class='cta_button' href='https://r.pblc.it/c/211647080?alt_obj=cta&method=email&url=https%3A%2F%2Fhive.lightning.force.com%2Flightning%2Fo%2FRequirement_Request__c%2Fnew%3Fcount%3D1%26nooverride%3D1%26useRecordTypeCheck%3D1%26navigationLocation%3DMRU_LIST%26backgroundContext%3D%252Flightning%252Fo%252FRequirement_Request__c%252Flist%253FfilterName%253DRecent' target='_blank' style='line-height:1.2;text-align:center;display:block;font-style:normal;font-size: 14px; font-family: helvetica,arial,verdana,sans-serif; font-weight: bold; color:#ffffff; text-decoration: none; display: inline-block;'>
+								         			Hive Feature Request
+								         			</a>
+								         		</td>
+								         	</tr>
+								        </table>
+								    </td>
+					       		</tr>
+									<tr><td style='font-size:1px;height:10px;' height='10'></td></tr></table></td></tr></table></td></tr></table></th>
+				</tr>
+			</tbody>
+		</table>
+	</th></tr>
+		</tbody>
+	</table>
+	<!--[if (gte mso 9)|(IE)]>
+		</td></tr><tr style='padding:0;vertical-align:top'><td dir='auto' style='-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:inherit;font-family:inherit;font-size:1px;font-weight:normal;hyphens:auto;line-height:0;margin:0;padding:0;vertical-align:top;word-wrap:break-word'>
+	<![endif]--><table class='row' border='0' cellpadding='0' cellspacing='0' style='border-collapse:collapse; background-color:transparent;  mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0;display:table;padding:0;position:relative;vertical-align:top;width:100%;margin:0;'>
+		<tbody>
+			<tr style='padding:0;vertical-align:top' valign='top'>
+	<th dir='auto'  class='small-12 large-12 columns' style='margin:0 auto;padding:0;padding-bottom:15px;padding-top:15px;padding-left:6px;padding-right:6px;width:564px' valign='top'>
+		<table style='border-collapse:collapse;border-spacing:0;padding:0;vertical-align:top;width:100%'>
+			<tbody>
+				<tr style='padding:0;vertical-align:top'>
+					<th dir='auto' align='left' style='padding:0;background-color:transparent;color:inherit;font-family:helvetica,arial,verdana,sans-serif;font-size:17px;font-weight:normal;line-height:1.5;margin:0;'><table bgcolor='transparent' style='background-color: transparent;border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;width:100%' width='100%' dir='auto'><tr>
+															<td width='100%' height='5' style='font-size:1px; line-height:5px;height:5px;'>&nbsp;</td>
+														</tr>
+												<tr>
+													<td style='padding:0 8px 0 8px;padding-left:8px;padding-right:8px;' dir='auto'><div class='dscr' style='color:#555555;margin:0;font-family: helvetica,arial,verdana,sans-serif; font-size: 14px; font-weight:300; line-height: 1.5;' dir='auto'><span><div style="font-size: 14px; font-family: helvetica,arial,verdana,sans-serif; color: inherit;">Thank you and a warm welcome to Hive!<br />The Hive Team</div></span></div></td>
+												</tr>
+											<tr><td style='font-size:1px; height:10px' height='10'></td></tr></table></th>
+				</tr>
+			</tbody>
+		</table>
+	</th></tr>
+		</tbody>
+	</table>
+	<!--[if (gte mso 9)|(IE)]>
+		</td></tr><tr style='padding:0;vertical-align:top'><td dir='auto' style='-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:inherit;font-family:inherit;font-size:1px;font-weight:normal;hyphens:auto;line-height:0;margin:0;padding:0;vertical-align:top;word-wrap:break-word'>
+	<![endif]--><table class='row' border='0' cellpadding='0' cellspacing='0' style='border-collapse:collapse; background-color:transparent;  mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0;display:table;padding:0;position:relative;vertical-align:top;width:100%;margin:0;'>
+		<tbody>
+			<tr style='padding:0;vertical-align:top' valign='top'>
+							
+	<th dir='auto'  class='small-12 large-12 columns' style='margin:0 auto;padding:0;width:640px' valign='top'>
+		<table style='border-collapse:collapse;border-spacing:0;padding:0;vertical-align:top;width:100%'>
+			<tbody>
+				<tr style='padding:0;vertical-align:top'>
+					<th dir='auto' align='left' style='padding:0;background-color:transparent;color:inherit;font-family:helvetica,arial,verdana,sans-serif;font-size:17px;font-weight:normal;line-height:1.5;margin:0;'>
+							
+	<table class='spacer' style='border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%'>
+		<tbody>
+			<tr style='padding:0;text-align:left;vertical-align:top'>
+				<td height='16' style='-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;margin:0;mso-line-height-rule:exactly;padding:0;vertical-align:top;'>&nbsp;</td>
+			</tr>
+		</tbody>
+	</table>
+	
+								<p align='center' style='text-align: center'>
+								<a target='_blank' style='text-decoration:none!important;outline:0!important;border:none!important;' href='https://publicate.it/?e=181086'>
+								<img width='150' height='21' style='border:none; outline:0; width:150px; margin:0 auto; vertical-align:middle!important;' alt='created in Publicate' src='https://publicate.it/imgs/created_in_publicate.gif' />
+								</a>
+								</p>
+								
+	<table class='spacer' style='border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%'>
+		<tbody>
+			<tr style='padding:0;text-align:left;vertical-align:top'>
+				<td height='16' style='-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;margin:0;mso-line-height-rule:exactly;padding:0;vertical-align:top;'>&nbsp;</td>
+			</tr>
+		</tbody>
+	</table>
+	
+							</th>
+				</tr>
+			</tbody>
+		</table>
+	</th>
+						</tr>
+		</tbody>
+	</table>
+	<!--[if (gte mso 9)|(IE)]>
+		</td></tr><tr style='padding:0;vertical-align:top'><td dir='auto' style='-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:inherit;font-family:inherit;font-size:1px;font-weight:normal;hyphens:auto;line-height:0;margin:0;padding:0;vertical-align:top;word-wrap:break-word'>
+	<![endif]--></td>
+				</tr>
+			</tbody>
+		</table>		<table width='100%'><tr><td width='100%' height='40'><p>&nbsp;</p></td></tr></table>
+					</td>
+				</tr>
+			</tbody>
+		</table><img src='https://publicate.it/open/email/181086/pic.gif?1606237691' width='1' height='1' style='width:1px;height:1px;max-width:1px !important;max-height:1px !important;width:1px !important;height:1px !important;' /></body>
+	</html>

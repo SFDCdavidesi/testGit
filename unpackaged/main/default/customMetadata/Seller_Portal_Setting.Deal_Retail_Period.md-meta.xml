@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Deal Retail Period</label>
+    <protected>false</protected>
+    <values>
+        <field>Field_Set_Detail_Name__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>Field_Set_Name__c</field>
+        <value xsi:type="xsd:string">Deal_Retail_Period</value>
+    </values>
+    <values>
+        <field>Filter_Values__c</field>
+        <value xsi:type="xsd:string">RecordType.DeveloperName = &#39;Deal_Campaign_V2&#39;  AND Status_Seller_Portal__c != null AND Status_Seller_Portal__c != &#39;Draft&#39; AND Status_Seller_Portal__c != &#39;New&#39; AND EBH_Country__c = &#39;0&#39;</value>
+    </values>
+    <values>
+        <field>Global_Search_Tab__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Maximum_Records__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>Number_Of_Records_To_Display__c</field>
+        <value xsi:type="xsd:double">10.0</value>
+    </values>
+    <values>
+        <field>Object_API_Name__c</field>
+        <value xsi:type="xsd:string">EBH_DealRetailCampaign__c</value>
+    </values>
+    <values>
+        <field>Order_Fields__c</field>
+        <value xsi:type="xsd:string">EBH_Date__c desc</value>
+    </values>
+    <values>
+        <field>Specific_Search_Field__c</field>
+        <value xsi:type="xsd:string">Deal_Window__c LIKE :key OR
+Status_Seller_Portal__c LIKE :key</value>
+    </values>
+</CustomMetadata>

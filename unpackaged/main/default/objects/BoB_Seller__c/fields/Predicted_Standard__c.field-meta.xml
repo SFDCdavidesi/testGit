@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Predicted_Standard__c</fullName>
+    <description>US-0007879 - LTTM BoB Seller Layout Embed Tabular Report</description>
+    <externalId>false</externalId>
+    <formula>TEXT(Seller__r.EBH_PredictedStandard__c )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Predicted Standard</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

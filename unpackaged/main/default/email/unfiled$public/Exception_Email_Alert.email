@@ -1,0 +1,10 @@
+An exception occurred during the running of the following code:
+<br/><br/>
+Instance: {!Instance}
+<br/><br/>
+Apex Class: {!ApexClass}
+<br/><br/>
+Exception Message: {!ExceptionMessage}
+<br/><br/>
+Please review and rectify the issue
+<br/><br/>

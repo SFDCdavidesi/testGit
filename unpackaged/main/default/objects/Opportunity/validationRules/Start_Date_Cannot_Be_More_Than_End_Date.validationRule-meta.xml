@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Start_Date_Cannot_Be_More_Than_End_Date</fullName>
+    <active>true</active>
+    <description>US-0008877 - [Ads 2020] Bug : Provide an error massage while Start Date higher than End date</description>
+    <errorConditionFormula>AND(
+    Not($Setup.byPass__c.ByPass_Validation__c),
+    Start_Date__c &gt; End_Date__c 
+)</errorConditionFormula>
+    <errorMessage>End date must be greater than start date.</errorMessage>
+</ValidationRule>

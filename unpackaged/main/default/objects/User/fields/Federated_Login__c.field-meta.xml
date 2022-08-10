@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Federated_Login__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>US-0010903 - [Add User] Allow DE Deals Users to add others Contacts to the Seller Portal</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates a User that logs in to Seller Portal using Experience Cloud Username and password</inlineHelpText>
+    <label>Federated Login</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

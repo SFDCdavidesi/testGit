@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_SoldItems__c</fullName>
+    <description>[EBH] (US-0032) - to capture Sold Items value on a Seller record</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Count of items sold over the last 12 months.</inlineHelpText>
+    <label>Sold Items (Last 12 Months)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

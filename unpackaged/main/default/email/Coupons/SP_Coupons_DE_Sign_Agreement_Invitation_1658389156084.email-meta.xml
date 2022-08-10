@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0012109 - Lightning Email Logic for DE Coupon Sellers - Contract Signature Invitation</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>SP - Coupons - DE - Sign Agreement Invitation</name>
+    <pageDevName>SP_Coupons_DE_Sign_Agreement_Invitation</pageDevName>
+    <relatedEntityType>Seller_Communication__c</relatedEntityType>
+    <style>none</style>
+    <subject>Einladung zu Gutscheinaktion | {{{Seller_Communication__c.Coupon_Marketing_Name__c}}} | {{{Seller_Communication__c.Coupon_Code__c}}} | {{{Seller_Communication__c.CouponStartDate__c}}} - {{{Seller_Communication__c.CouponEndDate__c}}}</subject>
+    <textOnly>**Einladung zu Gutscheinaktion | {{{Seller_Communication__c.Coupon_Marketing_Name__c}}} | {{{Seller_Communication__c.Coupon_Code__c}}} | {{{Seller_Communication__c.CouponStartDate__c}}} - {{{Seller_Communication__c.CouponEndDate__c}}} 
+----------------------------------------------------
+
+Hallo {{{Seller_Communication__c.Contact__c}}}, 
+
+Sie wurden von {{{Seller_Communication__c.CouponSellerOwner__c}}} eingeladen, an einer Gutscheinaktion teilzunehmen: 
+
+{{{Seller_Communication__c.Coupon_Code__c}}}: {{{Seller_Communication__c.Coupon_Marketing_Name__c}}} vom {{{Seller_Communication__c.CouponStartDate__c}}} bis {{{Seller_Communication__c.CouponEndDate__c}}} 
+
+Um teilzunehmen, klicken Sie auf den Button „Details anzeigen“, lesen Sie bitte den entsprechenden Werbeaktions-Einzelvertrag sowie die dazugehörigen Allgemeinen Geschäftsbedingungen und klicken Sie vor dem {{{Seller_Communication__c.Contract_Due_Date__c}}} auf den Button „Ich stimme zu“. 
+
+Details anzeigen &lt; {{{Seller_Communication__c.CouponURLPortalText__c}}} &gt; 
+
+Herzliche Grüße, 
+
+Ihr eBay-Team 
+
+eBay hat diese Mitteilung an {{{Seller_Communication__c.Contact__c}}} ({{{Seller_Communication__c.Account__c}}}) gesendet.
+
+Ihr Vor- und Nachname in dieser Mitteilung sind ein Hinweis darauf, dass die Nachricht tatsächlich von eBay stammt.
+
+Weitere Informationen über den Schutz Ihres eBay-Kontos. &lt; https://www.ebay.de/help/account/protecting-account/schtzen-sie-ihr-ebaykonto?id=4192&amp;j=1096814&amp;sfmc_sub=370445265&amp;l=3091_HTML&amp;u=143705319&amp;mid=7316451&amp;jb=1 &gt; 
+
+Kontaktinformationen
+
+Beantworten Sie diese E‑Mail bitte NICHT per &#39;Reply&#39; (Antwort-Button in Ihrem E‑Mail-Programm). Wenn Sie eine Frage haben, hilft Ihnen unser Kundenservice &lt; https://www.ebay.de/help/home?j=1096814&amp;sfmc_sub=370445265&amp;l=3091_HTML&amp;u=143705320&amp;mid=7316451&amp;jb=1 &gt; (auch erreichbar under customerhelp_de@ebay.com) gerne. Alle aktuellen Informationen finden Sie in den eBay‑News &lt; https://community.ebay.de/t5/eBay-Mitteilungen/bg-p/eBay-Mitteilungen?j=1096814&amp;sfmc_sub=370445265&amp;l=3091_HTML&amp;u=143705321&amp;mid=7316451&amp;jb=1 &gt; .
+
+Abbestellen
+
+Wenn Sie den Newsletter in Zukunft nicht mehr erhalten möchten, passen Sie einfach Ihre Benachrichtigungseinstellungen &lt; https://signin.ebay.de/ws/eBayISAPI.dll?SignIn&amp;ru=https%253A%252F%252Fmy.ebay.de%252Fws%252FeBayISAPI.dll%253FMyEbayBeta%2526CurrentPage%253DMyeBayNextNotificationPreferences%2526ssPageName%253DSTRK%253AME%253ALNLK%2526j%253D1096814%2526sfmc_sub%253D370445265%2526l%253D3091_HTML%2526u%253D143705322%2526mid%253D7316451%2526jb%253D1 &gt; in Mein eBay &lt; https://community.ebay.de/t5/eBay-Mitteilungen/bg-p/eBay-Mitteilungen?j=1096814&amp;sfmc_sub=370445265&amp;l=3091_HTML&amp;u=143705321&amp;mid=7316451&amp;jb=1 &gt; an.
+
+Wir werten Ihre Reaktion auf diesen Newsletter pseudonymisiert auf der Basis Ihres Mitgliedsnamens aus. So können wir Ihnen in Zukunft stärker auf Ihre Interessen zugeschnittene Newsletter zusenden. Wenn Sie dies nicht wünschen, bestellen Sie den Newsletter bitte wie oben beschrieben ab.
+
+Haben Sie Fragen zum Umgang mit Ihren Daten? Informieren Sie sich über unsere Datenschutzgrundsätze &lt; https://www.ebay.de/help/policies/member-behavior-policies/datenschutzerklrung?id=4260&amp;j=1096814&amp;sfmc_sub=370445265&amp;l=3091_HTML&amp;u=143705323&amp;mid=7316451&amp;jb=1 &gt; und unsere Allgemeinen Geschäftsbedingungen &lt; https://www.ebay.de/help/policies/member-behavior-policies/allgemeine-geschftsbedingungen-fr-die-nutzung-der-deutschen-ebaydienste?id=4259&amp;j=1096814&amp;sfmc_sub=370445265&amp;l=3091_HTML&amp;u=143705324&amp;mid=7316451&amp;jb=1 &gt; .
+
+Diese Nachricht wurde Ihnen von der eBay GmbH übermittelt. Diese kann sich zur Erfüllung ihrer Dienstleistungen anderer eBay-Unternehmen bedienen. Falls Sie Ihren Wohn- oder Geschäftssitz außerhalb der EU haben, finden Sie die Kontaktdaten Ihres Vertragspartners in den Allgemeinen Geschäftsbedingungen &lt; https://www.ebay.de/help/policies/member-behavior-policies/allgemeine-geschftsbedingungen-fr-die-nutzung-der-deutschen-ebaydienste?id=4259&amp;j=1096814&amp;sfmc_sub=370445265&amp;l=3091_HTML&amp;u=143705324&amp;mid=7316451&amp;jb=1 &gt; .
+
+© 1995-2022 eBay Inc.
+
+Impressum &lt; https://www.ebay.de/help/policies/member-behavior-policies/impressum?id=4714 &gt; 
+
+eBay GmbH
+
+Albert-Einstein-Ring 2-6
+
+14532 Kleinmachnow
+
+DEUTSCHLAND
+
+Handelsregisternummer: HRB 13754 P</textOnly>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

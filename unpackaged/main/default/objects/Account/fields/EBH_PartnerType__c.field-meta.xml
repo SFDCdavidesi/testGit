@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_PartnerType__c</fullName>
+    <description>[EBH] (US-0046) : To capture partner type on a Partner record
+[#EPH-7476] Partner Record - Enhance fields for Partner Contact Management</description>
+    <externalId>false</externalId>
+    <label>Partner Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Listing Tool</fullName>
+                <default>false</default>
+                <label>Listing Tool</label>
+            </value>
+            <value>
+                <fullName>Middleware</fullName>
+                <default>false</default>
+                <label>Middleware</label>
+            </value>
+            <value>
+                <fullName>Shop Plugin</fullName>
+                <default>false</default>
+                <label>Shop Plugin</label>
+            </value>
+            <value>
+                <fullName>Shop System</fullName>
+                <default>false</default>
+                <label>Shop System</label>
+            </value>
+            <value>
+                <fullName>Template Design</fullName>
+                <default>false</default>
+                <label>Template Design</label>
+            </value>
+            <value>
+                <fullName>Consultancy</fullName>
+                <default>false</default>
+                <label>Consultancy</label>
+            </value>
+            <value>
+                <fullName>Shipping Provider</fullName>
+                <default>false</default>
+                <label>Shipping Provider</label>
+            </value>
+            <value>
+                <fullName>Listing Optimisation</fullName>
+                <default>false</default>
+                <label>Listing Optimisation</label>
+            </value>
+            <value>
+                <fullName>Integration Partner</fullName>
+                <default>false</default>
+                <label>Integration Partner</label>
+            </value>
+            <value>
+                <fullName>Commerce Platform</fullName>
+                <default>false</default>
+                <label>Commerce Platform</label>
+            </value>
+            <value>
+                <fullName>3PP</fullName>
+                <default>false</default>
+                <label>3PP</label>
+            </value>
+            <value>
+                <fullName>Reseller</fullName>
+                <default>false</default>
+                <label>Reseller</label>
+            </value>
+            <value>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+                <label>Marketing</label>
+            </value>
+            <value>
+                <fullName>Inventory Management</fullName>
+                <default>false</default>
+                <label>Inventory Management</label>
+            </value>
+            <value>
+                <fullName>Reporting Management</fullName>
+                <default>false</default>
+                <label>Reporting Management</label>
+            </value>
+            <value>
+                <fullName>Advertising Services ERP</fullName>
+                <default>false</default>
+                <label>Advertising Services ERP</label>
+            </value>
+            <value>
+                <fullName>ERP</fullName>
+                <default>false</default>
+                <label>ERP</label>
+            </value>
+            <value>
+                <fullName>Promoted Listings Specialist</fullName>
+                <default>false</default>
+                <label>Promoted Listings Specialist</label>
+            </value>
+            <value>
+                <fullName>Full Service Provider</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Full Service Provider</label>
+            </value>
+            <value>
+                <fullName>Sales Service Provider</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sales Service Provider</label>
+            </value>
+            <value>
+                <fullName>Translation Service Provider</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Translation Service Provider</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

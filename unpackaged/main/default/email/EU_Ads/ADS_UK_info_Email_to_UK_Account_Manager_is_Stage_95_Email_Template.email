@@ -1,0 +1,8 @@
+Greetings "{!Opportunity.Account_Manager__c}",
+
+You have an opportunity that was set to greater or equal to 95%: "{!Opportunity.Name}", please review.
+
+Link to Opportunity:
+{!Opportunity.Link}
+
+Have a great day,

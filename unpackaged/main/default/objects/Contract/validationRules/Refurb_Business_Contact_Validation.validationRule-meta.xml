@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Refurb_Business_Contact_Validation</fullName>
+    <active>true</active>
+    <description>US-0009896
+[Refurb] Validation to mandate Creation of Legal Entity record for Refurb Contracts</description>
+    <errorConditionFormula>AND(
+    NOT($Setup.byPass__c.ByPass_Validation__c),
+    RecordType.DeveloperName = &#39;Refurbished&#39;,
+    ISPICKVAL(Status, &#39;Draft&#39;),  IF( ISPICKVAL(EBH_Site__c,&quot;DE&quot; )   , OR(
+        Business_Contact__c = &#39;&#39;,
+        Business_Contact__r.FirstName = &#39;&#39;,
+        Business_Contact__r.LastName = &#39;&#39;,
+        Business_Contact__r.Email = &#39;&#39;,
+        Business_Contact__r.EBH_MailingCity__c = &#39;&#39;,
+        Business_Contact__r.EBH_MailingCountry__c = &#39;&#39;,
+        Business_Contact__r.EBH_MailingPostalCode__c = &#39;&#39;,
+        Business_Contact__r.EBH_MailingStreet__c = &#39;&#39;
+    ) ,  
+    OR(
+        Business_Contact__c = &#39;&#39;,
+        Business_Contact__r.FirstName = &#39;&#39;,
+        Business_Contact__r.LastName = &#39;&#39;,
+        Business_Contact__r.Email = &#39;&#39;,
+        Business_Contact__r.EBH_MailingAddress__c = &#39;&#39;,
+        Business_Contact__r.EBH_MailingCity__c = &#39;&#39;,
+        Business_Contact__r.EBH_MailingCountry__c = &#39;&#39;,
+        Business_Contact__r.EBH_MailingPostalCode__c = &#39;&#39;,
+        Business_Contact__r.EBH_MailingStreet__c = &#39;&#39;
+    ) )
+)</errorConditionFormula>
+    <errorDisplayField>Business_Contact__c</errorDisplayField>
+    <errorMessage>Please select or create a new Business/Legal Entity Contact with First Name, Last Name,Primary Email and Mailing Address populated.</errorMessage>
+</ValidationRule>

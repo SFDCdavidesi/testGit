@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>ES [EBH] (EPH-4171) - Mass Acceptance of Deals without Subsidy</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>EBH_eBayBlankLetterhead</letterhead>
+    <name>ES Mass Acceptance of Deals with Subsidy</name>
+    <style>freeForm</style>
+    <subject>Aquí tienes el acuerdo de promoción correspondiente a tu oferta de eBay</subject>
+    <textOnly>Estimado vendedor pulsa Acepto para confirmar el acuerdo de promoción con eBay.
+
+Seudónimo de eBay: {!EBH_Deal__c.EBH_BusinessName__c}
+Título: {!EBH_Deal__c.EBH_ProductTitle__c}
+Cantidad: {!EBH_Deal__c.EBH_Quantity__c}
+Detalles Formato: ofertas semanales
+Fecha de inicio: {!EBH_Deal__c.EBH_DealStartDate__c}
+Fecha de finalización: {!EBH_Deal__c.EBH_DealEndDate__c}
+Precio anterior: € {!EBH_Deal__c.EBH_RRPWASPrice__c}
+Precio de la oferta: € {!EBH_Deal__c.EBH_SellerPrice__c}
+
+Importe del subsidio por unidad: € {!EBH_Deal__c.EBH_Subsidy__c}
+
+Máximas unidades subsidiadas: {!EBH_Deal__c.EBH_Quantity__c}
+
+Importe total del subsidio: € {!EBH_Deal__c.EBH_SubsidyMax__c}
+
+
+Comentarios de eBay:
+{!EBH_Deal__c.EBH_CommentfromeBaySourcer__c}
+
+Recuerda, al aceptar confirmas que:
+
+• El artículo que ofreces no es una falsificación ni implica ningún tipo de plagio.
+
+• Tienes autorización para vender o distribuir este artículo y enviarlo a las ubicaciones especificadas.
+
+• No infringes ninguna obligación contractual adquirida mediante otros acuerdos al poner este artículo en venta en eBay.
+
+• El precio original indicado, es verdaderamente el precio de venta al público recomendado o en su defecto, el precio anterior del artículo.
+
+. No modificarás el precio del artículo ofertado durante el periodo indicado de la promoción sin el consentimiento de eBay.
+
+
+Un cordial saludo,
+
+El equipo de eBay</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

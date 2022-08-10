@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_Same_Settings_as_Profile</fullName>
+    <active>true</active>
+    <description>US-0009203</description>
+    <errorConditionFormula>or(AND ( 
+
+ NOT(CONTAINS( Same_settings_as__r.Profile.Name , &#39;GCX&#39;)),
+ CONTAINS(text(User_Type__c), &#39;GCX&#39;) 
+
+),AND ( 
+
+ CONTAINS( Same_settings_as__r.Profile.Name , &#39;GCX&#39;),
+ NOT(CONTAINS(text(User_Type__c), &#39;GCX&#39;)) 
+
+))</errorConditionFormula>
+    <errorDisplayField>Same_settings_as__c</errorDisplayField>
+    <errorMessage>Same settings as Profile must match the user type selected.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Coupon_Discount_Amount__c</fullName>
+    <description>EPH-7262 Adjustment to Coupon Object</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Absolute discount that is offered to users</inlineHelpText>
+    <label>Coupon Discount Amount</label>
+    <precision>16</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

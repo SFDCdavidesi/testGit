@@ -1,0 +1,18 @@
+<p>Dear {eBaySellerID}, </p>
+
+<p>This email is to offer <b>You</b>, the opportunity to actively participate in an upcoming coupon offer on eBay. The promotion will have a unique redemption code, terms and conditions, timings and may also be targeted to specific eBay customers. </p>
+
+<p>This promotion will start on {CouponStartDate} {CouponStartTime} and end on {CouponEndDate} {CouponEndTime}, subject to the Coupon Terms and Conditions set out below. The Seller funding rate for this promotion is {SellerFundingRate%}.
+
+<p><b><u>To Participate:</u></b></p>
+<p>Please review  the  Coupon Term Sheet and Master Agreement which govern your participation in the promotion and are available here: <a title="Coupon Terms and Conditions" href="{!Coupon_Seller__c.SiteURL__c}/TC_Landing?Id={!Coupon_Seller__c.Id}"><b>Coupon Terms and Conditions</b></a>. </p>
+<ul>
+<li>To accept the offer click on "I AGREE" below the Master Agreement.</li>
+<li>Please note you will need to accept offer by {ContractDueDate}. If you do not accept by this date, eBay reserves the right to exclude you from this coupon offer.</li>
+</ul>
+
+<p>You will receive an email confirming your participation within 1 day of acceptance.</p>
+<p>If you have any further questions, please kindly revert back to <a href="#"><i>retailpromotions@ebay.com</i></a>.</p>
+<p>Thank You </p>
+<p>Retail Promotions Team </p>
+<p>eBay Australia</p>

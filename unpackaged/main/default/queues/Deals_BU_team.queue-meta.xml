@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Deals BU team</name>
+    <queueMembers>
+        <users>
+            <user>arpirao@hive.project.com</user>
+            <user>jatong@hive.project.com</user>
+            <user>jaslau@hive.project.com</user>
+            <user>johsu@hive.project.com</user>
+            <user>maazizi@hive.project.com</user>
+            <user>manikajoshi@hive.project.com</user>
+            <user>rbaltjes@hive.project.com</user>
+            <user>tavijay@hive.project.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Deal_Statement__c</sobjectType>
+    </queueSobject>
+</Queue>

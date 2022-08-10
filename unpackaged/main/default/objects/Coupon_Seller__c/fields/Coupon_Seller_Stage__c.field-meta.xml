@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Coupon_Seller_Stage__c</fullName>
+    <description>EPH-7157 Object: Coupon Seller
+US-0012156</description>
+    <externalId>false</externalId>
+    <label>Coupon Seller Stage</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New</fullName>
+                <default>false</default>
+                <label>New</label>
+            </value>
+            <value>
+                <fullName>Pitch Ready</fullName>
+                <default>false</default>
+                <label>Pitch Ready</label>
+            </value>
+            <value>
+                <fullName>Targeted</fullName>
+                <default>true</default>
+                <label>Targeted</label>
+            </value>
+            <value>
+                <fullName>Reached</fullName>
+                <default>false</default>
+                <label>Reached</label>
+            </value>
+            <value>
+                <fullName>Commited</fullName>
+                <default>false</default>
+                <label>Commited</label>
+            </value>
+            <value>
+                <fullName>Contract Negotiation</fullName>
+                <default>false</default>
+                <label>Negotiation</label>
+            </value>
+            <value>
+                <fullName>Review</fullName>
+                <default>false</default>
+                <label>Review</label>
+            </value>
+            <value>
+                <fullName>Sent for Approval</fullName>
+                <default>false</default>
+                <label>Sent for Approval</label>
+            </value>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+            <value>
+                <fullName>Contract Send</fullName>
+                <default>false</default>
+                <label>Contract Send</label>
+            </value>
+            <value>
+                <fullName>Contract Accepted</fullName>
+                <default>false</default>
+                <label>Contract Accepted</label>
+            </value>
+            <value>
+                <fullName>Running</fullName>
+                <default>false</default>
+                <label>Running</label>
+            </value>
+            <value>
+                <fullName>Declined</fullName>
+                <default>false</default>
+                <label>Declined</label>
+            </value>
+            <value>
+                <fullName>Contract Signed</fullName>
+                <default>false</default>
+                <label>Contract Signed</label>
+            </value>
+            <value>
+                <fullName>Coupon Running</fullName>
+                <default>false</default>
+                <label>Coupon Running</label>
+            </value>
+            <value>
+                <fullName>Coupon executed</fullName>
+                <default>false</default>
+                <label>Coupon executed</label>
+            </value>
+            <value>
+                <fullName>T4 Statement Send</fullName>
+                <default>false</default>
+                <label>T4 Statement Send</label>
+            </value>
+            <value>
+                <fullName>T34 Statement Send</fullName>
+                <default>false</default>
+                <label>T40 Statement Send</label>
+            </value>
+            <value>
+                <fullName>Invoice paid</fullName>
+                <default>false</default>
+                <label>Invoice paid</label>
+            </value>
+            <value>
+                <fullName>Seller Declined</fullName>
+                <default>false</default>
+                <label>Seller Declined</label>
+            </value>
+            <value>
+                <fullName>Contract Appended</fullName>
+                <default>false</default>
+                <label>Contract Appended</label>
+            </value>
+            <value>
+                <fullName>Contract Terminated</fullName>
+                <default>false</default>
+                <label>Contract Terminated</label>
+            </value>
+            <value>
+                <fullName>Invoice approved</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Invoice approved</label>
+            </value>
+            <value>
+                <fullName>Invoice pending</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Invoice pending</label>
+            </value>
+            <value>
+                <fullName>Invoice rejected</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Invoice rejected</label>
+            </value>
+            <value>
+                <fullName>Invoice send</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Invoice send</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

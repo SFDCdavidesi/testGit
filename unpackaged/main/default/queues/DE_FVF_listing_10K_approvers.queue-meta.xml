@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <name>DE FVF listing &lt;=10K approvers</name>
+    <queueMembers>
+        <users>
+            <user>cfrintrop@hive.project.com</user>
+            <user>kwielgoss@hive.project.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Final_Value_Fee_FVF__c</sobjectType>
+    </queueSobject>
+</Queue>

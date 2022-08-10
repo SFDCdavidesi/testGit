@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Revised_Quote__c</fullName>
+    <externalId>false</externalId>
+    <formula>Quote_Line_Item__r.Is_Revised_Quote__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is Revised Quote</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

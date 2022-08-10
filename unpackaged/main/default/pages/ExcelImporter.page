@@ -1,0 +1,19 @@
+<apex:page controller="ExcelImporterController">
+    <script>
+
+        var attr = {"templateName" : "{!JSENCODE(templateName)}"};
+        if("{!hideTemplateName}" == "true") attr["hideTemplateName"] = true;
+        if("{!hideActionBtns}" == "true") attr["hideActionBtns"] = true;
+        if("{!hideListTable}" == "true") attr["hideListTable"] = true;
+
+        var compDefinition = { 
+            "componentDef" : "c:ExcelImporter", 
+            "attributes" :attr
+
+        };
+        var encodedCompDef = btoa(JSON.stringify(compDefinition));
+       
+        window.location = "/one/one.app#"+encodedCompDef;
+
+    </script>
+</apex:page>

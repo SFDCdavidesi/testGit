@@ -1,0 +1,64 @@
+<div style="margin: 0 auto; width: 66.66%">
+  <img
+    src="https://hive--c.na124.content.force.com/servlet/servlet.ImageServer?id=0153u000002RNsV&oid=00D6A0000002Hft&lastMod=1628243969000"
+  />
+
+  <p style="text-decoration: underline">
+    Programma Ricondizionato dal venditore
+  </p>
+  <p>
+    Ciao,<br />
+    nostro rammarico ti comunichiamo l'interruzione della tua partecipazione al
+    programma Ricondizionato dal venditore ("Programma"): da una verifica è
+    emerso che il tuo account non soddisfa più i requisiti per lo stato di
+    venditore Affidabilità Top e/o gli oggetti che offri nell'ambito del
+    Programma non rispettano i criteri di idoneità. Per requisiti necessari alla
+    partecipazion al Programma, ti invitiamo a leggere i relativi <a href='{!TCs_URL__c}'>Termini e
+    condizion.</a>
+  </p>
+
+  <table
+    style="width: 100%; border: 1px solid black; border-collapse: collapse"
+  >
+    <tr>
+      <td style="border: 1px solid black; padding: 5px"><p>Venditore</p></td>
+      <td style="border: 1px solid black; padding: 5px">
+        <p>{!Contract.Account}</p>
+        <p>{!Contract.BusinessContactStreet__c}</p>
+        <p>{!Contract.BusinessContactPostalCode__c}</p>
+        <p>{!Contract.BusinessContactCity__c}</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 5px">
+        <p>Seller User ID</p>
+      </td>
+      <td style="border: 1px solid black; padding: 5px">
+        <p>{!EBH_ContractSeller__c.EBH_BusinessName__c}</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 5px">
+        <p>Programma eBay</p>
+      </td>
+      <td style="border: 1px solid black; padding: 5px">
+        <p>Ricondizionato dal venditore</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 5px">
+        <p>Fine del programma</p>
+      </td>
+      <td style="border: 1px solid black; padding: 5px"><p>{!EndDate}</p></td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 5px"><p>Sito/i eBay</p></td>
+      <td style="border: 1px solid black; padding: 5px"><p>ebay.it</p></td>
+    </tr>
+  </table>
+
+  <div style="line-height: 0px">
+    <p>Cordiali saluti,</p>
+    <p>Il team eBay</p>
+  </div>
+</div>

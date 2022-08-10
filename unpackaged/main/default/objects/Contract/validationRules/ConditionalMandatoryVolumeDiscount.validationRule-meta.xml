@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ConditionalMandatoryVolumeDiscount</fullName>
+    <active>true</active>
+    <description>US-0007807
+US-0009222 - [Contracts] - Users required to input &quot;Volume Discount&quot; % when uploading file or amending contract</description>
+    <errorConditionFormula>AND(
+  ISBLANK( VolumeDiscounts__c ),
+  RecordType.DeveloperName = &#39;EBH_ListingAgreement&#39;,
+  ISPICKVAL(PricingVersion__c, &#39;P2.0&#39;),
+  OR( ISPICKVAL(Status, &#39;Draft&#39;), ISPICKVAL(Status, &#39;In Negotiation&#39; )
+  )
+)</errorConditionFormula>
+    <errorDisplayField>VolumeDiscounts__c</errorDisplayField>
+    <errorMessage>Volume Discounts value is mandatory for P2.0 contracts. Please enter proper value or 0 (zero) for default.</errorMessage>
+</ValidationRule>

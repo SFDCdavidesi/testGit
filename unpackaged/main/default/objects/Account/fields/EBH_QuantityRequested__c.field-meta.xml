@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_QuantityRequested__c</fullName>
+    <description>[EBH] (EPH-78) - Quantity limit change requested during new listing or revision</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Quantity limit change requested during new listing or revision</inlineHelpText>
+    <label>Quantity Requested</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

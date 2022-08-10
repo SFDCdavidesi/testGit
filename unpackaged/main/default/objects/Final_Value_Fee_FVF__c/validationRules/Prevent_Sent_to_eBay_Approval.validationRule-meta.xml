@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Sent_to_eBay_Approval</fullName>
+    <active>false</active>
+    <description>EPH-7930</description>
+    <errorConditionFormula>IF( AND( ISBLANK( FVF_Campaign__c ),ISCHANGED(Final_Value_Fee_Stage__c), ISPICKVAL(Final_Value_Fee_Stage__c, &#39;Sent_to_eBay_Approval&#39;),  OR(ISNULL(Budget_Manually_Estimated__c),Budget_Manually_Estimated__c=0),OR(ISNULL(Budget_estimated_w__c),Budget_estimated_w__c=0) ),
+true,false
+)</errorConditionFormula>
+    <errorMessage>Pleas make sure Budget (Automatically Estimated) or Budget (Manually Estimated) is populated before sending to eBay Approval.</errorMessage>
+</ValidationRule>

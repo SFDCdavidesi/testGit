@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Standard_Data_Pull_Requested__c</fullName>
+    <description>INTEG - N || ** eBay Advertising ** || WF - N || AP - N || VAL - N ||Class - N || Definition: Standard Data Pull Requested || CR - 00492715</description>
+    <externalId>false</externalId>
+    <label>Standard Data Pull Requested</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>1P inventory</fullName>
+                <default>false</default>
+                <label>1P inventory</label>
+            </value>
+            <value>
+                <fullName>1st/Last Page in Session</fullName>
+                <default>false</default>
+                <label>1st/Last Page in Session</label>
+            </value>
+            <value>
+                <fullName>Abandoners - Category</fullName>
+                <default>false</default>
+                <label>Abandoners - Category</label>
+            </value>
+            <value>
+                <fullName>Abandonment - by product</fullName>
+                <default>false</default>
+                <label>Abandonment - by product</label>
+            </value>
+            <value>
+                <fullName>Abandonment - Post</fullName>
+                <default>false</default>
+                <label>Abandonment - Post</label>
+            </value>
+            <value>
+                <fullName>Brand - Top Brand in Ctgy by Purchase Volume</fullName>
+                <default>false</default>
+                <label>Brand - Top Brand in Ctgy by Purchase Volume</label>
+            </value>
+            <value>
+                <fullName>Brand - Top Brand within Ctgy by Purchase Index</fullName>
+                <default>false</default>
+                <label>Brand - Top Brand within Ctgy by Purchase Index</label>
+            </value>
+            <value>
+                <fullName>Brand - Top models within brand by Purchases</fullName>
+                <default>false</default>
+                <label>Brand - Top models within brand by Purchases</label>
+            </value>
+            <value>
+                <fullName>Brand - Weekly Purchase/Search Trends</fullName>
+                <default>false</default>
+                <label>Brand - Weekly Purchase/Search Trends</label>
+            </value>
+            <value>
+                <fullName>Breaks by L5</fullName>
+                <default>false</default>
+                <label>Breaks by L5</label>
+            </value>
+            <value>
+                <fullName>Carrier Based Insights</fullName>
+                <default>false</default>
+                <label>Carrier Based Insights</label>
+            </value>
+            <value>
+                <fullName>Color Purchased</fullName>
+                <default>false</default>
+                <label>Color Purchased</label>
+            </value>
+            <value>
+                <fullName>Cross Selling - L1 and L2</fullName>
+                <default>false</default>
+                <label>Cross Selling - L1 and L2</label>
+            </value>
+            <value>
+                <fullName>Cross Shopping - L1 and L2</fullName>
+                <default>false</default>
+                <label>Cross Shopping - L1 and L2</label>
+            </value>
+            <value>
+                <fullName>Cross Shopping - L3</fullName>
+                <default>false</default>
+                <label>Cross Shopping - L3</label>
+            </value>
+            <value>
+                <fullName>Dashboard - Sales Velocity</fullName>
+                <default>false</default>
+                <label>Dashboard - Sales Velocity</label>
+            </value>
+            <value>
+                <fullName>Dashboard - Trends</fullName>
+                <default>false</default>
+                <label>Dashboard - Trends</label>
+            </value>
+            <value>
+                <fullName>Day of Week and Time of Day</fullName>
+                <default>false</default>
+                <label>Day of Week and Time of Day</label>
+            </value>
+            <value>
+                <fullName>Demographics</fullName>
+                <default>false</default>
+                <label>Demographics</label>
+            </value>
+            <value>
+                <fullName>Device Insights</fullName>
+                <default>false</default>
+                <label>Device Insights</label>
+            </value>
+            <value>
+                <fullName>DMA - Top DMAs</fullName>
+                <default>false</default>
+                <label>DMA - Top DMAs</label>
+            </value>
+            <value>
+                <fullName>eAAT Overlap</fullName>
+                <default>false</default>
+                <label>eAAT Overlap</label>
+            </value>
+            <value>
+                <fullName>Find similar seller names</fullName>
+                <default>false</default>
+                <label>Find similar seller names</label>
+            </value>
+            <value>
+                <fullName>Frequency Analysis</fullName>
+                <default>false</default>
+                <label>Frequency Analysis</label>
+            </value>
+            <value>
+                <fullName>Keyword - By Index</fullName>
+                <default>false</default>
+                <label>Keyword - By Index</label>
+            </value>
+            <value>
+                <fullName>Keyword - By Volume</fullName>
+                <default>false</default>
+                <label>Keyword - By Volume</label>
+            </value>
+            <value>
+                <fullName>Keywords - Top Index by Seller</fullName>
+                <default>false</default>
+                <label>Keywords - Top Index by Seller</label>
+            </value>
+            <value>
+                <fullName>Marketing - other data</fullName>
+                <default>false</default>
+                <label>Marketing - other data</label>
+            </value>
+            <value>
+                <fullName>New Buyers</fullName>
+                <default>false</default>
+                <label>New Buyers</label>
+            </value>
+            <value>
+                <fullName>Number of items purchased</fullName>
+                <default>false</default>
+                <label>Number of items purchased</label>
+            </value>
+            <value>
+                <fullName>Pkg - 1P intensive</fullName>
+                <default>false</default>
+                <label>Pkg - 1P intensive</label>
+            </value>
+            <value>
+                <fullName>Pkg - 1P summary</fullName>
+                <default>false</default>
+                <label>Pkg - 1P summary</label>
+            </value>
+            <value>
+                <fullName>Pkg - 3P</fullName>
+                <default>false</default>
+                <label>Pkg - 3P</label>
+            </value>
+            <value>
+                <fullName>Pkg - 3P Insurance</fullName>
+                <default>false</default>
+                <label>Pkg - 3P Insurance</label>
+            </value>
+            <value>
+                <fullName>Pkg - Abandoners</fullName>
+                <default>false</default>
+                <label>Pkg - Abandoners</label>
+            </value>
+            <value>
+                <fullName>Pkg - Bus Dev</fullName>
+                <default>false</default>
+                <label>Pkg - Bus Dev</label>
+            </value>
+            <value>
+                <fullName>Pkg - PL acquisition</fullName>
+                <default>false</default>
+                <label>Pkg - PL acquisition</label>
+            </value>
+            <value>
+                <fullName>Pkg - PL maintain</fullName>
+                <default>false</default>
+                <label>Pkg - PL maintain</label>
+            </value>
+            <value>
+                <fullName>Pkg - PL scaling</fullName>
+                <default>false</default>
+                <label>Pkg - PL scaling</label>
+            </value>
+            <value>
+                <fullName>Pkg - Price point</fullName>
+                <default>false</default>
+                <label>Pkg - Price point</label>
+            </value>
+            <value>
+                <fullName>Pkg - Vertical QBR</fullName>
+                <default>false</default>
+                <label>Pkg - Vertical QBR</label>
+            </value>
+            <value>
+                <fullName>PL - Market Share</fullName>
+                <default>false</default>
+                <label>PL - Market Share</label>
+            </value>
+            <value>
+                <fullName>PL - Product Performance</fullName>
+                <default>false</default>
+                <label>PL - Product Performance</label>
+            </value>
+            <value>
+                <fullName>PL ranking by conversion</fullName>
+                <default>false</default>
+                <label>PL ranking by conversion</label>
+            </value>
+            <value>
+                <fullName>PL - Sales Velocity &amp; Lift</fullName>
+                <default>false</default>
+                <label>PL - Sales Velocity &amp; Lift</label>
+            </value>
+            <value>
+                <fullName>Pricepoint Breakouts</fullName>
+                <default>false</default>
+                <label>Pricepoint Breakouts</label>
+            </value>
+            <value>
+                <fullName>Rank &amp; % Share</fullName>
+                <default>false</default>
+                <label>Rank &amp; % Share</label>
+            </value>
+            <value>
+                <fullName>Sales Velocity no trends</fullName>
+                <default>false</default>
+                <label>Sales Velocity no trends</label>
+            </value>
+            <value>
+                <fullName>Sales Velocity One Sheet</fullName>
+                <default>false</default>
+                <label>Sales Velocity One Sheet</label>
+            </value>
+            <value>
+                <fullName>Sellers - top sellers in category/brand</fullName>
+                <default>false</default>
+                <label>Sellers - top sellers in category/brand</label>
+            </value>
+            <value>
+                <fullName>Seller - Weekly Sales Trends</fullName>
+                <default>false</default>
+                <label>Seller - Weekly Sales Trends</label>
+            </value>
+            <value>
+                <fullName>Shopper Journey Insights</fullName>
+                <default>false</default>
+                <label>Shopper Journey Insights</label>
+            </value>
+            <value>
+                <fullName>User Count</fullName>
+                <default>false</default>
+                <label>User Count</label>
+            </value>
+            <value>
+                <fullName>Velocity &amp; Growth</fullName>
+                <default>false</default>
+                <label>Velocity &amp; Growth</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

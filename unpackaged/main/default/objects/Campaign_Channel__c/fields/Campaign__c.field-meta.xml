@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campaign__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>US-0011876 - 1.4. Influencer Campaign (Channels for Campaign)</description>
+    <externalId>false</externalId>
+    <label>Campaign</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Campaign.RecordType.DeveloperName</field>
+            <operation>equals</operation>
+            <value>Influencer_Campaign</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Campaign</referenceTo>
+    <relationshipLabel>Campaign Channels</relationshipLabel>
+    <relationshipName>Campaign_Channel</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

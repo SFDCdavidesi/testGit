@@ -1,0 +1,7 @@
+Hello!
+
+The request for {!Campaign.Name} for {!Campaign.StartDate} has been recalled and no longer needs your review.
+
+For more details, please go to {!Campaign.EBH_RecordLink__c}.
+
+Thank you.

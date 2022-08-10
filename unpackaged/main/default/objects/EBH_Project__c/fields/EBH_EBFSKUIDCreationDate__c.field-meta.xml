@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_EBFSKUIDCreationDate__c</fullName>
+    <description>#US-0015700</description>
+    <externalId>false</externalId>
+    <inlineHelpText>EBFSKU-ID is a 5-digit fulfilment identifier  from eBay. Is created when seller has accepted T&amp;C &amp; Billing Agreement</inlineHelpText>
+    <label>EBFSKU Prefix Creation Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

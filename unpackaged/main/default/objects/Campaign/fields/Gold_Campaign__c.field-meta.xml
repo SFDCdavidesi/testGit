@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Gold_Campaign__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>EPH-7112 Gold Campaign flag on Camapaign Programme record</description>
+    <externalId>false</externalId>
+    <label>Gold Campaign</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

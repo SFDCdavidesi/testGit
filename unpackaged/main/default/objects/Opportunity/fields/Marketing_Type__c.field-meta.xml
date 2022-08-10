@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marketing_Type__c</fullName>
+    <description>INTEG - N || ** eBay Advertising ** || WF - N || AP - N || VAL - N ||Class - N || Definition: Marketing Type || 00455786 |</description>
+    <externalId>false</externalId>
+    <label>Marketing Type Pitched</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ad Effectiveness Measurement Study</fullName>
+                <default>false</default>
+                <label>Ad Effectiveness Measurement Study</label>
+            </value>
+            <value>
+                <fullName>Case Study</fullName>
+                <default>false</default>
+                <label>Case Study</label>
+            </value>
+            <value>
+                <fullName>EAAT</fullName>
+                <default>false</default>
+                <label>EAAT</label>
+            </value>
+            <value>
+                <fullName>Holiday</fullName>
+                <default>false</default>
+                <label>Holiday</label>
+            </value>
+            <value>
+                <fullName>Integrated Program</fullName>
+                <default>false</default>
+                <label>Integrated Program</label>
+            </value>
+            <value>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

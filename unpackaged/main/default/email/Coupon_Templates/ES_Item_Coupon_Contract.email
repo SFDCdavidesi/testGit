@@ -1,0 +1,61 @@
+<p style="text-align: justify;">¿Son correctos los siguientes datos relativos a tu participación en la campaña de cupones? En caso afirmativo, pulsa el botón siguiente:
+</p>
+<p style="text-align: center;"><a title="ACEPTO" href="{clickMeUrl}">ACEPTO</a></p>
+<table style="width: 909px; border-collapse: collapse; height: 621px;" border="1" cellspacing="0" cellpadding="5">
+<tbody>
+<tr>
+<td style="width: 218.556px;"><strong>Vendedor</strong></td>
+<td style="width: 667.444px;">{LegalEntity}, {StreetName}, {Zip} {City}</td>
+</tr>
+<tr>
+<td style="width: 218.556px;"><strong>Seudónimo(s) del vendedor para la campaña de cupones</strong></td>
+<td style="width: 667.444px;">{eBaySellerID}</td>
+</tr>
+<tr>
+<td style="width: 218.556px;"><strong>Página(s) de eBay</strong></td>
+<td style="width: 667.444px;">{CouponSites}</td>
+</tr>
+<tr>
+<td style="width: 218.556px;"><strong>Periodo promocional del cupón</strong></td>
+<td style="width: 667.444px;">Entre el {CouponStartDate} a las {CouponStartTime} h y el {CouponEndDate} a las {CouponEndTime} h (hora de verano de Europa Central) o cualquier otro periodo determinado por eBay. eBay puede determinar el periodo promocional exacto a su entera discreción.</td>
+</tr>
+<tr>
+<td style="width: 218.556px;"><strong>Artículos</strong></td>
+<td style="width: 667.444px;">
+<p>Los cupones de esta campaña de cupones se emiten exclusivamente para determinados artículos y solo pueden hacerse efectivos para la adquisición de estos. La lista de los artículos del Vendedor incluidos en los cupones, así como la porción de pago que el Vendedor se compromete a pagar a eBay por cada artículo, se encuentran en la descripción general adjunta. Los artículos incluidos se detallan según su número de artículo o número de referencia.</p>
+<p>La inclusión de cualquier otro número de artículo a la lista de artículos que cumplen los requisitos debe negociarse con eBay por correo electrónico al menos 5 días antes del inicio del Periodo de la promoción.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 218.556px;"><strong>Detalles de la campaña de cupones o promoción</strong></td>
+<td style="width: 667.444px;">
+<p>&nbsp;-Descuento del {CouponDiscount%}{CouponDiscountAmount} en el precio del artículo.</p>
+<p>&nbsp;-Hasta un máximo de {CouponCap} por transacción.</p>
+<p>&nbsp;-Valor mínimo del pedido: {Minimum_Transaction_Value__c}</p>
+<p>&nbsp;-Cupón canjeable {Max_Redemptions__c} veces por usuario.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 218.556px;"><strong>Socio contractual de eBay</strong></td>
+<td style="width: 667.444px;">eBay GmbH, Albert-Einstein-Ring 2-6, 14532 Kleinmachnow</td>
+</tr>
+<tr>
+<td style="width: 218.556px;"><strong>Varios</strong></td>
+<td style="width: 667.444px;">{AdditionalArrangement}</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p style="text-align: justify;">
+Al pulsar “Aceptar”, confirmas lo siguiente:
+</p>
+<ul>
+<li>Haber leído, entendido y aceptado las Condiciones del cupón accesibles a través del siguiente enlace: <a title="ACEPTO" href="https://cloud.forbusiness.ebay.com/TCcupones2020">https://cloud.forbusiness.ebay.com/TCcupones2020</a></li>
+<li>El artículo puesto en venta no es una falsificación ni una copia no autorizada.</li>
+<li>Tienes autorización para vender o distribuir el artículo, así como para enviarlo a las ubicaciones indicadas en el anuncio.</li>
+<li>Al poner en venta este artículo en eBay, no infringes ninguna otra obligación contraída mediante ningún otro contrato que hayas suscrito.</li>
+</ul>
+<p><strong>Este contrato individual constituye la documentación de las condiciones de la campaña de cupones ejecutada en los sitios web de eBay indicados anteriormente y forma parte del contrato marco entre eBay GmbH y tú en lo relativo a las campañas promocionales de la plataforma de compraventa de eBay.</strong></p>
+<p>&nbsp;</p>
+<p>Atentamente,</p>
+<p>El equipo de eBay</p>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Linked_Acc_Group_Id__c</fullName>
+    <description>US-0009125 - [Linked Acc] ETL to pull Linked Accounts grouping information for EU B2C Sellers</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Group Id that shows linked sellers via VAT, PAYPAL Account &amp; BOB Sellers.</inlineHelpText>
+    <label>Linked Account Group Id</label>
+    <length>25</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

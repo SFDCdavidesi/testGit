@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Techn_Integr_Requested_Validation</fullName>
+    <active>true</active>
+    <description>US-0007500</description>
+    <errorConditionFormula>AND(
+ISPICKVAL(ExtendedTechnicalIntegration__c, &#39;Requested&#39;), 
+ISBLANK(ExpectedLTSDate__c),
+NOT( $Setup.ActiveValidationRules__c.All_Validation_Rules_Deactivated__c )
+)</errorConditionFormula>
+    <errorMessage>To request MIS Support, you need to populate Expected LTS Date</errorMessage>
+</ValidationRule>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_AMOutreachTaskValidation</fullName>
+    <active>true</active>
+    <description>[EBH] (EPH-3780) : To update the campaign members when the task&#39;s response is being updated</description>
+    <errorConditionFormula>ISPICKVAL(Type, &#39;AM Outreach&#39;) &amp;&amp; !ISNEW() &amp;&amp; 
+ISPICKVAL(EBH_Response__c,&#39;&#39;)</errorConditionFormula>
+    <errorDisplayField>EBH_Response__c</errorDisplayField>
+    <errorMessage>Please provide the Response for this Task</errorMessage>
+</ValidationRule>

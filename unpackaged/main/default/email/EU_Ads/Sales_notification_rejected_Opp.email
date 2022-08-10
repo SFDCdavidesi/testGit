@@ -1,0 +1,12 @@
+Hallo {!Opportunity.OwnerFirstName},
+
+deine Opportunity {!Opportunity.Offer_number_old__c}, "{!Opportunity.Name}" wurde von AM zurückgewiesen.
+
+Grund: {!Opportunity.Internal_comments__c}
+
+Bitte korrigieren und wieder auf "Technical Check" stellen.
+
+Gruß,
+{!Opportunity.Account_Manager__c}
+
+Link zur Opp: {!Opportunity.Link}

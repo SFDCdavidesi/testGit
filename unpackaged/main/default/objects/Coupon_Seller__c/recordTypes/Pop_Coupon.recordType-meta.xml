@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pop_Coupon</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Pop_Coupon_Seller</compactLayoutAssignment>
+    <label>Pop Coupon Seller</label>
+    <picklistValues>
+        <picklist>Advertising_Promotion__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Coupon_Discount_Rate__c</picklist>
+        <values>
+            <fullName>10%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>20%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%25</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Coupon_Funding_Preference__c</picklist>
+        <values>
+            <fullName>Highest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strategic</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Coupon_Promotion_Types__c</picklist>
+        <values>
+            <fullName>Category Level</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Co-Funded Site Wide</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Item Level</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multi Seller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multi Solus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solus</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Coupon_Promotions_Participation__c</picklist>
+        <values>
+            <fullName>Interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not interested</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Coupon_Seller_Stage_Portal__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Awaiting Signature</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Declined</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ended</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Negotiation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Item Upload</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Items in Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Running</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Signed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upcoming</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Coupon_Seller_Stage__c</picklist>
+        <values>
+            <fullName>Commited</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Appended</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Send</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Terminated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Declined</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Pitch Ready</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reached</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Running</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Coupon_Type__c</picklist>
+        <values>
+            <fullName>Category Based</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Item Based</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Free_Subtitles__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Seller_Declined_Reasons__c</picklist>
+        <values>
+            <fullName>Cannot agree on share split</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Breach</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Voided</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Does not want to have any promotion on current account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Challenges %28Logistics%2C holiday etc%2E%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No appropriate Inventory available</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No interest in general - focus on In-the-River and%2For Deals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Only category based feasible%2C not item based</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Only item based feasible%2C not category based</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Participation only with other related account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seller did not respond</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Too many coupons in a little while</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

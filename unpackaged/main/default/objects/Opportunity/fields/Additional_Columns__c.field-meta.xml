@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Additional_Columns__c</fullName>
+    <description>US-0009254 - Migrate opportunity fields for EU ads</description>
+    <externalId>false</externalId>
+    <label>Additional Columns</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Line Description</fullName>
+                <default>false</default>
+                <label>Line Description</label>
+            </value>
+            <value>
+                <fullName>Frequency Cap</fullName>
+                <default>false</default>
+                <label>Frequency Cap</label>
+            </value>
+            <value>
+                <fullName>Booked Amount</fullName>
+                <default>false</default>
+                <label>Booked Amount</label>
+            </value>
+            <value>
+                <fullName>Delivered Amount</fullName>
+                <default>false</default>
+                <label>Delivered Amount</label>
+            </value>
+            <value>
+                <fullName>Rate</fullName>
+                <default>false</default>
+                <label>Rate</label>
+            </value>
+            <value>
+                <fullName>Delivery Index</fullName>
+                <default>false</default>
+                <label>Delivery Index</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

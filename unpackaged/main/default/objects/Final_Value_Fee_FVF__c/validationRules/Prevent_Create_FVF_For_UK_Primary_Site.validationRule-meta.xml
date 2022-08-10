@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Create_FVF_For_UK_Primary_Site</fullName>
+    <active>true</active>
+    <description>US-0007838 - [UK] create FVF (seller level) page layout</description>
+    <errorConditionFormula>AND( RecordType.DeveloperName =&#39;FVF_Seller_Level&#39;,   Rev_RollUp__c   &lt;&gt; &#39;UK&#39;)</errorConditionFormula>
+    <errorMessage>Only sellers with primary site =UK can receive FVF (seller level) contracts via HIVE</errorMessage>
+</ValidationRule>

@@ -1,0 +1,46 @@
+<html>
+<body >
+<p>Hi, </p><br/>
+
+<p>Your seller approval is required for the upcoming coupon: {!Coupon__c.Marketing_Coupon_Name__c} </p><br/>
+
+<p><b>Coupon Code: </b>: {!Coupon__c.Coupon_ID__c} </p>
+<p><b>Dates</b>: {!Coupon__c.Coupon_Start_Date__c} until {!Coupon__c.Coupon_End_Date__c}</p>
+<p><b>Contract Due Date</b>: {!Coupon__c.Contract_Due_Date__c}</p>
+<p><b>Coupon Discount %</b>: {!Coupon__c.Coupon_Discount__c}</p>
+<p><b>Maximum Discount Value</b>: {!Coupon__c.Coupon_Cap__c}</p>
+<p><b>Max. Redemptions</b>: {!Coupon__c.Max_Redemptions__c}</p>
+
+<br/>
+<p style="font-size:16px"><b>Seller Co-Funding for Promotion:</b></p>
+
+<table style="table-layout: fixed; width: 315px;border-collapse:collapse;border-spacing:0;">
+<col style="width: 84px">
+<col style="width: 181px">
+<col style="width: 115px">
+<col style="width: 117px">
+<col style="width: 114px">
+<col style="width: 135px">
+<col style="width: 135px">
+</colgroup>
+  <tr>
+    <th style="background-color:#25498b;color:#ffffff;text-align:left;vertical-align:top;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;">Oracle Id</th>
+    <th style="background-color:#25498b;color:#ffffff;text-align:left;vertical-align:top;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;">Seller Name</th>
+    <th style="background-color:#25498b;color:#ffffff;text-align:left;vertical-align:top;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;">Coupon Seller Record</th>
+    <th style="background-color:#25498b;color:#ffffff;text-align:left;vertical-align:top;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;">Coupon Seller Owner</th>
+    <th style="background-color:#25498b;color:#ffffff;text-align:left;vertical-align:top;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;">Status</th>
+    <th style="background-color:#25498b;color:#ffffff;text-align:left;vertical-align:top;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;">Category/Item</th>
+    <th style="background-color:#25498b;color:#ffffff;text-align:left;vertical-align:top;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;">Seller Funding %</th>
+  </tr>
+  {!RecordRows}
+</table>
+
+<br/>
+<p>Please screen each coupon seller record and approve or decline so that the category manager can proceed with the contract send out.</p>
+<br/>
+<p>Access the Coupon here: {!Coupon__c.Link}</p>
+<br/>
+<p>Thank you,</p>
+<p>Hive</p>
+</body>
+</html>

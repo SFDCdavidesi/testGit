@@ -1,0 +1,10 @@
+<p>Hello {!CurrentUser},</p>
+<p>Task creation is complete with the following result:</p>
+<ul>
+<li>Tasks Updated: <strong>{!taskUpdate}</strong></li>
+<li>Tasks Deleted:&nbsp;<strong>{!taskDelete}</strong></li>
+<li>Tasks Created:&nbsp;<strong>{!taskCreate}</strong></li>
+</ul>
+<p>{!OutreachInfo}</p>
+<p><span style="color: #ff0000;">{!Error}</span></p>
+<p>Another background Job has been executed to<strong> Create/Update Campaign Members</strong>.</p>

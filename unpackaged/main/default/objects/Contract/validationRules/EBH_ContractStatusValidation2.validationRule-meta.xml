@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_ContractStatusValidation2</fullName>
+    <active>true</active>
+    <description>US-0007080,
+US-0011334 - &quot;Exclude Draft&quot; and &quot;Sent for eBay Signature&quot;</description>
+    <errorConditionFormula>NOT(OR($Profile.Name = &quot;System Administrator&quot;, $Profile.Name = &quot;Business Admin&quot; )) &amp;&amp; 
+OR(RecordType.DeveloperName = &#39;EBH_ACP&#39;,RecordType.DeveloperName = &#39;EBH_RevenueShare&#39;,RecordType.DeveloperName = &#39;EBH_ListingAgreement&#39;) &amp;&amp;
+ISCHANGED(Status) &amp;&amp;
+or(
+ISPICKVAL( PRIORVALUE(Status), &#39;Approved&#39;) &amp;&amp;
+!ISPICKVAL( Status, &#39;Draft&#39;) &amp;&amp; /* US-11334 */
+!ISPICKVAL( Status, &#39;In Negotiation&#39;) &amp;&amp;       /* back to initial status*/
+!ISPICKVAL( Status, &#39;Voided&#39;) &amp;&amp;       /* back to initial status*/
+!ISPICKVAL( Status, &#39;Ready for eBay Signature&#39;) /* Change from &#39;Sent for Seller Signature to &#39;Ready for eBay Signature&#39; US-0010009*/
+/*!ISPICKVAL( Status, &#39;Sent for Seller Signature&#39;) *//*forward status change*/
+,
+ISPICKVAL( Status, &#39;Sent for Finance Pre-check&#39;) &amp;&amp;
+!ISPICKVAL( PRIORVALUE(Status), &#39;Draft&#39;)
+,					
+ISPICKVAL( Status, &#39;In Negotiation&#39;) &amp;&amp;
+			ISPICKVAL( PRIORVALUE(Status), &#39;Draft&#39;)&amp;&amp;
+			ISPICKVAL( PRIORVALUE(Status), &#39;Executed&#39;)&amp;&amp;
+			ISPICKVAL( PRIORVALUE(Status), &#39;Expired / Terminated&#39;)&amp;&amp;
+ISPICKVAL( PRIORVALUE(Status), &#39;Voided&#39;)
+,
+ISPICKVAL( Status, &#39;Sent for Finance Post-check&#39;) &amp;&amp;
+!ISPICKVAL( PRIORVALUE(Status), &#39;In Negotiation&#39;)
+,
+ISPICKVAL( Status, &#39;Pending Approval&#39;) &amp;&amp;
+!ISPICKVAL( PRIORVALUE(Status), &#39;Sent for Finance Post-check&#39;)
+,
+ISPICKVAL( Status, &#39;Approved&#39;) &amp;&amp;
+!ISPICKVAL( PRIORVALUE(Status), &#39;Pending Approval&#39;)
+/*&amp;&amp;!ISPICKVAL( PRIORVALUE(Status), &#39;Sent for Seller Signature&#39;)&amp;&amp;!ISPICKVAL( PRIORVALUE(Status), &#39;Seller Signature Provided&#39;)*//*CommentOut: US-0009777*/
+,
+/*ISPICKVAL( Status, &#39;Sent for seller Signature&#39;) &amp;&amp;
+			!ISPICKVAL( PRIORVALUE(Status), &#39;Approved&#39;)&amp;&amp;
+			!ISPICKVAL( PRIORVALUE(Status), &#39;Seller Signature Provided&#39;)&amp;&amp;
+			!ISPICKVAL( PRIORVALUE(Status), &#39;Ready for eBay Signature&#39;) &amp;&amp;
+			!ISPICKVAL( PRIORVALUE(Status), &#39;Sent for eBay Signature&#39;),
+*/	/*CommentOut: US-0009777*/		
+/*			
+ISPICKVAL( Status, &#39;Seller Signature Provided&#39;) &amp;&amp;
+			!ISPICKVAL( PRIORVALUE(Status), &#39;Sent for seller Signature&#39;)&amp;&amp;
+			!ISPICKVAL( PRIORVALUE(Status), &#39;Ready for eBay Signature&#39;)&amp;&amp;
+			!ISPICKVAL( PRIORVALUE(Status), &#39;Sent for eBay Signature&#39;),
+			
+*/			
+ISPICKVAL( Status, &#39;Sent for eBay Signature&#39;) &amp;&amp;
+!ISPICKVAL( PRIORVALUE(Status), &#39;Ready for eBay Signature&#39;)
+
+/* ISPICKVAL( PRIORVALUE(Status), &#39;Sent for eBay Signature&#39;) US-11334 */
+) &amp;&amp; NOT( $Setup.ActiveValidationRules__c.All_Validation_Rules_Deactivated__c )</errorConditionFormula>
+    <errorMessage>Contract cannot be moved to this stage</errorMessage>
+</ValidationRule>

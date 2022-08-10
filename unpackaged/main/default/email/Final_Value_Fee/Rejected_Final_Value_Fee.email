@@ -1,0 +1,1 @@
+<p>Dear {!Final_Value_Fee_FVF__c.OwnerFullName},<br />Your Final Value Fee Discount <a href={!Final_Value_Fee_FVF__c.Link} style="text-decoration: none;">{!Final_Value_Fee_FVF__c.Name}</a> has been Rejected.<br />Please reach out to {!User.Name}  for more details.</p>

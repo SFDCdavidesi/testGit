@@ -1,0 +1,48 @@
+<p style="text-align: justify;">This e-mail is to offer You a discount on your final value fees (&ldquo;<strong>FVF Discount</strong>&rdquo;) for the items and/or categories and/or stores specified below.</p>
+<p style="text-align: justify;">We charge a final value fee (&ldquo;<strong>FVF</strong>&rdquo;) when your item(s) sell(s). The FVF charged per order consists of: (i) a variable portion (&ldquo;<strong>Variable Portion FVF</strong>&rdquo;) which is calculated as a percentage of the Total Sale Amount, and (ii) a fixed portion (&ldquo;<strong>Fixed Portion FVF</strong>&rdquo;) for example 30p, as per the terms of your Special Pricing Agreement with eBay.  The Total Sale Amount means the amount the buyer pays for an order, including any shipping charges. An order is any number of items purchased by the same buyer at checkout with the same shipping method.</p>
+<p style="text-align: justify;">The FVF Discount applies to the Variable Portion FVF (net of any other discounts). If the FVF Discount applies to specific items/categories/stores, an Excel spreadsheet will be attached to this email, referenced in the table below and will be part of this agreement.</p>
+<p style="text-align: justify;">You can accept this FVF Discount Form and the applicable terms by clicking on &ldquo;I AGREE&rdquo; below as soon as is practicable but in any event before the start of the Promotion Period.</p>
+<p style="text-align: center;"><a title="Accept" href="{!urlAccept}">I AGREE</a></p>
+<p style="text-align: center;">&nbsp;</p>
+<table style="width: 978px; border-collapse: collapse; height: 168px;" border="1" cellspacing="5" cellpadding="5">
+<tbody>
+<tr>
+<td style="width: 248.667px;"><strong>Seller User ID</strong></td>
+<td style="width: 706.444px;">{!FVF_SellerName}</td>
+</tr>
+<tr>
+<td style="width: 248.667px;"><strong>FVF Discount % </strong></td>
+<td style="width: 706.444px;">{!FVF_DiscountFVF} on the Variable Portion FVF. The Fixed Portion FVF (e.g. 30p) will not be discounted.</td>
+</tr>
+<tr>
+<td style="width: 248.667px;"><strong>Promotion Period</strong></td>
+<td style="width: 706.444px;">From {!FVF_StartTime} on {!FVF_StartDate} until {!FVF_EndTime} on&nbsp;{!FVF_EndDate} (GMT)(BST)</td>
+</tr>
+<tr>
+<td style="width: 248.667px;"><strong>Applicable to</strong></td>
+<td style="width: 706.444px;">{!FVF_ApplicableTo}</td>
+</tr>
+<tr>
+<td style="width: 248.667px;"><strong>Excluded categories</strong></td>
+<td style="width: 706.444px;">
+<p>The below categories will always be excluded from the FVF Discount:</p>
+<ul>
+<li>Property;</li>
+<li>Cars, Motorcycles &amp; Vehicles; and</li>
+<li>Coins, Banknotes &amp; Bullion</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="width: 248.667px;"><strong>Additional terms</strong></td>
+<td style="width: 706.444px;">
+<p>{ifFreeShipping}</p>
+{!FVF_AddtionalTerm}</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p style="text-align: justify;">Full FVF will be charged during the Promotion Period. The FVF Discount will be credited to your account within 60 days of the end of the Promotion Period. Please note that such credit may subsequently be reversed to account for any outstanding returns or cancellations.</p>
+<p style="text-align: justify;">Please note that any FVF Discount amounts are exclusive of VAT. The FVF Discount credited to your account will follow the same VAT treatment as the initial fees charged during the Promotion Period.</p>
+<p style="text-align: justify;">The terms of this email are subject to the terms and conditions between eBay (UK) Limited, 1 More London Place, SE1 2AF, London, United Kingdom, registered in England &amp; Wales with company number 03726028 (&ldquo;<strong>eBay</strong>&rdquo;) and {!SellerAddress1} ,&nbsp;VAT Number: {!SellerVatNumber} (&ldquo;<strong>Seller, You</strong>&rdquo;), available at <strong>&ldquo;</strong><strong><a title="Business Seller FVF Discount Terms and Conditions" href="https://pages.ebay.co.uk/fvf-promo-terms-and-conditions/">Business Seller FVF Discount Terms and Conditions&rdquo;</a>.</strong> Terms not defined here shall have the meaning given to them in the Business Seller FVF Discount Terms and Conditions.</p>
+<p style="text-align: justify;">Any additional, alternate or amended terms must be expressly and mutually agreed by the parties in writing (email shall suffice).</p>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>email to alert when customer type is 1p+3p on an Opoprtunity</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>eBay_Ads_Letterhead</letterhead>
+    <name>eBay Ads - 1p + 3p alert</name>
+    <style>freeForm</style>
+    <subject>1P + 3P has been selected on {!Opportunity.Name}.</subject>
+    <textOnly>Hello,
+
+1P + 3P customer type has been selected on {!Opportunity.Name}. Please find the details below:
+
+Opportunity Name: {!Opportunity.Name}
+Opportunity Owner: {!Opportunity.OwnerFullName}
+Amount: {!Opportunity.Amount}
+Opportunity Type: {!Opportunity.Type}
+Customer Type: {!Opportunity.Customer_Type__c}
+Account Name: {!Opportunity.Account}
+Agency: {!Opportunity.Agency__c}
+
+
+{!Opportunity.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

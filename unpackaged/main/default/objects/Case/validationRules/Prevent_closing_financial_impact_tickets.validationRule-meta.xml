@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_closing_financial_impact_tickets</fullName>
+    <active>true</active>
+    <description>US-0011344</description>
+    <errorConditionFormula>AND( Financial_Impact__c ,
+NOT( Approved_by_Finance__c ) ,
+text( Status )=&quot;Closed&quot;)</errorConditionFormula>
+    <errorMessage>This ticket is flagged as Financial Impact. Please get finance approval before closing/implementing the ticket.</errorMessage>
+</ValidationRule>

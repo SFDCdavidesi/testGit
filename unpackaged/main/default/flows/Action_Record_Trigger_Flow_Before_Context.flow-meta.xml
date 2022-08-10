@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <assignments>
+        <description>US-0012056 - Error Message thrown when attemption to Create 96 Actions to Cohort Sellers</description>
+        <name>Completed_Date_Equal_Today</name>
+        <label>Completed Date Equal Today</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Completed_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>currentDate</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <description>US-0009227 - [Pro-Trader] Auto-populate &quot;Completed Date&quot; with today&#39;s date when Action status is set to &quot;Completed&quot;
+US-0012056 - Error Message thrown when attemption to Create 96 Actions to Cohort Sellers</description>
+        <name>Auto_populate_Completed_Date</name>
+        <label>Auto-populate Completed Date US-0009227</label>
+        <locationX>182</locationX>
+        <locationY>311</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Populate_Completed_Date</name>
+            <conditionLogic>1 AND 2 AND 3 AND 4 AND (5 OR 6 OR 7) AND (8 OR 9)</conditionLogic>
+            <conditions>
+                <leftValueReference>byPassWFRule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.LTTM_Seller__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.LTTM_Seller__r.BoB__r.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Light_Touch_Category_Cohort</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Completed</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.LTTM_Seller__r.BoB__r.Managed_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>LTTM Plus</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.LTTM_Seller__r.BoB__r.Managed_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>LTTM Managed</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.LTTM_Seller__r.BoB__r.Managed_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Others Managed</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Completed_Date_Equal_Today</targetReference>
+            </connector>
+            <label>Is Populate Completed Date</label>
+        </rules>
+    </decisions>
+    <description>US-0012056 - Error Message thrown when attemption to Create 96 Actions to Cohort Sellers</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>US-0012056 - Error Message thrown when attemption to Create 96 Actions to Cohort Sellers</description>
+        <name>byPassWFRule</name>
+        <dataType>Boolean</dataType>
+        <expression>{!$Setup.byPass__c.byPass_WFRule__c}</expression>
+    </formulas>
+    <formulas>
+        <description>US-0012056 - Error Message thrown when attemption to Create 96 Actions to Cohort Sellers</description>
+        <name>currentDate</name>
+        <dataType>Date</dataType>
+        <expression>TODAY()</expression>
+    </formulas>
+    <interviewLabel>Action - Record Trigger Flow - Before Context {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Action - Record Trigger Flow - Before Context</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Auto_populate_Completed_Date</targetReference>
+        </connector>
+        <object>Action__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

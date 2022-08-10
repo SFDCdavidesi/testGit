@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_for_Lost__c</fullName>
+    <description>INTEG - N || ** eBay Advertising **  || WF - N || AP - N || VAL - N ||Class - N || Definition: Opportunity Lost Reason ||</description>
+    <externalId>false</externalId>
+    <label>Reason for Lost</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>StageName</controllingField>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Cancellation due to IAS infractions</fullName>
+                <default>false</default>
+                <label>Cancellation due to IAS infractions</label>
+            </value>
+            <value>
+                <fullName>Cancellation due to Performance</fullName>
+                <default>false</default>
+                <label>Cancellation due to Performance</label>
+            </value>
+            <value>
+                <fullName>Cancellation due to Viewability metrics</fullName>
+                <default>false</default>
+                <label>Cancellation due to Viewability metrics</label>
+            </value>
+            <value>
+                <fullName>Customer service issues</fullName>
+                <default>false</default>
+                <label>Customer service issues</label>
+            </value>
+            <value>
+                <fullName>Duplicate entry</fullName>
+                <default>false</default>
+                <label>Duplicate entry</label>
+            </value>
+            <value>
+                <fullName>Lost due to competition</fullName>
+                <default>false</default>
+                <label>Lost due to competition</label>
+            </value>
+            <value>
+                <fullName>Lost due to date delay/change</fullName>
+                <default>false</default>
+                <label>Lost due to date delay/change</label>
+            </value>
+            <value>
+                <fullName>Lost due to lack of inventory/marketing avails</fullName>
+                <default>false</default>
+                <label>Lost due to lack of inventory/marketing avails</label>
+            </value>
+            <value>
+                <fullName>Lost due to lack of product (ie. video)</fullName>
+                <default>false</default>
+                <label>Lost due to lack of product (ie. video)</label>
+            </value>
+            <value>
+                <fullName>Lost due to pricing</fullName>
+                <default>false</default>
+                <label>Lost due to pricing</label>
+            </value>
+            <value>
+                <fullName>Lost other</fullName>
+                <default>false</default>
+                <label>Lost other</label>
+            </value>
+            <value>
+                <fullName>No customer feedback</fullName>
+                <default>false</default>
+                <label>No customer feedback</label>
+            </value>
+            <value>
+                <fullName>Proactive proposal ; No budget and/or feedback</fullName>
+                <default>false</default>
+                <label>Proactive proposal ; No budget and/or feedback</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Cancellation due to IAS infractions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Cancellation due to Performance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Cancellation due to Viewability metrics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Customer service issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Duplicate entry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Lost due to competition</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Lost due to date delay/change</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Lost due to lack of inventory/marketing avails</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Lost due to lack of product (ie. video)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Lost due to pricing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Lost other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>No customer feedback</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Proactive proposal ; No budget and/or feedback</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

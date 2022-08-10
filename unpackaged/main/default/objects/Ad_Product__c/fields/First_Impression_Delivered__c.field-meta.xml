@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>First_Impression_Delivered__c</fullName>
+    <description>US-0009143 - [Ads 2020] Migrate Fields from Revenue 2 to Ad Product</description>
+    <externalId>false</externalId>
+    <label>First Impression Delivered</label>
+    <summarizedField>Ad_Revenue_Daily__c.Day_RSD__c</summarizedField>
+    <summaryFilterItems>
+        <field>Ad_Revenue_Daily__c.Delivered_AI__c</field>
+        <operation>greaterThan</operation>
+        <value>0</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Ad_Revenue_Daily__c.Ad_Product__c</summaryForeignKey>
+    <summaryOperation>min</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

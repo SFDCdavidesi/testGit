@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_LifecycleStage__c</fullName>
+    <description>[EBH] (US-0031) : Lifecycle Stage</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Based on last 12 month GMV YoY%. &quot;Accelerating&quot; (&gt;10%), &quot;Declining&quot; (&lt;0%), &quot;Maturing&quot; (0-10%), &quot;New&quot; refer to those sellers who doesn&#39;t have GMV in the last year (i.e. denominator is 0).</inlineHelpText>
+    <label>Lifecycle Stage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New</fullName>
+                <default>false</default>
+                <label>New</label>
+            </value>
+            <value>
+                <fullName>Accelerating</fullName>
+                <default>false</default>
+                <label>Accelerating</label>
+            </value>
+            <value>
+                <fullName>Maturing</fullName>
+                <default>false</default>
+                <label>Maturing</label>
+            </value>
+            <value>
+                <fullName>Declining</fullName>
+                <default>false</default>
+                <label>Declining</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

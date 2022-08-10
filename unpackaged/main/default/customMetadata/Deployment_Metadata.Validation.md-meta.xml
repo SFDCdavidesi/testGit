@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Validation</label>
+    <protected>false</protected>
+    <values>
+        <field>Copado_Project__c</field>
+        <value xsi:type="xsd:string">a2t3u000000B0BiAAK</value>
+    </values>
+    <values>
+        <field>Destination_Environment__c</field>
+        <value xsi:type="xsd:string">a2a6A00000Jy0CYQAZ</value>
+    </values>
+    <values>
+        <field>Destination_Org_Credential__c</field>
+        <value xsi:type="xsd:string">a2p6A0000009r1aQAA</value>
+    </values>
+    <values>
+        <field>Exclude_from_Auto_Resolve__c</field>
+        <value xsi:type="xsd:string">ApexClass</value>
+    </values>
+    <values>
+        <field>Exclude_from_promotion__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Org_Credential__c</field>
+        <value xsi:type="xsd:string">a2p6A0000009r1uQAA</value>
+    </values>
+    <values>
+        <field>Release__c</field>
+        <value xsi:type="xsd:string">a2y3u0000071OuuAAE</value>
+    </values>
+    <values>
+        <field>Source_Environment__c</field>
+        <value xsi:type="xsd:string">a2a3u000004thneAAA</value>
+    </values>
+    <values>
+        <field>Source_Org_Credential__c</field>
+        <value xsi:type="xsd:string">a2p6A0000009r1uQAA</value>
+    </values>
+</CustomMetadata>

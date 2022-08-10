@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_ROE__c</fullName>
+    <externalId>false</externalId>
+    <formula>AND( upper(Account.EBH_BillingCountry__c) &lt;&gt;&#39;UK&#39;,
+upper(Account.EBH_BillingCountry__c) &lt;&gt;&#39;ES&#39;,
+upper(Account.EBH_BillingCountry__c) &lt;&gt;&#39;DE&#39;,
+upper(Account.EBH_BillingCountry__c) &lt;&gt;&#39;FR&#39;,
+upper(Account.EBH_BillingCountry__c) &lt;&gt;&#39;IT&#39;,
+UPPER(Account.EBH_BillingCountry__c)  &lt;&gt;&#39;UNITED KINGDOM&#39;,
+UPPER(Account.EBH_BillingCountry__c)  &lt;&gt;&#39;DEUTSCHLAND&#39;,
+UPPER(Account.EBH_BillingCountry__c)  &lt;&gt;&#39;GERMANY&#39;,
+UPPER(Account.EBH_BillingCountry__c)  &lt;&gt;&#39;FRANCE&#39;,
+UPPER(Account.EBH_BillingCountry__c)  &lt;&gt;&#39;ITALY&#39;,
+UPPER(Account.EBH_BillingCountry__c)  &lt;&gt;&#39;SPAIN&#39;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is ROE</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

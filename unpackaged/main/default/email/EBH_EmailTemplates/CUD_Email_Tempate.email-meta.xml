@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0007745</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CUD Email Tempate</name>
+    <style>none</style>
+    <subject>Please Action Onboarding requests for {!EBH_Project__c.EBH_Seller__c}</subject>
+    <textOnly>Hi CUD Team,
+
+Please execute the below request on seller {!EBH_Project__c.EBH_Seller__c}  and advise when actioned.
+
+Item Required
+Place Issue 784  Yes
+Send Funds Availability Whitelist  Yes
+PL Whitelisting  {!EBH_Project__c.PLWhitelisting__c}
+Sexual Wellness Whitelisting  {!EBH_Project__c.SexualWellness__c}
+Increase Seller Limits – Listings  100000
+Increase Seller Limits – GMV  $1000000
+Supporting Comments  {!EBH_Project__c.CUDComments__c}
+
+Thank You
+
+{!EBH_Project__c.OwnerFullName}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

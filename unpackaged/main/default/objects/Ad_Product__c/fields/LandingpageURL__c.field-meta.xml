@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LandingpageURL__c</fullName>
+    <description>US-0010159 - ADS - Campaign Attribution Field Creation :
+Attribution 1PD landing pages - can be multiple</description>
+    <externalId>false</externalId>
+    <inlineHelpText>**separate the urls with a space and ;</inlineHelpText>
+    <label>Landingpage URL</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

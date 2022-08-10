@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0010536(not for sending. pdf download from portal)</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DE_Item_Coupon_Contract_SEP_Download</name>
+    <style>none</style>
+    <subject>DE_Item_Coupon_Contract_SEP_Download</subject>
+    <textOnly>Sie nehmen jetzt an der Coupon-Aktion teil
+
+Vielen Dank, dass Sie die Bedingungen des Werbeaktions-Einzelvertrags auf Basis der dazugehörigen Werbeaktions-AGB (zusammen „Werbeaktions-Einzelvertrag“) akzeptiert haben. Wir haben Ihnen eine Bestätigungs-E-Mail geschickt.
+
+Die Gutschein-Werbeaktion „{Marketing_Coupon_Name__c}” läuft bis zum {CouponEndDate}. Wenn Sie weitere Fragen zur Aktion haben, wenden Sie sich bitte an Ihre Ansprechpartnerin oder Ihren Ansprechpartner bei eBay.
+
+Sie können den Werbeaktions-Einzelvertrag hier, sowie die dazugehörigen Werbeaktions-AGB über den entsprechenden Link, abrufen, speichern und ausdrucken. Falls Sie den Vertrag zu Zwecken der Beweissicherung, der Buchführung oder zu anderen Zwecken benötigen, sind Sie selbst dafür verantwortlich, den Vertrag auszudrucken und zu archivieren oder auf einem von eBay unabhängigen Speichermedium zu archivieren.
+
+Verkäufer
+
+{LegalEntity}, {StreetName}, {Zip}, {City}, {Country}
+
+Nutzername des Verkäufers für die Gutscheinaktion
+
+{eBaySellerID}
+
+eBay-Website(s)
+
+{CouponSites}
+
+Gutschein-Name
+
+{Marketing_Coupon_Name__c}
+
+Gutschein-Code
+
+{CouponCode}
+
+Gutschein-Werbeaktionszeitraum   {CouponStartTime} {CouponStartDate} bis {CouponEndTime} {CouponEndDate} (CET)
+
+Details zur Gutscheinaktion oder Promotion
+
+{CouponDiscount%}{CouponDiscountAmount} Rabatt auf den Artikelpreis.
+
+Bis zu einem maximalen Betrag von {CouponCap} pro Transaktion.
+
+Mindestbestellwert: {Minimum_Transaction_Value__c}
+
+Der Gutschein kann maximal {Max_Redemptions__c}x je Nutzer eingelöst werden.
+
+eBay Vertragspartner   eBay GmbH, Albert-Einstein-Ring 2-6, 14532 Kleinmachnow
+Sonstiges
+
+{AdditionalArrangement}
+
+Artikel
+
+Gutscheine für diese Gutscheinaktion werden nur für bestimmte Artikel ausgegeben und können nur für diese eingelöst werden („Gutscheine auf Artikel-Basis“). Welche Artikel dabei berücksichtigt werden, entnehmen Sie bitte der beigefügten Übersicht, darin werden die Artikel nach Artikelnummern oder SKUs aufgeschlüsselt.
+Sollen weitere Artikelnummern zu den berechtigten Artikeln hinzugenommen werden, so ist das mit eBay per E-Mail zu vereinbaren.
+
+Artikelnummer   Angebotstitel   Von Verkäufer an eBay zu entrichtende Erfolgsprämie %
+{CAT_TABLE_ROWS}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

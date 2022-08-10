@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0008262 - [ES] Coupon Seller contract templates and T&amp;Cs</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>ES Item Coupon Contract</name>
+    <style>none</style>
+    <subject>Campaña de cupones | {eBaySellerID} | {Coupon_ID__c} | {CouponNameM} | {CouponStartDate} - {CouponEndDate}</subject>
+    <textOnly>¿Son correctos los siguientes datos relativos a tu participación en la campaña de cupones? En caso afirmativo, pulsa el botón siguiente:
+
+ACEPTO
+
+Vendedor  {LegalEntity}, {StreetName}, {Zip} {City}
+Seudónimo(s) del vendedor para la campaña de cupones  {eBaySellerID}
+Página(s) de eBay  {CouponSites}
+Periodo promocional del cupón  Entre el {CouponStartDate} a las {CouponStartTime} h y el {CouponEndDate} a las {CouponEndTime} h (hora de verano de Europa Central) o cualquier otro periodo determinado por eBay. eBay puede determinar el periodo promocional exacto a su entera discreción.
+Artículos
+
+Los cupones de esta campaña de cupones se emiten exclusivamente para determinados artículos y solo pueden hacerse efectivos para la adquisición de estos. La lista de los artículos del Vendedor incluidos en los cupones, así como la porción de pago que el Vendedor se compromete a pagar a eBay por cada artículo, se encuentran en la descripción general adjunta. Los artículos incluidos se detallan según su número de artículo o número de referencia.
+
+La inclusión de cualquier otro número de artículo a la lista de artículos que cumplen los requisitos debe negociarse con eBay por correo electrónico al menos 5 días antes del inicio del Periodo de la promoción.
+
+Detalles de la campaña de cupones o promoción
+
+-Descuento del {CouponDiscount%}{CouponDiscountAmount} en el precio del artículo.
+
+-Hasta un máximo de {CouponCap} por transacción.
+
+-Valor mínimo del pedido: {Minimum_Transaction_Value__c}
+
+-Cupón canjeable {Max_Redemptions__c} veces por usuario.
+
+Socio contractual de eBay  eBay GmbH, Albert-Einstein-Ring 2-6, 14532 Kleinmachnow
+Varios  {AdditionalArrangement}
+
+
+Al pulsar “Aceptar”, confirmas lo siguiente:
+
+Haber leído, entendido y aceptado las Condiciones del cupón accesibles a través del siguiente enlace: https://cloud.forbusiness.ebay.com/TCcupones2020
+El artículo puesto en venta no es una falsificación ni una copia no autorizada.
+Tienes autorización para vender o distribuir el artículo, así como para enviarlo a las ubicaciones indicadas en el anuncio.
+Al poner en venta este artículo en eBay, no infringes ninguna otra obligación contraída mediante ningún otro contrato que hayas suscrito.
+
+Este contrato individual constituye la documentación de las condiciones de la campaña de cupones ejecutada en los sitios web de eBay indicados anteriormente y forma parte del contrato marco entre eBay GmbH y tú en lo relativo a las campañas promocionales de la plataforma de compraventa de eBay.
+
+
+Atentamente,
+
+El equipo de eBay</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

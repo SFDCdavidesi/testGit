@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prima_Coupons_Validation</fullName>
+    <active>true</active>
+    <description>US-0009503 - DE PRIMA Coupon Billing</description>
+    <errorConditionFormula>AND(RecordType.DeveloperName = &#39;Item_Based&#39;,OR(AND(BEGINS(Coupon_ID__c,&#39;PRIMA&#39;),NOT(Always_On_Coupon__c)),AND(NOT(BEGINS(Coupon_ID__c,&#39;PRIMA&#39;)),Always_On_Coupon__c)))</errorConditionFormula>
+    <errorMessage>All Prima Coupons must be flagged on the field Always On Coupon and have PRIMA in the Coupon code</errorMessage>
+</ValidationRule>

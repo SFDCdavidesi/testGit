@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_SellerPotentialScore__c</fullName>
+    <description>[EBH] (US-0031) : Seller Potential Score (0-10)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Probability to become a VIP seller in the future. Score can be between 0 and 1 where 0=Low and 1=High.</inlineHelpText>
+    <label>Seller Potential Score (0-1)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

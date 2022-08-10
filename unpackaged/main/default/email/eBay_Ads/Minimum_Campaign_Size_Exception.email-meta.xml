@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>eBay_Ads_Letterhead</letterhead>
+    <name>Minimum Campaign Size Exception</name>
+    <style>freeForm</style>
+    <subject>Minimum Campaign Size Exception Approved</subject>
+    <textOnly>Hello {!Advertising_Request_Portal__c.OwnerFirstName},
+
+Your request for &#39;{!Advertising_Request_Portal__c.Name__c}&#39; has been approved.
+
+Please review the details below:
+
+Account: {!Advertising_Request_Portal__c.Account__c}
+Opportunity: {!Advertising_Request_Portal__c.Opportunity__c}
+
+Placement Type: {!Advertising_Request_Portal__c.Placement_Type__c}
+Requested Budget: {!Advertising_Request_Portal__c.Requested_Budget__c}
+
+Comments from {!ApprovalRequest.Process_Approver}:
+{!ApprovalRequest.Comments}
+
+
+{!Advertising_Request_Portal__c.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Revert_DE_VAT_Change</fullName>
+    <active>true</active>
+    <description>US-0007702 - DE VAT Change 31 December 2020 &amp; Subsidy Calc Updates</description>
+    <errorConditionFormula>AND(
+RecordType.DeveloperName=&#39;Deal_V1&#39;,
+TEXT(EBH_BusinessName__r.EBH_RegistrationCountry__c)=&#39;Germany&#39;, 
+   TEXT(EBH_Status__c)=&#39;Planned&#39;, 
+   EBH_DealStartDate__c &lt;= DATEVALUE(&quot;2020-12-31&quot;),
+   EBH_DealEndDate__c &gt; DATEVALUE(&quot;2020-12-31&quot;), 
+   EBH_Subsidy__c &gt; 0
+)</errorConditionFormula>
+    <errorMessage>Due to a change in German VAT, subsidized deals cannot start and end during the change over period. Separate Deals must be created for the portion ending before and the portion ending after 1 January 2021.</errorMessage>
+</ValidationRule>

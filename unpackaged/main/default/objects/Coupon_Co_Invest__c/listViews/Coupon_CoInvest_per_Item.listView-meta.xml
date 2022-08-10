@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Coupon_CoInvest_per_Item</fullName>
+    <columns>Coupon_Name__c</columns>
+    <columns>NAME</columns>
+    <columns>Seller_Name__c</columns>
+    <columns>Coupon_Seller__c</columns>
+    <columns>Item_ID__c</columns>
+    <columns>Co_Invest__c</columns>
+    <columns>EBH_Owner__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Coupon_Name__c</field>
+        <operation>equals</operation>
+        <value>C-000115</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Coupon_Co_Invest__c.Coupon_Co_Invest_Item</value>
+    </filters>
+    <filters>
+        <field>Seller_Name__c</field>
+        <operation>contains</operation>
+    </filters>
+    <label>Coupon CoInvest per Item</label>
+</ListView>

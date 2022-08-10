@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rejected_Reason__c</fullName>
+    <description>US-0009942 - [UK Risk] Pending items- High Priority</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter Rejected Reason if Ticket Status is Rejected</inlineHelpText>
+    <label>Rejected Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>3A - Did Not Fail</fullName>
+                <default>false</default>
+                <label>3A - Did Not Fail</label>
+            </value>
+            <value>
+                <fullName>3A - Did Not Fail but Financial concerns</fullName>
+                <default>false</default>
+                <label>3A - Did Not Fail but Financial concerns</label>
+            </value>
+            <value>
+                <fullName>4 - Recent Dormant Account</fullName>
+                <default>false</default>
+                <label>4 - Recent Dormant Account</label>
+            </value>
+            <value>
+                <fullName>4 - Defect Rate</fullName>
+                <default>false</default>
+                <label>4 - Defect Rate</label>
+            </value>
+            <value>
+                <fullName>4 - Late Delivery Rate</fullName>
+                <default>false</default>
+                <label>4 - Late Delivery Rate</label>
+            </value>
+            <value>
+                <fullName>4 - No vat number/invalid vat number</fullName>
+                <default>false</default>
+                <label>4 - No vat number/invalid vat number</label>
+            </value>
+            <value>
+                <fullName>4 - Payment Temporary</fullName>
+                <default>false</default>
+                <label>4 - Payment Temporary</label>
+            </value>
+            <value>
+                <fullName>4 - Recent Low Volume Seller</fullName>
+                <default>false</default>
+                <label>4 - Recent Low Volume Seller</label>
+            </value>
+            <value>
+                <fullName>4 - SPS Manipulation</fullName>
+                <default>false</default>
+                <label>4 - SPS Manipulation</label>
+            </value>
+            <value>
+                <fullName>4 - Temporary Restricted Account</fullName>
+                <default>false</default>
+                <label>4 - Temporary Restricted Account</label>
+            </value>
+            <value>
+                <fullName>4 - Below Standard Account</fullName>
+                <default>false</default>
+                <label>4 - Below Standard Account</label>
+            </value>
+            <value>
+                <fullName>6 - Dormant Account</fullName>
+                <default>false</default>
+                <label>6 - Dormant Account</label>
+            </value>
+            <value>
+                <fullName>6 - Invalid User Name</fullName>
+                <default>false</default>
+                <label>6 - Invalid User Name</label>
+            </value>
+            <value>
+                <fullName>6 - Low Volume Seller</fullName>
+                <default>false</default>
+                <label>6 - Low Volume Seller</label>
+            </value>
+            <value>
+                <fullName>6 - Payment Full Restriction</fullName>
+                <default>false</default>
+                <label>6 - Payment Full Restriction</label>
+            </value>
+            <value>
+                <fullName>6 - Permanent Selling Restriction</fullName>
+                <default>false</default>
+                <label>6 - Permanent Selling Restriction</label>
+            </value>
+            <value>
+                <fullName>6 - SPS Manipulation</fullName>
+                <default>false</default>
+                <label>6 - SPS Manipulation</label>
+            </value>
+            <value>
+                <fullName>5 - Financials/ Financials required</fullName>
+                <default>false</default>
+                <label>5 - Financials/ Financials required</label>
+            </value>
+            <value>
+                <fullName>5 - Financials / Pom required</fullName>
+                <default>false</default>
+                <label>5 - Financials / Pom required</label>
+            </value>
+            <value>
+                <fullName>5 -Financials / Serious Financials concerns</fullName>
+                <default>false</default>
+                <label>5 -Financials / Serious Financials concerns</label>
+            </value>
+            <value>
+                <fullName>5 - Financials / sole trader Pom required</fullName>
+                <default>false</default>
+                <label>5 - Financials / sole trader Pom required</label>
+            </value>
+            <value>
+                <fullName>5 - Financials / confirm company details</fullName>
+                <default>false</default>
+                <label>5 - Financials / confirm company details</label>
+            </value>
+            <value>
+                <fullName>High Selling Limits still left on the account</fullName>
+                <default>false</default>
+                <label>High Selling Limits still left on the account</label>
+            </value>
+            <value>
+                <fullName>Major issues on the account (MAC notes, Account Issues)</fullName>
+                <default>false</default>
+                <label>Major issues on the account (MAC notes, Account Issues)</label>
+            </value>
+            <value>
+                <fullName>Seller Dashboard issues</fullName>
+                <default>false</default>
+                <label>Seller Dashboard issues</label>
+            </value>
+            <value>
+                <fullName>Feedback issues</fullName>
+                <default>false</default>
+                <label>Feedback issues</label>
+            </value>
+            <value>
+                <fullName>Open cases</fullName>
+                <default>false</default>
+                <label>Open cases</label>
+            </value>
+            <value>
+                <fullName>Overdue orders</fullName>
+                <default>false</default>
+                <label>Overdue orders</label>
+            </value>
+            <value>
+                <fullName>Bad links</fullName>
+                <default>false</default>
+                <label>Bad links</label>
+            </value>
+            <value>
+                <fullName>Collection issues (outstanding balance on the account)</fullName>
+                <default>false</default>
+                <label>Collection issues (outstanding balance on the account)</label>
+            </value>
+            <value>
+                <fullName>Very high quantities on listings</fullName>
+                <default>false</default>
+                <label>Very high quantities on listings</label>
+            </value>
+            <value>
+                <fullName>Company number missing</fullName>
+                <default>false</default>
+                <label>Company number missing</label>
+            </value>
+            <value>
+                <fullName>Breaching Multi Listing Policy</fullName>
+                <default>false</default>
+                <label>Breaching Multi Listing Policy</label>
+            </value>
+            <value>
+                <fullName>more information needed</fullName>
+                <default>false</default>
+                <label>more information needed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

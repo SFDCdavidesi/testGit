@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_MainVertical__c</fullName>
+    <description>[EBH] (EPH-89)</description>
+    <externalId>false</externalId>
+    <label>Main Vertical</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Business &amp; Industrial</fullName>
+                <default>false</default>
+                <label>Business &amp; Industrial</label>
+            </value>
+            <value>
+                <fullName>Collectibles</fullName>
+                <default>false</default>
+                <label>Collectibles</label>
+            </value>
+            <value>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+                <label>Electronics</label>
+            </value>
+            <value>
+                <fullName>Fashion</fullName>
+                <default>false</default>
+                <label>Fashion</label>
+            </value>
+            <value>
+                <fullName>Home &amp; Garden</fullName>
+                <default>false</default>
+                <label>Home &amp; Garden</label>
+            </value>
+            <value>
+                <fullName>Lifestyle</fullName>
+                <default>false</default>
+                <label>Lifestyle</label>
+            </value>
+            <value>
+                <fullName>Media</fullName>
+                <default>false</default>
+                <label>Media</label>
+            </value>
+            <value>
+                <fullName>Parts &amp; Accessories</fullName>
+                <default>false</default>
+                <label>Parts &amp; Accessories</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

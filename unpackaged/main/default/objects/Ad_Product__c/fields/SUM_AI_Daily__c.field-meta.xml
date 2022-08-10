@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SUM_AI_Daily__c</fullName>
+    <description>US-0009161 - [Ads 2020] Migrate Formulas from Revenue 2 to Ad Product</description>
+    <externalId>false</externalId>
+    <label>SUM AI Daily</label>
+    <summarizedField>Ad_Revenue_Daily__c.Delivered_AI__c</summarizedField>
+    <summaryForeignKey>Ad_Revenue_Daily__c.Ad_Product__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

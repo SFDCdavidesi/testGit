@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Seller_Declined_Reason_Required</fullName>
+    <active>true</active>
+    <description>[#EPH-7254]Object: Coupon Seller - New field Seller Declined Reason</description>
+    <errorConditionFormula>IF( AND(ISPICKVAL(Coupon_Seller_Stage__c , &#39;Seller Declined&#39;),   ISPICKVAL(Seller_Declined_Reasons__c, &#39;&#39;)), true, false)</errorConditionFormula>
+    <errorMessage>Seller Declined Reasons is required.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,24 @@
+<apex:page showHeader="false" standardStylesheets="true" sidebar="false" docType="html-5.0">
+
+    <apex:form rendered="{!$Permission.US_Manage_Deals}">
+        <div class="slds-notify slds-notify_toast slds-theme_error slds-align_absolute-center">
+            <span class="slds-assistive-text">error</span>
+            <div class="slds-notify__content slds-align_absolute-center">
+                <p class="slds-text-heading_small slds-align_absolute-center">{!$Label.THIS_FUNCTIONALITY_IS_NOT_AVAILABLE_TO_YOUR_REGION}</p>                
+            </div>
+        </div>    
+    </apex:form>
+
+    <apex:outputPanel rendered="{!IF(JSENCODE($CurrentPage.parameters.viewName) == 'day', true, false)}">
+
+        <script>
+            if({!!$Permission.US_Manage_Deals}){
+                var compDefinition = { "componentDef" : "c:Deal_DailyView"};
+                var encodedCompDef = btoa(JSON.stringify(compDefinition));
+                window.location = "/one/one.app#"+encodedCompDef;
+            }
+        </script>
+
+    </apex:outputPanel>
+
+</apex:page>

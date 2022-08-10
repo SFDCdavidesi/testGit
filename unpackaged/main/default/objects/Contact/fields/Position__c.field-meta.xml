@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Position__c</fullName>
+    <description>US-0009237 - Migrate contact fields for EU ads</description>
+    <externalId>false</externalId>
+    <label>Position</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Intern</fullName>
+                <default>false</default>
+                <label>Intern</label>
+            </value>
+            <value>
+                <fullName>Accounting</fullName>
+                <default>false</default>
+                <label>Accounting</label>
+            </value>
+            <value>
+                <fullName>Consultant</fullName>
+                <default>false</default>
+                <label>Consultant</label>
+            </value>
+            <value>
+                <fullName>Branch manager</fullName>
+                <default>false</default>
+                <label>Branch manager</label>
+            </value>
+            <value>
+                <fullName>CEO</fullName>
+                <default>false</default>
+                <label>CEO</label>
+            </value>
+            <value>
+                <fullName>Owner</fullName>
+                <default>false</default>
+                <label>Owner</label>
+            </value>
+            <value>
+                <fullName>IT</fullName>
+                <default>false</default>
+                <label>IT</label>
+            </value>
+            <value>
+                <fullName>Director - Business Development</fullName>
+                <default>false</default>
+                <label>Director - Business Development</label>
+            </value>
+            <value>
+                <fullName>Director - IT</fullName>
+                <default>false</default>
+                <label>Director - IT</label>
+            </value>
+            <value>
+                <fullName>Director - Marketing</fullName>
+                <default>false</default>
+                <label>Director - Marketing</label>
+            </value>
+            <value>
+                <fullName>Director - branch office</fullName>
+                <default>false</default>
+                <label>Director - branch office</label>
+            </value>
+            <value>
+                <fullName>Director - HR</fullName>
+                <default>false</default>
+                <label>Director - HR</label>
+            </value>
+            <value>
+                <fullName>Director - Product management</fullName>
+                <default>false</default>
+                <label>Director - Product management</label>
+            </value>
+            <value>
+                <fullName>Director - Project management</fullName>
+                <default>false</default>
+                <label>Director - Project management</label>
+            </value>
+            <value>
+                <fullName>Director - Support</fullName>
+                <default>false</default>
+                <label>Director - Support</label>
+            </value>
+            <value>
+                <fullName>Director - technology</fullName>
+                <default>false</default>
+                <label>Director - technology</label>
+            </value>
+            <value>
+                <fullName>Director - sales</fullName>
+                <default>false</default>
+                <label>Director - sales</label>
+            </value>
+            <value>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+                <label>Marketing</label>
+            </value>
+            <value>
+                <fullName>Product management</fullName>
+                <default>false</default>
+                <label>Product management</label>
+            </value>
+            <value>
+                <fullName>Project manager</fullName>
+                <default>false</default>
+                <label>Project manager</label>
+            </value>
+            <value>
+                <fullName>Procurement</fullName>
+                <default>false</default>
+                <label>Procurement</label>
+            </value>
+            <value>
+                <fullName>Lawyer</fullName>
+                <default>false</default>
+                <label>Lawyer</label>
+            </value>
+            <value>
+                <fullName>Administration</fullName>
+                <default>false</default>
+                <label>Administration</label>
+            </value>
+            <value>
+                <fullName>Sales</fullName>
+                <default>false</default>
+                <label>Sales</label>
+            </value>
+            <value>
+                <fullName>Member of the Board</fullName>
+                <default>false</default>
+                <label>Member of the Board</label>
+            </value>
+            <value>
+                <fullName>Chairman of the Board</fullName>
+                <default>false</default>
+                <label>Chairman of the Board</label>
+            </value>
+            <value>
+                <fullName>CEO / Managing Director</fullName>
+                <default>false</default>
+                <label>CEO / Managing Director</label>
+            </value>
+            <value>
+                <fullName>Unit / Account Director</fullName>
+                <default>false</default>
+                <label>Unit / Account Director</label>
+            </value>
+            <value>
+                <fullName>Unit / Team Lead</fullName>
+                <default>false</default>
+                <label>Unit / Team Lead</label>
+            </value>
+            <value>
+                <fullName>Planing Team</fullName>
+                <default>false</default>
+                <label>Planing Team</label>
+            </value>
+            <value>
+                <fullName>Managing Director</fullName>
+                <default>false</default>
+                <label>Managing Director</label>
+            </value>
+            <value>
+                <fullName>Vice President</fullName>
+                <default>false</default>
+                <label>Vice President</label>
+            </value>
+            <value>
+                <fullName>Department Head</fullName>
+                <default>false</default>
+                <label>Department Head</label>
+            </value>
+            <value>
+                <fullName>Manager</fullName>
+                <default>false</default>
+                <label>Manager</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

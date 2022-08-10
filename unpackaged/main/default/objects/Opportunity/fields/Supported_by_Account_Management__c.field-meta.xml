@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Supported_by_Account_Management__c</fullName>
+    <description>US-0009254 - Migrate opportunity fields for EU ads</description>
+    <externalId>false</externalId>
+    <label>Insights Provided</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Presentation</fullName>
+                <default>false</default>
+                <label>Presentation</label>
+            </value>
+            <value>
+                <fullName>One-Pager/Fact Sheets</fullName>
+                <default>false</default>
+                <label>One-Pager/Fact Sheets</label>
+            </value>
+            <value>
+                <fullName>Press release</fullName>
+                <default>false</default>
+                <label>Press release</label>
+            </value>
+            <value>
+                <fullName>Create Segments</fullName>
+                <default>false</default>
+                <label>Create Segments</label>
+            </value>
+            <value>
+                <fullName>Post data</fullName>
+                <default>false</default>
+                <label>Post data</label>
+            </value>
+            <value>
+                <fullName>Pre data</fullName>
+                <default>false</default>
+                <label>Pre data</label>
+            </value>
+            <value>
+                <fullName>Client meeting/call support</fullName>
+                <default>false</default>
+                <label>Client meeting/call support</label>
+            </value>
+            <value>
+                <fullName>Brand comparison data</fullName>
+                <default>false</default>
+                <label>Brand comparison data</label>
+            </value>
+            <value>
+                <fullName>Pro-active optimizations (UK)</fullName>
+                <default>false</default>
+                <label>Pro-active optimizations (UK)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

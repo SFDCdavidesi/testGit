@@ -1,0 +1,3 @@
+<p data-aura-rendered-by="10635:0">Hello</p>
+<p data-aura-rendered-by="10635:0">This is a notification to let you know that the BCD file for the UK FVF {!BCD_Statement__c.FVF_Promo_Month__c} Promo credits has been created with a Credit Total Value of  {!BCD_Statement__c.Credit_Total_Value__c} {!BCD_Statement__c.CurrencyIsoCode}.<br />You can find it attached to the BCD Statement record accessible through this link {!BCD_Statement__c.Link} </p>
+<p data-aura-rendered-by="10635:0"> Thank You <br />Hive </p>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>eBay Ads - Next Scheduled Call Reminder</name>
+    <style>none</style>
+    <subject>{!BoB_Seller__c.Seller_Name__c}: Next Call Scheduled in 24 hrs</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

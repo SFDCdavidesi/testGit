@@ -1,0 +1,49 @@
+<style>
+	.ul-dash {
+              list-style-type: none;
+         }
+
+.ul-dash li:before {
+  content: '- ';
+  position: absolute;
+  margin-left: -20px;
+}
+	 
+</style>
+<p>L’opération promotionnelle que vous avez lancée le {!EBH_Deal__c.EBH_DealStartDate__c}  dans le cadre des Bons Plans est désormais terminée. Vous trouverez ci-dessous/en pièce jointe les détails du soutien marketing facturable à eBay pour cette opération.</p>
+<p><strong>Détails de l’opération promotionnelle</strong></p>
+<ul>
+<li>{!EBH_Deal__c.EBH_DealStartDate__c} jusqu’au {!EBH_Deal__c.EBH_DealEndDate__c}</li>
+<li>{!EBH_Deal__c.EBH_ProductTitle__c}</li>
+<li>{!EBH_Deal__c.EBH_eBayItemID__c}</li>
+<li>{!EBH_Deal__c.EBH_LocalDealFormat__c}</li>
+</ul>
+<p><strong>Support marketing facturable*:</strong>&nbsp;</p>
+<ul class="ul-dash">
+<li>Volume de ventes facturable: {!EBH_Deal__c.EBH_Payout_SI_calc__c}</li>
+<li>Montant du soutien marketing par objet vendu: {!EBH_Deal__c.EBH_Subsidy__c}</li>
+<li>Total du soutien marketing net: {!EBH_Deal__c.Subsidy_Final_Net__c}</li>
+<li>TVA de: {!EBH_Deal__c.VAT_N__c}%</li>
+<li>Total du soutien marketing brut: {!EBH_Deal__c.EBH_SubsidyFinal__c}</li>
+</ul>
+<p>&nbsp;</p>
+<p>*Ceci n'est pas une facture aux fins de la TVA. La facture doit être établie par le vendeur.</p>
+<p>Si vous acceptez les détails ci-dessus et le montant du paiement, nous transférerons la somme de {!EBH_Deal__c.EBH_SubsidyFinal__c} sur votre compte PayPal.
+<br/>Pour cela, veuillez nous transmettre une facture via l'<a title="outil de chargement" href="{!EBH_Deal__c.SiteURL__c}/EBH_InvoiceUploadLandingPage?id={!EBH_Deal__c.Unique_Id_Ext__c}">outil de chargement</a>.</p>
+<p>Pour en savoir plus ou si vous avez des questions sur les détails du montant facturable, cliquez sur le <a title="lien de clarification" href="{!EBH_Deal__c.SiteURL__c}/EBH_ClarificationRequiredPage?id={!EBH_Deal__c.Unique_Id_Ext__c}">lien de clarification</a>.Un agent eBay prendra alors contact avec vous prochainement.</p>
+<p>&nbsp;</p>
+<p>Cordialement,</p>
+<p>L'équipe eBay</p>
+<p>&nbsp;</p>
+<span style="font-size: 10.5px;">
+<p>eBay a envoyé ce message à {!EBH_Deal__c.EBH_BusinessName__c}.<br />
+Le nom que vous avez saisi lors de votre inscription est inclus pour montrer que ce message provient d'eBay.</p>
+<p><a title="Pour en savoir plus." href="http://pages.ebay.fr/help/account/ebay-email.html">Pour en savoir plus.</a></p>
+
+<p>Cet e‑mail vous a été envoyé par <a title="eBay GmbH" href="http://pages.ebay.fr/aboutebay/contact.html">eBay GmbH</a>. Vos préférences de notification indiquent que vous souhaitez recevoir des informations sur les promotions, les offres spéciales et certaines manifestations.</p>
+<p>eBay ne vous demandera JAMAIS de fournir par e‑mail des informations personnelles telles que votre mot de passe, numéro de compte bancaire ou de carte de crédit. </p>
+<p>Vous êtes inscrit(e) en utilisant l'adresse {!EBH_Deal__c.EBH_SellerEmail__c} indiquée lors de votre inscription sur eBay enregistrée sur <a href="http://www.ebay.fr/">www.ebay.fr</a></p>
+<p>Cliquez <a href="http://my.ebay.fr/ws/eBayISAPI.dll?MyEbayBeta&CurrentPage=MyeBayNextNotificationPreferences&ssPageName=STRK:ME:LNLK">ici</a> si vous ne souhaitez plus recevoir de propositions commerciales de notre part.</p>
+<p>Si vous avez des questions, consultez nos <a href="http://pages.ebay.fr/help/policies/user-agreement.html">Conditions d'utilisation</a> et notre <a href="http://pages.ebay.fr/help/policies/privacy-policy.html">Avis sur les données personnelles</a>.</p>
+</span>
+<p><span style="font-size: 12px;">Copyright &copy; 2019 eBay Inc.</span></p>

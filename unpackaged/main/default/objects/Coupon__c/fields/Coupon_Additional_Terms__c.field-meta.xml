@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Coupon_Additional_Terms__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Important: The values of this field will be propagated to all newly created Coupon Seller records and will be visible in the Coupon Contract for sellers.</inlineHelpText>
+    <label>Coupon Additional Terms</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>4</visibleLines>
+</CustomField>

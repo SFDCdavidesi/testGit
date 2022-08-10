@@ -1,0 +1,12 @@
+Dear {!Case.SuppliedName},   
+
+Thank you for contacting Hive Support. 
+
+Case #{!Case.CaseNumber}: "{!Case.Subject}" has been created and a {!Organization.Name} Admin will respond to you shortly.   
+
+If you like to respond to this email, please make sure you keep the Ref Id added to the subject in order to attach the email to the same ticket. 
+ 
+Thank you,   
+Hive Support Team
+
+Case Reference Id: {!Case.Thread_Id}

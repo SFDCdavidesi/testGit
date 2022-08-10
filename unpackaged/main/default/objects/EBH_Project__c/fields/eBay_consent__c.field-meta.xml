@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>eBay_consent__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>US-0008199 - DE Managed Fulfillment - Landing page consent form</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Seller’s consent for eBay GmbH to use personal data provided above to inform about new services and offers from eBay GmbH by email and /or phone.</inlineHelpText>
+    <label>eBay consent</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

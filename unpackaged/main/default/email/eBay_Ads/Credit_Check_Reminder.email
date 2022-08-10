@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div style=""><span style="background-color: rgb(255, 255, 255);">Hello&nbsp;{!Opportunity.OwnerFirstName},</span><div><br></div><div>The account {!Opportunity.Account} you're creating this opportunity for doesn't have a credit check against it.&nbsp;<span style="font-size: 12pt;">Before you can proceed with this opportunity, please submit a new credit check request.</span></div><div><br></div><div>{!Opportunity.Account} needs to have a credit check run, even if buying through an agency.</div><div><br></div><div><div>Thank You,</div><div><br></div><div style="font-size: 12pt;"><span style="font-size: 12pt;">Sales Ops&nbsp;</span></div></div></div>]]></td>
+</tr>
+</table>

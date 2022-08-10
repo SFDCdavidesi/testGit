@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Top_Top_Products_Competitiveness__c</fullName>
+    <description>EPH-7040 Inventory Sourcing Metrics
+US-0009521 Field deprecated (Original Label - Top Products Competitiveness (%))</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Percentage of sellers&#39; listings  where seller&#39;s  price is same or lower than market benchmark.</inlineHelpText>
+    <label>Top Prod Competitivenes (%) (Deprecated)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

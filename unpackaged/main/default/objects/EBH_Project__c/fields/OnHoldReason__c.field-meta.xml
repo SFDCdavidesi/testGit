@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OnHoldReason__c</fullName>
+    <description>US-0009278:Used on AU-Onboarding Projects to capture the reason why a Project has been put on hold.
+US-0011692</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Use this field to capture he reason when placing a project on hold (&quot;On Hold&quot; Stage).</inlineHelpText>
+    <label>On Hold Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>EBH_Stage__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>OnHoldReasons</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>On Hold</controllingFieldValue>
+            <valueName>Channel Partner Delays</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On Hold</controllingFieldValue>
+            <valueName>Channel Partner Fees</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On Hold</controllingFieldValue>
+            <valueName>No Engagement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On Hold</controllingFieldValue>
+            <valueName>No or Lack of Seller Resources</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On Hold</controllingFieldValue>
+            <valueName>Other Marketplace Priority</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On Hold</controllingFieldValue>
+            <valueName>Priority Change for Seller</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On Hold</controllingFieldValue>
+            <valueName>Timeline to Go Live</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On Hold</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On Hold</controllingFieldValue>
+            <valueName>Planned platform changes</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

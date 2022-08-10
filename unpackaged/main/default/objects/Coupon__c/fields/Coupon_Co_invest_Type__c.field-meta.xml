@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Coupon_Co_invest_Type__c</fullName>
+    <description>US-0008867 - AU Coupon BCD generation</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The value in this filed has impact on the billing process. For &quot;Contra&quot; type the seller co-invest costs will be derived from coupon redeem amount (contra). For &quot;GMV&quot; type the co-invest costs will be derived from transaction GMV, potentially resulting in higher co-invest costs for the seller (depending on coupon cap and coupon discount %)</inlineHelpText>
+    <label>Coupon Co-invest Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Main_Coupon_Site__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>GMV</fullName>
+                <default>false</default>
+                <label>GMV</label>
+            </value>
+            <value>
+                <fullName>Contra</fullName>
+                <default>false</default>
+                <label>Contra</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>ebay.com.au</controllingFieldValue>
+            <valueName>GMV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ebay.com.au</controllingFieldValue>
+            <controllingFieldValue>ebay.de</controllingFieldValue>
+            <controllingFieldValue>ebay.es</controllingFieldValue>
+            <controllingFieldValue>ebay.co.uk</controllingFieldValue>
+            <controllingFieldValue>ebay.fr</controllingFieldValue>
+            <controllingFieldValue>ebay.it</controllingFieldValue>
+            <controllingFieldValue>ebay.ch</controllingFieldValue>
+            <controllingFieldValue>ebay.at</controllingFieldValue>
+            <controllingFieldValue>ebay.pl</controllingFieldValue>
+            <controllingFieldValue>ebay.nl</controllingFieldValue>
+            <controllingFieldValue>ebay.com</controllingFieldValue>
+            <valueName>Contra</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

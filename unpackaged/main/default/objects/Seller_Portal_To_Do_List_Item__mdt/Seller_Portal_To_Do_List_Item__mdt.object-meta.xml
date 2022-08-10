@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Defines a single Item to be used on lwcSEPToDoList with a count and redirect link. Items can be either a parent/aggregate or a child. Clicking on a parent/aggregate item should take you to a page with the same component displaying the parent&#39;s child records whose sum should equal the total of the parent.</description>
+    <label>Seller Portal To Do List Item</label>
+    <pluralLabel>Seller Portal To Do List Items</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Coupon_GMV_Target__c</fullName>
+    <description>[US-0015701] [AU] Coupon Seller Object - New fields for AU Budget Mgmt. and Contracts + Validation Rule</description>
+    <externalId>false</externalId>
+    <inlineHelpText>GMV Target for the Coupon</inlineHelpText>
+    <label>Coupon GMV Target</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>1</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

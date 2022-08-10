@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>IntellumEnrollment</label>
+    <protected>true</protected>
+    <values>
+        <field>SF_To_JSON_Fields__c</field>
+        <value xsi:type="xsd:string">intellumapp__accepted_invite__c:accepted_invite,intellumapp__code__c:code,intellumapp__completed_activities_count__c:completed_activities_count,intellumapp__completed_on__c:completed_on,intellumapp__course_id__c:course.id,intellumapp__created_on__c:created_on,intellumapp__due_on__c:due_on,intellumapp__enrolled_on__c:enrolled_on,intellumapp__expires_on__c:expires_on,intellumapp__id__c:id,intellumapp__user_id__c:user.id,intellumapp__last_opened_on__c:last_opened_on,intellumapp__plan_quarter__c:plan_quarter,intellumapp__position__c:position,intellumapp__progress__c:progress,intellumapp__relationship_type__c:relationship_type,intellumapp__score__c:score,intellumapp__started_on__c:started_on,intellumapp__status__c:status,intellumapp__time__c:time,intellumapp__updated_on__c:updated_on,intellumapp__viewed_in_plan__c:viewed_in_plan</value>
+    </values>
+</CustomMetadata>

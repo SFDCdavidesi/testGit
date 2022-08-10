@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Required_EventAir_for_Event_Campaign</fullName>
+    <active>true</active>
+    <description>US-0007080</description>
+    <errorConditionFormula>AND(RecordType.DeveloperName = &#39;EBH_Campaign&#39;,ISPICKVAL(EBH_Channel__c , &#39;Events&#39;), ISBLANK(EventsAir_Event__c  ) ) &amp;&amp; NOT( $Setup.ActiveValidationRules__c.All_Validation_Rules_Deactivated__c )</errorConditionFormula>
+    <errorDisplayField>EventsAir_Event__c</errorDisplayField>
+    <errorMessage>Please select an Event if the Channel Event is selected</errorMessage>
+</ValidationRule>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Main_Objective__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>optional</inlineHelpText>
+    <label>Main Objective</label>
+    <required>false</required>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Start using Ads Product(s)</fullName>
+                <default>false</default>
+                <label>Start using Ads Product(s)</label>
+            </value>
+            <value>
+                <fullName>Increase Adoption</fullName>
+                <default>false</default>
+                <label>Increase Adoption</label>
+            </value>
+            <value>
+                <fullName>Increase Ad Rate</fullName>
+                <default>false</default>
+                <label>Increase Ad Rate</label>
+            </value>
+            <value>
+                <fullName>Optimization Strategy</fullName>
+                <default>false</default>
+                <label>Optimization Strategy</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UK_FVF_listing_10K_approvers_Final_Value_Fee_FVF</fullName>
+    <filterScope>Queue</filterScope>
+    <label>UK FVF listing &lt;=10K approvers</label>
+    <queue>UK_FVF_listing_10K_approvers</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NA_Deal_Program_Change__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>US-0009148 - [NA] New fields and Page Layout changes on Account for &#39;Seller&#39; recordtype</inlineHelpText>
+    <label>NA Deal Program Change</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>DateTime</type>
+</CustomField>

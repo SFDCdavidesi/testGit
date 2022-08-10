@@ -1,0 +1,9 @@
+Hi Simon,
+
+{!Ticket__c.First_Name__c} {!Ticket__c.Last_Name__c} 
+With Email:{!Ticket__c.Email_address__c} 
+has been created as a new user in Hive and requires DOMO access. 
+Please arrange.
+
+Thanks,
+The Hive Team

@@ -1,0 +1,14 @@
+<p>Gentile  {!ContFirstName}({!SellerName}),</p>
+<p>eBay ha da poco sviluppato uno strumento che compara la competitività degli articoli presenti su eBay.it con quelli di altre realtà online. Lo strumento analizza i prodotti più venduti nel mercato che hanno maggiore domanda da parte di potenziali acquirenti.</p>
+
+<p>In allegato a questa e-mail troverai i prodotti nel tuo negozio eBay che sono stati identificati dallo strumento, e il prezzo massimo che viene raccomandato per ciascuno di loro.</p>
+
+<p>Ti suggeriamo le seguenti azioni per i prodotti indicati nell’allegato.</p>
+
+<ul>
+<li><strong>Ottimizzazione dei prezzi:</strong> Ottimizza i prezzi per i tuoi prodotti più interessanti; l’ideale sarebbe offrirli ad un prezzo uguale o inferiore a quello indicato nell’allegato (colonna F della lista)</li>
+<li><strong>Opportunità di inventario:</strong> Aggiungi i prodotti indicati al tuo inventario eBay.</li>
+</ul>
+<p>Grazie in anticipo per il tuo impegno e supporto. Se hai ulteriori domande, puoi contattarci a:
+&nbsp;<a title="www.eBay.com" href="https://www.ebay.com">****@ebay.com.</a></p>
+<p>Cordialmente,<br />{!CurrentUserName}</p>

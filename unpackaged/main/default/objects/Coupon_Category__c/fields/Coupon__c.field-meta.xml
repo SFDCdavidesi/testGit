@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Coupon__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>EPH-7160 Object: Coupon Category,
+US-0011385 - External Sharing for Coupon Category/ Category Tree</description>
+    <externalId>false</externalId>
+    <label>Coupon</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Coupon__c.RecordType.DeveloperName</field>
+            <operation>equals</operation>
+            <value>Category_Based,Pop_Coupon,Item_Based</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Coupon__c</referenceTo>
+    <relationshipLabel>Coupon Categories</relationshipLabel>
+    <relationshipName>Coupon_Categories</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

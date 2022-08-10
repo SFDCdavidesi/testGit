@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0007623</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Ticket Severity - SLA about to be breached</name>
+    <style>none</style>
+    <subject>{!Case.Priority} Ticket - SLA about to be breached</subject>
+    <textOnly>A {!Case.Priority} severity ticket will breach SLA in 2 hours.
+
+Details;
+Ticket Number: {!Case.Ticket_Number__c}
+Record Type: {!Case.RecordType}
+Summary: {!Case.Summary__c}
+
+Please provide a response/resolution for this support ticket.
+
+Link to ticket - {!Case.Link}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

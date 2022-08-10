@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_Projects</fullName>
+    <columns>NAME</columns>
+    <columns>EBH_Stage__c</columns>
+    <columns>EBH_Seller__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>MainVertical__c</columns>
+    <columns>EBH_DMCInterestedCommittedDate__c</columns>
+    <columns>Main3PP__c</columns>
+    <columns>OWNER.ALIAS</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>EBH_Project__c.ManagedPayment</value>
+    </filters>
+    <label>Payment Projects All</label>
+</ListView>

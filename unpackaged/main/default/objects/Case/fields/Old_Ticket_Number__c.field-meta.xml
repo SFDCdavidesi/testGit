@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Old_Ticket_Number__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>{US-0007614} - To be used temporarily during migration to cases to allow open Tickets to be replicated in Case object with lookup to original ticket. Once historic tickets are closed, this field will be removed.</description>
+    <externalId>false</externalId>
+    <label>Old Ticket Number</label>
+    <referenceTo>Ticket__c</referenceTo>
+    <relationshipLabel>Tickets</relationshipLabel>
+    <relationshipName>OldTicketNumber</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

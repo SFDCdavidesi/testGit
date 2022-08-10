@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_eBayLegalEntity2__c</fullName>
+    <description>[EBH] (EPH-1818) - Auto-populate  eBay legal entity based on country</description>
+    <externalId>false</externalId>
+    <formula>IF(OR( 
+  Account.EBH_BillingCountry__c =&#39;AT&#39;,
+  Account.EBH_BillingCountry__c =&#39;BE&#39;,
+  Account.EBH_BillingCountry__c =&#39;BG&#39;,
+  Account.EBH_BillingCountry__c =&#39;HR&#39;,
+  Account.EBH_BillingCountry__c =&#39;CY&#39;,
+  Account.EBH_BillingCountry__c =&#39;CZ&#39;,
+  Account.EBH_BillingCountry__c =&#39;DK&#39;,
+  Account.EBH_BillingCountry__c =&#39;EE&#39;,
+  Account.EBH_BillingCountry__c =&#39;FI&#39;,
+  Account.EBH_BillingCountry__c =&#39;FR&#39;,
+  Account.EBH_BillingCountry__c =&#39;DE&#39;,
+  Account.EBH_BillingCountry__c =&#39;GR&#39;,
+  Account.EBH_BillingCountry__c =&#39;HU&#39;,
+  Account.EBH_BillingCountry__c =&#39;IE&#39;,
+  Account.EBH_BillingCountry__c =&#39;IT&#39;,
+  Account.EBH_BillingCountry__c =&#39;LV&#39;,
+  Account.EBH_BillingCountry__c =&#39;LT&#39;,
+  Account.EBH_BillingCountry__c =&#39;LU&#39;,
+  Account.EBH_BillingCountry__c =&#39;MT&#39;,
+  Account.EBH_BillingCountry__c =&#39;NL&#39;,
+  Account.EBH_BillingCountry__c =&#39;PL&#39;,
+  Account.EBH_BillingCountry__c =&#39;PT&#39;,
+  Account.EBH_BillingCountry__c =&#39;RO&#39;,
+  Account.EBH_BillingCountry__c =&#39;SK&#39;,
+  Account.EBH_BillingCountry__c =&#39;SI&#39;,
+  Account.EBH_BillingCountry__c =&#39;ES&#39;,
+  Account.EBH_BillingCountry__c =&#39;SE&#39;, 
+  Account.EBH_BillingCountry__c =&#39;Austria&#39;,
+  Account.EBH_BillingCountry__c =&#39;Belgium&#39;,
+  Account.EBH_BillingCountry__c =&#39;Bulgaria&#39;,
+  Account.EBH_BillingCountry__c =&#39;Croatia&#39;,
+  Account.EBH_BillingCountry__c =&#39;Cyprus&#39;,
+  Account.EBH_BillingCountry__c =&#39;Czech Republic&#39;,
+  Account.EBH_BillingCountry__c =&#39;Denmark&#39;,
+  Account.EBH_BillingCountry__c =&#39;Estonia&#39;,
+  Account.EBH_BillingCountry__c =&#39;Finland&#39;,
+  Account.EBH_BillingCountry__c =&#39;France&#39;,
+  Account.EBH_BillingCountry__c =&#39;Germany&#39;,
+  Account.EBH_BillingCountry__c =&#39;Greece&#39;,
+  Account.EBH_BillingCountry__c =&#39;Hungary&#39;,
+  Account.EBH_BillingCountry__c =&#39;Ireland&#39;,
+  Account.EBH_BillingCountry__c =&#39;Italy&#39;,
+  Account.EBH_BillingCountry__c =&#39;Latvia&#39;,
+  Account.EBH_BillingCountry__c =&#39;Lithuania&#39;,
+  Account.EBH_BillingCountry__c =&#39;Luxembourg&#39;,
+  Account.EBH_BillingCountry__c =&#39;Malta&#39;,
+  Account.EBH_BillingCountry__c =&#39;Netherlands&#39;,
+  Account.EBH_BillingCountry__c =&#39;Poland&#39;,
+  Account.EBH_BillingCountry__c =&#39;Portugal&#39;,
+  Account.EBH_BillingCountry__c =&#39;Romania&#39;,
+  Account.EBH_BillingCountry__c =&#39;Slovakia&#39;,
+  Account.EBH_BillingCountry__c =&#39;Slovenia&#39;,
+  Account.EBH_BillingCountry__c =&#39;Spain&#39;,
+  Account.EBH_BillingCountry__c =&#39;Sweden&#39;), 
+  IF(CompanySignedDate &lt; DATE(2018,5,1),&#39;eBay Europe S.à r.l.&#39;,&#39;eBay GmbH&#39;),
+    IF(OR(
+      Account.EBH_BillingCountry__c =&#39;UK&#39;,
+      Account.EBH_BillingCountry__c =&#39;GB&#39;,
+      Account.EBH_BillingCountry__c =&#39;United Kingdom&#39;),
+      &#39;eBay (UK) Limited&#39; ,
+      &#39;eBay Marketplaces Gmbh&#39;
+    )
+  )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>eBay Legal Entity</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

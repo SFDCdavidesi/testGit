@@ -1,0 +1,8 @@
+Dear {!BoB_Seller__c.Account_Manager__c}
+<br><br>
+Your seller ({!BoB_Seller__c.Seller_Name__c}) has rescheduled their call to ({!BoB_Seller__c.Next_Call_Schedule_Date__c} {!BoB_Seller__c.Next_Call_Time__c}).
+<br><br>
+Please review the cohort seller record ({!BoB_Seller__c.Link}) and adjust your workload accordingly.
+<br><br>
+Thank you,<br>
+HIVE.

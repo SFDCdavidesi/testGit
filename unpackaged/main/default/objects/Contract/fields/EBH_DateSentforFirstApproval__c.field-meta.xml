@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_DateSentforFirstApproval__c</fullName>
+    <description>[EBH] (US-0039) : To capture the date when the Contract status is changed to Pending Approval</description>
+    <externalId>false</externalId>
+    <label>Date Sent for First Approval</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

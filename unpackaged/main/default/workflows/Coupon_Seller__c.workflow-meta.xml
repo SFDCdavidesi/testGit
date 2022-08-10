@@ -1,0 +1,803 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>AU_Contract_Breach</fullName>
+        <description>AU Contract Breach</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Seller_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>EBH_CouponSellerOwner__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>sg-marketing-replies@ebay.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Coupon_Templates/Coupon_Seller_Contract_Breach_AU</template>
+    </alerts>
+    <alerts>
+        <fullName>Contract_Reminder_1D_AU</fullName>
+        <description>Contract_Reminder_1D_AU</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Seller_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>EBH_CouponSellerOwner__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>sg-marketing-replies@ebay.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Coupon_Templates/CouponSeller_Contract_Reminder_AU</template>
+    </alerts>
+    <alerts>
+        <fullName>Contract_Reminder_3D_AU</fullName>
+        <description>Contract_Reminder_3D_AU</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Seller_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>EBH_CouponSellerOwner__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>sg-marketing-replies@ebay.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Coupon_Templates/CouponSeller_Contract_Reminder_AU</template>
+    </alerts>
+    <alerts>
+        <fullName>Contract_confirmation_for_Coupon</fullName>
+        <description>Contract confirmation for Coupon</description>
+        <protected>false</protected>
+        <recipients>
+            <field>EBH_CouponSellerOwner__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/Contract_confirmation_for_Coupon</template>
+    </alerts>
+    <alerts>
+        <fullName>Coupon_Contract_Voided</fullName>
+        <description>Coupon Contract Voided</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Seller_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>EBH_CouponSellerOwner__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>sg-marketing-replies@ebay.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>EBH_EmailTemplates/Contract_Voided_Coupon_AU</template>
+    </alerts>
+    <alerts>
+        <fullName>Coupon_Contract_Voided_AU</fullName>
+        <description>Coupon Contract Voided AU</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Seller_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>EBH_CouponSellerOwner__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>sg-marketing-replies@ebay.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>EBH_EmailTemplates/Contract_Voided_Coupon_AU</template>
+    </alerts>
+    <alerts>
+        <fullName>Coupon_Seller_Items_Uploaded_by_Seller</fullName>
+        <description>Coupon Seller Items Uploaded by Seller</description>
+        <protected>false</protected>
+        <recipients>
+            <field>EBH_CouponSellerOwner__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/Coupon_Seller_Items_Uploaded_by_Seller</template>
+    </alerts>
+    <alerts>
+        <fullName>NA_Coupons_Co_fund_approvers_Email_Alert</fullName>
+        <description>NA Coupons Co-fund approvers Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>NA_Coupons_Co_fund_approvers</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Coupon_Templates/NA_Coupons_Co_fund_approval_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>UK_Coupon_Approval_Email</fullName>
+        <description>UK Coupon Approval Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>EBH_CouponSellerOwner__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/UK_Coupon_Approved_Owner_Notification</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>AssignCofundEndDateFromCoupon</fullName>
+        <description>[EPH-6086] have coupon details in Hive</description>
+        <field>Cofund_End_Date__c</field>
+        <formula>Coupon__r.Coupon_End_Date__c</formula>
+        <name>AssignCofundEndDateFromCoupon</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>AssignCofundStartDateFromCoupon</fullName>
+        <description>[EPH-6086] have coupon details in Hive</description>
+        <field>Cofund_Start_Date__c</field>
+        <formula>Coupon__r.Coupon_Start_Date__c</formula>
+        <name>AssignCofundStartDateFromCoupon</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>AssignInvoiceSendDate</fullName>
+        <description>EPH-7157 Object: Coupon Seller</description>
+        <field>Invoice_Send_Date__c</field>
+        <formula>NOW()</formula>
+        <name>AssignInvoiceSendDate</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Day_1_alert</fullName>
+        <field>Day_1_Alert__c</field>
+        <formula>TODAY()</formula>
+        <name>Day 1 alert</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Legal_Entity_City</fullName>
+        <description>US-0010003 - Coupon seller: create new field Legal Entity City</description>
+        <field>Legal_Entity_City__c</field>
+        <formula>Seller__r.EBH_BillingCity__c</formula>
+        <name>Legal Entity City</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Legal_Entity_Country</fullName>
+        <description>US-0010429 - Ability to sign Agreement in portal</description>
+        <field>Legal_Entity_Country__c</field>
+        <formula>Seller__r.Parent.EBH_BillingCountry__c</formula>
+        <name>Legal Entity Country</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Legal_Entity_Name</fullName>
+        <description>EPH-7583 Change logic for contactdatafields in coupon seller</description>
+        <field>Legal_Entity_Name_w__c</field>
+        <formula>Seller__r.EBH_CompanyName__c</formula>
+        <name>Legal Entity Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Legal_Entity_Street_1</fullName>
+        <description>US-0007150 Hyper Care Bug - Legal Entity Street Name is not populated in Coupon Seller records (Issue exists for both AU and EU)</description>
+        <field>Legal_Entity_Street_w__c</field>
+        <formula>Seller__r.EBH_BillingAddress__c</formula>
+        <name>Legal Entity Street 1</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Legal_Entity_Zip</fullName>
+        <description>EPH-7583 Change logic for contactdatafields in coupon seller</description>
+        <field>Legal_Entity_Zip_w__c</field>
+        <formula>Seller__r.EBH_BillingPostalCode__c</formula>
+        <name>Legal Entity Zip</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Populate_Currency</fullName>
+        <description>EPH-8096
+Coupon Seller - Add missing fields for BCD by creation</description>
+        <field>Currency__c</field>
+        <formula>Seller__r.ISO_Currency_Code__c</formula>
+        <name>Populate Currency</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Populate_External_ID</fullName>
+        <description>EPH-8096
+Coupon Seller - Add missing fields for BCD by creation</description>
+        <field>External_ID__c</field>
+        <formula>Seller__r.BCD_External_Id__c</formula>
+        <name>Populate External ID</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Populate_Provider_ID</fullName>
+        <description>Provider ID</description>
+        <field>Provider_ID__c</field>
+        <formula>Seller__r.Registration_Site_ID__c</formula>
+        <name>Populate Provider ID</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Seller_Declined_Reason</fullName>
+        <field>Seller_Declined_Reasons__c</field>
+        <literalValue>Contract Voided</literalValue>
+        <name>Seller Declined Reason</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TriggerCouponSellerStageUpdatedDate</fullName>
+        <description>to avoid error on Coupon Seller trigger blockManualSetStage</description>
+        <field>TriggerStageUpdatedDate__c</field>
+        <formula>NOW()</formula>
+        <name>TriggerCouponSellerStageUpdatedDate</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UK_Coupon_Launch_Reminder_Date</fullName>
+        <description>US-0007639 - Coupon Launch Reminder Templates</description>
+        <field>UK_Coupon_Launch_Reminder_Date__c</field>
+        <formula>NOW()</formula>
+        <name>UK Coupon Launch Reminder Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UpdateTriggerDate_T34_DE</fullName>
+        <description>US-0018725 	Coupon Seller - Add condition to workflow for stage T4Statement and T40 Statement.
+update the field to activate the trigger to sendmail and set status</description>
+        <field>Day34AfterCouponEnd_Trigger_DE__c</field>
+        <formula>NOW()</formula>
+        <name>UpdateTriggerDate_T34_DE</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UpdateTriggerDate_T4_DE</fullName>
+        <description>US-0018725 	Coupon Seller - Add condition to workflow for stage T4Statement and T40 Statement.
+update the field to activate the trigger to sendmail and set status</description>
+        <field>Day4AfterCouponEnd_Trigger_DE__c</field>
+        <formula>NOW()</formula>
+        <name>UpdateTriggerDate_T4_DE</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Breach_Reason</fullName>
+        <description>US-0007208 Coupon Seller - Clear Field &quot;Declined Reason&quot; when sending contract</description>
+        <field>Breach_Reason__c</field>
+        <name>Update Breach Reason</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Coupon_Seller_Stage</fullName>
+        <field>Coupon_Seller_Stage__c</field>
+        <literalValue>Seller Declined</literalValue>
+        <name>Update Coupon Seller Stage</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Coupon_Seller_Stage_Negotiation</fullName>
+        <field>Coupon_Seller_Stage__c</field>
+        <literalValue>Contract Negotiation</literalValue>
+        <name>Update Coupon Seller Stage Negotiation</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Coupon_Seller_Stage_To_Approved</fullName>
+        <field>Coupon_Seller_Stage__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Update Coupon Seller Stage To Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Coupon_Seller_Status_to_T34</fullName>
+        <description>EPH-7565 Coupon - Manhattan Invoice Statment send to coupon seller</description>
+        <field>Coupon_Seller_Stage__c</field>
+        <literalValue>T34 Statement Send</literalValue>
+        <name>Update Coupon Seller Status to T34</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Coupon_Seller_Status_to_T4</fullName>
+        <description>EPH-7565 Coupon - Manhattan Invoice Statment send to coupon seller</description>
+        <field>Coupon_Seller_Stage__c</field>
+        <literalValue>T4 Statement Send</literalValue>
+        <name>Update Coupon Seller Status to T4</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Coupon_Seller_Status_to_T40</fullName>
+        <description>EPH-7565 Coupon - Manhattan Invoice Statment send to coupon seller</description>
+        <field>Coupon_Seller_Stage__c</field>
+        <literalValue>T34 Statement Send</literalValue>
+        <name>Update Coupon Seller Status to T40</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Legal_Entity</fullName>
+        <description>US-0008488 - [AU] Legal Entity Validation for Coupons</description>
+        <field>Legal_Entity_Name_w__c</field>
+        <formula>Seller__r.Name</formula>
+        <name>Update Legal Entity</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_SELLER_DECLINED_REASON</fullName>
+        <description>US-0007208 Coupon Seller - Clear Field &quot;Declined Reason&quot; when sending contract</description>
+        <field>Seller_Declined_Reasons__c</field>
+        <name>Update SELLER_DECLINED_REASON</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>AU Contract Breach</fullName>
+        <actions>
+            <name>AU_Contract_Breach</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>US-0018788: [AU] Contract Breach Email Notification,
+US-0010176 - MC: Coupon email notifications to external users</description>
+        <formula>AND(ISPICKVAL( Coupon_Seller_Stage__c , &quot;Seller Declined&quot;) , ISPICKVAL( Seller_Declined_Reasons__c , &quot;Contract Breach&quot;) , ISPICKVAL( Coupon__r.Contract_Language__c , &quot;AU&quot;), !MC_Whitelisted__c)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Approved Coupon sellers to UK coupon seller owner</fullName>
+        <actions>
+            <name>UK_Coupon_Approval_Email</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Coupon_Seller__c.Coupon_Seller_Stage__c</field>
+            <operation>equals</operation>
+            <value>Approved</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Coupon_Seller__c.Contract_Language__c</field>
+            <operation>equals</operation>
+            <value>UK</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Coupon_Seller__c.MC_Whitelisted__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <description>US-0007173: UK Coupon Approval Email - to Coupon Seller Owner [NOTE: THIS IS NOT STANDARD SF APPROVAL FLOW],
+US-0010176 - MC: Coupon email notifications to external users</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Clear Declined Reason When sending Contract</fullName>
+        <actions>
+            <name>Update_Breach_Reason</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_SELLER_DECLINED_REASON</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>US-0007208 Coupon Seller - Clear Field &quot;Declined Reason&quot; when sending contract</description>
+        <formula>AND(ISCHANGED( Coupon_Seller_Stage__c ) , NOT(ISPICKVAL(Coupon_Seller_Stage__c, &#39;Seller Declined&#39;)))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Cofund Date Assignment</fullName>
+        <actions>
+            <name>AssignCofundEndDateFromCoupon</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>AssignCofundStartDateFromCoupon</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>[EPH-6086] have coupon details in Hive  (Depreciated. moved to Flow)</description>
+        <formula>OR( NOT(ISNULL(Coupon__r.Coupon_End_Date__c)), NOT(ISNULL(Coupon__r.Coupon_Start_Date__c))  )</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Contract Void</fullName>
+        <active>false</active>
+        <description>US-0006482 Coupon - Contract Voiding for DE, UK, FR, IT &amp; ES</description>
+        <formula>AND( OR(ISPICKVAL( Coupon__r.Contract_Language__c , &quot;DE&quot;),ISPICKVAL( Coupon__r.Contract_Language__c , &quot;UK&quot;),ISPICKVAL( Coupon__r.Contract_Language__c , &quot;FR&quot;),ISPICKVAL( Coupon__r.Contract_Language__c , &quot;IT&quot;),ISPICKVAL( Coupon__r.Contract_Language__c , &quot;ES&quot;)) , OR( Coupon__r.RecordType.DeveloperName = &quot;Category_Based&quot;, Coupon__r.RecordType.DeveloperName = &quot;Item_Based&quot;),  ISBLANK(Contract_Accept_Date__c ) )</formula>
+        <triggerType>onCreateOnly</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Seller_Declined_Reason</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <actions>
+                <name>Update_Coupon_Seller_Stage</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Coupon_Seller__c.Coupon_Contract_Due_Date__c</offsetFromField>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Contract Void 2</fullName>
+        <active>true</active>
+        <description>US-0006482 Coupon - Contract Voiding for DE, UK, FR, IT &amp; ES (cloned)</description>
+        <formula>AND( OR(ISPICKVAL( Coupon__r.Contract_Language__c , &quot;DE&quot;),ISPICKVAL( Coupon__r.Contract_Language__c , &quot;UK&quot;),ISPICKVAL( Coupon__r.Contract_Language__c , &quot;FR&quot;),ISPICKVAL( Coupon__r.Contract_Language__c , &quot;IT&quot;),ISPICKVAL( Coupon__r.Contract_Language__c , &quot;ES&quot;)) , OR( Coupon__r.RecordType.DeveloperName = &quot;Category_Based&quot;, Coupon__r.RecordType.DeveloperName = &quot;Item_Based&quot;),  ISBLANK(Contract_Accept_Date__c ) )</formula>
+        <triggerType>onCreateOnly</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Seller_Declined_Reason</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <actions>
+                <name>Update_Coupon_Seller_Stage</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Coupon_Seller__c.Coupon_Contract_Due_Date__c</offsetFromField>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Contract Void AU</fullName>
+        <active>true</active>
+        <description>US-0018761:[AU] Contract Voided Email notification to all AU Coupon Sellers,
+US-0010176 - Move Sending Email action to other new workflow</description>
+        <formula>AND(ISPICKVAL( Coupon__r.Contract_Language__c , &quot;AU&quot;), OR( Coupon__r.RecordType.DeveloperName = &quot;Category_Based&quot;, Coupon__r.RecordType.DeveloperName = &quot;Item_Based&quot;),  ISBLANK(Contract_Accept_Date__c ) )</formula>
+        <triggerType>onCreateOnly</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Seller_Declined_Reason</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <actions>
+                <name>Update_Coupon_Seller_Stage</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Coupon_Seller__c.Coupon_Contract_Due_Date__c</offsetFromField>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Contract Void AU %28Send Email%29</fullName>
+        <active>false</active>
+        <description>US-0010176 - Clone from Contract Void AU but keep only Sending Email action.</description>
+        <formula>AND(ISPICKVAL( Coupon__r.Contract_Language__c , &quot;AU&quot;), OR( Coupon__r.RecordType.DeveloperName = &quot;Category_Based&quot;, Coupon__r.RecordType.DeveloperName = &quot;Item_Based&quot;),  ISBLANK(Contract_Accept_Date__c ), !MC_Whitelisted__c)</formula>
+        <triggerType>onCreateOnly</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Coupon_Contract_Voided_AU</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Coupon_Seller__c.Coupon_Contract_Due_Date__c</offsetFromField>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Contract confirmation for Coupon</fullName>
+        <actions>
+            <name>Contract_confirmation_for_Coupon</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>US-0006467 Contract confirmation for FVF &amp; Coupon,
+US-0010176 - MC: Coupon email notifications to external users</description>
+        <formula>IF( AND(ISPICKVAL( Coupon_Seller_Stage__c , &#39;Contract Signed&#39;), !MC_Whitelisted__c) , true, false)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Contract_Reminder_1D_AU</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Coupon_Seller__c.Coupon_Seller_Stage__c</field>
+            <operation>equals</operation>
+            <value>Contract Send</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Coupon_Seller__c.Contract_Accept_Date_Z__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Coupon_Seller__c.Contract_Language__c</field>
+            <operation>equals</operation>
+            <value>AU</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Coupon_Seller__c.MC_Whitelisted__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <description>US-0018762: [AU] Contract Reminder Email notification to all AU Coupon Sellers,
+US-0010176 - MC: Coupon email notifications to external users</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Contract_Reminder_1D_AU</name>
+                <type>Alert</type>
+            </actions>
+            <actions>
+                <name>Day_1_alert</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Coupon_Seller__c.Coupon_Contract_Due_Date__c</offsetFromField>
+            <timeLength>-1</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Contract_Reminder_3D_AU</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Coupon_Seller__c.Coupon_Seller_Stage__c</field>
+            <operation>equals</operation>
+            <value>Contract Send</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Coupon_Seller__c.Contract_Accept_Date__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Coupon_Seller__c.Contract_Language__c</field>
+            <operation>equals</operation>
+            <value>AU</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Coupon_Seller__c.MC_Whitelisted__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <description>US-0018762: [AU] Contract Reminder Email notification to all AU Coupon Sellers,
+US-0010176 - MC: Coupon email notifications to external users</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Contract_Reminder_3D_AU</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Coupon_Seller__c.Coupon_Contract_Due_Date__c</offsetFromField>
+            <timeLength>-3</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Coupon Launch Reminder Templates</fullName>
+        <active>true</active>
+        <description>US-0007639 - Coupon Launch Reminder Templates</description>
+        <formula>ISPICKVAL(Coupon__r.Contract_Language__c , &#39;UK&#39;) &amp;&amp;  ISPICKVAL( Coupon_Seller_Stage__c , &#39;Contract Signed&#39;) &amp;&amp;  RecordType.DeveloperName  = &#39;Manhattan_Coupon&#39;</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>UK_Coupon_Launch_Reminder_Date</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Coupon_Seller__c.Coupon_Start_Date__c</offsetFromField>
+            <timeLength>-2</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>DE Coupon Seller Invoice Statement after the coupon end date</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Coupon_Seller__c.TriggerEmailManhattan__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Coupon_Seller__c.Contract_Language__c</field>
+            <operation>equals</operation>
+            <value>DE</value>
+        </criteriaItems>
+        <description>EPH-7565 Coupon - Manhattan Invoice Statement send to coupon seller
+DEPRECIATED: MOVED TO ANOTHER WORKFLOW: Trigger 4 and 34 days Activation</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>UpdateTriggerDate_T4_DE</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Coupon_Seller__c.Coupon_End_Date__c</offsetFromField>
+            <timeLength>4</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>UpdateTriggerDate_T34_DE</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Coupon_Seller__c.Coupon_End_Date__c</offsetFromField>
+            <timeLength>34</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>DE Coupon Seller Invoice Statement after the coupon end date2</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Coupon_Seller__c.TriggerEmailManhattan__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>EPH-7565 Coupon - Manhattan Invoice Statement send to coupon seller
+deactivate to wait for: ETL elements EBH-7408</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>TriggerCouponSellerStageUpdatedDate</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <actions>
+                <name>Update_Coupon_Seller_Status_to_T4</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Coupon_Seller__c.Coupon_End_Date__c</offsetFromField>
+            <timeLength>4</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>TriggerCouponSellerStageUpdatedDate</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <actions>
+                <name>Update_Coupon_Seller_Status_to_T40</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Coupon_Seller__c.Coupon_End_Date__c</offsetFromField>
+            <timeLength>40</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Invoice Send Date Assignment</fullName>
+        <actions>
+            <name>AssignInvoiceSendDate</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Coupon_Seller__c.Coupon_Seller_Stage__c</field>
+            <operation>equals</operation>
+            <value>Invoice send</value>
+        </criteriaItems>
+        <description>EPH-7157 Object: Coupon Seller</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>PopulateLegalEntity</fullName>
+        <actions>
+            <name>Legal_Entity_City</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Legal_Entity_Country</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Legal_Entity_Name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Legal_Entity_Street_1</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Legal_Entity_Zip</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>EPH-7583 Change logic for contactdatafields in coupon seller</description>
+        <formula>ISNEW() || (NOT(ISNEW()) &amp;&amp;  ISCHANGED( Seller__c ) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>PopulatedCouponSellerFields</fullName>
+        <actions>
+            <name>Populate_Currency</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Populate_External_ID</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Populate_Provider_ID</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>EPH-8096
+Coupon Seller - Add missing fields for BCD by creation</description>
+        <formula>NOT(ISNULL(Seller__c))</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Populated_LegalEntity_From_BusinessName</fullName>
+        <actions>
+            <name>Update_Legal_Entity</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>US-0008488 - AC1</description>
+        <formula>IF(AND( ISPICKVAL(Coupon_Seller_Stage__c , &#39;Contract Send&#39;),          INCLUDES( Coupon__r.Couponsite_s__c , &#39;ebay.com.au&#39;),           ISBLANK( Legal_Entity_Name_w__c ) ,  ISPICKVAL(          Coupon__r.Contract_Language__c , &#39;AU&#39;)        ) ,            true,          false )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

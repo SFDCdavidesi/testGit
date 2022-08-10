@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Attendees_in_the_Scheduled_Meeting__c</fullName>
+    <externalId>false</externalId>
+    <label>Attendees in the Scheduled Meeting</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Client - regular contact</fullName>
+                <default>false</default>
+                <label>Client - regular contact</label>
+            </value>
+            <value>
+                <fullName>Decision makers</fullName>
+                <default>false</default>
+                <label>Decision makers</label>
+            </value>
+            <value>
+                <fullName>Agency</fullName>
+                <default>false</default>
+                <label>Agency</label>
+            </value>
+            <value>
+                <fullName>eComm Team</fullName>
+                <default>false</default>
+                <label>eComm Team</label>
+            </value>
+            <value>
+                <fullName>Ads/Marketing Team</fullName>
+                <default>false</default>
+                <label>Ads/Marketing Team</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

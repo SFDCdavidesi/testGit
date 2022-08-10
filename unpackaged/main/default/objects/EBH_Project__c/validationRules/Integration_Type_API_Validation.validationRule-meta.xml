@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Integration_Type_API_Validation</fullName>
+    <active>true</active>
+    <description>US-0007498</description>
+    <errorConditionFormula>AND(
+   OR(ISPICKVAL(Integration_type__c, &#39;API&#39;),
+      ISPICKVAL(Integration_type__c, &#39;API Hybrid&#39;),
+      ISPICKVAL(Integration_type__c, &#39;MIP Hybrid&#39;)
+      ),
+   ISBLANK(TEXT(API__c)),
+NOT( $Setup.ActiveValidationRules__c.All_Validation_Rules_Deactivated__c )
+)</errorConditionFormula>
+    <errorMessage>For sellers with Integration type API it is required to specify API</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Coupon_Currency_Code_h__c</fullName>
+    <description>07195 - Coupon Co-Invest records creation is causing System.LimitException: Too many SOQL queries: 101 error</description>
+    <externalId>false</externalId>
+    <formula>TEXT(Coupon_Name__r.CurrencyIsoCode)</formula>
+    <label>Coupon Currency Code</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

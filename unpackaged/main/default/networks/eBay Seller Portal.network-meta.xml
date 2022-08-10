@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Network xmlns="http://soap.sforce.com/2006/04/metadata">
+    <allowInternalUserLogin>false</allowInternalUserLogin>
+    <allowMembersToFlag>false</allowMembersToFlag>
+    <changePasswordTemplate>EBH_EmailTemplates/Forgot_Password_Email</changePasswordTemplate>
+    <communityRoles/>
+    <disableReputationRecordConversations>false</disableReputationRecordConversations>
+    <emailFooterText>ebay.com</emailFooterText>
+    <emailSenderAddress>sellerportal@ebay.com</emailSenderAddress>
+    <emailSenderName>eBay Seller Portal</emailSenderName>
+    <enableCustomVFErrorPageOverrides>false</enableCustomVFErrorPageOverrides>
+    <enableDirectMessages>false</enableDirectMessages>
+    <enableExperienceBundleBasedSnaOverrideEnabled>true</enableExperienceBundleBasedSnaOverrideEnabled>
+    <enableGuestChatter>false</enableGuestChatter>
+    <enableGuestFileAccess>true</enableGuestFileAccess>
+    <enableGuestMemberVisibility>false</enableGuestMemberVisibility>
+    <enableInvitation>false</enableInvitation>
+    <enableKnowledgeable>false</enableKnowledgeable>
+    <enableMemberVisibility>false</enableMemberVisibility>
+    <enableNicknameDisplay>false</enableNicknameDisplay>
+    <enablePrivateMessages>false</enablePrivateMessages>
+    <enableReputation>false</enableReputation>
+    <enableShowAllNetworkSettings>true</enableShowAllNetworkSettings>
+    <enableSiteAsContainer>true</enableSiteAsContainer>
+    <enableTalkingAboutStats>false</enableTalkingAboutStats>
+    <enableTopicAssignmentRules>true</enableTopicAssignmentRules>
+    <enableTopicSuggestions>false</enableTopicSuggestions>
+    <enableUpDownVote>false</enableUpDownVote>
+    <forgotPasswordTemplate>EBH_EmailTemplates/Forgot_Password_Email</forgotPasswordTemplate>
+    <gatherCustomerSentimentData>true</gatherCustomerSentimentData>
+    <networkMemberGroups>
+        <permissionSet>NA_Seller_Portal_Deals</permissionSet>
+        <permissionSet>DE_Seller_Portal_Deals</permissionSet>
+        <profile>Admin</profile>
+        <profile>NA - Seller Portal</profile>
+        <profile>DE - Seller Portal</profile>
+        <profile>Business Admin</profile>
+        <profile>AU - Seller Portal</profile>
+    </networkMemberGroups>
+    <networkPageOverrides>
+        <changePasswordPageOverrideSetting>Standard</changePasswordPageOverrideSetting>
+        <forgotPasswordPageOverrideSetting>Designer</forgotPasswordPageOverrideSetting>
+        <homePageOverrideSetting>Designer</homePageOverrideSetting>
+        <loginPageOverrideSetting>Designer</loginPageOverrideSetting>
+        <selfRegProfilePageOverrideSetting>Designer</selfRegProfilePageOverrideSetting>
+    </networkPageOverrides>
+    <picassoSite>eBay_Seller_Portal1</picassoSite>
+    <selfRegistration>false</selfRegistration>
+    <sendWelcomeEmail>false</sendWelcomeEmail>
+    <site>eBay_Seller_Portal</site>
+    <siteArchiveStatus>NotArchived</siteArchiveStatus>
+    <status>Live</status>
+    <tabs>
+        <defaultTab>home</defaultTab>
+        <standardTab>Chatter</standardTab>
+    </tabs>
+    <welcomeTemplate>EBH_EmailTemplates/Add_User_Welcome_Email_Template</welcomeTemplate>
+</Network>

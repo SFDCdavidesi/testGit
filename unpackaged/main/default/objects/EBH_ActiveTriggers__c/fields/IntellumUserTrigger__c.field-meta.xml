@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IntellumUserTrigger__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>US-0010284 - [Intellum] Improve matching for base integration with Intellum</description>
+    <externalId>false</externalId>
+    <label>IntellumUserTrigger</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

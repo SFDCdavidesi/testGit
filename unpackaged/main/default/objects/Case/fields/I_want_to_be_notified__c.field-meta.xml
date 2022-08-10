@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_want_to_be_notified__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>field used for sending notifications to the users when the status of the ticket changes</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please check this field if you want to be informed when this ticket changes its status</inlineHelpText>
+    <label>I want to be notified</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

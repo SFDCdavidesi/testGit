@@ -1,0 +1,14 @@
+<table border="0" cellpadding="5" width="600" cellspacing="5" height="400" >
+<tr valign="top" height="50" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<font face="Arial, sans-serif" style="" size="6" color="#000099"><b style="">Final Notification</b></font>]]></td>
+</tr>
+<tr valign="top" height="300" >
+<td tEditID="c1r2" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r2" locked="0" >
+<![CDATA[<div style="color: rgb(0, 0, 0); font-size: 12pt; font-family: arial;"><font style="" face="Arial, sans-serif" size="5">Dear {!User.FirstName},</font></div><div style="color: rgb(0, 0, 0); font-size: 12pt; font-family: arial;"><font face="Arial, sans-serif" size="5"><br></font></div><div style="color: rgb(0, 0, 0); font-size: 12pt; font-family: arial;"><font face="Arial, sans-serif" size="5">This is a final notification before your access to Hive is deactivated in a week if no action is taken.</font></div><div style="color: rgb(0, 0, 0); font-size: 12pt; font-family: arial;"><font face="Arial, sans-serif" size="5"><br></font></div><div style="color: rgb(0, 0, 0); font-size: 12pt; font-family: arial;"><font face="Arial, sans-serif" size="5">Please click on the following link to login to Hive: <a href="https://hive.lightning.force.com">https://hive.lightning.force.com</a></font></div><div style="color: rgb(0, 0, 0); font-size: 12pt; font-family: arial;"><font face="Arial, sans-serif" size="5"><br></font></div><div style="color: rgb(0, 0, 0); font-size: 12pt; font-family: arial;"><font face="Arial, sans-serif" size="5"><br></font></div><div style="color: rgb(0, 0, 0); font-size: 12pt; font-family: arial;"><font face="Arial, sans-serif" size="5">Kind regards</font></div><div style="color: rgb(0, 0, 0); font-size: 12pt; font-family: arial;"><font face="Arial, sans-serif" size="5"><br></font></div><div style="color: rgb(0, 0, 0); font-size: 12pt; font-family: arial;"><font face="arial"><br></font></div><div style="color: rgb(0, 0, 0); font-size: 12pt; font-family: arial;"><font face="arial"><br></font></div><div style="color: rgb(0, 0, 0); font-size: 12pt; font-family: arial;"><font face="arial">&nbsp;</font></div><div style="color: rgb(0, 0, 0); font-size: 12pt; font-family: arial;"><font face="arial">&nbsp;</font></div><div style=""><font style="" face="Arial, sans-serif" size="5" color="#ffcc66"><b style="">The Project Hive Team</b></font></div><div style="color: rgb(0, 0, 0); font-size: 12pt; font-family: arial;"><br></div>]]></td>
+</tr>
+<tr valign="top" height="50" >
+<td tEditID="c1r3" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r3" locked="0" >
+<![CDATA[]]></td>
+</tr>
+</table>

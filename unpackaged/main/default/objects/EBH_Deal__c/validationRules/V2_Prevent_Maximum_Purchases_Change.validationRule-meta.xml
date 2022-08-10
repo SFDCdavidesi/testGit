@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>V2_Prevent_Maximum_Purchases_Change</fullName>
+    <active>true</active>
+    <description>US-0011165 - [NA Deals] New Validation rule to change Maximum Purchases quantity</description>
+    <errorConditionFormula>AND(
+    NOT($Setup.byPass__c.ByPass_Validation__c),
+    RecordType.DeveloperName = &quot;Deal_V2&quot;,
+    ISCHANGED(EBH_MaximumPurchases__c),
+    OR(
+    ISPICKVAL(EBH_Status__c,&quot;Sent to Seller&quot;),
+    ISPICKVAL(EBH_Status__c,&quot;Seller Approved&quot;),
+    ISPICKVAL(EBH_Status__c,&quot;Running&quot;),
+    ISPICKVAL(EBH_Status__c,&quot;Completed&quot;)
+    )
+)</errorConditionFormula>
+    <errorMessage>Insufficient Privileges to change Maximum Purchases at this stage. Please create a new Deal</errorMessage>
+</ValidationRule>

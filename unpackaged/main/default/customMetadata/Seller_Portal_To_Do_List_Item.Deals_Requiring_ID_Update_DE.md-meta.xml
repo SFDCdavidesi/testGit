@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Deals Requiring ID Update DE</label>
+    <protected>false</protected>
+    <values>
+        <field>Item_Plural_Label__c</field>
+        <value xsi:type="xsd:string">Die eBay-Artikelnummer fehlt</value>
+    </values>
+    <values>
+        <field>Item_Singular_Label__c</field>
+        <value xsi:type="xsd:string">Die eBay-Artikelnummer fehlt</value>
+    </values>
+    <values>
+        <field>Order__c</field>
+        <value xsi:type="xsd:double">4.0</value>
+    </values>
+    <values>
+        <field>Parent_Item__c</field>
+        <value xsi:type="xsd:string">Deals_Aggregate_DE</value>
+    </values>
+    <values>
+        <field>Query__c</field>
+        <value xsi:type="xsd:string">SELECT COUNT() FROM EBH_Deal__c WHERE Seller_Portal_Status__c IN (&#39;New Deal proposed to eBay&#39;,&#39;Please agree on the proposed Deal&#39;,&#39;Deal agreed&#39;) AND EBH_eBayItemID__c = NULL AND EBH_DealStartDate__c &gt; TODAY</value>
+    </values>
+    <values>
+        <field>Required_Access_Level__c</field>
+        <value xsi:type="xsd:string">Eligible_for_DE_Deals</value>
+    </values>
+    <values>
+        <field>Target_URL__c</field>
+        <value xsi:type="xsd:string">/s/my-deal-lists?tabset-a1a84=bbde9</value>
+    </values>
+</CustomMetadata>

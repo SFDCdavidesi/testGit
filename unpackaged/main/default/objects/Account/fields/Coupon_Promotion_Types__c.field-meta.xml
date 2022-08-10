@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Coupon_Promotion_Types__c</fullName>
+    <description>EPH-8103 New Coupon Promotion preference fields on Customer Object</description>
+    <externalId>false</externalId>
+    <label>Coupon Promotion Types</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Solus</fullName>
+                <default>false</default>
+                <label>Solus</label>
+            </value>
+            <value>
+                <fullName>Co-Funded Site Wide</fullName>
+                <default>false</default>
+                <label>Co-Funded Site Wide</label>
+            </value>
+            <value>
+                <fullName>Item Level</fullName>
+                <default>false</default>
+                <label>Item Level</label>
+            </value>
+            <value>
+                <fullName>Category Level</fullName>
+                <default>false</default>
+                <label>Category Level</label>
+            </value>
+            <value>
+                <fullName>Multi Seller</fullName>
+                <default>false</default>
+                <label>Multi Seller</label>
+            </value>
+            <value>
+                <fullName>Multi Solus</fullName>
+                <default>false</default>
+                <label>Multi Solus</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

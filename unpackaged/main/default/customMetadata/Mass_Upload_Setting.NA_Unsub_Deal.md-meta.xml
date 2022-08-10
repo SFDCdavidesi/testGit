@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>NA Unsub Deal</label>
+    <protected>false</protected>
+    <values>
+        <field>CSV_Column_Names__c</field>
+        <value xsi:type="xsd:string">eBay_Item_ID;eBay_Seller;Seller_Contact;Deal_Price;RRP_WAS;List_Price;Quantity;Maximum_Purchases;Sellers_Deal_Price_MSKU_Lower;Sellers_Deal_Price_MSKU_Upper;List_Price_MSKU_Lower;List_Price_MSKU_Upper</value>
+    </values>
+    <values>
+        <field>CSV_Column_Types__c</field>
+        <value xsi:type="xsd:string">String;Reference;Reference;Number;Number;Number;Number;Number;Number;Number;Number;Number</value>
+    </values>
+    <values>
+        <field>Description__c</field>
+        <value xsi:type="xsd:string">&lt;p&gt;&lt;strong&gt;Attention&lt;/strong&gt;&lt;/p&gt;
+&lt;/br&gt;
+&lt;p&gt;Use  this .csv template for NA Unsub Deals&lt;/p&gt;</value>
+    </values>
+    <values>
+        <field>Field_API_Names__c</field>
+        <value xsi:type="xsd:string">EBH_eBayItemID__c;EBH_BusinessName__c;Seller_Contact__c;EBH_DealPrice__c;EBH_RRPWASPrice__c;List_Price__c;EBH_Quantity__c;EBH_MaximumPurchases__c;SellersDealPriceMSKULower__c;SellersDealPriceMSKUUpper__c;ListPriceMSKULower__c;ListPriceMSKUUpper__c</value>
+    </values>
+    <values>
+        <field>Object_Name__c</field>
+        <value xsi:type="xsd:string">EBH_Deal__c</value>
+    </values>
+    <values>
+        <field>RecordTypeApiName__c</field>
+        <value xsi:type="xsd:string">Deal_V3</value>
+    </values>
+    <values>
+        <field>RecordTypeID__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Required_Field_API_Names__c</field>
+        <value xsi:type="xsd:string">EBH_eBayItemID__c;EBH_BusinessName__c;Seller_Contact__c;EBH_DealPrice__c;List_Price__c;EBH_Quantity__c;EBH_MaximumPurchases__c</value>
+    </values>
+</CustomMetadata>

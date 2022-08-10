@@ -1,0 +1,12 @@
+Category Managers:
+<br/><br/>
+Deal Window {!EBH_DealRetailCampaign__c.Name} - {!EBH_DealRetailCampaign__c.EBH_DealTitle__c} ( {!EBH_DealRetailCampaign__c.Start_Date_MM_DD_YYYY__c} - {!EBH_DealRetailCampaign__c.End_Date_MM_DD_YYYY__c} ) is now ready for Category Manager review. Please review the Deals for this Deal Window and Approve or Reject Deals which have a status of 'CM Review'. If you are approving a Deal, you must assign a Spotlight Category for the Deal. Deals which are not approved or rejected will automatically be updated to 'Scheduled' with placement defaulted to 'Verticals' in 1 day before the Deal Window start date.
+<br/><br/>
+You can update the List view filters to update your list view accordingly.
+<br/><br/>
+You can access the Deal Window with the following URL:
+<br/>{!EBH_DealRetailCampaign__c.Link}
+<br/><br/>
+Thanks,
+<br/>
+Hive Team

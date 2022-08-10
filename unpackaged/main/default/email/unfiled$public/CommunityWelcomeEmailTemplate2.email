@@ -1,0 +1,8 @@
+Hi {!Receiving_User.FirstName},
+
+            Welcome to GCX! To get started, go to {!$Network.NetworkUrlForUserEmails}
+
+            Username: {!Receiving_User.Username}
+
+            Thanks,
+            {!Organization.Name}

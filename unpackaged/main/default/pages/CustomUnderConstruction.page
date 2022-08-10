@@ -1,0 +1,53 @@
+<apex:page showHeader="false" cache="false" lightningStylesheets="true" language="{!IF(CONTAINS($Label.SEP_Domain_DE, $Site.Domain),'de','en')}">
+  <apex:includeScript value="/lightning/lightning.out.js" />
+  <apex:slds />
+  <style>
+    .slds-scope:not(html), .slds-scope body {
+      background-color: #F8F9FB; 
+    }
+    .centered {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      /* bring your own prefixes */
+      transform: translate(-50%, -50%);
+    }
+    .wrapper{
+        position: relative;
+        background-color: #F8F9FB;
+        overflow: hidden;
+        width: 1100px;
+    }
+    .slds-scope .slds-text-heading_large {
+      font-weight: 400;
+    }
+    .slds-scope .slds-text-heading_medium {
+      font-weight: 400;
+    }
+   </style> 
+   
+   <div class="centered">
+    <div class="wrapper">
+      <div id="lightning" />
+      <script>
+        $Lightning.use("c:lwcGenericErrorMessageApp", function() {
+            $Lightning.createComponent(
+                "c:lwcGenericErrorMessage",
+                {
+                  customError: 'true',
+                  titleName: '{!$Label.site.under_construction}', 
+                  baseUrl: '{!$Site.BaseUrl}', 
+                  customLabel:  "{!$Label.MessageErrorException}",
+                  labelHomeButton: "{!$Label.lwcGenericErrorMessage_Homebutton}",
+                  adminEmailAddress:  "{!$Site.AdminEmailAddress}"
+                },
+                "lightning",
+                function (cmp) {
+                    // 
+                }
+            );
+        });
+      </script>
+    </div>
+  </div>
+</apex:page>

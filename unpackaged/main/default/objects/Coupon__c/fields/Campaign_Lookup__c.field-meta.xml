@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campaign_Lookup__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>EPH-7162 Object: Coupon__c - Create two record types</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the Lookup that is being used to reach out to target sellers to ask them for Coupon participation</inlineHelpText>
+    <label>Campaign Lookup</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Campaign.RecordType.DeveloperName</field>
+            <operation>equals</operation>
+            <value>EBH_Campaign</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Campaign</referenceTo>
+    <relationshipLabel>Coupons</relationshipLabel>
+    <relationshipName>Coupons</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

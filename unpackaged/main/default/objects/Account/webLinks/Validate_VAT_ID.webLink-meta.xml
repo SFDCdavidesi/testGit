@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_VAT_ID</fullName>
+    <availability>online</availability>
+    <description>US-0009234 - Button to verify EU VAT ID &amp; Request SAP ID</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Validate VAT ID</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>http://ec.europa.eu/taxation_customs/vies/vatResponse.html?memberStateCode={!LEFT( Account.VAT_ID__c , 2)}&amp;number={!MID( Account.VAT_ID__c , 3, LEN(Account.VAT_ID__c) -2 )}&amp;traderName=&amp;traderStreet=&amp;traderPostalCode=&amp;traderCity=&amp;requesterMemberStateCode=DE&amp;requesterNumber=203779911&amp;locale=en&amp;action=check&amp;check=Pr%C3%BCfen</url>
+</WebLink>

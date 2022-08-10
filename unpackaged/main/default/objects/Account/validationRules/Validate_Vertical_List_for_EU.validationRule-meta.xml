@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Vertical_List_for_EU</fullName>
+    <active>true</active>
+    <description>US-0010391 - ADS - New Account Vertical List for EU only</description>
+    <errorConditionFormula>AND(
+     ISNEW() ,
+    $Setup.byPass__c.ByPass_Validation__c = FALSE,
+    Ads_Region__c = &quot;EU&quot;,
+    NOT( ISBLANK( TEXT(Industry) ) ) ,
+    OR(
+        RecordType.DeveloperName  = &quot;Advertiser&quot;,
+        RecordType.DeveloperName  = &quot;Agency&quot;        
+    ),
+
+    NOT( ISPICKVAL(Industry, &quot;Agency/Advertising&quot;) ),
+    NOT( ISPICKVAL(Industry, &quot;Business, Office &amp; Industrial&quot;) ),
+    NOT( ISPICKVAL(Industry, &quot;Cashback&quot;) ),
+    NOT( ISPICKVAL(Industry, &quot;Charity&quot;) ), 
+    NOT( ISPICKVAL(Industry, &quot;Collectables &amp; Art&quot;) ), 
+    NOT( ISPICKVAL(Industry, &quot;Dining &amp; Nightlife&quot;) ), 
+    NOT( ISPICKVAL(Industry, &quot;Electronics&quot;) ), 
+    NOT( ISPICKVAL(Industry, &quot;Fashion &amp; Lifestyle&quot;) ),
+    NOT( ISPICKVAL(Industry, &quot;Finance&quot;) ),
+    NOT( ISPICKVAL(Industry, &quot;FMCG&quot;) ), 
+    NOT( ISPICKVAL(Industry, &quot;Government &amp; Education&quot;) ), 
+    NOT( ISPICKVAL(Industry, &quot;Health &amp; Beauty&quot;) ),  
+    NOT( ISPICKVAL(Industry, &quot;Home &amp; Garden&quot;) ),
+    NOT( ISPICKVAL(Industry, &quot;Insurance&quot;) ), 
+    NOT( ISPICKVAL(Industry, &quot;Jewellery &amp; Watches&quot;) ),
+    NOT( ISPICKVAL(Industry, &quot;Logistics&quot;) ),  
+    NOT( ISPICKVAL(Industry, &quot;Lottery/Betting&quot;) ), 
+    NOT( ISPICKVAL(Industry, &quot;Media &amp; Entertainment&quot;) ),   
+    NOT( ISPICKVAL(Industry, &quot;Motors P&amp;A&quot;) ),
+    NOT( ISPICKVAL(Industry, &quot;Real Estate&quot;) ),
+    NOT( ISPICKVAL(Industry, &quot;Retail&quot;) ),
+    NOT( ISPICKVAL(Industry, &quot;Services&quot;) ), 
+    NOT( ISPICKVAL(Industry, &quot;Sporting Goods&quot;) ),
+    NOT( ISPICKVAL(Industry, &quot;Telco&quot;) ),  
+    NOT( ISPICKVAL(Industry, &quot;Toys &amp; Games&quot;) ), 
+    NOT( ISPICKVAL(Industry, &quot;Travel &amp; Tourism&quot;) ), 
+    NOT( ISPICKVAL(Industry, &quot;Unmapped&quot;) ),  
+    NOT( ISPICKVAL(Industry, &quot;Utilities&quot;) )
+)</errorConditionFormula>
+    <errorDisplayField>Industry</errorDisplayField>
+    <errorMessage>Please select a correct Industry for EU.</errorMessage>
+</ValidationRule>

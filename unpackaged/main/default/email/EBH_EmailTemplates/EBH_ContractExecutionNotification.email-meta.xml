@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>[EBH] (EPH-3974) : Email template to notify Contract owner, Contract Admin team and Finance team on contract execution</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Contract Execution Notification</name>
+    <style>none</style>
+    <subject>Your document has been completed</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

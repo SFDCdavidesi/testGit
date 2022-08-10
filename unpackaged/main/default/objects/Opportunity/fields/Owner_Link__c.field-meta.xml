@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Owner_Link__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Helper field to get Opp Owner information into formulas.
+US-0007934 - [Ads 2020] Daily Ads Revenue - Required EU Fields for Accruals</description>
+    <externalId>false</externalId>
+    <label>Owner_Link</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>OpportunityLinks</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

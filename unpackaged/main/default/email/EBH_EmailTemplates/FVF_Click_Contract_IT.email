@@ -1,0 +1,52 @@
+<p style="text-align: center;"><strong>Accordo relativo alla promozione individuale</strong></p>
+<p style="text-align: justify;">Ai sensi del presente Accordo relativo alla promozione individuale e alla relativa Appendice 1 (di seguito denominati congiuntamente "Accordo") che ne costituisce parte integrante, ti offriamo uno sconto sulla Commissione sul valore finale secondo i termini qui specificati. Se concordi con quanto qui specificato, ti chiediamo di indicare che accetti il presente Accordo entro <u>1 giorno dall'inizio della promozione</u> cliccando sul seguente pulsante:
+</p>
+<p style="text-align: center;"><a title="ACCETTO" href="{!urlAccept}">ACCETTO</a></p>
+<p style="text-align: center;">&nbsp;</p>
+<table style="height: 282px; width: 1012px; border-collapse: collapse;" border="1" cellspacing="5" cellpadding="5">
+<tbody>
+<tr>
+<td style="width: 194.444px; background-color: #f0f0f0;"><strong>ID venditore per la promozione</strong></td>
+<td style="width: 794.444px;">{!FVF_SellerName}</td>
+</tr>
+<tr>
+<td style="width: 194.444px; background-color: #f0f0f0;"><strong>Pagina eBay</strong></td>
+<td style="width: 794.444px;">www.ebay.it</td>
+</tr>
+<tr>
+<td style="width: 194.444px; background-color: #f0f0f0;"><strong>Periodo di promozione</strong></td>
+<td style="width: 794.444px;"><strong>Da {!FVF_StartDate} {!FVF_StartTime}</strong>&nbsp;<strong>a&nbsp;{!FVF_EndDate} {!FVF_EndTime} </strong>
+</p>eBay può, a sua esclusiva discrezione, posticipare il Periodo della promozione o prorogare la durata della promozione dandone opportuna comunicazione al venditore.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 194.444px; background-color: #f0f0f0;"><strong>Sconto sulla Commissione sul valore finale (con supporto eBay)</strong></td>
+<td style="width: 794.444px;">{!FVF_DiscountFVF}</td>
+</tr>
+<tr>
+<td style="width: 194.444px; background-color: #f0f0f0;"><strong>Oggetti idonei allo sconto</strong></td>
+<td style="width: 794.444px;">
+<p>Lo sconto si applica agli oggetti specificati nell'<strong>Appendice 1</strong> e venduti dal venditore al prezzo massimo indicato durante il Periodo della promozione. Il venditore può, a sua discrezione, decidere in autonomia, di vendere gli Oggetti idonei allo sconto anche ad un prezzo inferiore a quello qui indicato.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 194.444px; background-color: #f0f0f0;"><strong>Varie</strong></td>
+<td style="width: 794.444px;">
+{!FVF_AddtionalTerm}
+<p>{ifFreeShipping}</p></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p style="text-align: justify;">
+Inizialmente, la Commissione sul valore finale verrà addebitata per intero. Lo sconto concordato nel presente Accordo verrà poi accreditato sul tuo account il mese successivo alla promozione. Se una promozione è concordato che duri più mesi, verrà accreditato lo sconto concordato sul tuo account il mese successivo all’ultimo mese di promozione. Tutti gli oggetti restituiti o relativi ad ordini annullati saranno esclusi dallo sconto.
+</p>
+<p style="text-align: justify;">
+Gli importi degli sconti sulla Commissione sul valore finale sono riportati al netto dell'IVA. Lo sconto che verrà accreditato sul tuo account è soggetto allo stesso trattamento IVA delle altre tariffe addebitate, durante il periodo della promozione, per gli oggetti esclusi dalla promozione.
+</p>
+<p style="text-align: justify;">
+Il presente Accordo è stipulato fra {!LegalEntity} - {!SellerAddress1} ("<strong>Venditore</strong>") ed eBay GmbH, Albert-Einstein-Ring 2-6 in 14532 Kleinmachnow (Germania) ("<strong>eBay</strong>"). La partecipazione del venditore si basa esclusivamente sul presente Accordo e sui <a title="Termini e Condizioni per le promozioni individuali" href="https://cloud.forbusiness.ebay.com/fvf-promo-general-terms-and-conditions-IT">Termini e Condizioni per le promozioni individuali</a>("<strong>Termini e Condizioni</strong>") stipulato fra il venditore e eBay. 
+</p>
+<p style="text-align: justify;">
+Eventuali termini in deroga o aggiuntivi dovranno essere concordati tra le parti per iscritto (anche tramite email).
+</p>

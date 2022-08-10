@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0008841 - [NA] Migrate JOIN NA Deals Workflow Rules and convert to Process Builder in Hive</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>DD NA Notify SCC</name>
+    <style>none</style>
+    <subject>{!EBH_Deal__c.EBH_BusinessName__c} Deal Accepted</subject>
+    <textOnly>A new Deal has been accepted by the Seller and is ready to be loaded into Spotlight. The key Deal details are below:
+
+eBay Seller: {!EBH_Deal__c.EBH_BusinessName__c}
+Product Title: {!EBH_Deal__c.EBH_ProductTitle__c}
+Listing ID: {!EBH_Deal__c.EBH_eBayItemID__c}
+Deal Start Time: {!EBH_Deal__c.EBH_DealStartDate__c}{!EBH_Deal__c.EBH_DealStartTime__c}
+Deal End Time: {!EBH_Deal__c.EBH_DealEndDate__c}{!EBH_Deal__c.EBH_DealEndTime__c}
+Deal Price {!EBH_Deal__c.EBH_DealPrice__c}
+
+View Deal</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

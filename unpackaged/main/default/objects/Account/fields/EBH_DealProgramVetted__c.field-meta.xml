@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_DealProgramVetted__c</fullName>
+    <externalId>false</externalId>
+    <formula>AND(EBH_FeedbackScore__c &gt;= 1000, EBH_PositiveFeedback__c &gt;= 0.98, !EBH_VeROViolation__c, (ISPICKVAL(EBH_ActualStandard__c, &quot;ETRS&quot;) || ISPICKVAL(EBH_ActualStandard__c, &quot;Above Standard&quot;)), !CONTAINS(&quot;*uk *de *fr *es *it _uk _de _fr _es _it -uk -de -fr -es -it&quot;, RIGHT(Name,3)),!CONTAINS(&quot;www_ www- www. &quot;, LEFT(Name,4)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Please review the Standards section for details. Required:
+- Actual Standard = &quot;ETRS&quot; or &quot;Above Standard&quot;
+- Feedback Score &gt;= 1000
+- Positive Feedback &gt;= 98%
+- VeRo Violation = FALSE</inlineHelpText>
+    <label>Deal Program Vetted</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Journey_Tasks_Victoria</fullName>
+    <columns>SUBJECT</columns>
+    <columns>EBH_Account__c</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Call_attempts__c</columns>
+    <columns>Order_Priority__c</columns>
+    <columns>STATUS</columns>
+    <columns>PRIORITY</columns>
+    <columns>WHAT_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>WHAT_NAME</field>
+        <operation>equals</operation>
+        <value>GCX_PL_UK_2021_PLS_GA_XMAS_PUSH</value>
+    </filters>
+    <filters>
+        <field>Call_attempts__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>Journey Tasks Victoria</label>
+</ListView>

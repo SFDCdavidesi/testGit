@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Summary_Name__c</fullName>
+    <description>US-0010376 - [NA Deal Statement] Monthly Statement Summary and Approval</description>
+    <externalId>false</externalId>
+    <formula>TEXT(Month__c)+&#39;-&#39;+TEXT(Year__c)+&#39;-&#39;+TEXT(Statement_Type__c)</formula>
+    <label>Summary Name</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,13 @@
+<p>Dear {eBaySellerID},</p>
+
+<p>This confirmation email is to advise you that we have recorded your acceptance to participate in the coupon offer {Coupon_ID__c} which is scheduled to run from {CouponStartTime}, {CouponStartDate} to {CouponEndTime}, {CouponEndDate}.</p>
+<p>Your acceptance is in accordance to the terms and conditions as set out in the Coupon Term Sheet and Master Agreement, which you have agreed to on:</p> 
+<ul>
+<li><p>{CONTRACT_ACCEPT_DATE} from the following IP Address {ACCEPTED_FROM}.</p></li>
+</ul>
+
+<p>If you believe that you have received this email in error or have any questions about your participation in the coupon offer, please reach out to <a href="#"><i>retailpromotions@ebay.com</i></a>.</p>
+
+<p>Thank You</p>
+<p>Retail Promotions Team</p>
+<p>eBay Australia.</p>

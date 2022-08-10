@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>EPH-5718</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Campaign.Survey_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>GCX Call Scripts Manager</label>
+</PermissionSet>

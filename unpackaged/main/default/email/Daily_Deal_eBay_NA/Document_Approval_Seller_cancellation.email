@@ -1,0 +1,4 @@
+<p>The below deals from Contract has been canceled.</p>
+<p>{!EBH_Deal__c.Link}</p>
+<p>Reason for cancellation: {!EBH_Deal__c.Cancellation_Reason__c}</p>
+<p>Note, this cancelled contract cannot be used for subsidy payment.</p>

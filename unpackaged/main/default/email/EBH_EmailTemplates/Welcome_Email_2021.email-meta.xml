@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Welcome email new user</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Welcome Email 2021</name>
+    <style>none</style>
+    <subject>Welcome to Hive {!Case.First_Name__c}!</subject>
+    <textOnly>Congratulations {!Case.First_Name__c}!
+We have activated your login and are excited to welcome you to Hive!
+
+Please save this email as it contains links to training resources and Hive support which you may need to refer back to!
+
+Hive is eBay’s central CRM (customer relationship management) system enabling you to connect with your customers, manage your accounts, prioritize your workload and gain access to meaningful insights.
+
+Getting Started with Hive:
+
+Log in to Hive using the Google Chrome browser.  Don’t forget to bookmark the link!  If you are in the office or signed into the eBay VPN you will be logged in automatically, otherwise click the eBay SSO button to sign in.  Please note that you must log in to Hive at least once per month to keep your profile active.  Licences are automatically reassigned after 45 days if they are not being used.
+
+Log in to Hive
+
+Email Hive Support via the link below if you are having trouble signing in.  Please note this email is ONLY to be used for Hive Login issues.  For other issues or questions, please raise a Support Ticket or post in the Help &amp; Support Chatter Group - details below.
+
+Email Hive Login Support
+
+Hive University
+
+Hive University is our e-Learning Management System that delivers quick, gamified e-learning at just the right moment during the flow of your work. Review our content library to get you started with Hive and familiarize yourself with the different features specific to your role.
+
+Explore Courses
+
+Hive Support Tickets
+
+Raise a Support Ticket if you are experiencing any specific technical issues, error messages or other unexpected behaviour with Hive which requires an individual response.  To ensure your issue is handled effectively, please include a screenshot of the error message and the URL you were on when the problem occurred.
+
+Raise a Support Ticket
+
+Hive Help &amp; Support Chatter Group
+
+Post in the Help &amp; Support Chatter group if you have a question or general issue with Hive which doesn&#39;t require an immediate response from support.  An example of this would be a &#39;How do I?&#39; question. To ensure your query is answered effectively, you are able to @mention the name of the specific Hive team member responsible for the particular area of Hive - a full list can be found on the right-hand side of the group.
+
+Hive Help &amp; Support Chatter Group
+
+Hive Training Calendar
+
+You should find all relevant classes in our hive University. However if you would like to view upcoming live training sessions and sign up for training in the Hive Training Calendar, including the monthly New User training and role-specific sessions:
+
+Sign up for Training
+
+Hive NPS Survey &amp; Feature Request
+
+When logging in, you will periodically be presented with our NPS survey.  This is to gauge how satisfied you are with Hive and enable you to give your feedback about what you feel could be improved.  The survey takes less than a minute to complete and you will only see it about once per quarter.  In the meantime, if you have any suggestions for improvements you can suggest a new feature via the Feature Request link below:
+
+Hive Feature Request
+
+Thank you and a warm welcome to Hive!
+The Hive Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

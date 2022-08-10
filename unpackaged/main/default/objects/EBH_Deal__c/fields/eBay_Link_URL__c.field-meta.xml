@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>eBay_Link_URL__c</fullName>
+    <description>US-0007015 Deals - Masterschedule - UX IMPROVEMENTS ( Deal Owner, Add day...)</description>
+    <externalId>false</externalId>
+    <formula>IF( ISBLANK( EBH_eBayItemID__c ), &quot;&quot;, 
+if( TEXT ( EBH_DealSiteId__c ) =&quot;77&quot;,&quot;http://www.ebay.de/itm/&quot;&amp; EBH_eBayItemID__c,
+if( TEXT ( EBH_DealSiteId__c ) =&quot;3&quot;,&quot;http://www.ebay.co.uk/itm/&quot;&amp; EBH_eBayItemID__c,
+if( TEXT ( EBH_DealSiteId__c ) =&quot;71&quot;,&quot;http://www.ebay.fr/itm/&quot;&amp; EBH_eBayItemID__c,
+if( TEXT ( EBH_DealSiteId__c ) =&quot;101&quot;,&quot;http://www.ebay.it/itm/&quot;&amp; EBH_eBayItemID__c,
+if( TEXT ( EBH_DealSiteId__c ) =&quot;186&quot;,&quot;http://www.ebay.es/itm/&quot;&amp; EBH_eBayItemID__c,
+if( TEXT ( EBH_DealSiteId__c ) =&quot;15&quot;,&quot;http://www.ebay.com.au/itm/&quot;&amp; EBH_eBayItemID__c,
+&quot;http://www.ebay.com/itm/&quot;&amp; EBH_eBayItemID__c
+)))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>eBay Link URL</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

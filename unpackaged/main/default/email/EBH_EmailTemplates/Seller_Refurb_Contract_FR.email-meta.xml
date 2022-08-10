@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0011123 - IT/FR Refurb Click Contracts Emails</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Seller_Refurb_Contract_FR</name>
+    <style>none</style>
+    <subject>Conditions de Participation du Programme Reconditionné</subject>
+    <textOnly>Cher Vendeur,
+
+Cet email, constituant le Formulaire de Participation au Programme « Reconditionné » (ci-après « le Formulaire »), vous invite à participer au Programme sur le Site eBay, tels que définis ci-dessous.
+
+Identifiant du Vendeur  {!EBH_ContractSeller__c.EBH_BusinessName__c}
+Programme  Programme « Reconditionné »
+Site eBay  eBay.fr
+Date de début  {!Contract.Contract_Send_Date__c}
+
+Procédure d’Admission
+
+Pour participer au Programme, veuillez lire et accepter les Conditions Générales (décrites ci-après) et répondre à cet email avec la mention « J’ACCEPTE ».
+
+J’ACCEPTE
+
+Conditions Générales
+
+Les conditions du Formulaire et votre participation au Programme sont soumises aux Conditions de Participation du Programme « Reconditionné », applicables entre eBay GmbH (Albert-Einstein-Ring 2-6, 14532 Kleinmachnow, Allemagne ; numéro d’immatriculation : HRB13754P) et le Vendeur, ainsi qu&#39;aux Règlements eBay qui y sont mentionnés.
+
+Les termes qui ne sont pas définis dans le présent Formulaire ont la signification qui leur est donnée dans les Conditions de Participation du Programme « Reconditionné ». Toute modification à ces Conditions devra faire l’objet d’un avenant écrit (l’email n’est pas suffisant) entre le Vendeur et eBay.
+
+Cordialement,
+
+L’équipe eBay</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

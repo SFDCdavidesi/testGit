@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0007061 : [AU] Deals - Reminder to Seller if &quot;Price Not Matching&quot; is set to False</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>AU Seller Notification when Price not matching is set to true</name>
+    <style>none</style>
+    <subject>Price not matching {!EBH_Deal__c.EBH_MarketingTitle__c}</subject>
+    <textOnly>The agreed Offer will start shortly.
+
+Please lower the offer price to the agreed promotion price at the start of the campaign.
+
+Offer
+
+eBay username: {! EBH_Deal__c.EBH_BusinessName__c}
+
+Product name: {! EBH_Deal__c.EBH_MarketingTitle__c}
+
+Available quantities: {! EBH_Deal__c.EBH_Quantity__c}
+
+Action format: {! EBH_Deal__c.EBH_LocalDealFormat__c}
+
+Start of the campaign: {! EBH_Deal__c.EBH_DealStartDate__c},{! EBH_Deal__c.EBH_DealStartTime__c}
+
+End of campaign: {! EBH_Deal__c.EBH_DealEndDate__c}, {! EBH_Deal__c.EBH_DealEndTime__c}
+
+Page (s): AU
+
+Price
+
+MSRP / previous price: € {! EBH_Deal__c.EBH_RRPWASPrice__c}
+
+Your offer price: € {! EBH_Deal__c.EBH_SellerPrice__c}
+
+Reduced special price: € {! EBH_Deal__c.EBH_DealPrice__c}
+
+Best regards
+
+Your eBay team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

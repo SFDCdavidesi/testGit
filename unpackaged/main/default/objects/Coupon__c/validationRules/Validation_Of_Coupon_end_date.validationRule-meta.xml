@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_Of_Coupon_end_date</fullName>
+    <active>true</active>
+    <description>US-0000812: Coupon Object - Validation Rule: Coupon end date need to be after Coupon start Date</description>
+    <errorConditionFormula>Coupon_Start_Date__c  &gt;  Coupon_End_Date__c</errorConditionFormula>
+    <errorDisplayField>Coupon_End_Date__c</errorDisplayField>
+    <errorMessage>Coupon end date need to be after Coupon start Date</errorMessage>
+</ValidationRule>

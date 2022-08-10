@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>eBay Deals Program: Deal Window Scheduled</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Deal Window Scheduled</name>
+    <style>none</style>
+    <subject>eBay Deals Program: Deal Window Scheduled</subject>
+    <textOnly>Here are your selections for Retail Week {!EBH_DealRetailCampaign__c.Start_Retail_Week__c} (Run dates - {!EBH_DealRetailCampaign__c.Start_Date_MM_DD_YYYY__c} - {!EBH_DealRetailCampaign__c.End_Date_MM_DD_YYYY__c})
+
+Thank you,
+Daily Deals Team
+ebaydeals-sellercommunications@ebay.com</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

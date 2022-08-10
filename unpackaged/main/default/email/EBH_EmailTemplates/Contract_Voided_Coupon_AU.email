@@ -1,0 +1,14 @@
+<p>
+Dear {!Coupon_Seller__c.Seller__c},
+<br>
+<br>
+The due date to respond the {!Coupon_Seller__c.Coupon_ID__c} has now expired. <b>You will no longer be able to participate in the above campaign.</b>
+<br>
+<br>
+For Questions, please reach out to your account manager or <a href="#">retailpromotions@ebay.com</a>.
+<br>
+<br>
+Thank You<br>
+Retail Promotions Team<br>
+eBay Australia
+</p>

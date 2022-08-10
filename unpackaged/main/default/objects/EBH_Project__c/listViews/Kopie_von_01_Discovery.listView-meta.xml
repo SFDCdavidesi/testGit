@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Kopie_von_01_Discovery</fullName>
+    <columns>NAME</columns>
+    <columns>Priority__c</columns>
+    <columns>EBH_Seller__c</columns>
+    <columns>LeadSource__c</columns>
+    <columns>CloseDate__c</columns>
+    <columns>GMVLast12Months__c</columns>
+    <columns>Vertical__c</columns>
+    <columns>Comments__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>EBH_Stage__c</columns>
+    <columns>OWNER.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>EBH_Project__c.EUOnboarding</value>
+    </filters>
+    <filters>
+        <field>Site__c</field>
+        <operation>equals</operation>
+        <value>DE</value>
+    </filters>
+    <filters>
+        <field>LeadSource__c</field>
+        <operation>equals</operation>
+        <value>Self Gen,Self Gen (Landing Page),Internal (Category/Account Manager),Event,External Provider,Self Starters (existing newly on eBay),3PP &amp; Trade Groups</value>
+    </filters>
+    <filters>
+        <field>OWNER.ALIAS</field>
+        <operation>equals</operation>
+        <value>hbrauer</value>
+    </filters>
+    <filters>
+        <field>EBH_Stage__c</field>
+        <operation>equals</operation>
+        <value>Account Set up</value>
+    </filters>
+    <label>02 - Account Setup</label>
+</ListView>

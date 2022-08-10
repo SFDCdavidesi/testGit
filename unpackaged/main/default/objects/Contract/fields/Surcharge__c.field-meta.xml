@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Surcharge__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>US-0009316 - [Contracts] Add &quot;Surcharge&quot; to Contracts</description>
+    <externalId>false</externalId>
+    <inlineHelpText>For DE this would be the below Standard Fee, for IT/ES and UK this would be the SNAD surcharge that will be applied.</inlineHelpText>
+    <label>Surcharge</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

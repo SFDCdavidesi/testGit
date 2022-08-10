@@ -1,0 +1,6 @@
+<p>Dear {!Coupon_Seller__c.Seller__c},</p>
+<p>This is a quick reminder to let you know that the contract for {!Coupon_Seller__c.Coupon_ID__c} promotion will expire on the {!Coupon_Seller__c.Coupon_Contract_Due_Date__c}.</p>
+<p>To ensure that you don’t lose out on the opportunity to participate in the above promotion, we encourage you to sign the contract as soon as possible.</p>
+<p>Thank You <br>
+Retail Promotions Team<br>
+eBay Australia</p>

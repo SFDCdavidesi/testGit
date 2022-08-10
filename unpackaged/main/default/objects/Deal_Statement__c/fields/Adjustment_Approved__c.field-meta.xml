@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Adjustment_Approved__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>US-0010376: Set to TRUE if Adjusted Statement is fully Approved</description>
+    <externalId>false</externalId>
+    <label>Adjustment Approved</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Price_incl_Targeting__c</fullName>
+    <description>US-0009260 - [Ads 2020] OLI Trigger to QLI/AP, Fields &amp; Syncing</description>
+    <externalId>false</externalId>
+    <formula>IF( ISPICKVAL( Billing_Category__c ,&quot;CPM&quot;), SalesPriceNet__c  +  Targeting_Fee2__c , SalesPriceNet__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Sales Price plus any targeting or surcharge</inlineHelpText>
+    <label>Sales Price Gross</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>8</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

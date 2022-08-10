@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_UrgentLLChangeLastWeek__c</fullName>
+    <description>[EBH] (EPH-4125) - Live Listings change (%)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Latest week LL compared to average number of LL over the previous 4 weeks. Only for Urgent Seller.</inlineHelpText>
+    <label>Live Listings change (%)</label>
+    <precision>16</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

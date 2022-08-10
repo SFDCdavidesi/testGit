@@ -1,0 +1,58 @@
+<p style="text-align: center;"><strong>L’Accord individuel de promotion sur la commission sur le prix final</strong></p>
+<p style="text-align: justify;">Conformément au présent Accord individuel de promotion sur la commission sur le prix final et à son <strong>Annexe I</strong> qui fait partie intégrante de l’Accord de promotion sur la commission sur le prix final (tous deux dénommés ci-après « Accord individuel »), nous vous accordons une réduction sur la commission sur le prix final selon les conditions définies ci-après et les <a title="Conditions générales de la promotion" href="https://cloud.forbusiness.ebay.com/fvf-promo-general-terms-and-conditions-FR">Conditions générales de la promotion</a>. 
+</p>
+<p>Veuillez accepter le présent Accord individuel <u>au plus tard un jour avant le début de la promotion</u> en cliquant sur le bouton ci-dessous</p>
+<p style="text-align: center;"><a title="J'ACCEPTE" href="{!urlAccept}">J'ACCEPTE</a></p>
+<p style="text-align: center;">&nbsp;</p>
+<table style="height: 282px; width: 1012px; border-collapse: collapse;" border="1" cellspacing="5" cellpadding="5">
+<tbody>
+<tr>
+<td style="width: 194.444px; background-color: #f0f0f0;"><strong>Pseudo(s) du vendeur pour la Promotion</strong></td>
+<td style="width: 794.444px;">{!FVF_SellerName}</td>
+</tr>
+<tr>
+<td style="width: 194.444px; background-color: #f0f0f0;"><strong>Site eBay</strong></td>
+<td style="width: 794.444px;">www.ebay.fr</td>
+</tr>
+<tr>
+<td style="width: 194.444px; background-color: #f0f0f0;"><strong>Période de la Promotion</strong></td>
+<td style="width: 794.444px;"><strong>Du&nbsp;{!FVF_StartDate}&nbsp;à&nbsp;{!FVF_StartTime}</strong>&nbsp;<strong>au&nbsp;{!FVF_EndDate}&nbsp;à&nbsp;{!FVF_EndTime} </strong>
+</p>eBay peut, à sa seule discrétion, retarder la Période de la Promotion et modifier ainsi la durée de la Promotion. Le cas échéant, eBay en informera le vendeur.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 194.444px; background-color: #f0f0f0;"><strong>Réduction sur la commission sur le prix final accordée par eBay
+</strong></td>
+<td style="width: 794.444px;">{!FVF_DiscountFVF} de réduction sur la commission sur le prix final (« Réduction »)</td>
+</tr>
+<tr>
+<td style="width: 194.444px; background-color: #f0f0f0;"><strong>Objets couverts par la Promotion</strong></td>
+<td style="width: 794.444px;">
+<p>La Promotion s'applique à tous les objets indiqués dans l'<strong>Annexe 1</strong> ci-après, qui sont vendus par le vendeur aux Prix maximum recommandés, tel qu’indiqué dans l’<strong>Annexe 1</strong> pendant la Période de la Promotion. 
+</p>
+<p>Vous pouvez, à votre discrétion, vendre les objets couverts par la Promotion à des prix inférieurs aux prix convenus dans le présent Accord individuel.
+</p>
+</td>
+</tr>
+<tr>
+<td style="width: 194.444px; background-color: #f0f0f0;"><strong>Divers</strong></td>
+<td style="width: 794.444px;">
+{!FVF_AddtionalTerm}
+<p>{ifFreeShipping}</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p style="text-align: justify;">
+La commission sur le prix final sera d’abord facturée intégralement. Le montant de la Réduction sera ensuite crédité sur votre compte dans un délai d’un mois à compter du dernier jour de la Période de la Promotion. Si la Promotion dure plusieurs mois, eBay vous créditera mensuellement le montant de Réduction. Par exemple, si la Promotion commence le 11 novembre et se termine le 11 décembre. eBay vous versera le montant de la Réduction en décembre pour les objets vendus au cours du mois de novembre et le montant de la Réduction en janvier pour les objets vendus en décembre. Les objets ayant fait l’objet d’un retour ne sont pas éligibles à la Promotion.
+</p>
+<p style="text-align: justify;">
+Veuillez noter que le montant de la Réduction est indiqué hors taxe. Le montant de la Réduction crédité sur votre compte est soumis au même traitement en matière de TVA que les autres frais pouvant être facturés par eBay, pendant la Période de la Promotion, pour les objets non concernés par la Promotion.
+</p>
+<p style="text-align: justify;">
+Le présent Accord individuel est conclu entre fra {!LegalEntity} - {!SellerAddress1} (« Vendeur ») et eBay GmbH, Albert-Einstein-Ring 2-6 à 14532 Kleinmachnow (Allemagne) (« eBay »). La participation du Vendeur est soumise au présent Accord individuel et aux <a title="Conditions générales de la promotion" href="https://cloud.forbusiness.ebay.com/fvf-promo-general-terms-and-conditions-FR">Conditions générales de la promotion</a>. 
+</p>
+<p style="text-align: justify;">
+Toute modification du présent Accord doit être approuvé par écrit par les deux parties (un e-mail est suffisant).
+</p>

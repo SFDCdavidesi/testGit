@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Coupon awaiting item upload</label>
+    <protected>false</protected>
+    <values>
+        <field>Value_Big__c</field>
+        <value xsi:type="xsd:string">/s/my-coupon-seller-lists?tabset-c4dfd=2#SELECT COUNT() FROM Coupon_Seller__c WHERE Coupon_Seller_Stage__c = &#39;Contract Negotiation&#39; AND Coupon_Type__c = &#39;Item Based&#39;</value>
+    </values>
+    <values>
+        <field>Value__c</field>
+        <value xsi:type="xsd:string">{X} coupons are awaiting item upload</value>
+    </values>
+    <values>
+        <field>Value_in_German__c</field>
+        <value xsi:type="xsd:string">{X} Gutschein(e) - Artikel-Upload erforderlich</value>
+    </values>
+</CustomMetadata>

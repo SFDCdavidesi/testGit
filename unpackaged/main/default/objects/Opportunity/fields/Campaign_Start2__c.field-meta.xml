@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campaign_Start2__c</fullName>
+    <description>US-0009394 - [Ads 2020] Opportunity Rollup Summary - Incorrect field</description>
+    <externalId>false</externalId>
+    <label>Campaign Start</label>
+    <summarizedField>Ad_Product__c.from_Date__c</summarizedField>
+    <summaryForeignKey>Ad_Product__c.Opportunity__c</summaryForeignKey>
+    <summaryOperation>min</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

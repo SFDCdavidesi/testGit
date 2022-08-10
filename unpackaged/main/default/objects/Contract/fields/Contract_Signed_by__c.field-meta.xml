@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_Signed_by__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>US-0009864 - [Docusign] New Signatory details to be added in Contracts</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Business contact name who signed the Contract.</inlineHelpText>
+    <label>Contract Signed by</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Contracts (Contract Signed by)</relationshipLabel>
+    <relationshipName>Contract_Signed</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

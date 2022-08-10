@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>US_Ads_Support</fullName>
+    <booleanFilter>1 or 2</booleanFilter>
+    <columns>NAME</columns>
+    <columns>Requirement_Description__c</columns>
+    <columns>Status__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>Prio_US__c</columns>
+    <columns>Prio_UK__c</columns>
+    <columns>Prio_DE__c</columns>
+    <columns>Notes__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OWNER.FIRST_NAME</field>
+        <operation>equals</operation>
+        <value>Tenzin</value>
+    </filters>
+    <filters>
+        <field>CREATEDBY_USER</field>
+        <operation>equals</operation>
+        <value>susan adkins</value>
+    </filters>
+    <label>US Ads Support</label>
+</ListView>

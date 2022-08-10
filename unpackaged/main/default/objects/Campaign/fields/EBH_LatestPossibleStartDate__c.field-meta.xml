@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_LatestPossibleStartDate__c</fullName>
+    <description>[EBH] (EPH-1806) -  Please indicate the flexibility of your Campaign Start Date. Strict = same date as the Campaign Start Date; Flexible = latest date the Campaign can start</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please indicate the flexibility of your Campaign Start Date. Strict = same date as the Campaign Start Date; Flexible = latest date the Campaign can start</inlineHelpText>
+    <label>Latest Possible Start Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

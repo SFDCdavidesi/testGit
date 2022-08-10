@@ -1,0 +1,14 @@
+Greetings {!Opportunity.OwnerFirstName}!
+
+The close date of your opportunity is in 5 days time.
+
+Please plan your next steps, make checks and/or update the data.
+
+Account: {!Opportunity.Account}
+Close date: {!Opportunity.CloseDate}
+Phase: {!Opportunity.StageName}
+Link to Opportunity:
+{!Opportunity.Link}
+
+------------------------------------
+This is an auto-generated e-mail

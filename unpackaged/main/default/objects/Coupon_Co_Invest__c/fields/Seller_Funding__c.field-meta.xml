@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Seller_Funding__c</fullName>
+    <description>US-0018713
+User Story
+[AU] Coupon Click Contract Templates to be sent to AU Sellers
+US-0009346 - Add &quot;Seller Funding %&quot; field to the Coupon Co-Invest page layout.</description>
+    <externalId>false</externalId>
+    <formula>( IF(ISNULL(Coupon_Discount__c), 0, Coupon_Discount__c) *  IF(ISNULL(Co_Invest__c), 0, Co_Invest__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Calculated as (Coupon Discount %) * (Seller Share %). This value will be sent in the seller email contract for Coupons with &quot;Coupon Co-invest Type&quot; = GMV. Also will be used in BCD calculation process (billing).</inlineHelpText>
+    <label>Seller Funding %</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

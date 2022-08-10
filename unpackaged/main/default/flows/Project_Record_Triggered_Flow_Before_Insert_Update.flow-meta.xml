@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <assignments>
+        <name>Populate_OracleId</name>
+        <label>Populate OracleId</label>
+        <locationX>50</locationX>
+        <locationY>551</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.OracleID__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.EBH_Seller__r.EBH_OracleID__c</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>US-0010688</description>
+        <name>Populate_Project_End_Date</name>
+        <label>Populate Project End Date</label>
+        <locationX>1106</locationX>
+        <locationY>551</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.CloseDate__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>CurrentDate</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>US-0011692</description>
+        <name>Populate_Trafic_Light</name>
+        <label>Populate Trafic Light</label>
+        <locationX>1370</locationX>
+        <locationY>551</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Traffic_Light__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Red</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>PopulateProjectEndDate</name>
+        <label>Populate Project End Date</label>
+        <locationX>1898</locationX>
+        <locationY>551</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.CloseDate__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>CurrentDate</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>US-0010569 - EU Acquisition: Adding Fields to Onboarding Projects</description>
+        <name>Update_GCX_handover_done</name>
+        <label>Update GCX handover done</label>
+        <locationX>578</locationX>
+        <locationY>551</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.GCX_handover_done__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Check_RecordType</name>
+        <label>Check RecordType</label>
+        <locationX>1304</locationX>
+        <locationY>311</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Seller_Risk_Management</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Seller_Risk_Management</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_Seller</targetReference>
+            </connector>
+            <label>Seller Risk Management</label>
+        </rules>
+        <rules>
+            <name>EU_Onboarding</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>EUOnboarding</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_Stage_EU_Onboarding</targetReference>
+            </connector>
+            <label>EU Onboarding</label>
+        </rules>
+        <rules>
+            <name>AU_Onboarding</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>eBayAUSMB</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_Stage</targetReference>
+            </connector>
+            <label>AU Onboarding</label>
+        </rules>
+        <rules>
+            <name>Scaling</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Scaling</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>CheckStage</targetReference>
+            </connector>
+            <label>Scaling</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>US-0009569 - AC3</description>
+        <name>Check_Seller</name>
+        <label>Check Seller</label>
+        <locationX>182</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Seller_Is_Change</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.EBH_Seller__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.EBH_Seller__r.EBH_OracleID__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.OracleID__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.EBH_Seller__r.EBH_OracleID__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Permission.UK_Seller_Risk_Management_BU</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Populate_OracleId</targetReference>
+            </connector>
+            <label>Seller Is Change</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>US-0010688</description>
+        <name>Check_Stage</name>
+        <label>Check Stage</label>
+        <locationX>1370</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>StageLiveToSiteOrClosedLost</name>
+            <conditionLogic>1 AND (2 OR 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.EBH_Stage__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.EBH_Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Live to Site</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.EBH_Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Closed Lost</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Populate_Project_End_Date</targetReference>
+            </connector>
+            <label>Stage = Live to Site or Closed Lost</label>
+        </rules>
+        <rules>
+            <name>OnHoldReason_PlannedPlatformChanges</name>
+            <conditionLogic>1 AND 2 AND ( 3 OR 4) AND 5</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.EBH_Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>On Hold</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.OnHoldReason__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Planned platform changes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.EBH_Stage__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.OnHoldReason__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Profile.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>AU Standard User Profile</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Populate_Trafic_Light</targetReference>
+            </connector>
+            <label>On Hold Reason = Planned platform changes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>US-0010569 - EU Acquisition: Adding Fields to Onboarding Projects</description>
+        <name>Check_Stage_EU_Onboarding</name>
+        <label>Check Stage EU Onboarding</label>
+        <locationX>710</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Completed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.EBH_Stage__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.EBH_Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Completed</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_GCX_handover_done</targetReference>
+            </connector>
+            <label>Completed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>US-0010688</description>
+        <name>CheckStage</name>
+        <label>Check Stage</label>
+        <locationX>2030</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>ClosedOrClosedLost</name>
+            <conditionLogic>1 AND (2 OR 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.EBH_Stage__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.EBH_Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Closed</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.EBH_Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Closed Lost</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>PopulateProjectEndDate</targetReference>
+            </connector>
+            <label>Closed Or Closed Lost</label>
+        </rules>
+    </decisions>
+    <description>US-0010569 - EU Acquisition: Adding Fields to Onboarding Projects
+US-0010688
+US-0011692</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>CurrentDate</name>
+        <dataType>Date</dataType>
+        <expression>Today()</expression>
+    </formulas>
+    <interviewLabel>Project Record-Triggered Flow Before-Insert-Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Project Record-Triggered Flow Before-Insert-Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>1178</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_RecordType</targetReference>
+        </connector>
+        <object>EBH_Project__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

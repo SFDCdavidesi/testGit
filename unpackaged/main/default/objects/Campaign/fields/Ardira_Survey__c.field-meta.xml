@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ardira_Survey__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>related survey field</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please note that only HIVE Admins can populate Survey ID value.
+
+Open a new &quot;Validate survey&quot; ticket, populate Survey ID and Campaign Information and submit the ticket. Once the HIVE admins validate survey settings, you will be able to create Tasks.</inlineHelpText>
+    <label>Survey Vista Id</label>
+    <referenceTo>ArdiraSurvey__Survey__c</referenceTo>
+    <relationshipLabel>Campaigns</relationshipLabel>
+    <relationshipName>Campaigns</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

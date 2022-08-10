@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>eBay_Ads_Letterhead</letterhead>
+    <name>Billing Information Changes</name>
+    <style>freeForm</style>
+    <subject>Billing Information Edited</subject>
+    <textOnly>Hi Susan,
+
+Here&#39;s an email to notify you that Billing Information was edited for {!Account.Name} by {!Account.LastModifiedBy}.
+
+You can find the changes on the related list tab.
+
+{!Account.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

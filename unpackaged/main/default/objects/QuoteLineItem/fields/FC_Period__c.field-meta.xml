@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FC_Period__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Dart: FC Period</inlineHelpText>
+    <label>FC Period</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Minutes</fullName>
+                <default>false</default>
+                <label>Minutes</label>
+            </value>
+            <value>
+                <fullName>Hours</fullName>
+                <default>false</default>
+                <label>Hours</label>
+            </value>
+            <value>
+                <fullName>Days</fullName>
+                <default>false</default>
+                <label>Days</label>
+            </value>
+            <value>
+                <fullName>Weeks</fullName>
+                <default>false</default>
+                <label>Weeks</label>
+            </value>
+            <value>
+                <fullName>Month</fullName>
+                <default>false</default>
+                <label>Month</label>
+            </value>
+            <value>
+                <fullName>Lifetime</fullName>
+                <default>false</default>
+                <label>Lifetime</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

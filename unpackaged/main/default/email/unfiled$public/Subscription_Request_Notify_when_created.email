@@ -1,0 +1,12 @@
+Hallo, <br/><br/><br/>
+
+der Händler {!Subscription_Request__c.Seller__c} hat soeben einen Account Manager abonniert.
+<br/><br/>
+Bitte setzt euch innerhalb der kommenden 5 Werktage mit ihm in Verbindung um alle weiteren Schritte zu besprechen.
+<br/><br/>
+Hier kann auch gemeinsam besprochen werden zu welchem Datum das Account Management genau starten soll.
+<br/><br/>
+<a href="{!Subscription_Request__c.Link}"> Hier klicken</a>
+ 
+<br/><br/><br/>
+Vielen Dank.

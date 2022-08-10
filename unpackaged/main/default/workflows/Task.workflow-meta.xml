@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Notification_When_Task_Is_Assigned_Email_Alert</fullName>
+        <description>Notification When Task Is Assigned Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/Task_Assigned_Email_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Notification_When_Task_Is_Completed_Email_Alert</fullName>
+        <description>Notification When Task Is Completed Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EBH_EmailTemplates/Task_Completed_Email_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>eBay_Ads_NA_Task_Reminder</fullName>
+        <description>eBay Ads NA - Task Reminder</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>eBay_Ads/Task_Reminder</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Change_RT_to_Call_Attempts_Task</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>X3CallAttempts</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Change RT to Call Attempts Task</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Change_Status_to_Completed</fullName>
+        <field>Status</field>
+        <literalValue>Completed</literalValue>
+        <name>Change Status to Completed</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DMC_equals_false</fullName>
+        <field>EBH_DMC__c</field>
+        <literalValue>0</literalValue>
+        <name>DMC equals false</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>EBH_UpdateTaskSubject</fullName>
+        <description>(EPH-7527) GCX Outreach Call Task user Restrictions</description>
+        <field>Subject</field>
+        <formula>Related_Campaign__r.Name  + &#39;_&#39; +  TEXT(Related_Campaign__r.EBH_Channel__c)</formula>
+        <name>EBH_UpdateTaskSubject</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Make_the_task_public</fullName>
+        <field>IsVisibleInSelfService</field>
+        <literalValue>1</literalValue>
+        <name>Make the task public</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Updated_Action_Outcome_Date</fullName>
+        <description>US-0018705 Merchant Support Group - Add Fields in Tasks for MSO</description>
+        <field>Action_Outcome_Date__c</field>
+        <formula>NOW()</formula>
+        <name>Updated Action Outcome Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>change_status_to_closed</fullName>
+        <field>Status</field>
+        <literalValue>Closed</literalValue>
+        <name>change status to closed</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>updated_Task_Completed_Date</fullName>
+        <description>EPH-7879 &quot;Open Related Tasks” and &quot;Completed Related Tasks&quot; tab in Task Detail Page</description>
+        <field>Task_Completed_Date__c</field>
+        <formula>NOW()</formula>
+        <name>updated Task Completed Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Change RT if 3 call attempts or completed</fullName>
+        <actions>
+            <name>Change_RT_to_Call_Attempts_Task</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Change RT in order to avoid users to call a task which is closed. New RT is associated with a RT without start call script button</description>
+        <failedMigrationToolVersion>238.6</failedMigrationToolVersion>
+        <formula>and( RecordType.Name &lt;&gt;&#39;AU Task&#39;, RecordType.Name &lt;&gt;&#39;Seller Risk Management&#39;, Log_Task__c =false, or(  Call_attempts__c &gt;=3,  TEXT( Status ) =&quot;Completed&quot;,TEXT( Status ) =&quot;Closed&quot;, TEXT( Status ) =&quot;Cancelled&quot;)  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>ChangeRecordTypeCallAttempts</fullName>
+        <actions>
+            <name>Change_RT_to_Call_Attempts_Task</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 or  2</booleanFilter>
+        <criteriaItems>
+            <field>Task.Call_attempts__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>3</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Task.Status</field>
+            <operation>equals</operation>
+            <value>Completed,Cancelled,Closed</value>
+        </criteriaItems>
+        <description>Change Record type if call attempts = 3</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Complete Task if 3 call attempts</fullName>
+        <actions>
+            <name>Change_Status_to_Completed</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Task.Call_attempts__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>3</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Task.RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>AU Task</value>
+        </criteriaItems>
+        <description>Change status to completed if there are 3 call attempts.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>EBH_GCXOutreach_TaskSubjectPrepopulate</fullName>
+        <actions>
+            <name>EBH_UpdateTaskSubject</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>(EPH-7527) GCX Outreach Call Task user Restrictions</description>
+        <formula>AND(  BEGINS(WhatId,&quot;701&quot;),  Related_Campaign__r.RecordType.DeveloperName == &quot;EBH_AMOutreach&quot; ,  Follow_Up_Task__c =false)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Populated Action Outcome Date</fullName>
+        <actions>
+            <name>Updated_Action_Outcome_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>US-0018705 Merchant Support Group - Add Fields in Tasks for MSO</description>
+        <formula>(ISNEW() &amp;&amp;  NOT( ISBLANK(TEXT(Action_Outcome__c))) ) || ISCHANGED( Action_Outcome__c )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Share with Portal users</fullName>
+        <actions>
+            <name>Make_the_task_public</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Task.IsVisibleInSelfService</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Task.Log_Task__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Task Closed when 3 attempts</fullName>
+        <actions>
+            <name>Change_RT_to_Call_Attempts_Task</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>change_status_to_closed</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 or 2</booleanFilter>
+        <criteriaItems>
+            <field>Task.Call_attempts__c</field>
+            <operation>equals</operation>
+            <value>3</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Task.Status</field>
+            <operation>equals</operation>
+            <value>Completed,Cancelled,Closed</value>
+        </criteriaItems>
+        <description>ST-000676</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Task Completed Date</fullName>
+        <actions>
+            <name>updated_Task_Completed_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>EPH-7879 &quot;Open Related Tasks” and &quot;Completed Related Tasks&quot; tab in Task Detail Page</description>
+        <formula>ISCHANGED(Status) &amp;&amp;  ISPICKVAL(Status, &#39;Completed&#39;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>change DMC if status closed</fullName>
+        <actions>
+            <name>DMC_equals_false</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Task.Status</field>
+            <operation>equals</operation>
+            <value>Cancelled</value>
+        </criteriaItems>
+        <description>Change DMC to false if status = cancelled or closed</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>eBay Ads NA  - Task Reminder</fullName>
+        <actions>
+            <name>eBay_Ads_NA_Task_Reminder</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(   $Setup.byPass__c.byPass_WFRule__c = FALSE,  $Profile.Name = &#39;Standard Ads User Profile&#39;, DAY( ActivityDate ) - DAY(TODAY()) = 1, NOT(ISPICKVAL(Status, &#39;Completed&#39;))  )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

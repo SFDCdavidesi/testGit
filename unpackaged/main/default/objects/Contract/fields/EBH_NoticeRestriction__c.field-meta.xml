@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_NoticeRestriction__c</fullName>
+    <description>[EBH] (EPH-172) : Notice Restriction</description>
+    <externalId>false</externalId>
+    <label>Notice Restriction</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>End of the term</fullName>
+                <default>false</default>
+                <label>End of the term</label>
+            </value>
+            <value>
+                <fullName>End of a month</fullName>
+                <default>false</default>
+                <label>End of a month</label>
+            </value>
+            <value>
+                <fullName>End of a quarter</fullName>
+                <default>false</default>
+                <label>End of a quarter</label>
+            </value>
+            <value>
+                <fullName>Initial term: end of the term, afterwards: none</fullName>
+                <default>false</default>
+                <label>Initial term: end of the term, afterwards: none</label>
+            </value>
+            <value>
+                <fullName>Initial term: end of the term, afterwards: end of a month</fullName>
+                <default>false</default>
+                <label>Initial term: end of the term, afterwards: end of a month</label>
+            </value>
+            <value>
+                <fullName>Initial term: end of the term, afterwards: end of a quarter</fullName>
+                <default>false</default>
+                <label>Initial term: end of the term, afterwards: end of a quarter</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>None</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

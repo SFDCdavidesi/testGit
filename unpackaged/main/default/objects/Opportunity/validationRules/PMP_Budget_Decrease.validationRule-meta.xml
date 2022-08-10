@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PMP_Budget_Decrease</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+
+$Setup.byPass__c.ByPass_Validation__c = FALSE,
+$Profile.Name = &quot;Standard Ads User Profile&quot;,
+
+RecordType.DeveloperName = $Label.OPP_RECORDTYPEDEVNAME_PMP,
+
+ISCHANGED(Amount),
+PRIORVALUE(Amount) &gt; Amount,
+ISBLANK(TEXT(Decreasing_Budget__c)),
+
+
+OR(
+ISPICKVAL(PRIORVALUE(StageName), &#39;Verbal Commitment&#39;),
+ISPICKVAL(PRIORVALUE(StageName), &#39;Closed Won&#39;),
+ISPICKVAL(PRIORVALUE(StageName), &#39;Closed Lost&#39;)
+)
+)</errorConditionFormula>
+    <errorDisplayField>Decreasing_Budget__c</errorDisplayField>
+    <errorMessage>Provide a reason for budget decrease.</errorMessage>
+</ValidationRule>

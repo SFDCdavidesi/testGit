@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PreventOutreachStatusChangeWhenStop</fullName>
+    <active>true</active>
+    <description>EPH-6842, US-0007080</description>
+    <errorConditionFormula>IF(AND(NOT(LEFT($Profile.Id, 15) =&#39;00e6A000000HNzw&#39;),RecordType.DeveloperName = &#39;EBH_AMOutreach&#39;,ISPICKVAL(PRIORVALUE(Status), &#39;Completed&#39;),ISCHANGED(Status), OR(ISPICKVAL( EBH_Channel__c , &#39;GCX Outreach (Phone)&#39;),ISPICKVAL( EBH_Channel__c , &#39;GCX Inbound (Phone)&#39;) ) )
+ ,true,false) &amp;&amp; NOT( $Setup.ActiveValidationRules__c.All_Validation_Rules_Deactivated__c )</errorConditionFormula>
+    <errorMessage>You can not change Outreach status when  Campaign Stopped</errorMessage>
+</ValidationRule>

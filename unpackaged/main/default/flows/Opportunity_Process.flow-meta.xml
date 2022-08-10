@@ -1,0 +1,863 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>CTQ_EU_Opportunity_Amount_Change_Alert</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_11_A1</name>
+        <label>CTQ EU Opp Amount Alert</label>
+        <locationX>1100</locationX>
+        <locationY>200</locationY>
+        <actionName>Opportunity.CTQ_EU_Opportunity_Amount_Change_Alert</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>customNotifTypeName</name>
+            <value>
+                <stringValue>NA_Ads_New_Crypto_Opp_Notifications</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>recipientCategory</name>
+            <value>
+                <stringValue>owner</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>recipientType</name>
+            <value>
+                <stringValue>reference</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_7_A1</name>
+        <label>New Crypto Opportunity Notification</label>
+        <locationX>700</locationX>
+        <locationY>200</locationY>
+        <actionName>customNotificationAction</actionName>
+        <actionType>customNotificationAction</actionType>
+        <connector>
+            <targetReference>myDecision8</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>customNotifTypeId</name>
+            <value>
+                <stringValue>000000000000000</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>customNotifTypeName</name>
+            <value>
+                <stringValue>NA_Ads_New_Crypto_Opp_Notifications</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>title</name>
+            <value>
+                <stringValue>Hi {!myVariable_current.Owner.FirstName} {!myVariable_current.Owner.LastName}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>body</name>
+            <value>
+                <stringValue>Crypto-advertiser ({!myVariable_current.Account.Name}) must supply details of its registration with (i) FinCEN as a Money Services Business and (ii) a state as a money transmitter. This should be uploaded to the Salesforce Opportunity: {!myVariable_current.Name}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>targetId</name>
+            <value>
+                <stringValue>{!myVariable_current.Id}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>recipientIds</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>maxOccurs</name>
+                <value>
+                    <numberValue>500.0</numberValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>objectType</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>recipientIds</name>
+            <value>
+                <elementReference>myCollection_myRule_7_A1recipientIds</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>CTQ_Opportunity_Amount_Change_Alert</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_9_A1</name>
+        <label>CTQ Opp Amount Change Alert</label>
+        <locationX>900</locationX>
+        <locationY>200</locationY>
+        <actionName>Opportunity.CTQ_Opportunity_Amount_Change_Alert</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>myDecision10</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>51.0</apiVersion>
+    <assignments>
+        <name>myAssignment_myRule_7_A1</name>
+        <label>myAssignment_myRule_7_A1</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>myCollection_myRule_7_A1recipientIds</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>myVariable_current.OwnerId</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>myRule_7_A1</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision</name>
+        <label>myDecision</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision3</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_1</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_1_A1</targetReference>
+            </connector>
+            <label>Set Opportunity Name When Field Change US-0009344</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>4.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision10</name>
+        <label>myDecision10</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_11</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_11</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_11_pmetdec</targetReference>
+            </connector>
+            <label>CTQ - EU Email Alerts</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision3</name>
+        <label>myDecision3</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision6</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_4</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_4</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_4_A1</targetReference>
+            </connector>
+            <label>NA Opp 1P Naming Convention</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>2.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision6</name>
+        <label>myDecision6</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision8</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_7</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_7</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myAssignment_myRule_7_A1</targetReference>
+            </connector>
+            <label>NA Crypto Account Notification</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>3.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision8</name>
+        <label>myDecision8</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision10</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_9</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_9</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_9_pmetdec</targetReference>
+            </connector>
+            <label>CTQ -  Email Alert</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_11_pmetdec</name>
+        <label>Previously Met Decision</label>
+        <locationX>1100</locationX>
+        <locationY>100</locationY>
+        <defaultConnector>
+            <targetReference>myRule_11_A1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Previously Met</defaultConnectorLabel>
+        <rules>
+            <name>myRule_11_pmetnullrule</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_11_A1</targetReference>
+            </connector>
+            <label>Previously Met - Null</label>
+        </rules>
+        <rules>
+            <name>myRule_11_pmetrule</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_11_pmetrule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Previously Met - Prev</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_9_pmetdec</name>
+        <label>Previously Met Decision</label>
+        <locationX>900</locationX>
+        <locationY>100</locationY>
+        <defaultConnector>
+            <targetReference>myRule_9_A1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Previously Met</defaultConnectorLabel>
+        <rules>
+            <name>myRule_9_pmetnullrule</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_9_A1</targetReference>
+            </connector>
+            <label>Previously Met - Null</label>
+        </rules>
+        <rules>
+            <name>myRule_9_pmetrule</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_9_pmetrule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myDecision10</targetReference>
+            </connector>
+            <label>Previously Met - Prev</label>
+        </rules>
+    </decisions>
+    <description>US-0009344/9882 - Opportunity Additional Automation Requirements, US-0009394 - Opportunity Rollup Summary - Incorrect field</description>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>IF(ISBLANK([Opportunity].Country_Code__c), &#39;&#39;, [Opportunity].Country_Code__c ) &amp;
+IF(ISBLANK([Opportunity].Agency__r.Name), &#39;&#39;, &quot;_&quot; &amp; LEFT([Opportunity].Agency__r.Name,30)) &amp;
+IF(ISBLANK([Opportunity].Account.Name), &#39;&#39;, &quot;_&quot; &amp; LEFT([Opportunity].Account.Name,30)) &amp;
+IF(ISBLANK([Opportunity].Ext_Name_Campaign__c), &#39;&#39;, &quot;_&quot; &amp; LEFT([Opportunity].Ext_Name_Campaign__c,30)) &amp;
+IF(ISBLANK(TEXT([Opportunity].Campaign_Start2__c)), &#39;&#39;, &quot;_&quot; &amp; TEXT([Opportunity].Campaign_Start2__c)) &amp;
+IF(ISBLANK(TEXT([Opportunity].Campaign_End__c)), &#39;&#39;, &quot;_&quot; &amp; TEXT([Opportunity].Campaign_End__c))</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_2_myRule_1_A1_6965451873</name>
+        <dataType>String</dataType>
+        <expression>IF(ISBLANK({!myVariable_current.Country_Code__c}), &#39;&#39;, {!myVariable_current.Country_Code__c} ) &amp;
+IF(ISBLANK({!myVariable_current.Agency__r.Name}), &#39;&#39;, &quot;_&quot; &amp; LEFT({!myVariable_current.Agency__r.Name},30)) &amp;
+IF(ISBLANK({!myVariable_current.Account.Name}), &#39;&#39;, &quot;_&quot; &amp; LEFT({!myVariable_current.Account.Name},30)) &amp;
+IF(ISBLANK({!myVariable_current.Ext_Name_Campaign__c}), &#39;&#39;, &quot;_&quot; &amp; LEFT({!myVariable_current.Ext_Name_Campaign__c},30)) &amp;
+IF(ISBLANK(TEXT({!myVariable_current.Campaign_Start2__c})), &#39;&#39;, &quot;_&quot; &amp; TEXT({!myVariable_current.Campaign_Start2__c})) &amp;
+IF(ISBLANK(TEXT({!myVariable_current.Campaign_End__c})), &#39;&#39;, &quot;_&quot; &amp; TEXT({!myVariable_current.Campaign_End__c}))</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>IF(ISBLANK([Opportunity].Country_Code__c), &#39;&#39;, [Opportunity].Country_Code__c ) &amp;
+
+IF(ISBLANK(TEXT([Opportunity].Customer_Type__c)), &#39;&#39;, &quot;_&quot; &amp; TEXT([Opportunity].Customer_Type__c)) &amp;
+
+
+IF(ISBLANK([Opportunity].Agency__r.Name), &#39;&#39;, &quot;_&quot; &amp; LEFT([Opportunity].Agency__r.Name,30)) &amp;
+
+IF(ISBLANK([Opportunity].Account.Name), &#39;&#39;, &quot;_&quot; &amp; LEFT([Opportunity].Account.Name,30)) &amp;
+
+IF(ISBLANK([Opportunity].Ext_Name_Campaign__c), &#39;&#39;, &quot;_&quot; &amp; LEFT([Opportunity].Ext_Name_Campaign__c,30)) &amp;
+
+IF(ISBLANK(TEXT([Opportunity].Campaign_Start2__c)), &#39;&#39;, &quot;_&quot; &amp; TEXT([Opportunity].Campaign_Start2__c)) &amp;
+
+IF(ISBLANK(TEXT([Opportunity].Campaign_End__c)), &#39;&#39;, &quot;_&quot; &amp; TEXT([Opportunity].Campaign_End__c))</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_5_myRule_4_A1_0590397314</name>
+        <dataType>String</dataType>
+        <expression>IF(ISBLANK({!myVariable_current.Country_Code__c}), &#39;&#39;, {!myVariable_current.Country_Code__c} ) &amp;
+
+IF(ISBLANK(TEXT({!myVariable_current.Customer_Type__c})), &#39;&#39;, &quot;_&quot; &amp; TEXT({!myVariable_current.Customer_Type__c})) &amp;
+
+
+IF(ISBLANK({!myVariable_current.Agency__r.Name}), &#39;&#39;, &quot;_&quot; &amp; LEFT({!myVariable_current.Agency__r.Name},30)) &amp;
+
+IF(ISBLANK({!myVariable_current.Account.Name}), &#39;&#39;, &quot;_&quot; &amp; LEFT({!myVariable_current.Account.Name},30)) &amp;
+
+IF(ISBLANK({!myVariable_current.Ext_Name_Campaign__c}), &#39;&#39;, &quot;_&quot; &amp; LEFT({!myVariable_current.Ext_Name_Campaign__c},30)) &amp;
+
+IF(ISBLANK(TEXT({!myVariable_current.Campaign_Start2__c})), &#39;&#39;, &quot;_&quot; &amp; TEXT({!myVariable_current.Campaign_Start2__c})) &amp;
+
+IF(ISBLANK(TEXT({!myVariable_current.Campaign_End__c})), &#39;&#39;, &quot;_&quot; &amp; TEXT({!myVariable_current.Campaign_End__c}))</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+    TEXT([Opportunity].Owner.Company_Code__c) != $Label.EBAY_INC_US ,
+    [Opportunity].Owner.Profile.Name = &#39;Standard Ads EU User Profile&#39;,
+    OR(
+        ISNEW(),
+        ISCHANGED([Opportunity].Agency__c),
+        ISCHANGED([Opportunity].Ext_Name_Campaign__c)
+    ),
+    OR(
+        [Opportunity].RecordType.DeveloperName == &#39;eBay&#39;,
+        [Opportunity].RecordType.DeveloperName == &#39;eBay_Ads_Direct_Revision_Opportunity&#39;,
+        [Opportunity].RecordType.DeveloperName == &#39;Private_Marketplace&#39;,
+        [Opportunity].RecordType.DeveloperName == &#39;Programmatic&#39;
+    ) 
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_1</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+    TEXT({!myVariable_current.Owner.Company_Code__c}) != {!$Label.EBAY_INC_US} ,
+    {!myVariable_current.Owner.Profile.Name} = &#39;Standard Ads EU User Profile&#39;,
+    OR(
+        ISNEW(),
+        ISCHANGED({!myVariable_current.Agency__c}),
+        ISCHANGED({!myVariable_current.Ext_Name_Campaign__c})
+    ),
+    OR(
+        {!myVariable_current.RecordType.DeveloperName} == &#39;eBay&#39;,
+        {!myVariable_current.RecordType.DeveloperName} == &#39;eBay_Ads_Direct_Revision_Opportunity&#39;,
+        {!myVariable_current.RecordType.DeveloperName} == &#39;Private_Marketplace&#39;,
+        {!myVariable_current.RecordType.DeveloperName} == &#39;Programmatic&#39;
+    ) 
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+$Setup.byPass__c.byPass_WFRule__c = FALSE,
+ISCHANGED( [Opportunity].Amount ),
+NOT(ISBLANK([Opportunity].Amount)),
+NOT(BEGINS([Opportunity].Name, &#39;NA&#39;)), 
+[Opportunity].Customer__c = &#39;Call to Quarter&#39;
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_11</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+{!$Setup.byPass__c.byPass_WFRule__c} = FALSE,
+ISCHANGED( {!myVariable_current.Amount} ),
+NOT(ISBLANK({!myVariable_current.Amount})),
+NOT(BEGINS({!myVariable_current.Name}, &#39;NA&#39;)), 
+{!myVariable_current.Customer__c} = &#39;Call to Quarter&#39;
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+$Setup.byPass__c.byPass_WFRule__c = FALSE,
+ISCHANGED( [Opportunity].Amount ),
+NOT(ISBLANK([Opportunity].Amount)),
+NOT(BEGINS([Opportunity].Name, &#39;NA&#39;)), 
+[Opportunity].Customer__c = &#39;Call to Quarter&#39;
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_11_pmetrule</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+{!$Setup.byPass__c.byPass_WFRule__c} = FALSE,
+ISCHANGED( {!myVariable_old.Amount} ),
+NOT(ISBLANK({!myVariable_old.Amount})),
+NOT(BEGINS({!myVariable_old.Name}, &#39;NA&#39;)), 
+{!myVariable_old.Customer__c} = &#39;Call to Quarter&#39;
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+    TEXT([Opportunity].Owner.Company_Code__c) != $Label.EBAY_INC_US ,
+[Opportunity].Owner.Profile.Name = &#39;Standard Ads User Profile&#39;,
+    OR(
+        ISNEW(),
+        ISCHANGED([Opportunity].Agency__c)    
+),
+    OR(
+        [Opportunity].RecordType.DeveloperName == &#39;eBay&#39;,
+        [Opportunity].RecordType.DeveloperName == &#39;eBay_Ads_Direct_Revision_Opportunity&#39;,
+        [Opportunity].RecordType.DeveloperName == &#39;Private_Marketplace&#39;,
+        [Opportunity].RecordType.DeveloperName == &#39;Programmatic&#39;
+    ) 
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_4</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+    TEXT({!myVariable_current.Owner.Company_Code__c}) != {!$Label.EBAY_INC_US} ,
+{!myVariable_current.Owner.Profile.Name} = &#39;Standard Ads User Profile&#39;,
+    OR(
+        ISNEW(),
+        ISCHANGED({!myVariable_current.Agency__c})    
+),
+    OR(
+        {!myVariable_current.RecordType.DeveloperName} == &#39;eBay&#39;,
+        {!myVariable_current.RecordType.DeveloperName} == &#39;eBay_Ads_Direct_Revision_Opportunity&#39;,
+        {!myVariable_current.RecordType.DeveloperName} == &#39;Private_Marketplace&#39;,
+        {!myVariable_current.RecordType.DeveloperName} == &#39;Programmatic&#39;
+    ) 
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+
+$Setup.byPass__c.byPass_WFRule__c = FALSE,
+[Opportunity].Owner.Profile.Name = &#39;Standard Ads User Profile&#39;,
+ISPICKVAL([Opportunity].Account.Industry, &#39;Crypto-Currency&#39;)
+
+)
+</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_7</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+
+{!$Setup.byPass__c.byPass_WFRule__c} = FALSE,
+{!myVariable_current.Owner.Profile.Name} = &#39;Standard Ads User Profile&#39;,
+ISPICKVAL({!myVariable_current.Account.Industry}, &#39;Crypto-Currency&#39;)
+
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+$Setup.byPass__c.byPass_WFRule__c = FALSE,
+ISCHANGED( [Opportunity].Amount ),
+NOT(ISBLANK([Opportunity].Amount)),
+[Opportunity].Customer__c = &#39;Call to Quarter&#39;
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_9</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+{!$Setup.byPass__c.byPass_WFRule__c} = FALSE,
+ISCHANGED( {!myVariable_current.Amount} ),
+NOT(ISBLANK({!myVariable_current.Amount})),
+{!myVariable_current.Customer__c} = &#39;Call to Quarter&#39;
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+$Setup.byPass__c.byPass_WFRule__c = FALSE,
+ISCHANGED( [Opportunity].Amount ),
+NOT(ISBLANK([Opportunity].Amount)),
+[Opportunity].Customer__c = &#39;Call to Quarter&#39;
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_9_pmetrule</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+{!$Setup.byPass__c.byPass_WFRule__c} = FALSE,
+ISCHANGED( {!myVariable_old.Amount} ),
+NOT(ISBLANK({!myVariable_old.Amount})),
+{!myVariable_old.Customer__c} = &#39;Call to Quarter&#39;
+)</expression>
+    </formulas>
+    <interviewLabel>Opportunity_Process-7_InterviewLabel</interviewLabel>
+    <label>Opportunity Process</label>
+    <processMetadataValues>
+        <name>ObjectType</name>
+        <value>
+            <stringValue>Opportunity</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>ObjectVariable</name>
+        <value>
+            <elementReference>myVariable_current</elementReference>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OldObjectVariable</name>
+        <value>
+            <elementReference>myVariable_old</elementReference>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>TriggerType</name>
+        <value>
+            <stringValue>onAllChanges</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Workflow</processType>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Opportunity]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_1_A1</name>
+        <label>Update Opportunity Name</label>
+        <locationX>100</locationX>
+        <locationY>200</locationY>
+        <connector>
+            <targetReference>myDecision3</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Name</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Formula</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Name</field>
+            <value>
+                <elementReference>formula_2_myRule_1_A1_6965451873</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Opportunity</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Opportunity]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_4_A1</name>
+        <label>Update Opp Name</label>
+        <locationX>400</locationX>
+        <locationY>200</locationY>
+        <connector>
+            <targetReference>myDecision6</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Name</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Formula</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Name</field>
+            <value>
+                <elementReference>formula_5_myRule_4_A1_0590397314</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Opportunity</object>
+    </recordUpdates>
+    <startElementReference>myDecision</startElementReference>
+    <status>Active</status>
+    <variables>
+        <name>myCollection_myRule_7_A1recipientIds</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>myVariable_current</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+    <variables>
+        <name>myVariable_old</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+</Flow>

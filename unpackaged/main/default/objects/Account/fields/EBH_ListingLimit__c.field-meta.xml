@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_ListingLimit__c</fullName>
+    <description>[EBH] (EPH-2201) (EPH-78) - Upper limit of total number of items a seller can list within a month across all eBay sites</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Upper limit of total number of items a seller can list within a month across all eBay sites</inlineHelpText>
+    <label>Quantity Limit</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

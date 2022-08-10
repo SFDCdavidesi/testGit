@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Open_Slots_Available_w__c</fullName>
+    <description>US-0011519 - Deal Retail Campaign Updates</description>
+    <externalId>false</externalId>
+    <formula>IF(AND(EBH_AcceptProposalsEnd__c &lt; TODAY(),EBH_OpenSeatsAvailable__c &gt; 0),0, EBH_OpenSeatsAvailable__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Open Slots Available</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

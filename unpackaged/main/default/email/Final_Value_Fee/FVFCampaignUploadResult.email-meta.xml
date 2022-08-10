@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0006998 Bulk Upload FVF Campaign</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>FVFCampaignUploadResult</name>
+    <style>none</style>
+    <subject>Successful Upload of Nominated Items</subject>
+    <textOnly>Dear {!Owner} ,
+
+
+All Nominated Items for the FVF Campaign have been uploaded.
+
+In total, {!countItem} listings for {!countFVF} sellers were uploaded.
+
+Objects  Success  Failed  Comments
+
+FVF(listing level) -promo on seller level
+
+{!fvfOK}   {!fvfKO}  {!fvfError}
+Related Listings   {!itemOK}   {!itemKO}  {!itemError}
+
+Best,
+
+HIVE team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

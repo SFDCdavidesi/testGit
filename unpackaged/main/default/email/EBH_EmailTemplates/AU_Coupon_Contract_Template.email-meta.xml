@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0018713 [AU] Coupon Click Contract Templates to be sent to AU Sellers | US-0010476 - AU Coupon email template content update</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>AU Coupon Contract Template</name>
+    <style>none</style>
+    <subject>Coupon Contract | {eBaySellerID} | {Coupon_ID__c} | {!Coupon_Seller__c.Coupon_Start_Date__c} | {!Coupon_Seller__c.Coupon_End_Date__c}</subject>
+    <textOnly>Dear {eBaySellerID},
+
+This email is to offer You, the opportunity to actively participate in an upcoming coupon offer on eBay. The promotion will have a unique redemption code, terms and conditions, timings and may also be targeted to specific eBay customers.
+
+This promotion will start on {CouponStartDate} {CouponStartTime} and end on {CouponEndDate} {CouponEndTime}, subject to the Coupon Terms and Conditions set out below. The Seller funding rate for this promotion is {SellerFundingRate%}.
+
+To Participate:
+
+Please review  the  Coupon Term Sheet and Master Agreement which govern your participation in the promotion and are available here: Coupon Terms and Conditions.
+
+To accept the offer click on &quot;I AGREE&quot; below the Master Agreement.
+Please note you will need to accept offer by {ContractDueDate}. If you do not accept by this date, eBay reserves the right to exclude you from this coupon offer.
+
+You will receive an email confirming your participation within 1 day of acceptance.
+
+If you have any further questions, please kindly revert back to retailpromotions@ebay.com.
+
+Thank You
+
+Retail Promotions Team
+
+eBay Australia</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

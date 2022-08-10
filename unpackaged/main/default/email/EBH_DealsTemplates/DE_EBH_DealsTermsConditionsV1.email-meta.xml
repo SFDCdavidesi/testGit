@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>[EBH] (EPH-) - Deals Terms &amp; Conditions V1</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DE Deals Terms &amp; Conditions V1</name>
+    <style>none</style>
+    <subject>Ihre Anmeldung beim WOW! Angebote-Portal</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

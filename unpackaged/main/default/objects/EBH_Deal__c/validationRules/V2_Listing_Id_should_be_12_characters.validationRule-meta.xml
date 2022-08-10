@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>V2_Listing_Id_should_be_12_characters</fullName>
+    <active>true</active>
+    <description>US-0008843 - [NA] Migrate NA Deals Validation Rules to Hive
+US-0009650 - [SEP] Component to Bulk Upload NA Unsub Deals (Added recordType V3)</description>
+    <errorConditionFormula>AND(
+NOT($Setup.byPass__c.ByPass_Validation__c),
+OR(RecordType.DeveloperName =&#39;Deal_V2&#39;,RecordType.DeveloperName =&#39;Deal_V3&#39;),
+AND( NOT(ISBLANK(EBH_eBayItemID__c)),
+OR(NOT(ISNUMBER(EBH_eBayItemID__c)),
+LEN(EBH_eBayItemID__c) &lt;&gt; 12))
+)</errorConditionFormula>
+    <errorMessage>Listing ID must be numeric and 12 characters in length</errorMessage>
+</ValidationRule>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>US-0006886 [AU] Approval Process for eBay AU SMB Project with lead Source &quot;Self Gen&quot;</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>EBH_eBayBlankLetterhead</letterhead>
+    <name>AU SMB Self Gen Lead Approval</name>
+    <style>freeForm</style>
+    <subject>A New Salesforce Lead is Pending Your Approval | Company: {!Lead.Company}</subject>
+    <textOnly>A New Salesforce Lead is Pending Your Approval
+
+Company : {!Lead.Company}
+Lead Owner : {!Lead.OwnerFullName}
+Lead Source : {!Lead.LeadSource}
+Website : {!Lead.Website}
+Online Rank : {!Lead.OnlineRank__c}
+Shopping Cart : {!Lead.00N3u00000PEXgD}
+
+Link : Go to Lead
+
+Approve or Reject</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,3 @@
+Your account {!Account.Name} has been assigned SAP ID {!Account.SAP_ID__c}
+
+Link: {!Account.Link}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Deal_On_DRC</label>
+    <protected>false</protected>
+    <values>
+        <field>Child_Object__c</field>
+        <value xsi:type="xsd:string">EBH_Deal__c</value>
+    </values>
+    <values>
+        <field>Column_FieldSet__c</field>
+        <value xsi:type="xsd:string">Custom_Related_List_Column</value>
+    </values>
+    <values>
+        <field>Dependent_Picklist__c</field>
+        <value xsi:type="xsd:string">EBH_Country__c=EBH_Category__c</value>
+    </values>
+    <values>
+        <field>Filter_FieldSet__c</field>
+        <value xsi:type="xsd:string">Custom_Related_List_Filter_Column</value>
+    </values>
+    <values>
+        <field>Lookup_Field__c</field>
+        <value xsi:type="xsd:string">EBH_DealRetailCampaign__c</value>
+    </values>
+    <values>
+        <field>Parent_Object__c</field>
+        <value xsi:type="xsd:string">EBH_DealRetailCampaign__c</value>
+    </values>
+    <values>
+        <field>Visible_Custom_Buttons__c</field>
+        <value xsi:type="xsd:string">EBH_Reject; Cancel_Deals; Approve; Cancel_Amendment; Amend_Contract; Recall_Deals; Update_Spotlight_Category;Subsidize_Deal</value>
+    </values>
+</CustomMetadata>

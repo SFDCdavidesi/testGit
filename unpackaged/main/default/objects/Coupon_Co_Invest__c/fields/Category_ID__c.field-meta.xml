@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Category_ID__c</fullName>
+    <description>EPH-7486 Add Category ID to Object: Coupon Co-Invest</description>
+    <externalId>false</externalId>
+    <formula>IF( RecordType.DeveloperName = &#39;Coupon_Co_Invest_Pop&#39;, Category_Tree__r.Category_ID__c, Coupon_Category__r.Category__r.Category_ID__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Category ID</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

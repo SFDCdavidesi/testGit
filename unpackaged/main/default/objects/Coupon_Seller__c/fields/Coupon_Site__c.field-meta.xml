@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Coupon_Site__c</fullName>
+    <description>US-0010429 - Ability to sign Agreement in portal</description>
+    <externalId>false</externalId>
+    <formula>IF( INCLUDES(Coupon__r.Couponsite_s__c , &quot;ebay.de&quot;), &quot;ebay.de &quot;,&quot;&quot;)
+&amp;
+IF( INCLUDES(Coupon__r.Couponsite_s__c , &quot;ebay.co.uk&quot;), &quot;ebay.co.uk &quot;, &quot;&quot;)
+&amp;
+IF( INCLUDES(Coupon__r.Couponsite_s__c , &quot;ebay.fr&quot;), &quot;ebay.fr &quot;, &quot;&quot;)
+&amp;
+IF( INCLUDES(Coupon__r.Couponsite_s__c , &quot;ebay.it&quot;), &quot;ebay.it &quot;, &quot;&quot;)
+&amp;
+IF( INCLUDES(Coupon__r.Couponsite_s__c , &quot;ebay.es&quot;), &quot;ebay.es &quot;, &quot;&quot;)
+&amp;
+IF( INCLUDES(Coupon__r.Couponsite_s__c , &quot;ebay.ch&quot;), &quot;ebay.ch &quot;, &quot;&quot;)
+&amp;
+IF( INCLUDES(Coupon__r.Couponsite_s__c , &quot;ebay.at&quot;), &quot;ebay.at &quot;, &quot;&quot;)
+&amp;
+IF( INCLUDES(Coupon__r.Couponsite_s__c , &quot;ebay.pl&quot;), &quot;ebay.pl &quot;, &quot;&quot;)
+&amp;
+IF( INCLUDES(Coupon__r.Couponsite_s__c , &quot;ebay.nl&quot;), &quot;ebay.nl &quot;, &quot;&quot;)
+&amp;
+IF( INCLUDES(Coupon__r.Couponsite_s__c , &quot;ebay.com&quot;), &quot;ebay.com &quot;, &quot;&quot;)
+&amp;
+IF( INCLUDES(Coupon__r.Couponsite_s__c , &quot;ebay.com.au&quot;), &quot;ebay.com.au &quot;, &quot;&quot;)
+&amp;
+IF( INCLUDES(Coupon__r.Couponsite_s__c , &quot;ebay.ca&quot;), &quot;ebay.ca &quot;, &quot;&quot;)
+&amp;
+IF( INCLUDES(Coupon__r.Couponsite_s__c , &quot;ebay.cfr&quot;), &quot;ebay.cfr&quot;, &quot;&quot;)</formula>
+    <label>Coupon Site</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

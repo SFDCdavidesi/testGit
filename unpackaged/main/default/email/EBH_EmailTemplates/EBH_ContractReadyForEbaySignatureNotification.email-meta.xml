@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>[EBH] (EPH-4159) : Email template to notify Contract Admin team on contract status change to &#39;Ready for Ebay signature&#39;</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Contract Ready for eBay Signature Notification</name>
+    <style>none</style>
+    <subject>Your Contract is Ready for eBay Signature</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

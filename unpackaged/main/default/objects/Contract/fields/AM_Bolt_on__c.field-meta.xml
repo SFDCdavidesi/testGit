@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AM_Bolt_on__c</fullName>
+    <description>EPH-5479 Additional bolt-ons for Listing and ACP</description>
+    <externalId>false</externalId>
+    <label>AM Bolt-on</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>EBH_Site__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Standard Price</fullName>
+                <default>false</default>
+                <label>Standard Price</label>
+            </value>
+            <value>
+                <fullName>Free</fullName>
+                <default>false</default>
+                <label>Free</label>
+            </value>
+            <value>
+                <fullName>Not Available</fullName>
+                <default>false</default>
+                <label>Not Available</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>IE</controllingFieldValue>
+            <controllingFieldValue>UK</controllingFieldValue>
+            <controllingFieldValue>PL</controllingFieldValue>
+            <controllingFieldValue>FR</controllingFieldValue>
+            <controllingFieldValue>IT</controllingFieldValue>
+            <controllingFieldValue>ES</controllingFieldValue>
+            <controllingFieldValue>Multi</controllingFieldValue>
+            <controllingFieldValue>NL</controllingFieldValue>
+            <controllingFieldValue>CH</controllingFieldValue>
+            <controllingFieldValue>AT</controllingFieldValue>
+            <controllingFieldValue>BE</controllingFieldValue>
+            <valueName>Not Available</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DE</controllingFieldValue>
+            <controllingFieldValue>Multi</controllingFieldValue>
+            <valueName>Standard Price</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DE</controllingFieldValue>
+            <controllingFieldValue>Multi</controllingFieldValue>
+            <valueName>Free</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

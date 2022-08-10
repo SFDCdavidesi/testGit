@@ -1,0 +1,36 @@
+<style>
+	.ul-dash {
+              list-style-type: none;
+         }
+
+.ul-dash li:before {
+  content: '- ';
+  position: absolute;
+  margin-left: -20px;
+}
+	 
+</style>
+<p>Di seguito/In allegato trovi un riepilogo delle somme fatturabili per il supporto marketing relativo agli Imperdibili completati a partire da {!EBH_Deal__c.EBH_DealStartDate__c}:</p>
+<p><strong>Dettagli sugli Imperdibili:</strong></p>
+<ul>
+<li>{!EBH_Deal__c.EBH_DealStartDate__c} bis {!EBH_Deal__c.EBH_DealEndDate__c}</li>
+<li>{!EBH_Deal__c.EBH_ProductTitle__c}</li>
+<li>{!EBH_Deal__c.EBH_eBayItemID__c}</li>
+<li>{!EBH_Deal__c.EBH_LocalDealFormat__c}</li>
+</ul>
+<p><strong>Supporto marketing fatturabile*:</strong></p>
+<ul class="ul-dash">
+<li>Volume delle vendite fatturabile: {!EBH_Deal__c.EBH_Payout_SI_calc__c}</li>
+<li>Supporto marketing per oggetto venduto: {!EBH_Deal__c.EBH_Subsidy__c}</li>
+<li>Totale netto per supporto marketing: {!EBH_Deal__c.Subsidy_Final_Net__c}</li>
+<li>IVA: {!EBH_Deal__c.VAT_N__c}%</li>
+<li>Totale lordo per supporto marketing: {!EBH_Deal__c.EBH_SubsidyFinal__c}</li>
+</ul>
+<p>*Questa non &egrave; una fattura utilizzabile ai fini IVA. La fattura &egrave; emessa dal venditore.</p>
+<p>Se sei d'accordo con il riepilogo e l'importo del pagamento, trasferiremo {!EBH_Deal__c.EBH_SubsidyFinal__c} (Totale lordo per supporto marketing) sul tuo conto PayPal.</p>
+<p>Invia una fattura usando <a title="questo strumento" href="{!EBH_Deal__c.SiteURL__c}/EBH_InvoiceUploadLandingPage?id={!EBH_Deal__c.Unique_Id_Ext__c}">questo strumento</a></p>
+<p>Clicca <a title="qui " href="{!EBH_Deal__c.SiteURL__c}/EBH_ClarificationRequiredPage?id={!EBH_Deal__c.Unique_Id_Ext__c}">qui</a> per ulteriori informazioni o se hai delle domande. Un addetto del Servizio clienti ti contatter&agrave; al pi&ugrave; presto.</p>
+<p>Cordiali saluti,</p>
+<p>Il Team di eBay</p>
+<p>&nbsp;</p>
+<p><span style="font-size: 11px;">eBay ha inviato questo messaggio a {!EBH_Deal__c.EBH_BusinessName__c}.<br />Il tuo nome &egrave; stato incluso in modo che sia chiaro che il messaggio &egrave; autentico.<br /><a title="Per saperne di pi&ugrave;" href="https://www.ebay.it/help/account/protecting-account/recognising-spoof-emails?id=4195">Per saperne di pi&ugrave;</a><br />eBay GmbH ti ha inviato questa email perch&eacute; le tue Preferenze di notifica indicano che desideri ricevere informazioni su promozioni, offerte ed eventi speciali. Sei iscritto/a con l'indirizzo {!EBH_Deal__c.EBH_SellerEmail__c} utilizzato per la tua registrazione su <a title="www.ebay.it" href="http://www.ebay.it/">www.ebay.it</a>.<br />Puoi <a title="annullare in ogni momento l'iscrizione a questa newsletter" href="https://my.ebay.it/ws/eBayISAPI.dll?MyEbayBeta&amp;CurrentPage=MyeBayNextNotificationPreferences&amp;ssPageName=STRK:ME:LNLK">annullare in ogni momento l'iscrizione a questa newsletter</a>.<br />Per ulteriori informazioni consulta l'<a title="Accordo per gli utenti" href="https://www.ebay.it/help/policies/member-behaviour-policies/user-agreement?id=4259">Accordo per gli utenti</a> e l'<a title="Informativa Privacy per gli utenti" href="https://www.ebay.it/help/policies/member-behaviour-policies/user-privacy-notice-privacy-policy?id=4260">Informativa Privacy per gli utenti</a>.<br />Copyright &copy; 2019 eBay Inc.</span></p>

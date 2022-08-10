@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MC_Whitelisted__c</fullName>
+    <description>US-0009891 - Create new fields on Coupon and Coupon-Seller required for MC Coupon Flow</description>
+    <externalId>false</externalId>
+    <formula>Coupon__r.MC_Whitelisted__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>When checked that the coupon will be whitelisted for the Marketing Cloud flow for sending emails to sellers. Otherwise the communication will be sent using the proprietary email templates/flows from Salesforce. This setting is set on the Coupon record.</inlineHelpText>
+    <label>MC Whitelisted</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>
