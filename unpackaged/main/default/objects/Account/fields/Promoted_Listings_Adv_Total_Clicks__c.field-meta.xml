@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Promoted_Listings_Adv_Total_Clicks__c</fullName>
+    <description>US-0009555 - PL/CP fields into SF from DWH</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Total clicks from PL Advanced, includes charged, fraud and invalid clicks.</inlineHelpText>
+    <label>PLA Total Clicks (last retail week)</label>
+    <precision>15</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

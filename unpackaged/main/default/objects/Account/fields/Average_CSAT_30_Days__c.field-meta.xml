@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Average_CSAT_30_Days__c</fullName>
+    <description>US-0009739 [AU] Customer Support metric for AU Sellers, automatically completed via Integration and Read-Only for non-System Administrator profiles</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Average customer satisfaction score across all contacts over the past 30 days</inlineHelpText>
+    <label>Average CSAT (30 Days)</label>
+    <precision>4</precision>
+    <required>false</required>
+    <scale>1</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

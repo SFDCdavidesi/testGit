@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_Areas_of_Interest__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Contacts preferred content s/he likes to be informed on. This will be used in marketing cloud to target the contact with relevant content.</inlineHelpText>
+    <label>Areas of Interest</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>eBay shop updates</fullName>
+                <default>false</default>
+                <label>eBay shop updates</label>
+            </value>
+            <value>
+                <fullName>eBay selling basics</fullName>
+                <default>false</default>
+                <label>eBay selling basics</label>
+            </value>
+            <value>
+                <fullName>Shipping, Handling &amp; Returns</fullName>
+                <default>false</default>
+                <label>Shipping, Handling &amp; Returns</label>
+            </value>
+            <value>
+                <fullName>Product, Policy and Compliance Updates</fullName>
+                <default>false</default>
+                <label>Product, Policy and Compliance Updates</label>
+            </value>
+            <value>
+                <fullName>Marketing &amp; Promotion Tools</fullName>
+                <default>false</default>
+                <label>Marketing &amp; Promotion Tools</label>
+            </value>
+            <value>
+                <fullName>Inventory Guidance</fullName>
+                <default>false</default>
+                <label>Inventory Guidance</label>
+            </value>
+            <value>
+                <fullName>Listing &amp; Fullfilment Optimization</fullName>
+                <default>false</default>
+                <label>Listing &amp; Fullfilment Optimization</label>
+            </value>
+            <value>
+                <fullName>Selling Promotions</fullName>
+                <default>false</default>
+                <label>Selling Promotions</label>
+            </value>
+            <value>
+                <fullName>Cross Border Trade</fullName>
+                <default>false</default>
+                <label>Cross Border Trade</label>
+            </value>
+            <value>
+                <fullName>Webinar &amp; Video Guidance</fullName>
+                <default>false</default>
+                <label>Webinar &amp; Video Guidance</label>
+            </value>
+            <value>
+                <fullName>Seller Events</fullName>
+                <default>false</default>
+                <label>Seller Events</label>
+            </value>
+            <value>
+                <fullName>All of the above</fullName>
+                <default>false</default>
+                <label>All of the above</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

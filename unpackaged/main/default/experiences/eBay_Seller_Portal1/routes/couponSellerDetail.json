@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "597748b2-f23c-4668-8cda-a1fba25fa8b2",
+  "appPageId" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "configurationTags" : [ ],
+  "id" : "e37b68e0-4c21-4f55-b8a8-bad5da7a0a6e",
+  "label" : "Coupon Seller Detail",
+  "objectApiName" : "Coupon_Seller__c",
+  "routeType" : "detail-a1M",
+  "type" : "route",
+  "urlPrefix" : "coupon-seller"
+}

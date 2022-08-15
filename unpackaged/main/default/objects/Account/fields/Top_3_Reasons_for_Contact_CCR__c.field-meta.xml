@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Top_3_Reasons_for_Contact_CCR__c</fullName>
+    <description>US-0009739 [AU] Customer Support metric for AU Sellers, automatically completed via Integration and Read-Only for non-System Administrator profiles</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Main reasons for contact over the past 30 days: SNAD, INR, Fee, Invoice, Pwd Reset</inlineHelpText>
+    <label>Top 3 Reasons for Contact (CCR)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

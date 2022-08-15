@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_Terms__c</fullName>
+    <externalId>false</externalId>
+    <label>Payment Terms</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NT30</fullName>
+                <default>false</default>
+                <label>NT30</label>
+            </value>
+            <value>
+                <fullName>NT45</fullName>
+                <default>false</default>
+                <label>NT45</label>
+            </value>
+            <value>
+                <fullName>NT60</fullName>
+                <default>false</default>
+                <label>NT60</label>
+            </value>
+            <value>
+                <fullName>NT90</fullName>
+                <default>false</default>
+                <label>NT90</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

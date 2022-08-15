@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_Status__c</fullName>
+    <description>[EBH] (US-0030) - to capture the Status</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Seller´s current active status.</inlineHelpText>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Suspended</fullName>
+                <default>false</default>
+                <label>Suspended</label>
+            </value>
+            <value>
+                <fullName>Confirmed</fullName>
+                <default>false</default>
+                <label>Confirmed</label>
+            </value>
+            <value>
+                <fullName>Deleted</fullName>
+                <default>false</default>
+                <label>Deleted</label>
+            </value>
+            <value>
+                <fullName>Pending Termination</fullName>
+                <default>false</default>
+                <label>Pending Termination</label>
+            </value>
+            <value>
+                <fullName>On Credit Hold</fullName>
+                <default>false</default>
+                <label>On Credit Hold</label>
+            </value>
+            <value>
+                <fullName>Unconfirmed</fullName>
+                <default>false</default>
+                <label>Unconfirmed</label>
+            </value>
+            <value>
+                <fullName>CC Verification</fullName>
+                <default>false</default>
+                <label>CC Verification</label>
+            </value>
+            <value>
+                <fullName>Account Merge</fullName>
+                <default>false</default>
+                <label>Account Merge</label>
+            </value>
+            <value>
+                <fullName>User CCVerify Passport</fullName>
+                <default>false</default>
+                <label>User CCVerify Passport</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

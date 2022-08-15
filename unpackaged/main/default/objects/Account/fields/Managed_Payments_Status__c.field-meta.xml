@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Managed_Payments_Status__c</fullName>
+    <description>Seller&#39;s eligibility status for Managed Payments</description>
+    <externalId>false</externalId>
+    <label>Managed Payments Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Preboarded</fullName>
+                <default>false</default>
+                <label>Preboarded</label>
+            </value>
+            <value>
+                <fullName>Onboarded</fullName>
+                <default>false</default>
+                <label>Onboarded</label>
+            </value>
+            <value>
+                <fullName>Opted-Out</fullName>
+                <default>false</default>
+                <label>Opted-Out</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

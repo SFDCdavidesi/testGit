@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Days_since_Quality_Change__c</fullName>
+    <description>EPH-5629 Contact - Quality &amp; Preference</description>
+    <externalId>false</externalId>
+    <formula>TODAY()  -  DATEVALUE(Last_Quality_Change__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Days since the last change of field &quot;Last Quality Change&quot;</inlineHelpText>
+    <label>Days since Quality Change</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

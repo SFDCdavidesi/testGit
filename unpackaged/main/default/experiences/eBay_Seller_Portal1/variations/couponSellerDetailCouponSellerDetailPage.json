@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "ef5e6530-fa98-4220-b9d9-66f52227dfe5",
+    "propertyOverrides" : {
+      "activeViewId" : "597748b2-f23c-4668-8cda-a1fba25fa8b2"
+    },
+    "targetId" : "e37b68e0-4c21-4f55-b8a8-bad5da7a0a6e",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Coupon_Seller_Detail_Coupon_Seller_Detail_Page",
+  "id" : "1a0d3cd2-9a10-4077-8226-e9c3db359b9a",
+  "type" : "experienceVariation"
+}

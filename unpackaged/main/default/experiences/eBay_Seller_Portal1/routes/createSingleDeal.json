@@ -1,0 +1,11 @@
+{
+  "activeViewId" : null,
+  "appPageId" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "configurationTags" : [ ],
+  "id" : "a1e4a34d-1070-4ba6-8c37-e1fea3b49a7a",
+  "label" : "Create Single Deal",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-create-single-deal",
+  "type" : "route",
+  "urlPrefix" : "create-single-deal"
+}

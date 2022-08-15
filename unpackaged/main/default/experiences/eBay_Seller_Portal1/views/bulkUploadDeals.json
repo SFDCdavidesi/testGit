@@ -1,0 +1,267 @@
+{
+  "appPageId" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "cf926b74-169e-4d96-af29-3085a8e8774b",
+  "label" : "Bulk Upload Deals",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "metadataName" : "DEhelpTextTextElmt3"
+      },
+      "componentName" : "c:lwcHelpTextGeneric",
+      "id" : "dd6513c4-fe92-4480-82e7-ba5f30d7825c",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "236d846c-cf5e-4898-82e8-12cb6a97b9d3"
+      },
+      "renditions" : [ {
+        "id" : "236d846c-cf5e-4898-82e8-12cb6a97b9d3",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "metadataName" : "DEhelpTextTextElmt3"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "metadataName" : "helpTextTextElmt3"
+      },
+      "componentName" : "c:lwcHelpTextGeneric",
+      "id" : "b0ab05ad-1bbe-42f6-9f77-e63379d05dc8",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "labelBtnDownloadSampleFile" : "Download Sample File",
+        "labelBtnDownloadTemplate" : "Download Template",
+        "labelBtnNext" : "Next",
+        "labelBtnSubmit" : "Submit",
+        "lbInputFile" : "Upload CSV",
+        "lbTotalRecord" : "Total Record",
+        "numberOfDealPerPk" : "120",
+        "redirectToUrl" : "/my-deal-lists"
+      },
+      "componentName" : "c:dealBulkUploadNA",
+      "id" : "d53ef9af-c427-43f9-b74a-577f6bb41b73",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "36161185-db9d-4b4a-81cf-a02ec5df965e"
+      },
+      "renditions" : [ {
+        "id" : "36161185-db9d-4b4a-81cf-a02ec5df965e",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "redirectToUrl" : "/my-deal-lists"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "inputLabel" : "Kampagnen",
+        "inputLabelSite" : "eBay Webseite",
+        "labelBtnDownloadSampleFile" : "Download Sample File",
+        "labelBtnDownloadTemplate" : "CSV Beispieldatei herunterladen",
+        "labelBtnNext" : "Vorschau",
+        "labelBtnSubmit" : "WOW! Angebote einreichen",
+        "lbInputFile" : "",
+        "lbTotalRecord" : "Anzahl",
+        "numberOfDealPerPk" : "120",
+        "placeholder" : "Bitte auswählen",
+        "placeholderSite" : "Keine Angabe",
+        "redirectToUrl" : "/ebh-deal/EBH_Deal__c/Default",
+        "siteNumber" : "77",
+        "tabName" : ""
+      },
+      "componentName" : "c:dealBulkUploadDE",
+      "id" : "c5f1628a-0852-4738-9929-856a73be13f5",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "95ce3fe6-1771-4f70-84ef-962151502d29"
+      },
+      "renditions" : [ {
+        "id" : "95ce3fe6-1771-4f70-84ef-962151502d29",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "inputLabelSite" : "eBay-Website",
+            "redirectToUrl" : "/my-deal-lists"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "3cc6a93c-b366-493e-8310-b63d018c0abc",
+    "regionName" : "main",
+    "type" : "region"
+  }, {
+    "id" : "6d29c762-3d6b-4846-8ae4-d43f1a14fb30",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Bulk Upload Deals"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "ba67aa1a-848b-4e5e-a91f-03367fc7e79f",
+      "renditionMap" : {
+        "de" : "9cdf4bfc-8338-44b9-b13a-afee804b1380"
+      },
+      "renditions" : [ {
+        "id" : "9cdf4bfc-8338-44b9-b13a-afee804b1380",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Mehrere WOW! Angebote einreichen"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "a2b8c570-476e-489f-bf4b-57ba7c384062",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p style=\"text-align: right;\"><a href=\"https://www.ebay.com/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"> eBay Website</a><span style=\"background-color: transparent;\"> </span><span style=\"background-color: transparent; color: rgb(204, 204, 204);\">|</span><span style=\"background-color: transparent;\">&nbsp;</span><a href=\"https://www.ebay.com/help/selling/selling-tools/creating-deals-using-seller-portal?id=5329\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"> eBay Help &amp; Contact</a><span style=\"background-color: transparent;\"> </span><span style=\"background-color: transparent; color: rgb(204, 204, 204);\">|</span><a href=\"https://hive--sprintdev.livepreview.salesforce-communities.com/s/user-guide\" rel=\"noopener noreferrer\" target=\"_blank\">&nbsp;</a><a href=\"/s/user-guide\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"> Deal User Guide</a></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "70696488-afcd-41c5-8cc0-fc030964bdef",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "0f450d2d-d85d-42f5-820e-557ddc470e02"
+      },
+      "renditions" : [ {
+        "id" : "0f450d2d-d85d-42f5-820e-557ddc470e02",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: right;\"><a href=\"https://www.ebay.de/help/home\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"> eBay Hilfe &amp; Kontaktmöglichkeiten</a><span style=\"background-color: transparent;\"> </span><span style=\"background-color: transparent; color: rgb(204, 204, 204);\">|</span><span style=\"background-color: transparent;\"> </span> <a href=\"https://www.ebay.de/deals/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"> eBay WOW! Angebote Seite</a><span style=\"background-color: transparent;\"> </span><span style=\"background-color: transparent; color: rgb(204, 204, 204);\">|</span><span style=\"background-color: transparent;\"> </span><a href=\"https://hive--sprintdev.livepreview.salesforce-communities.com/s/user-guide?sb=user-guide\" rel=\"noopener noreferrer\" target=\"_self\" style=\"color: rgb(51, 51, 51);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"></a> <a href=\"/s/user-guide?sb=user-guide\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51);\">Benutzerhandbuch für WOW! Angebote</a><span style=\"background-color: transparent;\"> </span><span style=\"background-color: transparent; color: rgb(204, 204, 204);\">|</span><a href=\"https://hive--sprintdev.livepreview.salesforce-communities.com/s/user-guide\" rel=\"noopener noreferrer\" target=\"_blank\">&nbsp;</a><a href=\"https://hive--sprintdev.livepreview.salesforce-communities.com/s/user-guide\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"></a><a href=\"https://hive--sprintdev.livepreview.salesforce-communities.com/s/user-guide\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"background-color: rgb(250, 250, 250);\"> </a><a href=\"/s/user-guide\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51);\">Anforderungen für WOW! Angebote</a></p>"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "4db05763-3269-46db-b34d-88afdb0fe82e",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p><span style=\"font-size: 22px; font-family: arial;\">Upload Multiple Deals</span></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "6442ca7c-45f4-4060-af6a-70a6106c8478",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "1c3e5ec8-fda5-4a2f-b02d-a6bd4167bf6a"
+      },
+      "renditions" : [ {
+        "id" : "1c3e5ec8-fda5-4a2f-b02d-a6bd4167bf6a",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "richTextValue" : "<p><span style=\"font-size: 22px; font-family: arial;\">Mehrere WOW! Angebote einreichen</span></p>"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<p>Row 1 must have the exact headers provided in the template. Column A, eBay Item Id must be a 12 digit number, with no trailing zeros. Columns A-E are mandatory. Columns F-I are optional for Multi-SKU items.<span style=\"font-size: 12px;\">﻿</span></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "f0e42b9c-d7fc-4445-97c3-bf1c1b79992f",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "6565359a-67dc-4780-86d1-ba2fd95e2d67"
+      },
+      "renditions" : [ {
+        "id" : "6565359a-67dc-4780-86d1-ba2fd95e2d67",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "richTextValue" : "<p><span style=\"font-size: 12px; font-family: arial;\">Hier können Sie eine CSV-Datei mit neuen WOW! Angeboten hochladen.</span></p>"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "labelBtnDownloadSampleFile" : "Download Sample File",
+        "labelBtnDownloadTemplate" : "Download Template",
+        "labelBtnNext" : "Next",
+        "labelBtnSubmit" : "Submit",
+        "lbInputFile" : "Upload CSV",
+        "lbTotalRecord" : "Total Record",
+        "numberOfDealPerPk" : "120",
+        "redirectToUrl" : "/my-deal-lists"
+      },
+      "componentName" : "c:dealBulkUploadNA",
+      "id" : "cb7fe984-e030-49ac-8add-a9b99362990c",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "labelBtnDownloadSampleFile" : "Download Sample File",
+        "labelBtnDownloadTemplate" : "Download Template",
+        "labelBtnNext" : "Next",
+        "labelBtnSubmit" : "Submit",
+        "lbInputFile" : "Upload CSV",
+        "lbTotalRecord" : "Total Record",
+        "numberOfDealPerPk" : "120",
+        "redirectToUrl" : "/my-deal-lists"
+      },
+      "componentName" : "c:dealBulkUploadNA",
+      "id" : "c8422223-3246-4687-a286-d1c47abf457d",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "inputLabel" : "WOW! Angebote Kampagne",
+        "inputLabelSite" : "eBay Webseite",
+        "labelBtnDownloadSampleFile" : "Download Sample File",
+        "labelBtnDownloadTemplate" : "CSV Beispieldatei herunterladen",
+        "labelBtnNext" : "Vorschau",
+        "labelBtnSubmit" : "WOW! Angebote einreichen",
+        "lbInputFile" : "",
+        "lbTotalRecord" : "Anzahl",
+        "numberOfDealPerPk" : "120",
+        "placeholder" : "Bitte auswählen",
+        "placeholderSite" : "Keine Angabe",
+        "redirectToUrl" : "/my-deal-lists",
+        "siteNumber" : "77",
+        "tabName" : ""
+      },
+      "componentName" : "c:dealBulkUploadDE",
+      "id" : "abf8f600-604d-441e-ba9a-71d6e600818c",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "7d15d820-1e3b-4477-a68d-68b919036a5d",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "46f08e8a-6321-4a08-bc6b-5ed1d25cd935",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "id" : "47f37c4b-f1ef-4d40-a7b2-db30f7ef0f98",
+    "regionName" : "featured",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-bulk-upload-deals"
+}

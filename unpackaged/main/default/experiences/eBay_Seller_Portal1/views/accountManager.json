@@ -1,0 +1,78 @@
+{
+  "appPageId" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "a91ce36e-ef80-4622-9c9e-819c3b71f70b",
+  "label" : "Account Manager",
+  "regions" : [ {
+    "id" : "12eb5909-06cd-44c1-9962-48d3dbd396b3",
+    "regionName" : "main",
+    "type" : "region"
+  }, {
+    "id" : "1c65e393-588a-49b5-9571-39870b90f1e0",
+    "regionName" : "sideBar",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Account Manager"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "f3f54e81-b1e4-4559-9f85-68a44efb284a",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "20d93f71-e4cd-45ff-b5a4-930159764e64",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  }, {
+    "id" : "24e10aa4-5a4f-46ab-a579-30e665ae19ca",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p><span style=\"font-size: 22px; font-family: arial;\">Account Manager﻿</span></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "088ace96-f49b-4ac6-b9bd-285addcf8ceb",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "c82bd7db-e574-4b81-be97-a86debb561f0"
+      },
+      "renditions" : [ {
+        "id" : "c82bd7db-e574-4b81-be97-a86debb561f0",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "richTextValue" : "<p><span style=\"font-size: 22px; font-family: arial;\">Account Manager﻿</span></p>"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "basicurl" : "https://www.ebay.de/sub/manage/",
+        "firstMetadataName" : "DEAccountManagerHelpTextElmt1",
+        "secondMetadataName" : "DEAccountManagerHelpTextElmt2",
+        "thirdMetadataName" : "DEAccountManagerHelpTextElmt3"
+      },
+      "componentName" : "c:lwcAccountManagement",
+      "id" : "799f5399-073e-40ac-8d61-0a92e86d5206",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "dee071d0-2d37-4241-be62-8240f2c50e87",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "312de3dc-aee4-4950-822f-95b99a29fd89",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-account-manager"
+}

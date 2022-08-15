@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "2b7a1308-4645-4482-bb53-f9f10d7e5a86",
+    "propertyOverrides" : {
+      "isVisible" : true
+    },
+    "targetId" : "b0ab05ad-1bbe-42f6-9f77-e63379d05dc8",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Bulk_Upload_Deals_lwcHelpTextGeneric_Component",
+  "id" : "20f62658-bbfd-4301-a71d-4539937e330c",
+  "type" : "experienceVariation"
+}

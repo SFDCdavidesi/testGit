@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Non_Payout_Items_Estimate_N__c</fullName>
+    <defaultValue>0</defaultValue>
+    <description>[#EPH-7598] Deal Object - Subsidy fields redesign for Invoicing</description>
+    <externalId>false</externalId>
+    <label>Non Payout Items Estimate</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

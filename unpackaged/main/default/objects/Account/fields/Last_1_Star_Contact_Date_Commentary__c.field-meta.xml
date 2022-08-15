@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_1_Star_Contact_Date_Commentary__c</fullName>
+    <description>US-0009739 [AU] Customer Support metric for AU Sellers, automatically completed via Integration and Read-Only for non-System Administrator profiles</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Date of last &quot;1 star&quot; rated contact (CSAT) and commentary</inlineHelpText>
+    <label>Last 1 Star Contact Date &amp; Commentary</label>
+    <length>1000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Html</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

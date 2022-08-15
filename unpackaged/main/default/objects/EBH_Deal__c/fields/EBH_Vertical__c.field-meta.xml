@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_Vertical__c</fullName>
+    <description>[EBH] (EPH-4163) - Vertical</description>
+    <externalId>false</externalId>
+    <label>Vertical</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>EBH_DealSiteId__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Soft Home</fullName>
+                <default>false</default>
+                <label>Soft Home</label>
+            </value>
+            <value>
+                <fullName>Hard Home</fullName>
+                <default>false</default>
+                <label>Hard Home</label>
+            </value>
+            <value>
+                <fullName>P&amp;A</fullName>
+                <default>false</default>
+                <label>P&amp;A</label>
+            </value>
+            <value>
+                <fullName>Health &amp; Beauty</fullName>
+                <default>false</default>
+                <label>Health &amp; Beauty</label>
+            </value>
+            <value>
+                <fullName>Sports &amp; Leisure</fullName>
+                <default>false</default>
+                <label>Sports &amp; Leisure</label>
+            </value>
+            <value>
+                <fullName>Fitness</fullName>
+                <default>false</default>
+                <label>Fitness</label>
+            </value>
+            <value>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+                <label>Automotive</label>
+            </value>
+            <value>
+                <fullName>Joyería y Belleza</fullName>
+                <default>false</default>
+                <label>Joyería y Belleza</label>
+            </value>
+            <value>
+                <fullName>Electrónica</fullName>
+                <default>false</default>
+                <label>Electrónica</label>
+            </value>
+            <value>
+                <fullName>Moda</fullName>
+                <default>false</default>
+                <label>Moda</label>
+            </value>
+            <value>
+                <fullName>Casa y Jardín</fullName>
+                <default>false</default>
+                <label>Casa y Jardín</label>
+            </value>
+            <value>
+                <fullName>Ocio</fullName>
+                <default>false</default>
+                <label>Ocio</label>
+            </value>
+            <value>
+                <fullName>Deportes</fullName>
+                <default>false</default>
+                <label>Deportes</label>
+            </value>
+            <value>
+                <fullName>Motor</fullName>
+                <default>false</default>
+                <label>Motor</label>
+            </value>
+            <value>
+                <fullName>Coleccionismo</fullName>
+                <default>false</default>
+                <label>Coleccionismo</label>
+            </value>
+            <value>
+                <fullName>Otras categorías</fullName>
+                <default>false</default>
+                <label>Otras categorías</label>
+            </value>
+            <value>
+                <fullName>High-Tech</fullName>
+                <default>false</default>
+                <label>High-Tech</label>
+            </value>
+            <value>
+                <fullName>Mode</fullName>
+                <default>false</default>
+                <label>Mode</label>
+            </value>
+            <value>
+                <fullName>Maison &amp; Jardin</fullName>
+                <default>false</default>
+                <label>Maison &amp; Jardin</label>
+            </value>
+            <value>
+                <fullName>Auto et Moto</fullName>
+                <default>false</default>
+                <label>Auto et Moto</label>
+            </value>
+            <value>
+                <fullName>Collections &amp; Antiquités</fullName>
+                <default>false</default>
+                <label>Collections &amp; Antiquités</label>
+            </value>
+            <value>
+                <fullName>Tecnologia</fullName>
+                <default>false</default>
+                <label>Tecnologia</label>
+            </value>
+            <value>
+                <fullName>Casa &amp; Giardino</fullName>
+                <default>false</default>
+                <label>Casa &amp; Giardino</label>
+            </value>
+            <value>
+                <fullName>Sport &amp; Viaggi</fullName>
+                <default>false</default>
+                <label>Sport &amp; Viaggi</label>
+            </value>
+            <value>
+                <fullName>Auto &amp; Moto</fullName>
+                <default>false</default>
+                <label>Auto &amp; Moto</label>
+            </value>
+            <value>
+                <fullName>Collezionabili</fullName>
+                <default>false</default>
+                <label>Collezionabili</label>
+            </value>
+            <value>
+                <fullName>Commercio, Ufficio e Industria</fullName>
+                <default>false</default>
+                <label>Commercio, Ufficio e Industria</label>
+            </value>
+            <value>
+                <fullName>Suministros industriales</fullName>
+                <default>false</default>
+                <label>Suministros industriales</label>
+            </value>
+            <value>
+                <fullName>H&amp;G</fullName>
+                <default>false</default>
+                <label>H&amp;G</label>
+            </value>
+            <value>
+                <fullName>Parts &amp; BI</fullName>
+                <default>false</default>
+                <label>Parts &amp; BI</label>
+            </value>
+            <value>
+                <fullName>APAC</fullName>
+                <default>false</default>
+                <label>APAC</label>
+            </value>
+            <value>
+                <fullName>Bullion</fullName>
+                <default>false</default>
+                <label>Bullion</label>
+            </value>
+            <value>
+                <fullName>Business &amp; Industrial</fullName>
+                <default>false</default>
+                <label>Business &amp; Industrial</label>
+            </value>
+            <value>
+                <fullName>Collectibles</fullName>
+                <default>false</default>
+                <label>Collectibles</label>
+            </value>
+            <value>
+                <fullName>CSA</fullName>
+                <default>false</default>
+                <label>CSA</label>
+            </value>
+            <value>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+                <label>Electronics</label>
+            </value>
+            <value>
+                <fullName>Fashion</fullName>
+                <default>false</default>
+                <label>Fashion</label>
+            </value>
+            <value>
+                <fullName>Gift Cards</fullName>
+                <default>false</default>
+                <label>Gift Cards</label>
+            </value>
+            <value>
+                <fullName>H&amp;G + SG</fullName>
+                <default>false</default>
+                <label>H&amp;G + SG</label>
+            </value>
+            <value>
+                <fullName>Home &amp; Garden</fullName>
+                <default>false</default>
+                <label>Home &amp; Garden</label>
+            </value>
+            <value>
+                <fullName>Lifestyle</fullName>
+                <default>false</default>
+                <label>Lifestyle</label>
+            </value>
+            <value>
+                <fullName>Lifestyle &amp; Media</fullName>
+                <default>false</default>
+                <label>Lifestyle &amp; Media</label>
+            </value>
+            <value>
+                <fullName>Media</fullName>
+                <default>false</default>
+                <label>Media</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Parts</fullName>
+                <default>false</default>
+                <label>Parts</label>
+            </value>
+            <value>
+                <fullName>Parts &amp; Accessories</fullName>
+                <default>false</default>
+                <label>Parts &amp; Accessories</label>
+            </value>
+            <value>
+                <fullName>Sporting Goods</fullName>
+                <default>false</default>
+                <label>Sporting Goods</label>
+            </value>
+            <value>
+                <fullName>Tech</fullName>
+                <default>false</default>
+                <label>Tech</label>
+            </value>
+            <value>
+                <fullName>Toys</fullName>
+                <default>false</default>
+                <label>Toys</label>
+            </value>
+            <value>
+                <fullName>Home Interior</fullName>
+                <default>false</default>
+                <label>Home Interior</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>H&amp;G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Parts &amp; BI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>APAC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Electronics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Fashion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <valueName>P&amp;A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Business &amp; Industrial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Collectibles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Home &amp; Garden</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>71</controllingFieldValue>
+            <controllingFieldValue>186</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Lifestyle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>71</controllingFieldValue>
+            <controllingFieldValue>101</controllingFieldValue>
+            <controllingFieldValue>186</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Media</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>High-Tech</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Mode</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Maison &amp; Jardin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Auto et Moto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Collections &amp; Antiquités</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Moda</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Tecnologia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Casa &amp; Giardino</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Sport &amp; Viaggi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Auto &amp; Moto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Collezionabili</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Commercio, Ufficio e Industria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Electrónica</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Casa y Jardín</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Motor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Coleccionismo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Suministros industriales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15</controllingFieldValue>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15</controllingFieldValue>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Parts &amp; Accessories</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Bullion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>CSA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Gift Cards</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>H&amp;G + SG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Lifestyle &amp; Media</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Parts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Sporting Goods</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Tech</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Toys</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Home Interior</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "c96752cf-8452-42b0-a326-0bc366cbe4f8",
+  "appPageId" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "configurationTags" : [ ],
+  "id" : "11c14765-5311-48b0-b99e-bd87f44d2efa",
+  "label" : "Deal Retail Campaign Related List",
+  "objectApiName" : "EBH_DealRetailCampaign__c",
+  "routeType" : "relatedlist-a0u",
+  "type" : "route",
+  "urlPrefix" : "ebh-dealretailcampaign"
+}

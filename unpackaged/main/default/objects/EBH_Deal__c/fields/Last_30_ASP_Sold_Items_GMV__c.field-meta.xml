@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_30_ASP_Sold_Items_GMV__c</fullName>
+    <description>US-0009872
+US-0010038-change label and order of formula</description>
+    <externalId>false</externalId>
+    <formula>TEXT(GMV_Last_30_Days_DWH__c) +&#39; | &#39;+  TEXT(Sold_Items_Last_30_Days_DWH__c ) +&#39; | &#39;+ text( floor( ASP_Last_30_Days__c) ) + &quot;.&quot; + right( text( ( 1 + ASP_Last_30_Days__c- floor( ASP_Last_30_Days__c) ) * 100 ), 2 )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Last 30: GMV | Sold Items | ASP</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

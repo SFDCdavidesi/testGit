@@ -1,0 +1,45 @@
+{
+  "appPageId" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "449bf995-0faf-469b-9f15-d7b50ca5d203",
+  "label" : "Report Builder",
+  "regions" : [ {
+    "id" : "a470950e-a60f-48c8-9d40-0aacf0bcb0c5",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "metadataName" : "genericErrorMessage",
+        "metadataNameReadOnly" : "dealReadOnlyErrorMessage"
+      },
+      "componentName" : "c:lwcGenericErrorMessage",
+      "id" : "0b3fd936-adc5-4d57-996a-1e27222d9956",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "6d248ee8-c64c-457a-ad06-72babd4996ff"
+      },
+      "renditions" : [ {
+        "id" : "6d248ee8-c64c-457a-ad06-72babd4996ff",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "metadataName" : "DEgenericErrorMessage",
+            "metadataNameReadOnly" : "DEdealReadOnlyErrorMessage"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "6aecf525-35b6-477a-87b1-0b2490b2d12d",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "cd296b1c-d102-4684-97a5-87d3027fa555",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "createreport"
+}

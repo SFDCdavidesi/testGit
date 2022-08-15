@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>From_BoB__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>EPH-6623 BOB MGMT. - GCX Lead not able to confirm submiited BOB</description>
+    <externalId>false</externalId>
+    <label>From BoB</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

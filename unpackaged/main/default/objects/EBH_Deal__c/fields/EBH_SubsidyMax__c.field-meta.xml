@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_SubsidyMax__c</fullName>
+    <description>[EBH] (EPH-4163) - Subsidy Max</description>
+    <externalId>false</externalId>
+    <formula>IF(OR(ISPICKVAL(EBH_Status__c , &quot;Planned&quot;),ISPICKVAL(EBH_Status__c , &quot;Deal Agreed&quot;),ISPICKVAL(EBH_Status__c , &quot;Running&quot;)),(((EBH_Quantity__c * EBH_Subsidy__c)/(VAT_N__c +1)) - Subsidy_Running__c), 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Planned net subsidy spend for the deal (reduced by running deals subsidy), will be 0 once deal is executed</inlineHelpText>
+    <label>Subsidy Planned Net</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

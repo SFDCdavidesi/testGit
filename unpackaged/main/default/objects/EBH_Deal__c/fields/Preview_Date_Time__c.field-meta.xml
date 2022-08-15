@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Preview_Date_Time__c</fullName>
+    <description>US-0010984 - Emails are sent to other sellers when cancelling Subsidized deals
+US-0011505</description>
+    <externalId>false</externalId>
+    <label>Preview Date/Time</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

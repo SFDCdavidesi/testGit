@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Extended_Returns__c</fullName>
+    <description>[#EPH-7282] New Shipping metrics</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Percentage of Listings that offer 30 or more days returns (Last Retail Week) - Is already in Hive</inlineHelpText>
+    <label>Extended Returns (%)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

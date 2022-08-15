@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PL_Segment__c</fullName>
+    <description>US-0011461 - ADS - Promoted Listings segmentation to seller Customer 360</description>
+    <externalId>false</externalId>
+    <inlineHelpText>&#39;Seller&#39;s Promoted Listings segmentation for the current month. ACQUISITION: PL revenue penetration &lt;5%, GROWTH: PL revenue penetration 5-60%, RETENTION: PL revenue penetration &gt;60%.</inlineHelpText>
+    <label>PL Segment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Acquisition</fullName>
+                <default>false</default>
+                <label>Acquisition</label>
+            </value>
+            <value>
+                <fullName>Incubation</fullName>
+                <default>false</default>
+                <label>Incubation</label>
+            </value>
+            <value>
+                <fullName>Growth</fullName>
+                <default>false</default>
+                <label>Growth</label>
+            </value>
+            <value>
+                <fullName>Retention</fullName>
+                <default>false</default>
+                <label>Retention</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

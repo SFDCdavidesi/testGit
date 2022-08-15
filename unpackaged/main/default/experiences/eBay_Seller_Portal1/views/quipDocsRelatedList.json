@@ -1,0 +1,54 @@
+{
+  "appPageId" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "5309046d-c29b-4a96-bf2f-eea9b80750da",
+  "label" : "Quip Docs Related List",
+  "regions" : [ {
+    "id" : "1ce838e3-12eb-47e9-b805-158b613ea247",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "parentRecordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:relatedQuipItemsView",
+      "id" : "84db5631-6d61-4a88-a2dd-b7327eb20fe7",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "metadataName" : "genericErrorMessage",
+        "metadataNameReadOnly" : "dealReadOnlyErrorMessage"
+      },
+      "componentName" : "c:lwcGenericErrorMessage",
+      "id" : "1544ce14-ec1b-4e27-a755-f8f42df6565b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "6fce5c69-5756-472d-bc94-a3a006523c6e"
+      },
+      "renditions" : [ {
+        "id" : "6fce5c69-5756-472d-bc94-a3a006523c6e",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "metadataName" : "DEgenericErrorMessage",
+            "metadataNameReadOnly" : "DEdealReadOnlyErrorMessage"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "1b40eb07-3911-4c29-8ce6-f2af32a8201d",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "07c0154b-cc8e-4e06-93c1-ad06d1d2d12c",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "extrelated-quip"
+}

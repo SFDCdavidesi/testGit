@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "a6456e53-27ca-411a-a3d7-c1463f1bfba2",
+    "propertyOverrides" : {
+      "isVisible" : true
+    },
+    "targetId" : "432666fd-3c5e-4d72-8df1-488abd8afb30",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "My_Deal_List_Flexi_lwcAgreementTerms_Component",
+  "id" : "362a9d49-de4e-4bda-9e98-910fe9a26632",
+  "type" : "experienceVariation"
+}

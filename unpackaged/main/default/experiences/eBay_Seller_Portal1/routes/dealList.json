@@ -1,0 +1,11 @@
+{
+  "activeViewId" : null,
+  "appPageId" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "configurationTags" : [ ],
+  "id" : "87cc59d1-1267-42fe-9cb9-a60f16d7eb79",
+  "label" : "Deal List",
+  "objectApiName" : "EBH_Deal__c",
+  "routeType" : "list-a0n",
+  "type" : "route",
+  "urlPrefix" : "ebh-deal"
+}

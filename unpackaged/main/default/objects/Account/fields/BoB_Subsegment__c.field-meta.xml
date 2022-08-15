@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BoB_Subsegment__c</fullName>
+    <description>EPH-5727 BOB MGMT - Seller BOB Object - Fields</description>
+    <externalId>false</externalId>
+    <inlineHelpText>A seller can be managed by one of the following groups: Category Mgmt. (Focus), Platin AMs (Platin &amp; Bolt-On) or GCX (MSO). If a seller is not part of a BoB the value will appear blank.</inlineHelpText>
+    <label>Managed Subsegment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Focus</fullName>
+                <default>false</default>
+                <label>Focus</label>
+            </value>
+            <value>
+                <fullName>MSO</fullName>
+                <default>false</default>
+                <label>MSO</label>
+            </value>
+            <value>
+                <fullName>Platin</fullName>
+                <default>false</default>
+                <label>Platin</label>
+            </value>
+            <value>
+                <fullName>AM Bolt-on</fullName>
+                <default>false</default>
+                <label>AM Bolt-on</label>
+            </value>
+            <value>
+                <fullName>UK MSO Charity</fullName>
+                <default>false</default>
+                <label>UK MSO Charity</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

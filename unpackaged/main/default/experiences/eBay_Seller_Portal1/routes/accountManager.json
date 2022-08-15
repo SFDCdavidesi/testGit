@@ -1,0 +1,11 @@
+{
+  "activeViewId" : null,
+  "appPageId" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "configurationTags" : [ ],
+  "id" : "2449094c-32fe-4311-9232-1ecf26645293",
+  "label" : "Account Manager",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-account-manager",
+  "type" : "route",
+  "urlPrefix" : "account-manager"
+}

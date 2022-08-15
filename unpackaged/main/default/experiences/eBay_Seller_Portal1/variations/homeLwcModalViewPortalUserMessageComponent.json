@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "03e8bae7-d4fd-429a-a65f-491d1576f477",
+    "propertyOverrides" : {
+      "isVisible" : true
+    },
+    "targetId" : "78a9aa18-73b7-4c92-a3d9-861761708fe6",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Home_lwcModalViewPortalUserMessage_Component",
+  "id" : "29e93243-89a6-45e1-bbbd-234959fb08ea",
+  "type" : "experienceVariation"
+}

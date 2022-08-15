@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "99cc1db3-241f-4cd4-91fd-2415b869a6d6",
+    "propertyOverrides" : {
+      "isVisible" : true
+    },
+    "targetId" : "84028908-5eb4-4693-a43a-8de295a352d8",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "My_Deal_List_Rich_Content_Editor_Component",
+  "id" : "5cd630ee-7821-407e-b187-894ea0c9dc8b",
+  "type" : "experienceVariation"
+}

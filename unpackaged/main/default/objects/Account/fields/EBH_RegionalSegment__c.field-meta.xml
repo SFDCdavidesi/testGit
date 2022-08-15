@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_RegionalSegment__c</fullName>
+    <description>[EBH] (EPH-2232) - Regional Segment</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the Account Manager´s Engagement Level with respect to seller. Values can be Low or High.</inlineHelpText>
+    <label>Managed Regional Segment</label>
+    <length>100</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

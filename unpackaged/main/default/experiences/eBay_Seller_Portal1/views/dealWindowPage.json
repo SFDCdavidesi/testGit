@@ -1,0 +1,131 @@
+{
+  "appPageId" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "9e7dd96c-0d04-4076-a663-ad495d780e71",
+  "label" : "Deal Window Page",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "metadataName" : "helpTextTextElmt2"
+      },
+      "componentName" : "c:lwcHelpTextGeneric",
+      "id" : "fbc16fff-54df-4f28-ad10-f7d047cf0831",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "labelBtnMultipleDeals" : "Create Multiple Deals",
+        "labelBtnSingleDeal" : "Create Single Deal",
+        "mdtName" : "Deal_Retail_Period",
+        "messageNoRecord" : "there are no records to display",
+        "profileHiddenBtnSingleDeal" : "NA - Seller Portal"
+      },
+      "componentName" : "c:lwcListViewVerticalAccordion",
+      "id" : "e8ffff32-4e02-4d84-b7a2-bbc1ce388e40",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b392dcce-f02b-4a77-a440-6d38b48856a3",
+    "regionName" : "main",
+    "type" : "region"
+  }, {
+    "id" : "cd1f9d8f-2d07-4275-b7c7-d309e121a695",
+    "regionName" : "sideBar",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Deal Window Page"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "6a35ad08-e2a9-4700-a3f6-46c8d15c241d",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "1e7ea815-6165-4d8f-a58d-a7c6c61de853",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  }, {
+    "id" : "80132f87-3afe-410d-96d7-87ace83d45a9",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p style=\"text-align: right;\"><a href=\"https://www.ebay.com/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"> eBay Website</a><span style=\"background-color: transparent;\"> </span><span style=\"background-color: transparent; color: rgb(204, 204, 204);\">|</span><span style=\"background-color: transparent;\">&nbsp;</span><a href=\"https://www.ebay.com/help/selling/selling-tools/creating-deals-using-seller-portal?id=5329\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"> eBay Help &amp; Contact</a><span style=\"background-color: transparent;\"> </span><span style=\"background-color: transparent; color: rgb(204, 204, 204);\">|</span><a href=\"https://hive--sprintdev.livepreview.salesforce-communities.com/s/user-guide\" rel=\"noopener noreferrer\" target=\"_blank\">&nbsp;</a><a href=\"/s/user-guide\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"> Deal User Guide</a></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "f212503c-0123-4870-a41a-56098a6146ff",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<p><span style=\"font-size: 22px; font-family: arial;\">Select a Deal Window</span></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "4403d144-88ea-49f5-9457-a4d21baefd2d",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "bed8f0cb-4899-41e9-93d4-5e589f77a4e4"
+      },
+      "renditions" : [ {
+        "id" : "bed8f0cb-4899-41e9-93d4-5e589f77a4e4",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "richTextValue" : "<p> </p>"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<p><span style=\"color: rgb(51, 51, 55); font-size: 12px; font-family: arial;\">The Deal Window you select defines the start and end dates of your created deals. Once the Deal Window goes live, please remember to adjust your pricing on site to match what you provide in the deal upload CSV. If the \"Create Multiple Deals\" button is greyed out then that window is closed for now.</span></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "5af680c0-da7c-401f-8444-c8d514760142",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "e6efeed0-9183-4c23-9089-d59b1bc8d951"
+      },
+      "renditions" : [ {
+        "id" : "e6efeed0-9183-4c23-9089-d59b1bc8d951",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "richTextValue" : "<p> </p>"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "labelBtnMultipleDeals" : "Create Multiple Deals",
+        "labelBtnSingleDeal" : "Create Single Deal",
+        "mdtName" : "Deal_Retail_Period",
+        "messageNoRecord" : "there are no records to display",
+        "profileHiddenBtnSingleDeal" : "NA - Seller Portal"
+      },
+      "componentName" : "c:lwcListViewVerticalAccordion",
+      "id" : "dbfeb8e3-dc69-4eee-a35b-fc10b49066bd",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "8a2faa4b-5956-4e08-8d5a-d057bf4e2235",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "ab110425-03c5-48ed-998e-e5d557eee4c4",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-deal-window-page"
+}

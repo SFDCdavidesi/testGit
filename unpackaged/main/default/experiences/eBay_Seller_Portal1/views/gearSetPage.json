@@ -1,0 +1,55 @@
+{
+  "appPageId" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "componentName" : "c:CommunityLayout",
+  "id" : "75993423-f9e9-433e-95df-9b0b9762871c",
+  "label" : "GearSetPage",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordDetail",
+      "id" : "0e0b4bfc-67df-4612-80df-37cd0e883e8e",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "d0e2b8d4-e8d4-42f2-a11f-3076978358ae",
+    "regionName" : "main",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "showCreateNewCalendar" : false,
+        "showOtherCalendars" : false,
+        "showSidebar" : true
+      },
+      "componentName" : "forceCommunity:calendar",
+      "id" : "a6817a41-f24d-458c-80ab-24bc842710e8",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "e1de9736-60de-42ed-bc8d-13a13b144371",
+    "regionName" : "sideBar",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "GearSetPage"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "0a5eda8b-519f-4b27-ac9b-f336bb3f5e12",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b8189eed-3b39-493c-9f37-2a73ca4efebb",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-gearsetpage"
+}

@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "a778e85e-b5ae-48c9-8179-6dcf3d7b726a",
+  "appPageId" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "configurationTags" : [ ],
+  "id" : "bdd41c3d-fb20-4806-b55b-226596a5890c",
+  "label" : "Login Failed",
+  "pageAccess" : "Public",
+  "routeType" : "custom-login-failed",
+  "type" : "route",
+  "urlPrefix" : "login-failed"
+}

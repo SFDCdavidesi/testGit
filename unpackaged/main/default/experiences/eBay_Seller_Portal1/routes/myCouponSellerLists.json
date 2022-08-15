@@ -1,0 +1,11 @@
+{
+  "activeViewId" : null,
+  "appPageId" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "configurationTags" : [ ],
+  "id" : "72c1c0f2-912d-44e3-9409-2382d55eeb2d",
+  "label" : "My Coupon Seller Lists",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-my-coupon-seller-lists",
+  "type" : "route",
+  "urlPrefix" : "my-coupon-seller-lists"
+}

@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "38f0a552-4b17-404e-a4e8-990f27beb9b8",
+    "propertyOverrides" : {
+      "isVisible" : true
+    },
+    "targetId" : "257096e1-bfac-49ed-b8ce-e364061eb95f",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Home_Flexi_lwcGenericErrorMessage_Component",
+  "id" : "c5b15e56-7c2b-490d-b2ee-1b4a8d96b078",
+  "type" : "experienceVariation"
+}

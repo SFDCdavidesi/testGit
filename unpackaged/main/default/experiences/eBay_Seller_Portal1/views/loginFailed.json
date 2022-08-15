@@ -1,0 +1,103 @@
+{
+  "appPageId" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "a778e85e-b5ae-48c9-8179-6dcf3d7b726a",
+  "label" : "Login Failed",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "contactUsMessage" : "Contact Us",
+        "errorMessage" : "We can't log you in because of an authentication error.",
+        "headerMessage" : "Problem Logging In",
+        "helpMessage" : "For help, please",
+        "logInMessage" : "Login With a Different Account"
+      },
+      "componentName" : "c:lwcLoginFailed",
+      "id" : "b3145807-baee-42b4-ac52-33d5bab7aa99",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "0514f2cb-f42c-4d98-99fc-891c1c23b807",
+    "regionName" : "main",
+    "type" : "region"
+  }, {
+    "id" : "b6030945-f3d6-4994-9d40-72e6bfcef850",
+    "regionName" : "sideBar",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Login Failed"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "bcd2843c-c8eb-46d8-ba44-d178c9ca7899",
+      "renditionMap" : {
+        "de" : "3c03aeb0-7286-43bd-970d-deaf5dbcb301"
+      },
+      "renditions" : [ {
+        "id" : "3c03aeb0-7286-43bd-970d-deaf5dbcb301",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Einloggen fehlgeschlagen"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "85eb2312-244d-4b8a-93ee-3999d3d13363",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  }, {
+    "id" : "9f6a3db9-33b6-4948-88ce-0f791cd63efc",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "afterStartHereText" : ", click on 'Contact Us' button at the bottom of the page.",
+        "contactUsMessage" : "Contact Us",
+        "errorMessage" : "We can't log you in because of an authentication error.",
+        "headerMessage" : "Problem Logging In",
+        "helpMessage" : "For help, please",
+        "logInMessage" : "Login With a Different Account",
+        "startHereLabel" : "Start Here",
+        "startHereURL" : "https://www.ebay.com/help/home"
+      },
+      "componentName" : "c:lwcLoginFailed",
+      "id" : "bf6a869e-a124-4091-88b8-de597b247201",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "afterStartHereText" : ", click on 'Contact Us' button at the bottom of the page.",
+        "contactUsMessage" : "Contact Us",
+        "errorMessage" : "We can't log you in because of an authentication error.",
+        "headerMessage" : "Problem Logging In",
+        "helpMessage" : "For help, please",
+        "logInMessage" : "Login With a Different Account",
+        "startHereLabel" : "Start Here",
+        "startHereURL" : "https://www.ebay.com/help/home"
+      },
+      "componentName" : "c:lwcLoginFailed",
+      "id" : "c4013f32-12ee-4caa-b7be-62f09307a924",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "de2755fd-6dfd-4495-8b54-26ffd866eb1f",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "152f3c4d-2962-4d77-9826-433be7f355ac",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Login",
+  "type" : "view",
+  "viewType" : "custom-login-failed"
+}

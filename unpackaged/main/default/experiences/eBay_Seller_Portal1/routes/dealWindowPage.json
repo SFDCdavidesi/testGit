@@ -1,0 +1,11 @@
+{
+  "activeViewId" : null,
+  "appPageId" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "configurationTags" : [ ],
+  "id" : "be67847c-70d7-44f1-94e0-7dd0c27e4789",
+  "label" : "Deal Window Page",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-deal-window-page",
+  "type" : "route",
+  "urlPrefix" : "deal-window-page"
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_GMVLastWeek__c</fullName>
+    <description>[EBH] (EPH-4125) - GMV (Last Week)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>An urgent seller&#39;s GMV for last week</inlineHelpText>
+    <label>GMV (Last Week)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

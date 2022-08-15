@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deal_End_Date_w_time__c</fullName>
+    <description>US-0010920 - Unable to export weekly submissions/selections</description>
+    <externalId>false</externalId>
+    <formula>IF(
+ISBLANK(EBH_DealEndDate__c) 
+,null,
+TEXT(YEAR(EBH_DealEndDate__c))+&quot;-&quot;+TEXT(MONTH(EBH_DealEndDate__c))+&quot;-&quot;+TEXT(DAY(EBH_DealEndDate__c))+&quot;  07:59&quot;
+)</formula>
+    <label>Deal End Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

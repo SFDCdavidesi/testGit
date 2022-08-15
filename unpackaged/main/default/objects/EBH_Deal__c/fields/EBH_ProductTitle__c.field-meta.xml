@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_ProductTitle__c</fullName>
+    <description>[EBH] (EPH-4163) - Product Title
+US-0009410 - DEALS: Increase &#39;Product Title&#39; field length to 150 characters</description>
+    <externalId>false</externalId>
+    <label>Product Title</label>
+    <length>150</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

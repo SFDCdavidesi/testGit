@@ -1,0 +1,11 @@
+{
+  "cmsSettings" : { },
+  "currentThemeId" : "92b4119a-e5db-4155-aa92-4333d64a41f7",
+  "headMarkup" : "<link rel=\"icon\" type=\"image/png\" href=\"/resource/SellerPortalFavicon\" sizes=\"16x16\" />",
+  "id" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "isLockerServiceEnabled" : true,
+  "isRelaxedCSPLevel" : true,
+  "label" : "main",
+  "templateName" : "CPT Community Template",
+  "type" : "appPage"
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unique_Budget_Month__c</fullName>
+    <description>US-0009132 [EU Deals] Deals Budget &amp; Deal Budget Month Batch Process</description>
+    <externalId>false</externalId>
+    <formula>RecordType.DeveloperName &amp; EBH_StartDateMonthYear__c &amp; TEXT(EBH_Vertical__c)</formula>
+    <label>Unique Budget Month</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

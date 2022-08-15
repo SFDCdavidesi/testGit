@@ -1,0 +1,137 @@
+{
+  "appPageId" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "componentName" : "siteforce:dynamicLayout",
+  "id" : "1be6a364-534f-466e-8a07-19f5326213dc",
+  "label" : "Manage Users",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "8e1402e0-5155-4ea1-9936-19eb477b2fd4",
+          "columns" : [ {
+            "UUID" : "251d50b7-6067-4b76-8fdf-9786cdde4d3d",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 32
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "8e1402e0-5155-4ea1-9936-19eb477b2fd4",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: center;\"><br></p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "973f05ef-2d5b-4be8-8fbb-8c3ab0daac56",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : {
+            "de" : "6b3013db-70e8-4cd0-ab29-bcc0e624b08a"
+          },
+          "renditions" : [ {
+            "id" : "6b3013db-70e8-4cd0-ab29-bcc0e624b08a",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "richTextValue" : "<p style=\"text-align: right;\"><a href=\"https://www.ebay.de/help/home\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"> eBay Hilfe &amp; Kontaktmöglichkeiten</a> <span style=\"color: rgb(204, 204, 204);\">| </span><a href=\"/s/user-guide?sb=mgntusr\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"> Benutzerhandbuch für die Nutzerverwahltung</a></p>"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p><span style=\"font-size: 22px; font-family: arial;\">Manage Users</span></p><p><br></p><p><span style=\"font-family: arial; font-size: 14px;\">Below you can add or remove users access to the Seller Portal</span></p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "f35a1034-78fc-4853-853c-41cd624ad5c3",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : {
+            "de" : "9e356170-1c40-4458-bd6c-a9decd17f926"
+          },
+          "renditions" : [ {
+            "id" : "9e356170-1c40-4458-bd6c-a9decd17f926",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "richTextValue" : "<p><span style=\"font-size: 22px;\">Nutzerverwaltung</span></p><p><br></p><p>Nachfolgend können Sie Nutzern den Zugang zum Wachstumsportal hinzufügen oder entziehen</p>"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        } ],
+        "id" : "251d50b7-6067-4b76-8fdf-9786cdde4d3d",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "8a6a9e65-54a0-48a5-b3f3-c365ee939b0a",
+          "columns" : [ {
+            "UUID" : "f2eb5c77-285d-4a58-8f8c-7ded0ae1701f",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "8a6a9e65-54a0-48a5-b3f3-c365ee939b0a",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "c:lwcManageUser",
+          "id" : "7b2dbd74-0727-4f2a-ba4c-4119c42cc973",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "f2eb5c77-285d-4a58-8f8c-7ded0ae1701f",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "e9c24966-1270-43ee-8f28-447d45583fca",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Manage Users"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "37ebef93-8348-435e-83d5-f184f97b4f93",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "eb5fb173-1787-4131-aa1e-ed0bd5a9634d",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-manage-users"
+}

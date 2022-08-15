@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_Marketing_Tracking__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>EPH-5629 Contact - Quality &amp; Preference</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Contact´s right of not being tracked in marketing (GDPR Requirement). If requested than contact will not be tracked in marketing.</inlineHelpText>
+    <label>No Marketing Tracking</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

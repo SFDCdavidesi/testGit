@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_VATNumber__c</fullName>
+    <description>[EBH] (EPH-1900) - VAT Number
+		[#EPH-7785] Create New Profile AU Standard User and updates to existing fields in Accounts for AU B2C Sellers</description>
+    <externalId>false</externalId>
+    <label>VAT/ABN Number</label>
+    <length>100</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

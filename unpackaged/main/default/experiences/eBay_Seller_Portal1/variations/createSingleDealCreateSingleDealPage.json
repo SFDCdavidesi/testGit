@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "cb5b36ce-480a-42ab-9bcb-31f0000e38a4",
+    "propertyOverrides" : {
+      "activeViewId" : "eae60f15-ab92-4b9b-8a0e-8f4b11b202b5"
+    },
+    "targetId" : "a1e4a34d-1070-4ba6-8c37-e1fea3b49a7a",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Create_Single_Deal_Create_Single_Deal_Page",
+  "id" : "ec5b5b84-832a-47ac-8021-fe55016e791e",
+  "type" : "experienceVariation"
+}

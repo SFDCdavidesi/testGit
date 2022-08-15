@@ -1,0 +1,49 @@
+{
+  "appPageId" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "d4fc4e95-e33a-42c7-8af0-8d0ef592bdca",
+  "label" : "Agreement Terms And Conditions",
+  "regions" : [ {
+    "id" : "f6bd47ef-10cb-445f-8a3a-475c1a032007",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "labelAcceptAgreement" : "Accept agreement",
+        "labelLeave" : "Leave",
+        "modalTitle" : "Agree to the terms and conditions"
+      },
+      "componentName" : "c:lwcAgreementTerms",
+      "id" : "bd578c6a-980c-4cf1-a61d-d8bc53e7fd1b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "57e3aa1e-2f85-4929-aa1a-a27a4a309258",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "67737832-8578-4e51-ad59-cf889676b9b0",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Agreement Terms And Conditions"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "f649a8d3-c5e8-46fe-a586-2e40aa8fd297",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "7662cae2-ff9e-4d36-ad82-3b1a4576b388",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-agreement-terms-and-conditions"
+}

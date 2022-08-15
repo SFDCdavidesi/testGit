@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "213715ff-b32a-4dd1-9d93-78c4cbac84fa",
+    "propertyOverrides" : {
+      "isVisible" : true
+    },
+    "targetId" : "c4013f32-12ee-4caa-b7be-62f09307a924",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Login_Failed_lwcLoginFailed_1_Component",
+  "id" : "fecd064d-e2b1-4e3b-be14-aed1f90a20ee",
+  "type" : "experienceVariation"
+}

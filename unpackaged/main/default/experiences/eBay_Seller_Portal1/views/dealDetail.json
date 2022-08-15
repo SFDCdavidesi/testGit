@@ -1,0 +1,185 @@
+{
+  "appPageId" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "f2952b0f-975d-4df3-8a06-d4f4b05eddc2",
+  "label" : "Deal Detail",
+  "regions" : [ {
+    "id" : "1b928cff-a7b7-4a3e-ac7b-72ca4c548f06",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p style=\"text-align: right;\"><a href=\"https://www.ebay.com/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"> eBay Website</a><span style=\"background-color: transparent;\"> </span><span style=\"background-color: transparent; color: rgb(204, 204, 204);\">|</span><span style=\"background-color: transparent;\">&nbsp;</span><a href=\"https://www.ebay.com/help/selling/selling-tools/creating-deals-using-seller-portal?id=5329\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"> eBay Help &amp; Contact</a><span style=\"background-color: transparent;\"> </span><span style=\"background-color: transparent; color: rgb(204, 204, 204);\">|</span><a href=\"https://hive--sprintdev.livepreview.salesforce-communities.com/s/user-guide\" rel=\"noopener noreferrer\" target=\"_blank\">&nbsp;</a><a href=\"/s/user-guide\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"> Deal User Guide</a></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "6c98296d-b654-4aa4-b092-61b46c9cd03f",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "5c2c143f-414c-4031-bc6e-ac1a13b60532"
+      },
+      "renditions" : [ {
+        "id" : "5c2c143f-414c-4031-bc6e-ac1a13b60532",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: right;\"><a href=\"https://www.ebay.de/help/home\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"> eBay Hilfe &amp; Kontaktmöglichkeiten</a><span style=\"background-color: transparent;\"> </span><span style=\"background-color: transparent; color: rgb(204, 204, 204);\">|</span><span style=\"background-color: transparent;\"> </span> <a href=\"https://www.ebay.de/deals/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"> eBay WOW! Angebote Seite</a><span style=\"background-color: transparent;\"> </span><span style=\"background-color: transparent; color: rgb(204, 204, 204);\">|</span><span style=\"background-color: transparent;\"> </span><a href=\"https://hive--sprintdev.livepreview.salesforce-communities.com/s/user-guide?sb=user-guide\" rel=\"noopener noreferrer\" target=\"_self\" style=\"color: rgb(51, 51, 51);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"></a> <a href=\"/s/user-guide?sb=user-guide\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51);\">Benutzerhandbuch für WOW! Angebote</a><span style=\"background-color: transparent;\"> </span><span style=\"background-color: transparent; color: rgb(204, 204, 204);\">|</span><a href=\"https://hive--sprintdev.livepreview.salesforce-communities.com/s/user-guide\" rel=\"noopener noreferrer\" target=\"_blank\">&nbsp;</a><a href=\"https://hive--sprintdev.livepreview.salesforce-communities.com/s/user-guide\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"></a><a href=\"https://hive--sprintdev.livepreview.salesforce-communities.com/s/user-guide\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"background-color: rgb(250, 250, 250);\"> </a><a href=\"/s/user-guide\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51);\">Anforderungen für WOW! Angebote</a></p>"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<p><span style=\"font-size: 22px; font-family: arial;\">Deal Overview</span></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "39319158-56ec-467e-a25a-b5b2d59df479",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "5546f45f-97a1-4a88-b774-1c92309bb3fd"
+      },
+      "renditions" : [ {
+        "id" : "5546f45f-97a1-4a88-b774-1c92309bb3fd",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "richTextValue" : "<p><span style=\"font-size: 22px; font-family: arial;\">WOW! Angebot Übersicht</span></p>"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<p><span style=\"font-size: 12px;\">Below you will find details of this deal</span></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "e7eecc1e-2398-4240-9b3c-c50a43fcad5a",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "7231aefb-6201-41c6-8693-f061b11c9f59"
+      },
+      "renditions" : [ {
+        "id" : "7231aefb-6201-41c6-8693-f061b11c9f59",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "richTextValue" : "<p><span style=\"font-size: 12px; font-family: arial;\">Nachfolgend finden Sie die Details zu Ihrem WOW! Angebot</span></p>"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordDetail",
+      "id" : "08dd4925-89dd-426f-b002-b463f2aebbef",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "recordId" : "",
+        "resubmit_deal" : true
+      },
+      "componentName" : "c:lwcButtonsHorizon",
+      "id" : "cd7ea2a3-f393-438f-a949-7cd227bafda1",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "df661a35-88e2-479c-a8a4-e5727a551ad8"
+      },
+      "renditions" : [ {
+        "id" : "df661a35-88e2-479c-a8a4-e5727a551ad8",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "recordId" : "{!recordId}"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "0d7dcbe2-bc24-4021-b9a9-9f1b035023c6",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "40c9791e-db97-4152-8c54-4a8d86472ed7",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "29605f4a-e91d-4f8c-8629-0a3fd7f672f8",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "c57f31ea-7ab4-46a4-ac4f-95265eff5f99",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:lwcHelpTextGeneric",
+      "id" : "5af810bb-4409-47e3-8cc0-612b5f3510f3",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "3fb1c861-a9ba-4515-b95d-c925d20a09c6"
+      },
+      "renditions" : [ {
+        "id" : "3fb1c861-a9ba-4515-b95d-c925d20a09c6",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "metadataName" : "DEhelpTextTextElmt2"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordDetail",
+      "id" : "b9dc967b-ba73-4e56-9e82-5c28c148caa6",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}",
+        "resubmit_deal" : true
+      },
+      "componentName" : "c:lwcButtonsHorizon",
+      "id" : "74651ecb-c145-45fa-95ed-90a80be08b01",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "0a74e822-9079-4789-bb90-7e01278d1350"
+      },
+      "renditions" : [ {
+        "id" : "0a74e822-9079-4789-bb90-7e01278d1350",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "recordId" : "{!recordId}"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "997b0e49-0208-4c5d-82d3-f24fd1ac8c6a",
+    "regionName" : "main",
+    "type" : "region"
+  }, {
+    "id" : "ab711cc2-da1b-4b51-9015-ce34da6d60b6",
+    "regionName" : "sideBar",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-a0n"
+}

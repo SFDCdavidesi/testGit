@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Banner_Likelihood_Score__c</fullName>
+    <description>EPH-6705 Channel Likelihood on Contact Level</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Likelihood (0-1) of the seller clicking on a banner.
+99 indicates insufficient data for prediction.
+Blank indicates no data for prediction</inlineHelpText>
+    <label>Banner Likelihood Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

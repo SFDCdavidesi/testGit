@@ -1,0 +1,11 @@
+{
+  "activeViewId" : null,
+  "appPageId" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "configurationTags" : [ ],
+  "id" : "46f4c8cd-1c41-42b3-bd4b-811cbfb1dd8f",
+  "label" : "My Deal Lists",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-my-deal-lists",
+  "type" : "route",
+  "urlPrefix" : "my-deal-lists"
+}

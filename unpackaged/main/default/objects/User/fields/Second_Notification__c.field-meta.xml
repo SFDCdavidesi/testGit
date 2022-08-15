@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Second_Notification__c</fullName>
+    <description>US-0008327 - [Dev Only] - Finalize user deactivation process</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Second time that system sent the deactivated notification to user.</inlineHelpText>
+    <label>Second Notification</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>DateTime</type>
+</CustomField>

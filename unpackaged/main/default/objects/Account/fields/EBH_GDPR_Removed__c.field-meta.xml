@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_GDPR_Removed__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>(EPH-5525) GDPR Removed Flag</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates that a seller&#39;s personal information (e.g. email address) has been anonymised</inlineHelpText>
+    <label>GDPR Removed</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

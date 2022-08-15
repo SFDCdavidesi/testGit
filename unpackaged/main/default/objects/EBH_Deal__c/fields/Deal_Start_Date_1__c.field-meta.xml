@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deal_Start_Date_1__c</fullName>
+    <description>US-0011309 - Missing Item-ID: To-Do list and List Views - AC1 for query with criteria Today &lt; Deal Start Date -1 in DE SEP&#39;s list view.</description>
+    <externalId>false</externalId>
+    <formula>EBH_DealStartDate__c - 1</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Deal Start Date - 1</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

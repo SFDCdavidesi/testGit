@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "bb6f2376-24b2-4c64-9312-2556f78b7617",
+    "propertyOverrides" : {
+      "isVisible" : true
+    },
+    "targetId" : "f87b39e6-55fc-4939-8e0d-9baa87601a56",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Contact_Detail_lwcSidebarUsefulLink_Component",
+  "id" : "04f17601-118e-44ce-a142-8490ad4c0963",
+  "type" : "experienceVariation"
+}

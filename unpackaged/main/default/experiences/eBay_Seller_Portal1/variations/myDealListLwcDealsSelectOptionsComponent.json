@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "98c304ec-82fd-4541-bc46-8d055ded6510",
+    "propertyOverrides" : {
+      "isVisible" : true
+    },
+    "targetId" : "fc932bac-f089-43aa-bbc1-bc74f0988402",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "My_Deal_List_lwcDealsSelectOptions_Component",
+  "id" : "d9898282-4aa4-4ced-972e-04cf15958e8b",
+  "type" : "experienceVariation"
+}

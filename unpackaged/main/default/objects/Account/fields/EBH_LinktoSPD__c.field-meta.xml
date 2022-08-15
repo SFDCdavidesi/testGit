@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_LinktoSPD__c</fullName>
+    <description>[EBH] (US-0040) : To have a link to SD for a Seller</description>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&quot;https://gro.dss.vip.ebay.com/nextgro/#/seller/deepdive?deepLinkParams=%7B%22sellerIds%22%3A%5B%22&quot;+EBH_OracleID__c+&quot;%22%5D%2C%22site%22%3A%22&quot;+
+IF(ISPICKVAL(EBH_PrimarySite__c , &#39;Ebay&#39;) , &#39;%5B0%2C100%5D&#39;,
+IF(ISPICKVAL(EBH_PrimarySite__c , &#39;Germany&#39;) , &#39;77&#39;,
+IF(ISPICKVAL(EBH_PrimarySite__c , &#39;UK&#39;) , &#39;3&#39;,
+IF(ISPICKVAL(EBH_PrimarySite__c , &#39;Austria&#39;) , &#39;16&#39;,
+IF(ISPICKVAL(EBH_PrimarySite__c , &#39;Canada&#39;) , &#39;2&#39;,
+IF(ISPICKVAL(EBH_PrimarySite__c , &#39;Switzerland&#39;) , &#39;193&#39;,
+IF(ISPICKVAL(EBH_PrimarySite__c , &#39;Australia&#39;) , &#39;15&#39;,
+IF(ISPICKVAL(EBH_PrimarySite__c , &#39;Hong Kong&#39;) , &#39;201&#39;,
+IF(ISPICKVAL(EBH_PrimarySite__c , &#39;Malaysia&#39;) , &#39;207&#39;,
+IF(ISPICKVAL(EBH_PrimarySite__c , &#39;Singapore&#39;) , &#39;216&#39;,
+IF(ISPICKVAL(EBH_PrimarySite__c , &#39;Spain&#39;) , &#39;186&#39;,
+IF(ISPICKVAL(EBH_PrimarySite__c , &#39;France&#39;) , &#39;71&#39;,
+IF(ISPICKVAL(EBH_PrimarySite__c , &#39;Ireland&#39;) , &#39;&#39;,
+IF(ISPICKVAL(EBH_PrimarySite__c , &#39;India&#39;) , &#39;203&#39;,
+IF(ISPICKVAL(EBH_PrimarySite__c , &#39;Italy&#39;) , &#39;101&#39;,
+IF(ISPICKVAL(EBH_PrimarySite__c , &#39;Netherlands&#39;) , &#39;146&#39;,
+IF(ISPICKVAL(EBH_PrimarySite__c , &#39;Philippines&#39;) , &#39;&#39;,
+IF(ISPICKVAL(EBH_PrimarySite__c , &#39;Poland&#39;) , &#39;&#39;,
+IF(ISPICKVAL(EBH_PrimarySite__c , &#39;Belgium (French)&#39;) , &#39;23&#39;,
+IF(ISPICKVAL(EBH_PrimarySite__c , &#39;Belgium (Dutch)&#39;) , &#39;123&#39;,
+IF(ISPICKVAL(EBH_PrimarySite__c , &#39;Canada (French)&#39;) , &#39;210&#39;,
+&#39;%5B0%2C100%5D&#39;)))))))))))))))))))))
++&quot;%22%7D&quot;, &quot;Click here&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Go to Seller Performance Dashboard for this Seller</inlineHelpText>
+    <label>Link to SPD</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

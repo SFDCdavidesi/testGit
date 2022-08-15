@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deal_Contract_Seller_Name__c</fullName>
+    <description>US-0008102 : [US]* Deals Mass Submission for External Seller Approval Process</description>
+    <externalId>false</externalId>
+    <formula>Deal_Contract_Agreement__r.Seller_Name__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Deal Contract Seller Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

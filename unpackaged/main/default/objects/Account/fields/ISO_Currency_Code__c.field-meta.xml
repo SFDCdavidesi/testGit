@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ISO_Currency_Code__c</fullName>
+    <description>EPH-7619 Manhattan &amp; FVF Invoicing BCD - SF HIVE + ETL
+US-0007348 Coupon Correction for External ID</description>
+    <externalId>false</externalId>
+    <label>eBay DW Currency ID</label>
+    <length>5</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "f098df78-5cf5-4345-b697-aa16065b81b4",
+    "propertyOverrides" : {
+      "isVisible" : true
+    },
+    "targetId" : "5af810bb-4409-47e3-8cc0-612b5f3510f3",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Deal_Detail_lwcHelpTextGeneric_1_Component",
+  "id" : "506cd745-c742-4fac-a119-039c473e1283",
+  "type" : "experienceVariation"
+}

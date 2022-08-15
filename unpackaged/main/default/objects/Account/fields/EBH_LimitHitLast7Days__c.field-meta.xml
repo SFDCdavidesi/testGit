@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_LimitHitLast7Days__c</fullName>
+    <description>[EBH] (EPH-78) - Number of times limit was hit within the last 7 days</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Number of times limit was hit within the last 7 days</inlineHelpText>
+    <label># Limit Hit (Last 7 Days)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,289 @@
+{
+  "appPageId" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "componentName" : "siteforce:dynamicLayout",
+  "id" : "7da2005b-cddb-42d5-9a5e-822d6a77eec9",
+  "label" : "Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "bc6bf057-c928-4817-a1f6-1ead1b97511e",
+          "columns" : [ {
+            "UUID" : "85019eb0-9786-4421-92be-e7245c18addf",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 32
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "bc6bf057-c928-4817-a1f6-1ead1b97511e",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: right;\"><a href=\"https://www.ebay.com/\" rel=\"noopener noreferrer\" target=\"_blank\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"> </a><a href=\"https://www.ebay.com/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51);\">eBay Website</a> <span style=\"color: rgb(204, 204, 204); background-color: transparent;\">|</span> <a href=\"https://www.ebay.com/help/home\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51); background-color: rgb(250, 250, 250);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"></a><a href=\"https://www.ebay.com/help/home\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51);\">&nbsp;eBay Help &amp; Contact</a></p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "fec53fed-d69e-458b-ae2b-ca0d025a860a",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : {
+            "de" : "370126e7-2a98-4135-926c-dd3e4c5f67fd"
+          },
+          "renditions" : [ {
+            "id" : "370126e7-2a98-4135-926c-dd3e4c5f67fd",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "richTextValue" : "<p style=\"text-align: right;\"><a href=\"https://www.ebay.de/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"> eBay Webseite </a><span style=\"color: rgb(204, 204, 204); background-color: transparent;\">| </span><a href=\"https://www.ebay.de/\" rel=\"noopener noreferrer\" target=\"null\" style=\"color: rgb(51, 51, 51); background-color: rgb(250, 250, 250);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"></a> <a href=\"https://www.ebay.de/help/home\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51);\">eBay Hilfe &amp; Kontaktmöglichkeiten</a></p>"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "displayFor" : "Deployment",
+            "messageType" : "Alert",
+            "overrideMetadataName" : "HomePage_WindowAlert"
+          },
+          "componentName" : "c:lwcRecordInfo",
+          "id" : "1ce3e7cf-a7e8-4de8-b357-a00cbcb5f55d",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p><span style=\"font-family: arial; font-size: 22px;\">Welcome to the eBay Seller Portal!</span></p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "20b08396-9e5b-447d-a455-8a81c5b59d1c",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : {
+            "de" : "d225771a-ce48-457f-a2d3-54bac82a0eb7"
+          },
+          "renditions" : [ {
+            "id" : "d225771a-ce48-457f-a2d3-54bac82a0eb7",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "richTextValue" : "<p><span style=\"font-size: 22px; font-family: arial;\">Wilkommen</span></p>"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p>Take advantage of the Seller Portal!&nbsp;Here you can:</p><ul><li>Make your brand known by increasing visibility of your top deals</li><li>Open up the opportunity to work with eBay for sourcing inventory for key events</li></ul>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "8891662a-bc8b-4ab6-862c-d46bc9241525",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : {
+            "de" : "689cb96e-e74a-4b5a-ace1-3233b2721581"
+          },
+          "renditions" : [ {
+            "id" : "689cb96e-e74a-4b5a-ace1-3233b2721581",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "richTextValue" : "<p><span style=\"font-family: arial;\">Nutzen Sie die Möglichkeiten, die das Wachstumsportal Ihnen bietet. Hier können Sie:</span></p><ul><li><span style=\"font-family: arial;\">Ihre Verkaufschancen erhöhen</span></li><li><span style=\"font-family: arial;\">Ihre Marke bekannnter machen und Ihren Kundenstamm erweitern</span></li><li><span style=\"font-family: arial;\">Ihren Warenbestand optimal verwerten</span></li></ul>"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "isAggregate" : true,
+            "itemsToShow" : ""
+          },
+          "componentName" : "c:lwcSEPToDoList",
+          "id" : "4daf0692-1e58-4e2f-9527-81260e5467f7",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : {
+            "de" : "8eddaaf9-489f-4802-9379-a45dac85a97a"
+          },
+          "renditions" : [ {
+            "id" : "8eddaaf9-489f-4802-9379-a45dac85a97a",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "itemsToShow" : "Deals_Aggregate_DE,Coupons_Aggregate_DE"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "mdtName" : "",
+            "numRec" : 50,
+            "profileSetting" : "US"
+          },
+          "componentName" : "c:lwcViewPortalUserMessage",
+          "id" : "aa987a46-8bc0-4bb5-8216-a0eafbea0606",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "metadataName" : "ENnoPermission",
+            "metadataNameReadOnly" : "ENnoPermission"
+          },
+          "componentName" : "c:lwcGenericErrorMessage",
+          "id" : "257096e1-bfac-49ed-b8ce-e364061eb95f",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : {
+            "de" : "11f767c0-7a0b-4697-8ad5-5203fc26d876"
+          },
+          "renditions" : [ {
+            "id" : "11f767c0-7a0b-4697-8ad5-5203fc26d876",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "metadataName" : "DEnoPermission",
+                "metadataNameReadOnly" : "DEnoPermission"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        }, {
+          "componentAttributes" : { },
+          "componentName" : "c:SEP_Calendar",
+          "id" : "98c65b5e-f959-4e67-adb2-a95ecbb5dc0c",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "labelAcceptAgreement" : "I Understand",
+            "labelLeave" : "Leave",
+            "modalTitle" : "Agreement"
+          },
+          "componentName" : "c:lwcModalViewPortalUserMessage",
+          "id" : "78a9aa18-73b7-4c92-a3d9-861761708fe6",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "tabsetConfig" : {
+              "UUID" : "8df2a3dd-6d69-438a-a2a6-2859a3b5fa04",
+              "activeTab" : "",
+              "tabs" : [ {
+                "UUID" : "0449742d-385c-4e79-b112-158fc9df7b04",
+                "allowGuestUser" : true,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "1",
+                "tabName" : "Created Today"
+              }, {
+                "UUID" : "bc7d28f5-70ec-4e6a-8674-80142dd05abd",
+                "allowGuestUser" : true,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "2",
+                "tabName" : "Running Deals"
+              } ],
+              "useOverflowMenu" : false
+            }
+          },
+          "componentName" : "forceCommunity:tabset",
+          "id" : "8df2a3dd-6d69-438a-a2a6-2859a3b5fa04",
+          "regions" : [ {
+            "components" : [ {
+              "componentAttributes" : {
+                "isCheckBox" : false,
+                "isDisableSearch" : false,
+                "isShowBtnIntr" : false,
+                "isShowDensity" : false,
+                "lbButtonIntr" : "Interested",
+                "lbButtonNotIntr" : "Not Interested",
+                "lbDensity" : "Density",
+                "mdtName" : "Created_Today",
+                "messageNoRecord" : "No deals have been uploaded today"
+              },
+              "componentName" : "c:lwcListView",
+              "id" : "3620f14f-3f15-41ca-a638-dc9d0868e5ca",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "0449742d-385c-4e79-b112-158fc9df7b04",
+            "regionLabel" : "Created Today",
+            "regionName" : "1",
+            "renditionMap" : { },
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : {
+                "isCheckBox" : false,
+                "isDisableSearch" : false,
+                "isShowBtnIntr" : false,
+                "isShowDensity" : false,
+                "lbButtonIntr" : "Interested",
+                "lbButtonNotIntr" : "Not Interested",
+                "lbDensity" : "Density",
+                "mdtName" : "Running_Deals",
+                "messageNoRecord" : "No deals have been uploaded today"
+              },
+              "componentName" : "c:lwcListView",
+              "id" : "20989589-538d-4092-b6b5-b379c8620208",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "bc7d28f5-70ec-4e6a-8674-80142dd05abd",
+            "regionLabel" : "Running Deals",
+            "regionName" : "2",
+            "renditionMap" : { },
+            "type" : "region"
+          } ],
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "85019eb0-9786-4421-92be-e7245c18addf",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "dcdfd1ab-5c7d-4921-92cc-ca060fb8ca36",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "fec95e63-ae90-4c0e-a719-25de8f12f58d",
+      "renditionMap" : {
+        "de" : "a73bfddc-c327-4c8a-9beb-301674ee29c3"
+      },
+      "renditions" : [ {
+        "id" : "a73bfddc-c327-4c8a-9beb-301674ee29c3",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Startseite"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "73d5932e-478d-443d-9986-e09f7945868e",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "home"
+}

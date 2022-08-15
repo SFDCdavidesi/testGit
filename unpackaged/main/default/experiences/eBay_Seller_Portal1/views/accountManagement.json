@@ -1,0 +1,60 @@
+{
+  "appPageId" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "35cc56f3-dcc0-4728-95b8-e484d5e663c3",
+  "label" : "Account Management",
+  "regions" : [ {
+    "id" : "a2158d7f-3e6f-467c-9a34-88825e21d720",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "metadataName" : "genericErrorMessage",
+        "metadataNameReadOnly" : "dealReadOnlyErrorMessage"
+      },
+      "componentName" : "c:lwcGenericErrorMessage",
+      "id" : "05a954f0-be9e-4200-9d7d-0d8c65230b07",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "1737b41f-c136-4267-a099-ffb53e139427"
+      },
+      "renditions" : [ {
+        "id" : "1737b41f-c136-4267-a099-ffb53e139427",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "metadataName" : "DEgenericErrorMessage",
+            "metadataNameReadOnly" : "DEdealReadOnlyErrorMessage"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "5b7c16cd-d787-4522-b232-8f294d69b4b5",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "2b2e90cb-4299-45fe-934d-4c772e61e98b",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Account Management"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "5713f588-cf88-4713-82cf-c59355c79408",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "8e257547-f185-4e90-a7f5-c93713f1b5b1",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "account-management"
+}

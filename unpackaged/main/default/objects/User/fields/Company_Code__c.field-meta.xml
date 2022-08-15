@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Company_Code__c</fullName>
+    <description>US-0009221 - [Ads 2020] Field &amp; Formulas for Revenue Recognition and Compliance</description>
+    <externalId>false</externalId>
+    <label>Company Code</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0010 eBay, Inc. (US)</fullName>
+                <default>false</default>
+                <label>0010 eBay, Inc. (US)</label>
+            </value>
+            <value>
+                <fullName>0058 mobile.international GmbH</fullName>
+                <default>false</default>
+                <label>0058 mobile.international GmbH</label>
+            </value>
+            <value>
+                <fullName>0075 eBay Ltd. (UK)</fullName>
+                <default>false</default>
+                <label>0075 eBay Ltd. (UK)</label>
+            </value>
+            <value>
+                <fullName>0111 eBay Marketplaces GmbH</fullName>
+                <default>false</default>
+                <label>0111 eBay Marketplaces GmbH</label>
+            </value>
+            <value>
+                <fullName>0314 eBay Intl Adv GmbH</fullName>
+                <default>false</default>
+                <label>0314 eBay Intl Adv GmbH</label>
+            </value>
+            <value>
+                <fullName>0315 eBay (UK) Ltd, Adv Grp DE</fullName>
+                <default>false</default>
+                <label>0315 eBay (UK) Ltd, Adv Grp DE</label>
+            </value>
+            <value>
+                <fullName>0323 eBay UK Ltd. Branch France</fullName>
+                <default>false</default>
+                <label>0323 eBay UK Ltd. Branch France</label>
+            </value>
+            <value>
+                <fullName>0324 eBay (UK) Ltd., Italian Branch</fullName>
+                <default>false</default>
+                <label>0324 eBay (UK) Ltd., Italian Branch</label>
+            </value>
+            <value>
+                <fullName>0325 eBay (UK) Ltd., Australia Branch</fullName>
+                <default>false</default>
+                <label>0325 eBay (UK) Ltd., Australia Branch</label>
+            </value>
+            <value>
+                <fullName>0062 eBay GmbH</fullName>
+                <default>false</default>
+                <label>0062 eBay GmbH</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "75993423-f9e9-433e-95df-9b0b9762871c",
+  "appPageId" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "configurationTags" : [ ],
+  "id" : "ca900232-de02-4771-8554-727edac99ffe",
+  "label" : "GearSetPage",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-gearsetpage",
+  "type" : "route",
+  "urlPrefix" : "gearsetpage"
+}

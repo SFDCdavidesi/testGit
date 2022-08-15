@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_BOBSegment__c</fullName>
+    <description>[EBH] (EPH-1901) - BOB Seller Segment</description>
+    <externalId>false</externalId>
+    <inlineHelpText>A seller can be managed by Seller Growth Verticals (MANAGED) or GCX (MSO). If a seller is not part of the BOB this value will appear blank.</inlineHelpText>
+    <label>Managed Segment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>MSO</fullName>
+                <default>false</default>
+                <label>MSO</label>
+            </value>
+            <value>
+                <fullName>Managed</fullName>
+                <default>false</default>
+                <label>Managed</label>
+            </value>
+            <value>
+                <fullName>Strategic</fullName>
+                <default>false</default>
+                <label>Strategic</label>
+            </value>
+            <value>
+                <fullName>Key</fullName>
+                <default>false</default>
+                <label>Key</label>
+            </value>
+            <value>
+                <fullName>Enterprise</fullName>
+                <default>false</default>
+                <label>Enterprise</label>
+            </value>
+            <value>
+                <fullName>Concierge</fullName>
+                <default>false</default>
+                <label>Concierge</label>
+            </value>
+            <value>
+                <fullName>Platin</fullName>
+                <default>false</default>
+                <label>Platin</label>
+            </value>
+            <value>
+                <fullName>AM Bolt-On</fullName>
+                <default>false</default>
+                <label>AM Bolt-On</label>
+            </value>
+            <value>
+                <fullName>Onboarding</fullName>
+                <default>false</default>
+                <label>Onboarding</label>
+            </value>
+            <value>
+                <fullName>Pro-Trader Cat</fullName>
+                <default>false</default>
+                <label>Pro-Trader Cat</label>
+            </value>
+            <value>
+                <fullName>PT LTAM</fullName>
+                <default>false</default>
+                <label>PT LTAM</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

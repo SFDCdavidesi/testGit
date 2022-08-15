@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_BusinessNameExternalID__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>[EBH] (EPH-4743) - To upsert the deals records using the business name as text external ID</description>
+    <externalId>true</externalId>
+    <label>Business Name External ID</label>
+    <length>80</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

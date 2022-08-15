@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "be30192f-9882-41b8-bb78-29c508c24cdc",
+    "propertyOverrides" : {
+      "isVisible" : true
+    },
+    "targetId" : "2f52eb2e-1d01-4e5c-b2de-87d7a19e32d1",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "My_Deal_List_Flexi_lwcDealsSelectOptions_1_Component",
+  "id" : "2d72e889-bb8c-4c73-a1a2-6d2626b99d31",
+  "type" : "experienceVariation"
+}

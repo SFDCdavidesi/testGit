@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_UrgentSTRLastWeek__c</fullName>
+    <description>[EBH] (EPH-4643) - To replace field EBH_STRLast4Weeks__c and once ETL mapping is done then old field can be deleted</description>
+    <externalId>false</externalId>
+    <inlineHelpText>An urgent seller&#39;s Sell-through Rate last week.</inlineHelpText>
+    <label>STR (Last Week)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

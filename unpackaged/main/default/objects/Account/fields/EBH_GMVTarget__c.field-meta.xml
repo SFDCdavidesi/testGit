@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_GMVTarget__c</fullName>
+    <description>[EBH] (EPH-4125) - Target</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Last week&#39;s GMV forecast based on seller&#39;s performance in the last 4 weeks and the growth of all the categories that they sell in</inlineHelpText>
+    <label>GMV Forecast (Last week)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

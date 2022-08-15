@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>eBay_Academy_Whitelisted__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>US-0010274 - New checkbox (eBay Academy Whitelisted) on Seller</description>
+    <externalId>false</externalId>
+    <inlineHelpText>By enabling this checkbox you&#39;ll initiate Email invitation to the seller for eBay Academy.</inlineHelpText>
+    <label>eBay Academy Whitelisted</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

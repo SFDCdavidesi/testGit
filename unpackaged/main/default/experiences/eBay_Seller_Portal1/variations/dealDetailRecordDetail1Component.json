@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "09c6c68b-7f76-4473-a04f-d5cd816858d8",
+    "propertyOverrides" : {
+      "isVisible" : true
+    },
+    "targetId" : "b9dc967b-ba73-4e56-9e82-5c28c148caa6",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Deal_Detail_Record_Detail_1_Component",
+  "id" : "8efd88c7-9d37-4141-93b7-a24efdb2073e",
+  "type" : "experienceVariation"
+}

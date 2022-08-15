@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_Decision_Maker_Role__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Areas where contact has authority to decide on</inlineHelpText>
+    <label>Decision Maker Role</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Business Strategy and Development</fullName>
+                <default>false</default>
+                <label>Business Strategy and Development</label>
+            </value>
+            <value>
+                <fullName>Customer Service</fullName>
+                <default>false</default>
+                <label>Customer Service</label>
+            </value>
+            <value>
+                <fullName>Claims, Disputes and Case Management</fullName>
+                <default>false</default>
+                <label>Claims, Disputes and Case Management</label>
+            </value>
+            <value>
+                <fullName>Coupons</fullName>
+                <default>false</default>
+                <label>Coupons</label>
+            </value>
+            <value>
+                <fullName>Order Processing &amp; Shipping</fullName>
+                <default>false</default>
+                <label>Order Processing &amp; Shipping</label>
+            </value>
+            <value>
+                <fullName>Product and Listing Management</fullName>
+                <default>false</default>
+                <label>Product and Listing Management</label>
+            </value>
+            <value>
+                <fullName>Warehouse and Stock Management</fullName>
+                <default>false</default>
+                <label>Warehouse and Stock Management</label>
+            </value>
+            <value>
+                <fullName>Returns Management</fullName>
+                <default>false</default>
+                <label>Returns Management</label>
+            </value>
+            <value>
+                <fullName>Marketing / Promotions</fullName>
+                <default>false</default>
+                <label>Marketing / Promotions</label>
+            </value>
+            <value>
+                <fullName>Purchasing</fullName>
+                <default>false</default>
+                <label>Purchasing</label>
+            </value>
+            <value>
+                <fullName>Distribution</fullName>
+                <default>false</default>
+                <label>Distribution</label>
+            </value>
+            <value>
+                <fullName>Accounting / Finance</fullName>
+                <default>false</default>
+                <label>Accounting / Finance</label>
+            </value>
+            <value>
+                <fullName>Legal</fullName>
+                <default>false</default>
+                <label>Legal</label>
+            </value>
+            <value>
+                <fullName>Management</fullName>
+                <default>false</default>
+                <label>Management</label>
+            </value>
+            <value>
+                <fullName>Market and Performance Data Analysis</fullName>
+                <default>false</default>
+                <label>Market and Performance Data Analysis</label>
+            </value>
+            <value>
+                <fullName>General Manager</fullName>
+                <default>false</default>
+                <label>General Manager</label>
+            </value>
+            <value>
+                <fullName>Sole Trader (All of the above)</fullName>
+                <default>false</default>
+                <label>Sole Trader (All of the above)</label>
+            </value>
+            <value>
+                <fullName>Tech</fullName>
+                <default>false</default>
+                <label>Tech</label>
+            </value>
+            <value>
+                <fullName>Final Value Fee</fullName>
+                <default>false</default>
+                <label>Final Value Fee</label>
+            </value>
+            <value>
+                <fullName>Payments</fullName>
+                <default>false</default>
+                <label>Payments</label>
+            </value>
+            <value>
+                <fullName>Customer Service Claims</fullName>
+                <default>false</default>
+                <label>Customer Service Claims</label>
+            </value>
+            <value>
+                <fullName>Data Analysis</fullName>
+                <default>false</default>
+                <label>Data Analysis</label>
+            </value>
+            <value>
+                <fullName>Disputes and Case Management</fullName>
+                <default>false</default>
+                <label>Disputes and Case Management</label>
+            </value>
+            <value>
+                <fullName>Market and Performance</fullName>
+                <default>false</default>
+                <label>Market and Performance</label>
+            </value>
+            <value>
+                <fullName>Seller Council</fullName>
+                <default>false</default>
+                <label>Seller Council</label>
+            </value>
+            <value>
+                <fullName>Opt-in Programs</fullName>
+                <default>false</default>
+                <label>Opt-in Programs</label>
+            </value>
+            <value>
+                <fullName>Opt-in Growth</fullName>
+                <default>false</default>
+                <label>Opt-in Growth</label>
+            </value>
+            <value>
+                <fullName>Opt-in Events</fullName>
+                <default>false</default>
+                <label>Opt-in Events</label>
+            </value>
+            <value>
+                <fullName>Opt-in News</fullName>
+                <default>false</default>
+                <label>Opt-in News</label>
+            </value>
+            <value>
+                <fullName>Pro-Trader</fullName>
+                <default>false</default>
+                <label>Pro-Trader</label>
+            </value>
+            <value>
+                <fullName>Commercial Partner Contact</fullName>
+                <default>false</default>
+                <label>Commercial Partner Contact</label>
+            </value>
+            <value>
+                <fullName>Technical Partner Contact</fullName>
+                <default>false</default>
+                <label>Technical Partner Contact</label>
+            </value>
+            <value>
+                <fullName>Developer Partner Contact</fullName>
+                <default>false</default>
+                <label>Developer Partner Contact</label>
+            </value>
+            <value>
+                <fullName>Other Partner Contact</fullName>
+                <default>false</default>
+                <label>Other Partner Contact</label>
+            </value>
+            <value>
+                <fullName>All of the above</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>All of the above</label>
+            </value>
+            <value>
+                <fullName>Business Strategy</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Business Strategy</label>
+            </value>
+            <value>
+                <fullName>Finance</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Finance</label>
+            </value>
+            <value>
+                <fullName>Inventory Procurement / Distribution / Merchandising</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Inventory Procurement / Distribution / Merchandising</label>
+            </value>
+            <value>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Marketing</label>
+            </value>
+            <value>
+                <fullName>Deals</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>NA Deals Contracts</label>
+            </value>
+            <value>
+                <fullName>NA Deals Statement Recipient</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>NA Deals Statement Recipient</label>
+            </value>
+            <value>
+                <fullName>Operations</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Operations</label>
+            </value>
+            <value>
+                <fullName>Public Relations</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Public Relations</label>
+            </value>
+            <value>
+                <fullName>Technical Support / IT</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Technical Support / IT</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

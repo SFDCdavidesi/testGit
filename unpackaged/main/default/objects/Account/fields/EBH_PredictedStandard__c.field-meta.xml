@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_PredictedStandard__c</fullName>
+    <description>[EBH] (US-0032) : to capture Predicted Standard Value</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Sellers predicted performance standard level for the next evaluation cycle based on current trend.</inlineHelpText>
+    <label>Predicted Standard</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ETRS</fullName>
+                <default>false</default>
+                <label>ETRS</label>
+            </value>
+            <value>
+                <fullName>Above Standard</fullName>
+                <default>false</default>
+                <label>Above Standard</label>
+            </value>
+            <value>
+                <fullName>Below Standard</fullName>
+                <default>false</default>
+                <label>Below Standard</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

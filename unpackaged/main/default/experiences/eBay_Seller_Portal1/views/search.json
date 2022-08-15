@@ -1,0 +1,44 @@
+{
+  "appPageId" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "e64440de-7415-4881-85df-f04380ed54a0",
+  "label" : "Search",
+  "regions" : [ {
+    "id" : "a59660ca-ef90-4609-bdf7-7c8853cd5407",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "scopes" : [ {
+          "isPublic" : true,
+          "name" : "EBH_Deal__c"
+        }, {
+          "isPublic" : true,
+          "name" : "EBH_DealRetailCampaign__c"
+        }, {
+          "isPublic" : true,
+          "name" : "Coupon_Seller__c"
+        } ],
+        "searchResultFiltering" : true,
+        "searchTerm" : "{!term}",
+        "showTopResults" : true
+      },
+      "componentName" : "forceCommunity:search",
+      "id" : "08ec3302-bece-47e1-bb7e-d8579bd2233b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "7171a523-d0e8-440e-8d00-f5b1a96b565c",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "00782c27-7bf3-4179-b544-3f92470b1443",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "global-search"
+}

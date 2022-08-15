@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_ReasonforRejection__c</fullName>
+    <description>[EBH] (EPH-4163) - Reason for Rejection</description>
+    <externalId>false</externalId>
+    <label>Reason for Rejection</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>EBH_DealSiteId__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Preis zu hoch</fullName>
+                <default>false</default>
+                <label>Preis zu hoch</label>
+            </value>
+            <value>
+                <fullName>Fehlende oder falsche Angaben</fullName>
+                <default>false</default>
+                <label>Fehlende oder falsche Angaben</label>
+            </value>
+            <value>
+                <fullName>Angebotene Menge zu gering</fullName>
+                <default>false</default>
+                <label>Angebotene Menge zu gering</label>
+            </value>
+            <value>
+                <fullName>Deal bereits anderweitig vereinbart</fullName>
+                <default>false</default>
+                <label>Deal bereits anderweitig vereinbart</label>
+            </value>
+            <value>
+                <fullName>Abverkaufspotenzial zu gering</fullName>
+                <default>false</default>
+                <label>Abverkaufspotenzial zu gering</label>
+            </value>
+            <value>
+                <fullName>Saisonal nicht relevant</fullName>
+                <default>false</default>
+                <label>Saisonal nicht relevant</label>
+            </value>
+            <value>
+                <fullName>Schlechte Bildqualität</fullName>
+                <default>false</default>
+                <label>Schlechte Bildqualität</label>
+            </value>
+            <value>
+                <fullName>Falsche Kategorie</fullName>
+                <default>false</default>
+                <label>Falsche Kategorie</label>
+            </value>
+            <value>
+                <fullName>Deal-Frequenz zu hoch</fullName>
+                <default>false</default>
+                <label>Deal-Frequenz zu hoch</label>
+            </value>
+            <value>
+                <fullName>Ist bereits im Basket</fullName>
+                <default>false</default>
+                <label>Ist bereits im Basket</label>
+            </value>
+            <value>
+                <fullName>Low revenue potential</fullName>
+                <default>false</default>
+                <label>Low revenue potential</label>
+            </value>
+            <value>
+                <fullName>Quantity is too low</fullName>
+                <default>false</default>
+                <label>Quantity is too low</label>
+            </value>
+            <value>
+                <fullName>Similar deal already agreed</fullName>
+                <default>false</default>
+                <label>Similar deal already agreed</label>
+            </value>
+            <value>
+                <fullName>Supply exceeds demand</fullName>
+                <default>false</default>
+                <label>Supply exceeds demand</label>
+            </value>
+            <value>
+                <fullName>Incorrect eBay category</fullName>
+                <default>false</default>
+                <label>Incorrect eBay category</label>
+            </value>
+            <value>
+                <fullName>Missing or incorrect information</fullName>
+                <default>false</default>
+                <label>Missing or incorrect information</label>
+            </value>
+            <value>
+                <fullName>Already promoted</fullName>
+                <default>false</default>
+                <label>Already promoted</label>
+            </value>
+            <value>
+                <fullName>Price is too high</fullName>
+                <default>false</default>
+                <label>Price is too high</label>
+            </value>
+            <value>
+                <fullName>Out of season</fullName>
+                <default>false</default>
+                <label>Out of season</label>
+            </value>
+            <value>
+                <fullName>Poor picture quality</fullName>
+                <default>false</default>
+                <label>Poor picture quality</label>
+            </value>
+            <value>
+                <fullName>Prix trop élevé</fullName>
+                <default>false</default>
+                <label>Prix trop élevé</label>
+            </value>
+            <value>
+                <fullName>Informations manquantes ou incorrectes</fullName>
+                <default>false</default>
+                <label>Informations manquantes ou incorrectes</label>
+            </value>
+            <value>
+                <fullName>Quantité insuffisante</fullName>
+                <default>false</default>
+                <label>Quantité insuffisante</label>
+            </value>
+            <value>
+                <fullName>Promo similaire déjà acceptée</fullName>
+                <default>false</default>
+                <label>Promo similaire déjà acceptée</label>
+            </value>
+            <value>
+                <fullName>Faible potentiel de revenu</fullName>
+                <default>false</default>
+                <label>Faible potentiel de revenu</label>
+            </value>
+            <value>
+                <fullName>Hors saison</fullName>
+                <default>false</default>
+                <label>Hors saison</label>
+            </value>
+            <value>
+                <fullName>Photo de mauvaise qualité</fullName>
+                <default>false</default>
+                <label>Photo de mauvaise qualité</label>
+            </value>
+            <value>
+                <fullName>Catégorie eBay incorrecte</fullName>
+                <default>false</default>
+                <label>Catégorie eBay incorrecte</label>
+            </value>
+            <value>
+                <fullName>Offre supérieure à la demande</fullName>
+                <default>false</default>
+                <label>Offre supérieure à la demande</label>
+            </value>
+            <value>
+                <fullName>Annonce déjà sponsorisée</fullName>
+                <default>false</default>
+                <label>Annonce déjà sponsorisée</label>
+            </value>
+            <value>
+                <fullName>Il prezzo è troppo alto</fullName>
+                <default>false</default>
+                <label>Il prezzo è troppo alto</label>
+            </value>
+            <value>
+                <fullName>Informazioni mancanti o non corrette</fullName>
+                <default>false</default>
+                <label>Informazioni mancanti o non corrette</label>
+            </value>
+            <value>
+                <fullName>La quantità è troppo bassa</fullName>
+                <default>false</default>
+                <label>La quantità è troppo bassa</label>
+            </value>
+            <value>
+                <fullName>È stata già accettata un&#39;offerta simile</fullName>
+                <default>false</default>
+                <label>È stata già accettata un&#39;offerta simile</label>
+            </value>
+            <value>
+                <fullName>Basso potenziale di ricavi</fullName>
+                <default>false</default>
+                <label>Basso potenziale di ricavi</label>
+            </value>
+            <value>
+                <fullName>Fuori stagione</fullName>
+                <default>false</default>
+                <label>Fuori stagione</label>
+            </value>
+            <value>
+                <fullName>Bassa qualità delle immagini</fullName>
+                <default>false</default>
+                <label>Bassa qualità delle immagini</label>
+            </value>
+            <value>
+                <fullName>Categoria eBay non corretta</fullName>
+                <default>false</default>
+                <label>Categoria eBay non corretta</label>
+            </value>
+            <value>
+                <fullName>L&#39;offerta supera la domanda</fullName>
+                <default>false</default>
+                <label>L&#39;offerta supera la domanda</label>
+            </value>
+            <value>
+                <fullName>Già sponsorizzata</fullName>
+                <default>false</default>
+                <label>Già sponsorizzata</label>
+            </value>
+            <value>
+                <fullName>Precio demasiado alto</fullName>
+                <default>false</default>
+                <label>Precio demasiado alto</label>
+            </value>
+            <value>
+                <fullName>Información incorrecta o faltan datos</fullName>
+                <default>false</default>
+                <label>Información incorrecta o faltan datos</label>
+            </value>
+            <value>
+                <fullName>Cantidad demasiado baja</fullName>
+                <default>false</default>
+                <label>Cantidad demasiado baja</label>
+            </value>
+            <value>
+                <fullName>Oferta similar ya aceptada</fullName>
+                <default>false</default>
+                <label>Oferta similar ya aceptada</label>
+            </value>
+            <value>
+                <fullName>Escaso potencial de rentabilidad</fullName>
+                <default>false</default>
+                <label>Escaso potencial de rentabilidad</label>
+            </value>
+            <value>
+                <fullName>Fuera de temporada</fullName>
+                <default>false</default>
+                <label>Fuera de temporada</label>
+            </value>
+            <value>
+                <fullName>Imagen de mala calidad</fullName>
+                <default>false</default>
+                <label>Imagen de mala calidad</label>
+            </value>
+            <value>
+                <fullName>Categoría de eBay incorrecta</fullName>
+                <default>false</default>
+                <label>Categoría de eBay incorrecta</label>
+            </value>
+            <value>
+                <fullName>La oferta supera la demanda</fullName>
+                <default>false</default>
+                <label>La oferta supera la demanda</label>
+            </value>
+            <value>
+                <fullName>Ya promocionada</fullName>
+                <default>false</default>
+                <label>Ya promocionada</label>
+            </value>
+            <value>
+                <fullName>Prodotto non conforme a standard qualitativi</fullName>
+                <default>false</default>
+                <label>Prodotto non conforme a standard qualitativi</label>
+            </value>
+            <value>
+                <fullName>Tempi di consegna eccessivamente lunghi</fullName>
+                <default>false</default>
+                <label>Tempi di consegna eccessivamente lunghi</label>
+            </value>
+            <value>
+                <fullName>Price is not appropriate for Deals Page</fullName>
+                <default>false</default>
+                <label>Price is not appropriate for Deals Page</label>
+            </value>
+            <value>
+                <fullName>Item Performance below standard for Deals Page</fullName>
+                <default>false</default>
+                <label>Item Performance below standard for Deals Page</label>
+            </value>
+            <value>
+                <fullName>Item does not qualify for Deals Page</fullName>
+                <default>false</default>
+                <label>Item does not qualify for Deals Page</label>
+            </value>
+            <value>
+                <fullName>Insufficient Stock</fullName>
+                <default>false</default>
+                <label>Insufficient Stock</label>
+            </value>
+            <value>
+                <fullName>Item ID Invalid</fullName>
+                <default>false</default>
+                <label>Item ID Invalid</label>
+            </value>
+            <value>
+                <fullName>Free Shipping is required for Deals Page</fullName>
+                <default>false</default>
+                <label>Free Shipping is required for Deals Page</label>
+            </value>
+            <value>
+                <fullName>Deal already exists for this item during this Deal Period</fullName>
+                <default>false</default>
+                <label>Deal already exists for this item during this Deal Period</label>
+            </value>
+            <value>
+                <fullName>Item does not have acceptable Handle Time</fullName>
+                <default>false</default>
+                <label>Item does not have acceptable Handle Time</label>
+            </value>
+            <value>
+                <fullName>Fulfillment invite rejected by Seller</fullName>
+                <default>false</default>
+                <label>Fulfillment invite rejected by Seller</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Preis zu hoch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Fehlende oder falsche Angaben</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Angebotene Menge zu gering</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Deal bereits anderweitig vereinbart</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Abverkaufspotenzial zu gering</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Saisonal nicht relevant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Schlechte Bildqualität</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Falsche Kategorie</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Deal-Frequenz zu hoch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Ist bereits im Basket</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>77</controllingFieldValue>
+            <valueName>Fulfillment invite rejected by Seller</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Low revenue potential</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Quantity is too low</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Similar deal already agreed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Supply exceeds demand</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Incorrect eBay category</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Missing or incorrect information</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Already promoted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Price is too high</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Out of season</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>15</controllingFieldValue>
+            <valueName>Poor picture quality</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Prix trop élevé</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Informations manquantes ou incorrectes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Quantité insuffisante</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Promo similaire déjà acceptée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Faible potentiel de revenu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Hors saison</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Photo de mauvaise qualité</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Catégorie eBay incorrecte</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Offre supérieure à la demande</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71</controllingFieldValue>
+            <valueName>Annonce déjà sponsorisée</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Il prezzo è troppo alto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Informazioni mancanti o non corrette</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>La quantità è troppo bassa</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>È stata già accettata un&#39;offerta simile</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Basso potenziale di ricavi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Fuori stagione</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Bassa qualità delle immagini</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Categoria eBay non corretta</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>L&#39;offerta supera la domanda</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Già sponsorizzata</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Prodotto non conforme a standard qualitativi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>101</controllingFieldValue>
+            <valueName>Tempi di consegna eccessivamente lunghi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Precio demasiado alto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Información incorrecta o faltan datos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Cantidad demasiado baja</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Oferta similar ya aceptada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Escaso potencial de rentabilidad</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Fuera de temporada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Imagen de mala calidad</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Categoría de eBay incorrecta</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>La oferta supera la demanda</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>186</controllingFieldValue>
+            <valueName>Ya promocionada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Price is not appropriate for Deals Page</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Item Performance below standard for Deals Page</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Item does not qualify for Deals Page</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Insufficient Stock</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Item ID Invalid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Free Shipping is required for Deals Page</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Deal already exists for this item during this Deal Period</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>Item does not have acceptable Handle Time</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,93 @@
+{
+  "appPageId" : "2ad2167a-8fca-4b28-9e40-69f747c0f381",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "d80fef3b-ada0-4a43-a5cc-63d18188759c",
+  "label" : "Login",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "buttonlabel" : "Log In",
+        "diffacmsg" : "Login with a Different Account",
+        "forgotpasswordlabel" : "Forgot your password?",
+        "forgotpassworurl" : "/s/login/ForgotPassword?language=en_US",
+        "passwordplaceholder" : "Password",
+        "usernameplaceholder" : "Username"
+      },
+      "componentName" : "c:lwcLoginForm",
+      "id" : "b8b65b61-5de9-45dd-99de-e6194d0cbc90",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "4b063ba1-6dbc-4e65-a327-48e945eef662"
+      },
+      "renditions" : [ {
+        "id" : "4b063ba1-6dbc-4e65-a327-48e945eef662",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "diffacmsg" : "Einloggen mit anderem eBay-Konto",
+            "forgotpassworurl" : "/s/login/ForgotPassword?language=de",
+            "usernameplaceholder" : "Nutzername"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "buttonlabel" : "Log In",
+        "diffacmsg" : "Login with a Different Account",
+        "forgotpasswordlabel" : "Forgot your password?",
+        "forgotpassworurl" : "https://sepdev-hive-partner.cs28.force.com/s/login/ForgotPassword",
+        "passwordplaceholder" : "Password",
+        "usernameplaceholder" : "Username"
+      },
+      "componentName" : "c:lwcLoginForm",
+      "id" : "75a05cad-33a6-4393-96c4-0c32a9ac04de",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "7ab961b5-18fc-43ad-8410-e8b6dd3a4cc2"
+      },
+      "renditions" : [ {
+        "id" : "7ab961b5-18fc-43ad-8410-e8b6dd3a4cc2",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "forgotpassworurl" : "/s/login/ForgotPassword"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "31f1e2bf-fe0f-4f87-a3b8-bb1c21a0643f",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Login"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "ae3afb14-acc4-4143-8b50-fcfaec75e166",
+      "renditionMap" : {
+        "de" : "a608f632-db68-4506-8c9e-e1a0d393e128"
+      },
+      "renditions" : [ {
+        "id" : "a608f632-db68-4506-8c9e-e1a0d393e128",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Einloggen"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "ba004857-f5f8-4f4c-991c-8aa10cb28ae0",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Login",
+  "type" : "view",
+  "viewType" : "login-home"
+}

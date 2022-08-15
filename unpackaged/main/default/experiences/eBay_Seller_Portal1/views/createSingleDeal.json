@@ -1,0 +1,128 @@
+{
+  "appPageId" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "eae60f15-ab92-4b9b-8a0e-8f4b11b202b5",
+  "label" : "Create Single Deal",
+  "regions" : [ {
+    "id" : "d6883a9d-268b-462a-9b87-c7db49af26ff",
+    "regionName" : "main",
+    "type" : "region"
+  }, {
+    "id" : "1f9875ce-6baa-46d4-9be6-19c1b68e0e62",
+    "regionName" : "sideBar",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Create Single Deal"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "f525dadf-ba3f-47cd-9476-7b54c3af172c",
+      "renditionMap" : {
+        "de" : "ad2eb9b3-3fd5-4505-be22-2624995753ba"
+      },
+      "renditions" : [ {
+        "id" : "ad2eb9b3-3fd5-4505-be22-2624995753ba",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "WOW! Angebot einreichen"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "377d6bdf-963a-4b3c-a2fc-3be938bf800d",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "Replace this text with content of your own."
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "9f71ce1e-087c-41de-9034-baf4d5f40b91",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "091d458f-a73b-435a-affe-04988af31d6f"
+      },
+      "renditions" : [ {
+        "id" : "091d458f-a73b-435a-affe-04988af31d6f",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: right;\"><a href=\"https://www.ebay.de/help/home\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"> eBay Hilfe &amp; Kontaktmöglichkeiten</a><span style=\"background-color: transparent;\"> </span><span style=\"background-color: transparent; color: rgb(204, 204, 204);\">|</span><span style=\"background-color: transparent;\"> </span> <a href=\"https://www.ebay.de/deals/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"> eBay WOW! Angebote Seite</a><span style=\"background-color: transparent;\"> </span><span style=\"background-color: transparent; color: rgb(204, 204, 204);\">|</span><span style=\"background-color: transparent;\"> </span><a href=\"https://hive--sprintdev.livepreview.salesforce-communities.com/s/user-guide?sb=user-guide\" rel=\"noopener noreferrer\" target=\"_self\" style=\"color: rgb(51, 51, 51);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"></a> <a href=\"/s/user-guide?sb=user-guide\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51);\">Benutzerhandbuch für WOW! Angebote</a><span style=\"background-color: transparent;\"> </span><span style=\"background-color: transparent; color: rgb(204, 204, 204);\">|</span><a href=\"https://hive--sprintdev.livepreview.salesforce-communities.com/s/user-guide\" rel=\"noopener noreferrer\" target=\"_blank\">&nbsp;</a><a href=\"https://hive--sprintdev.livepreview.salesforce-communities.com/s/user-guide\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"></a><a href=\"https://hive--sprintdev.livepreview.salesforce-communities.com/s/user-guide\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"background-color: rgb(250, 250, 250);\"> </a><a href=\"/s/user-guide\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51);\">Anforderungen für WOW! Angebote</a></p>"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "Replace this text with content of your own."
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "be9ca828-5790-4991-a421-f50f0f45e43d",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "7d891fda-1c1b-4870-9e76-b4128535e26c"
+      },
+      "renditions" : [ {
+        "id" : "7d891fda-1c1b-4870-9e76-b4128535e26c",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "richTextValue" : "<p><span style=\"font-family: arial; font-size: 22px;\">Erstellen Sie ein einzelnes WOW! Angebot</span></p>"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "e29fb847-6ce9-4094-af33-ab0da20f5bb1",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "labelCancelBtn" : "Cancel",
+        "labelSubmitBtn" : "Submit Deal",
+        "pageSize" : 10,
+        "searchLimit" : 400,
+        "successMessage" : "Your deal has been successfully created.",
+        "title" : "Create a new deal",
+        "titleMetadataName" : "helpTextTextElmt4"
+      },
+      "componentName" : "c:lwcEbayItemPicker",
+      "id" : "2026caf9-a43e-43f9-9da3-18e052830d31",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "f1bd455d-a7b9-4449-ac14-b3477f7f86e3"
+      },
+      "renditions" : [ {
+        "id" : "f1bd455d-a7b9-4449-ac14-b3477f7f86e3",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "labelCancelBtn" : "Abbrechen",
+            "labelSubmitBtn" : "WOW! Angebot einreichen",
+            "successMessage" : "Ihr WOW! Angebot wurde erfolgreich hochgeladen",
+            "title" : "Neues WOW! Angebot einreichen",
+            "titleMetadataName" : "DEhelpTextTextElmt9"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "8723d187-0bad-4454-8a91-5959282506e5",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "8d76b923-5c83-4112-9844-e4f08b6e8ec1",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-create-single-deal"
+}

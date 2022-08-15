@@ -1,0 +1,148 @@
+{
+  "appPageId" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "componentName" : "siteforce:dynamicLayout",
+  "id" : "744963d2-5961-4921-8fec-619c2b05462f",
+  "label" : "Linked Accounts",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "8a6e82f2-f160-4c94-8cfc-06847043d2c5",
+          "columns" : [ {
+            "UUID" : "47d4793a-2ccf-4efd-8884-392a7d8d2328",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 32
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "8a6e82f2-f160-4c94-8cfc-06847043d2c5",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: right;\"><br></p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "578bf880-5095-4a85-bebd-d303b35a14b8",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : {
+            "de" : "1164f005-71e2-43c9-bdd3-37db92ccf1aa"
+          },
+          "renditions" : [ {
+            "id" : "1164f005-71e2-43c9-bdd3-37db92ccf1aa",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "richTextValue" : "<p style=\"text-align: right;\"><a href=\"http://s/user-guide?sb=linkacc\" rel=\"noopener noreferrer\" target=\"null\" style=\"color: rgb(51, 51, 51); background-color: rgb(250, 250, 250);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"></a> <a href=\"https://www.ebay.de/help/home\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51); background-color: rgb(250, 250, 250);\">eBay Hilfe &amp; Kontaktmöglichkeiten</a> <span style=\"color: rgb(204, 204, 204); background-color: transparent;\">| </span><a href=\"/s/user-guide?sb=linkacc\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51); background-color: rgb(250, 250, 250);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"> Benutzerhandbuch für die Verknüpfung von Konten</a></p>"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<h1><strong style=\"font-size: 22px;\">Linked Accounts</strong></h1><p>By linking your accounts, you will benefit for managing promotions of all your accounts with Single Login.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "eb52fcd6-5365-4150-8867-83acd920262e",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : {
+            "de" : "114b889f-b48c-41b6-a459-6554aad4c234"
+          },
+          "renditions" : [ {
+            "id" : "114b889f-b48c-41b6-a459-6554aad4c234",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "richTextValue" : "<h1><span style=\"font-size: 22px;\">Verknüpfte Konten</span></h1><p><br></p><p>Durch die Verknüpfung Ihrer Konten können Sie die Verkaufsaktionen für alle Ihre Konten mit einem einzigen Login verwalten.</p>"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        } ],
+        "id" : "47d4793a-2ccf-4efd-8884-392a7d8d2328",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "222904f1-4b1b-46f6-b8f9-67e775afeb1d",
+          "columns" : [ {
+            "UUID" : "7f03a26c-0ff9-4fe3-82e9-0783eaad3923",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "222904f1-4b1b-46f6-b8f9-67e775afeb1d",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "c:lwcLinkedAccounts",
+          "id" : "fde5993f-fead-4023-b1ff-ed55f16b6798",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "7f03a26c-0ff9-4fe3-82e9-0783eaad3923",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "20352103-c4c5-4903-8fee-e263bc466a45",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Linked Accounts"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "4d319516-ceeb-4294-95bf-d34769347af0",
+      "renditionMap" : {
+        "de" : "389a023b-057a-4368-ad37-9c980886b1c6"
+      },
+      "renditions" : [ {
+        "id" : "389a023b-057a-4368-ad37-9c980886b1c6",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Verknüpfte Konten"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "0d48e1d4-9cc1-4c18-a146-58acb32e0f75",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-linked-accounts"
+}

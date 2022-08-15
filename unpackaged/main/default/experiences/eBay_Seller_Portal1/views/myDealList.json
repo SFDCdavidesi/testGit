@@ -1,0 +1,949 @@
+{
+  "appPageId" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "componentName" : "siteforce:dynamicLayout",
+  "id" : "fbb9c5b2-410b-408d-81b0-0666aeec1201",
+  "label" : "My Deal List",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "dd6ed653-f44a-4a31-b4de-12bae3b8b314",
+          "columns" : [ {
+            "UUID" : "3f4ca3b8-51bf-4bf0-8626-1ff5c8485dbf",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 32
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "dd6ed653-f44a-4a31-b4de-12bae3b8b314",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: right;\"><a href=\"https://www.ebay.com/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"background-color: transparent; color: rgb(51, 51, 51);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"> eBay Website</a><span style=\"background-color: transparent;\"> </span><span style=\"background-color: transparent; color: rgb(204, 204, 204);\">|</span><span style=\"background-color: transparent;\">&nbsp;</span><a href=\"https://www.ebay.com/help/selling/selling-tools/creating-deals-using-seller-portal?id=5329\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51); background-color: transparent;\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"> eBay Help &amp; Contact</a><span style=\"background-color: transparent;\"> </span><span style=\"background-color: transparent; color: rgb(204, 204, 204);\">|</span><a href=\"/s/user-guide\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"background-color: transparent;\">&nbsp;</a><a href=\"/s/user-guide\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51); background-color: transparent;\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"> Deal User Guide</a></p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "2a6231f0-de18-4730-ba45-2c427eca5388",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : {
+            "de" : "bd0a7a73-166b-4487-a5d3-69e96b24e124"
+          },
+          "renditions" : [ {
+            "id" : "bd0a7a73-166b-4487-a5d3-69e96b24e124",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "richTextValue" : "<p style=\"text-align: right;\"><a href=\"https://www.ebay.de/help/home\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"background-color: transparent; color: rgb(51, 51, 51);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"> eBay Hilfe &amp; Kontaktmöglichkeiten</a><span style=\"background-color: transparent;\"> </span><span style=\"background-color: transparent; color: rgb(204, 204, 204);\">|</span><span style=\"background-color: transparent;\"> </span> <a href=\"https://www.ebay.de/deals/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51); background-color: transparent;\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"> eBay WOW! Angebote Seite</a><span style=\"background-color: transparent;\"> </span><span style=\"background-color: transparent; color: rgb(204, 204, 204);\">|</span><span style=\"background-color: transparent;\"> </span><a href=\"/s/user-guide?sb=user-guide\" rel=\"noopener noreferrer\" target=\"_self\" style=\"background-color: transparent; color: rgb(51, 51, 51);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"></a> <a href=\"/s/user-guide?sb=user-guide\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"background-color: transparent; color: rgb(51, 51, 51);\">Benutzerhandbuch für WOW! Angebote</a><span style=\"background-color: transparent;\"> </span><span style=\"background-color: transparent; color: rgb(204, 204, 204);\">|</span><a href=\"/s/user-guide\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"background-color: transparent;\">&nbsp;</a><a href=\"/s/user-guide\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"background-color: transparent; color: rgb(51, 51, 51);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"></a><a href=\"/s/user-guide\" rel=\"noopener noreferrer\" target=\"_blank\"> </a><a href=\"/s/user-guide\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"background-color: transparent; color: rgb(51, 51, 51);\">Anforderungen für WOW! Angebote</a></p>"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p><span style=\"font-size: 22px; font-family: arial;\">Check your Deal Status Below!</span></p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "0052ed18-680c-4a99-906a-f78d3453907a",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : {
+            "de" : "8573450b-3105-425c-a2cd-0b89e696552b"
+          },
+          "renditions" : [ {
+            "id" : "8573450b-3105-425c-a2cd-0b89e696552b",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "richTextValue" : "<p><span style=\"font-size: 22px; font-family: arial;\">Übersicht Ihrer WOW! Angebote</span></p>"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p><span style=\"font-family: arial; font-size: 12px;\">Deals uploaded with the above process, will have their status reflected in one of the tabs below.</span></p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "84028908-5eb4-4693-a43a-8de295a352d8",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : {
+            "de" : "92872531-86be-4604-a03d-86f8402fe6fc"
+          },
+          "renditions" : [ {
+            "id" : "92872531-86be-4604-a03d-86f8402fe6fc",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "richTextValue" : "<p> </p>"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "isAggregate" : false,
+            "itemsToShow" : ""
+          },
+          "componentName" : "c:lwcSEPToDoList",
+          "id" : "1c60e701-bcc6-4fc4-baf9-295b68f5158c",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : {
+            "de" : "29e14cf5-0a7b-48fb-98f3-5f902242a295"
+          },
+          "renditions" : [ {
+            "id" : "29e14cf5-0a7b-48fb-98f3-5f902242a295",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "itemsToShow" : "Deals_Aggregate_DE"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        } ],
+        "id" : "3f4ca3b8-51bf-4bf0-8626-1ff5c8485dbf",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : {
+          "de" : "a3bef5e6-fd3b-421a-929a-0ef21bead329"
+        },
+        "renditions" : [ {
+          "id" : "a3bef5e6-fd3b-421a-929a-0ef21bead329",
+          "renditionValue" : {
+            "regionLabel" : "Column 1"
+          },
+          "type" : "renditionComponent"
+        } ],
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "c0b82123-89ca-49f9-984d-5d45efad5e49",
+          "columns" : [ {
+            "UUID" : "c9e9fd65-40e6-4489-b746-7bc077ec4e05",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "c0b82123-89ca-49f9-984d-5d45efad5e49",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "bodyText1" : "Create multiple deals in one go via our handy csv tool",
+            "bodyText2" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "bodyText3" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "enableTile1" : true,
+            "enableTile2" : false,
+            "enableTile3" : false,
+            "headerTitle0" : "Create multiple deals at one time via our handy CSV tool",
+            "headerTitle1" : "Bulk upload from CSV",
+            "headerTitle2" : "Start new deal from scratch",
+            "headerTitle3" : "Clone from a previous deal",
+            "labelDownload0" : "Create Deal",
+            "labelDownload1" : "Click here to get started",
+            "labelDownload2" : "Download template",
+            "labelDownload3" : "Download template",
+            "url1" : "/deal-window-page",
+            "url2" : "",
+            "url3" : ""
+          },
+          "componentName" : "c:lwcDealsSelectOptions",
+          "id" : "fc932bac-f089-43aa-bbc1-bc74f0988402",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "bodyText1" : "Create multiple deals in one go via our handy csv tool",
+            "bodyText2" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "bodyText3" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "enableTile1" : true,
+            "enableTile2" : false,
+            "enableTile3" : false,
+            "headerTitle0" : "Create multiple deals at one time via our handy CSV tool",
+            "headerTitle1" : "Bulk upload from CSV",
+            "headerTitle2" : "Start new deal from scratch",
+            "headerTitle3" : "Clone from a previous deal",
+            "labelDownload0" : "Create Deal",
+            "labelDownload1" : "Click here to get started",
+            "labelDownload2" : "Download template",
+            "labelDownload3" : "Download template",
+            "url1" : "/deal-window-page",
+            "url2" : "",
+            "url3" : ""
+          },
+          "componentName" : "c:lwcDealsSelectOptions",
+          "id" : "b0d01b7f-ed78-4084-b031-733cb796a74b",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "labelAcceptAgreement" : "Accept agreement",
+            "labelLeave" : "Leave",
+            "modalTitle" : "Agree to the terms and conditions"
+          },
+          "componentName" : "c:lwcAgreementTerms",
+          "id" : "432666fd-3c5e-4d72-8df1-488abd8afb30",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "bodyText1" : "",
+            "bodyText2" : "",
+            "bodyText3" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "enableTile1" : true,
+            "enableTile2" : true,
+            "enableTile3" : false,
+            "headerTitle0" : "Create single or multiple deals in one go via CSV file upload tool",
+            "headerTitle1" : "Bulk upload from CSV",
+            "headerTitle2" : "Start new deal from scratch",
+            "headerTitle3" : "Clone from a previous deal",
+            "labelDownload0" : "Create Deal",
+            "labelDownload1" : "Download template",
+            "labelDownload2" : "Download template",
+            "labelDownload3" : "Download template",
+            "url1" : "/bulk-upload-deals",
+            "url2" : "/create-single-deal",
+            "url3" : ""
+          },
+          "componentName" : "c:lwcDealsSelectOptions",
+          "id" : "2f52eb2e-1d01-4e5c-b2de-87d7a19e32d1",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : {
+            "de" : "194517ab-f416-423a-9f85-51039f8ffefc"
+          },
+          "renditions" : [ {
+            "id" : "194517ab-f416-423a-9f85-51039f8ffefc",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "headerTitle0" : "WOW! Angebot einreichen",
+                "headerTitle1" : "Mehrere WOW! Angebote einreichen",
+                "headerTitle2" : "Ein WOW! Angebot einreichen",
+                "labelDownload0" : "Jetzt loslegen",
+                "labelDownload1" : "Hier klicken",
+                "labelDownload2" : "Hier klicken",
+                "url1" : "/bulk-upload-deals",
+                "url2" : "/create-single-deal"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "tabsetConfig" : {
+              "UUID" : "da13f544-2aa4-4d7a-ac2b-4f18358d6138",
+              "activeTab" : "",
+              "tabs" : [ {
+                "UUID" : "578d5e3d-80be-4894-b612-47d067ad0183",
+                "allowGuestUser" : false,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "1",
+                "tabName" : "Created Last 7 Days"
+              }, {
+                "UUID" : "8a00fc0b-f33c-47cb-89a4-cb7042176701",
+                "allowGuestUser" : false,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "2",
+                "tabName" : "Pending Deals"
+              }, {
+                "UUID" : "277fbbe1-b91b-4170-8d85-ca3a84ee8b86",
+                "allowGuestUser" : false,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "3",
+                "tabName" : "Future Deals"
+              }, {
+                "UUID" : "d738c1ca-3590-4fe3-a729-31bb3401385d",
+                "allowGuestUser" : false,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "c6250",
+                "tabName" : "Running Deals"
+              }, {
+                "UUID" : "6c8a4344-edec-407f-bd71-5437ef3f66b1",
+                "allowGuestUser" : false,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "3c41b",
+                "tabName" : "Past Deals"
+              }, {
+                "UUID" : "e9b3ab72-d122-4de7-9c33-3860e33db47a",
+                "allowGuestUser" : false,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "8a0c0",
+                "tabName" : "Cancelled Deals"
+              }, {
+                "UUID" : "e984e5d8-8a9d-467c-b5ab-b31774bf5e35",
+                "allowGuestUser" : false,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "d4f88",
+                "tabName" : "Rejected Deals"
+              } ],
+              "useOverflowMenu" : false
+            }
+          },
+          "componentName" : "forceCommunity:tabset",
+          "id" : "da13f544-2aa4-4d7a-ac2b-4f18358d6138",
+          "regions" : [ {
+            "components" : [ {
+              "componentAttributes" : {
+                "isCheckBox" : false,
+                "isDisableSearch" : false,
+                "isShowBtnIntr" : false,
+                "isShowDensity" : false,
+                "lbButtonIntr" : "Interested",
+                "lbButtonNotIntr" : "Not Interested",
+                "lbDensity" : "Density",
+                "mdtName" : "Created_Last_7_Days",
+                "messageNoRecord" : "No deals have been created in the last 7 days"
+              },
+              "componentName" : "c:lwcListView",
+              "id" : "077d0140-84af-406c-ac64-11da641a0ebb",
+              "renditionMap" : { },
+              "type" : "component"
+            }, {
+              "componentAttributes" : { },
+              "componentName" : "c:lwcHelpTextGeneric",
+              "id" : "b01bf4ca-e12e-46ce-b5f5-420e8aecec09",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "578d5e3d-80be-4894-b612-47d067ad0183",
+            "regionLabel" : "Created Last 7 Days",
+            "regionName" : "1",
+            "renditionMap" : { },
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : {
+                "isCheckBox" : false,
+                "isDisableSearch" : false,
+                "isShowBtnIntr" : false,
+                "isShowDensity" : false,
+                "lbButtonIntr" : "Interested",
+                "lbButtonNotIntr" : "Not Interested",
+                "lbDensity" : "Density",
+                "mdtName" : "Processing_Deals",
+                "messageNoRecord" : "No pending deals available"
+              },
+              "componentName" : "c:lwcListView",
+              "id" : "c8b5d0fd-bda0-451d-869e-8f3942d09cc2",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "8a00fc0b-f33c-47cb-89a4-cb7042176701",
+            "regionLabel" : "Pending Deals",
+            "regionName" : "2",
+            "renditionMap" : { },
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : {
+                "isCheckBox" : false,
+                "isDisableSearch" : false,
+                "isShowBtnIntr" : false,
+                "isShowDensity" : false,
+                "lbButtonIntr" : "Interested",
+                "lbButtonNotIntr" : "Not Interested",
+                "lbDensity" : "Density",
+                "mdtName" : "Future_Deals",
+                "messageNoRecord" : "No future deals currently running"
+              },
+              "componentName" : "c:lwcListView",
+              "id" : "30378583-66e1-4910-995d-559c50e4a3fc",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "277fbbe1-b91b-4170-8d85-ca3a84ee8b86",
+            "regionLabel" : "Future Deals",
+            "regionName" : "3",
+            "renditionMap" : { },
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : {
+                "isCheckBox" : false,
+                "isDisableSearch" : false,
+                "isShowBtnIntr" : false,
+                "isShowDensity" : false,
+                "lbButtonIntr" : "Interested",
+                "lbButtonNotIntr" : "Not Interested",
+                "lbDensity" : "Density",
+                "mdtName" : "Running_Deals",
+                "messageNoRecord" : "No deals currently running"
+              },
+              "componentName" : "c:lwcListView",
+              "id" : "faf8b13f-f4b9-454e-a03d-97fa65fe941e",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "d738c1ca-3590-4fe3-a729-31bb3401385d",
+            "regionLabel" : "Running Deals",
+            "regionName" : "c6250",
+            "renditionMap" : { },
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : {
+                "isCheckBox" : false,
+                "isDisableSearch" : false,
+                "isShowBtnIntr" : false,
+                "isShowDensity" : false,
+                "lbButtonIntr" : "Interested",
+                "lbButtonNotIntr" : "Not Interested",
+                "lbDensity" : "Density",
+                "mdtName" : "Past_Deals",
+                "messageNoRecord" : "No past deals available"
+              },
+              "componentName" : "c:lwcListView",
+              "id" : "dfe4136f-8d5c-4125-9b08-4af0ab8ea794",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "6c8a4344-edec-407f-bd71-5437ef3f66b1",
+            "regionLabel" : "Past Deals",
+            "regionName" : "3c41b",
+            "renditionMap" : { },
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : {
+                "isCheckBox" : false,
+                "isDisableSearch" : false,
+                "isShowBtnIntr" : false,
+                "isShowDensity" : false,
+                "lbButtonIntr" : "Interested",
+                "lbButtonNotIntr" : "Not Interested",
+                "lbDensity" : "Density",
+                "mdtName" : "Cancelled_Deals",
+                "messageNoRecord" : "No cancelled deals available"
+              },
+              "componentName" : "c:lwcListView",
+              "id" : "beb6d85f-e473-45bb-8ed7-9146c5dbc93e",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "e9b3ab72-d122-4de7-9c33-3860e33db47a",
+            "regionLabel" : "Cancelled Deals",
+            "regionName" : "8a0c0",
+            "renditionMap" : { },
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : {
+                "isCheckBox" : false,
+                "isDisableSearch" : false,
+                "isShowBtnIntr" : false,
+                "isShowDensity" : false,
+                "lbButtonIntr" : "Interested",
+                "lbButtonNotIntr" : "Not Interested",
+                "lbDensity" : "Density",
+                "mdtName" : "Rejected_Deals",
+                "messageNoRecord" : "No rejected deals available"
+              },
+              "componentName" : "c:lwcListView",
+              "id" : "814f2220-f233-4668-8ba4-1f7e9ad9a4c2",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "e984e5d8-8a9d-467c-b5ab-b31774bf5e35",
+            "regionLabel" : "Rejected Deals",
+            "regionName" : "d4f88",
+            "renditionMap" : { },
+            "type" : "region"
+          } ],
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "tabsetConfig" : {
+              "UUID" : "a1a84276-2da6-4ae1-8515-43b1325650a0",
+              "activeTab" : "",
+              "tabs" : [ {
+                "UUID" : "8daa907e-2084-47fb-b7bc-0147e47c323f",
+                "allowGuestUser" : true,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "1",
+                "tabName" : "Pending offers"
+              }, {
+                "UUID" : "b635b007-110d-4e49-87f2-a78a6ad07579",
+                "allowGuestUser" : true,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "2",
+                "tabName" : "Future offers"
+              }, {
+                "UUID" : "748791cc-322d-4a3d-b8ca-e855e798bf63",
+                "allowGuestUser" : true,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "3",
+                "tabName" : "Ongoing offers"
+              }, {
+                "UUID" : "599dfa1d-f95c-45a9-a528-7582cf003332",
+                "allowGuestUser" : true,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "6229c",
+                "tabName" : "Terminated offers"
+              }, {
+                "UUID" : "e4dc713b-5a44-4f5e-996b-34e0eb4bb59e",
+                "allowGuestUser" : true,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "0f660",
+                "tabName" : "Rejected offers"
+              }, {
+                "UUID" : "8402697e-e75f-4710-ad7a-695ec8a269a7",
+                "allowGuestUser" : true,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "2197a",
+                "tabName" : "Submit again"
+              }, {
+                "UUID" : "b436c8ca-7873-41b0-b917-2610d98ccb9b",
+                "allowGuestUser" : true,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "cdf02",
+                "tabName" : "Action required"
+              }, {
+                "UUID" : "6013ece6-7e68-4de0-8266-b26ce16368d8",
+                "allowGuestUser" : true,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "bbde9",
+                "tabName" : "Enter eBay item number"
+              } ],
+              "useOverflowMenu" : false
+            }
+          },
+          "componentName" : "forceCommunity:tabset",
+          "id" : "a1a84276-2da6-4ae1-8515-43b1325650a0",
+          "regions" : [ {
+            "components" : [ {
+              "componentAttributes" : {
+                "isCheckBox" : false,
+                "isDisableSearch" : false,
+                "isShowBtnIntr" : false,
+                "isShowDensity" : true,
+                "lbButtonIntr" : "Interested",
+                "lbButtonNotIntr" : "Not Interested",
+                "lbDensity" : "Density",
+                "mdtName" : "",
+                "messageNoRecord" : ""
+              },
+              "componentName" : "c:lwcListView",
+              "id" : "83851ebf-f89e-4917-90c6-6a61859c438a",
+              "renditionMap" : {
+                "de" : "183784bc-b2f3-4646-9989-d1758f6d31d0"
+              },
+              "renditions" : [ {
+                "id" : "183784bc-b2f3-4646-9989-d1758f6d31d0",
+                "renditionValue" : {
+                  "componentAttributes" : {
+                    "mdtName" : "DE_Pending_Deals",
+                    "messageNoRecord" : "Aktuell keine Daten verfügbar"
+                  }
+                },
+                "type" : "renditionComponent"
+              } ],
+              "type" : "component"
+            } ],
+            "id" : "8daa907e-2084-47fb-b7bc-0147e47c323f",
+            "regionLabel" : "Pending offers",
+            "regionName" : "1",
+            "renditionMap" : {
+              "de" : "b79ade68-eaf9-4d5c-94fb-e236e4e3b695"
+            },
+            "renditions" : [ {
+              "id" : "b79ade68-eaf9-4d5c-94fb-e236e4e3b695",
+              "renditionValue" : {
+                "regionLabel" : "Ausstehende Angebote"
+              },
+              "type" : "renditionComponent"
+            } ],
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : {
+                "isCheckBox" : false,
+                "isDisableSearch" : false,
+                "isShowBtnIntr" : false,
+                "isShowDensity" : true,
+                "lbButtonIntr" : "Interested",
+                "lbButtonNotIntr" : "Not Interested",
+                "lbDensity" : "Density",
+                "mdtName" : "",
+                "messageNoRecord" : ""
+              },
+              "componentName" : "c:lwcListView",
+              "id" : "f26a9b72-84ef-4c13-b896-bdc21ac9592d",
+              "renditionMap" : {
+                "de" : "28f458d6-e617-440e-8d6c-1392b4a09f59"
+              },
+              "renditions" : [ {
+                "id" : "28f458d6-e617-440e-8d6c-1392b4a09f59",
+                "renditionValue" : {
+                  "componentAttributes" : {
+                    "mdtName" : "DE_Future_Deals",
+                    "messageNoRecord" : "Aktuell keine Daten verfügbar"
+                  }
+                },
+                "type" : "renditionComponent"
+              } ],
+              "type" : "component"
+            } ],
+            "id" : "b635b007-110d-4e49-87f2-a78a6ad07579",
+            "regionLabel" : "Future offers",
+            "regionName" : "2",
+            "renditionMap" : {
+              "de" : "396df592-2eda-4d5e-85f9-a6de6988bd97"
+            },
+            "renditions" : [ {
+              "id" : "396df592-2eda-4d5e-85f9-a6de6988bd97",
+              "renditionValue" : {
+                "regionLabel" : "Zukünftige Angebote"
+              },
+              "type" : "renditionComponent"
+            } ],
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : {
+                "isCheckBox" : false,
+                "isDisableSearch" : false,
+                "isShowBtnIntr" : false,
+                "isShowDensity" : true,
+                "lbButtonIntr" : "Interested",
+                "lbButtonNotIntr" : "Not Interested",
+                "lbDensity" : "Density",
+                "mdtName" : "",
+                "messageNoRecord" : ""
+              },
+              "componentName" : "c:lwcListView",
+              "id" : "af68dcbd-6e00-401f-baea-f082ac229025",
+              "renditionMap" : {
+                "de" : "322acec5-cfca-42b2-bf2b-3de6686fabba"
+              },
+              "renditions" : [ {
+                "id" : "322acec5-cfca-42b2-bf2b-3de6686fabba",
+                "renditionValue" : {
+                  "componentAttributes" : {
+                    "mdtName" : "DE_Running_Deals",
+                    "messageNoRecord" : "Aktuell keine Daten verfügbar"
+                  }
+                },
+                "type" : "renditionComponent"
+              } ],
+              "type" : "component"
+            } ],
+            "id" : "748791cc-322d-4a3d-b8ca-e855e798bf63",
+            "regionLabel" : "Ongoing offers",
+            "regionName" : "3",
+            "renditionMap" : {
+              "de" : "52a056df-5988-44ea-8708-4d73f95c1061"
+            },
+            "renditions" : [ {
+              "id" : "52a056df-5988-44ea-8708-4d73f95c1061",
+              "renditionValue" : {
+                "regionLabel" : "Laufende Angebote"
+              },
+              "type" : "renditionComponent"
+            } ],
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : {
+                "isCheckBox" : false,
+                "isDisableSearch" : false,
+                "isShowBtnIntr" : false,
+                "isShowDensity" : true,
+                "lbButtonIntr" : "Interested",
+                "lbButtonNotIntr" : "Not Interested",
+                "lbDensity" : "Density",
+                "mdtName" : "",
+                "messageNoRecord" : ""
+              },
+              "componentName" : "c:lwcListView",
+              "id" : "b7aa5a2f-53fc-4484-b799-b499a0cc48df",
+              "renditionMap" : {
+                "de" : "08beafb6-0870-427d-9c05-8d1a887777d2"
+              },
+              "renditions" : [ {
+                "id" : "08beafb6-0870-427d-9c05-8d1a887777d2",
+                "renditionValue" : {
+                  "componentAttributes" : {
+                    "mdtName" : "DE_Past_Deals",
+                    "messageNoRecord" : "Aktuell keine Daten verfügbar"
+                  }
+                },
+                "type" : "renditionComponent"
+              } ],
+              "type" : "component"
+            } ],
+            "id" : "599dfa1d-f95c-45a9-a528-7582cf003332",
+            "regionLabel" : "Terminated offers",
+            "regionName" : "6229c",
+            "renditionMap" : {
+              "de" : "ef262b47-6eaa-4bab-8fbc-8274897e2184"
+            },
+            "renditions" : [ {
+              "id" : "ef262b47-6eaa-4bab-8fbc-8274897e2184",
+              "renditionValue" : {
+                "regionLabel" : "Beendete Angebote"
+              },
+              "type" : "renditionComponent"
+            } ],
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : {
+                "isCheckBox" : false,
+                "isDisableSearch" : false,
+                "isShowBtnIntr" : false,
+                "isShowDensity" : true,
+                "lbButtonIntr" : "Interested",
+                "lbButtonNotIntr" : "Not Interested",
+                "lbDensity" : "Density",
+                "mdtName" : "",
+                "messageNoRecord" : ""
+              },
+              "componentName" : "c:lwcListView",
+              "id" : "bcdf7f9d-9a93-4559-90d5-d1a6bb8488ed",
+              "renditionMap" : {
+                "de" : "e64b0044-5f4c-421e-b549-52e9e0d27733"
+              },
+              "renditions" : [ {
+                "id" : "e64b0044-5f4c-421e-b549-52e9e0d27733",
+                "renditionValue" : {
+                  "componentAttributes" : {
+                    "mdtName" : "DE_Rejected_Deals",
+                    "messageNoRecord" : "Aktuell keine Daten verfügbar"
+                  }
+                },
+                "type" : "renditionComponent"
+              } ],
+              "type" : "component"
+            } ],
+            "id" : "e4dc713b-5a44-4f5e-996b-34e0eb4bb59e",
+            "regionLabel" : "Rejected offers",
+            "regionName" : "0f660",
+            "renditionMap" : {
+              "de" : "64112abd-2f85-49d2-9d43-f9c12e647e5e"
+            },
+            "renditions" : [ {
+              "id" : "64112abd-2f85-49d2-9d43-f9c12e647e5e",
+              "renditionValue" : {
+                "regionLabel" : "Abgelehnte Angebote"
+              },
+              "type" : "renditionComponent"
+            } ],
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : {
+                "isCheckBox" : false,
+                "isDisableSearch" : false,
+                "isShowBtnIntr" : false,
+                "isShowDensity" : true,
+                "lbButtonIntr" : "Interested",
+                "lbButtonNotIntr" : "Not Interested",
+                "lbDensity" : "Density",
+                "mdtName" : "",
+                "messageNoRecord" : ""
+              },
+              "componentName" : "c:lwcListView",
+              "id" : "21a90eaf-66da-4f11-8c42-a65ff0644877",
+              "renditionMap" : {
+                "de" : "ee0d489f-4fcf-487a-ae68-d616b8ceb03e"
+              },
+              "renditions" : [ {
+                "id" : "ee0d489f-4fcf-487a-ae68-d616b8ceb03e",
+                "renditionValue" : {
+                  "componentAttributes" : {
+                    "mdtName" : "DE_Rejected_Deals_Resubmit",
+                    "messageNoRecord" : "Aktuell keine Daten verfügbar"
+                  }
+                },
+                "type" : "renditionComponent"
+              } ],
+              "type" : "component"
+            } ],
+            "id" : "8402697e-e75f-4710-ad7a-695ec8a269a7",
+            "regionLabel" : "Submit again",
+            "regionName" : "2197a",
+            "renditionMap" : {
+              "de" : "89740cf2-7d62-4954-b420-eb230a38063a"
+            },
+            "renditions" : [ {
+              "id" : "89740cf2-7d62-4954-b420-eb230a38063a",
+              "renditionValue" : {
+                "regionLabel" : "Erneut einreichen"
+              },
+              "type" : "renditionComponent"
+            } ],
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : {
+                "isCheckBox" : false,
+                "isDisableSearch" : false,
+                "isShowBtnIntr" : false,
+                "isShowDensity" : true,
+                "lbButtonIntr" : "Interested",
+                "lbButtonNotIntr" : "Not Interested",
+                "lbDensity" : "Density",
+                "mdtName" : "",
+                "messageNoRecord" : ""
+              },
+              "componentName" : "c:lwcListView",
+              "id" : "c1b4e0b6-6c35-4853-bdec-541439b7eeb6",
+              "renditionMap" : {
+                "de" : "1dcf6c0e-4f17-4bd9-902e-32111d3a0eed"
+              },
+              "renditions" : [ {
+                "id" : "1dcf6c0e-4f17-4bd9-902e-32111d3a0eed",
+                "renditionValue" : {
+                  "componentAttributes" : {
+                    "mdtName" : "DE_Action_Required",
+                    "messageNoRecord" : "Aktuell keine Daten verfügbar"
+                  }
+                },
+                "type" : "renditionComponent"
+              } ],
+              "type" : "component"
+            } ],
+            "id" : "b436c8ca-7873-41b0-b917-2610d98ccb9b",
+            "regionLabel" : "Action required",
+            "regionName" : "cdf02",
+            "renditionMap" : {
+              "de" : "c1023bfe-9d38-485d-ac91-ed550a808dde"
+            },
+            "renditions" : [ {
+              "id" : "c1023bfe-9d38-485d-ac91-ed550a808dde",
+              "renditionValue" : {
+                "regionLabel" : "Aktion erforderlich"
+              },
+              "type" : "renditionComponent"
+            } ],
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : {
+                "isCheckBox" : false,
+                "isDisableSearch" : false,
+                "isShowBtnIntr" : false,
+                "isShowDensity" : true,
+                "lbButtonIntr" : "Interested",
+                "lbButtonNotIntr" : "Not Interested",
+                "lbDensity" : "Density",
+                "mdtName" : "",
+                "messageNoRecord" : ""
+              },
+              "componentName" : "c:lwcListView",
+              "id" : "333ae6b2-a068-4a41-b52f-a76322e6bce4",
+              "renditionMap" : {
+                "de" : "ee40072e-fd9b-4293-bcfc-4ae25e99b68b"
+              },
+              "renditions" : [ {
+                "id" : "ee40072e-fd9b-4293-bcfc-4ae25e99b68b",
+                "renditionValue" : {
+                  "componentAttributes" : {
+                    "mdtName" : "DE_Enter_eBayItemID",
+                    "messageNoRecord" : "Aktuell keine Daten verfügbar"
+                  }
+                },
+                "type" : "renditionComponent"
+              } ],
+              "type" : "component"
+            } ],
+            "id" : "6013ece6-7e68-4de0-8266-b26ce16368d8",
+            "regionLabel" : "Enter eBay item number",
+            "regionName" : "bbde9",
+            "renditionMap" : {
+              "de" : "1da5a274-9d32-400a-bd42-42a9756c0f0d"
+            },
+            "renditions" : [ {
+              "id" : "1da5a274-9d32-400a-bd42-42a9756c0f0d",
+              "renditionValue" : {
+                "regionLabel" : "eBay-Artikelnummer eingeben"
+              },
+              "type" : "renditionComponent"
+            } ],
+            "type" : "region"
+          } ],
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "c9e9fd65-40e6-4489-b746-7bc077ec4e05",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "a6d5cb9d-2a1a-4db1-aa3c-2978cdc8d840",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "My Deal Lists"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "ec0caffc-cdff-4dbf-9a9e-94053e10563b",
+      "renditionMap" : {
+        "de" : "c49ba94a-d1d1-4dc2-b52b-14675b0f719d"
+      },
+      "renditions" : [ {
+        "id" : "c49ba94a-d1d1-4dc2-b52b-14675b0f719d",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "WOW! Angebote"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "122218bd-19eb-46e6-820d-c857709c2d43",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-my-deal-lists"
+}

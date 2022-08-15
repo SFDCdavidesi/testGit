@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "371c3faa-1d72-4026-b267-179d61d69e82",
+    "propertyOverrides" : {
+      "activeViewId" : "9607a18c-3b15-4d3b-a786-6cf46354783c"
+    },
+    "targetId" : "72c1c0f2-912d-44e3-9409-2382d55eeb2d",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "My_Coupon_Seller_Lists_My_Coupon_Seller_List_Flexi_Page",
+  "id" : "da37ce53-f131-4189-822a-f55cb194d635",
+  "type" : "experienceVariation"
+}

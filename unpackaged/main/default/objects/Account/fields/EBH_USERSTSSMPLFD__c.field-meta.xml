@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_USERSTSSMPLFD__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>[EBH] (EPH-2201) - DWH field</description>
+    <externalId>false</externalId>
+    <label>User Active Flag</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

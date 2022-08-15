@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Can_ReAdjust__c</fullName>
+    <description>US-0011032 - Edit Deal Option for Sellers to adjust pricing on Submitted Deals
+US-0011668</description>
+    <externalId>false</externalId>
+    <formula>IF(AND(ISPICKVAL(EBH_DealSiteId__c ,&#39;0&#39;),ISPICKVAL(Seller_Portal_Status__c ,&#39;Editable&#39;),RecordType.DeveloperName = &#39;Deal_V3&#39;),TRUE,FALSE )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Can ReAdjust</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

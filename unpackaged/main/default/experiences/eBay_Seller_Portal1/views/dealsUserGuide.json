@@ -1,0 +1,61 @@
+{
+  "appPageId" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "fc06b2b2-ee77-4876-b570-542d23355a96",
+  "label" : "deals user guide",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "height" : "1000",
+        "pageName" : "eBay_Seller_Portal_User_Guide",
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:visualforcePage",
+      "id" : "d60bb620-ff91-4857-9ce1-b2999638b163",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "597c18a8-046d-4654-92fd-d821d7f89801",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "id" : "45614748-2fbc-4f43-9d0f-d13de4176410",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "dc306284-0ee9-49af-a2ed-f54ee5954be5",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "User Guide"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "aa0716a0-9cd8-4362-846b-529a7dc8354e",
+      "renditionMap" : {
+        "de" : "75171b99-4395-4752-8a3e-06cdd82187bc"
+      },
+      "renditions" : [ {
+        "id" : "75171b99-4395-4752-8a3e-06cdd82187bc",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "description" : "",
+            "title" : "Loading ..."
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "ce462cc1-3b69-4460-a4a8-905599a7a6a6",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-deals-user-guide"
+}

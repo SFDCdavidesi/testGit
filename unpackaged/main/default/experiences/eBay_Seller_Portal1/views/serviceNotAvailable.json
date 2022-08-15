@@ -1,0 +1,35 @@
+{
+  "appPageId" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "405c2f55-6d4a-48f2-a081-a6228451f17d",
+  "label" : "Service Not Available",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<div class=\"wrapper\" style=\"position: relative;\n    background-color: #F8F9FB;\n    overflow: hidden;\">\n        <img src=\"{!contentAsset.GenericErrorBackgroundpng.1}\" alt=\"Page Not Available\" style=\"height: 100%;\n    margin-left: -100px;\">\n\t\t\t<div class=\"slds-grid slds-gutters content\" style=\"position: absolute;\n    width: 100%;\n    top: 50%;\n    transform: translateY(-50%);\">\n                <div class=\"slds-col slds-size_4-of-12\"></div>\n                <div class=\"slds-col slds-size_6-of-12\">\n                    <p class=\"slds-text-heading_large\">\n\t\t\t\t\t\thttps://sellerportal.ebay.com is under construction\n                    </p>\n                    <p class=\"slds-text-heading_medium slds-text-color--weak\">\n                        Please <a target=\"_blank\" href=\"mailto:\">email us</a> if you need to get in touch.\n                    </p>\n                </div>\n                <div class=\"slds-col slds-size_2-of-12\"></div>\n            </div>\n    </div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "30cc3c29-8289-4a53-947d-d4d1200a07ac",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "9835751e-6d0c-4e57-aae1-46dc3a589156"
+      },
+      "renditions" : [ {
+        "id" : "9835751e-6d0c-4e57-aae1-46dc3a589156",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"wrapper\" style=\"position: relative;\n    background-color: #F8F9FB;\n    overflow: hidden;\">\n        <img src=\"{!contentAsset.GenericErrorBackgroundpng.1}\" alt=\"Page Not Available\" style=\"height: 100%;\n    margin-left: -100px;\">\n\t\t\t<div class=\"slds-grid slds-gutters content\" style=\"position: absolute;\n    width: 100%;\n    top: 50%;\n    transform: translateY(-50%);\">\n                <div class=\"slds-col slds-size_4-of-12\"></div>\n                <div class=\"slds-col slds-size_6-of-12\">\n                    <p class=\"slds-text-heading_large\">\n\t\t\t\t\t\thttps://wachstumsportal.ebay.de befindet sich im Aufbau.\n                    </p>\n                    <p class=\"slds-text-heading_medium slds-text-color--weak\">\n                        Bitte <a target=\"_blank\" href=\"mailto:\">senden Sie uns eine E-Mail</a>, wenn Sie genauere Informationen benötigen.\n                    </p>\n                </div>\n                <div class=\"slds-col slds-size_2-of-12\"></div>\n            </div>\n    </div>"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "012dbc56-cdcf-4b54-8c6a-455217037874",
+    "regionName" : "content",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "ServiceNotAvailable",
+  "type" : "view",
+  "viewType" : "service-not-available"
+}

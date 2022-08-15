@@ -1,0 +1,45 @@
+{
+  "appPageId" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "39c0369a-595f-4718-8a46-b91226c10a35",
+  "label" : "Coupon Seller List",
+  "regions" : [ {
+    "id" : "ddc5ee0f-6059-420a-9b71-50756d5e0794",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "metadataName" : "genericErrorMessage",
+        "metadataNameReadOnly" : "dealReadOnlyErrorMessage"
+      },
+      "componentName" : "c:lwcGenericErrorMessage",
+      "id" : "f5f2369a-0fe9-4691-9c75-724c690a1d24",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "1b457978-3c68-4e11-aedb-fe1b7cbbba99"
+      },
+      "renditions" : [ {
+        "id" : "1b457978-3c68-4e11-aedb-fe1b7cbbba99",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "metadataName" : "DEgenericErrorMessage",
+            "metadataNameReadOnly" : "DEdealReadOnlyErrorMessage"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "3a5d8c22-90fd-4858-82e1-1ffedd357792",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "239bf55b-2e5f-4f30-86b4-4d431350f548",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "list-a1M"
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_CntctTypeDesc__c</fullName>
+    <description>(EPH-5263) Synch contact-type and role from DW into Hive - ETL</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This value comes from the B2C registration on ebay site and can have the following picklist values: 
+- General Manager
+- Billing Contact
+- Business Seller Contact
+- Customer Support Contact
+- Blank (if no value provided during Business Registration)</inlineHelpText>
+    <label>Contact Type Description</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Business Seller Contact</fullName>
+                <default>false</default>
+                <label>Business Seller Contact</label>
+            </value>
+            <value>
+                <fullName>Billing Contact</fullName>
+                <default>false</default>
+                <label>Billing Contact</label>
+            </value>
+            <value>
+                <fullName>Customer Support Contact</fullName>
+                <default>false</default>
+                <label>Customer Support Contact</label>
+            </value>
+            <value>
+                <fullName>General Manager</fullName>
+                <default>false</default>
+                <label>General Manager</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

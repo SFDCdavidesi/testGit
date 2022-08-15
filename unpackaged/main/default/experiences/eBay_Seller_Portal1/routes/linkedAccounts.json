@@ -1,0 +1,11 @@
+{
+  "activeViewId" : null,
+  "appPageId" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "configurationTags" : [ ],
+  "id" : "b227e7e3-4cb5-44cf-8cb0-69abbd08e800",
+  "label" : "Linked Accounts",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-linked-accounts",
+  "type" : "route",
+  "urlPrefix" : "linked-accounts"
+}

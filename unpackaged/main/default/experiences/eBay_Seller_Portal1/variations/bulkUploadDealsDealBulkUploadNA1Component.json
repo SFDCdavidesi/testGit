@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "54fe76df-f92c-4472-ae0e-4b114a92b932",
+    "propertyOverrides" : {
+      "isVisible" : true
+    },
+    "targetId" : "c8422223-3246-4687-a286-d1c47abf457d",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Bulk_Upload_Deals_dealBulkUploadNA_1_Component",
+  "id" : "27c05d40-7181-4a7c-8e8c-4c4864a54530",
+  "type" : "experienceVariation"
+}

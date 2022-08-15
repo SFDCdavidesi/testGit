@@ -1,0 +1,91 @@
+{
+  "appPageId" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "604007a9-29f4-45cd-ae09-088789d96d3e",
+  "label" : "Deal Window Page - AU",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "metadataName" : "helpTextTextElmt2"
+      },
+      "componentName" : "c:lwcHelpTextGeneric",
+      "id" : "e71510bd-f089-42f9-bd0a-f0af706d994b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "labelBtnMultipleDeals" : "Create Multiple Deals",
+        "labelBtnSingleDeal" : "Create Single Deal",
+        "mdtName" : "Deal_Retail_Period",
+        "messageNoRecord" : "there are no records to display",
+        "profileHiddenBtnSingleDeal" : "NA - Seller Portal"
+      },
+      "componentName" : "c:lwcListViewVerticalAccordion",
+      "id" : "cf902d16-6ac0-4aa0-af10-fb84c9065945",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "9a2c9bec-a972-4b57-a86f-4e901783f857",
+    "regionName" : "main",
+    "type" : "region"
+  }, {
+    "id" : "abce873a-1788-472b-9b26-c4cb4ea86a26",
+    "regionName" : "sideBar",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Deal Window Page"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "55d983b7-33fd-4123-b31e-12af99494606",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "231b598a-d9be-4123-825e-56b80e7f7772",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  }, {
+    "id" : "05f65c59-a31a-4e4d-bc8e-73d5ea24c370",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "metadataName" : "helpTextTextElmt2"
+      },
+      "componentName" : "c:lwcHelpTextGeneric",
+      "id" : "c97889d0-30bd-4173-8866-a8e2a04e6cd0",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "labelBtnMultipleDeals" : "Create Multiple Deals",
+        "labelBtnSingleDeal" : "Create Single Deal",
+        "mdtName" : "AU_Deal_Retail_Period",
+        "messageNoRecord" : "there are no records to display",
+        "profileHiddenBtnSingleDeal" : "AU - Seller Portal"
+      },
+      "componentName" : "c:lwcListViewVerticalAccordion",
+      "id" : "701b8be1-c180-4627-b9e3-7654813438a0",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "00303ac6-a77f-4458-9ad8-2ed415ea752c",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "8ee346cb-a0f0-4c22-acde-fa3aa6c05e22",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-deal-window-page"
+}

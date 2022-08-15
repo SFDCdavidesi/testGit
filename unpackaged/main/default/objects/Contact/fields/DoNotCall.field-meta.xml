@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DoNotCall</fullName>
+    <inlineHelpText>Always use the Phone Preference as first level indicator whether a user wants to be called. However in some cases users call out that they do not want to be called. This can be indicated here</inlineHelpText>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+</CustomField>

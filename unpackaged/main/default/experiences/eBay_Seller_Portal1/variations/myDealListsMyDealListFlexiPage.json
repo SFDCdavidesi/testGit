@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "af5e4b13-b97b-411a-9e10-f1c7074fd26c",
+    "propertyOverrides" : {
+      "activeViewId" : "fbb9c5b2-410b-408d-81b0-0666aeec1201"
+    },
+    "targetId" : "46f4c8cd-1c41-42b3-bd4b-811cbfb1dd8f",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "My_Deal_Lists_My_Deal_List_Flexi_Page",
+  "id" : "4418a15e-2144-424e-91b3-7e8631fbf1e5",
+  "type" : "experienceVariation"
+}

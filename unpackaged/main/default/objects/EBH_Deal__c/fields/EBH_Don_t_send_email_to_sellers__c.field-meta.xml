@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_Don_t_send_email_to_sellers__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>if this field is marked, the system will not send an email when the deal is rejected</description>
+    <externalId>false</externalId>
+    <label>Don&#39;t send email to sellers</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

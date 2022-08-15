@@ -1,0 +1,195 @@
+{
+  "appPageId" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "597748b2-f23c-4668-8cda-a1fba25fa8b2",
+  "label" : "Coupon Seller Detail",
+  "regions" : [ {
+    "id" : "82c9e553-e7a2-498f-b33f-e69835083532",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p style=\"text-align: right;\"><a href=\"/s/user-guide?sb=coupons\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"background-color: rgb(250, 250, 250); color: rgb(51, 51, 51);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"> Coupons User Guide</a> <span style=\"color: rgb(204, 204, 204);\">|</span><a href=\"https://www.ebay.com/\" rel=\"noopener noreferrer\" target=\"null\" style=\"color: rgb(51, 51, 51); background-color: rgb(250, 250, 250);\"> </a><a href=\"https://www.ebay.com/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"background-color: rgb(250, 250, 250); color: rgb(51, 51, 51);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"> eBay Website</a> <span style=\"color: rgb(204, 204, 204);\">|</span><a href=\"https://www.ebay.com/help/home\" rel=\"noopener noreferrer\" target=\"null\" style=\"color: rgb(51, 51, 51); background-color: rgb(250, 250, 250);\"> </a><a href=\"https://www.ebay.com/help/home\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"background-color: rgb(250, 250, 250); color: rgb(51, 51, 51);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"> eBay Help &amp; Contact</a></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "3b4647fd-8d14-4337-bf2b-9423ff716d8d",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "f13b3d41-1f9c-4796-a348-e3dced4de358"
+      },
+      "renditions" : [ {
+        "id" : "f13b3d41-1f9c-4796-a348-e3dced4de358",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: right;\"><a href=\"/s/user-guide?sb=gutscheine\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51); background-color: rgb(250, 250, 250);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\">&nbsp;Benutzerhandbuch für Gutscheine</a> <span style=\"color: rgb(204, 204, 204);\">|</span><a href=\"https://hive--sprintdev.livepreview.salesforce-communities.com/s/user-guide?sb=gutscheine\" rel=\"noopener noreferrer\" target=\"null\" style=\"color: rgb(51, 51, 51); background-color: rgb(250, 250, 250);\"> </a><a href=\"https://www.ebay.de/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51); background-color: rgb(250, 250, 250);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"> eBay Webseite</a> <span style=\"color: rgb(204, 204, 204);\">|</span><a href=\"https://hive--sprintdev.livepreview.salesforce-communities.com/s/user-guide?sb=gutscheine\" rel=\"noopener noreferrer\" target=\"null\" style=\"color: rgb(51, 51, 51); background-color: rgb(250, 250, 250);\"> </a><a href=\"https://www.ebay.de/help/home\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51); background-color: rgb(250, 250, 250);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"> eBay Hilfe &amp; Kontaktmöglichkeiten</a></p>"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<p><span style=\"font-family: arial; font-size: 22px;\">Coupon</span></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "802419ce-ac6b-4c99-94e8-6c5c1c0008fb",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "810ac0e8-c477-4677-88b9-8b9258e77760"
+      },
+      "renditions" : [ {
+        "id" : "810ac0e8-c477-4677-88b9-8b9258e77760",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "richTextValue" : "<p><span style=\"font-size: 22px; font-family: arial;\">Gutschein</span></p>"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<p><span style=\"font-size: 12px; font-family: arial;\">Below you will find the details of this coupon</span></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "e8c515fd-6d30-4cf1-92ba-0346f7c7d6bf",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "44755d40-302c-4884-b942-1097e25bcf7f"
+      },
+      "renditions" : [ {
+        "id" : "44755d40-302c-4884-b942-1097e25bcf7f",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "richTextValue" : "<p><span style=\"font-size: 12px; font-family: arial;\">Nachfolgend finden Sie die Details zu diesem Gutschein</span></p>"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "recId" : "{!recordId}"
+      },
+      "componentName" : "c:lwcCouponSellerDetailPage",
+      "id" : "e6b0812f-1311-439c-8fd5-f55d2f7cc268",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "6cb0132d-9006-4496-89f2-82105169b690"
+      },
+      "renditions" : [ {
+        "id" : "6cb0132d-9006-4496-89f2-82105169b690",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "recId" : "{!recordId}"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "aeb33e90-5ef0-42f0-8807-e00aaba66f4f",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "9c82f04d-ec88-47ec-acad-752d8c62ec29",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object} - {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "4e3f5253-b82d-40a2-a84f-60fbbd13878d",
+      "renditionMap" : {
+        "de" : "22964361-06f6-40dd-9e25-95d9651aab40"
+      },
+      "renditions" : [ {
+        "id" : "22964361-06f6-40dd-9e25-95d9651aab40",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Gutschein"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "0e48ea13-6a94-40d9-bcef-8171c06c820b",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:lwcHelpTextGeneric",
+      "id" : "8501b589-5f8b-4a9f-be09-1e7c93c6ba74",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "00d03923-4fad-4cea-9c07-2331d849b294"
+      },
+      "renditions" : [ {
+        "id" : "00d03923-4fad-4cea-9c07-2331d849b294",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "metadataName" : "DEhelpTextTextElmt10"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "recId" : "{!recordId}"
+      },
+      "componentName" : "c:lwcCouponSellerDetailPage",
+      "id" : "b9a2e4bb-4c92-4a73-a31d-f40938b61616",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "4d82f795-6aaa-4b2c-a058-60b15c4bdcef"
+      },
+      "renditions" : [ {
+        "id" : "4d82f795-6aaa-4b2c-a058-60b15c4bdcef",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "recId" : "{!recordId}"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "6e12a695-9c18-452f-b78a-d7ce27d632f0",
+    "regionName" : "main",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:lwcHelpTextGeneric",
+      "id" : "d3af4095-a4f0-4e68-bcd1-54034c296106",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "11acc214-8cd5-4c57-aeb9-afe85fc53722"
+      },
+      "renditions" : [ {
+        "id" : "11acc214-8cd5-4c57-aeb9-afe85fc53722",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "metadataName" : "DEhelpTextTextElmt10"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "b213e26e-b73d-49c7-aa6d-6ab54d7a1fa2",
+    "regionName" : "sidebar",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-a1M"
+}

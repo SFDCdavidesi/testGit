@@ -1,0 +1,38 @@
+{
+  "appPageId" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "c96752cf-8452-42b0-a326-0bc366cbe4f8",
+  "label" : "Deal Retail Campaign Related List",
+  "regions" : [ {
+    "id" : "bc3fc2f6-2893-4925-98f3-d6ed5a8231e5",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customTitle" : "",
+        "parentRecordId" : "{!recordId}",
+        "relatedListName" : "{!relationshipApiName}",
+        "showBreadCrumbs" : true,
+        "showCustomTitle" : false,
+        "showManualRefreshButton" : true,
+        "showRowNumbers" : true
+      },
+      "componentName" : "forceCommunity:relatedList",
+      "id" : "2e9af5a2-4f9c-4b8f-8f93-79ad5553528d",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "3b8003ee-a50f-4c22-a07e-eb5234d61b01",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "bb55f1b0-d66b-4ec7-9e33-ea1bd5031021",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "relatedlist-a0u"
+}

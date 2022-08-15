@@ -1,0 +1,45 @@
+{
+  "appPageId" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "cf63b50f-6857-40bb-af46-1e0015c10cd8",
+  "label" : "Deal Retail Campaign List",
+  "regions" : [ {
+    "id" : "0c3c9519-3ed0-40c9-8760-80b091879160",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "metadataName" : "genericErrorMessage",
+        "metadataNameReadOnly" : "dealReadOnlyErrorMessage"
+      },
+      "componentName" : "c:lwcGenericErrorMessage",
+      "id" : "4bf64e3b-df7a-4b33-8a2c-edaa956a593d",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "57c60e8a-3aa5-4b04-9d3c-81de99891fd5"
+      },
+      "renditions" : [ {
+        "id" : "57c60e8a-3aa5-4b04-9d3c-81de99891fd5",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "metadataName" : "DEgenericErrorMessage",
+            "metadataNameReadOnly" : "DEdealReadOnlyErrorMessage"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "c3bd598c-63ac-4d56-8b5e-9b06ded21357",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "b96bd041-0c87-4911-84b9-b935dbedd912",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "list-a0u"
+}

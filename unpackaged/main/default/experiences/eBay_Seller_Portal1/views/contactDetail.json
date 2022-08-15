@@ -1,0 +1,185 @@
+{
+  "appPageId" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "43479b59-c938-476f-b07c-d62a089afe7e",
+  "label" : "Contact Detail",
+  "regions" : [ {
+    "id" : "aeb8c082-fadf-400b-b679-0af238d62693",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p><span style=\"font-size: 22px;\">Contact Overview</span></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "1093a253-58c8-4fe9-bad3-9f65ab0ac14e",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "a47fec7d-3f3e-4ebd-8ea8-0d78a0a8b8a9"
+      },
+      "renditions" : [ {
+        "id" : "a47fec7d-3f3e-4ebd-8ea8-0d78a0a8b8a9",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "richTextValue" : "<p><span style=\"font-size: 22px; font-family: arial;\">Kontakt-Übersicht</span></p>"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<p><span style=\"font-size: 12px; font-family: arial;\">Below you will find the details of this contact</span></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "83146c12-7b7a-43ee-8a25-6ee631185bf1",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "0e242102-cf01-4442-81e3-5997bc59ca66"
+      },
+      "renditions" : [ {
+        "id" : "0e242102-cf01-4442-81e3-5997bc59ca66",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "richTextValue" : "<p><span style=\"font-size: 12px; font-family: arial;\">Nachfolgend finden Sie die Details zu diesem Kontakt</span></p>"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordDetail",
+      "id" : "60c2db92-694a-40f9-9b73-574ecc7c59f8",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "recordId" : ""
+      },
+      "componentName" : "c:lwcCancelButton",
+      "id" : "1ff920c3-48ea-42ac-bba3-03f984049292",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "11517e0f-3951-476d-ba85-6b4202540ba0",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "24e63743-c362-44b8-99ab-a7d5f260b638",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "d2b6e490-b743-4be2-94da-f86d4021d6c9",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "551ba1e1-ef2a-40a9-9b02-9ff05290e9f2",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "metadataName" : ""
+      },
+      "componentName" : "c:lwcHelpTextGeneric",
+      "id" : "6df113b1-8780-448d-b655-09906a3330d3",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "f006efbe-9d47-4bef-8aee-29cad24701f6"
+      },
+      "renditions" : [ {
+        "id" : "f006efbe-9d47-4bef-8aee-29cad24701f6",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "metadataName" : "DEhelpTextTextElmt7"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordDetail",
+      "id" : "87d0d605-8980-4ca5-893c-e8f22823d91b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : { },
+      "componentName" : "c:lwcCancelButton",
+      "id" : "06b8c805-3a5f-4d09-8466-7d1b87074778",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "3dc81ea3-7bd5-493d-a759-288edb318de8",
+    "regionName" : "main",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "features" : "Generic",
+        "region" : "DE"
+      },
+      "componentName" : "c:lwcSidebarUsefulLink",
+      "id" : "f87b39e6-55fc-4939-8e0d-9baa87601a56",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "1591cfee-ab2a-44c7-88ab-f69b91e9cc8d"
+      },
+      "renditions" : [ {
+        "id" : "1591cfee-ab2a-44c7-88ab-f69b91e9cc8d",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "features" : "Generic",
+            "region" : "DE"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "features" : "Generic",
+        "region" : "NA"
+      },
+      "componentName" : "c:lwcSidebarUsefulLink",
+      "id" : "5a03cf26-5f0d-44aa-8d84-cc0b4452ec19",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "287be6fa-0487-451b-9b38-e96da2ab0fcf"
+      },
+      "renditions" : [ {
+        "id" : "287be6fa-0487-451b-9b38-e96da2ab0fcf",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "features" : "Generic"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "cf1112a1-0716-41bb-bc94-613538d8cebb",
+    "regionName" : "sidebar",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-003"
+}

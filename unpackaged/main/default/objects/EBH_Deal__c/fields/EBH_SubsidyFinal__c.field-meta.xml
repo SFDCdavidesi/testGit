@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_SubsidyFinal__c</fullName>
+    <description>[EBH] (EPH-4163) - Subsidy Final
+[#EPH-7598] Deal Object - Subsidy fields redesign for Invoicing</description>
+    <externalId>false</externalId>
+    <formula>IF( OR(ISBLANK(Subsidy_Payout_Amount__c),Subsidy_Payout_Amount__c=0), SubsidyFinal_Servicing__c, Subsidy_Payout_Amount__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Subsidy Final (Gross)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

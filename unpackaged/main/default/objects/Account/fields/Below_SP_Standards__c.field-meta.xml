@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Below_SP_Standards__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Below Seller Portal Standards</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Below Seller Portal Standards</inlineHelpText>
+    <label>Below SP Standards</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

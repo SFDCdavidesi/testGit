@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_SpotlightFeature__c</fullName>
+    <description>[EBH] (EPH-4163) - Spotlight Feature</description>
+    <externalId>false</externalId>
+    <label>Spotlight Feature</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Smartphones</fullName>
+                <default>false</default>
+                <label>Smartphones</label>
+            </value>
+            <value>
+                <fullName>Computer</fullName>
+                <default>false</default>
+                <label>Computer</label>
+            </value>
+            <value>
+                <fullName>Home Entertainment</fullName>
+                <default>false</default>
+                <label>Home Entertainment</label>
+            </value>
+            <value>
+                <fullName>Weiter Elektronik</fullName>
+                <default>false</default>
+                <label>Weiter Elektronik</label>
+            </value>
+            <value>
+                <fullName>Heimwerken</fullName>
+                <default>false</default>
+                <label>Heimwerken</label>
+            </value>
+            <value>
+                <fullName>Zuhause/Möbel</fullName>
+                <default>false</default>
+                <label>Zuhause/Möbel</label>
+            </value>
+            <value>
+                <fullName>Haushaltsgeräte</fullName>
+                <default>false</default>
+                <label>Haushaltsgeräte</label>
+            </value>
+            <value>
+                <fullName>Fashion für Ihn</fullName>
+                <default>false</default>
+                <label>Fashion für Ihn</label>
+            </value>
+            <value>
+                <fullName>Schuhe</fullName>
+                <default>false</default>
+                <label>Schuhe</label>
+            </value>
+            <value>
+                <fullName>Basic Fashion</fullName>
+                <default>false</default>
+                <label>Basic Fashion</label>
+            </value>
+            <value>
+                <fullName>Sport</fullName>
+                <default>false</default>
+                <label>Sport</label>
+            </value>
+            <value>
+                <fullName>Spielzeug</fullName>
+                <default>false</default>
+                <label>Spielzeug</label>
+            </value>
+            <value>
+                <fullName>Gold</fullName>
+                <default>false</default>
+                <label>Gold</label>
+            </value>
+            <value>
+                <fullName>P&amp;A</fullName>
+                <default>false</default>
+                <label>P&amp;A</label>
+            </value>
+            <value>
+                <fullName>Erotik</fullName>
+                <default>false</default>
+                <label>Erotik</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

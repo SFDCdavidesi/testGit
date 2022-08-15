@@ -1,0 +1,85 @@
+{
+  "appPageId" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "a800a697-3f38-45dd-b882-3dd5e258a4c1",
+  "label" : "Contact Us",
+  "regions" : [ {
+    "id" : "d98339e1-24a5-4a73-8d89-4b08529e34a9",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "metadataName" : "genericErrorMessage",
+        "metadataNameReadOnly" : "dealReadOnlyErrorMessage"
+      },
+      "componentName" : "c:lwcGenericErrorMessage",
+      "id" : "1356a8b6-dc5c-45f2-8c1d-d3a235f351af",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "6065f313-020c-4a65-88a1-0912fb579f00"
+      },
+      "renditions" : [ {
+        "id" : "6065f313-020c-4a65-88a1-0912fb579f00",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "metadataName" : "DEgenericErrorMessage",
+            "metadataNameReadOnly" : "DEdealReadOnlyErrorMessage"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "135e5654-aa1c-4b37-b8ed-7bbe8113d59f",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "askConfirmationQuestion" : true,
+        "confirmationMessageLabel" : "Got it!",
+        "deflectionSubtitle" : "Find what you need here.",
+        "deflectionTitle" : "Need Answers Fast?",
+        "firstQuestion" : "Did this content solve your issue?",
+        "maxResults" : 6,
+        "measureDeflection" : true,
+        "redirectUrl" : "",
+        "secondQuestion" : "Stop creating your case?",
+        "showArticles" : true,
+        "showDiscussions" : false,
+        "topicId" : "{!topicId}"
+      },
+      "componentName" : "forceCommunity:caseDeflection",
+      "id" : "45dd6c61-d7a6-4895-a7da-f061e4bacb09",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b44f482c-e053-4222-a602-cdb38d2f1579",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "3c631a44-abd6-4eed-9996-f1138f730968",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Contact Us"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "30335181-d5f2-43a8-9c83-1a6f90854f70",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "73a1b847-95e1-4e2c-bd97-60f02bfd0fa0",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "contactsupport"
+}

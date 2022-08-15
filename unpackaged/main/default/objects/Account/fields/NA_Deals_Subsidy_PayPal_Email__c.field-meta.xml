@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NA_Deals_Subsidy_PayPal_Email__c</fullName>
+    <description>US-0009543 - [NA] New field and on Account for &#39;Seller&#39; recordtype,
+US-0011448 - Additional validation for NA un-sub to sub conversion rule</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Used for Seller Subsidy payment</inlineHelpText>
+    <label>NA Deals Subsidy PayPal Email</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Email</type>
+    <unique>false</unique>
+</CustomField>

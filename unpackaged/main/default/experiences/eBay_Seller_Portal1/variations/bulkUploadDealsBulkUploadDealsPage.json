@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "0e18eb2a-7f6a-404c-9c95-586e0e3c57d5",
+    "propertyOverrides" : {
+      "activeViewId" : "cf926b74-169e-4d96-af29-3085a8e8774b"
+    },
+    "targetId" : "5234d1e4-a0de-419b-816f-f9bd6e630e67",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Bulk_Upload_Deals_Bulk_Upload_Deals_Page",
+  "id" : "0693b5cb-6b46-4608-b725-92656c7e7789",
+  "type" : "experienceVariation"
+}

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_Role__c</fullName>
+    <description>US-0008785 - [NA] Resend Deal Statements to Seller</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Flag contacts in roles for specific communications</inlineHelpText>
+    <label>Contact Role</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Advertising NA</fullName>
+                <default>false</default>
+                <label>Advertising NA</label>
+            </value>
+            <value>
+                <fullName>B2C Scaling</fullName>
+                <default>false</default>
+                <label>B2C Scaling</label>
+            </value>
+            <value>
+                <fullName>Billing Contact</fullName>
+                <default>false</default>
+                <label>Billing Contact</label>
+            </value>
+            <value>
+                <fullName>eBay - Active</fullName>
+                <default>false</default>
+                <label>eBay - Active</label>
+            </value>
+            <value>
+                <fullName>eBay - Integrations</fullName>
+                <default>false</default>
+                <label>eBay - Integrations</label>
+            </value>
+            <value>
+                <fullName>eBay - Inventory and Pricing</fullName>
+                <default>false</default>
+                <label>eBay - Inventory and Pricing</label>
+            </value>
+            <value>
+                <fullName>eBay - Marketing</fullName>
+                <default>false</default>
+                <label>eBay - Marketing</label>
+            </value>
+            <value>
+                <fullName>eBay - Non Active - Left Company</fullName>
+                <default>false</default>
+                <label>eBay - Non Active - Left Company</label>
+            </value>
+            <value>
+                <fullName>eBay - Non Active - Moved Dept/Project</fullName>
+                <default>false</default>
+                <label>eBay - Non Active - Moved Dept/Project</label>
+            </value>
+            <value>
+                <fullName>eBay - Non Active - Retired</fullName>
+                <default>false</default>
+                <label>eBay - Non Active - Retired</label>
+            </value>
+            <value>
+                <fullName>eBay - Primary Contact</fullName>
+                <default>false</default>
+                <label>eBay - Primary Contact</label>
+            </value>
+            <value>
+                <fullName>eBay - Secondary Contact</fullName>
+                <default>false</default>
+                <label>eBay - Secondary Contact</label>
+            </value>
+            <value>
+                <fullName>Marketplaces – Executive Contact</fullName>
+                <default>false</default>
+                <label>Marketplaces – Executive Contact</label>
+            </value>
+            <value>
+                <fullName>Marketplaces – Financial Contact</fullName>
+                <default>false</default>
+                <label>Marketplaces – Financial Contact</label>
+            </value>
+            <value>
+                <fullName>Primary/MC Contact</fullName>
+                <default>false</default>
+                <label>Primary/MC Contact</label>
+            </value>
+            <value>
+                <fullName>Promotions</fullName>
+                <default>false</default>
+                <label>Promotions</label>
+            </value>
+            <value>
+                <fullName>Sales Contact</fullName>
+                <default>false</default>
+                <label>Sales Contact</label>
+            </value>
+            <value>
+                <fullName>Support Contact</fullName>
+                <default>false</default>
+                <label>Support Contact</label>
+            </value>
+            <value>
+                <fullName>Technical Contact</fullName>
+                <default>false</default>
+                <label>Technical Contact</label>
+            </value>
+            <value>
+                <fullName>Training Contact</fullName>
+                <default>false</default>
+                <label>Training Contact</label>
+            </value>
+            <value>
+                <fullName>C-Suite</fullName>
+                <default>false</default>
+                <label>C-Suite</label>
+            </value>
+            <value>
+                <fullName>Financial</fullName>
+                <default>false</default>
+                <label>Financial</label>
+            </value>
+            <value>
+                <fullName>Legal</fullName>
+                <default>false</default>
+                <label>Legal</label>
+            </value>
+            <value>
+                <fullName>Manager</fullName>
+                <default>false</default>
+                <label>Manager</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Deals</fullName>
+                <default>false</default>
+                <label>NA Deals Contracts</label>
+            </value>
+            <value>
+                <fullName>NA Deals Statement Recipient</fullName>
+                <default>false</default>
+                <label>NA Deals Statement Recipient</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

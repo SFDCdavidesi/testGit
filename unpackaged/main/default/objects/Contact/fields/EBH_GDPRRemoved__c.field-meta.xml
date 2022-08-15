@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_GDPRRemoved__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>[EBH] (EPH-5413) to track if contact has been GDPR removed</description>
+    <externalId>false</externalId>
+    <label>GDPR Removed</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

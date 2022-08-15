@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBH_BrandedShowroomURL__c</fullName>
+    <description>[EBH] (US-0047) : To capture branded showroom information on a Brand record</description>
+    <externalId>false</externalId>
+    <label>Branded Showroom URL</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Url</type>
+</CustomField>

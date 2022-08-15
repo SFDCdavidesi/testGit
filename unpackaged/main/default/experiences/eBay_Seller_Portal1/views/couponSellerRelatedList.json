@@ -1,0 +1,38 @@
+{
+  "appPageId" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "ee32f07e-662c-4d5c-a088-5a4727aad9b3",
+  "label" : "Coupon Seller Related List",
+  "regions" : [ {
+    "id" : "05db55cf-c801-4acb-9eab-4a077c6a4438",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customTitle" : "",
+        "parentRecordId" : "{!recordId}",
+        "relatedListName" : "{!relationshipApiName}",
+        "showBreadCrumbs" : true,
+        "showCustomTitle" : false,
+        "showManualRefreshButton" : true,
+        "showRowNumbers" : true
+      },
+      "componentName" : "forceCommunity:relatedList",
+      "id" : "b90b7fcf-8458-4d97-9ae9-78cc5e6416b4",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "d680d6fb-0f2d-4091-9e62-88fd8521efef",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "3db69fc8-1e28-43ff-b767-dff67ce3d213",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "relatedlist-a1M"
+}

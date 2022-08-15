@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "2a0decd2-71a6-40d4-bc53-ce62662e121a",
+    "propertyOverrides" : {
+      "isVisible" : true
+    },
+    "targetId" : "b8b65b61-5de9-45dd-99de-e6194d0cbc90",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Login_lwcLoginForm_Component",
+  "id" : "aa3c4051-f068-42b1-97eb-492a8b22c9e9",
+  "type" : "experienceVariation"
+}

@@ -1,0 +1,11 @@
+{
+  "activeViewId" : null,
+  "appPageId" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "configurationTags" : [ ],
+  "id" : "5234d1e4-a0de-419b-816f-f9bd6e630e67",
+  "label" : "Bulk Upload Deals",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-bulk-upload-deals",
+  "type" : "route",
+  "urlPrefix" : "bulk-upload-deals"
+}

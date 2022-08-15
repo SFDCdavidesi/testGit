@@ -1,0 +1,543 @@
+{
+  "appPageId" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "componentName" : "siteforce:dynamicLayout",
+  "id" : "9607a18c-3b15-4d3b-a786-6cf46354783c",
+  "label" : "My Coupon Seller List",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "be314b0c-7f02-4096-abf7-90f831a9470c",
+          "columns" : [ {
+            "UUID" : "dfa74c7f-9b06-4f6b-972a-74c925d7f295",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 32
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "be314b0c-7f02-4096-abf7-90f831a9470c",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: right;\"><a href=\"/s/user-guide?sb=coupons\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"> Coupons User Guide</a> <span style=\"color: rgb(204, 204, 204);\">|</span><a href=\"https://www.ebay.com/\" rel=\"noopener noreferrer\" target=\"null\" style=\"color: rgb(51, 51, 51);\"> </a><a href=\"https://www.ebay.com/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"> eBay Website</a> <span style=\"color: rgb(204, 204, 204);\">|</span><a href=\"https://www.ebay.com/help/home\" rel=\"noopener noreferrer\" target=\"null\" style=\"color: rgb(51, 51, 51);\"> </a><a href=\"https://www.ebay.com/help/home\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"> eBay Help &amp; Contact</a></p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "6c8ae98a-38e6-42d4-b3d3-4714862f4f7d",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : {
+            "de" : "23d72f28-b08b-4bbe-8f23-3c4184853fc5"
+          },
+          "renditions" : [ {
+            "id" : "23d72f28-b08b-4bbe-8f23-3c4184853fc5",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "richTextValue" : "<p style=\"text-align: right;\"><a href=\"/s/user-guide?sb=gutscheine\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\">&nbsp;Benutzerhandbuch für Gutscheine</a> <span style=\"color: rgb(204, 204, 204);\">|</span><a href=\"https://hive--sprintdev.livepreview.salesforce-communities.com/s/user-guide?sb=gutscheine\" rel=\"noopener noreferrer\" target=\"null\" style=\"color: rgb(51, 51, 51);\"> </a><a href=\"https://www.ebay.de/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"> eBay Webseite</a> <span style=\"color: rgb(204, 204, 204);\">|</span><a href=\"https://hive--sprintdev.livepreview.salesforce-communities.com/s/user-guide?sb=gutscheine\" rel=\"noopener noreferrer\" target=\"null\" style=\"color: rgb(51, 51, 51);\"> </a><a href=\"https://www.ebay.de/help/home\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(51, 51, 51);\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.external_link.1}\"> eBay Hilfe &amp; Kontaktmöglichkeiten</a></p>"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p><span style=\"font-family: arial; font-size: 22px;\">Coupons</span></p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "8fc7f794-241d-483c-9cbf-901345c54e47",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : {
+            "de" : "824b2bff-c03d-429a-aadf-e7285b165390"
+          },
+          "renditions" : [ {
+            "id" : "824b2bff-c03d-429a-aadf-e7285b165390",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "richTextValue" : "<p><span style=\"font-size: 22px; font-family: arial;\">Gutscheine</span></p>"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "isAggregate" : false,
+            "itemsToShow" : "Coupons_Aggregate_NA"
+          },
+          "componentName" : "c:lwcSEPToDoList",
+          "id" : "a0789579-f63b-499e-8f74-13e599be306e",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : {
+            "de" : "18f0878b-ad53-4618-a1cb-2c6db9f37ffd"
+          },
+          "renditions" : [ {
+            "id" : "18f0878b-ad53-4618-a1cb-2c6db9f37ffd",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "itemsToShow" : "Coupons_Aggregate_DE"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        } ],
+        "id" : "dfa74c7f-9b06-4f6b-972a-74c925d7f295",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : {
+          "de" : "e44b6686-982f-4d06-bdbc-0a5f48ff73e3"
+        },
+        "renditions" : [ {
+          "id" : "e44b6686-982f-4d06-bdbc-0a5f48ff73e3",
+          "renditionValue" : {
+            "regionLabel" : "Column 1"
+          },
+          "type" : "renditionComponent"
+        } ],
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "3fd83ff3-f79e-4e6a-a141-4d28e9e09024",
+          "columns" : [ {
+            "UUID" : "f0180301-a472-4d23-984c-9eb9c3e1fe1a",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "3fd83ff3-f79e-4e6a-a141-4d28e9e09024",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "tabsetConfig" : {
+              "UUID" : "c3102f2e-0d8e-4084-bc54-e17c556f8412",
+              "activeTab" : "",
+              "tabs" : [ {
+                "UUID" : "50251c74-bcdb-4d67-8e41-780e91672c87",
+                "allowGuestUser" : false,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "1",
+                "tabName" : "Kommende Gutscheine"
+              }, {
+                "UUID" : "233b385c-a743-425c-8cd3-29328a3160c3",
+                "allowGuestUser" : false,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "2",
+                "tabName" : "Aktion erforderlich"
+              }, {
+                "UUID" : "1df7453a-457a-4311-be22-5456a46f56af",
+                "allowGuestUser" : false,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "3",
+                "tabName" : "In Überprüfung"
+              }, {
+                "UUID" : "a2e40592-41de-46db-bbe2-a81949f5dcba",
+                "allowGuestUser" : false,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "f3b6b",
+                "tabName" : "Bestätigte Gutscheine"
+              }, {
+                "UUID" : "776e83e6-1e03-4a7f-b6f4-e6e38f386b53",
+                "allowGuestUser" : false,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "fe8c0",
+                "tabName" : "Aktuelle Gutscheine"
+              }, {
+                "UUID" : "919e70fc-fd9a-41d8-9952-0275fcf44d5a",
+                "allowGuestUser" : false,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "d0081",
+                "tabName" : "Bisherige Gutscheine"
+              }, {
+                "UUID" : "102b4c66-c938-4943-ac31-574f65fca60e",
+                "allowGuestUser" : false,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "95597",
+                "tabName" : "Abgelehnte Gutscheine"
+              } ],
+              "useOverflowMenu" : false
+            }
+          },
+          "componentName" : "forceCommunity:tabset",
+          "id" : "c3102f2e-0d8e-4084-bc54-e17c556f8412",
+          "regions" : [ {
+            "components" : [ {
+              "componentAttributes" : {
+                "isCheckBox" : false,
+                "isDisableSearch" : false,
+                "isShowBtnIntr" : false,
+                "isShowDensity" : true,
+                "lbButtonIntr" : "Interested",
+                "lbButtonNotIntr" : "Not Interested",
+                "lbDensity" : "Density",
+                "mdtName" : "DE_Upcoming_Coupons",
+                "messageNoRecord" : "No results available."
+              },
+              "componentName" : "c:lwcListView",
+              "id" : "cf8f4705-7a42-4e18-a610-07678aefd47d",
+              "renditionMap" : {
+                "de" : "e75e623b-af5e-4264-b050-d895338dd500"
+              },
+              "renditions" : [ {
+                "id" : "e75e623b-af5e-4264-b050-d895338dd500",
+                "renditionValue" : {
+                  "componentAttributes" : {
+                    "mdtName" : "DE_Upcoming_Coupons",
+                    "messageNoRecord" : "Aktuell keine Daten verfügbar"
+                  }
+                },
+                "type" : "renditionComponent"
+              } ],
+              "type" : "component"
+            } ],
+            "id" : "50251c74-bcdb-4d67-8e41-780e91672c87",
+            "regionLabel" : "Upcoming Coupons",
+            "regionName" : "1",
+            "renditionMap" : {
+              "de" : "894a7674-a8dd-4bf8-b18e-91925fca5e97"
+            },
+            "renditions" : [ {
+              "id" : "894a7674-a8dd-4bf8-b18e-91925fca5e97",
+              "renditionValue" : {
+                "regionLabel" : "Kommende Gutscheine"
+              },
+              "type" : "renditionComponent"
+            } ],
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : {
+                "isCheckBox" : false,
+                "isDisableSearch" : false,
+                "isShowBtnIntr" : false,
+                "isShowDensity" : true,
+                "lbButtonIntr" : "Interested",
+                "lbButtonNotIntr" : "Not Interested",
+                "lbDensity" : "Density",
+                "mdtName" : "DE_Action_Required_Coupons",
+                "messageNoRecord" : "No results available."
+              },
+              "componentName" : "c:lwcListView",
+              "id" : "90864cf2-6ddb-4062-9d7b-401dc8264259",
+              "renditionMap" : {
+                "de" : "157b5624-be32-4359-ba3e-c9cf4badce00"
+              },
+              "renditions" : [ {
+                "id" : "157b5624-be32-4359-ba3e-c9cf4badce00",
+                "renditionValue" : {
+                  "componentAttributes" : {
+                    "mdtName" : "DE_Action_Required_Coupons",
+                    "messageNoRecord" : "Aktuell keine Daten verfügbar"
+                  }
+                },
+                "type" : "renditionComponent"
+              } ],
+              "type" : "component"
+            } ],
+            "id" : "233b385c-a743-425c-8cd3-29328a3160c3",
+            "regionLabel" : "Action Required",
+            "regionName" : "2",
+            "renditionMap" : {
+              "de" : "1de9be61-8807-4fe8-9855-942d106bbd5b"
+            },
+            "renditions" : [ {
+              "id" : "1de9be61-8807-4fe8-9855-942d106bbd5b",
+              "renditionValue" : {
+                "regionLabel" : "Aktion erforderlich"
+              },
+              "type" : "renditionComponent"
+            } ],
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : {
+                "isCheckBox" : false,
+                "isDisableSearch" : false,
+                "isShowBtnIntr" : false,
+                "isShowDensity" : true,
+                "lbButtonIntr" : "Interested",
+                "lbButtonNotIntr" : "Not Interested",
+                "lbDensity" : "Density",
+                "mdtName" : "DE_In_Review_Coupons",
+                "messageNoRecord" : "No results available."
+              },
+              "componentName" : "c:lwcListView",
+              "id" : "11928c97-046a-428a-b5c4-12de83a2d55d",
+              "renditionMap" : {
+                "de" : "b1de7cb8-0653-4982-adf0-be17d8453417"
+              },
+              "renditions" : [ {
+                "id" : "b1de7cb8-0653-4982-adf0-be17d8453417",
+                "renditionValue" : {
+                  "componentAttributes" : {
+                    "mdtName" : "DE_In_Review_Coupons",
+                    "messageNoRecord" : "Aktuell keine Daten verfügbar"
+                  }
+                },
+                "type" : "renditionComponent"
+              } ],
+              "type" : "component"
+            } ],
+            "id" : "1df7453a-457a-4311-be22-5456a46f56af",
+            "regionLabel" : "In Review",
+            "regionName" : "3",
+            "renditionMap" : {
+              "de" : "e9cbfb98-4cae-494d-83e6-e3a154f5a325"
+            },
+            "renditions" : [ {
+              "id" : "e9cbfb98-4cae-494d-83e6-e3a154f5a325",
+              "renditionValue" : {
+                "regionLabel" : "In Überprüfung"
+              },
+              "type" : "renditionComponent"
+            } ],
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : {
+                "isCheckBox" : false,
+                "isDisableSearch" : false,
+                "isShowBtnIntr" : false,
+                "isShowDensity" : true,
+                "lbButtonIntr" : "Interested",
+                "lbButtonNotIntr" : "Not Interested",
+                "lbDensity" : "Density",
+                "mdtName" : "DE_Planned_Coupons",
+                "messageNoRecord" : "No results available."
+              },
+              "componentName" : "c:lwcListView",
+              "id" : "78f7f4c3-3bf8-43f3-99b8-0330bad9a547",
+              "renditionMap" : {
+                "de" : "0566e289-7086-4fc8-a00b-d8df102eba26"
+              },
+              "renditions" : [ {
+                "id" : "0566e289-7086-4fc8-a00b-d8df102eba26",
+                "renditionValue" : {
+                  "componentAttributes" : {
+                    "mdtName" : "DE_Planned_Coupons",
+                    "messageNoRecord" : "Aktuell keine Daten verfügbar"
+                  }
+                },
+                "type" : "renditionComponent"
+              } ],
+              "type" : "component"
+            } ],
+            "id" : "a2e40592-41de-46db-bbe2-a81949f5dcba",
+            "regionLabel" : "Planned Coupons",
+            "regionName" : "f3b6b",
+            "renditionMap" : {
+              "de" : "3004e4ed-9a90-40f6-874d-9f8833a2b21d"
+            },
+            "renditions" : [ {
+              "id" : "3004e4ed-9a90-40f6-874d-9f8833a2b21d",
+              "renditionValue" : {
+                "regionLabel" : "Bestätigte Gutscheine"
+              },
+              "type" : "renditionComponent"
+            } ],
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : {
+                "isCheckBox" : false,
+                "isDisableSearch" : false,
+                "isShowBtnIntr" : false,
+                "isShowDensity" : true,
+                "lbButtonIntr" : "Interested",
+                "lbButtonNotIntr" : "Not Interested",
+                "lbDensity" : "Density",
+                "mdtName" : "DE_Running_Coupons",
+                "messageNoRecord" : "No results available."
+              },
+              "componentName" : "c:lwcListView",
+              "id" : "764c78ca-4208-4e81-87f3-685bd363c1eb",
+              "renditionMap" : {
+                "de" : "00ecad0c-24d4-4df8-88ae-3f3740718ca7"
+              },
+              "renditions" : [ {
+                "id" : "00ecad0c-24d4-4df8-88ae-3f3740718ca7",
+                "renditionValue" : {
+                  "componentAttributes" : {
+                    "mdtName" : "DE_Running_Coupons",
+                    "messageNoRecord" : "Aktuell keine Daten verfügbar"
+                  }
+                },
+                "type" : "renditionComponent"
+              } ],
+              "type" : "component"
+            } ],
+            "id" : "776e83e6-1e03-4a7f-b6f4-e6e38f386b53",
+            "regionLabel" : "Running Coupons",
+            "regionName" : "fe8c0",
+            "renditionMap" : {
+              "de" : "de773a75-f030-4837-b857-f6b51c1f3fe0"
+            },
+            "renditions" : [ {
+              "id" : "de773a75-f030-4837-b857-f6b51c1f3fe0",
+              "renditionValue" : {
+                "regionLabel" : "Aktuelle Gutscheine"
+              },
+              "type" : "renditionComponent"
+            } ],
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : {
+                "isCheckBox" : false,
+                "isDisableSearch" : false,
+                "isShowBtnIntr" : false,
+                "isShowDensity" : true,
+                "lbButtonIntr" : "Interested",
+                "lbButtonNotIntr" : "Not Interested",
+                "lbDensity" : "Density",
+                "mdtName" : "DE_Past_Coupons",
+                "messageNoRecord" : "No results available."
+              },
+              "componentName" : "c:lwcListView",
+              "id" : "30f586bb-6b95-456f-a1f1-c0317ba5e7ad",
+              "renditionMap" : {
+                "de" : "987bf2ab-e6a3-499c-843a-f6acf504a2c6"
+              },
+              "renditions" : [ {
+                "id" : "987bf2ab-e6a3-499c-843a-f6acf504a2c6",
+                "renditionValue" : {
+                  "componentAttributes" : {
+                    "mdtName" : "DE_Past_Coupons",
+                    "messageNoRecord" : "Aktuell keine Daten verfügbar"
+                  }
+                },
+                "type" : "renditionComponent"
+              } ],
+              "type" : "component"
+            } ],
+            "id" : "919e70fc-fd9a-41d8-9952-0275fcf44d5a",
+            "regionLabel" : "Past Coupons",
+            "regionName" : "d0081",
+            "renditionMap" : {
+              "de" : "575ed55f-2976-44d3-87a5-b2cd3d2f5a8c"
+            },
+            "renditions" : [ {
+              "id" : "575ed55f-2976-44d3-87a5-b2cd3d2f5a8c",
+              "renditionValue" : {
+                "regionLabel" : "Bisherige Gutscheine"
+              },
+              "type" : "renditionComponent"
+            } ],
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : {
+                "isCheckBox" : false,
+                "isDisableSearch" : false,
+                "isShowBtnIntr" : false,
+                "isShowDensity" : true,
+                "lbButtonIntr" : "Interested",
+                "lbButtonNotIntr" : "Not Interested",
+                "lbDensity" : "Density",
+                "mdtName" : "DE_Declined_Coupons",
+                "messageNoRecord" : "No results available."
+              },
+              "componentName" : "c:lwcListView",
+              "id" : "4ddcc99f-db05-47d1-81ba-e096498b4047",
+              "renditionMap" : {
+                "de" : "6176c33a-d2d9-48c8-9ef9-65a518c516f7"
+              },
+              "renditions" : [ {
+                "id" : "6176c33a-d2d9-48c8-9ef9-65a518c516f7",
+                "renditionValue" : {
+                  "componentAttributes" : {
+                    "mdtName" : "DE_Declined_Coupons",
+                    "messageNoRecord" : "Aktuell keine Daten verfügbar"
+                  }
+                },
+                "type" : "renditionComponent"
+              } ],
+              "type" : "component"
+            } ],
+            "id" : "102b4c66-c938-4943-ac31-574f65fca60e",
+            "regionLabel" : "Declined Coupons",
+            "regionName" : "95597",
+            "renditionMap" : {
+              "de" : "e130bb3a-48f6-433f-a0d5-d4c1ec678fe3"
+            },
+            "renditions" : [ {
+              "id" : "e130bb3a-48f6-433f-a0d5-d4c1ec678fe3",
+              "renditionValue" : {
+                "regionLabel" : "Abgelehnte Gutscheine"
+              },
+              "type" : "renditionComponent"
+            } ],
+            "type" : "region"
+          } ],
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "f0180301-a472-4d23-984c-9eb9c3e1fe1a",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "a1a30364-5647-4be3-aee5-c9b6b6ecf846",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "My Coupon Seller Lists"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "187b0b90-2a05-4ee7-b890-94204a1a04cc",
+      "renditionMap" : {
+        "de" : "90dc28ca-d9ba-4269-a179-e2f16ee07825"
+      },
+      "renditions" : [ {
+        "id" : "90dc28ca-d9ba-4269-a179-e2f16ee07825",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Gutscheine"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "3d57bf22-5f84-499c-8e81-c554eb0584ab",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-my-coupon-seller-lists"
+}

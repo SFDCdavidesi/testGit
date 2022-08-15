@@ -1,0 +1,152 @@
+{
+  "appPageId" : "d0d843c2-af97-4a26-a50b-0072d9f05c54",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "40b3ea08-1cf2-4eb8-8a37-5513331c12a2",
+  "label" : "Customer Detail",
+  "regions" : [ {
+    "id" : "e9485534-d151-466a-87dc-f11002ec1827",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p><span style=\"font-size: 22px; font-family: arial;\">Customer Overview</span></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "1d561a2d-9bc9-4241-9eac-1522070a587a",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "b72cc202-c6f8-4a1f-8300-f12d51ddf76d"
+      },
+      "renditions" : [ {
+        "id" : "b72cc202-c6f8-4a1f-8300-f12d51ddf76d",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "richTextValue" : "<p><span style=\"font-size: 22px; font-family: arial;\">Verkäufer-Übersicht</span></p>"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<p><span style=\"font-size: 12px; font-family: arial;\">Below you will find details of this customer</span></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "ac1c77ab-4127-4e82-a22e-5f6800a395ee",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "36bbd7f3-05f6-48c0-a574-241ebea435f3"
+      },
+      "renditions" : [ {
+        "id" : "36bbd7f3-05f6-48c0-a574-241ebea435f3",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "richTextValue" : "<p><span style=\"font-family: arial; font-size: 12px;\">Nachfolgend finden Sie die Details zu diesem Verkäufer</span></p>"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordDetail",
+      "id" : "6d27b911-5efd-4463-b50b-69aeed91df2f",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "recordId" : ""
+      },
+      "componentName" : "c:lwcCancelButton",
+      "id" : "eebc1c58-8ec7-4ca0-a770-ddb5ee73c28b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "5dfeb8b4-fb31-4342-bd4a-cd8dff9590c8",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "65f9ad2b-b5f2-4e75-8513-d5df1c9db6ab",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "d953da69-1845-43bd-bc27-a6e919da2cab",
+      "renditionMap" : {
+        "de" : "46cb04ce-2997-415a-96b0-568ed4779680"
+      },
+      "renditions" : [ {
+        "id" : "46cb04ce-2997-415a-96b0-568ed4779680",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Verkäufer-Übersicht"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "48b0662c-2090-4444-9e41-30e77a2bce5b",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "metadataName" : ""
+      },
+      "componentName" : "c:lwcHelpTextGeneric",
+      "id" : "f78e5430-49cd-4052-bfbb-534374ab949a",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "920c7fc7-0055-4845-9286-56c214c7071c"
+      },
+      "renditions" : [ {
+        "id" : "920c7fc7-0055-4845-9286-56c214c7071c",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "metadataName" : "DEhelpTextTextElmt6"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordDetail",
+      "id" : "37f9ba88-d42e-4e42-8795-44bc9e5d2d6c",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : { },
+      "componentName" : "c:lwcCancelButton",
+      "id" : "8468c704-9322-4a53-a455-d21f8febf9e6",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "d41daa38-17ea-416e-8caa-f934f7b9a413",
+    "regionName" : "main",
+    "type" : "region"
+  }, {
+    "id" : "0d41e379-edfb-45be-9b96-26fc1cb9e754",
+    "regionName" : "sidebar",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-001"
+}

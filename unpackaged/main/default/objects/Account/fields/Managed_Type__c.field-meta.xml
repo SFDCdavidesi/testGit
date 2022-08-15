@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Managed_Type__c</fullName>
+    <description>US-0007674 - Add new field &quot;Managed Type&quot; in Account and sync values with BoB_Seller__c</description>
+    <externalId>false</externalId>
+    <label>Managed Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Others Managed</fullName>
+                <default>false</default>
+                <label>Focus</label>
+            </value>
+            <value>
+                <fullName>LTTM Managed</fullName>
+                <default>false</default>
+                <label>Pro-Trader</label>
+            </value>
+            <value>
+                <fullName>LTTM Plus</fullName>
+                <default>false</default>
+                <label>LTTM Plus</label>
+            </value>
+            <value>
+                <fullName>Managed BoB</fullName>
+                <default>false</default>
+                <label>Managed BoB</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

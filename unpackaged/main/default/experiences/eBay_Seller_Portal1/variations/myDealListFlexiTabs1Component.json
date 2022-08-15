@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "84016ff2-966f-4596-936a-cb690bac359b",
+    "propertyOverrides" : {
+      "isVisible" : true
+    },
+    "targetId" : "a1a84276-2da6-4ae1-8515-43b1325650a0",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "My_Deal_List_Flexi_Tabs_1_Component",
+  "id" : "cfa200a8-c588-4237-b25a-e8583eef3ce0",
+  "type" : "experienceVariation"
+}

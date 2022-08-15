@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_of_Top_Products__c</fullName>
+    <description>EPH-7566 Inventory Sourcing Metrics.Changes
+US-0009521 Field deprecated</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Total number of products that a seller has that are identified as Top Top Products</inlineHelpText>
+    <label>Number of Top Products (Deprecated)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "8d5d1f3b-bcc5-415d-aaab-5827a54c2066",
+    "propertyOverrides" : {
+      "isVisible" : true
+    },
+    "targetId" : "98c65b5e-f959-4e67-adb2-a95ecbb5dc0c",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Home_SEP_Calendar_Component",
+  "id" : "5eb1bbf6-5f96-4058-aa1a-761d2c8fb254",
+  "type" : "experienceVariation"
+}
